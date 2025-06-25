@@ -156,6 +156,41 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_house_of_the_rising_sun"
+		texturefile = "gfx/decision_pictures/house_of_the_rising_sun.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_serve_russia"
+		texturefile = "gfx/decision_pictures/serve_russia.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_The_Best_Of_The_Red_Army_Choir"
+		texturefile = "gfx/decision_pictures/The_Best_Of_The_Red_Army_Choir.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_civilization_6"
+		texturefile = "gfx/decision_pictures/civilization_6.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_watch_am_rhien_music"
+		texturefile = "gfx/decision_pictures/watch_am_rhien_music.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_music_zhedang"
+		texturefile = "gfx/decision_pictures/music_zhedang.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Dixie_music"
+		texturefile = "gfx/decision_pictures/Dixie_music.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_ger_Skorzney_large"
 		texturefile = "gfx/leaders/GER/Skorzney.jpg"
 		legacy_lazy_load = no

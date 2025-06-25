@@ -1003,7 +1003,7 @@ political_actions = {
 							picture = "gfx/leaders/SOV/STALIN/stalin_young.png"
 							expire = "1965.1.1"
 							ideology = stalinism
-							traits = { red_army_organizer cornered_fox the_director hero_of_the_peasantry_MAO
+							traits = { red_army_organizer cornered_fox the_director hero_of_the_peasantry_MAO baizhanlaobing
 							}
 						}
 					}
@@ -2179,7 +2179,7 @@ priority = 4999
 									expire = "1965.1.1"
 									ideology = stalinism
 									desc = SOV_aleksandr_vasilevsky_desc
-									traits = { SOV_aleksandr_vasilevsky_traits }
+									traits = { SOV_aleksandr_vasilevsky_traits baizhanlaobing }
 								}
 							}
 								

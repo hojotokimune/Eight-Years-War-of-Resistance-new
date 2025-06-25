@@ -1,19 +1,19 @@
 
 # MAIN THEME
 music = {
-	name = "Dixie"
-	file = "Dixie.ogg"
-	volume = 0.65
+	name = "Dixies_land"
+	file = "Dixies_land.ogg"
+	volume = 0.99
 }
 music = {
 	name = "house_of_the_rising_sun"
 	file = "house_of_the_rising_sun.ogg"
-	volume = 0.65
+	volume = 0.99
 }
 music = {
 	name = "japan_the_atomic_era"
 	file = "Geoff Knorr - Japan (The Atomic Era).ogg"
-	volume = 0.65
+	volume = 0.99
 }
 music = {
 	name = "victory_ger"
@@ -21,8 +21,47 @@ music = {
 	volume = 0.99
 }
 music = {
-	name = "为俄罗斯服役"
+	name = "Serve_Russia"
 	file = "Хор бессердечных бойцов - Служить России.ogg"
 	volume = 0.99
 }
-
+music = {
+	name = "Deutsche_Musik_Die_Wacht_am_Rhein"
+	file = "Deutsche Musik - Die Wacht am Rhein.ogg"
+	volume = 0.99
+}
+music = {
+	name = "Was_Ist_Des_Deutschen_Vaterland"
+	file = "Was Ist Des Deutschen Vaterland.ogg"
+	volume = 0.99
+}
+music = {
+	name = "lets_go"
+	file = "В путь.ogg"
+	volume = 0.99
+}
+music = {
+	name = "anthem_of_the_ussr111"
+	file = "Государственный гимн СССР.ogg"
+	volume = 0.99
+}
+music = {
+	name = "we_are_the_peoples_army"
+	file = "Мы - армия народа.ogg"
+	volume = 0.99
+}
+music = {
+	name = "march_of_the_defenders_history"
+	file = "Песня защитников Москвы.ogg"
+	volume = 0.99
+}
+music = {
+	name = "Nikolaev_Cavalry_School_cadets"
+	file = "Юнкеров Николаевского Кавалерийского Училища.ogg"
+	volume = 0.99
+}
+music = {
+	name = "russia_the_atomic_era"
+	file = "Geoff Knorr - Russia (The Atomic Era).ogg"
+	volume = 0.99
+}

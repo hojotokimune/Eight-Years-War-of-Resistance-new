@@ -646,6 +646,8 @@ news_event = {
 				set_war_support = 0
 				transfer_state = 1063
 				add_state_core = 1063
+				transfer_state = 1079
+				add_state_core = 1079
 				transfer_state = 52
 				add_state_core = 52
 				transfer_state = 53
@@ -655,7 +657,23 @@ news_event = {
 				transfer_state = 55
 				add_state_core = 55
 				add_state_core = 50
-				transfer_state = 50				
+				transfer_state = 50		
+				add_state_core = 909
+				transfer_state = 909
+				add_state_core = 58
+				transfer_state = 58
+				add_state_core = 59
+				transfer_state = 59
+				add_state_core = 56
+				transfer_state = 56
+				add_state_core = 57
+				transfer_state = 57
+				add_state_core = 51
+				transfer_state = 51		
+				add_state_core = 42
+				transfer_state = 42
+				add_state_core = 1064
+				transfer_state = 1064
 				set_capital = { state = 52 }
 				set_cosmetic_tag = ally_occupation_of_ger
 				set_party_name = { ideology = democratic long_name = "盟国管制委员会" name = "盟国管制委员会" }
@@ -723,7 +741,10 @@ news_event = {
 				transfer_state = 64
 				add_state_core = 64
 				transfer_state = 65
-				add_state_core = 64
+				add_state_core = 65
+				transfer_state = 1080
+				add_state_core = 1080
+				set_capital = { state = 1080 }
 				set_cosmetic_tag = sov_occupation_of_ger
 				set_party_name = { ideology = communism long_name = "盟国管制委员会" name = "盟国管制委员会" }
 				set_politics = {
@@ -1202,13 +1223,37 @@ news_event = {
 				 transfer_state = 80
 				 transfer_state = 766
 				 }
-				 MAN = { transfer_state = 408
+				 if = {
+					limit = { 
+						GER = { has_completed_focus = GER_befriend_japan } 
+						MAN = { is_in_faction_with = JAP }
+					}
+					MAN = { transfer_state = 408
 				 transfer_state = 409
 				 transfer_state = 657
 				 transfer_state = 560
 				 transfer_state = 561
 				 }
 				 JAP = { transfer_state = 655
+				 }
+				 }
+				 if = {
+					limit = { 
+						GER = { has_completed_focus = GER_befriend_china } 
+						1015 = { is_controlled_by = CHI }
+						716 = { is_controlled_by = CHI }
+						328 = { is_controlled_by = CHI }
+
+					}
+					CHI = { transfer_state = 408
+				 transfer_state = 409
+				 transfer_state = 657
+				 transfer_state = 560
+				 transfer_state = 561
+				 }
+				 CHI = { transfer_state = 655
+				 transfer_state = 537
+				 }
 				 }
 			SOV = { add_country_leader_role = {
 				character = SOV_lazar_kaganovich

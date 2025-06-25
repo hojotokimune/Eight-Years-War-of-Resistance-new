@@ -1602,7 +1602,7 @@ focus_tree = {
 		relative_position_id = GER_kdf_wagen_factories
 		cost = 10
 		available = {
-			industrial_complex > 49
+			industrial_complex > 69
 		}
 
 		search_filters = { FOCUS_FILTER_RESEARCH FOCUS_FILTER_INDUSTRY FOCUS_FILTER_HISTORICAL }

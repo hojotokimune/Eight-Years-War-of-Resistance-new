@@ -2,10 +2,11 @@
 music_station = "base_music"
 
 music = {
-	song = "Dixie"
+	song = "Dixies_land"
 	chance = {
 		modifier = {
-			factor = 0.5
+			factor = 5
+			tag = USA
 		}		
 	}
 }
@@ -14,8 +15,13 @@ music = {
 	song = "house_of_the_rising_sun"
 	chance = {
 		modifier = {
-			factor = 3
+			factor = 2
 			is_in_faction_with = GER
+		}		
+		modifier = {
+			factor = 7
+			is_in_faction_with = GER
+			has_global_flag = sov_peace_ger
 		}		
 	}
 }
@@ -24,7 +30,7 @@ music = {
 	song = "japan_the_atomic_era"
 	chance = {
 		modifier = {
-			factor = 3
+			factor = 7
 			is_in_faction_with = JAP
 		}		
 	}
@@ -40,10 +46,83 @@ music = {
 }
 
 music = {
-	song = "为俄罗斯服役"
+	song = "Serve_Russia"
 	chance = {
 		modifier = {
-			factor = 3
+			factor = 7
+			is_in_faction_with = SOV
+		}		
+	}
+}
+
+music = {
+	song = "Deutsche_Musik_Die_Wacht_am_Rhein"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = GER
+		}		
+	}
+}
+music = {
+	song = "Was_Ist_Des_Deutschen_Vaterland"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = GER
+		}		
+	}
+}
+music = {
+	song = "lets_go"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = SOV
+		}		
+	}
+}
+music = {
+	song = "anthem_of_the_ussr111"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = SOV
+		}		
+	}
+}
+music = {
+	song = "we_are_the_peoples_army"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = SOV
+		}		
+	}
+}
+music = {
+	song = "march_of_the_defenders_history"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = SOV
+		}		
+	}
+}
+music = {
+	song = "Nikolaev_Cavalry_School_cadets"
+	chance = {
+		modifier = {
+			factor = 7
+			is_in_faction_with = SOV
+		}		
+	}
+}
+music = {
+	song = "russia_the_atomic_era"
+	chance = {
+		modifier = {
+			factor = 7
 			is_in_faction_with = SOV
 		}		
 	}

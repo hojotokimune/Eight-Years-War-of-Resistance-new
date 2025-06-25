@@ -2,6 +2,30 @@ on_actions = {
 	on_startup = {
 		effect = {
 			set_global_flag = ENG_chongzu_empire
+			build_railway = {
+				level = 3
+				path = { 
+					3499 13510 6521
+				}
+			}
+			build_railway = {
+				level = 3
+				path = { 
+					375 13510 6521
+				}
+			}
+			build_railway = {
+				level = 2
+				path = { 
+					1502 4876 7894
+				}
+			}
+			build_railway = {
+				level = 2
+				path = { 
+					12485 13430 7894
+				}
+			}
 						ENG = {
 							release = SRL
 							set_autonomy = { target = SRL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
