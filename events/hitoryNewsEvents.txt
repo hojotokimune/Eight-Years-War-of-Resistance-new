@@ -566,7 +566,7 @@ news_event = {
 		    ENG = { has_war_with = GER }
 		    FRA = { has_war_with = GER }
 		}
-		NOT = { has_global_flag = ger_zhanbai }
+		NOT = { has_global_flag = ger_zhanbai_laisi }
 		SOV = { has_government = communism }
 		USA = { has_government = democratic }
 		has_global_flag = gangtiezhihuan
@@ -574,6 +574,7 @@ news_event = {
 	}
 	
 	immediate = {
+		set_global_flag = ger_zhanbai_laisi
 		set_global_flag = ger_zhanbai
 		hidden_effect = {
 			264 = {
