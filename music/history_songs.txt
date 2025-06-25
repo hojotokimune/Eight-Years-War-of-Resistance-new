@@ -1,0 +1,50 @@
+
+music_station = "base_music"
+
+music = {
+	song = "Dixie"
+	chance = {
+		modifier = {
+			factor = 0.5
+		}		
+	}
+}
+
+music = {
+	song = "house_of_the_rising_sun"
+	chance = {
+		modifier = {
+			factor = 3
+			is_in_faction_with = GER
+		}		
+	}
+}
+
+music = {
+	song = "japan_the_atomic_era"
+	chance = {
+		modifier = {
+			factor = 3
+			is_in_faction_with = JAP
+		}		
+	}
+}
+
+music = {
+	song = "victory_ger"
+	chance = {
+		modifier = {
+			factor = 0.01
+		}		
+	}
+}
+
+music = {
+	song = "为俄罗斯服役"
+	chance = {
+		modifier = {
+			factor = 3
+			is_in_faction_with = SOV
+		}		
+	}
+}

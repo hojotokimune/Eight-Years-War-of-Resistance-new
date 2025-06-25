@@ -1,0 +1,51 @@
+sov_tianwangxing_modifier = { #GUO
+	enable = { always = yes }
+	remove_trigger = {
+			SOV = {
+				has_defensive_war = no
+			}
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	army_speed_factor = 0.2
+	army_attack_factor = 0.5
+	army_defence_factor = 0.5
+	breakthrough_factor = 0.5
+    army_strength_factor = 0.15
+	army_org_factor = 0.20
+	army_morale_factor = 0.20
+	local_org_regain = 0.25
+	local_supplies = 0.5
+	no_supply_grace = 48
+	attrition = -0.25
+	supply_factor = 0.25
+    out_of_supply_factor = -0.15
+    supply_consumption_factor = -0.15
+	terrain_penalty_reduction = 0.25 #guo
+	pocket_penalty = -0.5 #guo
+}
+
+ger_blue_modifier = { #GUO
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = { 
+			GER = { has_war_with = SOV }
+	}
+	}
+	icon = GFX_modifiers_SOV_armored_battery
+	army_speed_factor = 0.2
+	army_attack_factor = 0.5
+	army_defence_factor = 0.5
+	breakthrough_factor = 0.5
+    army_strength_factor = 0.15
+	army_org_factor = 0.20
+	army_morale_factor = 0.20
+	local_org_regain = 0.25
+	local_supplies = 0.5
+	no_supply_grace = 48
+	attrition = -0.25
+	supply_factor = 0.25
+    out_of_supply_factor = -0.15
+    supply_consumption_factor = -0.15
+	terrain_penalty_reduction = 0.25 #guo
+	pocket_penalty = -0.5 #guo
+}

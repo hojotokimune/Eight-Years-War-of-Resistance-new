@@ -1,0 +1,43 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_splash_GER_intro"
+		textureFile = "gfx/splash/splash_GER.png"
+	}
+	spriteType = {
+		name = "GFX_nazi_biaozhi"
+		textureFile = "gfx/splash/nazi_biaozhi.png"
+	}
+	spriteType = {
+		name = "GFX_bakang_welcome_small"
+		textureFile = "gfx/splash/bakang_welcome_small.png"
+	}
+	spriteType = {
+		name = "GFX_splash_SOV"
+		textureFile = "gfx/splash/splash_SOV.png"
+	}
+	spriteType = {
+		name = "GFX_SOV_biaozhi"
+		textureFile = "gfx/splash/SOV_biaozhi.png"
+	}
+	spriteType = {
+		name = "GFX_splash_USA"
+		textureFile = "gfx/splash/splash_USA.png"
+	}
+	spriteType = {
+		name = "GFX_DemocraticLogo.svg"
+		textureFile = "gfx/splash/DemocraticLogo.svg.png"
+	}
+	spriteType = {
+		name = "GFX_Republicanlogo.svg"
+		textureFile = "gfx/splash/Republicanlogo.svg.png"
+	}
+	spriteType = {
+		name = "GFX_splash_CHI"
+		textureFile = "gfx/splash/splash_CHI.png"
+	}
+	spriteType = {
+		name = "GFX_kmt_biaozhi"
+		textureFile = "gfx/splash/kmt_biaozhi.png"
+	}
+}
+

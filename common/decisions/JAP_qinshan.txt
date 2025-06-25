@@ -1,0 +1,625 @@
+建立亚洲新秩序 = {
+    建立越南“亲善”政权 = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+            988 = { is_controlled_by = JAP }
+            986 = { is_controlled_by = JAP }			
+            987 = { is_controlled_by = JAP }			
+		}
+        cost = 50
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism	
+		}
+        complete_effect = { 
+
+		VOO = { inherit_technology = JAP }
+        988 = {
+            add_core_of = VOO
+        }	
+		986 = {
+            add_core_of = VOO
+        }
+        987 = {
+            add_core_of = VOO
+        }
+        671 = {
+            add_core_of = VOO
+        }		
+        978 = {
+            add_core_of = VOO
+        }		
+        989 = {
+            add_core_of = VOO
+        }
+	    286 = {
+            add_core_of = VOO
+        }	
+        979 = {
+            add_core_of = VOO
+        }		
+		VOO = {
+			give_military_access = JAP	
+            add_ideas = incompetent_heavy_industry			
+			add_ideas = jap_kuilei			
+            set_state_controller = 988
+			set_state_owner = 988
+            set_state_controller = 986
+			set_state_owner = 986
+            set_state_controller = 987
+			set_state_owner = 987
+            set_state_controller = 671
+			set_state_owner = 671	
+            set_state_controller = 978
+			set_state_owner = 978	
+            set_state_controller = 989
+			set_state_owner = 989
+            set_state_controller = 286
+			set_state_owner = 286
+            set_state_controller = 979
+			set_state_owner = 979			
+			set_cosmetic_tag = VOO
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+	        neutrality = 30
+	        fascism = 70			
+            }			
+			set_party_name = {
+					ideology = fascism
+					name = "阮氏王朝"
+					long_name = "阮氏王朝"
+				}
+			create_country_leader = {
+                name = "Ruan Futian"
+                desc = ""
+                picture = "gfx/leaders/VIN/baoda.jpg"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+                traits = {}
+            }
+            set_politics = {   #设置意识形态
+                ruling_party = fascism
+                elections_allowed = no  
+            }
+            set_capital = {
+                state = 988
+                remember_old_capital = no
+            }
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    988= {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = VOO
+				count = 5
+			    }
+			}					
+			}
+            JAP ={
+                puppet = VOO
+            }          
+
+    }
+}
+    建立柬埔寨“亲善”政权 = {
+		icon = generic_prepare_civil_war
+		available = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+            982 = { is_controlled_by = JAP }
+            741 = { is_controlled_by = JAP }			
+		}
+        cost = 50
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+		}		
+        complete_effect = {
+		CZP = { inherit_technology = JAP }		
+        982 = {
+            add_core_of = CZP
+        }
+        741 = {
+            add_core_of = CZP
+        }
+        983 = {
+            add_core_of = CZP
+        }
+		hidden_effect = {
+        983 = {
+            add_core_of = SIA
+        }
+	    983 = {
+		set_state_owner_to = SIA
+        }					  
+		}		
+		CZP = {
+			give_military_access = JAP 
+            add_ideas = incompetent_heavy_industry			
+			add_ideas = jap_kuilei			
+            set_state_controller = 982
+			set_state_owner = 982
+            set_state_controller = 741
+			set_state_owner = 741
+			set_cosmetic_tag = CZP			
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+	        neutrality = 30
+	        fascism = 70			
+            }
+			set_party_name = {
+					ideology = fascism
+					name = "柬埔寨独立运动"
+					long_name = "柬埔寨独立运动"
+				}
+			create_country_leader = {
+                name = "Norodom Sihanouk"
+                desc = ""
+                picture = "gfx/leaders/CAM/xihanuke.jpg"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+                traits = {}
+            }			
+            set_politics = {   #设置意识形态
+                ruling_party = fascism
+                elections_allowed = no  
+            }
+            set_capital = {
+                state = 741
+                remember_old_capital = no
+            }
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    741= {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = CZP
+				count = 2
+			    }
+			}						
+			}
+            JAP ={
+                puppet = CZP
+            }			
+        }           
+    }	
+    建立老挝“亲善”政权 = {
+		icon = generic_prepare_civil_war 
+		available = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+            670 = { is_controlled_by = JAP }			
+		}
+        cost = 50
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+		}
+        complete_effect = {  
+		LXW = { inherit_technology = JAP }
+        670 = {
+            add_core_of = LXW
+        }
+        985 = {
+            add_core_of = LXW
+        }
+        984 = {
+            add_core_of = LXW
+        }	
+        980 = {
+            add_core_of = LXW
+        }
+        981 = {
+            add_core_of = LXW
+        }
+		hidden_effect = {
+        980 = {
+            add_core_of = SIA
+        }
+        981 = {
+            add_core_of = SIA
+        }
+        980 = {
+		set_state_owner_to = SIA
+        }
+	    981 = {
+		set_state_owner_to = SIA
+        }					  
+		}		
+        LXW = {
+            give_military_access = JAP
+            add_ideas = incompetent_heavy_industry			
+			add_ideas = jap_kuilei			
+            set_state_controller = 670
+			set_state_owner = 670	
+            set_state_controller = 985
+			set_state_owner = 985
+            set_state_controller = 984
+			set_state_owner = 984			
+			set_cosmetic_tag = LXW
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+	        neutrality = 30
+	        fascism = 70			
+            }			
+            set_politics = {   #设置意识形态
+                ruling_party = fascism
+                elections_allowed = no  
+            }
+			set_party_name = {
+					ideology = fascism
+					name = "老挝独立运动"
+					long_name = "老挝独立运动"
+				}
+			create_country_leader = {
+                name = "Phetsarath Ratanavongsa"
+                desc = ""
+                picture = "gfx/leaders/LAO/Portrait_Laos_Phetsarath_Ratanavongsa.dds"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+                traits = {}
+            }			
+            set_capital = {
+                state = 670
+                remember_old_capital = no
+            }
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    670= {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = LXW
+				count = 2
+			    }
+			}					
+    }
+            JAP ={
+                puppet = LXW
+            }
+}
+	}
+    建立缅甸“亲善”政权 = {
+		icon = generic_prepare_civil_war 
+		available = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+            288 = { is_controlled_by_ROOT_or_puppet = yes }
+            992 = { is_controlled_by_ROOT_or_puppet = yes }
+            993 = { is_controlled_by_ROOT_or_puppet = yes }
+            640 = { is_controlled_by_ROOT_or_puppet = yes }			
+		}
+        cost = 50
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+		}
+        complete_effect = {  
+		HSE = { inherit_technology = JAP }
+        288 = {
+            add_core_of = HSE
+        }
+        640 = {
+            add_core_of = HSE
+        }
+        992 = {
+            add_core_of = HSE
+        }
+        993 = {
+            add_core_of = HSE
+        }
+        993 = {
+            add_core_of = HSE
+        }
+        1021 = {
+            add_core_of = HSE
+        }		
+        HSE = {
+            give_military_access = JAP
+            add_ideas = incompetent_heavy_industry			
+			add_ideas = jap_kuilei
+			set_party_name = {
+					ideology = fascism
+					name = "我缅人党"
+					long_name = "我缅人党"
+				}
+			create_country_leader = {
+                name = "Ba·Haw"
+                desc = ""
+                picture = "gfx/leaders/BUR/Portrait_Burma_Ba_Maw_fascism.dds"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+                traits = {}
+            }			
+            set_state_controller = 288
+			set_state_owner = 288
+            set_state_controller = 992
+			set_state_owner = 992
+            set_state_controller = 993
+			set_state_owner = 993
+            set_state_controller = 640
+			set_state_owner = 640		
+			set_cosmetic_tag = BUR_qinshan
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+	        fascism = 70	        
+			neutrality = 20
+            communism = 10			
+            }			
+            set_politics = {   #设置意识形态
+                ruling_party = fascism
+                elections_allowed = no  
+            }			
+            set_capital = {
+                state = 288
+                remember_old_capital = no
+            }
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    288= {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = HSE
+				count = 2
+			    }
+			}						
+    }
+            JAP ={
+                puppet = HSE
+            }
+}
+	}
+    建立菲律宾“亲善”政权 = {
+		icon = generic_prepare_civil_war 
+		available = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+            623 = { is_controlled_by_ROOT_or_puppet = yes }
+            327 = { is_controlled_by_ROOT_or_puppet = yes }
+            624 = { is_controlled_by_ROOT_or_puppet = yes }
+            625 = { is_controlled_by_ROOT_or_puppet = yes }
+            627 = { is_controlled_by_ROOT_or_puppet = yes }			
+            628 = { is_controlled_by_ROOT_or_puppet = yes }			
+		}
+        cost = 50
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+		}
+        complete_effect = {  
+		BBQ = { inherit_technology = JAP }
+        623 = {
+            add_core_of = BBQ
+        }
+        327 = {
+            add_core_of = BBQ
+        }
+        624 = {
+            add_core_of = BBQ
+        }
+        625 = {
+            add_core_of = BBQ
+        }
+        626 = {
+            add_core_of = BBQ
+        }
+        627 = {
+            add_core_of = BBQ
+        }
+        628 = {
+            add_core_of = BBQ
+        }		
+        BBQ = {
+            give_military_access = JAP
+            add_ideas = incompetent_heavy_industry			
+			add_ideas = jap_kuilei
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+	        fascism = 100			
+            }			
+			set_party_name = {
+					ideology = fascism
+					name = "新比岛建设奉仕团"
+					long_name = "新比岛建设奉仕团"
+				}
+			create_country_leader = {
+                name = "Jose·Laurel"
+                desc = ""
+                picture = "gfx/leaders/PHI/laoleier.jpg"
+                expire = "1965.1.1"
+                ideology = fascism_ideology
+                traits = {}
+            }			
+            set_state_controller = 623
+			set_state_owner = 623
+            set_state_controller = 327
+			set_state_owner = 327
+            set_state_controller = 624
+			set_state_owner = 624
+            set_state_controller = 625
+			set_state_owner = 625	
+            set_state_controller = 627
+			set_state_owner = 627
+            set_state_controller = 628
+			set_state_owner = 628			
+			set_cosmetic_tag = BBQ_qinshan	
+            set_politics = {   #设置意识形态
+                ruling_party = fascism
+                elections_allowed = no  
+            }			
+            set_capital = {
+                state = 327
+                remember_old_capital = no
+            }
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    327= {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = BBQ
+				count = 3
+			    }
+			}						
+    }
+            JAP ={
+                puppet = BBQ
+            }
+}
+	}
+    改组印度支那联盟 = {
+		available = {
+ 			JAP = {
+				is_ai = yes
+			} 		
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+ 			FIC = {
+				is_puppet_of = JAP
+			}           			
+		}
+        cost = 25
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+ 			JAP = {
+				is_ai = yes
+			} 		
+			has_completed_focus = southern_expansion_focus
+			has_government = fascism
+		}
+        complete_effect = {	
+ 			FIC = {
+               annex_country = { target = VIN }
+			}  		
+		}		
+		}
+    统一印支亲善政权 = {
+		available = {
+ 			JAP = {
+				is_ai = yes
+			} 
+ 			VIN = {
+				is_ai = yes
+			} 			
+ 			VIN = {
+				is_puppet_of = JAP
+			}           			
+		}
+        cost = 0
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {
+ 			JAP = {
+				is_ai = yes
+			} 		
+			has_completed_focus = southern_expansion_focus
+		}
+        complete_effect = {	
+ 			VOO = {
+               annex_country = { target = VIN }
+			}
+        983 = {
+            add_core_of = SIA
+        }
+	    980 = {
+            add_core_of = SIA
+        }	
+	    981 = {
+            add_core_of = SIA
+        }		
+        LXW = {
+            set_state_controller = 670
+			set_state_owner = 670	
+            set_state_controller = 984
+			set_state_owner = 984		
+            set_state_controller = 985
+			set_state_owner = 985	
+		}
+        SIA = {
+            set_state_controller = 983
+			set_state_owner = 983
+            set_state_controller = 980
+			set_state_owner = 980
+            set_state_controller = 981
+			set_state_owner = 981	
+		}		
+            JAP ={
+                puppet = LXW
+            }
+		CZP = {	
+            set_state_controller = 982
+			set_state_owner = 982
+            set_state_controller = 741
+			set_state_owner = 741		
+		}
+            JAP ={
+                puppet = CZP
+            }		
+		}		
+		}			
+	} 
+

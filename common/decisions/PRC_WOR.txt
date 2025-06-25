@@ -1,0 +1,137 @@
+RCM_PRC_WOR = {
+	PRC_pingxing_guan = {
+		icon = generic_nationalism
+		allowed = {
+			tag = PRC
+		}
+		activation = {
+		 has_war_with = JAP
+			has_civil_war = no
+
+                          PRC = {
+			divisions_in_state = {
+				size > 0
+				state = 1013
+			}
+                   }
+			1013 = {
+				is_controlled_by = SHX
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = PRC
+						}
+						OWNER = { 
+				        is_in_faction_with = PRC
+					}
+                                }
+                              is_controlled_by_jap_or_its_puppet = yes
+			}
+				}
+			}
+
+
+	
+		available = {
+
+                                 SHX = {
+			NOT = {
+                                controls_province = 1027
+			}
+                                }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1013
+			}
+		}
+		days_mission_timeout = 60
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			add_political_power = -50
+		}
+		timeout_effect = {
+                        country_event = {
+				id = news.7925
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+	PRC_pingxing_guan2 = {
+		icon = generic_nationalism
+		allowed = {
+			tag = PRC
+		}
+		activation = {
+			has_war_with = JAP
+			has_civil_war = no
+	        PRC = { is_ai = yes } 		
+			1013 = {
+				is_controlled_by = SHX
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = PRC
+						}
+						OWNER = { 
+				       TAG = SHX
+					}
+                                }
+                              is_controlled_by_jap_or_its_puppet = yes
+			}
+				}
+			}
+
+
+
+	
+		available = {
+
+                                 SHX = {
+			NOT = {
+                                controls_province = 1027
+			}
+                                }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1013
+			}
+		}
+		days_mission_timeout = 1
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			add_political_power = -50
+		}
+		timeout_effect = {
+                        country_event = {
+				id = news.7925
+			}
+		}
+	}
+
+
+}
+
+
+

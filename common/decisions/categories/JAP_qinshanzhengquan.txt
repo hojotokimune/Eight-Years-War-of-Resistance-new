@@ -1,0 +1,8 @@
+建立亚洲新秩序 = {       
+    allowed ={
+        tag = JAP
+    }
+    visible = {
+		always = yes
+	}
+}

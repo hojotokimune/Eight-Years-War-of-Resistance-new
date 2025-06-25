@@ -1,0 +1,192 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_news_event_226"
+		texturefile = "gfx/event_pictures/news_event_226.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_226"
+		texturefile = "gfx/event_pictures/report_event_226.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_226_2"
+		texturefile = "gfx/event_pictures/news_event_226_2.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_sunset"
+		texturefile = "gfx/event_pictures/news_event_sunset.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_Suiyuan_campaign_1"
+		texturefile = "gfx/event_pictures/news_event_Suiyuan_campaign_1.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_Xian_Incident_1"
+		texturefile = "gfx/event_pictures/news_event_Xian_Incident_1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_Xian_Incident_2"
+		texturefile = "gfx/event_pictures/news_event_Xian_Incident_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_Zhang_and_Yang"
+		texturefile = "gfx/event_pictures/report_event_Zhang_and_Yang.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_trautmann_mediation"
+		texturefile = "gfx/event_pictures/news_event_trautmann_mediation.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_big_east_asia_speech"
+		texturefile = "gfx/event_pictures/news_event_big_east_asia_speech.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_wang_join_japan"
+		texturefile = "gfx/event_pictures/news_event_wang_join_japan.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_new_reorganized_national_government"
+		texturefile = "gfx/event_pictures/news_event_new_reorganized_national_government.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_new_reorganized_national_government"
+		texturefile = "gfx/event_pictures/report_event_new_reorganized_national_government.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_lushan_speech"
+		texturefile = "gfx/event_pictures/news_event_lushan_speech.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_claire_lee_chennault"
+		texturefile = "gfx/event_pictures/report_event_event_claire_lee_chennault.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_chiang_kai_shek_in_inspect_the_army"
+		texturefile = "gfx/event_pictures/news_event_chiang_kai_shek_in_inspect_the_army.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_Guangdong_and_Guangxi"
+		texturefile = "gfx/event_pictures/news_event_Guangdong_and_Guangxi.dds"
+	}
+
+
+	spriteType = {
+		name = "GFX_report_event_report_event_ma_zhongying"
+		texturefile = "gfx/event_pictures/report_event_Ma_zhongying.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_report_event_ma_jiyuan_and_ma_bufang"
+		texturefile = "gfx/event_pictures/report_event_Ma_Jiyuan_and_Ma_bufang.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_hoja_niyaz"
+		texturefile = "gfx/event_pictures/report_event_hoja_niyaz.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_the_king_of_sinkiang_sheng_shicai"
+		texturefile = "gfx/event_pictures/report_event_the_king_of_sinkiang_sheng_shicai.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_three_areas_revolution"
+		texturefile = "gfx/event_pictures/report_event_three_areas_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_three_areas_revolution_2"
+		texturefile = "gfx/event_pictures/report_event_three_areas_revolution_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_leader_ehmetjan_qasimi"
+		texturefile = "gfx/event_pictures/report_event_leader_ehmetjan_qasimi.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_end_three_areas_revolution"
+		texturefile = "gfx/event_pictures/report_event_end_three_areas_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_end_three_areas_revolution_2"
+		texturefile = "gfx/event_pictures/report_event_end_three_areas_revolution_2.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_end_three_areas_revolution_3"
+		texturefile = "gfx/event_pictures/report_event_end_three_areas_revolution_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_sinkiang_join_PRC"
+		texturefile = "gfx/event_pictures/report_event_sinkiang_join_PRC.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_three_areas_revolution"
+		texturefile = "gfx/event_pictures/news_event_three_areas_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_three_areas_revolution_2"
+		texturefile = "gfx/event_pictures/news_event_three_areas_revolution_2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_end_three_areas_revolution"
+		texturefile = "gfx/event_pictures/news_event_end_three_areas_revolution.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_end_three_areas_revolution_2"
+		texturefile = "gfx/event_pictures/news_event_end_three_areas_revolution_2.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_end_three_areas_revolution_3"
+		texturefile = "gfx/event_pictures/news_event_end_three_areas_revolution_3.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_sinkiang_join_PRC"
+		texturefile = "gfx/event_pictures/news_event_sinkiang_join_PRC.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_Mao_and_Chiang"
+		texturefile = "gfx/event_pictures/news_event_Mao_and_Chiang.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_china_transfer_capital"
+		texturefile = "gfx/event_pictures/news_event_china_transfer_capital.dds"
+	}
+
+	spriteType = {
+		name = "GFX_report_event_battle_of_shanghai"
+		texturefile = "gfx/event_pictures/report_event_battle_of_shanghai.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_battle_of_shanghai"
+		texturefile = "gfx/event_pictures/news_event_battle_of_shanghai.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_battle_of_wuhan_1"
+		texturefile = "gfx/event_pictures/news_event_battle_of_wuhan_1.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_battle_of_wuhan_3"
+		texturefile = "gfx/event_pictures/report_event_battle_of_wuhan_3.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_battle_of_wuhan_3"
+		texturefile = "gfx/event_pictures/news_event_battle_of_wuhan_3.dds"
+	}
+	spriteType = {
+		name = "GFX_report_event_move_to_chongqing_1"
+		texturefile = "gfx/event_pictures/report_event_move_to_chongqing_1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_move_to_chongqing_1"
+		texturefile = "gfx/event_pictures/news_event_move_to_chongqing_1.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_move_to_chongqing_2"
+		texturefile = "gfx/event_pictures/news_event_move_to_chongqing_2.dds"
+	}
+
+	
+}

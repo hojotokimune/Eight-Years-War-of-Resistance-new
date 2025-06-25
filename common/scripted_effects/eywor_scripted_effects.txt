@@ -1,0 +1,2321 @@
+SOV_intervention_in_chinese_civil_war = {
+	set_global_flag = sov_intervene_ccw
+	PRC = {
+		prc_wang_ming = {
+			add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					ideology = marxism
+					expire = "1965.1.1"
+					traits = { stalins_puppet }
+				}
+			}
+			set_portraits = {
+			    civilian = { large ="gfx/leaders/PRC/Wang_Ming_Old.dds" }
+			}
+		}
+		if = {
+			limit = {
+				has_idea = CCP_question_history_mao
+			}
+			swap_ideas = {
+				remove_idea = CCP_question_history_mao
+				add_idea = CCP_question_history_teb
+			}
+		}
+		if = {
+			limit = {
+				has_idea = CCP_constitution_mao
+			}
+			swap_ideas = {
+				remove_idea = CCP_constitution_mao
+				add_idea = CCP_constitution_28b
+			}
+		}
+		remove_ideas = {
+			PRC_War_of_Liberation
+			PRC_autonomy_over_unity_idea
+			yanan_rect_3
+			changjiang_bureau
+			PRC_Fight_guidelines
+		}
+		set_temp_variable = { temp_member = 3 }
+		set_temp_variable = { temp_seats = 0.7 tooltip = TEB_faction_support_tt }
+		modify_parliament_seat = yes
+		retire_character = prc_mao_zedong #Bye bye Mao
+		clr_country_flag = communist_infiltration #Removes partisans
+		load_focus_tree = PRC_50s_SOV
+		add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_cooperating_with_us
+		}
+		add_relation_modifier = {
+			target = SOV
+			modifier = SOV_soviet_chinese_relations
+		}
+		add_ideas = prc_wang_ming
+		add_ideas = PRC_zhou_enlai_2
+		add_ideas = prc_meng_qingshu
+		add_ideas = prc_wang_shengrong
+		set_cosmetic_tag = PRC_NEA
+		remove_wargoal = {
+   		    type = all
+    		target = CHI
+		}
+	}
+	CHI = {
+		set_country_leader_portrait = {
+		    portrait = "gfx/leaders/CHI/Chiang_Older.dds"
+		}
+		add_ideas = {
+			chi_50s_ideas_devastated_apparatus_10
+			chi_50s_ideas_ccp_resistance_5
+			chi_50s_ideas_democratic_liberal_resistance_4
+			chi_50s_ideas_devastated_agricultural_life_11
+		}
+		country_event = chi_50s_events.20
+		complete_national_focus = CHI_50s_victory_in_civil_war
+		remove_ideas = {
+			CHI_oversized_army
+			CHI_oversized_army_2
+			RCM_civil_war_economy_idea
+			CHI_civil_war_debuff
+			CHI_civil_war_debuff_2
+			CHI_civil_war_debuff_3
+			CHI_civil_war_debuff_4
+			CHI_civil_war_debuff_5
+		}
+		remove_wargoal = {
+   		    type = all
+    		target = PRC
+		}
+		diplomatic_relation = {
+			country = GXC
+			relation = military_access
+			active = no
+		}
+	}
+	GXC = {
+		diplomatic_relation = {
+			country = CHI
+			relation = military_access
+			active = no
+		}
+	}
+	SOV_form_the_etr = yes
+	SOV = {
+		uncomplete_national_focus = {
+			focus = SOV_support_the_kuomintang
+		}
+		complete_national_focus = SOV_two_red_flags
+		set_autonomy = {
+			target = PRC
+			autonomy_state = autonomy_eywor_soviet_satellite
+		}
+		add_relation_rule_override = {
+   		 	target = PRC
+   		    can_send_volunteers = yes
+		}
+	}
+	CHI = {
+		remove_opinion_modifier = {
+   		    target = SOV
+    		modifier = SOV_cooperating_with_us
+		}
+		remove_relation_modifier = {
+			target = SOV
+			modifier = SOV_soviet_chinese_relations
+		}
+	}
+	PRC = {
+		add_opinion_modifier = {
+			target = ROOT
+			modifier = SOV_cooperating_with_us
+		}
+		add_relation_modifier = {
+			target = ROOT
+			modifier = SOV_soviet_chinese_relations
+		}
+	}
+	every_state = {
+		limit = {
+			OR = {
+			    region = 155
+			    region = 243
+			    region = 242
+				region = 244 #Inner Mongolia
+				state = 609
+				state = 608
+				state = 611
+				state = 616 #Inner Mongolia
+				state = 1067
+				state = 1068
+				state = 1076
+				state = 1013 #Northern Shansi
+				state = 1066 #Northeastern Hopeh
+			}
+		}
+		transfer_state_to = PRC
+	}
+	every_state = {
+		limit = {
+			is_owned_by = PRC
+			NOT = {
+				OR = {
+				    region = 155
+				    region = 243
+			        region = 242
+					region = 244 #Inner Mongolia
+					state = 609
+					state = 608
+					state = 611
+					state = 1067
+					state = 1068
+					state = 1076
+					state = 1066
+					state = 1013 #Northern Shansi
+					state = 616 #Inner Mongolia
+				}
+			}
+		}
+		transfer_state_to = CHI
+	}
+	if = {
+		limit = {
+			EGM = { exists = yes }
+		}
+		CHI = {
+			annex_country = {
+				target = EGM
+				transfer_troops = no
+			}
+		}
+	}
+	every_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = communist_stronghold }
+		}
+		remove_dynamic_modifier = { modifier = communist_stronghold }
+	}
+	every_country = {
+		limit = {
+			has_war_with = PRC
+			is_literally_china = yes
+		}
+		white_peace = PRC
+	}
+	clr_global_flag = Wang_ming_marginalized
+}
+
+CHI_increase_anti_japanese_sentiment = {
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_9 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_9
+			add_idea = chi_anti_japanese_sentiment_10
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_8 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_8
+			add_idea = chi_anti_japanese_sentiment_9
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_7 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_7
+			add_idea = chi_anti_japanese_sentiment_8
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_6 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_6
+			add_idea = chi_anti_japanese_sentiment_7
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_5 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_5
+			add_idea = chi_anti_japanese_sentiment_6
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_4 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_4
+			add_idea = chi_anti_japanese_sentiment_5
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_3 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_3
+			add_idea = chi_anti_japanese_sentiment_4
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_2 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_2
+			add_idea = chi_anti_japanese_sentiment_3
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_1 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_1
+			add_idea = chi_anti_japanese_sentiment_2
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				OR = {
+					has_idea = chi_anti_japanese_sentiment_1 
+					has_idea = chi_anti_japanese_sentiment_2
+					has_idea = chi_anti_japanese_sentiment_3 
+					has_idea = chi_anti_japanese_sentiment_4 
+					has_idea = chi_anti_japanese_sentiment_5 
+					has_idea = chi_anti_japanese_sentiment_6 
+					has_idea = chi_anti_japanese_sentiment_7 
+					has_idea = chi_anti_japanese_sentiment_8 
+					has_idea = chi_anti_japanese_sentiment_9 
+				    has_idea = chi_anti_japanese_sentiment_10
+				}
+			}
+		}
+		add_ideas = chi_anti_japanese_sentiment_1
+	}
+}
+
+chi_second_chinese_ccw = {
+    SOV = {
+		country_event = chi_50s_second_ccw_events.1
+	    set_autonomy = {
+			target = MON
+			autonomous_state = autonomy_free
+			end_wars = no
+			end_civil_wars = no
+		}
+		set_autonomy = {
+			target = PRC
+			autonomous_state = autonomy_free
+			end_wars = no
+			end_civil_wars = no
+		}
+		set_autonomy = {
+			target = ETK
+			autonomous_state = autonomy_free
+			end_wars = no
+			end_civil_wars = no
+		}
+		remove_from_faction = MON
+		remove_from_faction = PRC
+		remove_from_faction = ETK
+	}
+	PRC = {
+	    create_faction = peoples_liberation_front
+		add_to_faction = MON
+		add_to_faction = ETK
+	}
+	every_state = {
+		limit = {
+			has_dynamic_modifier = { modifier = anti_partisan_area }
+		}
+		remove_dynamic_modifier = { modifier = anti_partisan_area }
+	}
+}
+
+SOV_form_the_etr = {
+	every_state = {
+		limit = {
+			OR = {
+				region = 252
+			    region = 145
+			}
+		}
+		add_core_of = ETK
+	    transfer_state_to = ETK
+	}
+	ETK = {
+		add_manpower = 20000
+		create_corps_commander = {
+			name = "Dalelkhan Sugirbayev"
+			id = 3893
+			portrait_path = "gfx/leaders/SIK/Dalelkhan_Sugirbayev.dds"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Fatih Muslimov"
+			id = 3892
+			portrait_path = "gfx/leaders/SIK/Fatih_Muslimov.dds"
+			traits = {  }
+			skill = 1
+			attack_skill = 2
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+		}
+		create_corps_commander = {
+			name = "Ishaq Beg Munonov"
+			id = 3891
+			portrait_path = "gfx/leaders/SIK/Ishaq_Beg_Munonov.dds"
+			traits = {  }
+			skill = 2
+			attack_skill = 2
+			defense_skill = 2
+			planning_skill = 1
+			logistics_skill = 2
+		}
+		create_corps_commander = {
+			name = "Abdulkerim Abbas"
+			id = 3890
+	    	portrait_path = "gfx/leaders/SIK/Portrait_Sinkiang_Abdulkerim_Abbas.dds"
+			traits = {  }
+			skill = 3
+			attack_skill = 2
+			defense_skill = 3
+			planning_skill = 2
+			logistics_skill = 3
+		}
+		load_oob = ETR_Guerrillas_618
+		load_oob = ETR_Guerrillas_962
+		load_oob = ETR_Guerrillas_618_2
+		load_oob = ETR_Military_adviser_959
+	}
+	SOV = {
+		set_autonomy = {
+			target = ETK
+			autonomy_state = autonomy_eywor_soviet_satellite
+		}
+	}
+}
+
+prc_reorganise_army_ai_only = { #Should only be used for AI
+	PRC = {
+		set_technology = {
+			tech_trucks = 1
+			tech_support = 1
+		}
+		division_template = { #AI likes this for some reason
+			name = "Chiehfangchün"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 3 y = 0 }
+				artillery_brigade = { x = 4 y = 0 }
+				artillery_brigade = { x = 4 y = 1 }
+				artillery_brigade = { x = 4 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+				recon = { x = 0 y = 3 }
+			}
+		}
+		division_template = {
+			name = "Yìwùbīng"
+			template_counter = 69
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				artillery_brigade  = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				artillery_brigade  = { x = 1 y = 4 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+				recon = { x = 0 y = 3 }
+			}
+		}
+		division_template = {
+			name = "Zòngduì"
+			template_counter = 42
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				artillery_brigade  = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+				recon = { x = 0 y = 3 }
+			}
+		}
+		delete_ai_unit_templates = yes #Dismantle all 'infantry template' divisions
+   		every_country_division = { #Fall back if above doesnt work
+			limit = {
+				always = yes
+			}
+			destroy_unit = yes
+		}
+		every_controlled_state = {
+			limit = {
+				always = yes
+			}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Lùjūn Shī\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Lùjūn Xīnbīng\" division_template = \"Zòngduì\" start_experience_factor = 0.3"owner = PRC}
+			create_unit = {division = "name = \"Gémìng Gànbù\" division_template = \"Yìwùbīng\" start_experience_factor = 0.3"owner = PRC}
+			create_unit = {division = "name = \"Nóngcūn Mínbīng\" division_template = \"Yìwùbīng\" start_experience_factor = 0.3"owner = PRC}
+		}
+		set_division_template_lock = {
+			division_template = "Chiehfangchün"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Zòngduì"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Yìwùbīng"
+			is_locked = no
+		}
+		add_equipment_to_stockpile = { #PLA primarily used captured equipment
+		    type = infantry_equipment_1
+		    amount = 65200
+		    producer = JAP
+	    }
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment_1
+		    amount = 35200
+		    producer = SOV
+	    }
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 2500
+		    producer = JAP
+	    }
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 2000
+		    producer = SOV
+	    }
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 3000
+		    producer = JAP
+	    }
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 1800
+		    producer = SOV
+	    }
+	}
+}
+
+prc_reorganise_army_ai_only_alt = { #Should only be used for AI
+	PRC = {
+		set_technology = {
+			tech_trucks = 1
+			tech_support = 1
+		}
+		division_template = { #AI likes this for some reason
+			name = "Chiehfangchün"
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+				infantry = { x = 3 y = 0 }
+				artillery_brigade = { x = 4 y = 0 }
+				artillery_brigade = { x = 4 y = 1 }
+				artillery_brigade = { x = 4 y = 2 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+				recon = { x = 0 y = 3 }
+			}
+		}
+		division_template = {
+			name = "Yìwùbīng"
+			template_counter = 69
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				artillery_brigade  = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+				artillery_brigade  = { x = 1 y = 4 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+				recon = { x = 0 y = 3 }
+			}
+		}
+		division_template = {
+			name = "Zòngduì"
+			template_counter = 42
+			is_locked = no
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				artillery_brigade  = { x = 0 y = 4 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+			}
+			support = {
+				artillery = { x = 0 y = 0 }
+				engineer = { x = 0 y = 1 }
+				logistics_company = { x = 0 y = 2 }
+				recon = { x = 0 y = 3 }
+			}
+		}
+		delete_ai_unit_templates = yes #Dismantle all 'infantry template' divisions
+   		every_country_division = { #Fall back if above doesnt work
+			limit = {
+				always = yes
+			}
+			destroy_unit = yes
+		}
+		every_controlled_state = {
+			limit = {
+				any_neighbor_state = {
+					owner = { tag = CHI }
+				}
+			}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Lùjūn Shī\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Huáběi Yóují Duì\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Chóngzu Bùbīng Shī\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC}
+			create_unit = {division = "name = \"Dongbù Bùbīng Shī\" division_template = \"Chiehfangchün\" start_experience_factor = 0.5"owner = PRC} #One more for good measure
+			create_unit = {division = "name = \"Lùjūn Xīnbīng\" division_template = \"Zòngduì\" start_experience_factor = 0.3"owner = PRC}
+			create_unit = {division = "name = \"Gémìng Gànbù\" division_template = \"Yìwùbīng\" start_experience_factor = 0.3"owner = PRC}
+			create_unit = {division = "name = \"Nóngcūn Mínbīng\" division_template = \"Yìwùbīng\" start_experience_factor = 0.3"owner = PRC}
+		}
+		set_division_template_lock = {
+			division_template = "Chiehfangchün"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Zòngduì"
+			is_locked = no
+		}
+		set_division_template_lock = {
+			division_template = "Yìwùbīng"
+			is_locked = no
+		}
+		add_equipment_to_stockpile = { #PLA primarily used captured equipment
+		    type = infantry_equipment_1
+		    amount = 65200
+		    producer = JAP
+	    }
+		add_equipment_to_stockpile = {
+		    type = infantry_equipment_1
+		    amount = 35200
+		    producer = SOV
+	    }
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 2500
+		    producer = JAP
+	    }
+		add_equipment_to_stockpile = {
+		    type = support_equipment
+		    amount = 2000
+		    producer = SOV
+	    }
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 3000
+		    producer = JAP
+	    }
+		add_equipment_to_stockpile = {
+		    type = artillery_equipment
+		    amount = 1800
+		    producer = SOV
+	    }
+	}
+}
+
+sov_ger_setup_ural_defenses = {
+	every_owned_state = {
+		limit = {
+			OR = {
+				region = 133
+				region = 150
+				region = 134
+				region = 137
+				state = 264
+				state = 247
+				state = 195
+				state = 232
+				state = 237
+				state = 213
+			}
+			NOT = {
+				state = 245
+				state = 220
+				state = 240
+				state = 222
+			}
+		}
+		add_dynamic_modifier = { modifier = sov_ural_safe_zone scope = SOV }
+	}
+}
+
+ww2_allies_occupy_germany = {
+	create_dynamic_country = {
+		original_tag = GER
+		copy_tag = USA
+		add_ideas = acg_allied_occupation
+		set_country_flag = american_occupied_germany_flag
+		set_cosmetic_tag = GER_ALLIED_OCP
+		transfer_state = 52
+		transfer_state = 53
+		transfer_state = 54
+		transfer_state = 55
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.9
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = ACG_DEMOCRATIC_PARTY_LONG
+			name = ACG_DEMOCRATIC_PARTY_SHORT
+		}
+		create_country_leader = {
+			name = USA_dwight_d_eisenhower
+			picture = "gfx/leaders/GER/Eisenhower_Governor.dds"
+			expire = "1969.1.1"
+			traits = { ACG_ike ACG_supreme_commander_of_allied }
+			ideology = conservatism
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = PREV
+			}
+			add_core_of = PREV
+		}
+		USA = {
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_eywor_occupation_government
+			}
+		}
+	}
+	create_dynamic_country = {
+		original_tag = GER
+		copy_tag = ENG
+		add_ideas = acg_allied_occupation
+		set_country_flag = british_occupied_germany_flag
+		set_cosmetic_tag = GER_ALLIED_OCP
+		transfer_state = 51
+		transfer_state = 57
+		transfer_state = 56
+		transfer_state = 59
+		transfer_state = 58
+		transfer_state = 909
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.9
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = ACG_DEMOCRATIC_PARTY_LONG
+			name = ACG_DEMOCRATIC_PARTY_SHORT
+		}
+		create_country_leader = {
+			name = ENG_bernard_montgomery
+			picture = "gfx/leaders/GER/Montgomery_Governor.dds"
+			expire = "1969.1.1"
+			traits = {}
+			ideology = conservatism
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = PREV
+			}
+			add_core_of = PREV
+		}
+		ENG = {
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_eywor_occupation_government
+			}
+		}
+	}
+	create_dynamic_country = {
+		original_tag = GER
+		copy_tag = FRA
+		add_ideas = acg_allied_occupation
+		set_country_flag = french_occupied_germany_flag
+		set_cosmetic_tag = GER_ALLIED_OCP
+		transfer_state = 42
+		transfer_state = 50
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.9
+		}
+		set_party_name = {
+			ideology = democratic
+			long_name = ACG_DEMOCRATIC_PARTY_LONG
+			name = ACG_DEMOCRATIC_PARTY_SHORT
+		}
+		create_country_leader = {
+			name = FRA_marie_pierre_koenig
+			picture = "gfx/leaders/GER/Marie_Governor.dds"
+			expire = "1969.1.1"
+			traits = {}
+			ideology = conservatism
+		}
+		every_owned_state = {
+			limit = {
+				is_controlled_by = PREV
+			}
+			add_core_of = PREV
+		}
+		FRA = {
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_eywor_occupation_government
+			}
+		}
+	}
+}
+
+prc_form_shandong_military_region = {
+	create_dynamic_country = {
+		original_tag = SHD
+		set_cosmetic_tag = SHD_SMR
+		load_focus_tree = smr_base_area_focus
+		add_ideas = unbalanced_industry
+		add_ideas = no_proper_equipment_design
+		add_ideas = incompetent_heavy_industry
+		add_ideas = iliterate_population
+		add_ideas = PRC_SHD_guerilla_leader
+		add_ideas = PRC_SHD_popular_support
+		add_ideas = PRC_SHD_guerilla_warfare
+		set_capital = { state = 597 } #Jinan
+		set_politics = {
+			ruling_party = communism
+			elections_allowed = no
+		}
+		set_popularities = {
+			communism = 100
+		}     
+		set_party_name = {
+			ideology = communism
+			name = "SPPC"
+			long_name = "Shantung Provincial Party Committee Of The Chinese Communist Party"
+		}    
+		create_country_leader = {
+			name = "Zhang Jingwu"
+			picture = "gfx/leaders/SHD/Portrait_SHD_zhang_jingwu.dds"
+			expire = "1971.10.27"
+			traits = { SMR_peasantry_origins }
+			ideology = maoism
+		}
+		create_field_marshal  = {
+			name = "Zhang Jingwu"
+			picture = "gfx/leaders/SHD/Portrait_SHD_zhang_jingwu.dds"
+			traits = { organizer logistics_wizard defensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=7
+			planning_skill=4
+			logistics_skill=6
+		}
+		create_corps_commander = {
+			name = PRC_chen_guang
+			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Chen_Guang.dds"
+			traits = { infantry_officer extra_specialized_skill }
+			skill=3
+			attack_skill=3
+			defense_skill=3
+			planning_skill=3
+			logistics_skill=3
+		}
+		create_corps_commander = {
+			name = PRC_zhu_rui
+			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Zhu_Rui.dds"
+			traits = { artillery_officer }
+			skill=2
+			attack_skill=1
+			defense_skill=2
+			planning_skill=2
+			logistics_skill=2
+		}
+		create_corps_commander = {
+			name = PRC_luo_ronghuan
+			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Luo_Ronghuan.dds"
+			traits = { politically_connected military_political_commissar }
+			skill=4
+			attack_skill=4
+			defense_skill=4
+			planning_skill=4
+			logistics_skill=5
+		}
+		create_corps_commander = {
+			name = PRC_xu_xiangqian
+			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Xu_Xiangqian.dds"
+			traits = { career_officer infantry_officer extra_specialized_skill trait_mountaineer }
+			skill=4
+			attack_skill=3
+			defense_skill=5
+			planning_skill=4
+			logistics_skill=4
+		}
+		PRC = {
+			set_autonomy = {
+				target = PREV
+				autonomy_state = autonomy_eywor_prc_military_region
+				end_wars = no
+				end_civil_wars = no
+			}
+		}
+		every_state = {
+			limit = {
+				OR = {
+					state = 597
+					state = 1028
+					state = 1071
+					state = 1072
+				}
+			}
+			add_core_of = PREV 
+			add_dynamic_modifier = {
+				modifier = prc_dynamic_modifier_shandong_guerillas
+				scope = PREV
+			}
+		}
+		1071 = {
+			set_state_owner_to = PREV
+		}
+	}
+}
+
+prc_shd_random_partisans_in_shantung = {
+	if = {
+		limit = {
+			NOT = { has_template = "Shantung Zongdui" }
+		}
+		division_template = {
+			name = "Shantung Zongdui"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = BA_infiltrate_hebei
+			NOT = {
+				OR = {
+					has_completed_focus = BA_infiltrate_henan
+					has_completed_focus = BA_infiltrate_shanxi
+				}
+			}
+		}
+		random_list = {
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7160
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10043
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				1072 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12069
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1084
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4071
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				614 = {
+					create_unit = {
+						division = "name = \"Hopeh Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1169
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Hopeh Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12062
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				614 = {
+					create_unit = {
+						division = "name = \"Hopeh Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1188
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Hopeh Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4114
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+						base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = BA_infiltrate_shanxi
+			NOT = {
+				OR = {
+					has_completed_focus = BA_infiltrate_hebei
+					has_completed_focus = BA_infiltrate_henan
+				}
+			}
+		}
+		random_list = {
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7160
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10043
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				1072 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12069
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1084
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4071
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1027 = {
+					create_unit = {
+						division = "name = \"Shansi Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10421
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Shansi Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12062
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1027 = {
+					create_unit = {
+						division = "name = \"Shansi Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7571
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Shansi Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1180
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+						base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = BA_infiltrate_henan
+			NOT = {
+				OR = {
+					has_completed_focus = BA_infiltrate_hebei
+					has_completed_focus = BA_infiltrate_shanxi
+				}
+			}
+		}
+		random_list = {
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7160
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10043
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				1072 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12069
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1084
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4071
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1043 = {
+					create_unit = {
+						division = "name = \"Honan Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10098
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Honan Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4066
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+		}
+	}
+	if = {
+		limit = {
+			has_completed_focus = BA_infiltrate_henan
+			has_completed_focus = BA_infiltrate_hebei
+			has_completed_focus = BA_infiltrate_shanxi
+		}
+		random_list = {
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7160
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10043
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				1072 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12069
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1084
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4071
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1043 = {
+					create_unit = {
+						division = "name = \"Honan Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10098
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Honan Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4066
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1027 = {
+					create_unit = {
+						division = "name = \"Shansi Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7571
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Shansi Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1180
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+						base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				614 = {
+					create_unit = {
+						division = "name = \"Hopeh Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1188
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+					create_unit = {
+						division = "name = \"Hopeh Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4114
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+						base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+		}
+	}
+	else = {
+		random_list = {
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7160
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 10043
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				1072 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 12069
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+			10 = {
+				1071 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 1084
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+				597 = {
+					create_unit = {
+						division = "name = \"Shantung Zongdui Zhidui\" division_template = \"Shantung Zongdui\" start_experience_factor = 0.7"
+						count = 2
+						prioritize_location = 4071
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SMR
+					}
+				}
+			}
+		}
+	}
+}
+
+delete_ai_unit_templates = { #Infantry
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 1"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 2"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 3"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 4"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 5"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 6"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 7"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 8"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 9"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 10"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 11"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 12"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 13"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 14"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 15"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 16"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 17"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 18"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 19"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 20"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 21"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 22"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 23"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 24"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 25"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 26"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 27"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 28"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 29"
+   		disband = yes #will refund equipment and manpower
+	}
+	delete_unit_template_and_units = {
+    	division_template = "Infantry template 30"
+   		disband = yes #will refund equipment and manpower
+	}
+}
+
+unbalanced_industry_go_down_effect = {
+	if = {
+		limit = { has_idea = unbalanced_industry_3 }
+		remove_ideas = unbalanced_industry_3
+	}
+	if = {
+		limit = { has_idea = unbalanced_industry_2 }
+		swap_ideas = {
+			remove_idea = unbalanced_industry_2
+			add_idea = unbalanced_industry_3
+		}
+	}
+	if = {
+		limit = { has_idea = unbalanced_industry_1 }
+		swap_ideas = {
+			remove_idea = unbalanced_industry_1
+			add_idea = unbalanced_industry_2
+		}
+	}
+	if = {
+		limit = { has_idea = unbalanced_industry }
+		swap_ideas = {
+			remove_idea = unbalanced_industry
+			add_idea = unbalanced_industry_1
+		}
+	}
+}
+iliterate_population_go_down_effect = {
+	if = {
+		limit = { has_idea = iliterate_population_2 }
+		remove_ideas = iliterate_population_2
+	}
+	if = {
+		limit = { has_idea = iliterate_population_1 }
+		swap_ideas = {
+			remove_idea = iliterate_population_1
+			add_idea = iliterate_population_2
+		}
+	}
+	if = {
+		limit = { has_idea = iliterate_population }
+		swap_ideas = {
+			remove_idea = iliterate_population
+			add_idea = iliterate_population_1
+		}
+	}
+}
+communization_of_industries_go_up_effect = {
+	if = {
+		limit = { has_idea = CHI_nationalize_industry_2_focus }
+		swap_ideas = {
+			remove_idea = CHI_nationalize_industry_2_focus
+			add_idea = CHI_nationalize_industry_3_focus
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_nationalize_industry_1_focus }
+		swap_ideas = {
+			remove_idea = CHI_nationalize_industry_1_focus
+			add_idea = CHI_nationalize_industry_2_focus
+		}
+	}
+	if = {
+		limit = { NOT = { has_idea = CHI_nationalize_industry_1_focus } }
+		add_ideas = CHI_nationalize_industry_1_focus
+	}
+}
+poor_agricultural_life_go_down_effect = {
+	if = {
+		limit = { has_idea = yun_poor_agricultural_life_1 }
+		remove_ideas = yun_poor_agricultural_life_1
+	}
+	if = {
+		limit = { has_idea = yun_poor_agricultural_life_2 }
+		swap_ideas = {
+			remove_idea = yun_poor_agricultural_life_2
+			add_idea = yun_poor_agricultural_life_1
+		}
+	}
+	if = {
+		limit = { has_idea = yun_poor_agricultural_life_3 }
+		swap_ideas = {
+			remove_idea = yun_poor_agricultural_life_3
+			add_idea = yun_poor_agricultural_life_2
+		}
+	}
+}
+
+first_indochina_war_scripted_effect = {
+	every_state = {
+		limit = {
+		    is_core_of = LAO
+			NOT = { 
+				state = 984
+				state = 1095
+			}
+		}
+		set_demilitarized_zone = yes
+		set_state_flag = first_indochina_war_dmz_zone
+	}
+	every_state = {
+		limit = {
+			OR = {
+				region = 228
+				region = 142
+			}
+		}
+		add_dynamic_modifier = {
+			modifier = vietnam_war_unplanned_offensive
+		}
+	}
+	NVA = {
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = NVA
+			}
+			add_dynamic_modifier = { modifier = vietnam_war_unplanned_offensive_viet_minh scope = NVA }
+		}
+	}
+	FRA = {
+		add_ideas = nva_regional_war
+		declare_war_on = {
+            target = NVA
+            type = annex_everything
+        }
+		declare_war_on = {
+            target = NLF
+            type = annex_everything
+        }
+	}
+	FIC = {
+		add_to_war = {
+			targeted_alliance = FRA
+			enemy = NLF
+		}
+		add_to_war = {
+			targeted_alliance = FRA
+			enemy = NVA
+		}
+	}
+	if = {
+		limit = {
+			FEF = { exists = yes }
+		}
+		FEF = {
+			add_to_war = {
+				targeted_alliance = FRA
+				enemy = NLF
+			}
+			add_to_war = {
+				targeted_alliance = FRA
+				enemy = NVA
+			}
+			set_province_controller = 4119
+			set_province_controller = 1157
+			load_oob = "FIC_Indochina_War"
+		}
+		else = {
+			FRA = {
+				set_province_controller = 4119
+				set_province_controller = 1157
+				load_oob = "FIC_Indochina_War"
+			}
+		}
+	}
+	986 = {
+		add_building_construction = {
+    		type = naval_base
+    		level = 3
+   		 	instant_build = yes
+   		 	province = 1157
+		}
+		add_building_construction = {
+    		type = naval_base
+    		level = 1
+   		 	instant_build = yes
+   		 	province = 4119
+		}
+		add_building_construction = {
+    		type = bunker
+    		level = 5
+   		 	instant_build = yes
+   		 	province = 1157
+		}
+		add_building_construction = {
+    		type = bunker
+    		level = 5
+   		 	instant_build = yes
+   		 	province = 4119
+		}
+		teleport_armies = {
+			limit = {
+				tag = NVA
+			}
+			to_province = 4075
+		}
+	}
+	VIN = {
+		set_party_name = {
+	        ideology = neutrality
+	        long_name = "Liên Minh Quoc Gia (National Union)"
+	        name = "National Union"
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.4
+		}
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		create_country_leader = {
+			name = "Bao Dai"
+			desc = ""
+			picture = "gfx/leaders/VIN/Portrait_Vietnam_Bao_Dai.dds"
+			ideology = despotism
+		}
+		set_capital = {
+			state = 286 #Saigon
+			remember_old_capital = no
+		}
+		set_cosmetic_tag = state_of_vietnam
+		inherit_technology = FRA
+		add_ideas = limited_conscription
+		add_ideas = nva_regional_war
+		add_ideas = VIN_ARVN_idea
+		add_ideas = VIN_french_logistical_support
+		add_ideas = VIN_anti_communist_sentiments
+	}
+	NLF = {
+		add_ideas = expert_guerilla_idea
+		add_ideas = NLF_liberate_the_south
+		#load_oob = "NLF_Indochina_War"
+	}
+	LAO = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.7
+		}
+		set_cosmetic_tag = kingdom_of_laos
+		add_ideas = nva_regional_war
+	}
+	CAM = {
+		set_politics = {
+			ruling_party = neutrality
+			elections_allowed = no
+		}
+		add_popularity = {
+			ideology = neutrality
+			popularity = 0.7
+		}
+		set_cosmetic_tag = kingdom_of_cambodia
+		add_ideas = nva_regional_war
+	}
+	if = {
+		limit = {
+			NVA = {
+				NOT = {
+					has_character = NVA_nguyen_son
+				}
+			}
+		}
+		PRC = {
+			NVA_nguyen_son = {
+				unit_leader_event = {
+					id = cw_send_generals_home.1
+					hours = 12
+				}
+			}
+		}
+	}
+	set_global_flag = first_indochina_war_happened
+}
+
+start_indonesian_national_liberation_war = {
+	every_state = {
+		limit = {
+			is_owned_by = HOL
+		}
+		set_state_flag = state_was_owned_by_hol
+	}
+	USA = {
+		annex_country = {
+			target = HOL
+			transfer_troops = no
+		}
+	}
+	every_state = {
+		limit = {
+			has_state_flag = state_was_owned_by_hol
+		}
+		transfer_state_to = HOL
+	}
+	every_state = {
+		limit = {
+			has_state_flag = state_was_owned_by_hol
+		}
+		clr_state_flag = state_was_owned_by_hol
+	}
+	HOL = {
+		set_autonomy = {
+			target = INS
+			autonomous_state = autonomy_colony
+			freedom_level = 0.2
+		}
+		create_faction = HOL_COLONIAL_EMPIRE
+	}
+	INS = {
+		activate_mission = ROI_indonesian_national_liberation_war
+		set_cosmetic_tag = INS_HOL
+		set_popularities = {
+			democratic = 27
+			n_socialism = 7
+			fascism = 1
+			communism = 3
+			neutrality = 62
+		 }
+		set_politics = {
+			ruling_party = neutrality
+			last_election = "1935.11.14"
+			election_frequency = 48
+			elections_allowed = yes
+		}
+	}
+	every_state = {
+		limit = {
+			is_core_of = INS
+		}
+		add_core_of = ROI
+	}
+	ROI = {
+		inherit_technology = INS
+		transfer_state = 672
+		transfer_state = 335
+		load_oob = "ROI"
+		activate_mission = ROI_indonesian_national_liberation_war
+		declare_war_on = {
+			target = INS
+			type = annex_everything
+		}
+	}
+	HOL = {
+		if = {
+			limit = {
+			    has_dlc = "Man the Guns"
+		    }
+			load_oob = "HOL_1936_naval_mtg"
+			else = {
+			    load_oob = "HOL_1936_naval_legacy"
+			}
+		}
+		if = {
+			limit = {
+				has_dlc = "By Blood Alone"
+			}
+			load_oob = "HOL_1936_air_bba"
+			else = {
+				load_oob = "HOL_1936_air_legacy"
+			}
+		}
+		add_equipment_to_stockpile = {
+			type = convoy_1
+			amount = 100
+			producer = HOL
+		}
+		## Palembang
+		set_province_controller	= 7384
+		set_province_controller	= 7396
+		set_province_controller	= 4211
+		set_province_controller	= 12268
+		set_province_controller	= 1401
+		## West
+		set_province_controller	= 4652
+		## East
+		set_province_controller	= 12277
+		set_province_controller	= 4306
+		load_oob = "HOL_indonesian_war"
+		activate_mission = ROI_indonesian_national_liberation_war
+	}
+	672 = {
+		add_building_construction = {
+			type = naval_base
+            level = 3
+            instant_build = yes
+           	province = 12268
+        }
+		add_building_construction = {
+			type = naval_base
+        	level = 2
+        	instant_build = yes
+        	province = 4652
+        }
+	}
+	335 = {
+		add_building_construction = {
+			type = naval_base
+        	level = 3
+            instant_build = yes
+        	province = 12277
+        }
+		add_building_construction = {
+			type = naval_base
+    		level = 2
+    		instant_build = yes
+    		province = 4306
+    	}
+	}
+	every_state = {
+		limit = {
+			is_core_of = INS
+		}
+		add_dynamic_modifier = { modifier = cw_indonesian_war_modifier }
+	}
+}
+
+CHI_increase_anti_japanese_sentiment = {
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_9 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_9
+			add_idea = chi_anti_japanese_sentiment_10
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_8 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_8
+			add_idea = chi_anti_japanese_sentiment_9
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_7 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_7
+			add_idea = chi_anti_japanese_sentiment_8
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_6 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_6
+			add_idea = chi_anti_japanese_sentiment_7
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_5 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_5
+			add_idea = chi_anti_japanese_sentiment_6
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_4 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_4
+			add_idea = chi_anti_japanese_sentiment_5
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_3 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_3
+			add_idea = chi_anti_japanese_sentiment_4
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_2 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_2
+			add_idea = chi_anti_japanese_sentiment_3
+		}
+	}
+	if = {
+		limit = { has_idea = chi_anti_japanese_sentiment_1 }
+		swap_ideas = {
+			remove_idea = chi_anti_japanese_sentiment_1
+			add_idea = chi_anti_japanese_sentiment_2
+		}
+	}
+	if = {
+		limit = {
+			NOT = { 
+				OR = {
+					has_idea = chi_anti_japanese_sentiment_1 
+					has_idea = chi_anti_japanese_sentiment_2
+					has_idea = chi_anti_japanese_sentiment_3 
+					has_idea = chi_anti_japanese_sentiment_4 
+					has_idea = chi_anti_japanese_sentiment_5 
+					has_idea = chi_anti_japanese_sentiment_6 
+					has_idea = chi_anti_japanese_sentiment_7 
+					has_idea = chi_anti_japanese_sentiment_8 
+					has_idea = chi_anti_japanese_sentiment_9 
+				    has_idea = chi_anti_japanese_sentiment_10
+				}
+			}
+		}
+		add_ideas = chi_anti_japanese_sentiment_1
+	}
+}
+
+CHI_clr_all_anti_jap_sentiment_idea = {
+	remove_ideas = {
+		chi_anti_japanese_sentiment_1
+		chi_anti_japanese_sentiment_2
+		chi_anti_japanese_sentiment_3
+		chi_anti_japanese_sentiment_4
+		chi_anti_japanese_sentiment_5
+		chi_anti_japanese_sentiment_6
+		chi_anti_japanese_sentiment_7
+		chi_anti_japanese_sentiment_8
+		chi_anti_japanese_sentiment_9
+		chi_anti_japanese_sentiment_10
+	}
+}
+
+CHI_increase_corruption_modifier = {
+	custom_effect_tooltip = increase_chi_corruption_tt
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_factor 
+	    value = -0.01 
+	}
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_cost_factor 
+	    value = 0.01 
+	}
+}
+CHI_increase_corruption_modifier_bigger = {
+	custom_effect_tooltip = increase_chi_corruption_bigger_tt
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_factor 
+	    value = -0.02
+	}
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_cost_factor 
+	    value = 0.02 
+	}
+}
+CHI_increase_corruption_modifier_even_bigger = {
+	custom_effect_tooltip = increase_chi_corruption_even_bigger_tt
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_factor 
+	    value = -0.04
+	}
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_cost_factor 
+	    value = 0.04
+	}
+}
+CHI_decrease_corruption_modifier = {
+	custom_effect_tooltip = chi_decrease_kuomintang_corruption_tt
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_factor 
+		value = 0.01 
+	}
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_cost_factor 
+		value = -0.01 
+	}
+}
+CHI_decrease_corruption_modifier_bigger = {
+	custom_effect_tooltip = chi_decrease_kuomintang_corruption_bigger_tt
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_factor 
+		value = 0.02
+	}
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_cost_factor 
+		value = -0.02
+	}
+}
+CHI_decrease_corruption_modifier_even_bigger = {
+	custom_effect_tooltip = chi_decrease_kuomintang_corruption_even_bigger_tt
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_factor 
+		value = 0.04
+	}
+	add_to_variable = { 
+		var = CHI_kuomintang_corruption_cost_factor 
+		value = -0.04
+	}
+}

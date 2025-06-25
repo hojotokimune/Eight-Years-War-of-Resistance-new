@@ -1,0 +1,401 @@
+add_namespace = prc_xinkangri
+country_event = {
+	id = prc_xinkangri.1
+	title = rcmchina.282.t
+	desc = rcmchina.282.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	is_triggered_only = yes
+	option = {
+		name = rcmchina.282.a
+		ai_chance = { factor = 100 }
+		JAP = {
+			country_event = prc_xinkangri.2
+		}
+		#to check if is the leader of china, so it can reset as leader of china afterwards due to reports of HPC holding as leader after the peace
+		hidden_effect = {
+			if = {
+				limit = {
+					tag = event_target:WTT_current_china_leader
+				}
+				set_country_flag = temp_current_china_leader
+			}
+		}
+	}
+}
+#to JAP
+country_event = {
+	id = prc_xinkangri.2
+	title = rcmchina.283.t
+	desc = rcmchina.283.d
+	picture = GFX_report_event_japanese_chinese_surrender
+	is_triggered_only = yes
+	option = {
+		name = rcmchina.283.a
+		ai_chance = {
+			factor = 100
+			#base = 80
+			#modifier = {
+			#	factor = 100
+			#	OR = {
+			#		has_war_with = USA
+			#		has_war_with = SOV
+			#	}
+			#}
+		}
+		country_event = rcmjapan_defeated.1
+		effect_tooltip = {
+			white_peace = FROM
+			drop_lands_in_china = yes
+			527 = { FROM = { transfer_state = PREV } }
+			525 = { FROM = { transfer_state = PREV } }
+			1003 = { FROM = { transfer_state = PREV } }
+			1004 = { FROM = { transfer_state = PREV } }
+			1000 = { FROM = { transfer_state = PREV } }
+			1001 = { FROM = { transfer_state = PREV } }
+			999 = { FROM = { transfer_state = PREV } }
+			1002 = { FROM = { transfer_state = PREV } }
+		}
+		FROM = {
+			country_event = prc_xinkangri.3
+		}
+	}
+	option = {
+		name = rcmchina.283.b
+		ai_chance = {
+			factor = 0
+			#modifier = {
+			#	factor = 0
+			#	OR = {
+			#		JAP = {
+			#			has_war_with = USA
+			#		}
+			#		JAP = {
+			#			has_war_with = SOV
+			#		}
+			#	}
+			#}
+		}
+		FROM = {
+			country_event = prc_xinkangri.4
+		}
+	}
+}
+#accepted
+country_event = {
+	id = prc_xinkangri.3
+	title = rcmchina.284.t
+	desc = rcmchina.284.d
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	immediate = {
+		#all mainland troops return to home islands
+		
+		if = { #check if HPC somehow steals the leadership
+			limit = {
+				exists = yes
+				has_country_flag = temp_current_china_leader
+				NOT = {
+					tag = event_target:WTT_current_china_leader
+				}
+			}
+			event_target:WTT_current_china_leader = {
+				if = {	limit = { NOT = { tag = ROOT } }
+					set_variable = { global.previous_china_leader = THIS }
+				}
+			}
+			clear_global_event_target = WTT_current_china_leader
+			save_global_event_target_as = WTT_current_china_leader
+		}
+	    #hidden_effect = { #remove trigger will do
+		#   remove_suiyuan_stronghold = yes
+	    #}
+	}
+	option = {#RELEASE KOR
+		name = rcmchina.284.a
+		ai_chance = { factor = 100 }
+		trigger = {
+			NOT = {
+				MAN = {
+					OR = {
+						controls_state = 527
+						controls_state = 525
+						controls_state = 1003
+						controls_state = 1004
+						controls_state = 1000
+						controls_state = 1001
+						controls_state = 999
+						controls_state = 1002
+					}
+				}
+			}
+		}
+		for_each_scope_loop = { #send Japan's troops back home
+			array = global.big_china
+			tooltip = big_china_tt
+			teleport_armies = { 
+				to_state = 282
+				limit = {
+					tag = JAP
+					# trigger will be checked for owner of armies and will only teleport if true. scope if the owner of the army and prev is the scope that calls teleport_armies
+				} 
+			}
+		}
+		KOR = {
+			every_owned_state = {
+				teleport_armies = { 
+					to_state = 282
+					limit = {
+						tag = JAP
+						# trigger will be checked for owner of armies and will only teleport if true. scope if the owner of the army and prev is the scope that calls teleport_armies
+					} 
+				}
+			}
+			every_controlled_state = {
+				teleport_armies = { 
+					to_state = 282
+					limit = {
+						tag = JAP
+						# trigger will be checked for owner of armies and will only teleport if true. scope if the owner of the army and prev is the scope that calls teleport_armies
+					} 
+				}
+			}
+		}
+		hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+						controls_state = 527
+						controls_state = 525
+						controls_state = 999
+						controls_state = 1000
+						controls_state = 1001
+						controls_state = 1002
+						controls_state = 1003
+						controls_state = 1004
+					}
+				}
+				set_global_flag = socialist_korea_flag
+			}
+			if = {
+				limit = {
+					event_target:WTT_communist_china = {
+						has_war_together_with = ROOT
+					}
+				}
+				set_global_flag = communist_china_liberates_too_flag
+			}
+		    if = {
+				limit = {
+						728 = { is_owned_by = JAP }
+					      }
+				transfer_state = 728
+				}
+		}
+		custom_effect_tooltip = this_might_take_a_while_to_load_tt
+		custom_effect_tooltip = blank_line
+		peace_with_japan_land_partition_tg = yes
+		KOR = {
+			transfer_state = 527 
+			transfer_state = 525 
+			transfer_state = 999 
+			transfer_state = 1000 
+			transfer_state = 1001 
+			transfer_state = 1002 
+			transfer_state = 1003 
+			transfer_state = 1004 
+		}
+		hidden_effect = {
+			white_peace = KOR
+		}
+	    news_event = {
+			id = news.888
+		}		
+		effect_tooltip = {
+			add_opinion_modifier = {
+				target = ROOT modifier = liberator
+			}
+			if = {
+				limit = {
+					event_target:WTT_communist_china = {
+						has_war_together_with = ROOT
+					}
+				}
+				add_opinion_modifier = {
+					target = event_target:WTT_communist_china modifier = liberator
+				}
+			}
+		}
+		hidden_effect = {
+			ROOT = {
+				transfer_state = 524
+			}
+			KOR = {
+				if = {
+					limit = {
+						has_global_flag = socialist_korea_flag
+					}
+					set_popularities = {
+						democratic = 10
+						fascism = 10
+						communism = 10
+						n_socialism = 60
+						neutrality = 10
+					}
+					set_politics = {
+						ruling_party = n_socialism
+					}
+					else = {
+						add_opinion_modifier = {
+							target = ROOT modifier = liberator
+						}
+						if = {
+							limit = {
+								has_global_flag = communist_china_liberates_too_flag
+							}
+							add_opinion_modifier = {
+								target = event_target:WTT_communist_china modifier = liberator
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	option = {#MAN CONTROLS KOREA
+		name = rcmchina.284.b
+		trigger = {
+			MAN = {
+				OR = {
+					controls_state = 527
+					controls_state = 525
+					controls_state = 999
+					controls_state = 1000
+					controls_state = 1001
+					controls_state = 1002
+                    controls_state = 1003
+					controls_state = 1004					
+				}
+			}
+		}
+		for_each_scope_loop = {
+			array = global.big_china
+			tooltip = big_china_tt
+			if = {
+				limit = {
+					NOT = {
+						is_controlled_by = MAN
+					}
+				}
+				teleport_armies = { 
+					to_state = 282
+					limit = {
+						tag = JAP
+						# trigger will be checked for owner of armies and will only teleport if true. scope if the owner of the army and prev is the scope that calls teleport_armies
+					} 
+				}
+			}
+		}
+		KOR = {
+			every_owned_state = {
+				teleport_armies = { 
+					to_state = 282
+					limit = {
+						tag = JAP
+						# trigger will be checked for owner of armies and will only teleport if true. scope if the owner of the army and prev is the scope that calls teleport_armies
+					} 
+				}
+			}
+			every_controlled_state = {
+				teleport_armies = { 
+					to_state = 282
+					limit = {
+						tag = JAP
+						# trigger will be checked for owner of armies and will only teleport if true. scope if the owner of the army and prev is the scope that calls teleport_armies
+					} 
+				}
+			}
+		}
+		ai_chance = { factor = 100 }
+		custom_effect_tooltip = this_might_take_a_while_to_load_tt
+		custom_effect_tooltip = blank_line
+		peace_with_japan_land_partition_tg = yes
+	}
+	option = {#PUPPET KOR#NO RED MANCH
+		name = rcmchina.284.c
+		trigger = {
+			always = no #it cause CTD
+			ROOT = {
+				controls_state = 527
+				controls_state = 525
+				controls_state = 999
+				controls_state = 1000
+				controls_state = 1001
+				controls_state = 1002
+				controls_state = 1003
+				controls_state = 1004
+			}
+		}
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = this_might_take_a_while_to_load_tt
+		custom_effect_tooltip = blank_line
+		peace_with_japan_land_partition_tg = yes
+		KOR = {
+			transfer_state = 527 
+			transfer_state = 525 
+			transfer_state = 999 
+			transfer_state = 1000 
+			transfer_state = 1001 
+			transfer_state = 1002 
+			transfer_state = 1003 
+			transfer_state = 1004 
+		}
+		hidden_effect = {
+			white_peace = KOR
+			country_event = {
+				days = 2 id = rcmchina_puppet_korea.1
+			}
+		}
+		effect_tooltip = {
+			puppet = KOR
+		}
+	}
+	option = {#ANNEX KOR#NO RED MANCH
+		name = rcmchina.284.e
+		trigger = {
+			always = no #MODDED
+			ROOT = {
+				controls_state = 527
+				controls_state = 525
+				controls_state = 999
+				controls_state = 1000
+				controls_state = 1001
+				controls_state = 1002
+				controls_state = 1003
+				controls_state = 1004
+			}
+		}
+		ai_chance = { factor = 0 }
+		custom_effect_tooltip = this_might_take_a_while_to_load_tt
+		custom_effect_tooltip = blank_line
+		peace_with_japan_land_partition_tg = yes
+		transfer_state = 527 
+		transfer_state = 525 
+		transfer_state = 999 
+		transfer_state = 1000
+		transfer_state = 1001 
+		transfer_state = 1002 
+		transfer_state = 1003 
+		transfer_state = 1004
+	}
+}
+#rejected
+country_event = {
+	id = prc_xinkangri.4
+	title = rcmchina.285.t
+	desc = rcmchina.285.d
+	picture = GFX_report_event_chinese_officers
+	is_triggered_only = yes
+	option = {
+		name = rcmchina.285.a
+	}
+}

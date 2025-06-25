@@ -1,0 +1,44 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_unit_zhengwei_team_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_zhengwei_team_icon.dds"
+		no0Frames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_teaching_team_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_teaching_team_icon.dds"
+		no0Frames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_broadsword_team_icon_medium_white"
+		texturefile = "gfx/interface/counters/divisions_small/onmap_unit_broadsword_team_icon.dds"
+		no0Frames = 2
+	}
+
+
+
+
+	spriteType = {
+		name = "GFX_unit_zhengwei_team_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/unit_zhengwei_team_icon.dds"
+		no0Frames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_teaching_team_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/unit_teaching_team_icon.dds"
+		no0Frames = 2
+	}
+
+	spriteType = {
+		name = "GFX_unit_broadsword_team_icon_medium"
+		texturefile = "gfx/interface/counters/divisions_large/unit_broadsword_team_icon.dds"
+		no0Frames = 2
+	}
+
+
+	
+}

@@ -1,0 +1,1217 @@
+leon_bum_is_cool = {
+	enable = {
+		tag = ENG
+		FRA = { has_completed_focus = FRA_go_with_britain }
+		country_exists = FRA
+	}
+	abort = {
+		NOT = { country_exists = FRA }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "FRA"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "FRA"			
+		value = 200
+	}	
+}
+Socialist_countries_are_mostly_cool = {
+	enable = {
+		OR = {
+			#tag = DEN
+			#tag = NOR
+			tag = NZL
+			tag = AUS
+		}
+		OR = {
+			has_government = n_socialism
+			has_government = democratic
+		}
+		ENG = {
+			OR = {
+				has_government = n_socialism
+				has_government = democratic
+			}
+		}
+	}
+	abort = {
+		NOT = { country_exists = ENG }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ENG"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 200
+	}	
+}
+Socialist_countries_are_mostly_cool = {
+	enable = {
+		OR = {
+			has_government = n_socialism
+			has_government = democratic
+		}
+		CHI = {
+			OR = {
+				has_government = n_socialism
+				has_government = democratic
+			}
+		}
+	}
+	abort = {
+		NOT = { country_exists = ENG }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "CHI"			
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHI"			
+		value = 50
+	}	
+}
+
+ENG_dont_like_SIK = {
+	enable = {
+		OR = {
+			tag = ENG
+			tag = FRA
+            tag = NZL
+			tag = AST
+		    tag = CAN
+            tag = IRE
+            tag = USA
+            tag = LIT
+            tag = LAT
+            tag = EST
+            tag = SAU
+            tag = AFG
+            tag = TUR
+            tag = PER
+            tag = IRQ
+            tag = MON
+            tag = TAN
+            tag = PAR
+            tag = NOR
+            tag = DEN
+		}
+	    SIK = { has_government = communism }
+    }
+
+	abort_when_not_enabled = yes
+       
+    ai_strategy = {
+		type = befriend
+		id = "SIK"			
+		value = -5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SIK"			
+		value = -5000
+	}	
+    ai_strategy = {
+		type = protect
+		id = "SIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = diplo_action_desire
+		id = "SIK"
+		target = guarantee
+		value = -5000
+	}
+    ai_strategy = {
+		type = ignore
+		id = "SIK"
+		value = 5000
+	}
+    ai_strategy = {
+		type = diplo_action_desire
+		id = SIK
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SIK
+		target = docking_rights
+		value = -5000
+	}
+}
+
+ENG_USA_d_day2 = {
+	enable = {
+		OR = {
+		    tag = ENG
+	        tag = USA
+		}
+		date > 1944.5.1
+	    is_historical_focus_on = yes
+	    has_war_with = GER
+	}
+    abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = "GER"
+		value = 6000
+	}
+     ai_strategy = {
+		type = invasion_unit_request
+		tag = GER
+		value = 8
+	}
+    ai_strategy = {
+		type = area_priority
+		id = normandy_landing_zone
+		value = 500
+	}
+}
+#IN CASE ITALY GOT NORTHERN FRANCE
+ENG_USA_d_day3 = {
+	enable = {
+		OR = {
+		    tag = ENG
+	        tag = USA
+		}
+		date > 1944.5.1
+	    is_historical_focus_on = yes
+	    has_war_with = GER
+	    has_war_with = ITA
+	    OR = {
+		    16 = { is_controlled_by = ITA }
+	        15 = { is_controlled_by = ITA }
+	    }
+	}
+    abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = "ITA"
+		value = 8000
+	}
+    ai_strategy = {
+		type = invasion_unit_request
+		tag = ITA
+		value = 8
+	}
+    ai_strategy = {
+		type = area_priority
+		id = normandy_landing_zone
+		value = 500
+	}
+}
+
+ENG_USA_italy = {
+	enable = {
+		OR = {
+		    tag = ENG
+	        tag = USA
+		}
+		date > 1943.2.1
+	    #is_historical_focus_on = yes
+	    date < 1944.7.1
+	    has_war_with = ITA
+	}
+    abort_when_not_enabled = yes
+	ai_strategy = {
+		type = area_priority
+		id = italy_area
+		value = 400
+	}
+    ai_strategy = {
+		type = invade
+		id = "ITA"
+		value = 10000
+	}
+    ai_strategy = {
+		type = invasion_unit_request
+		tag = ITA
+		value = 5
+	}
+    ai_strategy = {
+		type = invade
+		id = "ITA"
+		value = 5000
+	}
+}
+
+ENG_landing_north_first_then_south = {
+	enable = {
+		OR = {
+		    tag = ENG
+	        tag = USA
+		}
+		16 = { is_controlled_by = FRA }
+	    15 = { is_controlled_by = FRA }
+		date > 1944.1.1
+	}
+    abort = {
+	  OR = {
+	    NOT = { 
+	        16 = { is_controlled_by = FRA }
+	        15 = { is_controlled_by = FRA } 
+	    }
+	    NOT = { has_war_with = GER }
+	  }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = southern_france_area
+		value = 40
+	}
+}
+
+ENG_dont_landing_south_before_north = {
+	enable = {
+		OR = {
+		    tag = ENG
+	        tag = USA
+		}
+		NOT = {
+		    16 = { is_controlled_by = FRA }
+	        15 = { is_controlled_by = FRA }
+		}
+		has_war_with = GER
+	}
+    abort = {
+	    16 = { is_controlled_by = FRA }
+	    15 = { is_controlled_by = FRA } 
+	    NOT = { has_war_with = GER }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = southern_france_area
+		value = -100
+	}
+}
+
+ENG_let_SEA_fall = {
+	enable = {
+		OR = {
+		    is_in_faction_with = ENG
+		    tag = ENG
+			is_subject_of = ENG 
+			
+			tag = USA #guo
+		}
+		has_war_with = JAP
+	    has_war_with = GER
+		
+		date < 1944.1.1 #guo
+	}
+    abort = {
+	    NOT = {
+		    has_war_with = GER
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = area_priority
+        id = just_philippines
+        value = -999
+    }
+	ai_strategy = {
+        type = area_priority
+        id = pacific_SEA
+        value = -50
+    }
+
+    ai_strategy = { #guo 
+		type = dont_defend_ally_borders
+		id = "PHI"
+		value = 9999
+	}
+	ai_strategy = { #guo 
+		type = garrison
+		id = "PHI"
+		value = -9999
+	}
+	ai_strategy = { #guo 
+		type = ignore
+		id = "PHI"
+		value = 9999
+	}
+	ai_strategy = { #guo 
+		type = protect
+		id = "PHI"
+		value = -9999
+	}
+	ai_strategy = { #guo 
+		type = dont_defend_ally_borders
+		id = "INS"
+		value = 9999
+	}
+	ai_strategy = { #guo 
+		type = ignore
+		id = "INS"
+		value = 9999
+	}
+	ai_strategy = { #guo 
+		type = protect
+		id = "INS"
+		value = -9999
+	}
+	ai_strategy = { #guo 
+		type = garrison
+		id = "INS"
+		value = -9999
+	}
+	ai_strategy = { #guo 
+	 	type = front_unit_request
+		strategic_region = 160
+		strategic_region = 159
+		strategic_region = 187
+		strategic_region = 188
+		strategic_region = 248
+		value = -999
+	}
+	ai_strategy = { #guo 
+	 	type = invasion_unit_request
+		strategic_region = 160
+		strategic_region = 159
+		strategic_region = 187
+		strategic_region = 188
+		strategic_region = 248
+		value = -999
+	}
+	ai_strategy = { #guo 
+	 	type = front_unit_request
+		state = 326
+		state = 592
+		state = 668
+		state = 673
+		
+		value = -999
+	}
+	ai_strategy = { #guo 
+	 	type = invasion_unit_request
+		state = 326
+		state = 592
+		state = 668
+		state = 673
+		
+		value = -999
+	}
+	
+	ai_strategy = { #guo 
+	 	type = front_unit_request
+		state = 733
+		
+		value = -999
+	}
+	ai_strategy = { #guo 
+	 	type = invasion_unit_request
+		state = 733
+		
+		value = -999
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BUR"
+		value = 2000
+	}
+    
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "MAL"
+		value = 2000
+	}
+  
+    ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SST"
+		value = 2000
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FIC"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUN"
+		value = 2000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GXC"
+		value = 2000
+	}
+	
+}
+
+ENG_dont_invade_jap_b4_ger_died = {#guo
+	enable = {
+		is_ally_faction_country = yes
+		has_war_with = JAP
+	    has_war_with = GER
+		date < 1944.9.1
+		669 = { is_controlled_by_ROOT_or_ally = yes }
+		523 = { is_controlled_by_ROOT_or_ally = yes }
+		737 = { is_controlled_by_ROOT_or_ally = yes }
+		634 = { is_controlled_by_ROOT_or_ally = yes }
+		
+		630 = { is_controlled_by_ROOT_or_ally = yes }
+		631 = { is_controlled_by_ROOT_or_ally = yes }
+		629 = { is_controlled_by_ROOT_or_ally = yes }
+		520 = { is_controlled_by_ROOT_or_ally = yes }
+		
+		646 = { is_controlled_by_ROOT_or_ally = yes }
+		647 = { is_controlled_by_ROOT_or_ally = yes }
+		638 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+    abort = {
+	    if = {
+		limit = { is_in_faction_with = FRA }
+		FRA = { surrender_progress < 0.5 }
+		}
+		else = { always = yes }
+		
+		14 = { is_controlled_by_ROOT_or_ally = yes }
+		15 = { is_controlled_by_ROOT_or_ally = yes }
+		16 = { is_controlled_by_ROOT_or_ally = yes }
+		785 = { is_controlled_by_ROOT_or_ally = yes }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "JAP"
+		value = -5000
+	}
+    ai_strategy = {
+		type = invasion_unit_request
+		tag = JAP 
+		value = -5000
+	}
+	
+    ai_strategy = {
+		type = invade
+		id = "SIA"
+		value = -5000
+	}
+    ai_strategy = {
+		type = invasion_unit_request
+		tag = SIA 
+		value = -5000
+	}
+}
+
+SEA_countries_should_be_weak = {
+	enable = {
+		OR = {
+		    tag = INS
+            tag = BUR
+		    tag = PHI
+		} 
+		is_historical_focus_on = yes
+	    has_army_manpower = { size > 99999 }
+	}
+    abort = {
+	    has_army_manpower = { size < 99999 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -9999 
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -9999
+	}
+    
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -9999
+	}
+
+	ai_strategy = {
+        type = force_build_armies
+        value = -9999
+	}
+}  
+
+china_help_burma_a_bit = {
+	enable = {
+		is_literally_china = yes
+	    NOT = {
+		    has_war_with = BUR
+			OR = {
+		        tag = SHX
+                tag = PLM
+		        tag = NXM
+		        tag = XSM 
+		        tag = SIK 
+		        tag = PRC
+		        tag = TNG
+			    tag = HMI
+				tag = KHR
+				tag = XIA
+				tag = KRS
+				tag = ATM 
+			}
+		}
+        BUR = { has_war_with = JAP }
+	    has_war_with = JAP
+	    BUR = { surrender_progress > 0.5 }
+	}
+	abort_when_not_enabled = yes
+       
+    ai_strategy = {
+		type = support
+		id = "BUR"
+		value = 10
+	}
+    ai_strategy = {
+		type = diplo_action_desire
+		id = BUR
+		target = military_access
+		value = 100
+	}
+}
+
+Raj_japan_and_siam_are_dangerous = {
+	enable = {
+		tag = RAJ
+		has_war_with = JAP
+		any_owned_state = {
+		    NOT = { is_controlled_by = RAJ } 
+		}
+	}
+	abort = {
+	    NOT = {
+		    has_war_with = JAP
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ENG"
+		value = 200
+	}
+    
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "USA"
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 200
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GRE"
+		value = 200
+	}
+	
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "RAJ"
+		value = 2000
+	}
+}
+
+dont_make_ww3_greece = {
+	enable = {
+		tag = GRE
+		is_major = no
+	}
+	abort = {
+		is_major = yes
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = "ALB"
+		value = 9999
+	}
+}
+
+SWI_dont_join_alllies_unless_germany_invades = {
+	enable = {
+		is_historical_focus_on = yes
+		OR = {
+			tag = SWI
+            tag = IRE
+		}
+        has_war = no
+	}
+    
+	#abort = {
+	#    has_war = yes 
+	#}
+	
+	abort_when_not_enabled = yes
+       
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = -5000
+	}	
+    ai_strategy = {
+		type = alliance
+		id = "USA"			
+		value = -5000
+	}
+}
+
+RCM_USA_is_cool = {
+	enable = {
+		tag = ENG
+		OR = {
+			has_government = n_socialism
+			has_government = democratic
+		}
+		country_exists = USA
+		USA = { 
+		    OR = {
+				has_government = n_socialism
+				has_government = democratic
+			}
+		}
+	    date > 1943.1.1
+	    is_historical_focus_on = yes
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = USA }
+			USA = { 
+				NOT = {
+					OR = {
+						has_government = n_socialism
+					    has_government = democratic
+					}
+				}
+			}
+		}
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "USA"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"			
+		value = 200
+	}	
+}
+
+ETH_dont_send_help_to_japan_i_guess = {
+	enable = {
+	    original_tag = ETH
+	    NOT = { is_ally_with = JAP }
+        is_historical_focus_on = yes			
+	}
+	abort_when_not_enabled = yes
+    
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "JAP"
+		value = -5000
+	}
+    
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "JAP"
+		value = -5000
+	}
+}
+
+ENG_dont_attack_iraq = {
+	enable = {
+		original_tag = ENG
+        is_historical_focus_on = yes
+	}
+	abort = {
+	   is_historical_focus_on = no
+	}
+
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+		type = declare_war
+		id = "IRQ"
+		value = -9999
+	}
+}
+
+RAJ_SIK_VOL = {
+
+	enable = {
+		has_idea = SIK_RAJ_reinforce
+	    NOT = { has_government = communism }
+	}
+
+    abort = {
+	    OR = {
+		    NOT = { has_idea = SIK_RAJ_reinforce }
+			has_government = communism
+		}
+	}
+	abort_when_not_enabled = yes
+
+	#ai_strategy = {
+	#	type = send_volunteers_desire
+	#	id = "KHR"
+	#	value = 9999
+	#}
+	
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TNG"
+		value = 9999
+	}
+	#ai_strategy = {
+	#	type = protect
+	#	id = "TNG"
+	#	value = 10
+	#}
+	ai_strategy = {
+		type = support
+		id = "TNG"
+		value = 1000
+	}
+	#ai_strategy = {
+	#	type = protect
+	#	id = "KHR"
+	#	value = 10
+	#}
+	#ai_strategy = {
+	#	type = support
+	#	id = "KHR"
+	#	value = 1000
+	#}
+}
+
+fin_dont_join_japan = {
+	enable = {
+		tag = FIN
+		OR = { 
+		    has_government = n_socialism
+		    has_government = democratic
+			has_government = neutrality
+		}
+		is_in_faction = no
+	    #is_historical_focus_on = yes
+	}
+	abort = {
+		
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "JAP"			
+		value = -2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"			
+		value = -2000
+	}	
+}
+#BASE ON VANILLA
+RCM_ENG_naval_role_ratios_historical = {
+	allowed = {
+		has_dlc = "Man the Guns"
+		original_tag = ENG
+	}
+	enable = { always = yes }
+	abort = { always = no }
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = -25
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier_light
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 160
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = -17
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -17
+	}
+}
+
+ENG_help_egypt = {
+	enable = {
+		EGY = {
+			is_subject_of = ROOT
+		}
+        any_enemy_country = {
+			is_neighbor_of = EGY
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "EGY"
+		value = 9000
+	}
+
+	ai_strategy = {
+		type = support
+		id = "EGY"
+		value = 1000
+	}
+}
+
+ENG_egypt_defense = {
+	enable = {
+		original_tag = EGY
+		is_ally_with = ENG
+		OR = {
+			any_enemy_country = {
+				is_neighbor_of = EGY
+			}
+			ITA = {
+				is_neighbor_of = EGY
+			}
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "EGY"
+		value = 9000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ENG"
+		value = 5000
+	}
+
+    ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "FRA"
+		value = 5000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ETH"
+		value = 5000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "RAJ"
+		value = 5000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "BUR"
+		value = 5000
+	}
+}
+
+ENG_lets_use_brain = {
+
+	enable = {
+		OR = {
+			tag = ENG
+			tag = USA
+			is_ally_with = ENG
+		}
+		any_enemy_country = {
+			OR = {
+				tag = ITA
+				tag = GER
+				tag = JAP
+			}
+		}
+		check_variable = {
+			This.infantry_equipment_deficit > 35000
+		}
+	}
+	abort = { #guo
+		OR = {
+		SOV = {
+		    has_war_together_with = root
+			surrender_progress < 0.05
+		}
+		SOV = {
+		    has_war_together_with = root
+			OR = {
+			    5 = { controller = { is_in_faction_with = SOV } }
+				91 = { controller = { is_in_faction_with = SOV } }
+				763 = { controller = { is_in_faction_with = SOV } }
+				97 = { controller = { is_in_faction_with = SOV } }
+				92 = { controller = { is_in_faction_with = SOV } }
+				79 = { controller = { is_in_faction_with = SOV } }
+				80 = { controller = { is_in_faction_with = SOV } }
+			}
+		}
+		}
+	}
+
+    abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = "GER"
+		value = -9000
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = GER
+		ratio = 1 #guo
+		priority = 9000 #guo
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = "ITA"
+		value = -6000
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = ITA
+		ratio = 1 #guo
+		priority = 6000 #guo
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = "JAP"
+		value = -6000
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = JAP
+		ratio = 1 #guo
+		priority = 6000 #guo
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+ENG_dont_invite_FIC = {
+	enable = {
+		original_tag = ENG
+		has_government = democratic
+		FIC = {
+			exists = yes
+			is_subject = no
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "FIC"
+		value = -9999
+	}
+}
+
+ENG_dont_invade_norway= {
+	enable = {
+		OR = {
+		   is_ally_with = ENG
+		   is_ally_with = USA
+		}
+	    has_war_with = GER
+		NOR = {
+			is_subject_of = GER
+			is_major = no #guo
+		}
+	}
+	abort = { or = { has_global_flag = had_yalta_conference GER = { surrender_progress > 0.2 } } } #guo
+    abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = "NOR"
+		value = -5000
+	}
+     ai_strategy = {
+		type = invasion_unit_request
+		tag = NOR
+		value = -100
+	}
+}
+
+ENG_do_invade_norway_if_its_major = {
+	enable = {
+		OR = {
+		   is_ally_with = ENG
+		   is_ally_with = USA
+		}
+	    has_war_with = NOR
+		NOR = {
+			is_major = yes
+		}
+	}
+    abort_when_not_enabled = yes
+	ai_strategy = {
+		type = invade
+		id = "NOR"
+		value = 4000
+	}
+     ai_strategy = {
+		type = invasion_unit_request
+		tag = NOR
+		value = 1
+	}
+}
+
+allies_protect_poland_against_germany = {
+	allowed = { 
+		OR = {
+			original_tag = ENG
+			original_tag = FRA
+		}
+	}
+
+	enable = {
+		NOT = {
+			has_government = fascism
+			is_ally_with = GER
+		}
+		GER = { has_completed_focus = GER_end_of_czechoslovakia }
+		GER = { NOT = { has_war_with = POL } }
+		country_exists = POL
+		NOT = { has_war_with = POL } 
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = protect
+		id = "POL"
+		value = 300
+	}
+	ai_strategy = {
+		type = alliance
+		id = "POL"
+		value = 300
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = POL
+		target = guarantee
+		value = 500
+	}
+}

@@ -1,0 +1,69 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_trait_NRA_General_2ndRank"
+		texturefile = "gfx/interface/traits/NRA_General_2ndRank.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_NRA_General_1stRank"
+		texturefile = "gfx/interface/traits/NRA_General_1stRank.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_NRA_Generallissimo"
+		texturefile = "gfx/interface/traits/NRA_Generallissimo.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_minimum_time_in_grade"
+		texturefile = "gfx/interface/traits/trait_minimum_time_in_grade.dds"
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_officer"
+		texturefile = "gfx/interface/traits/trait_artillery_officer.png"
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_leader"
+		texturefile = "gfx/interface/traits/trait_artillery_leader.png"
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_expert"
+		texturefile = "gfx/interface/traits/trait_artillery_expert.png"
+	}
+	spriteType = {
+		name = "GFX_trait_rising_young_officer"
+		texturefile = "gfx/interface/traits/trait_rising_young_officer.png"
+	}	
+	spriteType = {
+		name = "GFX_trait_military_political_commissar"
+		texturefile = "gfx/interface/traits/trait_military_political_commissar.png"
+	}
+	spriteType = {
+		name = "GFX_trait_irregulars_leader"
+		texturefile = "gfx/interface/traits/trait_irregulars_leader.png"
+	}
+	spriteType = {
+		name = "GFX_trait_extra_specialized_skill"
+		texturefile = "gfx/interface/traits/trait_extra_specialized_skill.png"
+	}	
+	spriteType = {
+		name = "GFX_trait_PRC_maque"
+		texturefile = "gfx/interface/traits/trait_PRC_maque.png"
+	}	
+	spriteType = {
+		name = "GFX_trait_PRC_didao"
+		texturefile = "gfx/interface/traits/trait_PRC_didao.png"
+	}	
+	spriteType = {
+		name = "GFX_trait_PRC_dilei"
+		texturefile = "gfx/interface/traits/trait_PRC_dilei.png"
+	}	
+	spriteType = {
+		name = "GFX_trait_PRC_poxi"
+		texturefile = "gfx/interface/traits/trait_PRC_poxi.png"
+	}	
+	spriteType = {
+		name = "GFX_trait_PRC_shuishang"
+		texturefile = "gfx/interface/traits/trait_PRC_shuishang.png"
+	}	
+	
+}
+

@@ -1,0 +1,107 @@
+
+
+###############
+# GUD
+###############
+
+entity = {
+	name = "GUD_light_plane_entity"
+	clone = "GXC_light_plane_entity"	
+}
+		
+###############
+# HPC NEA PLM SHD SUY 
+###############
+
+entity = {
+	name = "HPC_light_plane_entity"
+	clone = "SHX_light_plane_entity"
+}
+	
+
+entity = {
+	name = "NEA_light_plane_entity"
+	clone = "SHX_light_plane_entity"
+}
+entity = {
+	name = "SHC_light_plane_entity"
+	clone = "SHX_light_plane_entity"
+}
+	
+entity = {
+	name = "SHD_light_plane_entity"
+	clone = "SHX_light_plane_entity"
+}
+	
+entity = {
+	name = "PLM_light_plane_entity"
+	clone = "SHX_light_plane_entity"
+}
+
+entity = {
+	name = "SUY_light_plane_entity"
+	clone = "SHX_light_plane_entity"
+}
+	
+
+###############
+# Xibei TNG HMI NXM
+###############
+
+
+entity = {
+	name = "NXM_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+entity = {
+	name = "GSM_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+entity = {
+	name = "TNG_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+entity = {
+	name = "HMI_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+entity = {
+	name = "KHR_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+
+entity = {
+	name = "KRS_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+
+entity = {
+	name = "ATM_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+entity = {
+	name = "EGM_light_plane_entity"
+	clone = "XSM_light_plane_entity"
+}
+
+###############
+# Yunnan SIC XIK
+###############
+
+entity = {
+	name = "SIC_light_plane_entity"
+	clone = "YUN_light_plane_entity"
+}
+	
+
+entity = {
+	name = "XIK_light_plane_entity"
+	clone = "YUN_light_plane_entity"
+}
+
+#Hunan
+entity = {
+	name = "XIA_light_plane_entity"
+	clone = "CHI_light_plane_entity"
+}	
+		

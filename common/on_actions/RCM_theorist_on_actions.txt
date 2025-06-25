@@ -1,0 +1,60 @@
+on_actions = {
+
+    on_startup = {
+        effect = {
+            every_country = {
+                every_character = {
+                    limit = {
+                        is_character_slot = theorist				
+                        OR = {
+                            has_trait = blitzkrieg_theorist		
+                            has_trait = grand_battle_plan_expert
+                            has_trait = mass_assault_expert		
+                           #has_trait = military_theorist
+                            has_trait = mobile_warfare_expert		
+                           #has_trait = strategic_mastermind	
+                            has_trait = superior_firepower_expert							
+                        }						
+                    }
+                    add_trait = {
+                        slot = theorist
+                        trait = army_doctrine
+                    }
+                }
+                every_character = {
+                    limit = {
+                        is_character_slot = theorist
+                        OR = {
+                           #has_trait = air_warfare_theorist
+                            has_trait = assault_avaition	
+                            has_trait = close_air_support_proponent								
+                            has_trait = dive_bomber
+                            has_trait = victory_through_airpower					
+                        }
+                    }
+                    add_trait = {
+                        slot = theorist
+                        trait = air_force_doctrine
+                    }			
+                }
+                every_character = {
+                    limit = {
+                        is_character_slot = theorist
+                        OR = {
+                            has_trait = grand_fleet_proponent
+                            has_trait = naval_aviation_pioneer		
+                           #has_trait = naval_theorist							
+                            has_trait = submarine_specialist
+                        }
+                    }
+                    add_trait = {
+                        slot = theorist
+                        trait = navy_doctrine
+                    }				
+                }				
+            }
+        }
+    }
+	
+}
+

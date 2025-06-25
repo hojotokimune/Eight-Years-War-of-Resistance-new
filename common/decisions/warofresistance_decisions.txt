@@ -1,0 +1,603 @@
+RCM_war_of_resistance_decision_cat = {
+	##########################
+	## OFFENSIVE OPERATIONS ##
+	##########################
+	##########################
+	## DEFEND CITY MISSIONS ##
+	##########################
+	CHI_sino_jap_war_hold_shanghai = {
+		icon = generic_nationalism
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+         always = no
+		}
+		available = {
+                   AND = {
+			date > 1937.10.1
+			NOT = {
+				controls_state = 613
+				controls_state = 1078
+			}
+                     }
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 613
+				state = 1078
+			}
+		}
+		days_mission_timeout = 100
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			complete_national_focus = CHI_WOR_battle_of_shanghai
+			complete_national_focus = CHI_WOR_a_bitter_defeat
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+		timeout_effect = {
+			complete_national_focus = CHI_WOR_battle_of_shanghai
+			complete_national_focus = CHI_WOR_a_great_victory
+			add_stability = 0.1
+			add_war_support = 0.05
+                        country_event = {
+				id = ww2_news_event.11
+			}
+		}
+	}
+	CHI_sino_jap_war_hold_wuhan = {
+		icon = generic_nationalism
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+		    has_war_with = JAP
+			has_civil_war = no
+			1034 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+		available = {
+			NOT = {
+				controls_state = 1034
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1034
+			}
+		}
+		days_mission_timeout = 100
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			complete_national_focus = CHI_WOR_battle_of_wuhan
+			complete_national_focus = CHI_WOR_wuhan_defeat
+			add_stability = -0.05
+			add_war_support = 0.05
+		}
+		timeout_effect = {
+			complete_national_focus = CHI_WOR_battle_of_wuhan
+			complete_national_focus = CHI_WOR_wuhan_great_victory
+			1034 = {
+				add_dynamic_modifier = {
+					modifier = chinese_weaker_stronghold
+					scope = JAP
+				}
+			}
+			CHI_increase_anti_japanese_sentiment = yes
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	CHI_sino_jap_war_hold_changsha = {
+		icon = generic_nationalism
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+			has_war_with = JAP
+			has_civil_war = no
+			1035 = {
+				is_controlled_by = ROOT
+				NOT = { is_fully_controlled_by = ROOT }
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+		available = {
+			NOT = {
+				controls_state = 1035
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1035
+			}
+		}
+		days_mission_timeout = 100
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			complete_national_focus = CHI_WOR_battle_of_changsha
+			complete_national_focus = CHI_WOR_changsha_defeat
+			add_stability = -0.05
+			add_war_support = 0.05
+                        country_event = {
+				id = news.998
+			}
+		}
+		timeout_effect = {
+			complete_national_focus = CHI_WOR_battle_of_changsha
+			complete_national_focus = CHI_WOR_changsha_great_victory
+			CHI_increase_anti_japanese_sentiment = yes
+			add_stability = 0.05
+			add_war_support = 0.05
+                        country_event = {
+				id = news.998
+			}
+		}
+	}
+	CHI_sino_jap_war_hold_xuzhou = {
+		icon = generic_nationalism
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+			has_war_with = JAP
+			has_civil_war = no
+			598 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+		available = {
+			NOT = {
+				controls_state = 598
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 598
+			}
+		}
+		days_mission_timeout = 100
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			add_stability = -0.05
+			add_war_support = 0.05
+                        country_event = {
+				id = news.996
+			}
+		}
+		timeout_effect = {
+			CHI_increase_anti_japanese_sentiment = yes
+			custom_effect_tooltip = CHI_WOR_a_great_victory_tt
+			add_to_variable = {
+				var = CHI_war_of_resistance_modifier_army_morale_factor
+				value = 0.05
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+                        country_event = {
+				id = news.996
+			}
+		}
+	}
+	CHI_sino_jap_war_hold_nanking = {
+		icon = generic_nationalism
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+			has_war_with = JAP
+			has_civil_war = no
+			1015 = {
+				is_controlled_by = ROOT
+				OR = {
+					any_neighbor_state = {
+						CONTROLLER = {
+							has_war_with = ROOT
+						}
+						OWNER = { tag = ROOT }
+					}
+					NOT = { is_fully_controlled_by = ROOT }
+				}
+			}
+		}
+		available = {
+			NOT = {
+				controls_state = 1015
+			}
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 1015
+			}
+		}
+		days_mission_timeout = 120
+		is_good = yes
+		selectable_mission = no
+		fire_only_once = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+			add_stability = -0.1
+			add_war_support = 0.05
+                        country_event = {
+				id = news.121
+			}
+		}
+		timeout_effect = {
+			set_global_flag = kmt_shusan_nanking_done
+			1015 = { add_manpower = -1000000 }
+			1034 = { add_manpower = 300000 }
+			1035 = { add_manpower = 300000 }
+			744 = { add_manpower = 200000 }
+			605 = { add_manpower = 100000 }
+			753 = { add_manpower = 100000 }
+                        custom_effect_tooltip = shusan_chenggong
+			CHI_increase_anti_japanese_sentiment = yes
+			custom_effect_tooltip = CHI_WOR_a_great_victory_tt
+			add_to_variable = {
+				var = CHI_war_of_resistance_modifier_army_morale_factor
+				value = 0.05
+			}
+			add_stability = 0.05
+			add_war_support = 0.05
+		}
+	}
+	###################
+	## FORTIFY CHINA ##
+	###################
+	CHI_yellow_river_defense_line = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 150
+
+		visible = {
+			tag = CHI
+		}
+		available = {
+			NOT = { has_global_flag = JAP_defeated }
+			JAP = { 
+				OR = {
+					has_completed_focus = JAP_aggressive_china_politics_focus
+					has_completed_focus = test_the_chinese_focus
+					has_completed_focus = JAP_Constitutional_Reform_focus
+					has_completed_focus = JAP_left_reform_focus
+				}
+			}
+			1043 = { is_fully_controlled_by = ROOT }
+			OR = {
+			597 = { is_fully_controlled_by = CHI }
+			AND = {
+			597 = { is_fully_controlled_by = SHD }
+			SHD = {
+				NOT = {
+					has_war_with = CHI
+				}
+			}
+			}
+			}
+			607 = { is_fully_controlled_by = ROOT }
+			OR = { 
+				597 = { is_fully_controlled_by = SHD }
+				597 = { is_fully_controlled_by = ROOT }
+			}
+		}
+		modifier = {
+			consumer_goods_factor = 0.15
+			industrial_capacity_factory = -0.15
+			industrial_capacity_dockyard = -0.2
+			production_speed_buildings_factor = -0.1
+		}
+		complete_effect = {
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+			597 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10102
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 4089
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 1069
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 10072
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 12069
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 7129
+				}
+			}
+			1043 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 7656
+				}
+			}
+			607 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 13391
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 11931
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					instant_build = yes
+					province = 6932
+				}
+				add_building_construction = {
+					type = bunker
+					level = 3
+					instant_build = yes
+					province = 9958
+				}
+			}
+		}
+		cancel_trigger = {
+			custom_trigger_tooltip = {
+				tooltip = we_dont_control_yellow_riv_tt
+				OR = {
+					NOT = {
+						AND = {
+							controls_province = 6932 #West Henan Below
+							controls_province = 11931
+							controls_province = 13391
+							controls_province = 9958
+							controls_province = 7656 #Eastern Henan <---
+						}
+					}
+					NOT = {
+						AND = {
+							controls_province = 7129 #Shandong Below
+							controls_province = 12069
+							controls_province = 10072
+							controls_province = 1069
+							controls_province = 10102
+							controls_province = 4089
+						}
+						AND = {
+							SHD = {
+								controls_province = 7129 #Shandong Below
+								controls_province = 12069
+								controls_province = 10072
+								controls_province = 1069
+								controls_province = 10102
+								controls_province = 4089
+							}
+						}
+					}
+				}
+			}
+		}
+		ai_will_do = {
+			base = 800
+		}
+	}
+	CHI_fortify_zhejiang = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 50
+		visible = {
+			tag = CHI
+			has_war_with = JAP
+		}
+		available = {
+			has_completed_focus = CHI_WOR_defensive_fortifications
+		}
+		complete_effect = {
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = fortify_zhejiang_fujian_tt
+			hidden_effect = {
+				596 = {
+					add_dynamic_modifier = {
+						modifier = chinese_weaker_stronghold
+						scope = JAP
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 800
+		}
+	}
+	CHI_fortify_north_hunan = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 50
+		visible = {
+			tag = CHI
+			has_war_with = JAP
+		}
+		available = {
+			has_completed_focus = CHI_WOR_defensive_fortifications
+		}
+		complete_effect = {
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+			custom_effect_tooltip = fortify_north_hunan_tt
+			1035 = {
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 12483
+				}
+				add_building_construction = {
+					type = bunker
+					level = 4
+					instant_build = yes
+					province = 7101
+				}
+				add_building_construction = {
+					type = bunker
+					level = 5
+					instant_build = yes
+					province = 7097
+				}
+			}
+			hidden_effect = {
+				1035 = {
+					add_dynamic_modifier = {
+						modifier = chinese_weaker_stronghold
+						scope = JAP
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 800
+		}
+	}
+	CHI_issue_blood_chits = {
+		icon = eng_trade_unions_support
+		fire_only_once = no
+		cost = 5
+		days_remove = 7
+
+		visible = {
+			tag = CHI
+			NOT = { has_global_flag = JAP_defeated }
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+
+		available = {
+			has_completed_focus = CHI_WOR_solicit_international_goodwill
+			has_defensive_war = yes
+		}
+
+		complete_effect = {
+		}
+		target_trigger = {
+			FROM = {
+				NOT = {
+					OR = {
+						has_war_with = ROOT
+						has_idea = CHI_blood_chit_idea
+						is_literally_china = yes
+						tag = FRA
+					}
+				}
+				has_war_with = JAP
+				is_major = yes
+			}
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+			FROM = {
+				show_ideas_tooltip = CHI_blood_chit_idea
+			}
+			hidden_effect = {
+			}
+		}
+		cancel_trigger = {
+		}
+		ai_will_do = {
+			base = 8000
+		}
+	}
+}

@@ -1,0 +1,209 @@
+
+###############
+# Guangdong
+###############
+
+entity = {
+	name = "GUD_artillery_entity"
+	clone = "GXC_artillery_entity"
+}
+
+entity = {
+	name = "GUD_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+
+###############
+# NC
+###############
+
+
+#####
+entity = {
+	name = "NEA_artillery_entity"
+	clone = "SHX_artillery_entity"
+
+}
+
+entity = {
+	name = "NEA_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "SHC_artillery_entity"
+	clone = "SHX_artillery_entity"
+
+}
+
+entity = {
+	name = "SHC_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+####
+#####
+entity = {
+	name = "HPC_artillery_entity"
+	clone = "SHX_artillery_entity"
+
+}
+
+entity = {
+	name = "HPC_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+####
+#####
+entity = {
+	name = "SHD_artillery_entity"
+	clone = "SHX_artillery_entity"
+
+}
+
+entity = {
+	name = "SHD_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+####
+#####
+entity = {
+	name = "PLM_artillery_entity"
+	clone = "SHX_artillery_entity"
+
+}
+
+entity = {
+	name = "PLM_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+entity = {
+	name = "SUY_artillery_entity"
+	clone = "SHX_artillery_entity"
+
+}
+
+entity = {
+	name = "SUY_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+####
+
+
+
+###############
+# Xibei
+###############
+
+
+entity = {
+	name = "NXM_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "NXM_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "GSM_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "GSM_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "TNG_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "TNG_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "HMI_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "HMI_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "KHR_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "KHR_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "KRS_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "KRS_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "ATM_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "ATM_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "EGM_artillery_entity"
+	clone = "XSM_artillery_entity"
+}
+
+entity = {
+	name = "EGM_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+###############
+# Szechwan
+###############
+
+entity = {
+	name = "SIC_artillery_entity"
+	clone = "YUN_artillery_entity"
+}
+entity = {
+	name = "SIC_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+entity = {
+	name = "XIK_artillery_entity"
+	clone = "YUN_artillery_entity"
+}
+entity = {
+	name = "XIK_artillery_gun_entity"
+	clone = "GXC_artillery_gun_entity"
+}
+
+#Hunan
+entity = {
+	name = "XIA_artillery_entity"
+	clone = "CHI_artillery_entity"
+}
+entity = {
+	name = "XIA_artillery_gun_entity"
+	clone = "CHI_artillery_gun_entity"
+}

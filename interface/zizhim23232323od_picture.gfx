@@ -1,0 +1,11 @@
+spriteTypes = {	
+#goals
+    spriteType = {
+		name = "GFX_event_liuqiuwenti"
+		texturefile = "gfx/event_pictures/GFX_event_liuqiuwenti.jpg"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_zhonghualingtu"
+		texturefile = "gfx/interface/decisions/GFX_decision_cat_picture_zhonghualingtu.png"
+	}
+}

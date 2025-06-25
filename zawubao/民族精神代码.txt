@@ -1,0 +1,2240 @@
+﻿    OR = {
+			TAG = event_target:WTT_communist_china
+			TAG = PRC
+		}
+			\n
+			[PRC.GetLeader]
+			[PRC.GetNameDef]
+			[Root.Capital.GetName]
+			§O §!
+			#manpower = 1000 #infantry_equipment = 100
+			show_ideas_tooltip = PRC_blank
+			show_ideas_tooltip = PRC_blank
+			
+			#假意置换民族精神
+			effect_tooltip = {
+				swap_ideas = {
+					remove_idea = PRC_sandagaizao_tooltip_original
+					add_idea = PRC_sandagaizao_tooltip_original_5
+				}
+			}
+			#真正的动态修正
+			add_to_variable = { PRC_sandagaizao_production_factory_efficiency_gain_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_factory_max_efficiency_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_speed_buildings_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_global_building_slots_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_consumer_goods_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_global_building_slots = 0.0 }
+			add_to_variable = { PRC_sandagaizao_political_power_gain = 0.0 }
+			add_to_variable = { PRC_sandagaizao_research_speed_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_local_resources_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_factory_start_efficiency_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_line_change_production_efficiency_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_lack_of_resource_penalty_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_speed_industrial_complex_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_speed_arms_factory_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_production_speed_infrastructure_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_industrial_capacity_factory = 0.0 }
+			add_to_variable = { PRC_sandagaizao_industrial_capacity_dockyard = 0.0 }
+			add_to_variable = { PRC_sandagaizao_conversion_cost_civ_to_mil_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_conversion_cost_mil_to_civ_factor = 0.0 }
+			add_to_variable = { PRC_sandagaizao_min_export = 0.0 }
+			add_to_variable = { PRC_sandagaizao_political_power_cost = 0.0 }
+			add_to_variable = { PRC_sandagaizao_stability_weekly = 0.0 }
+			add_to_variable = { PRC_sandagaizao_stability_factor = 0.0 }
+			
+	OR = {
+			TAG = event_target:WTT_current_china_leader
+			TAG = CHI
+		}
+			set_relation_rule = { #关系修正-可以向中共派遣志愿军
+				target = PRC can_send_volunteers = yes
+			}
+			
+			CHI_nationalize_industry_4_focus = {#guo
+			name = CHI_nationalize_industry_1_focus
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			picture = CHI_nationalize_industry_3_focus
+			removal_cost = -1
+			modifier = {
+				production_factory_efficiency_gain_factor = 0.10
+				production_factory_max_efficiency_factor = 0.10
+				production_speed_buildings_factor = 0.10
+				global_building_slots_factor = 0.10
+				consumer_goods_factor = -0.25 #guo
+				global_building_slots = 4
+			}
+		}
+		
+			complete_national_focus
+			set_state_controller_to
+			fascism
+			
+			if = {
+					limit = {
+						original_tag = PRC
+					}
+					has_global_flag = PRC_liuzhidan_pingfan
+				}
+			if = {
+			limit = { is_ai = no }
+			has_idea = PRC_guomoruo
+			}	
+			custom_effect_tooltip = improve_ai_thought
+			custom_effect_tooltip = bad_ai_thought
+			exists
+			deactivate_advisor = JAP_Jinwei_Wenmo
+			activate_advisor = hideki_tojo
+			unlock_decision_tooltip = {
+				decision = DEN_army_drills
+				show_effect_tooltip = yes 
+			}
+			
+			hidden_effect = {
+				set_technology = { masterful_blitz = 1 popup = no }
+			}
+			custom_effect_tooltip = SOV_the_glory_of_the_red_army_masterful_blitz_tactic_tt
+			
+			add_advisor_role = {
+	character = "GER_Character_Token" # optional if inside character scope
+	advisor = {
+		slot = air_chief
+		cost = 50
+		idea_token = GER_character_token_air_chief
+		traits = {
+			air_chief_ground_support_2
+		}
+		allowed = {...}
+	}
+	activate = yes
+}
+			
+			add_ai_strategy = { type = antagonize id = PRC value = 200 }
+			add_ai_strategy = { type = alliance id = PRC value = -999 }
+			add_ai_strategy = { type = befriend id = PRC value = -200 }
+			add_ai_strategy = { type = support id = PRC value = -200 }
+			add_ai_strategy = { type = send_lend_lease_desire id = PRC value = -200 }
+			is_controlled_by_ROOT_or_puppet
+			communism
+			show_unit_leaders_tooltip = USA_alexander_vandegrift
+			PRC_civil_war_started
+			master_ideology_drift
+			num_divisions > 100
+			remember_old_capital = yes
+			ai_focus_aviation_factor
+			build_railway = {
+						level = 1
+						build_only_on_allied = yes
+						controller_priority = {
+							base = 1
+							modifier = {
+								tag = FEN
+								add = 10
+							}
+						}
+						start_state = 744
+						target_state = 952
+					}
+			remove_country_leader_role = {
+				character = JAP_emperor_hirohito
+				ideology = fascism_ideology
+			}
+			
+			completion_reward = {
+				custom_effect_tooltip = snl_PRC_tip_dyn_army #陆军追加
+				add_to_variable = { snl_PRC_var_army_army_org = 5 }
+				add_to_variable = { snl_PRC_var_army_army_org_regain = 0.05 }
+				custom_effect_tooltip = snl_PRC_tip_resetting_political_commissioners #追加效果
+			}
+			
+			ai_strategy = { type = diplo_action_desire id = ENG target = send_expeditionary_force value = 10000 }
+			ai_strategy = {
+		type = naval_mission_threshold
+		id = "MISSION_CONVOY_ESCORT"
+		value = 150 #puts our threshold at 250
+	}has_war_together_with
+			MEN_limited_war
+			offer_military_access
+			random_country = {
+				limit = { tag = PRC }
+				add_collaboration = { target = CHI value = 0.10 }
+			}
+			add_trait = {
+				character = PRC_Yanan_five_Elders
+				slot = political_advisor
+				trait = secret_front_leader
+			}
+			add_intel = {
+					target = CHI
+					civilian_intel = 75
+					army_intel = 75
+				}
+				add_decryption = {
+					target = CHI
+					ratio = 0.75
+				}
+			effect_tooltip = {
+				create_corps_commander = {
+					name="黄琪翔"
+					portrait_path = "gfx/leaders/MON/Portrait_Ulanhu.dds"
+					traits = {
+					}
+					skill = 1
+				}
+			}
+			controls_state
+			### kill_operative
+
+* Supported Scopes: COUNTRY, CHARACTER
+* Supported Targets: THIS, ROOT, PREV, FROM
+
+```
+Kills an operative. This will temporarily lock the slot they occupy
+Examples:
+GER = {
+    kill_operative = PREV  # where PREV is an operative (unit leader)
+    # or
+    kill_operative = {
+        operative = PREV
+    }
+}
+
+kill_operative = { killed_by = GER } # where the scope is an unit leader
+			
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = YUG_ikarus_organization
+				mio:YUG_ikarus_organization = {
+					add_mio_size = 1
+					add_mio_funds = 500
+				}
+			}
+		PRC_zhanglan = {
+			add_country_leader_role = {
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					desc=PRC_zhanglan_desc
+					traits={ democratic_firebrand education_reformer }
+				}
+				promote_leader = yes
+			}
+		}
+			drop_cosmetic_tag = yes
+			set_country_leader_ideology = socialism
+			set_country_leader_name = {
+			  ideology = neutrality
+			  name = SOV_patriarch_meletius
+			}n_socialism
+			add_opinion_modifier = { target = FROM modifier = hostile_status }
+		reverse_add_opinion_modifier = { target = FROM modifier = hostile_status }
+		or = {exists
+		has_global_flag = d_day_happened
+		west_europe_is_dangerous = yes
+		any_other_country_has_entered_germany = yes
+		}
+		uncomplete_national_focus = {
+				focus = LAT_alignment_with_germany
+				uncomplete_children = yes
+			}
+			has_country_leader = { ruling_only = yes character = prc_mao_zedong }
+			CKS_in_charge = yes
+			add_building_construction = {
+				type = bunker
+				province = {
+					all_provinces = yes
+					limit_to_coastal = yes
+				}
+				level = 2
+				instant_build = yes
+			}
+			every_other_country = {
+			limit = {
+				INS = { is_subject_of = PREV }
+			}
+			country_event = RCM_old_france.1004
+		    }
+			has_war_with_major = yes
+			942 = {is_controlled_by_ROOT_or_ally
+				is_capital = yes
+			}is_democratic_type
+			[SOU.GetAdjective]
+			[CHI.GetNameDef]
+			[ROOT.GetName]
+			
+			THIS_controller_has_war_with_ROOT
+			add_current_party_support_ratio
+			reduce_current_party_support_ratio
+			check_variable = {
+			    This.infantry_equipment_deficit < 25000 #guo
+		    }
+			exists
+			clear_global_event_target = WTT_current_china_leader
+			RSI 意大利社会
+			is_historical_focus_on
+			has_subject = SOV
+			every_core_state = {
+				limit = {
+					OR = {
+						region = 246
+						region = 164	
+					}
+				    is_controlled_by_jap_or_its_puppet = yes
+				}
+				set_state_flag = winter_offensive_flag
+				add_dynamic_modifier = { modifier = chinese_offensive scope = JAP } 
+			}
+			neutrality_idea
+			transfer_state_to
+			is_MAN_state_for_takeover
+			had_yalta_conference
+			16 = { controller = { has_war_with = GER } }
+			num_of_naval_factories
+			has_war_together_with
+			has_capitulated
+			is_controlled_by_ROOT_or_ally
+			is_historical_focus_on
+			
+			
+			reset_province_name = 3529
+			has_global_flag = yalta_agreed_flag
+			
+			rising_young_officer
+			military_political_commissar
+			irregulars_leader
+			
+			is_democratic_type
+			is_literally_china
+			damage_units_prc_tt
+			
+			has_fo
+			IF = {
+				limit = {
+					has_dlc = "Arms Against Tyranny"
+				}	
+				custom_effect_tooltip = available_mio_tt
+				show_mio_tooltip = USA_detroit_arsenal_organization
+				mio:USA_detroit_arsenal_organization = {
+					add_mio_size = 2
+				}
+			}
+			
+			every_character = {
+				limit = {
+					not = { has_character_flag = FIN_anti_communist_character_flag }
+				}
+				set_nationality = root
+			    }
+			
+			abort = { always = no }
+			
+			exists
+			any_subject_country = {
+				tag = GER
+				has_government = democratic 
+			}
+			roc_in_taiwan_flag
+			always = no #guo
+			ai_strategy = {
+		type = invasion_unit_request
+		country_trigger = { always = yes }
+
+		value = -100
+	}
+			\n
+			PRC_civil_war_started
+			NOT = {
+				any_home_area_neighbor_country = {
+					has_war_with = ROOT					
+				}		
+			}
+			set_rule = {
+				can_join_factions = no
+				can_create_factions = no
+				can_not_declare_war = yes
+			}
+			has_country_leader = { ruling_only = yes character = prc_mao_zedong }
+			save_global_event_target_as
+			set_equipment_fraction = 0
+			add_dynamic_modifier = {
+			   modifier = GER_last_win
+			   days = 365
+			   scope = GER
+		    }
+			
+			initiative_factor = 0.05
+			coordination_bonus = 0.05
+			
+			if = {
+			limit = { SHX_li_fuying = { is_field_marshal = yes } }
+			SHX_li_fuying = { demote_leader = yes }
+		    }
+			effect_tooltip = {
+			create_field_marshal = {
+			name="阿道夫·希特勒"
+			portrait_path = "gfx/leaders/SHX/Portrait_SHX_Fu_Zuoyi.dds"
+			traits = {}
+			skill = 1
+			attack_skill = 1
+			defense_skill = 1
+			planning_skill = 1
+			logistics_skill = 1
+			legacy_id=0
+		    }
+			}
+			
+			GER_heinrich_himmler = {
+				add_field_marshal_role = {
+					traits = { politically_connected }
+					skill = 1
+					attack_skill = 1
+					defense_skill = 1
+					planning_skill = 1
+					logistics_skill = 1
+				} 
+			}
+			has_army_manpower = { size > 2999999 }
+			land_night_attack = 0.1
+			
+			[PRC.GetLeader]
+            
+			every_owned_state = { #MODDED
+				limit = { has_state_flag = GER_industrial_effort_2IC }
+				add_extra_state_shared_building_slots = 2
+				add_building_construction = {
+					type = industrial_complex
+					level = 2
+					instant_build = yes
+				}
+			}
+			remove_decision = CHI_concentrated_defence_decision
+			add_dynamic_modifier = {
+			modifier = RCM_great_patriotic_war
+		    }
+			swap_ruler_traits = {
+				remove = stalin_heart_of_steel
+				add = stalin_father_of_nations
+			}
+			add_country_leader_trait
+			any_allied_country = {
+			
+			}
+			trigger = { always = no } #guo
+			army_attack_against_major_factor
+			OR = {
+			   is_subject_of = GER
+			   is_puppet_of = GER
+			}
+			damage_units = {
+			    state = PREV
+			    limit = { has_war_with = event_target:WTT_communist_china }
+				damage = 0.2 #guo
+                org_damage = 0.2
+                str_damage = 0.2
+                ratio = yes
+                army = yes
+                navy = no
+            }
+			dislikes_germany = {
+		random = no
+		ai_strategy = {
+			type = antagonize
+			id = "GER"
+			value = 200
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+			ai_strategy = {
+		    type = diplo_action_desire
+		    id = GER
+		    target = embargo
+		    value = -1000
+	        }
+			alliance
+			count_triggers = {
+				amount = 3
+				608 = { is_controlled_by = ROOT }
+				936 = { is_controlled_by = ROOT }
+				613 = { is_controlled_by = ROOT }
+				596 = { is_controlled_by = ROOT }
+				595 = { is_controlled_by = ROOT }
+				941 = { is_controlled_by = ROOT }
+				593 = { is_controlled_by = ROOT }
+				592 = { is_controlled_by = ROOT }
+				591 = { is_controlled_by = ROOT }
+				743 = { is_controlled_by = ROOT }
+			}
+			PLM = {
+	        add_opinion_modifier = { target = CHI modifier = hostile_status }
+	        reverse_add_opinion_modifier = { target = CHI modifier = hostile_status }
+            }
+			event_target:amass_support_flag_temp = {
+				clear_global_event_target = amass_support_flag_temp
+			}
+			var:Root.chosen_crack_down_state@ROOT = {
+				state_event = RCM_communist_uprising.3
+				clr_state_flag = commie_ridden_states
+				set_border_war = no
+			}	
+			is_democratic_type
+			is_owned_and_controlled_by
+			PRC_xiao_jinguang = { remove_unit_leader_role = yes }
+			has_global_flag = CHI_no_longer_united_flag
+			NOT = { is_in_faction_with = GER }
+		    NOT = { has_war_together_with = GER }
+		    is_historical_focus_on = yes
+			complete_national_focus
+			is_controlled_by_ROOT_or_ally
+			THIS_controller_has_war_with_ROOT
+			historical_ai = { #guo
+		    date > 1940.1.1
+		    }
+            event_target:yalta_partner = {
+			custom_effect_tooltip = needs_approval
+		    }
+			focus_progress = { focus = USA_neutrality_act progress > 0.000 }
+				focus = USA_neutrality_act 
+				progress > 0.000
+			}
+			focus_progress = { focus = PRC_War_of_Liberation progress > 0.000 }
+		    add_country_leader_role = {
+				character = FRA_charles_de_gaulle
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = conservatism
+					traits = {
+					connetable_of_france
+					resistance_leader
+					}
+				}
+				promote_leader = yes				
+			}
+			
+			is_guaranteed_by = SOV
+			has_guaranteed = SOV
+			has_non_aggression_pact_with = SOV
+			
+                        division_template = {
+							name = "Hohei Shidan" 			
+							regiments = {
+								infantry = { x = 0 y = 0 }
+								infantry = { x = 0 y = 1 }
+								infantry = { x = 0 y = 2 }
+								infantry = { x = 1 y = 0 }
+								infantry = { x = 1 y = 1 }
+								infantry = { x = 1 y = 2 }
+								infantry = { x = 2 y = 0 }
+								infantry = { x = 2 y = 1 }
+								infantry = { x = 2 y = 2 }
+								infantry = { x = 3 y = 0 }
+								infantry = { x = 3 y = 1 }
+								infantry = { x = 3 y = 2 }
+								
+								artillery_brigade = { x = 4 y = 0 }
+								artillery_brigade = { x = 4 y = 1 }
+								artillery_brigade = { x = 4 y = 2 }
+							}
+							support = {
+								artillery = { x = 0 y = 0 }
+								engineer = { x = 0 y = 1 }
+								recon = { x = 0 y = 2 }
+							}
+						}         
+						
+				exists = yes
+				country_exists = 
+				any_country_with_original_tag = {
+				original_tag_to_check = USA
+				OR = {
+					has_completed_focus = USA_war_plan_red
+					has_completed_focus = USA_war_plan_white
+				}
+			}
+				
+				PRC_soviet_tribute_6 = {
+
+			name = PRC_soviet_tribute
+			allowed = { always = no }
+
+			picture =  generic_communism_drift_bonus
+
+			removal_cost = -1
+
+			#Targeted modifier to send stuff to SOV
+			targeted_modifier = {
+				tag = SOU
+				cic_to_target_factor = 0.25
+				mic_to_target_factor = 0.6
+				extra_trade_to_target_factor = 0.8
+				trade_cost_for_target_factor = -0.8
+			}
+		}
+				
+				nea_prc_mao_zedong = {
+					set_portraits = {
+						civilian={
+							large="GFX_nea_portrait_prc_mao_zedong_3"
+						}
+					}
+					remove_country_leader_trait = nea_mobile_warfare_expert
+					add_country_leader_trait = triumphant_revolutionary
+				}
+				
+				small_plane_airframe = {
+					build_cost_ic = -0.1 instant = yes
+				}
+				small_plane_cas_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				medium_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				large_plane_airframe = {
+					build_cost_ic = -0.05 instant = yes
+				}
+				
+				NOT = { has_wargoal_against = SOV }
+				NOT = { is_justifying_wargoal_against = SOV }
+
+				every_unit_leader = {
+	set_unit_leader_flag = ENG_colonial_commander
+}
+
+       uncomplete_national_focus = {
+						focus = GER_rhineland
+						uncomplete_children = yes
+					}
+
+	   111 = {
+			add_resource = {
+				type = steel
+				amount = 10
+			}
+		}
+		
+ cancel_if_not_visible = yes   enemy_justify_war_goal_time = 2.00              unlock_decision_tooltip = PRC_specialized_training_decision     SOV_fourth_five_year_plan_available = yes
+resources={
+		steel=20   
+	}
+                                 steel=20    
+                                tungsten=50 
+		oil=5    
+		rubber=5
+                                               chromium=2    
+		aluminium=8   
+
+  has_cosmetic_tag = MAN_kwantung_army
+  
+[GetDateText]
+                                               
+    
+OVERLORD = {
+						is_major = yes                             
+					}
+any_country = {
+		is_major = yes
+		has_guaranteed = ROOT                           
+	}
+ROOT = {
+					navy_experience = 500 #guo        
+					#给海军经验是因为改装花费的是建造者的海军经验#
+					transfer_navy = {
+						target = FROM
+					}
+				}
+				
+				NOT = { state = 745 }         add_country_leader_trait = desperate_gambit 
+				
+				NOT  = {
+						focus_progress  = {
+							focus  = USA_limited_intervention 
+							progress > 0.000
+						}
+					}
+				
+				64 = { #germany has fallen
+							controller = {
+								has_government = ROOT
+							}
+						}
+						
+						send_equipment = {
+					target = FROM
+					type = infantry_equipment
+					amount = 1000
+					old_prioritised = yes
+				}
+				
+	on_war_relation_added
+	on_declare_war
+	
+				create_wargoal = {
+					target = SIK
+					type = take_core_state
+				}
+						add_political_power = 
+						                             custom_effect_tooltip = SOV_focus_select_effect_tt
+						[SOU.GetAdjective]
+						
+						add_timed_idea = {
+                 idea = sov_defense_moscow1
+                 days = 180
+             }
+			 exists
+	set_country_leader_portrait = {
+        ideology = maoism
+        portrait = GFX_Mao_1973
+    }
+	
+			 generic_army_asia_2
+			 
+			 unit_leader_event
+			                               show_unit_leaders_tooltip = SOV_vasily_korzh
+			 add_state_core = 621
+			 
+			 defensive_war_stability_factor         is_controlled_by_ROOT_or_ally
+			 
+			 is_literally_china = yes             CHI_no_longer_united_flag
+			 
+			 set_global_flag = CHI_unite_PRC #西安事变和平解决       is_demilitarized_zone = yes
+			 
+			 
+            
+			 
+			 exists = yes
+			 
+	    OR = {
+        tag = USA
+        is_in_faction_with = ENG 
+        }
+			 
+			 RCM_comchina_west_expedition.1           \n
+			 
+add_war_support = 0.5
+
+add_political_power = 150
+
+conscription = 0.05
+
+     add_stability = 0.5
+	 
+	 swap_ideas = {
+			add_idea = 
+			remove_idea = 
+	 }
+	 
+	 historical_ai = { #guo
+		date > 1940.1.1
+	 }
+		 retire_ideology_leader = democratic
+		 
+	 generic_tank    generic_scorched_earth   generic_intelligence_operation   generic_merge_plant_aircraft
+	 
+	start_resistance = yes
+    custom_effect_tooltip = gain_base_supp_cond_p10_tt
+	add_to_variable = {
+		Root.supply_condition_base = 10
+	}	  
+	                       command_power_daily > 0.2
+	 is_coastal = yes                custom_effect_tooltip = if_they_accept_tt
+	 
+		num_occupied_states > 5
+		                                                       has_idea_with_trait = socialist_idealist #检测内阁有无该特质成员
+	 terrain_penalty_reduction = 0.30                         has_country_leader_ideology = centrism #检测子意识形态
+			acclimatization_cold_climate_gain_factor = 0.1
+			acclimatization_hot_climate_gain_factor = 0.1                is_neighbor_of
+			
+			            SOV_lev_trotsky = {	is_country_leader = yes }
+						
+			 has_stability < 0.7         war_support_factor = 0.3
+			 political_power_growth > 0.25
+			 add_resistance = 
+			 is_controlled_by_jap_or_its_puppet       has_subject = GRE
+						retire_country_leader = yes       can_be_fired = no      leave_faction = yes  remove_from_tech_sharing_group = commonwealth_research
+						add_resistance_target    add_compliance         antagonize
+has_war_with = GER    remove_state_claim = 722  remove_claim_by = SOV  add_war_support =       add_stability =     n_socialism           topple_government               [ROOT.GetName]
+15 = { controller = { NOT = { has_war_with = GER } } }
+15 = { controller = { has_war_with = GER } }
+is_subject_of =                           is_in_faction_with =       is_in_faction = no     ENG = { remove_from_faction = ROOT }   is_faction_leader = yes   set_faction_leader = yes/no   add_to_faction = NKR
+has_full_control_of_state =            has_global_flag = { flag = ger_zhanbai days > 120 }
+research_speed_factor = 0.15
+CHI = { add_to_tech_sharing_group = CHI_technological_cooperation_tech_group }
+				add_to_tech_sharing_group = CHI_technological_cooperation_tech_group	
+add_opinion_modifier = { target = ENG modifier = embargo }          is_subject = no
+
+set_cosmetic_tag = fa_lan_xi_di_si_gong_he_guo             621 = { is_controlled_by_jap_or_its_puppet = no }
+
+SOV = { controls_province = 149 }           42 = { is_demilitarized_zone = yes }
+
+surrender_progress > 0.1           has_country_leader = { ruling_only = yes character = prc_mao_zedong }
+is_literally_china = yes
+max_command_power = 50                    small_plane_airframe       small_plane_cas_airframe
+has_completed_focus =      
+has_capitulated = no           has_war_with = SOV         num_subjects > 0     num_of_controlled_states > 30    num_of_factories > 100                    has_war_with = SOV         set_border_war = yes
+has_global_flag = had_yalta_conference  
+type = annex_everything                                                                      tag = event_target:WTT_communist_china #PRC
+controls_state =    has_full_control_of_state =         is_fully_controlled_by = ROOT    tag = event_target:WTT_current_china_leader #CHI
+set_global_flag = had_yalta_conference                         country_exists =           is_major = yes           has_country_leader = { ruling_only = yes character = prc_mao_zedong }
+                has_global_flag = had_yalta_conference             exists = yes                 is_subject = no    has_country_leader = { ruling_only = yes character = prc_mao_zedong }
+clr_country_flag = donot_bother_me
+is_historical_focus_on = yes                               OR = { has_government = democratic has_government = n_socialism }    n_democratic_socialism 领导人划分
+unlock_national_focus = fin_joinaxifoc                     has_government = n_socialism   
+has_completed_focus =         has_government = democratic   has_government = fascism   has_government = communism    has_government = neutrality ( 民主 = democratic  法西斯 = fascism  共产主义 = communism  中立 = neutrality )   topple_government 
+add_resistance_target = {                   is_democratic_type = yes   leader_is_maoist = yes
+					amount = 25
+				}
+				                          OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			
+            OR = {
+            TAG = event_target:WTT_current_china_leader
+            TAG = CHI
+            }
+			
+			add_ai_strategy = {
+		type = befriend
+		id = ENG
+		value = 25
+	}
+traits = {
+	plus_point_1_per_week #MODDED
+}				
+				
+id = armor
+SUPPLY_FACTOR = 0.30
+set_capital = { state = 653 }
+				SUPPLY_NODE_RANGE = 0.30
+equipment_capture_factor = 0.05
+research_speed_factor =
+any_enemy_country = { is_major = yes }
+buffer
+ai_will_do = {
+			factor = 0
+			modifier = {
+				add = 1500
+				date > 1940.5.1
+			}
+		}
+n_socialism   stout_defender
+ai_desired_divisions_factor = 1 
+traits = {
+				plus_point_2_per_week #MODDED
+			}
+NOT = {
+			is_guaranteed_by = JAP
+			has_guaranteed = JAP
+		}
+
+		    		    		
+[CHI.GetNameDef]       [PRC.GetLeader]     unlock_decision_tooltip = JAP_ichi_go   GFX_goal_generic_territory_or_war    671 = { CONTROLLER = { is_subject_of = FRA } }     = 
+add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.25
+				uses = 1
+				category = land_doctrine
+			}
+
+has_government = SOV
+					has_wargoal_against = SOV
+					is_justifying_wargoal_against = SOV
+capital_scope = {
+							is_on_continent = asia
+						}
+612 = {
+						controller = {
+							NOT = { is_in_faction_with = ROOT }
+						}
+					}
+             add_timed_idea = {
+                 idea = sov_defense_moscow1
+                 days = 180
+             }
+custom_effect_tooltip = available_political_advisor
+			                show_ideas_tooltip = fumimaro_konoe
+
+building_target         desperate_gambit         add_country_leader_trait = generallissimo            has_offensive_war_with = CHI         has_global_flag = fall_of_france
+
+min_export = 0.15         war_support_weekly = 0.001     stability_weekly = 0.001           set_demilitarized_zone = yes        add_state_claim = 113         gfx/interface/ideas/true_Prussia_weak.dds
+ production_factory_start_efficiency_factor #基础生产效率
+remove_unit_leader =              has_global_flag = r56_ww2_got_done_early_make_ai_move_toward_ww3       num_subjects > 0    cancel_if_invalid = no
+42 = { 
+				set_demilitarized_zone = no         set_province_name = { id = 3529 name = "Hindenburg"}   remove_unit_leader = 1065
+			}
+
+SOV = {
+					white_peace = FIN
+				}
+
+				every_country = {
+					limit = {
+						is_in_faction_with = SOV
+						has_war_with = FIN
+					}
+					white_peace = FIN
+				}
+
+hidden_effect = {
+	play_song = "comintern_war_1"
+	}
+any_enemy_country = {
+		ic_ratio = { 
+			tag = ROOT 
+			ratio > 0.5
+		}
+				}
+add_to_war = {
+		targeted_alliance = ROOT
+		enemy = PRC
+	}
+
+if = {
+	limit = { is_ai = yes }
+	date > 1941.1.1	
+				
+			}
+
+PRC_civil_war_started
+
+YUG = {
+				start_civil_war = {
+					ideology = communism
+					size = 0.5
+					capital = 106
+					states = { 106 878 803 802 881 108 891 }
+				}
+			}
+
+targeted_modifier = {
+	tag = SOV
+	cic_to_target_factor = 0.1
+	mic_to_target_factor = 0.1
+	extra_trade_to_target_factor = 0.5
+	trade_cost_for_target_factor = -0.35
+	}
+
+                           generallissimo              
+if = {
+				limit = {
+					TNG = {
+						is_guaranteed_by = ROOT
+					}
+				}
+				diplomatic_relation = { country = TNG relation = guarantee active = no }
+			}
+
+
+any_other_country = {
+	is_major = yes
+                has_government = fascism
+	has_war_with = ROOT
+			}
+any_other_country = {
+	is_major = yes
+	NOT = { has_war_with = ROOT }
+			}
+production_lack_of_resource_penalty_factor = -0.25
+diplomatic_relation = {
+	country = GER
+	relation = non_aggression_pact
+	active = yes
+}
+production_speed_infrastructure_factor = 0.25       production_speed_buildings_factor = 0.50     industry_repair_factor = 0.5
+				production_speed_arms_factory_factor = 0.25
+                                                                production_speed_industrial_complex_factor = 0.25
+				production_speed_dockyard_factor = 0.25
+				production_speed_naval_base_factor = 0.25
+				production_speed_coastal_bunker_factor = 0.25
+				production_speed_bunker_factor = 0.25
+				production_speed_air_base_factor = 0.25
+				production_speed_anti_air_building_factor = 0.25
+				production_speed_radar_station_factor = 0.25
+				production_speed_fuel_silo_factor = 0.25
+				production_speed_synthetic_refinery_factor = 0.5
+				production_speed_steel_mill_factor = 0.15
+				production_speed_aluminum_mill_factor = 0.15
+				production_speed_rubber_refinery_factor = 0.5
+
+USA_wants_synth = {
+	allowed = {
+		original_tag = USA
+	}
+
+	enable = {
+		#tag = USA
+		OR = {
+			date > 1941.06.20
+			has_completed_focus = USA_rubber_reserve_company
+		}
+		rubber_refinery < 25
+	}
+
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = rubber_refinery
+		value = 6
+	}
+}
+
+
+resources={
+
+		steel=20 
+                                tungsten=50 
+		oil=5 
+                                chromium=2 
+		aluminium=8 
+	}
+
+
+                                steel=20 # was: 40
+		oil=5 # was: 10
+		aluminium=8 # was: 16
+
+num_of_factories > 100
+
+building_target
+
+add_equipment 9000 fighter_equipment_1
+
+
+
+has_war_together_with = FRA
+is_historical_focus_on = yes
+
+set_cosmetic_tag = PRC_peoples_republic_of_china
+
+
+
+OR = {
+			INS = { has_capitulated = no }
+			PHI = { has_capitulated = no }
+		}
+
+stability_factor = 0.3               穩定度增加 30%
+
+add_war_support = 0.5
+
+add_political_power = 150
+
+conscription = 0.05
+
+     add_stability = 0.5
+
+war_support_factor = 0.3          戰爭支持度增加30% 
+
+naval_invasion_penalty = -0.50
+
+political_power_factor = 5.0                            #政治点数 +500%
+
+
+
+
+
+        research_speed_factor = -0.7                             #研究时间 -100%
+
+        conscription = 0.5                                      #可征兵员数 +50%
+
+        justify_war_goal_time = -0.5                            #正当化战争目标所需时间 -50%
+
+        trade_opinion_factor = 1.0                              #贸易关系加成 +100% 
+
+        drift_defence_factor = 1.0                              #意识形态变化排斥加成 +100%
+
+        opinion_gain_monthly_factor = 1.0                       #关系每月增加 +100% 
+
+        opinion_gain_monthly_same_ideology_factor = 1.0         #同意识形态关系每月增加 +100% 
+
+
+
+        #工业
+
+        industrial_capacity_factory = 2.50                             工业大全  industrial_capacity_dockyard = 0.15
+
+        production_factory_max_efficiency_factor = 2.50         
+
+        production_factory_efficiency_gain_factor = 2.50        
+
+        line_change_production_efficiency_factor = 2.50         
+
+        global_building_slots_factor = 1.00                     #地区可用建筑格 +100%
+
+        consumer_goods_factor = -0.50                           #消费品需求 -50% 
+
+        conversion_cost_civ_to_mil_factor= -0.50                #民转军工厂成本 -50%
+
+        conversion_cost_mil_to_civ_factor = -0.50               #军转民工厂成本 -50%
+
+        industry_air_damage_factor = -0.50                      #工厂空袭受损度 -50%
+
+
+
+        #陆军
+
+        encryption = 10                                         #加密能力 +10
+
+        decryption = 10                                         #破译能力 +10
+
+        planning_speed = 1.00                                   #作战计划完成速度 +100%
+
+        max_planning = 1.00                                     #作战计划加成上限 +100%
+
+        army_attack_factor = 1.00                               #部队攻击力 +100%
+
+                 breakthrough_factor = 0.15#突破
+
+        army_defence_factor = 1.00                              #部队防御力 +100%
+
+        army_speed_factor = 1.00                                #部队行军速度 +100%
+
+        army_morale_factor = 1.00                               #部队组织度回复率 +100% (士气)
+
+        army_org_factor = 1.00                                  #部队组织度 +100%
+
+        combat_width_factor = -0.50                             #己方战场宽度 -50% 
+
+        supply_consumption_factor = -0.50                       #补给消耗 -50%
+
+        attrition = -0.50                                       #损耗 -50%
+
+        dig_in_speed_factor = 1.00                              #堑壕加固速度 +100%
+
+        max_dig_in = 10                                         #堑壕最大加成 +10
+
+        training_time_factor = -0.50                            #训练时间 -50% 
+
+        training_time_army_factor = -0.50                       #部队训练时间 -50% 
+
+        enemy_army_bonus_air_superiority_factor = -0.50         #敌方制空影响 -50% 
+
+        winter_attrition_factor                                 #冬季损耗
+
+heat_attrition_factor                                   #夏季损耗
+
+acclimatization_cold_climate_gain_factor                #寒冷适应度增长速度
+
+acclimatization_hot_climate_gain_factor                 #炎热适应度增长速度
+
+        out_of_supply_factor = -0.50                            #缺乏补给惩罚 -50%
+
+        occupation_cost = -0.50                                 #占领速度 -50%
+
+        org_loss_when_moving = -0.50                            #移动时组织度耗损 -50%
+
+        max_organisation = 100                                  #最大组织度 +100 
+
+army_core_attack_factor = 1.00                          #核心领土单位攻击 +100%
+
+        army_core_defence_factor = 1.00                         #核心领土单位防御 +100%
+
+motorized_attack_factor = 0.2                           #摩托化部队攻击
+
+motorized_defence_factor = 0.2                          #摩托化部队防御
+
+mechanized_attack_factor = 0.2                          #机械化部队攻击
+
+mechanized_defence_factor = 0.2                         #机械化部队防御
+
+army_artillery_defence_factor = 0.1                     #炮兵单位防御
+
+    army_artillery_attack_factor = 0.1                      #炮兵单位攻击
+
+army_armor_attack_factor = 0.1                          #装甲单位攻击
+
+army_armor_defence_factor = 0.1                         #装甲单位防御
+
+special_forces_attack_factor = 0.2                      #特种部队攻击
+
+    special_forces_defence_factor = 0.2                     #特种部队防御
+
+cavalry_attack_factor = 0.02                            #骑兵单位攻击
+
+    cavalry_defence_factor = 0.02                           #骑兵单位防御
+
+
+
+        #海军
+
+        naval_strike = 1.00                                     #海军对舰攻击 +100%
+
+        naval_hit_chance = 1.00                                 #海军命中率 +100%
+
+        naval_speed_factor = 1.00                               #海军航速 +100%
+
+        naval_detection = 1.0                                   #海军侦测能力 +100%
+
+        navy_max_range_factor = 1.00                            #海军最大航程 +100%
+
+        navy_submarine_detection_factor = 1.00                  #对潜侦测能力 +100%
+
+        navy_anti_air_attack_factor = 1.00                      #海军对空迎击能力 +100%
+
+        sortie_efficiency = 1.00                                #航母舰载机出动架次效率 +100%
+
+        carrier_traffic = 1.0                                   #航母空中交管效率 +100%
+
+        transport_capacity = -0.25                              #部队运载效率 -25% 
+
+        amphibious_invasion = 1.0                               #两栖登陆速度 +100%
+
+        amphibious_invasion_defence = 1.0                       #两栖登陆防御 +100%
+
+        naval_invasion_capacity = 100                           #登陆作战上限 +100
+
+        invasion_preparation = -0.50                            #登陆准备时间 -50%
+
+   
+
+        #空军
+
+        air_attack_factor = 1.0                                 #空军战斗能力 +100%
+
+        air_detection = 1.0                                     #空军索敌能力 +100%
+
+        air_range_factor = 1.00                                 #空军飞行距离 +100%
+
+        air_agility_factor = 1.00                               #空军灵活度 +100% 
+
+        air_maximum_speed_factor = 1.00                         #空军最高航速 +100%
+
+        air_accidents = -0.50                                   #空军事故率 -50%
+
+        air_mission_efficiency = 1.00                           #空军任务执行效率 +100%
+
+        air_ace_generation_chance_factor = 1                    #空战王牌生成率 +100%
+
+        air_bombing_targetting = 1.00                           #飞机轰炸准度 +100%
+
+        naval_strike_targetting_factor = 1.00                   #飞机对舰攻击准度 +100%
+
+        air_superiority_detect_factor = 1.00                    #空优任务索敌效率 +100%
+
+        air_superiority_efficiency = 1.00                       #空优任务效率 +100%
+
+        army_bonus_air_superiority_factor = 1.00                #制空对地面部队加成 +100%
+
+        strategic_bomb_visibility = -0.50                       #战略轰炸机可见度 -50% 
+
+        air_night_penalty = -0.50                               #空军夜间飞行惩罚 -50%
+
+        air_weather_penalty = -0.50                             #空军恶劣天气影响 -50%
+
+        air_accidents_factor = -0.50                            #空军事故率加成 -50%
+
+
+
+        #经验值
+
+        experience_gain_factor = 5.0                            #将领经验获取加成 +500% 
+
+        experience_gain_army_unit_factor = 2.5                  #陆军单位经验获取 +250%
+
+        experience_gain_navy_unit_factor = 2.5                  #海军单位经验获取 +250%
+
+        experience_gain_army = 100                              #陆军每日经验获取 +100
+
+        experience_gain_navy = 100                              #海军每日经验获取 +100
+
+        experience_gain_air = 100                               #空军每日经验获取 +100
+
+        experience_gain_army_factor = 1.0                       #陆军每日经验获取加成 +100%
+
+        experience_gain_navy_factor = 1.0                       #海军每日经验获取加成 +100%
+
+        experience_gain_air_factor = 1.0                        #空军每日经验获取加成 +100%
+
+
+
+
+
+
+
+        #世界紧张局势
+
+        generate_wargoal_tension = -0.50                        #制造宣战目的所需世界紧张局势 -50%
+
+        guarantee_tension = -0.50                               #保证独立所需世界紧张局势 -50%
+
+        join_faction_tension = -0.50                            #加入阵营所需世界紧张局势 -50%
+
+        send_volunteers_tension = -0.50                         #派遣志愿军所需世界紧张局势 -50%
+
+        lend_lease_tension = -0.50                              #租借所需世界紧张局势 -50%
+
+
+
+        #建筑
+
+        production_speed_buildings_factor = 25.0                #建造速度 +2500%
+
+        industry_repair_factor = 0.25                           #工厂修复速度  +25% (总加成勿超过 100%)
+
+        production_speed_arms_factory_factor = 10               #军用工厂建造速度 +100
+
+        production_speed_industrial_complex_factor = 10         #民用工厂建造速度 +100
+
+        production_speed_dockyard_factor = 10                   #海军船坞建造速度 +100
+
+        production_speed_bunker_factor = 10                     #陆上要塞建造速度 +100
+
+        production_speed_coastal_bunker_factor = 10             #海岸要塞建造速度 +100
+
+        production_speed_anti_air_building_factor = 10          #防空炮阵建造速度 +100
+
+        production_speed_infrastructure_factor = 10             #基础设施建造速度 +100
+
+        production_speed_synthetic_refinery_factor = 10         #化学合成厂建造速度 +100
+
+        production_speed_air_base_factor = 10                   #空军基地建造速度 +100
+
+        production_speed_naval_base_factor = 10                 #海军基地建造速度 +100
+
+        production_speed_rocket_site_factor = 10                #火箭基地建造速度 +100
+
+        production_speed_radar_station_factor = 10              #雷达站建造速度 +100
+
+        production_speed_nuclear_reactor_factor = 10            #核反应堆建造速度 +100
+
+
+
+        #其他
+
+        local_resources_factor = 2.5                           #资源产量加成 +250%
+
+        local_resources = 1.0                                  #地区资源 +100% 
+
+        local_manpower = 1.0                                   #地区人力 +100% 
+
+        local_factories = 1.0                                  #地区工厂 +100% 
+
+        local_supplies = 1.00                                  #地区补给 +100% 
+
+light_air_research                                     #轻型飞机研究速度 
+
+        medium_air_research                                    #中型飞机研究速度 
+
+        heavy_air_research                                     #重型飞机研究速度 
+
+        armor_research                                         #装甲研究速度 
+
+        artillery_research                                     #炮兵研究速度 
+
+        naval_air_research                                     #海军航空兵研究速度 
+
+        infantry_weapons_research                              #武器和装备研究速度 
+
+        motorized_equipment_research                           #摩托化研究速度 
+
+        naval_equipment_research                               #海军研究速度 
+
+        rocketry_research                                      #导弹研究速度 
+
+        nuclear_research                                       #核能研究速度 
+
+        industry_research                                      #工业研究速度 
+
+        electronics_research                                   #电子研究速度 
+
+        land_doctrine_research                                 #陆战学说研究速度 
+
+        naval_doctrine_research                                #海战学说研究速度 
+
+        air_doctrine_research                                  #空战学说研究速度 
+
+        strategic_destruction_tree_research                    #战略摧毁学说研究速度 
+
+        jet_technology_research                                #喷气式飞机技术研究速度 
+
+ai_call_ally_desire_factor                             #ai修正：请求盟友加入战争的意愿
+
+        ai_join_ally_desire_factor                             #ai修正：参战意愿
+
+        ai_get_ally_desire_factor                              #ai修正：加入或扩大一个阵营的意愿
+
+        ai_focus_defense_factor                                #ai修正：专注防御
+
+        ai_focus_aggressive_factor                             #ai修正：专注进攻
+
+        ai_focus_war_production_factor                         #ai修正：专注战时生产
+
+        ai_focus_military_advancements_factor                  #ai修正：专注先进军事科技研究
+
+        ai_focus_military_equipment_factor                     #ai修正：专注军备
+
+        ai_focus_peaceful_factor                               #ai修正：专注和平
+
+        ai_focus_naval_factor                                  #ai修正：专注海军
+
+        ai_focus_naval_air_factor                              #ai修正：专注海航
+
+        ai_focus_aviation_factor                               #ai修正：专注空军
+
+mobilization_laws_cost_factor                          #征兵法案花费 
+
+        trade_laws_cost_factor                                 #贸易法案花费 
+
+        economy_cost_factor                                    #经济法案花费 
+
+        political_advisor_cost_factor                          #政治顾问花费 
+
+        tank_manufacturer_cost_factor                          #装甲制造商花费 
+
+        naval_manufacturer_cost_factor                         #海军制造商花费 
+
+        aircraft_manufacturer_cost_factor                      #飞机制造商花费 
+
+        materiel_manufacturer_cost_factor                      #军需品设计花费 
+
+        industrial_concern_cost_factor                         #工业企业花费 
+
+        theorist_cost_factor                                   #理论家花费 
+
+        army_chief_cost_factor                                 #陆军部长花费 
+
+        navy_chief_cost_factor                                 #海军部长花费 
+
+        air_chief_cost_factor                                  #空军部长花费 
+
+        high_command_cost_factor                               #总司令花费 
+
+        ai_license_acceptance                                  #允许购买生产许可倾向 
+
+        guarantee_cost                                         #保障独立花费 
+
+        autonomy_gain_global_factor                            #全局自治度增加 
+
+        license_subject_master_purchase_cost                   #宗主国和附庸间生产许可花费 
+
+1.9抵抗运动
+
+ 
+
+        agency_upgrade_time = -1.0                           #情报机构升级时
+
+        resistance_target = -0.1                             #抵抗目标
+
+        compliance_gain = 0.25                               #每日顺从度增长
+
+required_garrison_factor                             #驻军需求
+
+resistance_growth                                    #抵抗增长速度
+
+non_core_manpower                                    #非核心人力
+
+target_sabotage_cost                                 #破坏活动花费
+
+        operation_cost = -0.1                                #行动花费
+
+        operation_infiltrate_outcome = 1.0                   #渗透效率
+
+        operation_outcome = 1.0                              #行动效率
+
+        operative_slot = 1                                   #特工位
+
+        new_operative_slot_bonus = 3                         #特工招募选项
+
+        own_operative_detection_chance_factor = -0.1         #特工被发现几率
+
+        army_intel_decryption_bonus = 10                     #破译陆军密码加成
+
+        navy_intel_decryption_bonus = 10                     #破译海军密码加成
+
+        airforce_intel_decryption_bonus = 10                 #破译的空军密码加成
+
+        breakthrough_bonus_against = 0.15                    #针对国家的突破加成
+
+        positioning = 0.1                                    #阵位
+
+        subjects_autonomy_gain = 1                           #宗主国对附庸国自治度的影响
+
+        local_factory_sabotage = 0.75                        #破坏建设几率
+
+        enemy_operative_detection_chance_factor = 1.0        #敌方特工被发现几率系数
+
+        own_operative_capture_chance_factor = 1.0            #我方特工被捕几率
+
+        enemy_operative_capture_chance_factor = 1.0          #敌方特工被捕几率
+
+        own_operative_forced_into_hiding_time_factor = 1.0   #被迫躲藏时间
+
+        enemy_operative_forced_into_hiding_time_factor = 1.0 #敌方被迫躲藏时间
+
+        own_operative_harmed_time_factor = 1.0               #破坏时间
+
+        enemy_operative_harmed_time_factor = 1.0             #地方破坏时间
+
+        own_operative_intel_extraction_rate = 1.0            #情报获取率
+
+        enemy_operative_intel_extraction_rate = 1.0          #敌方特工情报获取率
+
+        civilian_intel_to_others = 1.0                       #泄露给他国的民政情报
+
+        army_intel_to_others = 1.0                           #泄露给他国的陆军情报
+
+        navy_intel_to_others = 1.0                           #泄露给他国的海军情报
+
+        airforce_intel_to_others = 1.0                       #泄露给他国的空军情报
+
+        mines_planting_by_fleets_factor = 1                  #海军布雷效率
+
+        mines_sweeping_by_fleets_factor = 1                  #海军扫雷效率 
+
+        mines_planting_by_air_factor = 1                     #空中布雷效率
+
+        mines_sweeping_by_air_factor = 1                     #空中扫雷效率
+
+        naval_mines_effect_reduction = 1                     #规避水雷
+
+        naval_mines_damage_factor = 1                        #水雷伤害
+
+        naval_accidents_chance = -1                          #海军事故几率
+
+        naval_mine_hit_chance = -1                           #水雷命中率
+
+        screening_efficiency = 1                             #屏卫效率
+
+operation_steal_tech_outcome                         #窃取蓝图效率 
+
+        operation_steal_tech_risk                            #窃取蓝图风险 
+
+        operation_steal_tech_cost                            #窃取蓝图花费 
+
+        operation_infiltrate_outcome                         #渗透效率 
+
+        operation_infiltrate_risk                            #渗透风险 
+
+        operation_infiltrate_cost                            #渗透花费 
+
+        target_sabotage_risk                                 #破坏活动风险 
+
+        target_sabotage_cost                                 #破坏活动花费 
+
+        operation_boost_resistance_outcome                   #加强抵抗组织效率 
+
+        operation_boost_resistance_risk                      #加强抵抗组织风险 
+
+        operation_boost_resistance_cost                      #加强抵抗组织花费 
+
+        operation_fake_intel_outcome                         #假情报效率 
+
+        operation_fake_intel_risk                            #假情报风险 
+
+        operation_fake_intel_cost                            #假情报花费 
+
+        operation_capture_cipher_outcome                     #夺取密码效率 
+
+        operation_capture_cipher_risk                        #夺取密码风险 
+
+        operation_capture_cipher_cost                        #夺取密码花费 
+
+        operation_coordinated_strike_outcome                 #协同打击效率 
+
+        operation_coordinated_strike_risk                    #协同打击风险 
+
+        operation_coordinated_strike_cost                    #协同打击花费 
+
+        operation_collaboration_government_outcome           #筹备合作政府效率 
+
+        operation_collaboration_government_risk              #筹备合作政府风险 
+
+        operation_collaboration_government_cost              #筹备合作政府花费 
+
+        operation_coup_government_outcome                    #进行颠覆效率 
+
+        operation_coup_government_risk                       #进行颠覆风险 
+
+        operation_coup_government_cost                       #进行颠覆花费 
+
+        operation_rescue_operative_outcome                   #营救特工效率 
+
+        operation_rescue_operative_risk                      #营救特工风险 
+
+        operation_rescue_operative_cost                      #营救特工花费 
+
+        operation_make_resistance_contacts_outcome           #接触抵抗组织效率 
+
+        operation_make_resistance_contacts_risk              #接触抵抗组织风险 
+
+        operation_make_resistance_contacts_cost              #接触抵抗组织花费 
+
+        operation_risk                                       #行动风险 
+
+        operation_cost                                       #行动花费 
+
+        operation_outcome                                    #行动效率  
+
+
+
+
+
+
+completion_reward = {
+			if = {
+				limit = { has_full_control_of_state = 613 }
+				613 = { # Shanghai
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 11913 #Nanjing
+							id = 11982 #Nothing
+							id = 10076 #Airbase
+							id = 12052
+							id = 7014 #Shanghai
+						}
+						level = 3
+						instant_build = yes
+					}
+
+					if = {
+						limit = {
+							any_province_building_level = {
+								province = {
+									id = 7014 #Shanghai
+								}
+								level < 4
+								building = bunker
+							}
+						}
+						set_building_level = {
+							type = bunker
+							province = {
+								id = 7014 #Shanghai
+							}
+							level = 4
+							instant_build = yes
+						}
+					}
+
+					if = {
+						limit = {
+							any_province_building_level = {
+								province = {
+									id = 7014 #Shanghai
+								}
+								level < 3
+								building = coastal_bunker
+							}
+						}
+						set_building_level = {
+							type = coastal_bunker
+							province = {
+								id = 7014 #Shanghai
+							}
+							level = 3
+							instant_build = yes
+						}
+					}					
+				}
+
+				#If not full control, only add forts in provinces bordering the enemy
+				#Only time to throw up some emergency stuff
+				else = {
+					613 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 606 }
+				606 = { # Anhui
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 1099
+							id = 1171
+							id = 11937
+							id = 10044
+						}
+						level = 2
+						instant_build = yes
+					}								
+				}
+
+				#If not full control, only add forts in provinces bordering the enemy
+				#Only time to throw up some emergency stuff
+				else = {
+					606 = {
+						add_building_construction = {
+							type = bunker
+							province = {
+								all_provinces = yes
+								limit_to_border = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+					}
+				}
+			}
+
+			if = {
+				limit = { has_full_control_of_state = 600 }
+				600 = { # Jiangxi
+					set_building_level = {
+						type = bunker
+						province = {
+							id = 1153
+						}
+						level = 2
+						instant_build = yes
+					}								
+				}
+			}
+		}
+		
+
+
+### search_filters = {FOCUS_FILTER_POLITICAL} 政治
+### search_filters = {FOCUS_FILTER_RESEARCH} 研究
+### search_filters = {FOCUS_FILTER_INDUSTRY} 工业
+### search_filters = {FOCUS_FILTER_STABILITY} 稳定性
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT} 战争支持
+### search_filters = {FOCUS_FILTER_MANPOWER} 人力
+### search_filters = {FOCUS_FILTER_ANNEXATION} 吞并
+
+国策：
+	#点击之后不能取消国策
+	select_effect = {  }
+	#瞬间性效果
+	completion_reward = {   
+		
+		add_political_power #政治点数
+		add_stability #稳定度
+		set_stability #设定稳定度
+		add_war_support #战争支持度
+		set_war_support #设定战争支持度
+		
+		add_manpower #人力
+		army_experience #陆军经验
+		navy_experience #海军经验
+		air_experience #空军经验
+		add_command_power #指挥点数
+		
+		add_research_slot #科研槽
+		
+		add_ideas #获得国家精神
+		remove_ideas #移除国家精神
+		#设定国家精神时效
+		add_timed_idea = {
+			idea = XXX  #国家精神ID
+			days = XXX  #天数
+		}
+		#替换国家精神效果
+		swap_ideas = {
+			remove_idea = XXX #国家精神ID
+			add_idea = XXX #国家精神ID
+		}
+		
+		add_compliance #顺从度
+		
+		add_named_threat = { threat = X } #全球紧张度
+		
+		
+		#地块
+		add_building_construction = {
+			type = XXX #建筑类型
+			level = X #数量
+			province = XX #地块ID
+			#上下二选一 
+			province = {
+				id = XXX #地块ID
+			}
+			instant_build = yes
+		}
+		naval_base #海军基地
+		bunker #陆上要塞
+		coastal_bunker #沿海要塞
+		
+		#建造(3选1即可)
+			#我方拥有或控制省份
+		random_owned_controlled_state = {
+			#随机我方拥有省份(建议)
+		random_owned_state = {
+			#全球随机省份
+		random_state = {
+		
+			add_extra_state_shared_building_slots = X #创造建筑插槽数量
+			add_building_construction = {
+				type = XXX #创造建筑类型
+				level = XXX #创造建造数量
+				instant_build = yes #瞬间制造
+			}
+		}
+		#可以填写的内容(注意:两个填的要相同)
+		type 和 building = {
+			arms_factory #军用工厂
+			industrial_complex #民用工厂
+			infrastructure #基础设施
+			air_base #空军基地
+			dockyard #海军船坞
+			anti_air_building #防空炮阵
+			synthetic_refinery #合成炼油厂
+			fuel_silo #储油罐
+			rocket_site #火箭基地
+			radar_station #雷达站
+			nuclear_reactor #核反应堆
+		}
+		#地图外工厂
+		add_offsite_building = { 
+			type = XXX #工厂类型
+			level = X #工厂数(正数添加 负数移除)
+		}
+
+		#添加战略资源
+		add_resource = {
+			type = XXX #战略资源类型
+			amount = XXX #数量(正数添加 负数移除)
+			state = XXX #在哪个省份(省份ID)
+		}
+		#战略资源类型(可以填写的内容)
+		type = {
+			oil #石油
+			aluminium #铝
+			rubber #橡胶
+			tungsten #钨
+			steel #钢
+			chromium #铬
+		}
+		#授予XXX国使用我国战略资源
+		give_resource_rights = { 
+			receiver = XXX #国家tag
+			state = YYY #在哪个省份的资源(省份ID)
+		}
+		#剥夺XXX国使用我国战略资源
+		XXX #国家tag = {
+			remove_resource_rights = YYY #在哪个省份的资源(省份ID)
+		}
+		#设定省份是否是非军事区
+		XXX = { set_demilitarized_zone = yes/no }
+		#对地区效果修正
+		add_dynamic_modifier = { modifier = SOV_krasnaya_gorka_battery scope = SOV }
+
+		#学说
+		add_doctrine_cost_reduction = {
+			name = XXX #(取国策ID即可)
+			cost_reduction = XXX #减少花费(1 = +100%)
+			uses =  XXX #次数(正整数)
+			category = XXX #研究类型
+		}
+		#研究
+		add_tech_bonus = {
+			name = XXX_bonus #(取研究类型名开头即可)
+			ahead_reduction = XXX #超前研究惩罚降低(年)(正整数)
+			#上下二选一 
+			bonus = XXX #研究加成(1 = +100%)
+			uses = XXX #次数(正整数)
+			category = XXX #研究类型
+		}
+		#研究类型(可以填写的内容)
+		category = {
+			infantry_weapons #步兵武器
+			night_vision #夜视仪
+			motorised_infantry #摩托化步兵
+			motorized_equipment #摩托化装备
+			cat_mechanized_equipment #机械化装备
+			infantry_tech #步兵科技(作用于 摩托 机械 山地)
+			para_tech #伞兵
+			marine_tech #海军陆战队
+			mountaineers_tech #山地步兵
+			
+			support_tech #支援连
+			engineers_tech #工兵连
+			recon_tech #侦察连
+			military_police_tech #宪兵连
+			maintenance_company_tech #维修连
+			hospital_tech #野战医院
+			logistics_tech #后勤连
+			signal_company_tech #通信连
+			
+			armor #装甲科技
+			cat_light_armor #轻型坦克
+			cat_medium_armor #中型坦克
+			cat_heavy_armor #重型坦克
+			
+			artillery #火炮科技
+			cat_anti_tank #反坦克炮科技
+			
+			land_doctrine #陆军学说
+			
+			naval_equipment #舰船
+			tp_tech #运输船
+			ss_tech #潜艇
+			dd_tech #驱逐舰
+			cl_tech #轻巡洋舰
+			ca_tech #重巡洋舰
+			bb_tech #战列舰
+			bc_tech #战列巡洋舰
+			cv_tech #航空母舰
+			
+			naval_doctrine #海军学说
+			
+			air_equipment #飞行器
+			light_air #轻型飞机
+			light_fighter #轻型战斗机
+			cas_bomber #近距离支援机
+			naval_bomber #海军轰炸机
+			naval_air #舰载飞机
+			medium_air #中型飞机
+			tactical_bomber #战术轰炸机
+			heavy_air #重型飞机
+			cat_heavy_fighter #重型战斗机飞机
+			cat_strategic_bomber #战略轰炸机
+			jet_technology #喷气式飞机
+			
+			air_doctrine #空军学说
+			
+			electronics #电子学
+			computing_tech #计算机科技
+			radar_tech #雷达科技
+			nuclear #核科技
+			rocketry #火箭学科技
+			industry #工业
+			concentrated_industry_category #集中工业技术
+			dispersed_industry_category #分散工业技术
+			construction_tech #建筑科技
+			excavation_tech #挖掘技术
+			synth_resources #合成资源
+		}
+		#设置科技(XXX填科技ID)
+		set_technology = {
+			XXX = 1 #(获得)
+			XXX = 0 #(失去)
+		}
+		#加入或创建阵营科研联合组织
+		add_to_tech_sharing_group = XXX #组织ID
+		#阵营科研加成
+		modify_tech_sharing_bonus = {
+        	id = XXX #阵营科研ID
+        	bonus = XXX #数值
+    	}
+		
+	}
+		
+		
+		#创建阵营
+		create_faction = XXX #阵营名字
+		#YYY加入XXX的阵营
+		XXX #阵营领袖 = { add_to_faction = YYY #申请加入的国家 }
+		#XXX离开阵营
+		remove_from_faction = XXX #国家tag
+		#更改阵营名字
+		XXX = { set_faction_name = YYY } #XXX国家ID #YYY修改后的名字 记得本地化
+		#成为XXX地区的控制者和拥有者
+		transfer_state = XXX #省份ID
+		#获得XXX地区的宣称
+		add_state_claim = XXX #省份ID
+		#YYY获得XXX地区的核心
+		XXX #省份ID = { add_core_of = YYY #国家tag }
+		#对XXX宣战
+		declare_war_on = {
+			target = XXX #国家ID
+			type = YYY #战争目的
+		}
+		#加入战争
+		add_to_war = {
+		    targeted_alliance = ROOT 
+		    enemy = XXX #国家tag
+		    hostility_reason = XXX #战争借口
+		}
+		#宣战借口
+		create_wargoal = {
+			type = XXX #战争目的
+			target = XXX #对哪个国家宣战(填国家tag)
+			expire = 0 #战争目标持续时间
+		} 
+		#战争目的(可以填写的内容)
+		type或者hostility_reason = {
+			take_state #征服
+			annex_everything #吞并
+			topple_government #颠覆政府
+			puppet_wargoal_focus #傀儡
+			civil_war #内战
+		}
+		#保障独立
+		give_guarantee = XXX #国家tag
+		#失去XXX地区的宣称
+		YYY = { remove_claim_by = XXX } XXX#国家tag YYY#省份ID
+		#爆发内战
+		start_civil_war = {
+			ideology = XXX #哪种意识形态挑起的
+		}
+		#吞并国家
+		annex_country = { 
+			target = XXX #国家tag
+			transfer_troops = yes #是否把部队一起吞了
+		}
+		#给XXX军事通行权
+		diplomatic_relation = {
+			country = XXX #国家tag
+			relation = military_access #军通
+			active = yes #主动
+		}
+		#互不侵犯条约
+		diplomatic_relation = {
+			country = XXX #国家tag
+			relation = non_aggression_pact
+			active = yes/no
+		}
+		#保障独立
+		diplomatic_relation = {
+			country = XXX #国家tag
+			relation = guarantee
+			active = yes/no
+		}
+		#移除国家好感度
+		remove_opinion_modifier = { 
+			target = XXX 
+			modifier = XXX
+		}
+		#国家好感度
+		add_opinion_modifier = { 
+			target = XXX 
+			modifier = XXX
+		}
+		
+		
+		
+		#释放
+		release = XXX
+		#傀儡（没有猛虎DLC）
+		puppet = XXX 
+		#设置自治度
+		set_autonomy = { 
+			target = XXX #国家tag
+			autonomy_state = XXX #自治程度
+		}
+		#自治程度
+		autonomy_integrated_puppet #傀儡
+		autonomy_colony #殖民地领
+		autonomy_dominion #自治领
+		#自治程度(可以填写的内容)
+		autonomy_state = {
+			autonomy_free #独立
+			autonomy_satellite #半吞并半傀儡
+		}
+		#添加自治度比例
+		add_autonomy_ratio = {
+			value = XXX #自治数值
+			localization = XXX #填国策ID
+		}
+		
+		
+		
+		#启用内阁(海陆空制造商顾问都可以用)显示工具提示
+		show_ideas_tooltip = XXX #填部长ID
+		#变更执政党
+		set_politics = {
+			ruling_party = XXX #(意识形态)
+		}
+		#增减意识形态支持率
+		add_popularity = {
+			ideology = XXX (意识形态)
+			popularity = XXX (数值)
+		}
+		#替换领导人
+		create_country_leader = {
+			name = "XXX" #领导人名字
+			desc = "XXX" #领导人描述(在localisation 文件夹里添加)
+			picture = XXX #领导人头像(文件名)
+			expire = "XXXX.XX.XX" #什么时候死
+			ideology = XXX #哪种意识形态(细化后的)
+			traits = {
+				XXX #领导人特质
+			}
+		}
+		#杀死现任国家领导人
+		kill_country_leader = yes
+		#杀死现任党派领导人
+		kill_ideology_leader = XXX #哪种意识形态
+		#更改党派名字
+		set_party_name = { 
+			ideology = XXX #哪种意识形态 
+			long_name = XXX_long #党派名称(要在localisation 文件夹里汉化)
+			name = #党派名称(要在localisation 文件夹里汉化)
+		}
+		#更改国家名字
+		set_cosmetic_tag = XXX #国家名字(要在localisation 文件夹里汉化)
+		#更改首都
+		set_capital = XXX #省份ID
+		
+
+		
+		#将领退休
+		remove_unit_leader = #将领ID这个要在将领文件里设定
+		#全体陆军指挥官
+		every_army_leader = {
+			add_attack #增加攻击能力
+			add_defense #增加防御能力
+			add_planning #增加规划能力
+			add_logistics #增加后勤能力
+		}
+		#创建新将领
+		create_corps_commander = {
+			name = "XXX" #将领名字
+			gfx = XXX #将领头像(文件名)
+			skill = X #将领等级(1-9)
+			attack_skill = X #攻击能力(1-9)
+			defense_skill = X #防御能力(1-9)
+			planning_skill = X #规划能力(1-9)
+			logistics_skill = X #后勤能力(1-9)
+			traits = { 
+				XXX #将领特质
+			}
+		}
+		#创建新的编制
+		division_template = {
+			name = "XXX" #名字
+			division_names_group = SOV_INF_01
+			is_locked = XXX #是否可以改动编制
+			#主部队(x y 的值我只是拿来做的例子 实际上就是部队编制的那几个格子)
+			regiments = { 
+				infantry = { x = 0 y = 0 } #步兵部队
+				cavalry = { x = 0 y = 1 } #骑兵部队
+				motorized = { x = 0 y = 2 } #摩托化步兵部队
+				armored_car = { x = 0 y = 4 } #装甲车部队
+				 
+				artillery_brigade = { x = 1 y = 0 } #炮兵部队
+				anti_air_brigade = { x = 1 y = 1 } #防空炮兵部队
+				anti_tank_brigade = { x = 1 y = 3 } #反坦克炮兵部队
+				
+				light_armor = { x = 2 y = 0 } #轻型坦克部队
+				medium_armor = { x = 2 y = 1 } #中型坦克部队
+				heavy_armor = { x = 2 y = 2 } #重型坦克部队
+			}
+			#支援连
+			support = {
+				recon = { x = 0 y = 0 } #侦察连
+				engineer = { x = 0 y = 1 } #工兵连
+				artillery = { x = 0 y = 2 } #火炮支援连
+				anti_tank = { x = 0 y = 4 } #反坦克炮支援连
+				logistics_company = { x = 0 y = 4 } #后勤连
+			}
+		}
+		#放置部队
+		random_owned_controlled_state = {
+			prioritize = { 219 }
+			create_unit = {
+				division = "division_template = \"Krasnaya Gvardiya\" start_experience_factor = 0.1"
+				owner = SOV
+				count = 3
+			}
+		}
+		
+		
+		
+		#弹出事件(XXX里面填事件ID)(YYY天后弹出)
+		country_event = { id = XXX days = YYY }
+		#弹出世界新闻(XXX里面填新闻ID)(YYY天后弹出)
+		news_event = { id = XXX days = YYY }
+		#启用决议
+		unlock_decision_tooltip = XXX (决议ID) 
+		#决议任务增减时间
+		add_days_mission_timeout = {
+			mission = XXX #决议ID
+			days = XXX #天数(正数为增加 负数为减)
+		}
+		#完成国策
+		complete_national_focus = XXX #国策ID
+		
+		
+		#增加装备
+		add_equipment_to_stockpile = {
+			type = XXX #装备类型
+			amount = XXX #数量
+			producer = XXX #产自哪里(国家tag)(注意:填写的国家必须拥有该装备科技)
+		}
+		
+		
+		
+		#类似备注一样只是给你看一段话而已(XXX里面建议填国策ID),记得要去 localisation 文件夹里添加你要备注的语句
+		#一般和隐藏效果一起用
+		custom_effect_tooltip = XXX_tt
+		#隐藏效果
+		hidden_effect = {
+			#（completion_reward）能用的它也能
+		}
+		
+		
+		
+		#设定规则
+		set_rule = { 
+			填写(yes #OR# no)
+			can_not_declare_war #是否可以宣战
+			can_join_opposite_factions #是否可以加入意识形态不符的阵营
+			can_create_factions #是否可以创建阵营
+			can_boost_other_ideologies #是否可以提高其他意识形态的支持率
+			can_send_volunteers #是否可以派遣志愿军
+			can_use_kamikaze_pilots #是否可以自杀式袭击
+			can_generate_female_aces #是否允许有女性王牌
+			country_lock_all_division_template = yes
+		}
+		
+		
+		
+		#条件
+		填写(yes #OR# no)
+		cancel_if_invalid #不满足条件是否取消
+		continue_if_invalid #满足条件是否跳过
+		available_if_capitulated #投降时是否可用
+		
+		
+		
+		#变更国策树
+		load_focus_tree = XXX #国策树ID
+		#共享
+		shared_focus = BALTIC_
+		
+	}
+	
+	#本地化
+	NAV_autonomy_collaboration_government_DEF:0 "$OVERLORDADJ$属$NONIDEOLOGY$"
+	#切换国家
+	SOV = { change_tag_from = ROOT }
+	
+	#降低组织度
+	damage_units = {
+		state = FROM
+		limit = { tag = SOS }
+		org_damage = 0.25
+		str_damage = 0.05
+		ratio = yes
+		army = yes
+		navy = yes
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+		

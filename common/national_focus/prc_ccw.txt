@@ -1,0 +1,991 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+## CCW ##
+	shared_focus = {
+		id = PRC_bukebimiandeneizhan
+		icon = GFX_focus_PRC_War_of_Liberation
+		cost = 1.00
+		allow_branch = {
+			NOT = { has_global_flag = prc_kmt_lianhezhengfu }
+		}
+		prerequisite = {
+			focus = PRC_7th_National_Congress_focus
+		}
+		mutually_exclusive = { focus = PRC_zhangwozhudongquan }
+		x = -10
+		y = 1
+		relative_position_id = PRC_7th_National_Congress_focus
+		ai_will_do = {
+			factor = 10000
+		}
+		available_if_capitulated = yes
+		continue_if_invalid = yes
+		cancel_if_invalid = no
+		completion_reward = {
+			#custom_effect_tooltip = jiesuo_jiefangzhanzheng
+			add_command_power = 75
+			add_war_support = 0.05
+		    set_global_flag = PRC_bukebimiandeneizhan_flag
+			
+			mark_focus_tree_layout_dirty = yes
+			
+			#custom_effect_tooltip = benxianbukewan
+		}
+		available = {
+            has_war_with = CHI
+		    NOT = { has_idea = prc_kmt_shuangshixieding }
+		    NOT = { has_war_with = JAP }		
+			has_completed_focus = PRC_War_of_Liberation		
+			has_global_flag = CHI_no_longer_united_flag
+		}
+			bypass = {
+			}
+		
+	}
+## Defensive Branch ##
+shared_focus = {
+	id = PRC_CCW_defensive_operations
+	icon = GFX_goal_generic_defence
+	x = -6
+	y = 1
+	prerequisite = { focus = PRC_bukebimiandeneizhan }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+	}
+}
+shared_focus = {
+	id = PRC_CCW_passive_defense
+	icon = GFX_goal_PRC_xuezhandaodi
+	x = -1
+	y = 1
+	prerequisite = { focus = PRC_CCW_defensive_operations }
+	relative_position_id = PRC_CCW_defensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = prc_passive_defence
+	}
+}
+shared_focus = {
+	id = PRC_CCW_mobilization_of_peasants
+	icon = GFX_goal_farmers_association
+	x = 1
+	y = 1
+	prerequisite = { focus = PRC_CCW_defensive_operations }
+	relative_position_id = PRC_CCW_defensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = prc_ccw_mobilized_peasants
+		add_manpower = 950000
+	}
+}
+shared_focus = {
+	id = PRC_CCW_land_reform_rhetoric
+	icon = GFX_focus_PRC_50s_the_land_reforms
+	x = 0
+	y = 2
+	prerequisite = { focus = PRC_CCW_passive_defense focus = PRC_CCW_mobilization_of_peasants }
+	relative_position_id = PRC_CCW_defensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		CHI = {
+			add_war_support = -0.1
+			transfer_units_fraction = {
+				target = PRC
+				size = 0.1
+				stockpile_ratio = 0.15
+				army_ratio = 0.03
+				navy_ratio = 0
+				air_ratio = 0
+				keep_unit_leaders_trigger = { always = yes }
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_expand_base_areas
+	icon = GFX_focus_PRC_50s_restore_order
+	x = 1
+	y = 3
+	prerequisite = { focus = PRC_CCW_mobilization_of_peasants }
+	relative_position_id = PRC_CCW_defensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		if = {
+			limit = { has_idea = prc_ccw_expanded_base_area }
+			swap_ideas = {
+			    remove_idea = prc_ccw_expanded_base_area
+			    add_idea = prc_ccw_expanded_base_area_2
+		    }
+		}
+		else = {
+			add_ideas = prc_ccw_expanded_base_area
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_recruit_militia
+	icon = GFX_focus_PRC_50s_the_army_mutinies
+	x = -1
+	y = 3
+	prerequisite = { focus = PRC_CCW_passive_defense }
+	relative_position_id = PRC_CCW_defensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		division_template = {
+			name = "Mínbing"
+			is_locked = yes
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+			}
+			support = {
+				engineer = { x = 0 y = 0 }
+			}
+		}
+		if = {
+			limit = { num_of_controlled_states < 10 }
+			every_controlled_state = {
+				create_unit = {division = "name = \"Sanjiǎo Mínbing\" division_template = \"Mínbing\" start_experience_base = 0.3"owner = PRC}
+				create_unit = {division = "name = \"Sanjiǎo Mínbing\" division_template = \"Mínbing\" start_experience_base = 0.3"owner = PRC}
+				create_unit = {division = "name = \"Sanjiǎo Mínbing\" division_template = \"Mínbing\" start_experience_base = 0.3"owner = PRC}
+			}
+		}
+		else = {
+			every_controlled_state = {
+				create_unit = {division = "name = \"Sanjiǎo Mínbing\" division_template = \"Mínbing\" start_experience_base = 0.3"owner = PRC}
+			}
+		}
+	}
+}
+## Offensive Operations
+shared_focus = {
+	id = PRC_CCW_offensive_operations
+	icon = GFX_focus_NVA_harassment_campaign
+	x = 6
+	y = 1
+	prerequisite = { focus = PRC_bukebimiandeneizhan }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = 0.05
+		PRC_war_of_liberation_spirit_upgrade = yes
+	}
+}
+shared_focus = {
+	id = PRC_CCW_prepare_logistical_lines
+	icon = GFX_focus_PRC_50s_increase_productivity
+	x = 1
+	y = 1
+	prerequisite = { focus = PRC_CCW_offensive_operations }
+	relative_position_id = PRC_CCW_offensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		if = {
+			limit = { has_idea = prc_ccw_expanded_base_area }
+			swap_ideas = {
+			    remove_idea = prc_ccw_expanded_base_area
+			    add_idea = prc_ccw_expanded_base_area_2
+		    }
+		}
+		else = {
+			add_ideas = prc_ccw_expanded_base_area
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_strengthen_militia
+	icon = GFX_goal_renminzidibing
+	x = -1
+	y = 1
+	prerequisite = { focus = PRC_CCW_offensive_operations }
+	relative_position_id = PRC_CCW_offensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_manpower = 550000
+		add_equipment_to_stockpile = {
+			type = infantry_equipment
+			producer = PRC
+			amount = 10500
+		}
+		add_war_support = 0.1
+	}
+}
+shared_focus = {
+	id = PRC_CCW_lessons_of_war
+	icon = GFX_focus_PRC_CCW_lessons_of_war
+	x = 0
+	y = 3
+	prerequisite = { focus = PRC_CCW_pingjin_campaign focus = PRC_CCW_shenyang_campaign focus = PRC_CCW_huaihai_campaign }
+	relative_position_id = PRC_CCW_offensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		PRC_war_of_liberation_spirit_upgrade = yes
+	}
+}
+shared_focus = {
+	id = PRC_CCW_pingjin_campaign
+	icon = GFX_focus_PRC_CCW_pingjin_campaign
+	x = -2
+	y = 2
+	prerequisite = { focus = PRC_CCW_preserve_our_strength }
+	prerequisite = { focus = PRC_CCW_strengthen_militia }
+	relative_position_id = PRC_CCW_offensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+		OR = {
+			608 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+			609 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+			614 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+		}
+		NOT = { has_country_flag = prc_campaign_is_ongoing }
+	}
+
+	bypass = {
+		controls_state = 608
+		controls_state = 609
+		controls_state = 614
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		608 = {
+			add_dynamic_modifier = {
+				modifier = prc_pingjin_campaign_modifier
+				scope = PRC
+			}
+		}
+		609 = {
+			add_dynamic_modifier = {
+				modifier = prc_pingjin_campaign_modifier
+				scope = PRC
+			}
+		}
+		614 = {
+			add_dynamic_modifier = {
+				modifier = prc_pingjin_campaign_modifier
+				scope = PRC
+			}
+		}
+		set_country_flag = prc_campaign_is_ongoing
+		activate_mission = prc_pingjin_campaign_mission
+	}
+}
+shared_focus = {
+	id = PRC_CCW_shenyang_campaign
+	icon = GFX_focus_PRC_CCW_shenyang_campaign
+	x = 0
+	y = 2
+	prerequisite = { focus = PRC_CCW_strengthen_militia focus = PRC_CCW_prepare_logistical_lines }
+	relative_position_id = PRC_CCW_offensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+		OR = {
+			716 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+			1010 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+		}
+		NOT = { has_country_flag = prc_campaign_is_ongoing }
+	}
+
+	bypass = {
+		controls_state = 716
+		controls_state = 1010
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		716 = {
+			add_dynamic_modifier = {
+				modifier = prc_liaoshen_campaign_modifier
+				scope = PRC
+			}
+		}
+		1010 = {
+			add_dynamic_modifier = {
+				modifier = prc_liaoshen_campaign_modifier
+				scope = PRC
+			}
+		}
+		set_country_flag = prc_campaign_is_ongoing
+		activate_mission = prc_liaoshen_campaign_mission
+	}
+}
+shared_focus = {
+	id = PRC_CCW_huaihai_campaign
+	icon = GFX_focus_PRC_CCW_huaihai_campaign
+	x = 2
+	y = 2
+	prerequisite = { focus = PRC_CCW_prepare_logistical_lines }
+	relative_position_id = PRC_CCW_offensive_operations
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+		OR = {
+			606 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+			598 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+			997 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+			1043 = {
+				any_neighbor_state = {
+					owner = { tag = PRC }
+				}
+			}
+		}
+		NOT = { has_country_flag = prc_campaign_is_ongoing }
+	}
+
+	bypass = {
+		controls_state = 606
+		controls_state = 598
+		controls_state = 997
+		controls_state = 1043
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		606 = {
+			add_dynamic_modifier = {
+				modifier = prc_huaihai_campaign_modifier
+				scope = PRC
+			}
+		}
+		598 = {
+			add_dynamic_modifier = {
+				modifier = prc_huaihai_campaign_modifier
+				scope = PRC
+			}
+		}
+		997 = {
+			add_dynamic_modifier = {
+				modifier = prc_huaihai_campaign_modifier
+				scope = PRC
+			}
+		}
+		1043 = {
+			add_dynamic_modifier = {
+				modifier = prc_huaihai_campaign_modifier
+				scope = PRC
+			}
+		}
+		set_country_flag = prc_campaign_is_ongoing
+		activate_mission = prc_huaihai_campaign_mission
+	}
+}
+##Middle Path
+shared_focus = {
+	id = PRC_CCW_secure_japanese_arms
+	icon = GFX_focus_NVA_use_japanese_equipment
+	x = 0
+	y = 2
+	prerequisite = { focus = PRC_CCW_keep_men_lose_land }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 2 
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		custom_effect_tooltip = sov_gave_cpc_jap_guns_tt
+		if = {
+			limit = { has_global_flag = sov_gave_cpc_jap_guns }
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 25000
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1200
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 1200
+				producer = JAP
+			}
+		}
+		else = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 12500
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 640
+				producer = JAP
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 565
+				producer = JAP
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_the_righteous_cause
+	icon = GFX_goal_revolution_shine
+	x = -2
+	y = 2
+	prerequisite = { focus = PRC_CCW_keep_men_lose_land }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		ROOT = {
+			every_army_leader = {
+				limit = {
+					is_assigned = yes
+				}
+				add_timed_unit_leader_trait = {
+					trait = trait_prc_peoples_struggle
+					days = 200
+				}
+			}
+		}
+		add_timed_idea = {
+			idea = prc_ccw_righteous_cause
+			days = 1065
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_preserve_our_strength
+	icon = GFX_focus_ITA_peasants_rise
+	x = 2
+	y = 2
+	prerequisite = { focus = PRC_CCW_keep_men_lose_land }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = prc_ccw_preserve_strength
+	}
+}
+shared_focus = {
+	id = PRC_CCW_absorb_nra_troops
+	icon = GFX_focus_PRC_CCW_absorb_nra_troops
+	x = -3
+	y = 3
+	prerequisite = { focus = PRC_CCW_the_righteous_cause focus = PRC_CCW_mobilization_of_peasants }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = prc_ccw_converted_troops
+	}
+}
+shared_focus = {
+	id = PRC_CCW_keep_men_lose_land
+	icon = GFX_goal_YUN_second_sino_japanese_war
+	x = 0
+	y = 1
+	prerequisite = { focus = PRC_bukebimiandeneizhan }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_ideas = prc_ccw_keep_men_lose_land_idea
+	}
+}
+shared_focus = {
+	id = PRC_CCW_consolidate_the_north
+	icon = GFX_focus_PRC_CCW_consolidate_the_north
+	x = 0
+	y = 3
+	prerequisite = { focus = PRC_CCW_the_righteous_cause focus = PRC_CCW_secure_japanese_arms focus = PRC_CCW_preserve_our_strength }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 5
+	}
+
+	available = {
+		has_war_with = CHI
+		controls_state = 716
+		controls_state = 328
+		controls_state = 715
+		controls_state = 1006
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		716 = {
+		    add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		328 = {
+		    add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		715 = {
+		    add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+		1006 = {
+		    add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+				type = arms_factory
+				level = 3
+				instant_build = yes
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_revolutionary_zeal
+	icon = GFX_focus_CHL_union_of_hispanic_republics
+	x = -2
+	y = 4
+	mutually_exclusive = { focus = PRC_CCW_for_a_better_future }
+	prerequisite = { focus = PRC_CCW_consolidate_the_north }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 5
+			CHI = {
+				is_ai = yes
+			}
+		}
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_war_support = 0.05
+		swap_ideas = {
+			remove_idea = prc_ccw_keep_men_lose_land_idea
+			add_idea = prc_ccw_keep_men_lose_land_idea_rz
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_for_a_better_future
+	icon = GFX_focus_PRC_CCW_for_a_better_future
+	x = 2
+	y = 4
+	mutually_exclusive = { focus = PRC_CCW_revolutionary_zeal }
+	prerequisite = { focus = PRC_CCW_consolidate_the_north }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 3.6
+
+	ai_will_do = {
+		base = 0
+		modifier = {
+			add = 5
+			CHI = {
+				is_ai = no
+			}
+		}
+	}
+
+	available = {
+		has_war_with = CHI
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		add_stability = 0.05
+		swap_ideas = {
+			remove_idea = prc_ccw_keep_men_lose_land_idea
+			add_idea = prc_ccw_keep_men_lose_land_idea_bf
+		}
+	}
+}
+shared_focus = {
+	id = PRC_CCW_liberate_all_of_china
+	icon = GFX_focus_PRC_CCW_liberate_all_of_china
+	x = 0
+	y = 5
+	prerequisite = { focus = PRC_CCW_recruit_militia }
+	prerequisite = { focus = PRC_CCW_consolidate_the_north }
+	prerequisite = { focus = PRC_CCW_expand_base_areas }
+	prerequisite = { focus = PRC_CCW_lessons_of_war }
+	relative_position_id = PRC_bukebimiandeneizhan
+
+	cost = 5
+
+	ai_will_do = {
+		base = 1
+	}
+
+	available = {
+		has_war_with = CHI
+		controls_state = 1015
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	completion_reward = {
+		PRC_war_of_liberation_spirit_upgrade = yes
+	}
+}

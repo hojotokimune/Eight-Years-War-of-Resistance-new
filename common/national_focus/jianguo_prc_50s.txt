@@ -1,0 +1,1709 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+## Politics ##
+shared_focus = {
+	id = PRC_50s_a_new_beginning
+	x = 30
+	y = 30
+	icon = {
+        value = GFX_focus_PRC_50s_mao_zedong_consolidates_power
+    }
+	dynamic = yes
+
+	cost = 1
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+    has_country_leader = { ruling_only = yes character = prc_mao_zedong }
+    has_completed_focus = PRC_zhengxiehuiyi_1st	
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+    country_event = {
+	id = ccw.758
+	}	
+		hidden_effect = {
+		if = {
+			limit = {
+			PRC = { is_ai = no }  
+			}	
+			play_song = nea_yiyongjunjinxingqu
+		}			
+	}
+}	
+}
+
+shared_focus = {
+	id = PRC_50s_discipline_labour_force
+	icon = GFX_focus_PRC_50s_discipline_labour_force
+	x = -2
+	y = 1
+	relative_position_id = PRC_50s_a_new_beginning
+	prerequisite  = { focus = PRC_50s_a_new_beginning }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+    has_completed_focus = PRC_A_New_Country		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 85	
+		add_stability = 0.05
+		remove_ideas = chi_diwucongzui2	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_restore_order
+	icon = GFX_focus_PRC_50s_overcome_hyperinflation
+	x = 2
+	y = 1
+	relative_position_id = PRC_50s_a_new_beginning
+	prerequisite  = { focus = PRC_50s_a_new_beginning }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+    has_completed_focus = PRC_A_New_Country		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+	country_event = prc_50s_events.15	
+	add_stability = 0.05	
+    add_ideas = prc_50s_ideas_improved_economy
+	}
+}
+
+## Land Reforms ##
+shared_focus = {
+	id = PRC_50s_the_land_reforms
+	icon = GFX_goal_liushaoqi
+	x = -6
+	y = 2
+	relative_position_id = PRC_50s_a_new_beginning
+	prerequisite  = { focus = PRC_50s_discipline_labour_force }
+	prerequisite = { focus = PRC_50s_restore_order }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+    country_event = {
+	id = ccw.761
+	}
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_economic_devastation_13
+				add_idea = prc_50s_ideas_economic_devastation_10
+			}	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_confiscate_land
+	icon = GFX_focus_PRC_50s_wringe_inflation
+	x = -3
+	y = 1
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_the_land_reforms }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_stability = 0.05
+		add_war_support = -0.05
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_economic_devastation_10
+				add_idea = prc_50s_ideas_economic_devastation_7
+			}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_destruction_of_landlords
+	icon = GFX_goal_chenyun
+	x = -4
+	y = 2
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_confiscate_land }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_economic_devastation_7
+				add_idea = prc_50s_ideas_economic_devastation_4
+			}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_relax_landlord_executions
+	icon = GFX_focus_SWE_refuge_from_war
+	x = -4
+	y = 4
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_destruction_of_landlords }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_economic_devastation_4
+				add_idea = prc_50s_ideas_economic_devastation_1
+			}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_redistribute_the_land
+	icon = GFX_focus_DEN_civilian_preparations
+	x = 0
+	y = 1
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_the_land_reforms }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 75
+		add_stability = 0.05
+        add_ideas = prc_50s_ideas_reformist_policies
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_lenient_treatment_for_landlords
+	icon = GFX_focus_PRC_50s_redistribute_the_land 
+	x = 0
+	y = 2
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_redistribute_the_land }
+	prerequisite = { focus = PRC_50s_confiscate_hanjian_lands }
+	prerequisite = { focus = PRC_50s_confiscate_land }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_idea = agrarian_reform_idea_PRC_tudigaigefa
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 50
+		hidden_effect = {
+        country_event = {
+        id = prc_50s_events.1
+	    }
+	    }		
+		swap_ideas = {
+			remove_idea = agrarian_reform_idea_PRC_tudigaigefa
+			add_idea = agrarian_reform_idea_PRC_tudigaigefa1
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_confiscate_hanjian_lands
+	icon = GFX_focus_PRC_50s_lenient_treatment_for_landlords 
+	x = 3
+	y = 1
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_the_land_reforms }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_timed_idea = {
+			idea = prc_50s_ideas_inflation_undercutted
+			days = 180
+		}
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_civil_war_devastation_3
+			add_idea = prc_50s_ideas_civil_war_devastation_2
+		}
+		hidden_effect = {
+        country_event = {
+        id = prc_50s_events.3
+	    }			
+		}		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_increase_productivity
+	icon = GFX_goal_jiejiemeimei
+	x = -2
+	y = 2
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_confiscate_land }
+	prerequisite = { focus = PRC_50s_redistribute_the_land }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		hidden_effect = {
+    country_event = {
+	id = ccw.700
+	}
+		}
+    add_ideas = prc_50s_ideas_gender_equality		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_end_the_industrailists
+	icon = GFX_focus_PRC_50s_enact_trade_union_law
+	x = 2
+	y = 2
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_confiscate_land }
+	prerequisite = { focus = PRC_50s_confiscate_hanjian_lands }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_ideas = prc_50s_ideas_trade_union_law	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_assemble_workteams
+	icon = GFX_focus_YUG_pan_slavic_congress
+	x = 4
+	y = 2
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_confiscate_hanjian_lands }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_civil_war_devastation_2
+			add_idea = prc_50s_ideas_civil_war_devastation_1
+		}	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_protect_moderately_rich_peasants
+	icon = GFX_focus_KPA_allow_private_handicraft
+	x = 4
+	y = 4
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_assemble_workteams }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_civil_war_devastation_1
+			add_idea = prc_50s_ideas_civil_war_devastation_none
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_begin_industrial_programs
+	icon = GFX_focus_generic_population_growth
+	x = -3
+	y = 3
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_increase_productivity }
+	prerequisite = { focus = PRC_50s_end_the_industrailists }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_focus_on_rural_places }
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_ideas = prc_50s_ideas_focus_on_rural		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_focus_on_rural_places
+	icon = GFX_focus_PRC_50s_pass_the_marriage_laws
+	x = -1
+	y = 3
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite = { focus = PRC_50s_lenient_treatment_for_landlords }
+	prerequisite = { focus = PRC_50s_increase_productivity }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_begin_industrial_programs }
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		custom_effect_tooltip = THIS_IS_HISTORICAL_TT	
+		add_ideas = prc_50s_ideas_reformed_marriage_laws			
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_open_the_laojiao
+	icon = GFX_goal_proletariat_first
+	x = 1
+	y = 3
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite = { focus = PRC_50s_lenient_treatment_for_landlords }
+	prerequisite = { focus = PRC_50s_end_the_industrailists }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_open_the_laogai }
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_ideas = prc_50s_ideas_laojiao
+		swap_ideas = {
+			remove_idea = agrarian_reform_idea_PRC_tudigaigefa1
+			add_idea = agrarian_reform_idea_PRC_tudigaigefa2
+		}		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_open_the_laogai
+	icon = GFX_goal_ruralcommune
+	x = 3
+	y = 3
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite = { focus = PRC_50s_end_the_industrailists }
+	prerequisite = { focus = PRC_50s_lenient_treatment_for_landlords }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_open_the_laojiao }
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		custom_effect_tooltip = THIS_IS_HISTORICAL_TT	
+		add_ideas = prc_50s_ideas_laogai
+		swap_ideas = {
+			remove_idea = agrarian_reform_idea_PRC_tudigaigefa1
+			add_idea = agrarian_reform_idea_PRC_tudigaigefa2
+		}		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_put_brutal_landlords_on_trial
+	icon = GFX_focus_PRC_50s_confiscate_hanjian_lands
+	x = 1
+	y = 4
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite = { focus = PRC_50s_open_the_laojiao focus = PRC_50s_open_the_laogai }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = agrarian_reform_idea_PRC_tudigaigefa2
+			add_idea = agrarian_reform_idea_PRC_tudigaigefa3
+		}	
+		hidden_effect = {
+		if = {
+			limit = {
+			PRC = { is_ai = no }  
+			}	
+			play_song = "千年的仇要报"
+		}		
+        country_event = {
+        id = prc_50s_events.2
+	    }			
+		}	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_support_the_widows
+	icon = GFX_focus_PRC_50s_support_the_widows
+	x = -1
+	y = 4
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite = { focus = PRC_50s_focus_on_rural_places focus = PRC_50s_begin_industrial_programs }
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_gender_equality
+			add_idea = prc_50s_ideas_gender_equality2
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_finish_the_first_land_reforms
+	icon = GFX_goal_CHI_qz
+	x = 0
+	y = 5
+	relative_position_id = PRC_50s_the_land_reforms
+	prerequisite  = { focus = PRC_50s_put_brutal_landlords_on_trial }
+	prerequisite = { focus = PRC_50s_support_the_widows }
+	prerequisite = { focus = PRC_50s_relax_landlord_executions }
+	prerequisite = { focus = PRC_50s_protect_moderately_rich_peasants }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		country_event = prc_50s_events.7
+		add_ideas = prc_50s_ideas_socialist_realism	
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_1
+			add_idea = prc_50s_ideas_economic_devastation
+		}	
+    remove_ideas = prc_50s_ideas_civil_war_devastation_none
+	add_stability = 0.05
+	}
+}
+## End Feudalism Branch ##
+shared_focus = {
+	id = PRC_50s_end_feudalism
+	icon = GFX_goal_jieyue
+	x = 6
+	y = 2
+	relative_position_id = PRC_50s_a_new_beginning
+	prerequisite  = { focus = PRC_50s_discipline_labour_force }
+	prerequisite = { focus = PRC_50s_restore_order }
+	prerequisite = { focus = PRC_50s_finish_the_first_land_reforms }	
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {	
+		remove_ideas = prc_50s_ideas_economic_devastation
+		add_timed_idea = {
+			idea = prc_50s_ideas_supporting_the_people
+			days = 365
+		}
+		hidden_effect = {
+        country_event = {
+        id = prc_50s_gao_gang_affair_events.1
+	    }			
+		}		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_enact_trade_union_law
+	icon = GFX_goal_fanlangfei
+	x = 2
+	y = 1
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_end_feudalism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = san_fanyundong	
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_recovery
+			add_idea = prc_50s_ideas_economic_recovery2
+		} 
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_prevent_decentralization
+	icon = GFX_Goal_PRC_zhangwozhudongquan
+	x = -2
+	y = 1
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite  = { focus = PRC_50s_end_feudalism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+    country_event = {
+	id = ccw.762
+	}	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_pass_the_marriage_laws
+	icon = GFX_goal_CHI_ZMKD
+	x = -4
+	y = 1
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite  = { focus = PRC_50s_end_feudalism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+        country_event = {
+        id = ccw.763
+	    }
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_emulate_soviet_model
+	icon = GFX_goal_fantanwu
+	x = 0
+	y = 1
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite  = { focus = PRC_50s_end_feudalism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = san_fanyundong
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_feudalism
+			add_idea = prc_50s_ideas_feudalism2
+		}	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_break_the_old_society
+	icon = GFX_goal_fanguanliao
+	x = 4
+	y = 1
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite  = { focus = PRC_50s_end_feudalism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = san_fanyundong	
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+        add_ideas = prc_50s_ideas_peoples_support	
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_old_order
+			add_idea = prc_50s_ideas_old_order2
+		}    
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_reeducate_puyi
+	icon = GFX_goal_PRC_shehuibu
+	x = 1
+	y = 1
+	relative_position_id = PRC_50s_break_the_old_society
+	prerequisite  = { focus = PRC_50s_break_the_old_society }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+    has_global_flag = wu_fan_yundong	
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		remove_ideas = PRC_daoqie2	
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_preserve_chiangs_house
+	icon = GFX_goal_gaogang
+	x = 0
+	y = 2
+	relative_position_id = PRC_50s_break_the_old_society
+	prerequisite  = { focus = PRC_50s_reeducate_puyi }
+	prerequisite = { focus = PRC_50s_bolster_socialism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_destroy_the_baldheadguys_house }
+
+	available = {
+	has_idea = PRC_gaorao8	
+    has_global_flag = wu_majinjing		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		country_event = prc_50s_gao_gang_affair_events.14
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_destroy_the_baldheadguys_house
+	icon = GFX_goal_gaogang2
+	x = 2
+	y = 2
+	relative_position_id = PRC_50s_break_the_old_society
+	prerequisite  = { focus = PRC_50s_reeducate_puyi }
+	prerequisite = { focus = PRC_50s_bolster_socialism }	
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_preserve_chiangs_house }
+
+	available = {
+	has_idea = PRC_gaorao8
+	has_global_flag = wu_majinjing	
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		custom_effect_tooltip = THIS_IS_HISTORICAL_TT	
+	    country_event = prc_50s_gao_gang_affair_events.10
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_plans_for_socalisim
+	icon = GFX_goal_anti_corruption
+	x = -1
+	y = 1
+	relative_position_id = PRC_50s_pass_the_marriage_laws
+	prerequisite  = { focus = PRC_50s_pass_the_marriage_laws }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = wu_fan_yundong
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+        remove_ideas = PRC_xinghui		
+		add_stability = 0.05	
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_gender_equality
+	icon = GFX_goal_guoyou
+	x = 1
+	y = 1
+	relative_position_id = PRC_50s_pass_the_marriage_laws
+	prerequisite  = { focus = PRC_50s_pass_the_marriage_laws }
+	prerequisite = { focus = PRC_50s_prevent_decentralization }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = wu_fan_yundong
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+        remove_ideas = PRC_daoqie	
+		add_stability = 0.05		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_reintegrate_kmt_officials
+	icon = GFX_goal_generic_soviet_construction
+	x = -2
+	y = 2
+	relative_position_id = PRC_50s_pass_the_marriage_laws
+	prerequisite = { focus = PRC_50s_plans_for_socalisim }
+	prerequisite = { focus = PRC_50s_gender_equality }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_scold_kmt_officials }
+
+	available = {
+    has_completed_focus = PRC_modern_industrialization		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		custom_effect_tooltip = THIS_IS_HISTORICAL_TT	
+		add_political_power = 150
+		add_war_support = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = 0.15
+		}		
+		every_owned_state = {
+			limit = {
+				is_fully_controlled_by = ROOT
+				NOT = { state = 287 } 
+			}
+			add_extra_state_shared_building_slots = 1
+			add_building_construction = {
+                type = infrastructure
+                level = 1
+                instant_build = yes
+            }
+		}
+		remove_ideas = prc_50s_ideas_reformist_policies		
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_scold_kmt_officials
+	icon = GFX_goal_generic_positive_trade_relations
+	x = 0
+	y = 2
+	relative_position_id = PRC_50s_pass_the_marriage_laws
+	prerequisite = { focus = PRC_50s_plans_for_socalisim }
+	prerequisite = { focus = PRC_50s_gender_equality }	
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	mutually_exclusive = { focus = PRC_50s_reintegrate_kmt_officials }
+
+	available = {
+    has_completed_focus = PRC_modern_industrialization		
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = -75
+		add_stability = 0.1
+		add_popularity = {
+			ideology = communism
+			popularity = -0.15
+		}		
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_reformist_policies		
+			add_idea = prc_50s_ideas_reformist_policies2		
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_compromise_with_bureaucrats
+	icon = GFX_focus_generic_industrialists
+	x = 2
+	y = 2
+	relative_position_id = PRC_50s_pass_the_marriage_laws
+	prerequisite = { focus = PRC_50s_pardon_kmt_generals }
+	prerequisite = { focus = PRC_50s_gender_equality }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+	country_event = ccw.771	
+		add_political_power = 25
+		add_ideas = prc_50s_ideas_bureaucrat_compromise
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+		PRC_fractured_administration_down = yes
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_twilight_of_the_old_order
+	icon = GFX_focus_PRC_50s_twilight_of_the_old_order
+	x = 0
+	y = 3
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_pardon_kmt_generals }
+	prerequisite = { focus = PRC_50s_li_jishen_returns }
+	prerequisite = { focus = PRC_50s_bolster_socialism }	
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_stability = 0.1
+        add_ideas = prc_50s_ideas_agitated_revolutionaries		
+		remove_ideas = prc_50s_ideas_old_order4
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_li_jishen_returns
+	icon = GFX_goal_Anti_liberalization
+	x = 1
+	y = 1
+	relative_position_id = PRC_50s_emulate_soviet_model
+	prerequisite = { focus = PRC_50s_emulate_soviet_model }
+	prerequisite = { focus = PRC_50s_enact_trade_union_law }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = wu_fan_yundong
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+        remove_ideas = PRC_toushui	
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_enforce_trade_union_law
+	icon = GFX_focus_PRC_50s_enforce_trade_union_law
+	x = 1
+	y = 4
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_form_the_rcck }
+	prerequisite = { focus = PRC_50s_twilight_of_the_old_order }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {	
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_trade_union_law
+			add_idea = prc_50s_ideas_enforced_trade_union_law
+		}
+	    add_ideas = prc_50s_ideas_increased_productivity		
+		hidden_effect = {	
+		if = {
+			limit = {
+			PRC = { is_ai = no }  
+			}	
+		play_song = "咱们工人有力量"
+		}		
+		}			
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_peoples_communes
+	icon = GFX_focus_PRC_50s_plans_for_socalisim
+	x = -1
+	y = 4
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_compromise_with_bureaucrats }
+	prerequisite = { focus = PRC_50s_twilight_of_the_old_order }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+	country_event = ccw.768	
+		swap_ideas = {
+			remove_idea = xingxingzhihuo_keyiliaoyuan_5
+			add_idea = xingxingzhihuo_keyiliaoyuan_6
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_restore_civilian_rule
+	icon = GFX_focus_KPA_guarantee_life_insurance
+	x = -4
+	y = 4
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_reintegrate_kmt_officials focus = PRC_50s_scold_kmt_officials }
+	prerequisite = { focus = PRC_50s_compromise_with_bureaucrats }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_bureaucrat_compromise
+			add_idea = prc_50s_ideas_bureaucrat_compromise2
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_appease_cadres
+	icon = GFX_goal_fanmaojin
+	x = 4
+	y = 4
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_form_the_rcck }
+	prerequisite = { focus = PRC_50s_preserve_chiangs_house focus = PRC_50s_destroy_the_baldheadguys_house }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		country_event = ccw.5777		
+		add_political_power = -50
+		add_stability = 0.05			
+		add_popularity = {
+			ideology = communism
+			popularity = 0.05
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_form_the_rcck
+	icon = GFX_focus_BRA_reach_out_to_military_dem
+	x = 2
+	y = 3
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_li_jishen_returns }
+	prerequisite = { focus = PRC_50s_bolster_socialism }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+        add_stability = 0.03	
+		716 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+		}
+		594 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+		}
+		592 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+		}
+		605 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+		}
+		597 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+        }
+		1077 = {
+			add_extra_state_shared_building_slots = 3
+			add_building_construction = {
+                type = industrial_complex
+                level = 3
+                instant_build = yes
+            }
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_finish_the_internal_works
+	icon = GFX_focus_CZE_military_aeronautical_institute
+	x = 0
+	y = 5
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_enforce_trade_union_law }
+	prerequisite = { focus = PRC_50s_peoples_communes }
+	prerequisite = { focus = PRC_50s_restore_civilian_rule }
+	prerequisite = { focus = PRC_50s_appease_cadres }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = xingxingzhihuo_keyiliaoyuan_6
+			add_idea = xingxingzhihuo_keyiliaoyuan_7
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_pardon_kmt_generals
+	icon = GFX_focus_DEN_heavy_regulations
+	x = -1
+	y = 2
+	relative_position_id = PRC_50s_end_feudalism
+	prerequisite = { focus = PRC_50s_emulate_soviet_model }
+	prerequisite = { focus = PRC_50s_prevent_decentralization }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = wu_fan_yundong	
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		remove_ideas = PRC_tougong	
+		add_stability = 0.05
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_bolster_socialism
+	icon = GFX_goal_CHI_PMZQ
+	x = -1
+	y = 1
+	relative_position_id = PRC_50s_break_the_old_society
+	prerequisite = { focus = PRC_50s_break_the_old_society }
+	prerequisite = { focus = PRC_50s_enact_trade_union_law }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	has_global_flag = fan_fubai
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_old_order3
+			add_idea = prc_50s_ideas_old_order4
+		}	
+		add_ideas = prc_50s_ideas_bolster_socialism
+		add_popularity = {
+			ideology = communism
+			popularity = 0.1
+		}
+	}
+}
+
+shared_focus = {
+	id = PRC_50s_the_new_constitution
+	icon = GFX_goal_PRC_1954xianfa
+	x = 0
+	y = 8
+	relative_position_id = PRC_50s_a_new_beginning
+	prerequisite = { focus = PRC_50s_finish_the_internal_works }
+	prerequisite = { focus  = PRC_50s_finish_the_first_land_reforms }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		country_event = prc_50s_events.13
+        set_global_flag = prc_tuijuerxian		
+	}
+}

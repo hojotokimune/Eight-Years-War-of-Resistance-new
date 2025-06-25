@@ -1,0 +1,978 @@
+RCM_CHI_WOR = {
+	CHI_WOR_defensive_fortifications = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 25
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_defensive_fortifications
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+    CHI_WOR_static_defense = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 45
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_defensive_fortifications
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_static_defense
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_mountain_warfare = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 45
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_defensive_fortifications
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_mountain_warfare
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+	CHI_WOR_scorched_earth = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 45
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_defensive_fortifications
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_scorched_earth
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_the_big_sword_march = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		CHI_increase_anti_japanese_sentiment = yes
+		complete_national_focus = CHI_WOR_the_big_sword_march
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+    CHI_WOR_night_raid = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		CHI_increase_anti_japanese_sentiment = yes
+		complete_national_focus = CHI_WOR_night_raid
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+    CHI_WOR_solicit_international_goodwill = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 14
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_solicit_international_goodwill
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_1938_operations = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		date > 1938.1.1
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_1938_operations
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_psychological_warfare = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 50
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1938_operations
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_psychological_warfare
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_ambush_tactics = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 50
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1938_operations
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_ambush_tactics
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_fearmonger_chinese_retribution = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 50
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1938_operations
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_fearmonger_chinese_retribution
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+
+	CHI_WOR_1939_1940_offensive = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		date > 1941.12.7
+		has_completed_focus = CHI_WOR_fearmonger_chinese_retribution
+		has_completed_focus = CHI_WOR_ambush_tactics
+		has_completed_focus = CHI_WOR_psychological_warfare
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_1939_1940_offensive
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	CHI_WOR_patriotism = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1939_1940_offensive
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_patriotism
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_marytrdom = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1939_1940_offensive
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_marytrdom
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	CHI_WOR_japan_is_defeated = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 1
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			NOT = {
+			has_war_with = JAP
+			}
+		}
+		available = {
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+        JAP = { has_global_flag = JAP_defeated } 
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_japan_is_defeated
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_war_of_attrition = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1939_1940_offensive
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_war_of_attrition
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_prolonged_war = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_war_of_attrition
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_prolonged_war
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	CHI_WOR_strategic_retreat = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_war_of_attrition
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_strategic_retreat
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_magnetic_warfare = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_1939_1940_offensive
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_magnetic_warfare
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_cut_off_enemy_supply = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_magnetic_warfare
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_cut_off_enemy_supply
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	CHI_WOR_encircle_the_enemy = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_magnetic_warfare
+
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_encircle_the_enemy
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+	CHI_WOR_god_of_war = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_god_of_war
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+	CHI_WOR_asess_shanghai_performance = {
+		icon = generic_mountain_fortification
+		fire_only_once = yes
+		days_remove = 35
+		visible = {
+			tag = CHI
+			CHI = {
+			has_completed_focus = CHI_WOR_the_war_of_resistance
+			}
+			has_war_with = JAP
+		}
+		available = {
+		has_completed_focus = CHI_WOR_battle_of_shanghai
+		NOT = {
+			has_country_flag = CHI_zhixingjihua
+		}
+		has_war_with = JAP
+		NOT = { JAP = { has_global_flag = JAP_defeated } }
+		}
+		complete_effect = {
+			set_country_flag = CHI_zhixingjihua
+		}
+		remove_trigger = {
+		}
+		remove_effect = {
+		complete_national_focus = CHI_WOR_asess_shanghai_performance
+		clr_country_flag = CHI_zhixingjihua
+		}
+		cancel_trigger = {
+			OR = {
+				has_war = no
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+		ai_will_do = {
+			base = 0
+		}
+	}
+
+
+
+}

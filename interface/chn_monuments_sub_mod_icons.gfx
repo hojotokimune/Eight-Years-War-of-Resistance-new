@@ -1,0 +1,114 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_monument_dujiangyan"
+        textureFile = "gfx/interface/monuments/chn/dujiangyan.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_terracotta_army"
+        textureFile = "gfx/interface/monuments/chn/terracotta_army.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_silk_road"
+        textureFile = "gfx/interface/monuments/chn/silk_road.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_longmen_grottoes"
+        textureFile = "gfx/interface/monuments/chn/longmen_grottoes.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_beijing_hangzhou_grand_canal"
+        textureFile = "gfx/interface/monuments/chn/beijing_hangzhou_grand_canal.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_tai"
+        textureFile = "gfx/interface/monuments/chn/mount_tai.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_shanhaiguan"
+        textureFile = "gfx/interface/monuments/chn/shanhaiguan.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_zhenbeitai"
+        textureFile = "gfx/interface/monuments/chn/zhenbeitai.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_jiayuguan"
+        textureFile = "gfx/interface/monuments/chn/jiayuguan.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_hua"
+        textureFile = "gfx/interface/monuments/chn/mount_hua.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_heng"
+        textureFile = "gfx/interface/monuments/chn/mount_heng.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_heng2"
+        textureFile = "gfx/interface/monuments/chn/mount_heng2.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_song"
+        textureFile = "gfx/interface/monuments/chn/mount_song.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_wutai"
+        textureFile = "gfx/interface/monuments/chn/mount_wutai.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_qingcheng"
+        textureFile = "gfx/interface/monuments/chn/mount_qingcheng.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_yellow_crane_tower"
+        textureFile = "gfx/interface/monuments/chn/yellow_crane_tower.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_pavilion_of_prince_teng"
+        textureFile = "gfx/interface/monuments/chn/pavilion_of_prince_teng.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_yueyang_tower"
+        textureFile = "gfx/interface/monuments/chn/yueyang_tower.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_stork_tower"
+        textureFile = "gfx/interface/monuments/chn/stork_tower.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_penglai_pavilion"
+        textureFile = "gfx/interface/monuments/chn/penglai_pavilion.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_leifeng_tower"
+        textureFile = "gfx/interface/monuments/chn/leifeng_tower.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_dayan_pagoda"
+        textureFile = "gfx/interface/monuments/chn/dayan_pagoda.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_bronze_bird_terrace"
+        textureFile = "gfx/interface/monuments/chn/bronze_bird_terrace.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_loulan"
+        textureFile = "gfx/interface/monuments/chn/loulan.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_sanxingdui_site"
+        textureFile = "gfx/interface/monuments/chn/sanxingdui_site.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_huangdi_mausoleum"
+        textureFile = "gfx/interface/monuments/chn/huangdi_mausoleum.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_monument_to_the_people's_heroes"
+        textureFile = "gfx/interface/monuments/chn/monument_to_the_people's_heroes.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_great_hall_of_the_people"
+        textureFile = "gfx/interface/monuments/chn/great_hall_of_the_people.dds"
+    }
+}

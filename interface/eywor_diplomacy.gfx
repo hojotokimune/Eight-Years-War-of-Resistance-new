@@ -1,0 +1,17 @@
+spriteTypes = {
+    spriteType = {
+		name = "GFX_relation_military_aid"
+		texturefile = "gfx/interface/relations/relation_military_aid.dds"
+        legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_relation_military_aid_initiator"
+		texturefile = "gfx/interface/relations/relation_military_aid_initiator.dds"
+        legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_relation_military_aid_receiver"
+		texturefile = "gfx/interface/relations/relation_military_aid_receiver.dds"
+        legacy_lazy_load = no
+	}
+}

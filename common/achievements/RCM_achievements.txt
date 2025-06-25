@@ -1,0 +1,133 @@
+# frames: Frame numbers for ribbon sprite layers.
+# colors: Tint colors (R G B A) for ribbon sprite layers
+
+unique_id = EYWOR_achievements
+	
+	china_unify_1 = {
+		possible = {
+            # classic triggers used in all vanilla achievements
+            difficulty > 1
+            has_any_custom_difficulty_setting = no
+            #game_rules_allow_achievements = yes
+        }
+		happened = {
+			#tag = event_target:WTT_current_china_leader
+            tag = CHI
+			is_subject = no
+		    has_global_flag = CHI_no_longer_united_flag
+			NOT = { country_exists = event_target:WTT_communist_china }
+			NOT = { has_war_with = JAP }
+		}
+	}	
+    #china_unify_2 = {
+	#	possible = {
+    #        # classic triggers used in all vanilla achievements
+    #        difficulty > 1
+    #        has_any_custom_difficulty_setting = no
+    #        #game_rules_allow_achievements = yes
+    #    }
+	#	happened = {
+	#	    tag = event_target:WTT_current_china_leader
+	#		all_core_state = {
+	#            is_owned_and_controlled_by = ROOT
+	#		}
+	#		
+	#	}
+	#}	
+	#china_unify_3 = {
+	#	possible = {
+    #        # classic triggers used in all vanilla achievements
+    #        difficulty > 1
+    #        has_any_custom_difficulty_setting = no
+    #        #game_rules_allow_achievements = yes
+    #    }
+	#	happened = {
+	#	    tag = CHI
+	#		has_completed_focus = CHI_the_fall_of_mainland
+	#		NOT = {
+	#			country_exists = event_target:WTT_communist_china
+	#		}
+	#		1015 = { is_owned_and_controlled_by = ROOT } 
+	#		613 = { is_owned_and_controlled_by = ROOT }
+	#		608 = { is_owned_and_controlled_by = ROOT }
+	#	}
+	#}	
+	prc_unify = {
+		possible = {
+            # classic triggers used in all vanilla achievements
+            difficulty > 1
+            has_any_custom_difficulty_setting = no
+            #game_rules_allow_achievements = yes
+        }		
+		happened = {
+			tag = PRC
+            is_subject = no
+		    has_completed_focus = PRC_A_New_Country
+			608 = { is_owned_and_controlled_by = ROOT }
+			1015 = { is_owned_and_controlled_by = ROOT }
+		}
+	}
+	#sik_defeat_sheng = {
+	#	possible = {
+    #       # classic triggers used in all vanilla achievements
+    #        difficulty > 1
+    #        has_any_custom_difficulty_setting = no
+    #        #game_rules_allow_achievements = yes
+    #    }		
+	#	happened = {
+	#		OR = {
+	#			tag = TNG
+	#			tag = KHR
+	#			tag = HMI
+	#            tag = KRS
+	#			tag = ATM
+	#		}
+    #        is_subject = no
+	#	    has_completed_focus = SIK_the_defeat_of_sheng_shicai
+	#	}
+	#}
+	#man_restore_qing = {
+	#	possible = {
+    #        # classic triggers used in all vanilla achievements
+    #        difficulty > 1
+    #        has_any_custom_difficulty_setting = no
+    #        #game_rules_allow_achievements = yes
+    #    }		
+	#	happened = {
+	#		tag = MAN 
+    #        is_subject = no
+	#	    has_completed_focus = MAN_claim_the_mandate_of_heaven
+	#	}
+	#}
+	#sic_turnaround = {
+	#	possible = {
+    #        # classic triggers used in all vanilla achievements
+    #        difficulty > 1
+    #        has_any_custom_difficulty_setting = no
+    #        #game_rules_allow_achievements = yes
+    #    }		
+	#	happened = {
+	#		tag = SIC
+    #        1015 = { is_owned_and_controlled_by = ROOT } 
+	#		613 = { is_owned_and_controlled_by = ROOT }
+	#		608 = { is_owned_and_controlled_by = ROOT }
+	#	}
+	#}
+	#chi_blitz = {
+	#	possible = {
+    #        # classic triggers used in all vanilla achievements
+    #        difficulty > 1
+    #        has_any_custom_difficulty_setting = no
+     #       #game_rules_allow_achievements = yes
+    #    }		
+	#	happened = {
+	#		date < 1937.1.1
+	#		tag = CHI
+    #        NOT = {
+	#			country_exists = PRC
+	#		}
+	#		622 = { is_owned_and_controlled_by = ROOT }
+	#	}
+	#}
+	
+

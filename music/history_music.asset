@@ -1,0 +1,28 @@
+
+# MAIN THEME
+music = {
+	name = "Dixie"
+	file = "Dixie.ogg"
+	volume = 0.65
+}
+music = {
+	name = "house_of_the_rising_sun"
+	file = "house_of_the_rising_sun.ogg"
+	volume = 0.65
+}
+music = {
+	name = "japan_the_atomic_era"
+	file = "Geoff Knorr - Japan (The Atomic Era).ogg"
+	volume = 0.65
+}
+music = {
+	name = "victory_ger"
+	file = "victory_ger.ogg"
+	volume = 0.99
+}
+music = {
+	name = "为俄罗斯服役"
+	file = "Хор бессердечных бойцов - Служить России.ogg"
+	volume = 0.99
+}
+

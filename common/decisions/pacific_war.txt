@@ -1,0 +1,1379 @@
+vnr_pacific_war_jap_category = {
+    pw_victory_in_Pacific = {
+        icon = GFX_decision_eng_trade_unions_support
+        visible = {
+            has_war_with = USA
+            #NOT = { 
+                #has_country_flag = jap_offer_peace_usa
+                #has_global_flag = pw_usa_offer_surrender
+            #}
+        }
+        available = {
+            #surrender_progress < 0.1
+            #Control Hawaii
+            629 = { is_controlled_by_ROOT_or_ally = yes }
+            #Control South East Asia key points
+            if = {
+                limit = { has_war_with = MAL }
+                MAL = { has_capitulated = yes }
+                336 = { is_controlled_by_ROOT_or_ally = yes }
+            }
+            if = {
+                imit = { has_war_with = INS }
+                INS = { has_capitulated = yes }
+                335 = { is_controlled_by_ROOT_or_ally = yes }
+            }
+            #if = {
+                #limit = { has_war_with = AST }
+                #AST = { has_capitulated = yes }
+                #285 = { is_controlled_by_ROOT_or_ally = yes }
+            #}
+            if = {
+                limit = { has_war_with = PHI }
+                PHI = { has_capitulated = yes }
+                327 = { is_controlled_by_ROOT_or_ally = yes }
+            }
+        }
+        cost = 25
+        days_re_enable = 30
+
+        complete_effect = {
+            USA = { country_event = { id = pacific_war.0 days = 7 } }
+            set_country_flag = jap_offer_peace_usa
+        }
+
+        ai_will_do = {
+            factor = 100
+        }
+    }
+
+    ph_victory_in_Malaya = {
+        icon = GFX_decision_eng_trade_unions_demand
+        visible = {
+            has_war_with = USA
+            MAL = {
+                any_core_state = {
+                    owner = { has_war_with = ROOT }
+                }
+            }
+        }
+        available = {
+            MAL = {
+                has_capitulated = yes
+            }
+            336 = { is_controlled_by_ROOT_or_ally = yes }
+            NOT = { has_country_flag = ph_jap_celebrating_victory }
+        }
+		fire_only_once = yes
+        days_remove = 80
+        complete_effect = {
+            add_political_power = 50
+            add_war_support = 0.05
+            MAL = { add_legitimacy = -50 }
+            update_jap_victory_idea_in_SEA = yes
+            set_country_flag = ph_jap_celebrating_victory
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_celebrating_victory
+        }
+
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_victory_in_East_Indies = {
+        icon = GFX_decision_eng_trade_unions_demand
+        visible = {
+            has_war_with = USA
+            INS = {
+                any_core_state = {
+                    owner = { has_war_with = ROOT }
+                }
+            }
+        }
+        available = {
+            INS = {
+                has_capitulated = yes
+            }
+            335 = { is_controlled_by_ROOT_or_ally = yes }
+            NOT = { has_country_flag = ph_jap_celebrating_victory }
+        }
+		fire_only_once = yes
+        days_remove = 80
+        complete_effect = {
+            add_political_power = 50
+            add_war_support = 0.05
+            INS = { add_legitimacy = -50 }
+            update_jap_victory_idea_in_SEA = yes
+            set_country_flag = ph_jap_celebrating_victory
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_celebrating_victory
+        }
+        
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_victory_in_Australia = {
+        icon = GFX_decision_eng_trade_unions_demand
+        visible = {
+            has_war_with = USA
+            AST = {
+                any_core_state = {
+                    owner = { has_war_with = ROOT }
+                }
+            }
+        }
+        available = {
+            AST = {
+                has_capitulated = yes
+            }
+            285 = { is_controlled_by_ROOT_or_ally = yes }
+            NOT = { has_country_flag = ph_jap_celebrating_victory }
+        }
+		fire_only_once = yes
+        days_remove = 160
+        complete_effect = {
+            add_political_power = 100
+            add_stability = 0.1
+            add_war_support = 0.2
+            every_country = {
+                limit = { is_ally_with = AST }
+                add_political_power = -50
+                add_war_support = -0.1
+            }
+            update_jap_victory_idea_in_SEA = yes
+            AST = { add_legitimacy = -50 }
+            set_country_flag = ph_jap_celebrating_victory
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_celebrating_victory
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_victory_in_Hawaii = {
+        icon = GFX_decision_eng_trade_unions_demand
+        visible = {
+            has_war_with = USA
+        }
+        available = {
+            629 = {
+                is_controlled_by_ROOT_or_ally = yes
+            }
+            NOT = { has_country_flag = ph_jap_celebrating_victory }
+        }
+		fire_only_once = yes
+        days_remove = 160
+        complete_effect = {
+            add_political_power = 100
+            add_stability = 0.1
+            add_war_support = 0.2
+            USA = {
+                add_war_support = -0.2
+                add_stability = -0.2
+            }
+            update_jap_victory_idea_in_SEA = yes
+            set_country_flag = ph_jap_celebrating_victory
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_celebrating_victory
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_jap_defend_islands = {
+        icon = GFX_decision_generic_prepare_civil_war
+        visible = {
+            has_war_with = USA
+            alliance_naval_strength_ratio < 0.4
+        }
+		available = {
+			has_navy_size = { size < 150 }
+		}
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        days_remove = 60
+        days_re_enable = 60
+        modifier = {
+            coastal_bunker_effectiveness_factor = 0.3
+            out_of_supply_factor = -0.1
+            no_supply_grace = 48
+            experience_loss_factor = 0.2
+            dig_in_speed_factor = 0.15
+        }
+        ai_will_do = {
+            factor = 10
+            modifier = {
+                alliance_naval_strength_ratio < 0.3
+                factor = 5
+            }
+        }
+    }
+    ph_jap_support_army = {
+        icon = GFX_decision_generic_tank
+        visible = {
+            has_war_with = USA
+        }
+        available = {
+            NOT = { has_country_flag = ph_jap_supporting_military }
+        }
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+            set_country_flag = ph_jap_supporting_military
+        }
+        days_remove = 60
+        days_re_enable = 60
+        modifier = {
+            army_attack_factor = 0.05
+            army_defence_factor = 0.05
+            army_org_factor = 0.05
+            acclimatization_hot_climate_gain_factor = 0.05
+
+            navy_fuel_consumption_factor = 0.05
+            experience_gain_navy_factor = -0.05
+            naval_damage_factor = -0.05
+            naval_defense_factor = -0.05
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_supporting_military
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                has_navy_size = { size < 180 }
+                factor = 15
+            }
+        }
+    }
+    ph_jap_support_navy = {
+        icon = GFX_decision_generic_naval
+        visible = {
+            has_war_with = USA
+        }
+        available = {
+            NOT = { has_country_flag = ph_jap_supporting_military }
+        }
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+            set_country_flag = ph_jap_supporting_military
+        }
+        days_remove = 60
+        days_re_enable = 60
+        modifier = {
+            naval_damage_factor = 0.05
+            naval_defense_factor = 0.05
+            navy_org_factor = 0.05
+            naval_morale_factor = 0.05
+
+            army_attack_factor = -0.05
+            army_defence_factor = -0.05
+            army_org_factor = -0.05
+            army_fuel_consumption_factor = 0.05
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_supporting_military
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                has_navy_size = { size > 250 }
+                factor = 15
+            }
+        }
+    }
+    ph_jap_support_army_navy = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+        visible = {
+            has_war_with = USA
+        }
+        available = {
+            NOT = { has_country_flag = ph_jap_supporting_military }
+        }
+        custom_cost_trigger = { command_power > 74.99 }
+        custom_cost_text = decision_cost_CP_75
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -75
+            }
+            set_country_flag = ph_jap_supporting_military
+        }
+        days_remove = 30
+        days_re_enable = 60
+        modifier = {
+            naval_damage_factor = 0.05
+            naval_defense_factor = 0.05
+            navy_org_factor = -0.05
+            naval_morale_factor = -0.05
+
+            army_attack_factor = 0.05
+            army_defence_factor = 0.05
+            army_org_factor = -0.05
+            army_morale_factor = -0.05
+        }
+        remove_effect = {
+            clr_country_flag = ph_jap_supporting_military
+        }
+`        ai_will_do = {
+            factor = 1
+            modifier = {
+                has_navy_size = { size > 179 }
+                has_navy_size = { size < 251 }
+                factor = 15
+            }
+        }
+    }
+
+    pw_japan_sue_for_peace = {
+        icon = GFX_decision_eng_propaganda_campaigns
+        visible = {
+            USA = { surrender_progress < 0.1 }
+            has_war_with = USA
+            is_subject = no	
+        }
+        available = {
+	            has_war_with = USA	
+                is_subject = no							
+        }
+        days_remove = 60
+		fire_only_once = yes
+
+        complete_effect = {
+            USA = {
+                country_event = { id = pacific_war.2 days = 2 }  
+            }
+            set_global_flag = socialist_korea_flag
+        }		
+        ai_will_do = {
+            base = 0
+            modifier = {
+                add = 9999
+                has_global_flag = USA_launched_nuke_at_JAP
+            }
+        }
+    }
+}
+
+vnr_pacific_war_usa_category = {
+    ph_patriotism_propaganda = {
+        icon = GFX_decision_eng_propaganda_campaigns
+        visible = {
+            has_war_with = JAP
+        }
+        fire_only_once = yes
+        cost = 25
+        days_remove = 30
+        modifier = {
+            mobilization_speed = 0.5
+            training_time_factor = -0.5
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    ph_appoint_Nimitz = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            has_war_with = JAP
+        }
+        fire_only_once = yes
+        cost = 10
+        days_remove = 14
+        remove_effect = {
+            country_event = vnr_pearl_harbor.7
+            set_country_flag = ph_nimitz_appointed
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_influence_latin_america = {
+        icon = GFX_decision_generic_political_address
+        visible = {
+            has_war_with = JAP
+        }
+        fire_only_once = yes
+        cost = 25
+
+        complete_effect = {
+            every_other_country = {
+                limit = { 
+                    has_country_flag = monroe_doctrine
+                    NOT = { is_embargoing = JAP }
+                }
+                country_event = vnr_pearl_harbor.10
+            }
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_support_decryption_unit = {
+        icon = GFX_decision_SOV_place_hq
+        allowed = {
+            has_dlc = "La Resistance"
+        }
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_war_with = JAP
+        }
+        available = {
+            agency_upgrade_number > 4
+        }
+        custom_cost_trigger = { command_power > 24.99 }
+        custom_cost_text = decision_cost_CP_25
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -25
+            }
+        }
+        days_remove = 50
+        days_re_enable = 150
+        remove_effect = {
+            add_intel = {
+                target = JAP
+                navy_intel = 15
+            }
+            add_decryption = {
+                target = JAP
+                ratio = 0.15
+            }
+        }
+        ai_will_do = {
+            factor = 5
+            modifier = {
+                command_power > 30
+                factor = 5
+            }
+        }
+    }
+    ph_create_pacific_theatre = {
+        icon = GFX_decision_eng_trade_unions_support
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_war_with = JAP
+        }
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        days_remove = 7
+        remove_effect = {
+            navy_experience = 50
+            set_global_flag = pacific_theatre_formed
+        }
+        ai_will_do = {
+            factor = 15
+        }
+    }
+    ph_nimitz_defense_strategy = {
+        icon = GFX_decision_generic_ignite_civil_war
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_idea = usa_ph_shocking
+            has_war_with = JAP
+        }
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        days_remove = 90
+        modifier = {
+            coastal_bunker_effectiveness_factor = 0.5
+        }
+        targeted_modifier = {
+            tag = JAP
+            defense_bonus_against = 0.1
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ph_doolittle_raid = {
+        icon = GFX_decision_generic_air
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_war_with = JAP
+        }
+        available = {
+            has_country_flag = pearl_harbor_repaired
+            OR = {
+                CHI = {
+                    any_core_state = { owner = { has_war_with = JAP } }
+                }
+                SOV = { 
+                    any_enemy_country = { has_war_with = ROOT }
+                    NOT = { has_war_with = ROOT }
+                }
+            }
+        }
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+            ph_usa_create_doolittle = yes
+        }
+        fire_only_once = yes
+        days_remove = 30
+        remove_effect = {
+            navy_experience = 10
+            air_experience = 10
+            every_country = {
+                news_event = vnr_pearl_harbor_news.3
+            }
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_practice_dive_bombing = {
+        icon = GFX_decision_generic_air
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_war_with = JAP
+        }
+        available = {
+            has_navy_size = {
+                type = carrier
+                size > 0
+            }
+        }
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        days_remove = 60
+        remove_effect = {
+            set_technology = { dive_bomber_study = 1 }
+            air_experience = 20
+            ph_usa_create_best_and_mcclusky = yes
+        }
+        ai_will_do = {
+            factor = 20
+        }
+    }
+    ph_island_hopping_tactics = {
+        icon = GFX_decision_infiltrate_state
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_war_with = JAP
+        }
+        available = {
+            is_ally_with = AST
+			AST = {
+				surrender_progress < 0.1
+			}
+            naval_strength_comparison = {
+                other = JAP
+                tooltip = ph_prepare_island_hopping_tt
+                ratio > 2.5
+                sub_unit_def_weights = {
+                    carrier = 2.5
+                    battleship = 1
+                    battle_cruiser = 0.8
+                    heavy_cruiser = 0.5
+                    light_cruiser = 0.2
+                    destroyer = 0.1
+                }
+            }
+        }
+		fire_only_once = yes
+        custom_cost_trigger = { command_power > 74.99 }
+        custom_cost_text = decision_cost_CP_75
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -75
+                set_country_flag = usa_island_hopping_activated
+            }
+            army_experience = 50
+            add_tech_bonus = {
+                bonus = 0.5
+                uses = 2
+                category = marine_tech
+            }
+            add_doctrine_cost_reduction = {
+                cost_reduction = 0.5
+                uses = 2
+                category = special_forces_doctrine
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                surrender_progress < 0.2
+                factor = 25
+            }
+        }
+    }
+    ph_prepare_island_hopping = {
+        icon = GFX_decision_infiltrate_state
+        visible = {
+            has_country_flag = usa_island_hopping_activated
+            has_war_with = JAP
+            NOT = { has_global_flag = operation_downfall_flag }
+        }
+        available = {
+            is_ally_with = AST
+			AST = {
+				surrender_progress < 0.1
+			}
+            naval_strength_comparison = {
+                other = JAP
+                tooltip = ph_prepare_island_hopping_tt
+                ratio > 2
+                sub_unit_def_weights = {
+                    carrier = 2.5
+                    battleship = 1
+                    battle_cruiser = 0.8
+                    heavy_cruiser = 0.5
+                    light_cruiser = 0.2
+                    destroyer = 0.1
+                }
+            }
+        }
+        custom_cost_trigger = {
+            command_power > 24.99
+        }
+        custom_cost_text = decision_cost_CP_25
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -25
+            }
+        }
+        days_remove = 50
+        days_re_enable = 50
+        modifier = {
+            naval_invasion_prep_speed = 0.3
+            naval_invasion_capacity = 10
+            naval_invasion_penalty = -0.1
+            naval_invasion_planning_bonus_speed = 0.1
+            navy_max_range_factor = 0.2
+            extra_marine_supply_grace = 48
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                surrender_progress < 0.2
+                factor = 25
+            }
+        }
+    }
+    ph_repair_infrastructure_1 = {
+        icon = GFX_decision_generic_construction
+        visible = {
+            always = no
+        }
+        fire_only_once = yes
+        cost = 10
+        days_remove = 90
+        modifier = {
+            production_speed_buildings_factor = -0.1
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_repair_infrastructure_tt
+            hidden_effect = {
+                ph_repair_ships = yes
+            }
+			set_country_flag = pearl_harbor_repaired
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_repair_infrastructure_2 = {
+        icon = GFX_decision_generic_construction
+        visible = {
+            always = no
+        }
+        fire_only_once = yes
+        cost = 15
+        days_remove = 180
+        modifier = {
+            production_speed_buildings_factor = -0.15
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_repair_infrastructure_tt
+            hidden_effect = {
+                ph_repair_ships = yes
+            }
+			set_country_flag = pearl_harbor_repaired
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    pw_operation_downfall_discussion = {
+        icon = GFX_decision_generic_ignite_civil_war
+        visible = {
+            has_country_flag = ph_nimitz_appointed
+            has_war_with = JAP
+            JAP = {
+                NOT = {
+	    			controls_state = 526
+	    			controls_state = 645
+	    		}
+            }
+            NOT = { has_global_flag = operation_downfall_flag }
+        }
+        available = {
+            has_navy_size = { size > 599 }
+            has_army_manpower = { size > 999999 }
+            has_deployed_air_force_size = { size > 2999 }
+        }
+        complete_effect = {
+            country_event = operation_downfall.0
+        }
+    }
+    pw_operation_downfall = {
+        icon = GFX_decision_generic_operation
+        activation = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        is_good = yes
+        cancel_trigger = {
+            JAP = { has_capitulated = yes }
+        }
+        days_mission_timeout = 120
+        timeout_effect = {
+            custom_effect_tooltip = pw_operation_downfall_tt
+            add_timed_idea = {
+                idea = usa_operation_downfall
+                days = 365
+            }
+            set_country_flag = operation_downfall_go
+            hidden_effect = {
+                every_country = {
+                    news_event = { id = operation_downfall_news.0 days = 1 }
+                }
+            }
+        }
+    }
+    pw_operation_starvation = {
+        icon = GFX_decision_generic_ignite_civil_war
+        visible = {
+            has_global_flag = operation_downfall_flag
+            has_war_with = JAP
+        }
+        available = {
+            JAP = {
+                NOT = {
+	    			controls_state = 526
+	    			controls_state = 645
+	    		}
+            }
+            NOT = { has_country_flag = starve_japan_ongoing }
+        }
+        custom_cost_text = decision_cost_CP_25
+        custom_cost_trigger = { command_power > 24.99 }
+        complete_effect = {
+            hidden_effect = { add_command_power = -25 }
+            set_country_flag = starve_japan_ongoing
+        }
+        days_remove = 90
+        fire_only_once = yes
+        remove_effect = {
+            effect_tooltip = { JAP = { jap_add_food_crisis = yes } }
+            hidden_effect = {
+                JAP = { country_event = { id = operation_downfall.1 days = 2 } }
+            }
+            clr_country_flag = starve_japan_ongoing
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_burn_cropland = {
+        icon = GFX_decision_generic_air
+        visible = {
+            has_global_flag = operation_downfall_flag
+            has_war_with = JAP
+        }
+        available = {
+            JAP = {
+                NOT = {
+	    			controls_state = 526
+	    			controls_state = 645
+	    		}
+            }
+            has_deployed_air_force_size = {
+                type = strategic_bomber
+                size > 99
+            }
+            NOT = { has_country_flag = starve_japan_ongoing }
+        }
+        custom_cost_text = decision_cost_CP_25
+        custom_cost_trigger = { command_power > 24.99 }
+        complete_effect = {
+            hidden_effect = { add_command_power = -25 }
+            set_country_flag = starve_japan_ongoing
+        }
+        days_remove = 90
+        fire_only_once = yes
+        remove_effect = {
+            effect_tooltip = { JAP = { jap_add_food_crisis = yes } }
+            hidden_effect = {
+                JAP = { country_event = { id = operation_downfall.1 days = 2 } }
+                every_country = { news_event = { id = operation_downfall_news.1 days = 1 } }
+            }
+            clr_country_flag = starve_japan_ongoing
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_gas_food_crops = {
+        icon = GFX_decision_generic_scorched_earth
+        visible = {
+            has_global_flag = operation_downfall_flag
+            has_war_with = JAP
+        }
+        available = {
+            JAP = {
+                NOT = {
+	    			controls_state = 526
+	    			controls_state = 645
+	    		}
+            }
+            NOT = { has_country_flag = starve_japan_ongoing }
+            casualties_inflicted_by = {
+                opponent = JAP
+                thousands > 500
+            }
+        }
+        custom_cost_text = decision_cost_CP_25
+        custom_cost_trigger = { command_power > 24.99 }
+        complete_effect = {
+            hidden_effect = { add_command_power = -25 }
+            add_political_power = -50
+            set_country_flag = starve_japan_ongoing
+        }
+        days_remove = 90
+        fire_only_once = yes
+        remove_effect = {
+            effect_tooltip = { JAP = { jap_add_food_crisis = yes } }
+            hidden_effect = {
+                JAP = { country_event = { id = operation_downfall.1 days = 2 } }
+                every_country = { news_event = { id = operation_downfall_news.2 days = 1 } }
+            }
+            clr_country_flag = starve_japan_ongoing
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+}
+
+vnr_hondo_kessen_category = {
+    pw_recruitment = {
+        icon = GFX_decision_generic_military
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        cost = 5
+        days_remove = 10
+        days_re_enable = 10
+        remove_effect = {
+            add_war_support = -0.025
+            add_manpower = 50000
+        }
+        ai_will_do = {
+            factor = 10
+            modifier = {
+                has_war_support < 0.8
+                factor = 0
+            }
+        }
+    }
+    pw_citizen_training = {
+        icon = GFX_decision_generic_protection
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 5
+        days_remove = -1
+        modifier = {
+            army_strength_factor = -0.1
+            minimum_training_level = -0.8
+            training_time_army_factor = -0.3
+            experience_loss_factor = 0.15
+            army_morale_factor = -0.1
+            army_org_factor = -0.1
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_issue_weapons = {
+        icon = GFX_decision_generic_prepare_civil_war
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 10
+        days_remove = -1
+        modifier = {
+            resistance_growth_on_our_occupied_states = 0.25
+            resistance_decay_on_our_occupied_states = -0.25
+            resistance_damage_to_garrison_on_our_occupied_states = 0.25
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_deploy_shitotsubakurai = {
+        icon = GFX_decision_generic_tank
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 5
+        days_remove = -1
+        complete_effect = {
+            set_technology = { jap_shitotsubakurai = 1 }
+        }
+        modifier = {
+            army_strength_factor = -0.05
+        } 
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_deploy_kaiten = {
+        icon = GFX_decision_generic_human_torpedo
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 5
+        days_remove = -1
+        modifier = {
+            naval_accidents_chance = 0.25
+            naval_damage_factor = 0.1
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_deploy_kamikaze = {
+        icon = GFX_decision_generic_air
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 5
+        days_remove = -1
+        modifier = {
+            air_accidents_factor = 0.5
+            ground_attack_factor = 0.05
+            air_untrained_pilots_penalty_factor = -0.25
+            air_manpower_requirement_factor = -0.5
+            air_nav_efficiency = 0.25
+            air_defence_factor = -0.5
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_study_pacific_war = {
+        icon = GFX_decision_generic_operation
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+        }
+        fire_only_once = yes
+        custom_cost_text = decision_cost_CP_15
+        custom_cost_trigger = { command_power > 14.99 }
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+                pw_create_hondo_kessen_division_templates = yes
+            }
+            add_ideas = jap_hondo_kessen_1
+            set_country_flag = jap_hondo_kessen_planning
+        }
+        ai_will_do = {
+            factor = 5
+            modifier = {
+                any_core_state = { is_controlled_by_ROOT_or_ally = no }
+                factor = 10
+            }
+        }
+    }
+
+    pw_strengthen_Kyushu = {
+        icon = GFX_decision_generic_coastal_fortification
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+            has_country_flag = jap_hondo_kessen_planning
+        }
+        fire_only_once = yes
+        custom_cost_text = decision_cost_CP_15
+        custom_cost_trigger = { command_power > 14.99 }
+        days_remove = 30
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            528 = {
+                deploy_shidan_islands = yes
+                jap_add_coastal_bunker = yes
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_strengthen_Shikoku = {
+        icon = GFX_decision_generic_coastal_fortification
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+            has_country_flag = jap_hondo_kessen_planning
+        }
+        fire_only_once = yes
+        custom_cost_text = decision_cost_CP_15
+        custom_cost_trigger = { command_power > 14.99 }
+        days_remove = 30
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            530 = {
+                deploy_shidan_islands = yes
+                jap_add_coastal_bunker = yes
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_strengthen_home = {
+        icon = GFX_decision_generic_coastal_fortification
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+            has_country_flag = jap_hondo_kessen_planning
+        }
+        fire_only_once = yes
+        custom_cost_text = decision_cost_CP_15
+        custom_cost_trigger = { command_power > 14.99 }
+        days_remove = 60
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            529 = { 
+                deploy_shidan_home = yes 
+                jap_add_coastal_bunker = yes
+            }
+            531 = { 
+                deploy_shidan_home = yes 
+                jap_add_coastal_bunker = yes
+            }
+            532 = { 
+                deploy_shidan_home = yes 
+                jap_add_coastal_bunker = yes
+            }
+            533 = { 
+                deploy_shidan_home = yes 
+                jap_add_coastal_bunker = yes
+            }
+            534 = { 
+                deploy_shidan_islands = yes 
+                jap_add_coastal_bunker = yes
+            }
+            535 = { 
+                deploy_shidan_islands = yes 
+                jap_add_coastal_bunker = yes
+            }
+            282 = {
+                deploy_shidan_home = yes
+                # double the coastal bunker for defense of Tokyo
+                jap_add_coastal_bunker = yes
+                jap_add_coastal_bunker = yes
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_strengthen_Hokkaido = {
+        icon = GFX_decision_generic_coastal_fortification
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+            has_country_flag = jap_hondo_kessen_planning
+        }
+        fire_only_once = yes
+        custom_cost_text = decision_cost_CP_15
+        custom_cost_trigger = { command_power > 14.99 }
+        days_remove = 30
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            536 = { 
+                deploy_shidan_islands = yes 
+                jap_add_coastal_bunker = yes
+            }
+        }
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_gyokusai_propaganda = {
+        icon = GFX_decision_generic_civil_support
+        visible = {
+            can_use_hondo_kessen_decisions = yes
+			has_country_flag = jap_hondo_kessen_planning
+        }
+        fire_only_once = yes
+        cost = 50
+        days_remove = 30
+        remove_effect = {
+            swap_ideas = {
+                remove_idea = jap_hondo_kessen_1
+                add_idea = jap_hondo_kessen_2
+            }
+        }
+        ai_will_do = {
+            factor = 0
+            modifier = {
+                any_core_state = {
+                    is_controlled_by_ROOT_or_ally = no
+                    region = 154
+                }
+                add = 100
+            }
+        }
+    }
+}
+vnr_pacific_allies_category = {
+    pw_allies_civilian_industry = {
+        icon = GFX_decision_generic_construction
+        allowed = { tag = USA }
+        targets = { AST NZL INS MAL }
+        target_trigger = {
+            FROM = { 
+                is_ally_with = ROOT
+                has_capitulated = no
+            }
+        }
+
+        cost = 25
+        fire_only_once = yes
+        days_remove = 30
+
+        remove_effect = {
+            FROM = {
+                add_offsite_building = { type = industrial_complex level = 3 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    pw_allies_military_industry = {
+        icon = GFX_decision_generic_merge_plant_materiel
+        allowed = { tag = USA }
+        targets = { AST NZL INS MAL }
+        target_trigger = {
+            FROM = { 
+                is_ally_with = ROOT
+                has_capitulated = no
+            }
+        }
+
+        cost = 25
+        fire_only_once = yes
+        days_remove = 30
+
+        remove_effect = {
+            FROM = {
+                add_offsite_building = { type = arms_factory level = 3 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_allies_loans = {
+        icon = GFX_decision_hol_attract_foreign_investors
+        allowed = { tag = USA }
+        targets = { AST NZL }
+        target_trigger = {
+            FROM = { 
+                is_ally_with = ROOT
+                has_capitulated = no
+            }
+        }
+
+        cost = 50
+        days_remove = 60
+
+        remove_effect = {
+            FROM = {
+                if = {
+                    limit = {
+                        NOT = { has_idea = tot_economic_mobilisation }
+                    }
+                    add_ideas = war_economy
+                }
+                add_political_power = 100
+            }
+        }
+
+        ai_will_do = {
+            factor = 10
+        }
+    }
+    pw_allies_ensure_trade = {
+        icon = GFX_decision_generic_industry
+        allowed = { tag = USA }
+        targets = { AST NZL }
+        target_trigger = {
+            FROM = { 
+                is_ally_with = ROOT
+                has_capitulated = no
+            }
+        }
+
+        cost = 15
+        fire_only_once = yes
+        days_remove = 30
+        modifier = {
+            consumer_goods_factor = 0.1
+        }
+
+        remove_effect = {
+            FROM = {
+                add_equipment_to_stockpile = { type = convoy amount = 100 }
+            }
+        }
+
+        ai_will_do = {
+            factor = 3
+        }
+    }
+    pw_allies_expand_sydney = {
+        icon = GFX_decision_generic_merge_plant_ship
+        allowed = { tag = AST }
+
+        modifier = {
+            civilian_factory_use = 3
+        }
+        days_remove = 90
+
+        remove_effect = {
+            285 = {
+                add_building_construction = {
+                    type = naval_base
+                    level = 3
+                    instant_build = yes
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    pw_allies_expand_auckland = {
+        icon = GFX_decision_generic_merge_plant_ship
+        allowed = { tag = NZL }
+
+        modifier = {
+            civilian_factory_use = 3
+        }
+        days_remove = 90
+
+        remove_effect = {
+            285 = {
+                add_building_construction = {
+                    type = naval_base
+                    level = 3
+                    instant_build = yes
+                    province = {
+                        all_provinces = yes
+                        limit_to_naval_base = yes
+                    }
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 5
+        }
+    }
+    pw_allies_merge_command = {
+        icon = GFX_decision_generic_army_support
+        allowed = { tag = USA }
+        targets = { AST NZL }
+        target_trigger = {
+            FROM = { 
+                is_ally_with = ROOT
+                has_capitulated = no
+                surrender_progress > 0.8
+                is_ai = yes
+            }
+        }
+
+        complete_effect = {
+            FROM = {
+                transfer_units_fraction = {
+                    target = ROOT
+                    size = 1.0
+                    stockpile_ratio = 0.9
+                }
+            }
+        }
+
+        ai_will_do = {
+            factor = 1
+        }
+    }
+}

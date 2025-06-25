@@ -1,0 +1,47 @@
+Recover_from_nuke_by_5_supply = {
+	Recover_from_nuke_by_5_supply = {
+		icon = GFX_decision_generic_nationalism
+		priority = 1
+		target_array = controlled_states
+        state_target = yes 
+        on_map_mode = map_and_decisions_view
+		cost = 100
+		   target_trigger = {
+
+            FROM = {
+                is_fully_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = nuke_state_modifier
+				}
+            }
+
+        }
+
+		visible = {
+			FROM = {
+                is_fully_controlled_by = ROOT
+				has_dynamic_modifier = {
+					modifier = nuke_state_modifier
+				}
+            }
+		}
+        days_remove = 70
+		remove_effect = {
+			FROM = {
+         remove_dynamic_modifier = {
+			modifier = nuke_state_modifier
+		 }
+
+			}
+			add_to_variable = {
+				ROOT.supply_condition_base = -5
+			}
+			custom_effect_tooltip = lose_base_supp_cond_p5_tt2
+		}
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+}

@@ -1,0 +1,843 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+####################
+## Foreign Politics
+####################
+shared_focus = {
+	id = PRC_50s_strengthen_soviet_support
+	icon = GFX_focus_PRC_50s_strengthen_soviet_support
+	x = 47
+	y = 17
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 5
+			is_neighbor_of = SOV
+		}
+	}
+
+	available = {
+		OR = {		
+			has_country_flag = PRC_Establish_state_or_independent_government
+            has_completed_focus = PRC_lighthouse_of_democracy_focus	
+            has_completed_focus = PRC_Federal_Republic	
+            has_completed_focus = PRC_For_the_Soviets		
+            }
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_stability = 0.1
+		add_political_power = -125
+	}
+}
+shared_focus = {
+	id = PRC_50s_sino_soviet_friendship
+	icon = GFX_goal_PRC_Join_USSR
+	x = 0
+	y = 1
+	relative_position_id = PRC_50s_strengthen_soviet_support
+	prerequisite = { focus = PRC_50s_strengthen_soviet_support }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 5
+			is_neighbor_of = SOV
+		}
+	}
+
+	available = {
+	}
+
+	bypass = {
+	has_completed_focus = PRC_Join_USSR
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		news_event = ww2_news_event.10
+		add_opinion_modifier = {
+			target = SOV
+			modifier = SOV_PRC_treaty_of_friendship
+		}
+		SOV = { 
+			add_opinion_modifier = {
+				target = PRC
+				modifier = SOV_PRC_treaty_of_friendship
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_retain_chinese_autonomy
+	icon = GFX_focus_PRC_50s_bolster_socialism
+	x = 0
+	y = 1
+	relative_position_id = PRC_50s_sino_soviet_friendship
+	prerequisite = { focus = PRC_50s_sino_soviet_friendship }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+		modifier = {
+			factor = 15
+			is_in_faction_with = SOV
+		}
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		unlock_decision_tooltip = prc_50s_leave_the_comintern
+	}
+}
+## Soviet Aid ##
+shared_focus = {
+	id = PRC_50s_soviet_industrial_aid
+	icon = GFX_focus_SOV_organize_wreckers
+	x = -5
+	y = 1
+	relative_position_id = PRC_50s_retain_chinese_autonomy
+	prerequisite = { focus = PRC_50s_retain_chinese_autonomy }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_tech_bonus = {
+			bonus = 1
+			uses = 5
+			category = armor
+		}
+		add_tech_bonus = {
+			bonus = 2
+			uses = 3
+			category = cat_anti_tank
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 1
+			category = infantry_tech
+		}
+		add_tech_bonus = {
+			bonus = 1
+			uses = 5
+			category = air_equipment
+		}
+		add_tech_bonus = {
+			bonus = 2
+			uses = 3
+			category = air_doctrine
+		}
+		add_research_slot = 1
+		add_timed_idea = {
+			idea = prc_50s_ideas_soviet_technical_advisers
+			days = 1250
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_out_into_the_world
+	icon = GFX_focus_ger_great_red_menace
+	x = 3
+	y = 1
+	relative_position_id = PRC_50s_retain_chinese_autonomy
+	prerequisite = { focus = PRC_50s_retain_chinese_autonomy }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 50
+	}
+}
+shared_focus = {
+	id = PRC_50s_support_viet_minh
+	icon = GFX_focus_PRC_50s_support_viet_minh
+	x = -4
+	y = 1
+	relative_position_id = PRC_50s_out_into_the_world
+	prerequisite = { focus = PRC_50s_out_into_the_world }
+    available = { VIN = { exists = yes} }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		VIN = { 
+			add_political_power = 75
+			add_stability = 0.05
+			add_war_support = 0.05 
+		}
+	}
+}
+
+	#抗法援越#
+	shared_focus = {
+		id = PRC_kangfayuanyue
+		icon = GFX_goal_PRC_kangfayuanyue
+		cost = 1
+		x = 0
+		y = 2
+	        prerequisite = { focus = PRC_50s_support_viet_minh }
+		relative_position_id = PRC_50s_support_viet_minh
+		ai_will_do = {
+			factor = 9999
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = benxianbukewan
+		}
+		available = {
+			always = no
+			VIN = {
+				has_war_with = FRA
+			}
+		}
+
+	}
+	
+	#抗法援越#
+
+shared_focus = {
+	id = PRC_50s_miltiary_aid_viet_minh
+	icon = GFX_focus_utilise_japanese_troops
+	x = -1
+	y = 1
+	relative_position_id = PRC_50s_support_viet_minh
+	prerequisite = { focus = PRC_50s_support_viet_minh }
+    available = { VIN = { exists = yes} }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		VIN = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 10000
+				producer = PRC
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 320
+				producer = PRC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 1000
+				producer = PRC
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_industrial_aid_viet_minh
+	icon = GFX_focus_PRC_50s_industrial_aid_viet_minh
+	x = 1
+	y = 1
+	relative_position_id = PRC_50s_support_viet_minh
+	prerequisite = { focus = PRC_50s_support_viet_minh }
+    available = { VIN = { exists = yes} }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		VIN = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 3
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_recognise_viet_minh
+	icon = GFX_focus_found_democratic_vietnam
+	x = 0
+	y = 2
+	relative_position_id = PRC_50s_support_viet_minh
+	prerequisite = { focus = PRC_50s_miltiary_aid_viet_minh }
+	prerequisite = { focus = PRC_50s_industrial_aid_viet_minh }
+    available = { VIN = { exists = yes} }
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		VIN = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = PRC_recognised_us
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_recognise_kim_il_sung
+	icon = GFX_focus_PRC_50s_recognise_kim_il_sung
+	x = 0
+	y = 1
+	relative_position_id = PRC_50s_out_into_the_world
+	prerequisite = { focus = PRC_50s_out_into_the_world }
+    available = {
+        DPR = { 
+			exists = yes
+			has_government = communism
+		}
+	}
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		KOR = {
+			add_political_power = 150
+			add_opinion_modifier = {
+				target = PRC
+				modifier = PRC_recognised_us
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_give_weapons_to_kpa
+	icon = GFX_focus_PRC_50s_give_weapons_to_kpa
+	x = -1
+	y = 1
+	relative_position_id = PRC_50s_recognise_kim_il_sung
+	prerequisite = { focus = PRC_50s_recognise_kim_il_sung }
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		KOR = { 
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 15000
+				producer = PRC
+			}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 750
+				producer = PRC
+			}
+			add_equipment_to_stockpile = {
+				type = support_equipment
+				amount = 750
+				producer = PRC
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_industrial_aid_to_kpa
+	icon = GFX_focus_PRC_50s_industrial_aid_to_kpa
+	x = 1
+	y = 1
+	relative_position_id = PRC_50s_recognise_kim_il_sung
+	prerequisite = { focus = PRC_50s_recognise_kim_il_sung }
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		KOR = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 5
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 3
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_treaty_of_assistance_kpa
+	icon = GFX_focus_PRC_50s_treaty_of_assistance_kpa
+	x = 0
+	y = 2
+	relative_position_id = PRC_50s_recognise_kim_il_sung
+	prerequisite = { focus = PRC_50s_give_weapons_to_kpa }
+	prerequisite = { focus = PRC_50s_industrial_aid_to_kpa }
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		KOR = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = PRC_KPA_friendship_treaty
+			}
+		}
+		add_opinion_modifier = {
+			target = KOR
+			modifier = PRC_KPA_friendship_treaty
+		}
+	}
+}
+	#抗美援朝#
+	shared_focus = {
+		id = PRC_kangmeiyuanchao
+		icon = GFX_goal_PRC_kangmeiyuanchao
+		cost = 1
+		x = 0
+		y = 4
+	relative_position_id = PRC_50s_recognise_kim_il_sung
+	prerequisite = { focus = PRC_50s_give_weapons_to_kpa }
+	prerequisite = { focus = PRC_50s_industrial_aid_to_kpa }
+		ai_will_do = {
+			factor = 9999
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+			custom_effect_tooltip = benxianbukewan
+			remove_ideas = PRC_idea_demobilize
+		}
+		available = {
+			always = no
+			KOR = {
+				has_war_with = KOR
+			}
+		}
+
+	}
+	#抗美援朝#
+
+shared_focus = {
+	id = PRC_50s_relations_with_india
+	icon = GFX_focus_PRC_50s_relations_with_india
+	x = 4
+	y = 1
+	relative_position_id = PRC_50s_out_into_the_world
+	prerequisite = { focus = PRC_50s_out_into_the_world }
+	available = { RAJ = { exists = yes } }
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_political_power = 75
+	}
+}
+shared_focus = {
+	id = PRC_50s_recognise_india
+	icon = GFX_focus_PRC_50s_recognise_india
+	x = -1
+	y = 1
+	relative_position_id = PRC_50s_relations_with_india
+	prerequisite = { focus = PRC_50s_relations_with_india }
+	available = { 
+		RAJ = {
+			is_subject = no
+			exists = yes
+		} 
+	}
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		RAJ = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = PRC_recognised_us
+			}
+		}
+	}
+}
+shared_focus = {
+	id = PRC_50s_help_indian_independence
+	icon = GFX_focus_PRC_50s_help_indian_independence
+	x = 1
+	y = 1
+	relative_position_id = PRC_50s_relations_with_india
+	prerequisite = { focus = PRC_50s_relations_with_india }
+	mutually_exclusive = { focus = PRC_50s_support_maoist_indian }
+	available = { 
+		RAJ = {
+			is_subject = yes
+			exists = yes
+		} 
+	}
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		RAJ = { add_ideas = prc_50s_ideas_raj_independence_movement }
+	}
+}
+shared_focus = {
+	id = PRC_50s_support_maoist_indian
+	icon = GFX_focus_attack_india
+	x = 3
+	y = 1
+	relative_position_id = PRC_50s_relations_with_india
+	prerequisite = { focus = PRC_50s_relations_with_india }
+	mutually_exclusive = { focus = PRC_50s_help_indian_independence }
+	available = { 
+		RAJ = {
+			is_subject = yes
+			exists = yes
+					NOT = {
+						is_puppet_of = ROOT
+					}
+		} 
+	}
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+                  PRC = {
+			set_state_owner = 434
+			set_state_owner = 1021
+			set_state_owner = 993
+			set_state_owner = 1068
+			set_state_owner = 1076
+               }
+		434 = {
+            add_core_of = PRC
+        }	
+		434 = {
+            remove_core_of = RAJ
+        }
+		1021 = {
+            add_core_of = PRC
+        }	
+		1021 = {
+            remove_core_of = RAJ
+        }
+		993 = {
+            add_core_of = PRC
+        }	
+		993 = {
+            remove_core_of = RAJ
+        }
+		1068 = {
+            add_core_of = PRC
+        }	
+		1068 = {
+            remove_core_of = RAJ
+        }
+		1076 = {
+            add_core_of = PRC
+        }	
+		1076 = {
+            remove_core_of = RAJ
+        }
+		RAJ = { 		
+                        start_civil_war = {
+			ideology = communism
+			size = 0.75
+			keep_unit_leaders = { 430 432 288 640 992 431 435 426 436 438 }
+		}
+			load_oob = "印度民兵部队"
+			set_politics = { ruling_party = communism elections_allowed = no }
+
+
+					set_popularities = {
+						fascism = 0
+						communism = 100
+						neutrality = 0
+						democratic = 0
+					}
+
+
+
+				set_party_name = {
+					ideology = maoism
+					long_name = "印度共产党"
+					name = "印度共产党"
+				}
+			set_cosmetic_tag = RAJ_gc					
+             }
+            PRC ={
+                puppet = RAJ
+            }
+	}
+}
+shared_focus = {
+	id = PRC_50s_panchsheel
+	icon = GFX_focus_PRC_50s_panchsheel
+	x = 0
+	y = 2
+	relative_position_id = PRC_50s_relations_with_india
+	prerequisite = { focus = PRC_50s_recognise_india focus = PRC_50s_help_indian_independence }
+
+
+	cost = 3.6
+
+	ai_will_do = {
+		factor = 1
+	}
+
+	available = {
+	}
+
+	bypass = {
+	}
+
+	cancel_if_invalid = yes
+	continue_if_invalid = no
+	available_if_capitulated = no
+
+	search_filters = { FOCUS_FILTER_POLITICAL }
+	completion_reward = {
+		add_opinion_modifier = {
+			target = RAJ
+			modifier = PRC_RAJ_panchsheel
+		}
+		RAJ = {
+			add_opinion_modifier = {
+				target = PRC
+				modifier = PRC_RAJ_panchsheel
+			}
+		}
+	}
+}

@@ -1,0 +1,575 @@
+CHI_default_plan = {
+	name = "Nationalist China default plan"
+	desc = "Default behavior for Nationalist China"
+
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+
+	}
+	abort = {
+		always = no
+	}
+
+	focus_factors = {
+		CHI_NW_mobile_barracks_focus = 20 #do these#MODDED
+		#CHI_send_in_the_ma_focus = 20 #MODDED
+		#MODDED
+		CHI_government_bailout_focus = 5 #MODDED
+		CHI_nationalize_industry_focus = 5
+		CHI_nationalize_industry_ii_focus = 5 #MODDED
+		CHI_nationalize_industry_iii_focus = 5
+		CHI_split_plm_focus = 15 #MODDED
+		CHI_monetary_reform = 5
+		CHI_public_school_program_focus = 15 #MODDED
+		CHI_foreign_help_focus = 5
+		CHI_inst_reform_focus = 5
+		CHI_mission_to_the_soviet_union = 5 #MODDED
+		CHI_purchase_tanks = 5
+		CHI_reorganize_nra = 5 #MODDED
+		#MODDED
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+CHI_industrial_buildup = {
+	name = "Nationalist China industrial buildup plan"
+	desc = "Makes Nationalist China more likely to expand industry if not at war, pre war buildup" #MODDED
+
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		#OR = { #MODDED
+		original_tag = CHI
+		#AND = {#MODDED
+		#	is_chinese_warlord = yes#MODDED
+		#	has_focus_tree = warlord_generic_nationalist #MODDED
+		#}#MODDED
+		#}#MODDED
+		NOT = {
+			has_defensive_war = yes #}#MODDED
+			any_enemy_country = { #}#MODDED
+				is_major = yes #}#MODDED
+			} #}#MODDED
+		}
+		NOT = { #}#MODDED
+			JAP_or_its_puppet_dont_control_any_chinese_cores = yes #}#MODDED
+		} #}#MODDED
+	}
+	abort = {
+		has_war = yes
+	}
+	focus_factors = {
+		#MODDEDv
+		CHI_national_resources_commission = 5
+		CHI_reorganize_nra = 5
+		CHI_compulsory_education_chi = 5
+		CHI_public_school_program_focus = 5
+		CHI_government_bailout_focus = 10
+		CHI_reform_military_academy = 10
+		CHI_logistical_reform_focus = 10
+		CHI_increase_equipment_production_focus = 10
+		CHI_whampoa_rifle = 5
+		#MODDED^
+	}
+
+	research = {
+		industry = 15.0
+		electronics = 15.0
+	}
+
+	ideas = {
+		CHI_t_v_soong = 5
+		kung_hsiang_hsi = 5 #MODDED
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+#MODDEDv
+CHI_industrial_recovery = {
+	name = "Nationalist China industrial Recovery plan"
+	desc = "Makes Nationalist China more likely to expand industry if not at war, post war recovery"
+
+	enable = {
+		#OR = { #MODDED
+		original_tag = CHI
+		#AND = {#MODDED
+		#	is_chinese_warlord = yes#MODDED
+		#	has_focus_tree = warlord_generic_nationalist #MODDED
+
+		#}#MODDED
+		has_defensive_war = yes #}#MODDED
+		any_enemy_country = { #}#MODDED
+			is_major = yes #}#MODDED
+		} #}#MODDED
+		JAP_or_its_puppet_dont_control_any_chinese_cores = yes #}#MODDED
+	}
+	abort = {
+		has_war = yes
+	}
+	focus_factors = {
+		#MODDEDv
+		CHI_infrastructure_effort_i = 5
+		CHI_infrastructure_effort_ii = 5
+		CHI_infrastructure_effort_iii = 5
+		CHI_rejuvenate_heavy_industry = 10
+		CHI_streamlined_industry = 5
+		CHI_national_resource_exploration = 5
+		#MODDED^
+	}
+
+	research = {
+		industry = 15.0
+		electronics = 15.0
+	}
+
+	ideas = {
+		CHI_t_v_soong = 5
+		kung_hsiang_hsi = 5 #MODDED
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+#MODDED^
+
+CHI_inflation_handling = {
+	name = "Nationalist China Secret Plan to Fight Inflation"
+	desc = "Teaches the AI to handle the inflation mechanic for China"
+
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		#OR = { #MODDED
+			original_tag = CHI
+			#AND = {#MODDED
+			#	is_chinese_warlord = yes#MODDED
+			#	has_focus_tree = warlord_generic_nationalist #MODDED
+			#}#MODDED
+		#}#MODDED
+		OR = {
+			has_idea = CHI_hyper_inflation_3
+			has_idea = CHI_hyper_inflation_4
+			has_idea = CHI_hyper_inflation_5
+		}
+	}
+	abort = {
+		OR = { #inflation under control
+			has_idea = CHI_hyper_inflation_2
+			has_idea = CHI_hyper_inflation_1
+		}
+	}
+	focus_factors = {
+		#MODDED>#CHI_financial_policy = 50
+		#MODDED>#CHI_price_controls = 50
+		#MODDED>#CHI_reform_the_national_bank = 50
+		#MODDED>#CHI_forced_loans = 50
+		#MODDED>#CHI_land_tax_reform = 50
+		CHI_monetary_reform = 50 #MODDED
+		CHI_government_bailout_focus = 50 #MODDED
+		CHI_nationalize_industry_focus = 0 #MODDED
+		CHI_nationalize_industry_ii_focus = 0 #MODDED
+		CHI_nationalize_industry_iii_focus = 0 #MODDED
+		#MODDED>#CHI_develop_the_hanyan_arsenal = 0.0
+		#MODDED>#CHI_taiyuan_arsenal = 0.0
+		#MODDED>#CHI_mining_commission = 0.0
+		#MODDED>#CHI_welfare = 0.0
+		#MODDED>#CHI_refugee_relief_agency = 0.0
+		#MODDED>#CHI_unemployment_agency = 0.0
+		#MODDED>#CHI_free_hospitals = 0.0
+		#MODDED>#CHI_rural_schooling = 0.0
+	}
+
+	research = {
+	}
+
+	ideas = {
+		kung_hsiang_hsi = 10 #<MODDED#
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+CHI_army_reform = {
+	name = "Nationalist China Army Reform"
+	desc = "Teaches the AI to reform the Army if at war"
+
+	allowed = {
+		original_tag = CHI
+	}
+	enable = {
+		has_war = yes
+		OR = {
+			has_idea = CHI_army_corruption_1
+			has_idea = CHI_army_corruption_2
+			has_idea = CHI_army_corruption_3
+		}
+	}
+	abort = {
+		NOT = {
+			OR = {
+				has_idea = CHI_army_corruption_1
+				has_idea = CHI_army_corruption_2
+				has_idea = CHI_army_corruption_3
+			}
+		}
+	}
+	focus_factors = {
+		CHI_reorganize_nra = 50 #<MODDED#
+	}
+
+	research = {
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+CHI_war_measures = {
+	name = "Nationalist China War measures"
+	desc = "Teaches the AI to fix issues if at war"
+
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		original_tag = CHI #MODDED
+		has_defensive_war = yes #MODDED
+	}
+	abort = {
+		OR = {
+			has_war = no
+			#MODDED#has_completed_focus = CHI_war_of_national_liberation
+			#MODDED#has_completed_focus = CHI_dare_to_die_corps
+			controls_state = 527 #has successfully taken Manchuria
+		}
+	}
+	focus_factors = {
+		CHI_infrastructure_effort_i = 0  #MODDED
+		CHI_infrastructure_effort_ii = 0 #MODDED
+		CHI_infrastructure_effort_iii = 0 #MODDED
+		CHI_government_bailout_focus = 10 #MODDED
+		CHI_reform_military_academy = 10 #MODDED
+		CHI_logistical_reform_focus = 10 #MODDED
+		CHI_increase_equipment_production_focus = 10 #MODDED
+		CHI_whampoa_rifle = 5 #MODDED
+		#MODDED#CHI_war_of_resistence = 20
+		#MODDED#CHI_military_affairs_commission = 20
+		#MODDED#CHI_industrial_evacuations = 30
+		#MODDED#CHI_scorched_earth_tactics = 30
+		#MODDED#CHI_democracy = 0 #can't have that nonsense right now
+		#MODDED#CHI_war_of_national_liberation = 20
+	}
+
+	research = {
+		infantry_weapons = 15.0
+		artillery = 5 #<MODDED#
+		air_equipment = 0
+	}
+
+	ideas = {
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+
+#CHI_befriend_britain = { #MODDED, not necessary
+#	name = "Befirend Britain"
+#	desc = "Teaches the AI to make friends with britain to progress further down the tree"
+#
+#	enable = {
+#		has_completed_focus = CHI_british_cooperation
+#	}
+#	abort = {
+#		has_completed_focus = CHI_ledo_road #they have served their purpose
+#	}
+#	focus_factors = {
+#		CHI_burma_road = 20
+#		CHI_ledo_road = 20
+#		CHI_fighter_purchases = 20
+#	}
+#
+#	research = {
+#	}
+#
+#	ideas = {
+#	}
+#	ai_strategy = {
+#		type = befriend
+#		id = "ENG"			
+#		value = 200
+#	}
+#
+#	# Keep small, as it is used as a factor for some things (such as research needs)
+#	# Recommended around 1.0. Useful for relation between plans
+#	weight = {
+#		factor = 1
+#		modifier = {
+#			factor = 1.0
+#		}
+#	}
+#} #MODDED^
+
+CHI_befriend_america = {
+	name = "Befriend America"
+	desc = "Teaches the AI to make friends with britain to progress further down the tree"
+
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		has_completed_focus = CHI_allies_help_focus #MODDED
+	}
+	abort = {
+		#MODDED>#has_completed_focus = CHI_the_hump #they have served their purpose
+	}
+	focus_factors = {
+		#MODDED>#CHI_the_hump = 20
+		#MODDED>#CHI_hire_chennault = 20
+		CHI_fighter_purchases = 5
+		CHI_invite_the_flying_tigers = 1
+	}
+
+	research = {
+	}
+
+	ideas = {
+	}
+	#ai_strategy = { #MODDED
+	#	type = befriend MODDED, spare pp
+	#	id = "USA"
+	#	value = 20
+	#}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+####MODDED, no befriend france haha
+CHI_befriend_Soviet = {
+	name = "Befriend Soviet"
+	desc = "Teaches the AI to make friends with Soviet to progress further down the tree"
+
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		has_completed_focus = CHI_mission_to_the_soviet_union
+	}
+	abort = {
+		#MODDED>#has_completed_focus = CHI_combined_arms_warfare #they have served their purpose
+	}
+	focus_factors = {
+		CHI_the_soviet_volunteer_group = 20
+		CHI_sov_pact_focus = 5 #<MODDED#
+		CHI_purchase_tanks = 5 #<MODDED#
+
+		#MODDED>#CHI_experimental_mechanised_unit = 20
+		#MODDED>#CHI_invite_soviet_advisers = 20
+		#MODDED>#CHI_heavy_weapons = 20
+	}
+
+	research = {
+		#MODDED>#motorized_equipment = 15.0 #needed to progress
+	}
+
+	ideas = {
+
+	}
+	#NO befriend sov cus pp
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 1.0
+		}
+	}
+}
+#CHI_home_land_is_NOT_safe_strat = { #MODDED>
+#	name = "warlords come here!"
+#	enable = {
+#		is_literally_china = yes
+#		has_war_together_with = event_target:WTT_current_china_leader
+#	}
+#	abort_when_not_enabled = yes
+#	ai_strategy = {
+#		type = force_defend_ally_borders
+#		id = "CHI"
+#		value = 500
+#	}
+#	ai_strategy = {
+#		type = force_defend_ally_borders
+#		id = "GUD"
+#		value = 30
+#	}
+#	ai_strategy = {
+#		type = protect
+#		id = "CHI"
+#		value = 80
+#	}
+#} #MODDED>
+CHI_european_allies = { #used to make minor European nations like Axis more
+	name = "Minor European Countries"
+
+	allowed = {
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+		}
+	}
+	enable = {
+		has_war = yes
+		OR = {
+			is_in_faction = no
+			is_faction_leader = yes
+		}
+		OR = {
+			original_tag = ROM
+			original_tag = HUN
+			original_tag = BUL
+			original_tag = YUG
+			original_tag = ITA
+			original_tag = CZE
+			original_tag = DEN
+			original_tag = NOR
+			original_tag = SWE
+			original_tag = FIN
+			original_tag = SPR
+			original_tag = POR
+			original_tag = HOL
+			original_tag = BEL
+			original_tag = LUX
+			original_tag = POL
+			original_tag = LAT
+			original_tag = LIT
+			original_tag = EST
+			original_tag = CRO
+			original_tag = SLO
+		}
+	}
+	abort = {
+		OR = {
+			has_war = no
+			AND = {
+				is_in_faction = yes
+				is_faction_leader = no
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = alliance
+		id = "CHI"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "PRC"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "GXC"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "YUN"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "XSM"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SHX"
+		value = -500
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SIK"
+		value = -500
+	}
+}

@@ -1,0 +1,18 @@
+shadow_kaiguan = {
+	icon = eng_organize_the_blackshirts
+	allowed = {
+		OR = {
+			is_literally_china = yes
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+				tag = EHB								
+		}
+	}
+	visible = {
+		
+	}
+	visible_when_empty = no
+	priority = 150
+}

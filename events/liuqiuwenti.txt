@@ -1,0 +1,258 @@
+add_namespace = liuqiuwenti
+
+country_event = { #
+	id = liuqiuwenti.1
+	title = liuqiuwenti.1.t
+	desc = liuqiuwenti.1.desc
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = liuqiuwenti.1.a
+		ai_chance = {
+			base = 0
+		}
+		add_political_power = -150
+		add_timed_idea = {
+            idea = liuqiuwenti_idea
+            days = 180
+        }
+		add_state_core = 526
+	}
+	option = {
+		name = liuqiuwenti.1.b
+		ai_chance = {
+			base = 100
+		}
+		add_political_power = 150
+		add_stability = 0.05
+		add_war_support = 0.05
+		custom_effect_tooltip = liuqiu_to_be_established_tt
+		hidden_effect = {
+			ROOT = {
+			remove_state_core = 526
+			remove_state_claim = 526
+			}
+			create_dynamic_country = {
+				original_tag = ROOT
+				save_global_event_target_as = liuqiu
+				set_country_flag = liuqiu
+				set_cosmetic_tag = liuqiu_country
+				event_target:liuqiu = {
+				add_state_core = 526
+				transfer_state = 526
+				set_capital = { state = 526 }
+				}
+				
+				if = {
+				limit = {
+				ROOT = { has_government = democratic }
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = yes
+					election_frequency = 48
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 0
+		            neutrality = 0
+				    democratic = 100
+				}
+				set_party_name = {
+					ideology = democratic
+					name = "琉球独立党"
+					long_name = "琉球独立党"
+				}
+				set_cosmetic_tag = liuqiu_country
+				add_popularity = { ideology = democratic popularity = 1 }
+				}
+				if = {
+				limit = {
+				ROOT = { has_government = n_socialism }
+				}
+				set_politics = {
+					ruling_party = n_socialism
+					elections_allowed = yes
+					election_frequency = 48
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 0
+		            neutrality = 0
+				    n_socialism = 100
+				}
+				set_party_name = {
+					ideology = n_socialism
+					name = "琉球独立党"
+					long_name = "琉球独立党"
+				}
+				set_cosmetic_tag = liuqiu_country
+				add_popularity = { ideology = n_socialism popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				ROOT = { has_government = fascism }
+				}
+				set_politics = {
+					ruling_party = fascism
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 100
+		            communism = 0
+		            neutrality = 0
+				    democratic = 0
+				}
+				set_party_name = {
+					ideology = fascism
+					name = "琉球独立党"
+					long_name = "琉球独立党"
+				}
+				set_cosmetic_tag = liuqiu_country
+				add_popularity = { ideology = fascism popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				ROOT = { has_government = communism }
+				}
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 100
+		            neutrality = 0
+				    democratic = 0
+				}
+				set_party_name = {
+					ideology = communism
+					name = "琉球独立党"
+					long_name = "琉球独立党"
+				}
+				set_cosmetic_tag = liuqiu_country
+				add_popularity = { ideology = communism popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				ROOT = { has_government = neutrality }
+				}
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 0
+		            neutrality = 100
+				    democratic = 0
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = "尚氏王朝"
+					long_name = "尚氏王朝"
+				}
+				set_cosmetic_tag = liuqiu_country
+				add_popularity = { ideology = neutrality popularity = 1 }
+				create_country_leader = {
+					name = "尚裕"
+					desc=POLITICS_shangyu_DESC
+					picture = "gfx/leaders/CHI/SHANGYU.png"
+					expire = "1996.8.30"
+					ideology = centrism
+					traits = {
+					constitutional_monarch
+					popular_figurehead
+					legitimate_heir
+					}
+				}
+				}
+				
+				random_country = {
+					limit = {
+						has_country_flag = liuqiu
+					}                     
+					ROOT = {
+						puppet = PREV
+					}
+					if = {
+					limit = { has_government = neutrality }
+					add_popularity = { ideology = neutrality popularity = 1 }
+					}
+					if = {
+					limit = { has_government = democratic }
+					add_popularity = { ideology = democratic popularity = 1 }
+					}
+					if = {
+					limit = { has_government = communism }
+					add_popularity = { ideology = communism popularity = 1 }
+					}
+					if = {
+					limit = { has_government = fascism }
+					add_popularity = { ideology = fascism popularity = 1 }
+					}
+					if = {
+					limit = { has_government = n_socialism }
+					add_popularity = { ideology = n_socialism popularity = 1 }
+					}
+				}
+				
+				every_state = {
+				limit = { 
+				NOT = { state = 526 }
+				}
+				event_target:liuqiu = { remove_state_core = PREV }
+				}
+			}
+			
+			news_event = liuqiuwenti.2
+		}
+	}
+}
+
+news_event = {
+	id = liuqiuwenti.2
+	title = liuqiuwenti.2.t
+	desc = liuqiuwenti.2.desc
+	picture = GFX_event_liuqiuwenti
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	trigger = {
+	    not = { has_global_flag = GFX_event_liuqiuwenti }
+	}
+	
+	immediate = {
+	
+	set_global_flag = GFX_event_liuqiuwenti
+	
+	hidden_effect = {
+	every_state = {
+			limit = { 
+			NOT = { state = 526 }
+			}
+			event_target:liuqiu = { remove_state_core = PREV }
+		}
+	}
+	}
+	
+	option = {
+		name = liuqiuwenti.2.a
+		trigger = {
+		    is_literally_china = yes
+		}
+	}
+	
+	option = {
+		name = liuqiuwenti.2.b
+		trigger = {
+			is_literally_china = no
+		}
+	}
+}

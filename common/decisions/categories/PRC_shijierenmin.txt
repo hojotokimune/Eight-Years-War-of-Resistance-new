@@ -1,0 +1,11 @@
+PRC_shijierenmin = {
+	icon = spr_the_inevitable_civil_war
+	allowed = {
+              TAG = PRC
+	}
+	visible = {
+		
+	}
+	visible_when_empty = no
+	priority = 150
+}

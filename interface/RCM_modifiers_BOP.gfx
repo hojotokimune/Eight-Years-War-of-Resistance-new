@@ -1,0 +1,63 @@
+spriteTypes = {  
+	spriteType = {
+		name = "GFX_modifiers_mon"
+		texturefile = "gfx/interface/state_modifiers/modifiers_mon.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_roc_fighting"
+		texturefile = "gfx/interface/state_modifiers/modifiers_roc_fighting.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_stronghold"
+		texturefile = "gfx/interface/state_modifiers/modifiers_stronghold.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_roc_army" 
+		texturefile = "gfx/interface/state_modifiers/modifiers_roc_army.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_navy"
+		texturefile = "gfx/interface/state_modifiers/modifiers_navy.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_theater"
+		texturefile = "gfx/interface/state_modifiers/modifiers_theater.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_shd"
+		texturefile = "gfx/interface/state_modifiers/modifiers_shd.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_communist"
+		texturefile = "gfx/interface/state_modifiers/modifiers_communist.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_battlefield"
+		texturefile = "gfx/interface/state_modifiers/modifiers_battlefield.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_nomadic"
+		texturefile = "gfx/interface/state_modifiers/modifiers_nomadic.dds"
+	}
+        spriteType = {
+		name = "GFX_modifiers_generic_economic_increase"
+		texturefile = "gfx/interface/state_modifiers/modifiers_generic_economic_increase.dds"
+	}
+        #bop
+        spriteType = {
+		name = "GFX_bop_kmt_side"
+		texturefile = "gfx/interface/bop/bop_kmt_side.dds"
+	}
+        spriteType = {
+		name = "GFX_bop_kmt_side_grey"
+		texturefile = "gfx/interface/bop/bop_kmt_side_grey.dds"
+	}
+        spriteType = {
+		name = "GFX_bop_usa_side"
+		texturefile = "gfx/interface/bop/bop_usa_side.dds"
+	}
+        spriteType = {
+		name = "GFX_bop_usa_side_grey"
+		texturefile = "gfx/interface/bop/bop_usa_side_grey.dds"
+	}
+}

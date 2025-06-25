@@ -1,0 +1,11 @@
+RCM_PRC_WOR = {
+	icon = eng_organize_the_blackshirts
+	allowed = {
+              TAG = PRC
+	}
+	visible = {
+		
+	}
+	visible_when_empty = no
+	priority = 150
+}

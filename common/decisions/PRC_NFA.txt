@@ -1,0 +1,307 @@
+rcm_recruit_partisan_units_cat = {
+
+
+
+
+	hpc_military_region_decision = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 50
+		
+		fire_only_once = yes
+
+		allowed = {
+		   tag = PRC
+		}
+
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP		   
+		}
+	
+		days_remove = 7
+
+		available = {
+		    has_government = communism		
+			598 = {
+				OR = {
+					is_controlled_by_jap_or_its_puppet = yes
+					is_controlled_by = event_target:WTT_communist_china
+				}
+			}
+			997 = {
+				OR = {
+					is_controlled_by_jap_or_its_puppet = yes
+					is_controlled_by = event_target:WTT_communist_china
+				}
+			}
+			606 = {
+				OR = {
+					is_controlled_by_jap_or_its_puppet = yes
+					is_controlled_by = event_target:WTT_communist_china
+				}
+			}
+			749 = {
+				OR = {
+					is_controlled_by_jap_or_its_puppet = yes
+					is_controlled_by = event_target:WTT_communist_china
+				}
+			}			
+			has_completed_focus = PRC_Join_the_war			
+		}		
+		remove_effect = {
+            custom_effect_tooltip = recruit_NFA
+			hidden_effect = {			
+			598 = {
+				add_core_of = NFA
+			}
+		    997 = {
+                add_core_of = NFA
+            }
+		    606 = {
+                add_core_of = NFA
+            }
+		    749 = {
+                add_core_of = NFA
+            }			
+		    1043 = {
+                add_core_of = NFA
+            }
+		    1034 = {
+                add_core_of = NFA
+            }			
+            749 = {
+			set_state_owner_to = NFA
+                          }
+		    NFA = {		
+			    inherit_technology = ROOT
+			    set_cosmetic_tag = NFA_communism
+			    give_military_access = PRC			
+			    add_ideas = prc_jianzujianxi
+			    add_ideas = incompetent_heavy_industry
+			    add_ideas = PRC_reorganized_departments_CHI
+                add_ideas = xingxingzhihuo_keyiliaoyuan
+                add_ideas = PRC_NFA_guerilla_warfare					
+			    set_cosmetic_tag = NFA_PRC				
+                set_politics = {
+                    ruling_party = communism
+                    elections_allowed = no  
+                }
+                set_popularities = { 
+	            communism = 100			
+                neutrality = 0
+                democratic = 0
+                fascism = 0	
+                n_socialism = 0					
+                }			
+			    set_party_name = {
+				    ideology = communism
+				    name = "新四军军部"
+				    long_name = "国民革命军陆军新编第四军军部"
+			    }
+			    create_country_leader = {
+                    name = "叶挺"
+                    desc = NFA_ye_ting_desc
+                    picture = "gfx/leaders/PRC/Portrait_PRC_Ye_Ting.dds"
+                    expire = "1965.1.1"
+                    ideology = marxism
+                    traits = { beifashuangjie_ye }
+                }					
+		    }
+            PRC = {
+                set_autonomy = { target = NFA autonomy_state = PRC_dihouwuzhuang freedom_level = 0.50 }		
+            }
+		    add_to_war = {
+			    targeted_alliance = NFA
+			    enemy = JAP
+		    }
+	    }
+    }		
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+
+
+
+
+		SHD_military_region_decision = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 50
+		
+		fire_only_once = yes
+
+		allowed = {
+		   tag = PRC
+		}
+
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP		   
+		}
+	
+		days_remove = 7
+
+		available = {
+		    has_government = communism		
+			has_completed_focus = PRC_Join_the_war	
+			has_completed_focus = PRC_partisan_offensive	
+			has_completed_focus = PRC_6th_plenary_session_of_the_6th_CPC_central_committee_focus	
+		}		
+		remove_effect = {
+            custom_effect_tooltip = shd_115th_div_go_to_shantung_tt
+			hidden_effect = {			
+			597 = {
+				add_core_of = SRR
+			}
+		    1028 = {
+                add_core_of = SRR
+            }
+		    1077 = {
+                add_core_of = SRR
+            }	
+            597 = {
+			set_state_owner_to = SRR
+                          }
+			set_capital = { state = 597 } 
+			597 = {
+			add_dynamic_modifier = {
+				modifier = prc_dynamic_modifier_shandong_guerillas
+				scope = SRR
+			}
+                          }
+		    SRR = {		
+			    inherit_technology = ROOT
+		        load_focus_tree = SRR_base_area_focus
+			    give_military_access = PRC			
+			    add_ideas = incompetent_heavy_industry
+			    add_ideas = PRC_reorganized_departments_CHI
+                add_ideas = xingxingzhihuo_keyiliaoyuan
+                add_ideas = PRC_NFA_guerilla_warfare	
+				add_ideas = PRC_SHD_guerilla_leader					
+                set_politics = {
+                    ruling_party = communism
+                    elections_allowed = no  
+                }
+                set_popularities = { 
+	            communism = 100			
+                neutrality = 0
+                democratic = 0
+                fascism = 0	
+                n_socialism = 0					
+                }			
+			    set_party_name = {
+				    ideology = communism
+				    name = "八路军师部"
+				    long_name = "国民革命军第八路军第115师师部"
+			    }
+			    create_country_leader = {
+                    name = "罗荣桓"
+                    desc = luoronghuan_desc
+                    picture = "gfx/leaders/PRC/Portrait_PRC_Luo_Ronghuan.dds"
+                    expire = "1965.1.1"
+                    ideology = democratic_centralism
+                    traits = { cornered_fox youjizhandashi  }
+                }			
+		create_corps_commander = {
+			name = "张经武"
+			portrait_path = "gfx/leaders/PRC/Portrait_SHD_zhang_jingwu.dds"
+			traits = { organizer logistics_wizard defensive_doctrine }
+			skill=4
+			attack_skill=3
+			defense_skill=7
+			planning_skill=4
+			logistics_skill=6
+		}		
+			if = {
+		limit = {
+			NOT = { has_template = "八路军东进抗日挺进纵队" }
+		}
+		division_template = {
+			name = "八路军东进抗日挺进纵队"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+			597 = {
+					create_unit = {
+						division = "name = \"八路军东进抗日挺进纵队\" division_template = \"八路军东进抗日挺进纵队\" start_experience_factor = 0.7"
+						count = 3
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SRR
+					}
+				}
+		    }
+            PRC = {
+                set_autonomy = { 
+				target = SRR 
+				autonomy_state = PRC_dihouwuzhuang 
+				freedom_level = 0.50 
+				end_wars = no
+				end_civil_wars = no
+				}	
+				PRC_luo_ronghuan = {
+             set_nationality = SRR
+				}
+			 
+            }
+		    add_to_war = {
+			    targeted_alliance = SRR
+			    enemy = JAP
+		    }
+	    }
+    }		
+
+		ai_will_do = {
+			factor = 1000
+		}
+	}
+
+
+
+    洛川会议 = {
+		allowed = {
+		   tag = PRC
+		}	
+		available = {
+			CHI = {
+				has_war_with = JAP
+			} 		
+			PRC = {
+				has_war_with = JAP
+				is_ai = yes
+			}		
+		}
+		ai_will_do = {
+			factor = 1000
+		}		
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		visible = {	
+			PRC = {
+				is_ai = yes
+			}
+		}
+        complete_effect = {	
+        complete_focus = PRC_Join_the_war			
+		}		
+		}		
+}
+

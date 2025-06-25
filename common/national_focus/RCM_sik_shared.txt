@@ -1,0 +1,800 @@
+    #TO DO
+	#The Defeat of Sheng Shicai
+	shared_focus = {
+		allow_branch = {
+			OR = {
+			    #tag = TNG
+				tag = HMI
+				tag = KHR
+				tag = KRS
+				tag = ATM
+			}
+	    }
+		id = SIK_the_defeat_of_sheng_shicai
+		icon = GFX_SIK_sheng_down
+		x = -4
+		y = 0
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		available = {
+			OR = {	
+				all_other_country = {
+					NOT = {
+						has_country_leader = {
+							character = SIK_sheng_shicai ruling_only = yes
+						}
+					}
+				    exists = yes		
+				}
+				all_other_country = {
+					original_tag = SIK
+					has_country_leader = {
+						character = SIK_sheng_shicai ruling_only = yes
+					}
+					NOT = {	
+						owns_state = 617	
+					}
+				}
+			} 			     
+		}
+		completion_reward = {
+			if = {
+			    limit = {
+				    owns_state = 617
+					controls_state = 617
+				}
+			    country_event = Sinkiang_rebel.406
+			}
+			add_political_power = 150
+			add_stability = 0.1
+			add_war_support = -0.1
+		    #if = {
+			#    limit = {
+			#	    tag = TNG
+			#	}
+			    unlock_decision_category_tooltip = sik_warlord_decisions
+			#}
+		    add_timed_idea = { idea = SIK_rebuild_the_province days = 365 }
+		}
+	}
+	
+	#The Next King of Sinkiang
+	shared_focus = {
+		id = SIK_the_next_king_of_sinkiang
+		icon = GFX_focus_rom_royal_dictatorship
+		x = -5
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_ANNEXATION
+		}
+		prerequisite = { focus = SIK_the_defeat_of_sheng_shicai  }
+		mutually_exclusive = { focus = SIK_united_province_of_sinkiang  }
+		ai_will_do = { 
+			factor = 1
+            modifier = {
+				factor = 30
+				is_historical_focus_on = no
+			}
+		}
+		will_lead_to_war_with = KHR
+		will_lead_to_war_with = TNG
+		will_lead_to_war_with = HMI
+		will_lead_to_war_with = KRS
+		will_lead_to_war_with = ATM
+		will_lead_to_war_with = SIK
+		available = {
+			any_other_country = {
+				exists = yes
+				OR = {
+				    original_tag = KHR
+					original_tag = TNG
+					original_tag = HMI
+					original_tag = KRS
+					original_tag = ATM
+					original_tag = SIK
+				}
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.1
+			if = {   
+			    limit = {
+				    NOT = { tag = TNG }
+				    country_exists = TNG
+				}
+				create_wargoal = {
+				    type = annex_everything
+				    target = TNG
+			    }
+			}
+			if = {   
+			    limit = {
+				    NOT = { tag = KHR }
+				    country_exists = KHR
+				} 
+				create_wargoal = {
+				    type = annex_everything
+				    target = KHR
+			    }
+			}
+			if = {   
+			    limit = {
+				    NOT = { tag = HMI }
+				    country_exists = HMI
+				} 
+				create_wargoal = {
+				    type = annex_everything
+				    target = HMI
+			    }
+			}
+			if = {   
+			    limit = {
+				    NOT = { tag = KRS }
+				    country_exists = KRS
+				} 
+				create_wargoal = {
+				    type = annex_everything
+				    target = KRS
+			    }
+			}
+			if = {   
+			    limit = {
+				    NOT = { tag = ATM }
+				    country_exists = ATM
+				} 
+				create_wargoal = {
+				    type = annex_everything
+				    target = ATM
+			    }
+			}
+			if = {   
+			    limit = {
+				    any_other_country = {
+						original_tag = SIK
+						exists = yes
+					}
+				} 
+				create_wargoal = {
+				    type = annex_everything
+				    target = PREV
+			    }
+			}
+		}
+		bypass = {
+			NOT = {
+			    any_other_country = {
+				exists = yes
+				    OR = {
+				        original_tag = KHR
+					    original_tag = TNG
+					    original_tag = HMI
+						original_tag = KRS
+					    original_tag = ATM
+						original_tag = SIK
+				    }
+			    }
+			}
+		}
+	}
+
+	#United Province of Sinkiang
+	shared_focus = {
+		id = SIK_united_province_of_sinkiang
+		icon = GFX_goal_generic_neutrality_focus
+		x = -3
+		y = 1
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_the_defeat_of_sheng_shicai  }
+	    mutually_exclusive = { focus = SIK_the_next_king_of_sinkiang  }
+		ai_will_do = { factor = 100 }
+		available = {
+			has_war = no
+		    any_other_country = {
+				exists = yes
+				OR = {
+				    original_tag = KHR
+					original_tag = TNG
+					original_tag = HMI
+					original_tag = KRS
+					original_tag = ATM
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = { NOT = { has_idea = neutrality_idea } }
+				add_ideas = neutrality_idea
+			}
+			add_ideas = deterrence
+			add_war_support = -0.1
+		}	
+	}
+	
+	#Develop Sinkiang
+	shared_focus = {
+		id = SIK_develop_sinkiang
+		icon = GFX_goal_generic_construction2
+		x = -3
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SIK_the_next_king_of_sinkiang  focus = SIK_united_province_of_sinkiang  }
+		ai_will_do = { factor = 100 }
+		available = {
+			any_owned_state = {
+				#hidden_trigger = {
+				#    is_capital = yes
+				#}
+				is_controlled_by = ROOT
+			    is_core_of = ROOT
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					#is_capital = yes
+				}
+				add_extra_state_shared_building_slots = 2
+			}
+		}
+	}
+
+	#Rail Transport
+	shared_focus = {
+		id = SIK_rail_transport
+		icon = GFX_goal_generic_construct_infrastructure
+		x = -2
+		y = 3
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_INDUSTRY
+		}
+		prerequisite = { focus = SIK_develop_sinkiang  }
+		ai_will_do = { factor = 100 }
+		available = {
+			  
+		}
+		completion_reward = {
+			add_timed_idea = {
+				idea = SIK_railway_idea
+				days = 730
+			}
+		}
+	}
+
+	#Pacify The Unrests
+	shared_focus = {
+		id = SIK_pacify_the_unrests
+		icon = GFX_focus_TUR_loosen_the_laws_on_secularism
+		x = -5
+		y = 2
+		cost = 5
+		search_filters = {
+			FOCUS_FILTER_STABILITY
+		}
+		prerequisite = { focus = SIK_the_next_king_of_sinkiang  focus = SIK_united_province_of_sinkiang  }
+		ai_will_do = { factor = 100 }
+		available = {
+		}
+		completion_reward = {
+			add_stability = 0.05
+		}
+	}
+	
+	#Suppress Separatism
+	shared_focus = {
+		id = SIK_suppress_separatism
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		x = -4
+		y = 3
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_pacify_the_unrests  }
+		mutually_exclusive = { focus = SIK_the_new_east_turkestan  }
+		ai_will_do = { factor = 100 }
+		available = {
+			if = {
+				limit = {
+					original_tag = KRS
+				}
+				always = yes
+			    else = {
+                    OR = {
+						has_completed_focus = CHI_cooperation_with_the_nationalists
+						has_completed_focus = CHI_cooperation_with_the_communists
+					}
+				}
+			}	
+		}
+		completion_reward = {
+			add_stability = 0.1
+			add_political_power = 50
+		}
+	}
+	
+	#A New Provincial Government #TO DO
+	shared_focus = {
+		id = SIK_a_new_provincial_government
+		icon = GFX_focus_generic_china1
+		x = -4
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_suppress_separatism }
+		ai_will_do = { factor = 100 }
+		available = {
+			owns_state = 617
+			controls_state = 617
+			#if = {
+			#	limit = {
+			#	    has_completed_focus = CHI_cooperation_with_the_communists
+			#	}
+			#	has_completed_focus = CHI_join_the_chinese_soviet
+			#}
+		}
+		completion_reward = {
+			set_capital = { state = 617 }
+			drop_cosmetic_tag = yes
+			if = {
+				limit = {
+					NOT = {
+						has_completed_focus = CHI_join_the_chinese_soviet
+					}
+				}
+			    set_cosmetic_tag = SIK_KMT
+			}
+			if = {
+				limit = {
+					has_completed_focus = CHI_cooperation_with_the_communists
+				    has_government = communism
+				}
+			    #set_cosmetic_tag = SIK_KMT
+			}
+			SIK = {
+				every_core_state = {
+					add_core_of = ROOT 
+				}
+			}
+		}
+	}
+
+	shared_focus = { #TO DO BELOW #unused for now
+		id = SIK_ma_return
+		allow_branch = {
+			has_country_flag = ma_zhongying_return
+	    }
+		icon = GFX_focus_generic_horse_studs
+		x = -3
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_a_new_provincial_government }
+		ai_will_do = { factor = 100 }
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	shared_focus = {
+		id = SIK_ma_rule
+		icon = GFX_focus_rom_royal_dictatorship
+		prerequisite = { focus = SIK_ma_return }
+		x = -3
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		available = {
+			
+		}
+		completion_reward = {
+		}
+	}
+
+	shared_focus = {
+		id = SIK_befriend_xsm
+		icon = GFX_COOP_northwest_mediation
+		prerequisite = { focus = SIK_ma_return }
+		mutually_exclusive = {
+			focus = SIK_strike_xsm
+		}
+		x = -2
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		available = {
+			OR = {
+				is_neighbor_of = XSM
+				is_neighbor_of = GSM
+			}
+			OR = {
+				is_subject_of = XSM
+				is_subject_of = GSM
+			    is_subject = no
+			}
+			OR = {
+				XSM = {
+				    is_subject = no
+			    }
+				GSM = {
+				    is_subject = no
+			    }
+			}
+		}
+		bypass = {
+			NOT = {
+				country_exists = XSM
+			}
+			NOT = {
+				country_exists = GSM
+			}
+		}
+		completion_reward = {
+		}
+	}
+
+	shared_focus = {
+		id = SIK_strike_xsm
+		icon = GFX_COOP_war_on_the_northwest
+		prerequisite = { focus = SIK_ma_return }
+		mutually_exclusive = {
+			focus = SIK_befriend_xsm
+		}
+		x = -4
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		will_lead_to_war_with = XSM
+		available = {
+			OR = {
+				is_neighbor_of = XSM
+				is_neighbor_of = GSM
+			}
+			is_subject = no
+		}
+		bypass = {
+			has_war_with = XSM	
+			has_war_with = GSM 
+		}
+		completion_reward = {
+		}
+	    
+	}
+
+	shared_focus = {
+		id = SIK_jihad_on_ussr
+		icon = GFX_focus_attack_soviet
+		prerequisite = { focus = SIK_befriend_xsm focus = SIK_strike_xsm }
+		mutually_exclusive = {
+			focus = SIK_befriend_ussr
+		}
+		x = -4
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		will_lead_to_war_with = SOV
+		available = {
+			is_neighbor_of = SOV 
+			is_subject = no
+		}
+		completion_reward = {
+		}  
+	}
+
+	shared_focus = {
+		id = SIK_befriend_ussr
+		icon = GFX_focus_chi_mission_to_the_soviet_union
+		prerequisite = { focus = SIK_befriend_xsm focus = SIK_strike_xsm}
+		mutually_exclusive = {
+			focus = SIK_jihad_on_ussr
+		}
+		x = -2
+		y = 8
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		ai_will_do = { factor = 100 }
+		available = {
+			is_neighbor_of = SOV 
+			is_subject = no
+		}
+		completion_reward = {
+		}
+	    
+	}
+	#maybe strike soviet too
+	#The New East Turkestan
+	shared_focus = {
+		id = SIK_the_new_east_turkestan
+		icon = GFX_focus_TUR_turanist_ambition
+		x = -6
+		y = 3
+		cost = 9
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_pacify_the_unrests  }
+		mutually_exclusive = { focus = SIK_suppress_separatism  }
+		ai_will_do = { factor = 100 }
+		available = {
+		    NOT = {
+				original_tag = KRS
+			}
+			has_completed_focus = CHI_opposition
+		}
+		completion_reward = {
+			add_ideas = SIK_Turkic_land
+			add_opinion_modifier = {
+				target = event_target:WTT_current_china_leader
+				modifier = hostile_status
+			}
+			event_target:WTT_current_china_leader = {
+				add_opinion_modifier = {
+					target = SIK
+					modifier = hostile_status
+				}
+			}
+			add_opinion_modifier = {
+				target = XSM
+				modifier = hostile_status
+			}
+			XSM = {
+				add_opinion_modifier = {
+					target = SIK
+					modifier = hostile_status
+				}
+			}
+		}
+	}
+	
+	#Declare Independence From China
+	shared_focus = {
+		id = SIK_declare_independence_from_china
+		icon = GFX_focus_rise_of_turks
+		x = -6
+		y = 4
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_the_new_east_turkestan  }
+		available = {
+			is_subject = no
+			has_completed_focus = CHI_leaves_the_KMT
+		}
+		completion_reward = {
+			#mark_focus_tree_layout_dirty = yes
+			#unused for now
+			#effect_tooltip = {
+			#	unlock_national_focus = SIK_foreign_support_focus
+			#}
+			add_ideas = SIK_Turkic_compatriots
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = ETR
+			#every_state = {
+			#    limit = {
+			#	    is_core_of = SIK
+			#	}
+			#	add_core_of = ROOT 
+			#}
+			SIK = {
+				every_core_state = {
+					add_core_of = ROOT 
+				}
+			}
+		}
+	}
+
+	shared_focus = {
+		id = SIK_foreign_support_focus
+		icon = GFX_goal_generic_improve_relations
+		cost = 5
+		x = -6
+		y = 5
+		allow_branch = {
+			has_completed_focus = SIK_declare_independence_from_china
+			always = no
+		}
+		ai_will_do = {
+			factor = 10
+		}
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_timed_idea = {
+				idea = CHI_diplomatic_effort_idea
+				days = 180
+			}
+		}
+	}
+
+	shared_focus = {
+		id = SIK_befriend_afg
+		icon = GFX_focus_generic_befriend_afghanistan
+		x = -5
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_foreign_support_focus }
+		available = {
+			is_subject = no
+			NOT = {
+				has_war_with = AFG
+			}
+		}
+		completion_reward = {
+			AFG = {
+				#country_event = 
+			}
+		}
+	}
+
+	shared_focus = {
+		id = SIK_befriend_uk
+		icon = GFX_focus_chi_british_cooperation
+		x = -7
+		y = 5
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_foreign_support_focus }
+		available = {
+			is_subject = no
+			NOT = {
+				any_enemy_country = {
+					is_ally_with = ENG
+				}
+			}
+			RAJ = {
+				is_subject_of = ENG
+			    is_neighbor_of = ROOT
+			}
+		}
+		completion_reward = {
+			ENG = {
+				#country_event = 
+			}
+		}
+	}
+
+	shared_focus = {
+		id = SIK_strike_ma_clique
+		icon = GFX_COOP_war_on_the_northwest
+		x = -6
+		y = 6
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_befriend_afg focus = SIK_befriend_uk }
+		will_lead_to_war_with = XSM
+		available = {
+			is_subject = no
+			country_exists = XSM
+			is_neighbor_of = XSM
+			NOT = {
+				has_war_with = XSM
+			}
+			NOT = {
+				is_ally_with = XSM
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = XSM
+				NOT = { country_exists = XSM }
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = GSM 
+					NOT = {
+						has_war_with = GSM 
+					}
+					NOT = {
+						is_ally_with = GSM
+					}
+				}
+			    create_wargoal = {
+					type = annex_everything
+					target = GSM 
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = XSM
+			}
+		}
+	}
+
+	shared_focus = {
+		id = SIK_strike_china
+		icon = GFX_focus_attack_china
+		x = -6
+		y = 7
+		cost = 10
+		search_filters = {
+			FOCUS_FILTER_POLITICAL
+		}
+		prerequisite = { focus = SIK_strike_ma_clique }
+		will_lead_to_war_with = CHI
+		will_lead_to_war_with = NEA
+		available = {
+			is_subject = no
+			controls_state = 756
+			country_exists = event_target:WTT_current_china_leader
+			NOT = {
+				has_war_with = event_target:WTT_current_china_leader
+			}
+			NOT = {
+				is_ally_with = event_target:WTT_current_china_leader
+			}
+			NOT = {
+				tag = event_target:WTT_current_china_leader
+			}
+		}
+		bypass = {
+			OR = {
+				has_war_with = event_target:WTT_current_china_leader
+				tag = event_target:WTT_current_china_leader
+				NOT = { country_exists = event_target:WTT_current_china_leader }
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					country_exists = NEA
+					NEA = {
+						is_ally_with = event_target:WTT_current_china_leader
+					}
+					NOT = {
+						has_war_with = NEA 
+					}
+					NOT = {
+						is_ally_with = NEA 
+					}
+				}
+			    create_wargoal = {
+					type = annex_everything
+					target = NEA
+				}
+			}
+			create_wargoal = {
+				type = annex_everything
+				target = event_target:WTT_current_china_leader
+			}
+		}
+	}

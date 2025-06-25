@@ -1,0 +1,209 @@
+unique_id = EYWOR_achievements
+Germen_laisi_v = {#非常简单，就是用德国赢得东西两线的胜利。
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = Germen_laisi_v2
+		}
+	}
+	happened = {
+		tag = ger
+		has_global_flag = victory_ger
+		
+	}
+	
+}
+
+SOV_avoid_diseaster = { #惨剧得以避免，不丢失明斯克击败第三帝国
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = SOV_avoid_diseaster2
+		}
+		
+	}
+	happened = {
+		tag = sov
+		has_global_flag = ger_zhanbai
+		NOT = {
+			has_global_flag = fall_of_minsk
+		}
+		
+	}
+}
+endsieg_after_lost_in_balkan = {#东线大惨败之后还能翻盘
+	possible = {
+         custom_trigger_tooltip = {
+			tooltip = endsieg_after_lost_in_balkan2
+		}
+	}
+	happened = {
+		tag = ger
+		has_global_flag = end_bagration
+		has_global_flag = victory_ger
+		
+	}
+}
+First_island_chain = { #百年国耻一朝得雪
+	possible = {
+		custom_trigger_tooltip = {
+ tooltip = First_island_chain2
+		}
+
+	}
+	happened = {
+		OR = {
+			tag = chi
+			tag = prc
+		}
+		has_full_control_of_state = 526 
+	}
+}
+WeWillBack = {  #还没完……
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = WeWillBack2
+		}
+	}
+	happened = {
+		tag = sov
+		has_global_flag = victory_ger
+		has_global_flag = ger_zhanbai
+	}
+}
+
+allied_powers = {#同盟国胜利，otl的历史。
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = allied_powers2
+		}
+	}
+	happened = {
+		has_global_flag = ger_zhanbai
+	}
+}
+
+
+
+
+Normal_industry_system = {#工业化的齿轮
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = Normal_industry_system2
+		}
+	}
+	happened = {
+		num_of_factories > 2000
+	}
+}
+
+814xihubin = {#凌云御风去
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = 814xihubin2
+		}
+	}
+	happened = {
+		OR = {
+			tag = chi
+			tag = prc
+		}
+		has_tech = modern_small_airframe
+	}
+}
+
+Industry_liberty_of_china = {#中国工业化
+	possible = {
+		custom_trigger_tooltip = {
+			tooltip = Industry_liberty_of_china2
+		}
+	}
+	happened = {
+		OR = {
+			tag = chi
+			tag = prc
+		}
+		NOT = {
+			has_idea = incompetent_heavy_industry
+		}
+	}
+}
+New_China = {#完成开国大典
+	possible = {
+		tag = PRC
+	}
+	happened = {
+		has_country_flag = PRC_Establish_state_or_independent_government
+		custom_trigger_tooltip = {
+			tooltip = New_China2
+		}
+	}
+}
+Chi_tech_5_slot = {#科学技术是第一生产力
+possible = {
+	OR = {
+			tag = chi
+			tag = prc
+		}
+
+}
+happened = {
+	amount_research_slots = 5
+}
+}
+
+Nanking_stand_firmly = {#屹立不倒的首都
+ possible = {
+	OR = {
+			tag = chi
+			tag = prc
+		}
+ }
+ happened = {
+	NOT = {
+		has_global_flag = fall_of_nanjing
+	}
+	has_global_flag = end_of_second_sino_japanese_war
+	custom_trigger_tooltip = {
+		tooltip = Nanking_stand_firmly2
+	}
+ }
+}
+
+Three_month_destroy_jap = {#三月落日
+ possible = {
+	OR = {
+			tag = chi
+			tag = prc
+
+	}
+	NOT = {
+		date > 1937.11.7
+	}
+ }
+ happened = {
+	
+	has_global_flag = end_of_second_sino_japanese_war
+	custom_trigger_tooltip = {
+		tooltip = Three_month_destroy_jap2
+	}
+ }
+}
+
+# The_best_tool_to_make_ai_be_drowned = {
+# 	possible = {		
+# 	}
+# 	happened = {
+# 		has_tech  = sp_nuclear_bomb
+# 	}
+# }
+
+# Yibiandao = {
+# 	possible = {
+# 		OR = {
+# 			tag = prc
+# 			tag = sov
+# 		}
+# 	}
+# 	happened = {
+		
+# 	}
+# }

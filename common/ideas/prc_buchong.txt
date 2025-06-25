@@ -1,0 +1,32 @@
+ideas = {
+	prc_junfageju = {
+		picture = anti_soviet_pact
+		
+		allowed = {
+		}
+		
+		available = {
+			always = yes
+		}
+		
+		cancel = {
+			event_target:Communist_China_Leader = {
+				OR= {
+					exist = no
+					is_puppet = yes
+				}
+			}
+		}	
+		
+		rule = {
+			can_join_factions = no
+			can_create_factions = no	
+		}
+
+		removal_cost = -1
+		
+		modifier = {
+			
+		}
+	}
+}

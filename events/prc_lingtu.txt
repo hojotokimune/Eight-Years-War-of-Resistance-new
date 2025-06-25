@@ -1,0 +1,438 @@
+add_namespace = prc_lingtu
+
+country_event = {
+	id = prc_lingtu.1
+	title = "解决藏南问题"
+	desc = "我们要怎么做？"
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "与英国谈判"
+		add_state_claim = 434
+		add_state_claim = 1021
+		
+		if = { #guo
+		limit = {
+		RAJ = {
+		is_subject = no
+		}
+		}
+		RAJ = {
+			country_event = chi_demand_mcmahon_line.1
+		}
+		}
+		else = {
+		RAJ = {
+		OVERLORD = {
+		country_event = chi_demand_mcmahon_line.2
+		}
+		}
+		}
+	}
+	option = {
+		name = "跨过麦克马洪线！"
+		start_border_war = {
+			change_state_after_war = no
+			attacker = {
+				state = 322
+				num_provinces = 6
+				on_win = prc_lingtu.2
+				on_lose = prc_lingtu.3
+			}
+			defender = {
+				state = 434
+				num_provinces = 3
+			}
+		}
+
+	}
+}	
+country_event = {
+	id = prc_lingtu.2
+	title = "他们同意了！"
+	desc = ""
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "好耶！"
+		add_state_core = 434
+		transfer_state = 434
+	}
+}
+country_event = {
+	id = prc_lingtu.3
+	title = "我们的要求遭到了拒绝"
+	desc = ""
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "唉..."
+		add_state_claim = 434
+	}
+}
+country_event = {
+	id = prc_lingtu.4
+	title = "江心坡问题"
+	desc = " "
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = prc_lingtu.4.a
+		trigger = {
+			434 = {
+				is_owned_by = ROOT
+			}
+		}
+		BUR = {
+			country_event = prc_lingtu.5			
+		}
+	}
+	option = {
+		name = prc_lingtu.4.b
+		add_state_core = 1021
+		add_state_core = 993		
+	}
+	option = {
+		name = prc_lingtu.4.c
+		add_political_power = 50
+		BUR = {
+			add_popularity = {
+				ideology = communism
+				popularity = 0.15
+			}
+		}
+	}
+}	
+country_event = {
+	id = prc_lingtu.5
+	title = "中共要求归还领土！"
+	desc = prc_lingtu.5.d
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "好罢"
+		trigger = {
+			ROOT = {
+				is_puppet = no
+			}
+		}
+		ai_chance = {
+			factor = 40
+			modifier = {
+				factor = 99
+				is_puppet = no
+			}
+		}
+		PRC = {
+			transfer_state = 1021
+			add_state_core = 1021
+			transfer_state = 993			
+		    add_state_core = 993			
+		}
+	}
+	option = {
+		name = "好罢"
+		trigger = {
+			ROOT = {
+				is_puppet = yes
+			}
+		}
+		ai_chance = {
+			factor = 0
+			modifier = {
+				factor = 100
+				434 = {
+					is_owned_by = PRC
+				}
+				
+			}
+		}
+		PRC = {
+			transfer_state = 1021
+			add_state_core = 1021
+		}
+	}
+	option = {
+		name = "不！"
+		ai_chance = {
+			factor = 60
+			modifier = {
+				factor = 0
+				434 = {
+					is_owned_by = PRC
+				}
+			}
+		}
+	}
+}
+country_event = {
+	id = prc_lingtu.6
+	title = "外蒙问题"
+	desc = ""
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "直接谈判吧"
+		MON = {
+			if = {
+				limit = {
+					exists = yes
+					is_subject = no
+					is_puppet = no
+				}
+				MON = {
+					country_event = {
+						id = EFM_independent.13
+						days = 1
+					}
+				}
+			}
+			if = {
+				limit = {
+					exists = yes
+					or = {
+					is_subject = yes
+					is_puppet = yes
+					}
+				}
+				OVERLORD = {
+					country_event = {
+						id = EFM_independent.13
+						days = 1
+					}
+				}
+			}
+		}
+			every_other_country = {
+				limit = {
+					NOT = {
+						tag = MON
+					}
+					controls_state = 330
+				}
+				country_event = {
+					id = EFM_independent.13
+				}
+			}
+	}
+	option = {
+		name = "也许可以和苏联同志谈谈..."
+		trigger = {
+			SOV = {
+				exists = yes
+				has_government = communism
+			}
+		}
+		SOV = {
+			country_event = prc_lingtu.7
+		}
+	}
+	option = {
+		name = "算了吧"
+		add_political_power = -100
+	}
+}
+country_event = {
+	id = prc_lingtu.7
+	title = "中国同志们想谈谈蒙古问题..."
+	desc = ""
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "好吧，既然他们执意要求..."
+		trigger = {
+			PRC = {
+				OR = {
+					num_of_factories > 250
+					num_of_factories = 250
+				}
+			}
+		}
+		MON = {
+			every_owned_state = {
+				add_core_of = PRC
+			}
+		}
+		PRC = {
+			annex_country = {
+				target = MON
+				transfer_troops = no
+			}
+		}
+	}
+	option = {
+		name = "这对我们不利..."
+		trigger = {
+			PRC = {
+				num_of_factories < 250
+			}
+		}
+		MON = {
+			every_owned_state = {
+				add_claim_by = PRC
+			}
+		}
+		PRC = {
+			country_event = prc_lingtu.10
+		}
+	}
+}
+country_event = {
+	id = prc_lingtu.8
+	title = "图瓦问题"
+	desc = ""
+	fire_only_once = yes
+	is_triggered_only = yes
+	option = {
+		name = "再谈谈...?"
+		trigger = {
+			SOV = {
+				exists = yes
+				has_government = communism
+			}
+		}
+		TAN = {
+			every_owned_state = {
+				add_claim_by = PRC
+			}
+		}
+		SOV = {
+			country_event = prc_lingtu.9
+		}
+	}
+	option = {
+		name = "算了吧"
+		add_political_power = 10
+	}
+}
+country_event = {
+	id = prc_lingtu.9
+	title = "继续谈判"
+	desc = ""
+	is_triggered_only = yes
+	option = {
+		name = "这...唉，好罢"
+		ai_chance = {
+			factor = 15
+			modifier = {
+				factor = 80
+				TAN_exist_and_prc_strong = yes
+			}
+		}
+		TAN = {
+			every_owned_state = {
+				add_core_of = PRC
+			}
+		}
+		PRC = {
+			annex_country = {
+				target = TAN
+				transfer_troops = no
+			}
+		}
+	}
+		
+	option = {
+		name = "太过了...我们可以各退一步"
+		ai_chance = {
+			factor = 35
+			modifier = {
+				factor = 60
+				TAN_not_exist_or_prc_not_strong = yes
+			}
+		}
+		PRC = {
+			transfer_state = 1024
+			add_state_core = 1024
+		}
+	}
+	option = {
+		name = "不，这绝对不行"
+		ai_chance = {
+			factor = 10
+			modifier = {
+				factor = 50
+				PRC = {
+					num_of_factories < 250
+				}
+			}
+		}
+		PRC = {
+			country_event = prc_lingtu.11
+		}
+	}
+}
+country_event = {
+	id = prc_lingtu.10
+	title = "苏联拒绝！"
+	desc = "苏联拒绝了我们对外蒙的主张！"
+	is_triggered_only = yes
+	option = {
+		name = "唉..."
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				PRC = {
+					num_of_controlled_factories < 150
+				}
+			}
+		}
+		MON = {
+			every_owned_state = {
+				remove_claim_by = PRC
+			}
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = "我们不能放弃"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				PRC = {
+					num_of_controlled_factories > 150
+				}
+			}
+		}
+		add_political_power = -100
+	}
+}
+country_event = {
+	id = prc_lingtu.11
+	title = "苏联拒绝！"
+	desc = "苏联拒绝了我们对唐努图瓦的主张！"
+	is_triggered_only = yes
+	option = {
+		name = "唉..."
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 25
+				PRC = {
+					num_of_controlled_factories < 150
+				}
+			}
+		}
+		TAN = {
+			every_owned_state = {
+				remove_claim_by = PRC
+			}
+		}
+		add_political_power = -50
+	}
+	option = {
+		name = "我们不能放弃"
+		ai_chance = {
+			factor = 50
+			modifier = {
+				factor = 75
+				PRC = {
+					num_of_controlled_factories > 150
+				}
+			}
+		}
+		add_political_power = -100
+	}
+}

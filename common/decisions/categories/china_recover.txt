@@ -1,0 +1,20 @@
+CHINA_recover_motherland = {
+priority = 8000	
+	icon = generic_political_actions
+	picture = GFX_decision_cat_picture_zhonghualingtu
+	
+	allowed = {
+		OR = {
+TAG = CHI
+TAG = PRC
+TAG = YUN
+TAG = XSM
+TAG = GXC
+TAG = SIK
+TAG = MAN
+TAG = SHX
+is_literally_china = yes	
+        }
+	}
+    visible_when_empty = no
+}

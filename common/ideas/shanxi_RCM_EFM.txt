@@ -1,0 +1,1114 @@
+ideas = {
+
+	country = {
+		
+		SHX_offensive_to_ccp = {	
+			picture = SPR_crush_the_revolution
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				has_war = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_attack_factor = 0.1
+				army_morale_factor = 0.05
+			}
+		}
+		
+		SHX_last_stand = {	
+			picture = generic_shield_against_communism
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				has_war = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+				land_bunker_effectiveness_factor = 0.15
+			}
+		}
+		
+		SHX_trade_with_japan_jap = {	
+			picture = can_wartime_prices_and_trade_board
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				has_war_with = SHX
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				trade_cost_for_target_factor = -0.15
+            }
+		}
+		
+		SHX_trade_with_japan = {	
+			picture = can_wartime_prices_and_trade_board
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				OR = {
+                    NOT = {
+						country_exists = JAP
+					}
+					has_war_with = JAP
+				}	
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+
+			targeted_modifier = {
+				tag = JAP
+				trade_cost_for_target_factor = -0.15
+            }
+		}
+		
+		SHX_east_conquest = {	
+			picture = generic_army_problems
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				OR = {
+                    NOT = {
+						country_exists = PRC
+					}
+					is_ally_with = PRC
+				}	
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = -0.65
+				defense_bonus_against = -0.65 
+			    #breakthrough_bonus_against = 0.35 
+			}
+
+			modifier = {
+				army_org_factor = -0.25
+			}
+		}
+		
+		SHX_Practical_experience = {	
+			picture = ast_volunteer_defence_corps
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				num_of_military_factories < 1
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				ammunition_consumption_factor = 0.25
+				experience_gain_army_factor = 0.05
+				training_time_army_factor = -0.05
+				land_doctrine_cost_factor = -0.05
+			}
+		}
+		
+		SHX_rent_and_interest_reduction_movement = {	
+			picture = generic_agrarian_society
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.15
+				consumer_goods_factor = -0.3
+			}
+		}
+		
+		SHX_Influential_clique = {	
+			picture = regional_warlord
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				tag = event_target:WTT_current_china_leader
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		
+		SHX_shanxi_japan_pact_JAP = {	
+			picture = generic_constitutional_guarantees
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				OR = {
+					NOT = {
+						country_exists = SHX
+					}
+					NOT = {
+						country_exists = JAP
+					}
+					NOT = {
+						JAP = {
+							has_war_with = SHX
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = -0.5
+            }
+			
+			modifier = {
+				
+			}
+		}
+
+		SHX_shanxi_japan_pact = {	
+			picture = generic_constitutional_guarantees
+
+			allowed_civil_war = {
+				always = no
+			}
+
+            cancel = {
+				OR = {
+					NOT = {
+						country_exists = SHX
+					}
+					NOT = {
+						country_exists = JAP
+					}
+					NOT = {
+						JAP = {
+							has_war_with = SHX
+						}
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.5 
+            }
+
+			targeted_modifier = {
+				tag = EHB 
+				attack_bonus_against = -0.5 
+            }
+			
+            targeted_modifier = {
+				tag = ECA
+				attack_bonus_against = -0.5
+            }
+
+			modifier = {
+				
+			}
+		}
+		
+		SHX_weak_army = {	
+			picture = chi_army_corruption
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_attack_factor = -0.15
+				army_defence_factor = -0.15
+				command_power_gain_mult = -0.15
+				experience_gain_army_factor = -0.15
+			}
+		}
+		
+        SHX_weak_army_2 = {	
+			picture = chi_army_corruption2
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.1
+				army_attack_factor = -0.1
+				army_defence_factor = -0.1
+				command_power_gain_mult = -0.1
+				experience_gain_army_factor = -0.1
+			}
+		}
+
+		SHX_weak_army_3 = {	
+			picture = chi_army_corruption3
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.05
+				army_attack_factor = -0.05
+				army_defence_factor = -0.05
+				command_power_gain_mult = -0.05
+				experience_gain_army_factor = -0.05
+			}
+		}
+
+		SHX_central_support = {	
+			picture = CHI_morale
+
+			cancel = {
+			    OR = {
+					AND = {
+                        NOT = {
+							event_target:WTT_communist_china  = {
+								has_border_war_with = ROOT								
+							}  
+						   
+						}
+						NOT = {
+							event_target:WTT_communist_china  = {						
+								has_war_with = ROOT							
+							}  
+						}
+					}
+				    has_war_with = event_target:WTT_current_china_leader
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.08
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+			}
+		}
+		
+		SHX_board_of_soe = {	
+			picture = generic_central_management
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				tank_manufacturer_cost_factor = -0.1
+				naval_manufacturer_cost_factor = -0.1
+				aircraft_manufacturer_cost_factor = -0.1
+				materiel_manufacturer_cost_factor = -0.1
+				industrial_concern_cost_factor = -0.1
+				consumer_goods_factor = -0.25
+			}
+		}
+		SHX_ten_years_plan = {	
+			picture = man_five_year_plan_industry
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				global_building_slots_factor = 0.1
+				industrial_capacity_factory = 0.025
+				#stability_weekly = 0.0005
+			}
+		}
+		SHX_never_surrender_in_war = {
+			picture = SPR_masters_of_our_own_fate
+
+			cancel = {
+			    OR = {
+					NOT = { has_war_with = JAP }
+					tag = event_target:WTT_current_china_leader
+				}
+			}
+
+			allowed_civil_war = {
+				#NOT = {
+				#	has_government = communism
+				#}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.95
+				custom_modifier_tooltip = goes_away_when_at_peace_with_JAP_tt
+			}
+		}
+		SHX_Anti_communist = {
+		
+			picture = ger_bulwark_against_bolshevism
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.05
+				stability_factor = 0.05
+			}
+		}
+		SHX_Anti_communist_2 = {
+		
+			picture = ger_bulwark_against_bolshevism
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = -0.1
+				resistance_target = -0.2
+				local_factory_sabotage = -0.1
+			}
+		}
+		SHX_Taiyuan_arsenal = {
+		
+			picture = ast_volunteer_defence_corps
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		SHX_Taiyuan_arsenal_2 = {
+			name = SHX_Taiyuan_arsenal
+		
+			picture = ast_volunteer_defence_corps
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			modifier = {
+				industrial_capacity_factory = 0.05
+			}
+			
+		}
+		SHX_Good_economy = {
+		
+			picture = can_wartime_prices_and_trade_board
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				production_speed_buildings_factor = 0.05
+			}
+		}
+		
+		SHX_Emergency_mobilization = {
+		
+			picture = generic_manpower_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.02
+				production_speed_bunker_factor = 0.1
+			}
+		}
+
+		SHX_Strengthen_the_attack = {
+		
+			picture = MEX_politicised_army
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.02
+				army_org_regain = 0.1
+				experience_loss_factor = -0.15
+				training_time_army_factor = 0.1
+				max_training = 0.1
+			}
+		}
+		SHX_Strengthen_the_attack_2 = {
+		
+			picture = MEX_politicised_army_2
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.03
+				army_org_regain = 0.15
+				experience_loss_factor = -0.15
+				coordination_bonus = 0.2
+				training_time_army_factor = 0.1
+				max_training = 0.1
+			}
+		}
+		SHX_Strengthen_defense = {
+		
+			picture = YUG_federal_defense_council
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.05
+			}
+		}
+		SHX_Strengthen_defense_2 = {
+		
+			picture = YUG_federal_defense_council
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_core_defence_factor = 0.1
+				#army_defence_factor = 0.05
+				#army_org_factor = 0.05
+			}
+		}
+		
+		SHX_Defend_the_homeland = {
+		
+			picture = generic_morale_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		
+		SHX_Mobile_combat = {
+		
+			picture = generic_armor
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				motorized_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+			
+			modifier = {
+				motorized_attack_factor = 0.05
+				motorized_defence_factor = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}
+		}
+		SHX_Artillery_implantation = {
+		
+			picture = generic_artillery_regiments
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_artillery_attack_factor = 0.05
+				army_artillery_defence_factor = 0.05
+			}
+		}
+		SHX_Guerrilla_forces = {
+		
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_target_on_our_occupied_states = 0.2
+			}
+		}
+		SHX_Save_strength = {
+		
+			picture = ast_naval_auxiliary_patrol
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				supply_consumption_factor = -0.1
+				attrition = -0.1
+			}
+		}
+		
+		SHX_Limited_cooperation = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = ast_abandon_the_westminster_system_communism
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_acceptance = 10
+				communism_drift = 0.0005
+			}
+
+			targeted_modifier = {
+				tag = PRC 
+				trade_cost_for_target_factor = -0.25
+            }
+		}
+		SHX_Land_reform = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.05
+				stability_factor = 0.05
+			}
+		}
+		SHX_Against_japan = {
+
+			available = {
+				NOT = {
+					is_subject_of = JAP
+					is_subject_of = MAN
+					is_subject_of = MEN
+					is_subject_of = ECS
+					is_subject_of = TWN
+					is_subject_of = KOR
+				}
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = FRA_scw_intervention_nationalists_focus
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.1
+				defense_bonus_against = 0.1
+			}
+			
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+			
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.3
+				defense_bonus_against = 0.3
+			}
+			
+			targeted_modifier = {
+				tag = ECS
+				attack_bonus_against = 0.3
+				defense_bonus_against = 0.3
+			}
+		}
+		
+		SHX_Red_army = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_communist_army
+			
+			removal_cost = -1
+			
+			modifier = {
+				power_balance_weekly = 0.001
+				drift_defence_factor = -0.05
+				conscription_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_morale_factor = 0.05
+				#army_speed_factor = 0.1
+			}
+		}
+		SHX_Red_army_2 = {
+		
+			picture = generic_communist_army
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				power_balance_weekly = 0.0015
+				drift_defence_factor = -0.1
+				conscription_factor = 0.15
+				army_core_defence_factor = 0.15
+				army_morale_factor = 0.1
+			}
+		}
+		
+		SHX_Cooperation_with_the_communist = {
+		
+			picture = generic_communism_drift_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = { 
+			    has_completed_focus = SHX_Purge_communists
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.025
+			}
+		}
+		SHX_Cooperation_with_the_communist_2 = {
+		
+			picture = generic_communism_drift_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = { 
+			    has_completed_focus = SHX_Purge_communists
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.1
+			}
+		}
+		SHX_Communism_land_reform = {
+			#name = SHX_Land_reform
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			picture = generic_goods_red_bonus
+			
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.2
+				industrial_capacity_factory = 0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		
+		SHX_Chinese_democrats = {
+		
+			picture = generic_democratic_drift_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.1
+			}
+		}
+		SHX_Model_warlord = {
+		
+			picture = chi_wargaming_division
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.025
+			}
+		}
+		SHX_Future_situation = {
+		
+			picture = generic_war_preparation
+
+			available = {
+				has_offensive_war = no
+				NOT = { has_government = communism }
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+				opinion_gain_monthly_same_ideology = 30
+			}
+		}
+		
+		SHX_Propaganda_autonomous_movement = {
+		
+			picture = FRA_national_mobilization_focus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_weekly = -0.01
+			}
+		}
+		SHX_Japanese_troops = {
+		
+			picture = jap_militarism_shogun
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1
+			}
+		}
+		SHX_Kwantung_army_special_agent_mechanism = {
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag
+			
+			modifier = {
+				fascism_drift = 0.05
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		SHX_Kwantung_army_special_agent_mechanism_jap = {
+
+			available = {
+				is_subject_of = JAP
+			}
+			
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag
+			
+			modifier = {
+				fascism_drift = 0.1
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		SHX_Kwantung_army_special_agent_mechanism_non = {
+
+			available = {
+				NOT = { has_war_with = JAP }
+			}
+			
+			removal_cost = -1
+
+			picture = saf_ossewabrandwag
+			
+			modifier = {
+				army_infantry_attack_factor = 0.1
+			}
+		}
+		SHX_Make_shanxi_great_again = {
+
+			picture = generic_agrarian_reform 
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+			}
+		}
+		
+		SHX_Foreign_resident_troops = {
+		
+			picture = generic_infantry_bonus
+
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.1
+				army_attack_factor = 0.05
+				army_defence_factor = 0.05
+				monthly_population = 0.01
+			}
+		}
+
+		SHX_Ambition_of_shanxi = {
+		
+			picture = CZE_planning_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				justify_war_goal_time = -0.25
+			}
+		}
+		
+		SHX_Reinforced_security = {
+		
+			picture = generic_wall_line
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				resistance_target = -0.1
+				drift_defence_factor = 0.05
+			}
+		}
+		
+		SHX_Northeast_guerrillas = {
+		
+			picture = generic_spy_intel
+
+			available = {
+				NOT = {
+					is_puppet_of = JAP
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				decryption = 0.5
+			}
+		}
+		
+		SHX_Second_theater = {
+		
+			picture = CZE_planning_bonus
+
+			available = {
+				OR = {
+					has_war_with = JAP
+					has_war_with = PRC
+					}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.1
+				army_chief_cost_factor = -0.05
+				high_command_cost_factor = -0.05
+				army_leader_cost_factor = -0.05
+			}
+		}
+		
+		SHX_emperor_puyi = {
+		
+			picture = emperor_puyi
+		
+			available = {
+				NOT = {
+					has_government = communism
+				}
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.05
+			}
+		}	
+	}
+}

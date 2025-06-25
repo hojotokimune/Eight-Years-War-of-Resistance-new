@@ -1,0 +1,565 @@
+guiTypes = {
+
+	containerWindowType = {
+		name = "GER_welcome_splash_container"
+		position = { x = 200 y = 45 }
+		size = { width = 800 height = 720 }
+		moveable = yes
+		orientation = CENTER_UP
+		origo = center_up
+		clipping = no
+
+		background = {
+			name = "logo_GER"
+			spriteType = "GFX_splash_GER_intro"
+		}
+
+		## checkerboard backfill
+
+		containerWindowType = {
+			name = "splash_backfill"
+			position = { x = -210 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "splash_border"
+			position = { x = -210 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_border"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+
+			iconType = {#图片窗口，无效果
+			name = "nazi_biaozhi"
+			spriteType = "GFX_nazi_biaozhi"		
+			position = { x = 300  y = 200 }#你的图片位置（相对于窗口）
+		}
+
+
+			instantTextboxType = {
+				name = "welcome_title_GER"
+				position = { x = -200 y = 8 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text_GER"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_GER"
+				position = { x = -460 y = 48 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text_GER"
+				format = left
+				maxWidth = 900
+			}
+
+			buttonType = {
+				name = "options_button_GER"
+				position = { x = -170 y = -52 }
+				orientation = center_down
+
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonText = "options_button_text_GER"
+				buttonFont = "hoi_24header"
+				pdx_tooltip = "welcome_GER"
+				clicksound = click_default
+				oversound = ui_menu_over
+
+				shortcut = "ESCAPE"
+				shortcut = "RETURN"
+				shortcut = "SPACE"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "ssplash_backfill_right"
+			position = { x = 480 y = 230 }
+			size = { width = 400 height = 500 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill_right"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+
+
+			instantTextboxType = {
+				name = "welcome_title_GER"
+				position = { x = -200 y = 40 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_GER"
+				position = { x = -180 y = 88 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text"
+				format = left
+				maxWidth = 350
+			}
+
+		}
+
+		iconType = {#图片窗口，无效果
+			name = "bakang_welcome_GER"
+			spriteType = "GFX_bakang_welcome_small"		
+			position = { x = 680 y = 190 }#你的图片位置（相对于窗口）
+		}
+	}
+
+
+	containerWindowType = {
+		name = "SOV_welcome_splash_container"
+		position = { x = 200 y = 45 }
+		size = { width = 800 height = 720 }
+		moveable = yes
+		orientation = CENTER_UP
+		origo = center_up
+		clipping = no
+
+		background = {
+			name = "logo_SOV"
+			spriteType = "GFX_splash_SOV"
+		}
+
+		## checkerboard backfill
+
+		containerWindowType = {
+			name = "splash_backfill"
+			position = { x = -250 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "splash_border"
+			position = { x = -250 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_border"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+
+			iconType = {#图片窗口，无效果
+			name = "SOV_biaozhi"
+			spriteType = "GFX_SOV_biaozhi"		
+			position = { x = 300  y = 20 }#你的图片位置（相对于窗口）
+		}
+
+
+			instantTextboxType = {
+				name = "welcome_title_SOV"
+				position = { x = -460 y = 8 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text_SOV"
+				format = centre
+				maxWidth = 800
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_SOV"
+				position = { x = -460 y = 48 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text_SOV"
+				format = left
+				maxWidth = 900
+			}
+
+			buttonType = {
+				name = "options_button_SOV"
+				position = { x = -170 y = -52 }
+				orientation = center_down
+
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonText = "options_button_text_SOV"
+				buttonFont = "hoi_24header"
+				pdx_tooltip = "welcome_GER"
+				clicksound = click_default
+				oversound = ui_menu_over
+
+				shortcut = "ESCAPE"
+				shortcut = "RETURN"
+				shortcut = "SPACE"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "ssplash_backfill_right_SOV"
+			position = { x = 440 y = 230 }
+			size = { width = 400 height = 500 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill_right_SOV"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+
+
+			instantTextboxType = {
+				name = "welcome_title_SOV"
+				position = { x = -200 y = 40 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_SOV"
+				position = { x = -180 y = 88 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text"
+				format = left
+				maxWidth = 350
+			}
+
+		}
+
+		iconType = {#图片窗口，无效果
+			name = "bakang_welcome_GER"
+			spriteType = "GFX_bakang_welcome_small"		
+			position = { x = 640 y = 190 }#你的图片位置（相对于窗口）
+		}
+	}
+
+
+	containerWindowType = {
+		name = "USA_welcome_splash_container"
+		position = { x = 200 y = 25 }
+		size = { width = 800 height = 720 }
+		moveable = yes
+		orientation = CENTER_UP
+		origo = center_up
+		clipping = no
+
+		background = {
+			name = "logo_USA"
+			spriteType = "GFX_splash_USA"
+		}
+
+		## checkerboard backfill
+
+		containerWindowType = {
+			name = "splash_backfill"
+			position = { x = -250 y = 300 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "splash_border"
+			position = { x = -250 y = 300 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_border"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+
+			iconType = {#图片窗口，无效果
+			name = "DemocraticLogo.svg"
+			spriteType = "GFX_DemocraticLogo.svg"		
+			position = { x = 520 y = 220 }#你的图片位置（相对于窗口）
+		}
+
+		iconType = {#图片窗口，无效果
+			name = "Republicanlogo.svg"
+			spriteType = "GFX_Republicanlogo.svg"		
+			position = { x = 170  y = 250 }#你的图片位置（相对于窗口）
+		}
+
+
+			instantTextboxType = {
+				name = "welcome_title_USA"
+				position = { x = -420 y = 8 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text_USA"
+				format = centre
+				maxWidth = 800
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_USA"
+				position = { x = -460 y = 48 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text_USA"
+				format = left
+				maxWidth = 900
+			}
+
+			buttonType = {
+				name = "options_button_USA"
+				position = { x = -170 y = -52 }
+				orientation = center_down
+
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonText = "options_button_text_USA"
+				buttonFont = "hoi_24header"
+				pdx_tooltip = "welcome_GER"
+				clicksound = click_default
+				oversound = ui_menu_over
+
+				shortcut = "ESCAPE"
+				shortcut = "RETURN"
+				shortcut = "SPACE"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "ssplash_backfill_right_USA"
+			position = { x = 440 y = 230 }
+			size = { width = 400 height = 500 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill_right_USA"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+
+
+			instantTextboxType = {
+				name = "welcome_title_USA"
+				position = { x = -200 y = 40 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_USA"
+				position = { x = -180 y = 88 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text"
+				format = left
+				maxWidth = 350
+			}
+
+		}
+
+		iconType = {#图片窗口，无效果
+			name = "bakang_welcome_USA"
+			spriteType = "GFX_bakang_welcome_small"		
+			position = { x = 640 y = 190 }#你的图片位置（相对于窗口）
+		}
+	}
+
+	containerWindowType = {
+		name = "CHI_welcome_splash_container"
+		position = { x = 200 y = 25 }
+		size = { width = 800 height = 720 }
+		moveable = yes
+		orientation = CENTER_UP
+		origo = center_up
+		clipping = no
+
+		background = {
+			name = "logo_CHI"
+			spriteType = "GFX_splash_CHI"
+		}
+
+		## checkerboard backfill
+
+		containerWindowType = {
+			name = "splash_backfill"
+			position = { x = -210 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "splash_border"
+			position = { x = -210 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_border"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+
+			iconType = {#图片窗口，无效果
+			name = "kmt_biaozhi"
+			spriteType = "GFX_kmt_biaozhi"		
+			position = { x = 300 y = 150 }#你的图片位置（相对于窗口）
+		}
+
+
+
+			instantTextboxType = {
+				name = "welcome_title_CHI"
+				position = { x = -420 y = 8 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text_CHI"
+				format = centre
+				maxWidth = 800
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_CHI"
+				position = { x = -460 y = 48 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text_CHI"
+				format = left
+				maxWidth = 900
+			}
+
+			buttonType = {
+				name = "options_button_CHI"
+				position = { x = -170 y = -52 }
+				orientation = center_down
+
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonText = "options_button_text_CHI"
+				buttonFont = "hoi_24header"
+				pdx_tooltip = "welcome_GER"
+				clicksound = click_default
+				oversound = ui_menu_over
+
+				shortcut = "ESCAPE"
+				shortcut = "RETURN"
+				shortcut = "SPACE"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "ssplash_backfill_right_CHI"
+			position = { x = 480 y = 230 }
+			size = { width = 400 height = 500 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill_right_USA"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+
+
+			instantTextboxType = {
+				name = "welcome_title_CHI"
+				position = { x = -200 y = 40 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_CHI"
+				position = { x = -180 y = 88 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text"
+				format = left
+				maxWidth = 350
+			}
+
+		}
+
+		iconType = {#图片窗口，无效果
+			name = "bakang_welcome_CHI"
+			spriteType = "GFX_bakang_welcome_small"		
+			position = { x = 680 y = 190 }#你的图片位置（相对于窗口）
+		}
+	}
+
+}
+

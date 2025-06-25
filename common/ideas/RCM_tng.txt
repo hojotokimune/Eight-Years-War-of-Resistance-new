@@ -1,0 +1,334 @@
+ideas = {
+    country = {		
+	    
+        TNG_8th_division = {
+			picture = ast_volunteer_defence_corps
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				NOT = {
+					has_completed_focus = TNG_befriend_nanking
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+				command_power_gain_mult = -0.15
+				conscription_factor = -0.15
+			}
+		}
+
+		TNG_mas_conquest = {
+			picture = tur_golden_age_of_the_wolf
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_completed_focus = TNG_mas_conquest
+			}
+			removal_cost = -1
+			modifier = {
+				generate_wargoal_tension = -1
+				justify_war_goal_time = -0.2
+				breakthrough_factor = 0.25
+				army_org_factor = 0.1
+			}
+		}
+		
+		TNG_trade_focus = {
+			picture = can_wartime_prices_and_trade_board
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				has_completed_focus = TNG_rely_on_trading
+			}
+			removal_cost = -1
+			modifier = {
+				trade_opinion_factor = 0.1
+				consumer_goods_factor = -0.25
+			}
+		}
+		
+		TNG_fossil = { 
+		
+            picture = GFX_idea_fossil
+		
+		    allowed_civil_war = {
+			    always = no
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				training_time_factor = -0.1
+				breakthrough_factor = 0.1
+                army_org_factor = 0.05
+				industrial_capacity_factory = 0.15
+			}
+	    }
+		
+		TNG_large_khotan_nephrite = { 
+		
+            picture = GFX_idea_generic_newspaper
+		
+		    allowed_civil_war = {
+			    always = no
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = -0.4
+				industrial_capacity_factory = 0.2
+			}
+	    }
+		
+		TNG_less_khotan_nephrite = { 
+		
+            picture = generic_exploit_mines
+		
+		    allowed_civil_war = {
+			    always = no
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.1
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+			}
+	    }
+		
+		TNG_khotan_nephrite = { 
+		
+            picture = generic_exploit_mines
+		
+		    allowed_civil_war = {
+			    always = no
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = 0.2
+				consumer_goods_factor = -0.25
+				industrial_capacity_factory = 0.1
+			}
+	    }
+		
+		TNG_hui_conscripts_3 = { 
+		
+            picture = nomadic
+		
+		    allowed_civil_war = {
+			    has_completed_focus = TNG_cavalry_warfare
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				cavalry_attack_factor = 0.2
+				cavalry_defence_factor = 0.2
+				breakthrough_factor = 0.15
+				army_org_factor = 0.03
+				experience_loss_factor = -0.25
+				experience_gain_army_unit_factor = 0.2
+				coordination_bonus = 0.15
+			}
+	    }
+		
+		TNG_hui_conscripts_2 = { 
+		
+            picture = nomadic
+		
+		    allowed_civil_war = {
+			    has_completed_focus = TNG_hui_conscription
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				breakthrough_factor = 0.1
+				cavalry_attack_factor = 0.15
+				cavalry_defence_factor = 0.15
+				army_org_factor = 0.02
+			}
+	    }
+		
+		TNG_hui_conscripts = { 
+		
+            picture = nomadic
+		
+		    allowed_civil_war = {
+			    has_completed_focus = TNG_hui_conscription
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = -0.15
+				breakthrough_factor = 0.05
+				cavalry_attack_factor = 0.15 
+				cavalry_defence_factor = 0.15 
+				army_org_factor = 0.01
+			}
+	    }
+		
+		TNG_uyghur_conscripts_2 = { 
+		
+            picture = generic_manpower_bonus
+		
+		    allowed_civil_war = {
+			    has_completed_focus = TNG_cavalry_warfare
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				conscription = 0.05
+				cavalry_attack_factor = 0.05
+				cavalry_defence_factor = 0.05
+			}
+	    }
+		
+		TNG_uyghur_conscripts = { 
+		
+            picture = generic_manpower_bonus
+		
+		    allowed_civil_war = {
+			    has_completed_focus = TNG_more_uyghur_conscription
+		    }
+		    
+		    removal_cost = -1
+
+            modifier = {
+				production_factory_efficiency_gain_factor = -0.05
+				conscription = 0.05
+			}
+	    }
+		
+		TNG_currency = { 
+		
+            picture = generic_democratic_opposition
+		
+		    allowed_civil_war = {
+			    has_completed_focus = TNG_create_currency
+				NOT = {
+					has_completed_focus = TNG_economic_reform
+				}
+		    }
+		   
+		    removal_cost = -1
+
+            modifier = {
+				political_power_gain = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+	    }
+		
+		TNG_unstable_army = { 
+		
+            picture = SPR_disbanded_army
+		
+		    allowed_civil_war = {
+			    always = yes
+		    }
+		
+		    removal_cost = -1
+
+            modifier = {
+                stability_weekly = -0.001
+				weekly_manpower = -25
+			}
+	    }
+
+		TNG_heavy_taxes = { 
+		
+            picture = tur_varlik_vergisi
+		
+		    allowed_civil_war = {
+			    NOT = {
+					has_completed_focus = TNG_economic_reform
+				}
+		    }
+	
+		    removal_cost = -1
+
+            modifier = {
+				consumer_goods_factor = -0.5
+				industrial_capacity_factory = -0.1
+				#stability_weekly_factor = -0.01
+				war_support_weekly = -0.001
+			}
+		}
+
+		TNG_Conflict_1 = {
+			picture = raj_marginalized_muslim_community_angry
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.15
+			}
+		}
+
+		TNG_Conflict_2 = {
+			picture = raj_marginalized_muslim_community
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+	   
+        TNG_Conflict_3 = {
+			picture = raj_marginalized_muslim_community_happy
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			modifier = {
+				stability_factor = 0.05
+				industrial_capacity_factory = 0.05
+			}
+		}
+
+		
+        TNG_push_sinicization = {
+			picture = FRA_matignon_agreements
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_completed_focus = TNG_push_sinicization
+			}
+			modifier = {
+				stability_factor = -0.1
+				political_power_gain = -0.15
+			}
+		}
+	}
+}

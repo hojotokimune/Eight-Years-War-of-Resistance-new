@@ -1,0 +1,11 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_news_event_kmt_burma"
+		texturefile = "gfx/event_pictures/news_event_kmt_burma.dds"  
+	}
+        SpriteType = { 
+		name = "GFX_news_event_burma_independence"
+		texturefile = "gfx/event_pictures/news_event_burma_independence.dds"  
+	}
+
+}

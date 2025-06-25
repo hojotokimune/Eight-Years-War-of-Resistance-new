@@ -1,0 +1,27 @@
+prc_50s_politics_decisions = {
+	prc_50s_leave_the_comintern = {
+		icon = eng_trade_unions_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    is_in_faction_with = SOV
+		}
+		cost = 25
+		days_remove = 30
+		available = {
+			has_completed_focus = PRC_50s_retain_chinese_autonomy
+		}
+		priority = 1
+		ai_will_do = {
+			base = 50
+			modifier = {
+				add = 9000
+				has_war = no
+			}
+		}
+		remove_effect = {
+		    ROOT = { leave_faction = yes }
+		}
+	}
+}

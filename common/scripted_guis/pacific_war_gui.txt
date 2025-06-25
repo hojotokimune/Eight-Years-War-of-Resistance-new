@@ -1,0 +1,84 @@
+scripted_gui = {
+	vnr_pacific_war_ui = {
+		context_type = player_context
+		window_name = vnr_pacific_war_ui_window
+		ai_enabled = { always = no }
+        visible = {
+			has_global_flag = show_pacific_war_gui
+		}
+
+        properties = {
+            pacific_war_gui_ast = { frame = 285.pacific_owner }
+            pacific_war_gui_can = { frame = 276.pacific_owner }
+            pacific_war_gui_chi = { frame = 605.pacific_owner }
+            pacific_war_gui_indochina = { frame = 671.pacific_owner }
+            pacific_war_gui_ins = { frame = 335.pacific_owner }
+            pacific_war_gui_jap = { frame = 282.pacific_owner }
+            pacific_war_gui_mal = { frame = 336.pacific_owner }
+            pacific_war_gui_man = { frame = 328.pacific_owner }
+            pacific_war_gui_mon = { frame = 330.pacific_owner }
+            pacific_war_gui_north_korea = { frame = 527.pacific_owner }
+            pacific_war_gui_phi = { frame = 327.pacific_owner }
+            pacific_war_gui_raj = { frame = 431.pacific_owner }
+            pacific_war_gui_sia = { frame = 289.pacific_owner }
+            pacific_war_gui_sol = { frame = 737.pacific_owner }
+            pacific_war_gui_south_korea = { frame = 525.pacific_owner }
+            pacific_war_gui_sov = { frame = 408.pacific_owner }
+            pacific_war_gui_taiwan = { frame = 524.pacific_owner }
+            pacific_war_gui_usa = { frame = 361.pacific_owner }
+
+            pacific_war_controller_flag = {
+                image = [?pacific_gui_current_controller.GetFlag]
+            }
+        }
+
+        effects = {
+            close_button_click = { clr_global_flag = show_pacific_war_gui }
+
+            pacific_war_gui_ast_click = { set_variable = { pacific_gui_selected_area_id = 285 } set_variable = { pacific_gui_current_controller = 285.controller } }
+            pacific_war_gui_can_click = { set_variable = { pacific_gui_selected_area_id = 276 } set_variable = { pacific_gui_current_controller = 276.controller } }
+            pacific_war_gui_chi_click = { set_variable = { pacific_gui_selected_area_id = 605 } set_variable = { pacific_gui_current_controller = 605.controller } }
+            pacific_war_gui_indochina_click = { set_variable = { pacific_gui_selected_area_id = 671 } set_variable = { pacific_gui_current_controller = 671.controller } }
+            pacific_war_gui_ins_click = { set_variable = { pacific_gui_selected_area_id = 335 } set_variable = { pacific_gui_current_controller = 335.controller } }
+            pacific_war_gui_jap_click = { set_variable = { pacific_gui_selected_area_id = 282 } set_variable = { pacific_gui_current_controller = 282.controller } }
+            pacific_war_gui_mal_click = { set_variable = { pacific_gui_selected_area_id = 336 } set_variable = { pacific_gui_current_controller = 336.controller } }
+            pacific_war_gui_man_click = { set_variable = { pacific_gui_selected_area_id = 328 } set_variable = { pacific_gui_current_controller = 328.controller } }
+            pacific_war_gui_mon_click = { set_variable = { pacific_gui_selected_area_id = 330 } set_variable = { pacific_gui_current_controller = 330.controller } }
+            pacific_war_gui_north_korea_click = { set_variable = { pacific_gui_selected_area_id = 527 } set_variable = { pacific_gui_current_controller = 527.controller } }
+            pacific_war_gui_phi_click = { set_variable = { pacific_gui_selected_area_id = 327 } set_variable = { pacific_gui_current_controller = 327.controller } }
+            pacific_war_gui_raj_click = { set_variable = { pacific_gui_selected_area_id = 431 } set_variable = { pacific_gui_current_controller = 431.controller } }
+            pacific_war_gui_sia_click = { set_variable = { pacific_gui_selected_area_id = 289 } set_variable = { pacific_gui_current_controller = 289.controller } }
+            pacific_war_gui_sol_click = { set_variable = { pacific_gui_selected_area_id = 737 } set_variable = { pacific_gui_current_controller = 737.controller } }
+            pacific_war_gui_south_korea_click = { set_variable = { pacific_gui_selected_area_id = 525 } set_variable = { pacific_gui_current_controller = 525.controller } }
+            pacific_war_gui_sov_click = { set_variable = { pacific_gui_selected_area_id = 408 } set_variable = { pacific_gui_current_controller = 408.controller } }
+            pacific_war_gui_taiwan_click = { set_variable = { pacific_gui_selected_area_id = 524 } set_variable = { pacific_gui_current_controller = 524.controller } }
+            pacific_war_gui_usa_click = { set_variable = { pacific_gui_selected_area_id = 361 } set_variable = { pacific_gui_current_controller = 361.controller } }
+        }
+	}
+
+    vnr_pacific_war_usa_category_decision_ui = {
+        context_type = decision_category
+		window_name = "vnr_pacific_war_usa_category_decision_ui_window"
+        effects = {
+            usa_open_pacific_map_button_click = {
+                update_pacific_war_gui = yes
+                set_variable = { pacific_gui_selected_area_id = 361 }
+                set_variable = { pacific_gui_current_controller = 361.controller }
+                set_global_flag = show_pacific_war_gui 
+            }
+        }
+    }
+
+    vnr_pacific_war_jap_category_decision_ui = {
+        context_type = decision_category
+		window_name = "vnr_pacific_war_jap_category_decision_ui_window"
+        effects = {
+            jap_open_pacific_map_button_click = { 
+                update_pacific_war_gui = yes
+                set_variable = { pacific_gui_selected_area_id = 282 }
+                set_variable = { pacific_gui_current_controller = 282.controller }
+                set_global_flag = show_pacific_war_gui 
+            }
+        }
+    }
+}

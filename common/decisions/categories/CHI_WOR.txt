@@ -1,0 +1,11 @@
+RCM_CHI_WOR = {
+	icon = eng_organize_the_blackshirts
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+		
+	}
+	visible_when_empty = no
+	priority = 150
+}

@@ -1,0 +1,1123 @@
+spriteTypes = {
+#goals 
+
+	SpriteType = {
+		name = "GFX_Focus_tzxx_PRC_eastern_Expedition"
+		texturefile = "gfx/interface/goals/GFX_Focus_tzxx_PRC_eastern_Expedition.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_generic_chromium"
+		texturefile = "gfx/interface/goals/GFX_focus_generic_chromium.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_Land_reform_aa"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_Land_reform_aa.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_tuijingongsiheying_aa"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_tuijingongsiheying_aa.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_CHI_chenbijun"
+		texturefile = "gfx/interface/ideas/chenbijun.jpg"			
+	}
+	SpriteType = {
+		name = "GFX_idea_PRC_hezizhen"
+		texturefile = "gfx/interface/ideas/PRC_hezizhen.png"			
+	}
+	SpriteType = {
+		name = "GFX_idea_PRC_yangzilie"
+		texturefile = "gfx/interface/ideas/PRC_yangzilie.jpg"			
+	}	
+	SpriteType = {
+		name = "GFX_goal_PRC_tudigaigefa_aa"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_tudigaigefa_aa.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_rejuvenate_heavy_industry"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_rejuvenate_heavy_industry.png"			
+	}
+
+    spriteType = {
+		name = "GFX_idea_victory_in_shanghai_roc"
+		texturefile = "gfx/interface/ideas/victory_in_shanghai_roc.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_kmt_minxinjianshi"
+		texturefile = "gfx/interface/ideas/kmt_minxinjianshi.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_spr_anti_fascist_crusade"
+		texturefile = "gfx/interface/ideas/spr_anti_fascist_crusade.dds"
+	}
+	spriteType = {
+		name = "GFX_modifiers_nuke_state"
+		texturefile = "gfx/interface/ideas/GFX_modifiers_nuke_state.dds"
+	}
+	
+	spriteType = {
+        name = "GFX_autonomy_military_region_icon"
+        texturefile = "gfx/interface/ideas/autonomy_military_region.dds"
+    }
+	
+	spriteType = {
+		name = "GFX_idea_PRC_xiandaijungong_idea"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_xiandaijungong_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_idea_lunjiefangquzhanchang"
+		texturefile = "gfx/interface/ideas/PRC_idea_lunjiefangquzhanchang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_sandagaizao_dynamic_modifier"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_sandagaizao_dynamic_modifier.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_gongyehua_dynamic_modifier"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_gongyehua_dynamic_modifier.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_PRC_Mobile_Warfare_2"
+		texturefile = "gfx/interface/ideas/PRC_Mobile_Warfare_2.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_Trend_guerrilla_warfare"
+		texturefile = "gfx/interface/ideas/PRC_Trend_guerrilla_warfare.dds"
+	}
+	
+	spriteType = {
+        name = "GFX_idea_PRC_jiefangjunlujun_dynamic_modifier"
+        texturefile = "gfx/interface/ideas/prc_pla_idea.dds"
+    }
+	spriteType = {
+        name = "GFX_idea_PRC_hongjunlujun_dynamic_modifier"
+        texturefile = "gfx/interface/ideas/PRC_NEW_RED_ARMY_IDEA_ZZ.dds"
+    }
+	
+	spriteType = {
+		name = "GFX_idea_untrained_soldiers"
+		texturefile = "gfx/interface/ideas/untrained_soldiers.png"
+	}
+	spriteType = {
+		name = "GFX_idea_chi_diwucongzui"
+		texturefile = "gfx/interface/ideas/chi_diwucongzui.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_youdaifulu"
+		texturefile = "gfx/interface/ideas/PRC_youdaifulu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_renminzhanzheng"
+		texturefile = "gfx/interface/ideas/PRC_renminzhanzheng.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_xingxingzhihuo_keyiliaoyuan"
+		texturefile = "gfx/interface/ideas/xingxingzhihuo_keyiliaoyuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_manmuchuangyi"
+		texturefile = "gfx/interface/ideas/prc_manmuchuangyi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_Revanchism"
+		texturefile = "gfx/interface/ideas/PRC_Revanchism.png"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_tib_nongnuzhi"
+		texturefile = "gfx/interface/ideas/tib_nongnuzhi.png"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_kmt_lianhezhengfu"
+		texturefile = "gfx/interface/ideas/prc_kmt_lianhezhengfu.png"
+	}
+	spriteType = {
+		name = "GFX_idea_lianheguojiaxuanyan"
+		texturefile = "gfx/interface/ideas/lianheguojiaxuanyan.png"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_bufendongyuan"
+		texturefile = "gfx/interface/ideas/idea_partial_economic_mobilisation.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_military_commission_new_country"
+		texturefile = "gfx/interface/ideas/military_commission_new_country.png"
+	}
+	spriteType = {
+		name = "GFX_idea_military_commission_ZHONGYANGJUNWEI"
+		texturefile = "gfx/interface/ideas/GFX_idea_military_commission_ZHONGYANGJUNWEI.png"
+	}
+	spriteType = {
+		name = "GFX_idea_military_commission_zidingyi"
+		texturefile = "gfx/interface/ideas/military_commission.dds"
+	}
+	
+	
+	spriteType = {
+		name = "GFX_idea_military_commission_zhonggejunwei"
+		texturefile = "gfx/interface/ideas/military_commission.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_yiqi"
+		texturefile = "gfx/interface/ideas/GFX_idea_prc_yiqi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yiwu_study_idea"
+		texturefile = "gfx/interface/ideas/PRC_yiwu_study_idea.png"
+	}
+	spriteType = {
+		name = "GFX_idea_NVA_youjidui"
+		texturefile = "gfx/interface/ideas/NVA_youjidui.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_reorganized_departments_CHI"
+		texturefile = "gfx/interface/ideas/PRC_reorganized_departments_CHI.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_NEW_RED_ARMY_IDEA_ZZ"
+		texturefile = "gfx/interface/ideas/PRC_NEW_RED_ARMY_IDEA_ZZ.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_PLA_IDEA_ZZ"
+		texturefile = "gfx/interface/ideas/PRC_PLA_IDEA_ZZ.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_feiji_icon"
+		texturefile = "gfx/interface/ideas/GFX_idea_prc_feiji_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_chuan_icon"
+		texturefile = "gfx/interface/ideas/GFX_idea_prc_chuan_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_junxie_icon"
+		texturefile = "gfx/interface/ideas/GFX_idea_prc_junxie_icon.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_volunteer_mobilization"
+		texturefile = "gfx/interface/ideas/PRC_volunteer_mobilization.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_Enigma_Machine"
+		texturefile = "gfx/interface/ideas/GFX_idea_GER_Enigma_Machine.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_japan_sun_fall"
+		texturefile = "gfx/interface/ideas/japan_sun_fall.png"
+	}
+	spriteType = {
+		name = "GFX_idea_chi_guoguangjihua"
+		texturefile = "gfx/interface/ideas/chi_guoguangjihua.png"
+	}
+	spriteType = {
+		name = "GFX_idea_xsm_majiajun"
+		texturefile = "gfx/interface/ideas/xsm_majiajun.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_liuzhidan"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_liuzhidan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_politburo_white_house"
+		texturefile = "gfx/interface/ideas/poliburo_white_house.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_sic_zhuangshichuchuan"
+		texturefile = "gfx/interface/ideas/sic_zhuangshichuchuan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_usa_banglianyichan"
+		texturefile = "gfx/interface/ideas/usa_banglianyichan.png"
+	}
+	spriteType = {
+		name = "GFX_idea_politburo_party_state"
+		texturefile = "gfx/interface/ideas/prc_idea_politburo.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_PLAAF"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_PLAAF.dds"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_powerhouse_of_the_east_zzaa"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_powerhouse_of_the_east_zzaa.png"			
+	}
+	SpriteType = {
+		name = "GFX_focus_PRC_lighthouse_of_democracy_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_lighthouse_of_democracy_focus.png"			
+	}
+	SpriteType = {
+		name = "GFX_goal_PRC_PLAN"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_PLAN.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_secret_police_2"
+		texturefile = "gfx/interface/goals/GFX_goal_generic_secret_police_2.dds"			
+	}
+	SpriteType = {
+		name = "GFX_goal_generic_crush_resistance"
+		texturefile = "gfx/interface/goals/GFX_goal_generic_crush_resistance.dds"			
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_air_asia_3111"
+		texturefile = "gfx/interface/ideas/idea_generic_air_asia_3111.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_usa_Marshall_plan"
+		texturefile = "gfx/interface/ideas/usa_Marshall_plan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_jiachouguowen"
+		texturefile = "gfx/interface/ideas/jiachouguowen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_soviet_military_cooperation_zz"
+		texturefile = "gfx/interface/ideas/soviet_military_cooperation_zz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_SHX_Bo_Yibo"
+		texturefile = "gfx/interface/ideas/GFX_idea_SHX_Bo_Yibo.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_lixiannian"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_lixiannian.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_raoshushi"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_raoshushi.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_pengzhen"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_pengzhen.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_wangjingwei_zz"
+		texturefile = "gfx/interface/ideas/GFX_idea_CHI_wangjingwei_zz.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yangshangkun"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_yangshangkun.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_yangyongtai"
+		texturefile = "gfx/interface/ideas/yangyongtai.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_duyuesheng"
+		texturefile = "gfx/interface/ideas/duyuesheng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_wu_zhihui"
+		texturefile = "gfx/interface/ideas/wuzhihui.jpg"
+	}		
+	spriteType = {
+		name = "GFX_idea_CHI_zhangjingjiang"
+		texturefile = "gfx/interface/ideas/zhangjingjiang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_CHI_chenbulei"
+		texturefile = "gfx/interface/ideas/chenbulei.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CHI_caiyuanpei"
+		texturefile = "gfx/interface/ideas/caiyuanpei.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_PRC_maoanying"
+		texturefile = "gfx/interface/ideas/maoanying.png"
+	}		
+	spriteType = {
+		name = "GFX_idea_CHI_jiangweiguo"
+		texturefile = "gfx/interface/ideas/jiangweiguo.png"
+	}	
+	spriteType = {
+		name = "GFX_idea_CHI_jiangjingguo"
+		texturefile = "gfx/interface/ideas/idea_chi_chiang_ching_kuo.dds"
+	}	
+	spriteType = {
+		name = "GFX_idea_death_of_shower_tianhuang"
+		texturefile = "gfx/interface/ideas/death_of_shower_tianhuang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_zhengzhibaoweiju"
+		texturefile = "gfx/interface/ideas/PRC_zhengzhibaoweiju.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_warsaw_pact"
+		texturefile = "gfx/interface/ideas/warsaw_pact.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_xizhongxun"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_xizhongxun.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_ideology_maoism"
+		texturefile = "gfx/interface/ideologies/maoism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yangjingyu"
+		texturefile = "gfx/interface/ideas/yangjingyu.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_hermann_goringzz"
+		texturefile = "gfx/interface/ideas/idea_GER_hermann_goring.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_generic_land_9zz"
+		texturefile = "gfx/interface/ideas/GFX_idea_GER_generic_land_9zz.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_regional_warlordzz"
+		texturefile = "gfx/interface/ideas/regional_warlord.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_heinrich_himmlerzz"
+		texturefile = "gfx/interface/ideas/idea_GER_heinrich_himmler.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_portrait_SOV_nikolay_kuznetsov_large_zz"
+		texturefile = "gfx/leaders/SOV/nikolay_kuznetsov_large.jpg"
+	}
+	
+	spriteType = {
+		name = "GFX_CHEN_PRC"
+		texturefile = "gfx/leaders/PRC/chenmingrenprc.jpg"
+	}
+	
+	spriteType = {
+		name = "GFX_TAO_PRC"
+		texturefile = "gfx/leaders/PRC/taozhiyue.jpg"
+	}
+	
+	spriteType = {
+		name = "GFX_MAO_1938"
+		texturefile = "gfx/leaders/PRC/maozedong2.jpg"
+	}
+
+    spriteType = {
+		name = "GFX_Mao_1946"
+		texturefile = "gfx/leaders/PRC/maozedong3.jpg"
+	}
+	spriteType = {
+		name = "GFX_Mao_1949"
+		texturefile = "gfx/leaders/PRC/maozedong1949.jpg"
+	}
+	spriteType = {
+		name = "GFX_Mao_1950"
+		texturefile = "gfx/leaders/PRC/maozedong4.jpg"
+	}
+	
+	spriteType = {
+		name = "GFX_LI_1946"
+		texturefile = "gfx/leaders/GXC/Portrait_GXC_Li_Zongren_3.dds"
+	}
+	
+    spriteType = {
+		name = "GFX_trait_trait_prc_youjizhanzheng"
+		texturefile = "gfx/interface/traits/personal/trait_prc_youjizhanzheng.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_PRC_lin_biao_sequela"
+		texturefile = "gfx/interface/traits/personal/PRC_lin_biao_sequela.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_xiandaijunguan"
+		texturefile = "gfx/interface/traits/personal/xiandaijunguan.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_youji_hero"
+		texturefile = "gfx/interface/traits/personal/trait_master_of_guerrilla_warfare.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_rising_young_officer_2"
+		texturefile = "gfx/interface/traits/personal/rising_young_officer_2.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_Tzxx_Resprcted_military_leader"
+		texturefile = "gfx/interface/traits/personal/trait_Tzxx_Resprcted_military_leader.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_Tzxx_imperturbable_strategist"
+		texturefile = "gfx/interface/traits/personal/trait_Tzxx_imperturbable_strategist.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_advantaged_operational_experts"
+		texturefile = "gfx/interface/traits/personal/trait_advantaged_operational_experts.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_suyu_operational_experts"
+		texturefile = "gfx/interface/traits/personal/trait_ziss.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_artillery_officer"
+		texturefile = "gfx/interface/traits/personal/artillery_officer.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_air_force_ties"
+		texturefile = "gfx/interface/traits/personal/air_force_ties.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_trait_operative_brilliant_spy"
+		texturefile = "gfx/interface/traits/personal/operative_brilliant_spy.dds"
+		legacy_lazy_load = no
+	}
+	
+	spriteType = {
+		name = "GFX_idea_generic_construct_infrastructure"
+		texturefile = "gfx/interface/ideas/r56_idea_SOV_production_increase.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_evacuated_assets"
+		texturefile = "gfx/interface/ideas/r56_economy_idea_evacuated_assets.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_Adna_Chaffee"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_adna_romanza_chaffee_jr.jpg"
+	}
+
+	spriteType = {
+		name = "GFX_modifiers_kangrigenjudi"
+		texturefile = "gfx/interface/state_modifiers/kangrigenjudi.jpg"
+	}
+	spriteType = {
+		name = "GFX_modifiers_dongbeikanglian"
+		texturefile = "gfx/interface/state_modifiers/dongbeikanglian.jpg"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_USA_malin_craig"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_malin_craig.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_John_Edgar_Hoovercivilianpng"
+		texturefile = "gfx/interface/ideas/r56_idea_John_Edgar_Hoovercivilianpng.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_jacob_devers"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_jacob_devers.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_asia_333"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_asia_333.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_generic_navy_asia_2334"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_asia_2334.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_gaogang"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_gaogang.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_GER_adolf_hitler"
+		texturefile = "gfx/interface/ideas/GFX_idea_GER_adolf_hitler.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_wangbingzhang"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_wangbingzhang.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_xu_haidong"
+		texturefile = "gfx/interface/ideas/GFX_idea_PRC_xu_haidong.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_luoshunchu"
+		texturefile = "gfx/interface/ideas/Luo_shunchu.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_zhouxihan"
+		texturefile = "gfx/interface/ideas/Zhou_xihan.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_lifuchun"
+		texturefile = "gfx/interface/ideas/lifuchun.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_chenzaidao"
+		texturefile = "gfx/interface/ideas/idea_chenzaidao.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_huangkecheng"
+		texturefile = "gfx/interface/ideas/idea_huangkecheng.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_lilisan"
+		texturefile = "gfx/interface/ideas/lilisan.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_likenong"
+		texturefile = "gfx/interface/ideas/likenong.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_baiqiuen"
+		texturefile = "gfx/interface/ideas/baiqiuen.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_shimotelai"
+		texturefile = "gfx/interface/ideas/shimotelai.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_jiangqing"
+		texturefile = "gfx/interface/ideas/jiangqing.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_yangjingyu"
+		texturefile = "gfx/interface/ideas/yangjingyu.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_qianxuesen"
+		texturefile = "gfx/interface/ideas/qianxuesen.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_xuanxiafu"
+		texturefile = "gfx/interface/ideas/xuanxiafu.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_dengjiaxian"
+		texturefile = "gfx/interface/ideas/dengjiaxian.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_guomoruo"
+		texturefile = "gfx/interface/ideas/guomoruo.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_wangruofei"
+		texturefile = "gfx/interface/ideas/wangruofei.jpg"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_liuhuaqing"
+		texturefile = "gfx/interface/ideas/liuhuaqing.jpg"
+	}
+	
+	
+	
+	
+	spriteType = {
+		name = "GFX_idea_USA_holland_smith"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_holland_smith.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_Benjamin_O_Davis"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_Benjamin_O_Davis.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_james_gavin"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_james_gavin.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_USA_john_pershing"
+		texturefile = "gfx/interface/ideas/r56_idea_USA_john_pershing.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_fbi_anti_communism"
+		texturefile = "gfx/interface/ideas/idea_fbi_anti_communism.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_maoism_idea"
+		texturefile = "gfx/interface/ideas/prc_maoism_idea.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_PB_Universal_Healthcare"
+		texturefile = "gfx/interface/ideas/PB_Universal_Healthcare.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_BALTIC_RAF"
+		texturefile = "gfx/interface/ideas/idea_BALTIC_RAF.dds"
+	}
+                spriteType = {
+		name = "GFX_portrait_dengxiaoping"
+		texturefile = "gfx/leaders/PRC/dengxiaoping1.jpg"
+	}
+                spriteType = {
+		name = "GFX_portrait_maozedong"
+		texturefile = "gfx/leaders/PRC/maozedong1.dds"
+	}
+                spriteType = {
+		name = "GFX_portrait_maozedong2"
+		texturefile = "gfx/leaders/PRC/maozedong2.jpg"
+	}
+                spriteType = {
+		name = "GFX_portrait_fuadeyishi"
+		texturefile = "gfx/leaders/EGY/fuadeyishi.jfif"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_guanxiangying"
+		texturefile = "gfx/interface/ideas/idea_guanxiangying.png"
+	}
+	spriteType = {
+		name = "GFX_idea_PRC_wanghongkun"
+		texturefile = "gfx/interface/ideas/idea_generic_navy_asia_66.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_chenguang"
+		texturefile = "gfx/interface/ideas/idea_chenguang.png"
+	}
+	spriteType = {
+		name = "GFX_idea_prc_liuzhen"
+		texturefile = "gfx/interface/ideas/idea_generic_air_asia_222.dds"
+	}
+
+
+
+
+    spriteType = {
+		name = "GFX_Portrait_CHI_daili"
+		texturefile = "gfx/leaders/CHI/daili.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_CHI_maorenfeng"
+		texturefile = "gfx/leaders/CHI/maorenfeng.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_CHI_shenzui"
+		texturefile = "gfx/leaders/CHI/shenzui.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_CHI_zhengjiemin"
+		texturefile = "gfx/leaders/CHI/zhengjiemin.jpg"
+	}
+	spriteType = {
+		name = "GFX_Portrait_CHI_maosen"
+		texturefile = "gfx/leaders/CHI/maosen.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_CHI_tangzong"
+		texturefile = "gfx/leaders/CHI/tangzong.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_CHI_kangze"
+		texturefile = "gfx/leaders/CHI/kangze.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_CHI_xuyuanju"
+		texturefile = "gfx/leaders/CHI/xuyuanju.jpg"
+	}
+	
+
+
+
+	spriteType = {
+		name = "GFX_Portrait_PRC_Pan_Hannian"
+		texturefile = "gfx/leaders/PRC/Portrait_PRC_Pan_Hannian.dds"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_likenong"
+		texturefile = "gfx/leaders/PRC/likenong.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_yuanshu"
+		texturefile = "gfx/leaders/PRC/yuanshu.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_guanlu"
+		texturefile = "gfx/leaders/PRC/guanlu.jpg"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PRC_libai"
+		texturefile = "gfx/leaders/PRC/libai.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_dongjianwu"
+		texturefile = "gfx/leaders/PRC/dongjianwu.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_luzhiying"
+		texturefile = "gfx/leaders/PRC/luzhiying.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_fanjiman"
+		texturefile = "gfx/leaders/PRC/fanjiman.jpg"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PRC_limaotang"
+		texturefile = "gfx/leaders/PRC/limaotang.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_minbaohang"
+		texturefile = "gfx/leaders/PRC/minbaohang.jpg"
+	}
+                spriteType = {
+		name = "GFX_Portrait_PRC_lishiyu"
+		texturefile = "gfx/leaders/PRC/lishiyu.jpg"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PRC_zhangluping"
+		texturefile = "gfx/leaders/PRC/zhangluping.jpg"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PRC_zhangguotao"
+		texturefile = "gfx/leaders/PRC/Portrait_China_Zhang_Guotao.dds"
+	}
+	
+	###
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_didaozhan"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_didaozhan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_zhangwozhudongquan"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_zhangwozhudongquan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_maquezhan"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_maquezhan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_beizhanbeihuang"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_beizhanbeihuang.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_sanxianjianshe"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_sanxianjianshe.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_chongshensandajilv"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_chongshensandajilv.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_gonganbu"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_gonganbu.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_War_of_Liberation"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_War_of_Liberation.png"			
+	}
+	
+	spriteType = {
+		name = "GFX_focus_PRC_ethnicism_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_ethnicism_focus.png"
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_A_New_Country"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_A_New_Country.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_Output_revolution"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_Output_revolution.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_military_commission_new_country_focus"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_military_commission_new_country_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_xiandaibubing"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_xiandaibubing.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_lengqianglengpao"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_lengqianglengpao.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_xiandaipaobing"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_xiandaipaobing.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_dierpaobing"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_dierpaobing.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_sansanzhi"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_sansanzhi.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_tezhongbudui"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_tezhongbudui.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_zhongkeyuan"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_zhongkeyuan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_yongbaoxiandaizhanzheng"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_yongbaoxiandaizhanzheng.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_renminzhanzheng"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_renminzhanzheng.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_jixiehua"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_jixiehua.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_Establish_the_naval"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_Establish_the_naval.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_duobingzhongxietong"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_duobingzhongxietong.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_xuezhandaodi"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_xuezhandaodi.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_huoliyazhi"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_huoliyazhi.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_xiandaihuarenminjundui"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_xiandaihuarenminjundui.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_motuohua"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_motuohua.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_xiandaijungong"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_xiandaijungong.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_hanzijianhua"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_hanzijianhua.png"			
+	}
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_nationalize_industry_ii_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_nationalize_industry_ii_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_War_of_Liberation_zzaa"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_War_of_Liberation_zzaa.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_wuzhuangbu"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_wuzhuangbu.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_haijunxueyuan"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_haijunxueyuan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_xiandaikongzhan"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_xiandaikongzhan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_xiandaijungong_zzaa"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_xiandaijungong_zzaa.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_Establish_traffic_network"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_Establish_traffic_network.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_nationalize_industry_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_nationalize_industry_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_makeshift_research_facility"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_makeshift_research_facility.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_Aviation_school"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_Aviation_school.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_Train_naval_officers"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_Train_naval_officers.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_Goal_PRC_jiefangjunjunshixueyuan"
+		texturefile = "gfx/interface/goals/GFX_Goal_PRC_jiefangjunjunshixueyuan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_tuijingongsiheying"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_tuijingongsiheying.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_for_china"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_for_china.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_nationalize_industry_iii_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_nationalize_industry_iii_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_infrastructure_effort_ii"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_infrastructure_effort_ii.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_hongda"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_hongda.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_infrastructure_effort_i"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_infrastructure_effort_i.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_zhonggongyejiasu"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_zhonggongyejiasu.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_nongqingzhongbili"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_nongqingzhongbili.png"			
+	}
+	
+	
+	
+	###
+	SpriteType = {
+		name = "GFX_focus_PRC_7th_National_Congress_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_7th_National_Congress_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_wayaobaohuiyi_end_ssdd"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_wayaobaohuiyi_end_ssdd.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_diguozhuyixuanzhan"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_diguozhuyixuanzhan.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_kangmeiyuanchao"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_kangmeiyuanchao.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_kangfayuanyue"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_kangfayuanyue.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_Revanchism_of_Chinese"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_Revanchism_of_Chinese.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_End_of_Long_March"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_End_of_Long_March.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_nea_PRC_reshuffle_soviet_government"
+		texturefile = "gfx/interface/goals/GFX_focus_nea_PRC_reshuffle_soviet_government.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_huifuguominjingji"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_huifuguominjingji.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_Red_Army_Recovery"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_Red_Army_Recovery.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_request_supply_from_the_soviet_union_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_request_supply_from_the_soviet_union_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_Soviet_armed"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_Soviet_armed.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_Japan_war_focus"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_Japan_war_focus.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_huininghuishi"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_huininghuishi.png"			
+	}
+	
+	###
+	SpriteType = {
+		name = "GFX_focus_PRC_ATTACK_KMT"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_ATTACK_KMT.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_goal_PRC_Block_enemy_SSDD"
+		texturefile = "gfx/interface/goals/GFX_goal_PRC_Block_enemy_SSDD.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_PRC_Brown_water_navy"
+		texturefile = "gfx/interface/goals/GFX_PRC_Brown_water_navy.png"			
+	}
+	
+	SpriteType = {
+		name = "GFX_focus_PRC_powerhouse_of_the_east"
+		texturefile = "gfx/interface/goals/GFX_focus_PRC_powerhouse_of_the_east.png"			
+	}
+}

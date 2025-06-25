@@ -1,0 +1,10 @@
+整活内容 = {       
+    icon = generic_prepare_civil_war 
+    allowed ={
+        tag = YUN
+    }
+    available = {		
+    }
+    visible = {
+	}
+}

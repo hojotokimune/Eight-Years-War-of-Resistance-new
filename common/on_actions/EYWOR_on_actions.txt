@@ -1,0 +1,34 @@
+on_actions = { #Reminder To Always Include "Effect"
+    on_startup = {
+	    effect = {
+		    CHI = {
+                                add_ideas = chi_december_ninth_movement_1
+				country_event = {
+					id = roc_prc_flavor_events.3
+					days = 14
+				}
+				country_event = {
+					id = roc_prc_flavor_events.13
+					days = 3
+				}
+			}
+			if = {
+					limit = {
+					date > 1936.8.2
+                             MAN = {
+                              NOT = {
+            has_completed_focus = MAN_zhaoyiman
+					}
+                                 }
+                          }
+			PRC = {
+				country_event = {
+					id = roc_prc_flavor_events.2
+				}
+			}
+
+				}
+		}
+
+	}
+}

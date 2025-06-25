@@ -1,0 +1,76 @@
+
+music_station = "base_music"
+
+music = {
+	song = "ph_gunkan_march"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = JAP
+		}		
+	}
+}
+
+music = {
+	song = "ph_when_johnny_comes_marching_home"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = USA
+		}
+	}
+}
+
+music = {
+	song = "ph_death_of_antoku"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = JAP
+		}
+	}
+}
+
+music = {
+	song = "ph_miyasan_miyasan"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = JAP
+		}
+	}
+}
+
+music = {
+	song = "ph_letters_from_iwo_jima"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = JAP
+		}
+	}
+}
+
+music = {
+	song = "ph_farewell_of_slavianka"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = SOV
+		}
+	}
+}
+
+music = {
+	song = "ph_song_of_battle_for_prince_lanling"
+	chance = {
+		modifier = {
+			factor = 2
+			tag = PRC
+		}
+		modifier = {
+			factor = 2
+			tag = CHI
+		}
+	}
+}

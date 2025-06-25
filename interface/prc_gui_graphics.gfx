@@ -1,0 +1,140 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_scripted_gui_window_background"
+		textureFile = "/gfx/interface/scripted_gui_graphics/scripted_gui_background.dds"
+	}
+	spriteType = {
+		name = "GFX_close_button"
+		textureFile = "/gfx/interface/scripted_gui_graphics/close_button.dds"
+	}
+	spriteType = {
+		name = "GFX_open_emblem"
+		textureFile = "/gfx/interface/scripted_gui_graphics/open_emblem.dds"
+	}
+	spriteType = {
+		name = "GFX_cpc_politburo_frame"
+		textureFile = "/gfx/interface/scripted_gui_graphics/cpc_politburo_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_leader_frame_prc"
+		textureFile = "/gfx/interface/scripted_gui_graphics/leader_frame_prc.dds"
+	}
+	spriteType = {
+		name = "GFX_flag_frame_prc"
+		textureFile = "/gfx/interface/scripted_gui_graphics/flag_overlay_frame.dds"
+	}
+	spriteType = {
+		name = "GFX_zhu_de_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/zhu_de_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_zhou_enlai_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/zhou_enlai_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_zhou_enlai_politburo_1944"
+		textureFile = "/gfx/interface/scripted_gui_graphics/zhou_enlai_politburo_1944.dds"
+	}
+	spriteType = {
+		name = "GFX_mao_zedong_chairman_politburo_young"
+		textureFile = "/gfx/interface/scripted_gui_graphics/mao_zedong_chairman_young.dds"
+	}
+	spriteType = {
+		name = "GFX_zhou_en_lai_zhuxi"
+		textureFile = "/gfx/leaders/PRC/zhouenlaizongli.png"
+	}	
+	spriteType = {
+		name = "GFX_deng_xiao_ping"
+		textureFile = "/gfx/leaders/PRC/Deng_Xiaoping_1949.dds"
+	}	
+	spriteType = {
+		name = "GFX_chen_yi"
+		textureFile = "/gfx/leaders/PRC/Chen_Yi_PLA.dds"
+	}	
+	spriteType = {
+		name = "GFX_mao_zedong_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/mao_zedong_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_mao_zedong_politburo_1946"
+		textureFile = "/gfx/interface/scripted_gui_graphics/mao_zedong_politburo_1946.dds"
+	}	
+	spriteType = {
+		name = "GFX_zhang_wentian_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/zhang_wentian_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_politburo_premier_vacant"
+		textureFile = "/gfx/interface/scripted_gui_graphics/politburo_premier_vacant.dds"
+	}
+	spriteType = {
+		name = "GFX_wang_ming_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/wang_ming_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_wang_ming_politburo_young"
+		textureFile = "/gfx/interface/scripted_gui_graphics/wang_ming_politburo_young.dds"
+	}
+	spriteType = {
+		name = "GFX_bo_gu_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/bo_gu_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_lin_biao_politburo"
+		textureFile = "/gfx/interface/scripted_gui_graphics/lin_biao_politburo.dds"
+	}
+	spriteType = {
+		name = "GFX_wang_shi_wei"
+		textureFile = "/gfx/interface/scripted_gui_graphics/wang_shi_wei.dds"
+	}
+	spriteType = {
+		name = "GFX_zhang_guo_tao"
+		textureFile = "/gfx/interface/scripted_gui_graphics/zhang_guo_tao.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_China_Zhang_Guotao"
+		textureFile = "/gfx/leaders/PRC/Portrait_China_Zhang_Guotao.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_PRC_chenchanghao"
+		textureFile = "/gfx/leaders/PRC/Portrait_PRC_chenchanghao.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_Xu_Xiangqian"
+		textureFile = "/gfx/leaders/PRC/Portrait_Xu_Xiangqian.dds"
+	}
+	spriteType = {
+		name = "GFX_Portrait_li_de"
+		textureFile = "/gfx/leaders/PRC/Portrait_li_de.dds"
+	}
+	spriteType = {
+		name = "GFX_wang_shi_wei"
+		textureFile = "/gfx/leaders/PRC/Portrait_wang_shi_wei.dds"
+	}
+	spriteType = {
+		name = "GFX_chen_du_xiu"
+		textureFile = "/gfx/leaders/PRC/Portrait_China_Chen_Duxiu.dds"
+	}
+	spriteType = {
+		name = "GFX_peng_shu_zhi"
+		textureFile = "/gfx/leaders/PRC/Portrait_China_Peng_Shuzhi.dds"
+	}
+	spriteType = {
+		name = "GFX_wang_fan_xi"
+		textureFile = "/gfx/leaders/PRC/Portrait_PRC_Wang_Fanxi.dds"
+	}
+	spriteType = {
+		name = "GFX_peng_shu_zhi_secretary"
+		textureFile = "/gfx/leaders/PRC/Portrait_peng_shu_zhi.dds"
+	}
+	spriteType = {
+		name = "GFX_ren_bishi_left"
+		textureFile = "/gfx/leaders/PRC/prc_ren_bishi_pla.png"
+	}
+	spriteType = {
+		name = "GFX_Liu_Shaoqi_right"
+		textureFile = "/gfx/leaders/PRC/Portrait_PRC_Liu_Shaoqi.dds"
+	}
+	
+}

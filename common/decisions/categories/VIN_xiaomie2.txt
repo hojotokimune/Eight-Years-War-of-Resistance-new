@@ -1,0 +1,34 @@
+teshujuece = {
+	icon = generic_political_actions
+	allowed = {
+    tag = PHI
+	}
+	visible = {
+            OR = {
+			JAP = {
+				has_global_flag = JAP_defeated
+			}
+			JAP = {
+				is_puppet_of = CHI
+			}
+			JAP = {
+				is_puppet_of = USA
+			} 
+ 			JAP = {
+				is_puppet_of = SOV
+			}
+  			JAP = {
+				is_puppet_of = ENG
+			}
+  			JAP = {
+				is_puppet_of = PRC
+			} 
+   			JAP = {
+				is_puppet_of = FRA
+			}
+NOT = { country_exists = JAP } 			
+            }
+        country_exists = BBQ			
+	}
+}
+

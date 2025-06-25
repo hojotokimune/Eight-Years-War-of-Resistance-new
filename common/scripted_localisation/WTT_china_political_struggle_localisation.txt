@@ -1,0 +1,3195 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+
+#Description depending on whether active for country or not
+defined_text = { #Country
+	name = GetPoliticalStruggleDesc
+	text = {
+		trigger = {
+			has_country_flag = wtt_political_struggle
+		}
+		localization_key = CHI_political_power_struggle_desc_active
+	}
+	text = { localization_key = "CHI_political_power_struggle_desc_not_active" }
+}
+
+#Description depending on how the nation can unlock the political struggle.
+defined_text = { #Country
+	name = GetHowToUnlockStruggle
+	text = {
+		trigger = {
+			is_current_communist_china = yes
+		}
+		localization_key = WTT_unlock_struggle_comchina
+	}
+	text = {
+		trigger = {
+			is_chinese_warlord = yes
+		}
+		localization_key = WTT_unlock_struggle_warlord
+	}
+	text = { localization_key = "WTT_unlock_struggle_leader" }
+}
+
+#Tooltip depends on whether or not someone is taking over national leadership.
+defined_text = { #Country
+	name = GetIsNationalLeadershipTakeOverInProgress
+	text = {
+		trigger = {
+			has_global_flag = wtt_national_leadership_takeover_in_progress
+		}
+		localization_key = WTT_taking_over_national_leadership_by
+	}
+	text = { localization_key = "WTT_power_struggle_ongoing" }
+}
+
+ ##  ### ###      ##   ##  #  # #  # ### ###  #   #     # # ### #   #
+#    #    #      #  # #  # #  # ## #  #  #  #  # #      # # #    # #
+# ## ##   #      #    #  # #  # # ##  #  ###    #       ##  ##    #
+#  # #    #      #  # #  # #  # #  #  #  #  #   #       # # #     #
+ ##  ###  #       ##   ##   ##  #  #  #  #  #   #       # # ###   #
+
+ ## #  #  ##  ###  ###      ## #  # ###  ###   ##  ###  ###     ###  ###  ##  ##
+#   #  # #  # #  #  #      #   #  # #  # #  # #  # #  #  #      #  # #   #   #  #
+ #  #### #  # ###   #       #  #  # ###  ###  #  # ###   #      #  # ##   #  #
+  # #  # #  # #  #  #        # #  # #    #    #  # #  #  #      #  # #     # #  #
+##  #  #  ##  #  #  #      ##   ##  #    #     ##  #  #  #      ###  ### ##   ##
+
+#If event target is not defined. Ignore all political support for country.
+defined_text = { #Country
+	name = GetPoliticalSupport_CHI
+	text = {
+		trigger = {
+			has_event_target = scope_CHI
+		}
+		localization_key = CHI_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_PRC
+	text = {
+		trigger = {
+			has_event_target = scope_PRC
+		}
+		localization_key = PRC_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_GXC
+	text = {
+		trigger = {
+			has_event_target = scope_GXC
+		}
+		localization_key = GXC_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_YUN
+	text = {
+		trigger = {
+			has_event_target = scope_YUN
+		}
+		localization_key = YUN_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_SHX
+	text = {
+		trigger = {
+			has_event_target = scope_SHX
+		}
+		localization_key = SHX_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_XSM
+	text = {
+		trigger = {
+			has_event_target = scope_XSM
+		}
+		localization_key = XSM_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_SIK
+	text = {
+		trigger = {
+			has_event_target = scope_SIK
+		}
+		localization_key = SIK_political_support
+	}
+	text = { localization_key = "" }
+}
+
+ #####################below are MODDED#######################
+defined_text = { #Country   
+	name = GetPoliticalSupport_XIK
+	text = {
+		trigger = {
+			has_event_target = scope_XIK
+		}
+		localization_key = XIK_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_SIC
+	text = {
+		trigger = {
+			has_event_target = scope_SIC
+		}
+		localization_key = SIC_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_GUD
+	text = {
+		trigger = {
+			has_event_target = scope_GUD
+		}
+		localization_key = GUD_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_HPC
+	text = {
+		trigger = {
+			has_event_target = scope_HPC
+		}
+		localization_key = HPC_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_NEA
+	text = {
+		trigger = {
+			has_event_target = scope_NEA
+		}
+		localization_key = NEA_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_SHD
+	text = {
+		trigger = {
+			has_event_target = scope_SHD
+		}
+		localization_key = SHD_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_NXM
+	text = {
+		trigger = {
+			has_event_target = scope_NXM
+		}
+		localization_key = NXM_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_EGM
+	text = {
+		trigger = {
+			has_event_target = scope_EGM
+		}
+		localization_key = EGM_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_SHC
+	text = {
+		trigger = {
+			has_event_target = scope_SHC
+		}
+		localization_key = SHC_political_support
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetPoliticalSupport_GSM
+	text = {
+		trigger = {
+			has_event_target = scope_GSM
+		}
+		localization_key = GSM_political_support
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetPoliticalSupport_HMI
+	text = {
+		trigger = {
+			has_event_target = scope_HMI
+		}
+		localization_key = HMI_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_TNG
+	text = {
+		trigger = {
+			has_event_target = scope_TNG
+		}
+		localization_key = TNG_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_KHR
+	text = {
+		trigger = {
+			has_event_target = scope_KHR
+		}
+		localization_key = KHR_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_PLM
+	text = {
+		trigger = {
+			has_event_target = scope_PLM
+		}
+		localization_key = PLM_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_XIA
+	text = {
+		trigger = {
+			has_event_target = scope_XIA
+		}
+		localization_key = XIA_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_KRS
+	text = {
+		trigger = {
+			has_event_target = scope_KRS
+		}
+		localization_key = KRS_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_ATM
+	text = {
+		trigger = {
+			has_event_target = scope_ATM
+		}
+		localization_key = ATM_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetPoliticalSupport_SUY
+	text = {
+		trigger = {
+			has_event_target = scope_SUY
+		}
+		localization_key = SUY_political_support
+	}
+	text = { localization_key = "" }
+}
+
+
+ #####################above are MODDED#######################
+
+### #  # #   #        ## #  # ###  ###   ##  ###  ###     ###  ###  ##  ##
+#   #  # #   #       #   #  # #  # #  # #  # #  #  #      #  # #   #   #  #
+##  #  # #   #        #  #  # ###  ###  #  # ###   #      #  # ##   #  #
+#   #  # #   #         # #  # #    #    #  # #  #  #      #  # #     # #  #
+#    ##  ### ###     ##   ##  #    #     ##  #  #  #      ###  ### ##   ##
+
+#If event target is not defined. Ignore all political support for country.
+defined_text = { #Country
+	name = GetFullPoliticalSupport_CHI
+	text = {
+		trigger = {
+			has_event_target = scope_CHI
+		}
+		localization_key = CHI_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_PRC
+	text = {
+		trigger = {
+			has_event_target = scope_PRC
+		}
+		localization_key = PRC_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_GXC
+	text = {
+		trigger = {
+			has_event_target = scope_GXC
+		}
+		localization_key = GXC_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_YUN
+	text = {
+		trigger = {
+			has_event_target = scope_YUN
+		}
+		localization_key = YUN_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_SHX
+	text = {
+		trigger = {
+			has_event_target = scope_SHX
+		}
+		localization_key = SHX_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_XSM
+	text = {
+		trigger = {
+			has_event_target = scope_XSM
+		}
+		localization_key = XSM_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_SIK
+	text = {
+		trigger = {
+			has_event_target = scope_SIK
+		}
+		localization_key = SIK_full_political_support
+	}
+	text = { localization_key = "" }
+}
+ #####################below are MODDED#######################
+defined_text = { #Country
+	name = GetFullPoliticalSupport_XIK
+	text = {
+		trigger = {
+			has_event_target = scope_XIK
+		}
+		localization_key = XIK_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_SIC
+	text = {
+		trigger = {
+			has_event_target = scope_SIC
+		}
+		localization_key = SIC_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_GUD
+	text = {
+		trigger = {
+			has_event_target = scope_GUD
+		}
+		localization_key = GUD_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_HPC
+	text = {
+		trigger = {
+			has_event_target = scope_HPC
+		}
+		localization_key = HPC_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_NEA
+	text = {
+		trigger = {
+			has_event_target = scope_NEA
+		}
+		localization_key = NEA_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_SHD
+	text = {
+		trigger = {
+			has_event_target = scope_SHD
+		}
+		localization_key = SHD_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_NXM
+	text = {
+		trigger = {
+			has_event_target = scope_NXM
+		}
+		localization_key = NXM_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_EGM
+	text = {
+		trigger = {
+			has_event_target = scope_EGM
+		}
+		localization_key = EGM_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_SHC
+	text = {
+		trigger = {
+			has_event_target = scope_SHC
+		}
+		localization_key = SHC_full_political_support
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetFullPoliticalSupport_GSM
+	text = {
+		trigger = {
+			has_event_target = scope_GSM
+		}
+		localization_key = GSM_full_political_support
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetFullPoliticalSupport_HMI
+	text = {
+		trigger = {
+			has_event_target = scope_HMI
+		}
+		localization_key = HMI_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_TNG
+	text = {
+		trigger = {
+			has_event_target = scope_TNG
+		}
+		localization_key = TNG_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_PLM
+	text = {
+		trigger = {
+			has_event_target = scope_PLM
+		}
+		localization_key = PLM_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_XIA
+	text = {
+		trigger = {
+			has_event_target = scope_XIA
+		}
+		localization_key = XIA_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_KHR
+	text = {
+		trigger = {
+			has_event_target = scope_KHR
+		}
+		localization_key = KHR_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_KRS
+	text = {
+		trigger = {
+			has_event_target = scope_KRS
+		}
+		localization_key = KRS_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_ATM
+	text = {
+		trigger = {
+			has_event_target = scope_ATM
+		}
+		localization_key = ATM_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetFullPoliticalSupport_SUY
+	text = {
+		trigger = {
+			has_event_target = scope_SUY
+		}
+		localization_key = SUY_full_political_support
+	}
+	text = { localization_key = "" }
+}
+
+ #####################above are MODDED#######################
+
+
+ ## ###  ##  ### ###     # # ### #   #
+#    #  #  #  #  #       # # #    # #
+ #   #  ####  #  ##      ##  ##    #
+  #  #  #  #  #  #       # # #     #
+##   #  #  #  #  ###     # # ###   #
+
+#State support key
+defined_text = { #Country
+	name = GetStateSupport
+	text = {
+		trigger = {
+			original_tag = CHI
+			any_of_scopes = {  #MODDED
+				array = global.big_china  #MODDED
+				THIS = {  #MODDED
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = CHI_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = PRC
+			any_of_scopes = {   #MODDED
+				array = global.big_china   #MODDED
+				THIS = {  #MODDED
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = PRC_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = GXC
+			any_of_scopes = {
+				array = global.big_china  #MODDED
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = GXC_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = YUN
+			any_of_scopes = {
+				array = global.big_china  #MODDED
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = YUN_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = SHX
+			any_of_scopes = {
+				array = global.big_china  #MODDED
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = SHX_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = XSM
+			any_of_scopes = {
+				array = global.big_china  #MODDED
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = XSM_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = SIK
+			any_of_scopes = { #MODDED
+				array = global.big_china
+				THIS = { #MODDED
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}	#MODDED
+		localization_key = SIK_state_support
+	}
+	  #################vvvMODDEDvvv#################
+	text = {
+		trigger = {
+			original_tag = XIK
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = XIK_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = SIC
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = SIC_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = GUD
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = GUD_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = HPC
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = HPC_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = NEA
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = NEA_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = SHD
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = SHD_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = NXM
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = NXM_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = EGM
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = EGM_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = SHC
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = SHC_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = GSM
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = GSM_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = HMI
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = HMI_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = TNG
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = TNG_state_support
+	}
+	text = {
+		trigger = {
+			original_tag = PLM
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = PLM_state_support
+	}
+    text = {
+		trigger = {
+			original_tag = KRS
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = KRS_state_support
+	}
+    text = {
+		trigger = {
+			original_tag = KHR
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = KHR_state_support
+	}
+    text = {
+		trigger = {
+			original_tag = ATM
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = ATM_state_support
+	}
+    text = {
+		trigger = {
+			original_tag = XIA
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = XIA_state_support
+	}
+    text = {
+		trigger = {
+			original_tag = SUY
+			any_of_scopes = {
+				array = global.big_china
+				THIS = {
+					has_state_flag = majority_political_platform_@PREV
+				}
+			}
+		}
+		localization_key = SUY_state_support
+	}
+	 #################^^^MODDED^^^#################
+	text = { localization_key = "" }
+}
+
+#   #  ##  ###  #    ##  ###  ###   ##
+#   # #  # #  # #   #  # #  # #  # #
+# # # #### ###  #   #  # ###  #  #  #
+# # # #  # #  # #   #  # #  # #  #   #
+ # #  #  # #  # ###  ##  #  # ###  ##
+
+defined_text = { #Event target scope_<TAG>
+	name = GetWarlordRulingPartyChance
+	text = {
+		trigger = {
+			has_variable = chance_ruling_party
+		}
+		localization_key = WTT_warlord_chance_ruling_party
+	}
+}
+
+defined_text = { #Event target scope_<TAG>
+	name = GetWarlordOpinionSupportChance
+	text = {
+		trigger = {
+			has_variable = chance_opinion_of_us
+		}
+		localization_key = WTT_warlord_chance_opinion
+	}
+}
+
+#Warlord support key
+defined_text = { #Event target scope_<TAG>
+	name = GetWarlordSupport
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = CHI
+		}
+		localization_key = CHI_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = PRC
+		}
+		localization_key = PRC_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = GXC
+		}
+		localization_key = GXC_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = YUN 
+		}
+		localization_key = YUN_warlord_support
+	}
+ #################vvvMODDEDvvv#################
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = SHX
+		}
+		localization_key = SHX_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = XSM
+		}
+		localization_key = XSM_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = SIK
+		}
+		localization_key = SIK_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = XIK
+		}
+		localization_key = XIK_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = SIC
+		}
+		localization_key = SIC_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = GUD
+		}
+		localization_key = GUD_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = HPC
+		}
+		localization_key = HPC_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = NEA
+		}
+		localization_key = NEA_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = SHD
+		}
+		localization_key = SHD_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = NXM
+		}
+		localization_key = NXM_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = EGM
+		}
+		localization_key = EGM_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = SHC
+		}
+		localization_key = SHC_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = GSM
+		}
+		localization_key = GSM_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = HMI
+		}
+		localization_key = HMI_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = TNG
+		}
+		localization_key = TNG_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = PLM
+		}
+		localization_key = PLM_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = KHR
+		}
+		localization_key = KHR_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = KRS
+		}
+		localization_key = KRS_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = XIA
+		}
+		localization_key = XIA_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = ATM
+		}
+		localization_key = ATM_warlord_support
+	}
+	text = {
+		trigger = {
+			any_country = {
+				is_chinese_warlord = yes
+				has_country_flag = warlord_supports_@PREV
+			}
+			original_tag = SUY
+		}
+		localization_key = SUY_warlord_support
+	}
+	text = { localization_key = "" }
+}
+
+
+defined_text = { #Country
+	name = GetWarlordSupportFromGXC
+	text = {
+		trigger = {
+			GXC = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_GXC
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromYUN
+	text = {
+		trigger = {
+			YUN = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_YUN
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromSHX
+	text = {
+		trigger = {
+			SHX = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_SHX
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromXSM
+	text = {
+		trigger = {
+			XSM = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_XSM
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromSIK
+	text = {
+		trigger = {
+			SIK = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_SIK
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromXIK
+	text = {
+		trigger = {
+			XIK = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_XIK
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromSIC
+	text = {
+		trigger = {
+			SIC = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_SIC
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromGUD
+	text = {
+		trigger = {
+			GUD = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_GUD
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromHPC
+	text = {
+		trigger = {
+			HPC = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_HPC
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromNEA
+	text = {
+		trigger = {
+			NEA = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_NEA
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromSHD
+	text = {
+		trigger = {
+			SHD = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_SHD
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromNXM
+	text = {
+		trigger = {
+			NXM = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_NXM
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromEGM
+	text = {
+		trigger = {
+			EGM = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_EGM
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromSHC
+	text = {
+		trigger = {
+			SHC = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_SHC
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetWarlordSupportFromGSM
+	text = {
+		trigger = {
+			GSM = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_GSM
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetWarlordSupportFromHMI
+	text = {
+		trigger = {
+			HMI = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_HMI
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromTNG
+	text = {
+		trigger = {
+			TNG = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_TNG
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromPLM
+	text = {
+		trigger = {
+			PLM = { 
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_PLM
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromKHR
+	text = {
+		trigger = {
+			KHR = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_KHR
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromKRS
+	text = {
+		trigger = {
+			KRS = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_KRS
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromATM
+	text = {
+		trigger = {
+			ATM = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_ATM
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromXIA
+	text = {
+		trigger = {
+			XIA = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_XIA
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name = GetWarlordSupportFromSUY
+	text = {
+		trigger = {
+			SUY = {
+				has_country_flag = warlord_supports_@PREV
+			}
+		}
+		localization_key = warlord_support_from_SUY
+	}
+	text = { localization_key = "" }
+}
+
+ #################^^^MODDED^^^#################
+
+ ##  ### #  # ### ###      ###   ##  ### #  # ###  ##
+#  #  #  #  # #   #  #     #  # #  #  #  ## #  #  #
+#  #  #  #### ##  ###      ###  #  #  #  # ##  #   #
+#  #  #  #  # #   #  #     #    #  #  #  #  #  #    #
+ ##   #  #  # ### #  #     #     ##  ### #  #  #  ##
+
+#Key if other points
+defined_text = { #Country
+	name = GetOtherSupport
+	text = {
+		trigger = {
+			original_tag = CHI
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = CHI_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = PRC
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = PRC_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = GXC
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = GXC_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = YUN
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = YUN_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = SHX
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = SHX_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = XSM
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = XSM_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = SIK
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = SIK_other_support
+	}
+	 #################vvvMODDEDvvv#################
+	text = {
+		trigger = {
+			original_tag = XIK
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = XIK_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = SIC
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = SIC_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = GUD
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = GUD_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = HPC
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = HPC_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = NEA
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = NEA_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = SHD
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = SHD_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = NXM
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = NXM_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = EGM
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = EGM_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = SHC
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = SHC_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = GSM
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = GSM_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = HMI
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = HMI_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = TNG
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = TNG_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = PLM
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = PLM_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = KHR
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = KHR_other_support
+	}
+    text = {
+		trigger = {
+			original_tag = KRS
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = KRS_other_support
+	}
+    text = {
+		trigger = {
+			original_tag = ATM
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = ATM_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = XIA
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = XIA_other_support
+	}
+	text = {
+		trigger = {
+			original_tag = SUY
+			NOT = { check_variable = { other_political_support = 0 } }
+		}
+		localization_key = SUY_other_support
+	}
+	 #################^^^MODDED^^^#################
+	text = { localization_key = "" }
+}
+
+ ## ###  ##  ### ###  ##
+#    #  #  #  #  #   #
+ #   #  ####  #  ##   #
+  #  #  #  #  #  #     #
+##   #  #  #  #  ### ##
+
+#Nat China
+#595 "Fukien"#MODDED
+defined_text = { #Country
+	name = GetFujian
+	text = {
+		trigger = {
+			595 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_595
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetFujianPoints
+	text = {
+		trigger = {
+			595 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 595_fujian_points
+	}
+	text = { localization_key = "" }
+}
+
+#596 "Zhejiang"
+defined_text = { #Country
+	name = GetZhejiang
+	text = {
+		trigger = {
+			596 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_596
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetZhejiangPoints
+	text = {
+		trigger = {
+			596 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 596_zhejiang_points
+	}
+	text = { localization_key = "" }
+}
+
+#597 "Shandong"
+defined_text = { #Country
+	name = GetShandong
+	text = {
+		trigger = {
+			597 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_597
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetShandongPoints
+	text = {
+		trigger = {
+			597 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 597_shandong_points
+	}
+	text = { localization_key = "" }
+}
+
+#1015 "Kiangsu"#MODDED
+defined_text = { #Country
+	name = GetJiangsu
+	text = {
+		trigger = {
+			1015 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_598
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetJiangsuPoints
+	text = {
+		trigger = {
+			1015 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 598_jiangsu_points
+	}
+	text = { localization_key = "" }
+}
+
+#600 "Kiangsi"#MODDED
+defined_text = { #Country
+	name = GetJiangxi
+	text = {
+		trigger = {
+			600 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_600
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetJiangxiPoints
+	text = {
+		trigger = {
+			600 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 600_jiangxi_points
+	}
+	text = { localization_key = "" }
+}
+
+#1042 "Hsikang"#MODDED
+defined_text = { #Country
+	name = GetXikang
+	text = {
+		trigger = {
+			1042 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_601
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetXikangPoints
+	text = {
+		trigger = {
+			1042 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 601_xikang_points
+	}
+	text = { localization_key = "" }
+}
+
+#602 "Hunan"
+defined_text = { #Country
+	name = GetHunan
+	text = {
+		trigger = {
+			602 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_602
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetHunanPoints
+	text = {
+		trigger = {
+			602 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 602_hunan_points
+	}
+	text = { localization_key = "" }
+}
+
+#603 "Guizhou"
+defined_text = { #Country
+	name = GetGuizhou
+	text = {
+		trigger = {
+			603 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_603
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetGuizhouPoints
+	text = {
+		trigger = {
+			603 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 603_guizhou_points
+	}
+	text = { localization_key = "" }
+}
+
+#605 "Szechwan"#MODDED
+defined_text = { #Country
+	name = GetSichuan
+	text = {
+		trigger = {
+			605 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_605
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetSichuanPoints
+	text = {
+		trigger = {
+			605 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 605_sichuan_points
+	}
+	text = { localization_key = "" }
+}
+
+#606 "Anhui"
+defined_text = { #Country
+	name = GetAnhui
+	text = {
+		trigger = {
+			606 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_606
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetAnhuiPoints
+	text = {
+		trigger = {
+			606 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 606_anhui_points
+	}
+	text = { localization_key = "" }
+}
+
+#607 "Henan"
+defined_text = { #Country
+	name = GetHenan
+	text = {
+		trigger = {
+			607 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_607
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetHenanPoints
+	text = {
+		trigger = {
+			607 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 607_henan_points
+	}
+	text = { localization_key = "" }
+}
+
+#608 "Beijing"
+defined_text = { #Country
+	name = GetBeijing
+	text = {
+		trigger = {
+			608 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_608
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetBeijingPoints
+	text = {
+		trigger = {
+			608 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 608_beijing_points
+	}
+	text = { localization_key = "" }
+}
+
+#613 "Shanghai"
+defined_text = { #Country
+	name = GetShanghai
+	text = {
+		trigger = {
+			613 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_613
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetShanghaiPoints
+	text = {
+		trigger = {
+			613 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 613_shanghai_points
+	}
+	text = { localization_key = "" }
+}
+
+#614 "Hebei"
+defined_text = { #Country
+	name = GetHebei
+	text = {
+		trigger = {
+			614 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_614
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetHebeiPoints
+	text = {
+		trigger = {
+			614 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 614_hebei_points
+	}
+	text = { localization_key = "" }
+}
+
+#620 "Hubei"
+defined_text = { #Country
+	name = GetHubei
+	text = {
+		trigger = {
+			620 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_620
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetHubeiPoints
+	text = {
+		trigger = {
+			620 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 620_hubei_points
+	}
+	text = { localization_key = "" }
+}
+
+#Shanxi
+
+#615 "Shanxi"
+defined_text = { #Country
+	name = GetShanxi
+	text = {
+		trigger = {
+			615 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_615
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetShanxiPoints
+	text = {
+		trigger = {
+			615 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 615_shanxi_points
+	}
+	text = { localization_key = "" }
+}
+
+#621 "Suiyuan"
+defined_text = { #Country
+	name = GetSuiyuan
+	text = {
+		trigger = {
+			621 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_621
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetSuiyuanPoints
+	text = {
+		trigger = {
+			621 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 621_suiyuan_points
+	}
+	text = { localization_key = "" }
+}
+
+#Com China
+
+#622 "Shaanxi"
+defined_text = { #Country
+	name = GetShaanxi
+	text = {
+		trigger = {
+			622 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_622
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetShaanxiPoints
+	text = {
+		trigger = {
+			622 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 622_shaanxi_points
+	}
+	text = { localization_key = "" }
+}
+
+#Xibei San Ma
+
+#283 "Gansu"
+defined_text = { #Country
+	name = GetGansu
+	text = {
+		trigger = {
+			283 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_283
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetGansuPoints
+	text = {
+		trigger = {
+			283 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 283_gansu_points
+	}
+	text = { localization_key = "" }
+}
+
+#1045 "Xining"
+defined_text = { #Country
+	name = GetQinghai
+	text = {
+		trigger = {
+			1045 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_604
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetQinghaiPoints
+	text = {
+		trigger = {
+			1045 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 604_qinghai_points
+	}
+	text = { localization_key = "" }
+}
+
+#616 "Ningxia"
+defined_text = { #Country
+	name = GetNingxia
+	text = {
+		trigger = {
+			616 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_616
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetNingxiaPoints
+	text = {
+		trigger = {
+			616 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 616_ningxia_points
+	}
+	text = { localization_key = "" }
+}
+
+#Sinkiang
+
+#1049 "Khotan"#MODDED
+defined_text = { #Country
+	name = GetKhotan  	#MODDED
+	text = {
+		trigger = {
+			1049 = { 	#MODDED
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_957 	#MODDED
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetKhotanPoints 	#MODDED
+	text = {
+		trigger = {
+			1049 = {  #MODDED
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 957_khotan_points 	#MODDED
+	}
+	text = { localization_key = "" }
+}
+
+#617 "Urumqi"
+defined_text = { #Country
+	name = GetUrumqi
+	text = {
+		trigger = {
+			617 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_617
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetUrumqiPoints
+	text = {
+		trigger = {
+			617 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 617_urumqi_points
+	}
+	text = { localization_key = "" }
+}
+
+#760 "Hami"#MODDED
+defined_text = { #Country
+	name = GetHami 	#MODDED
+	text = {
+		trigger = {
+			760 = { 	#MODDED
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_758 	#MODDED
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetHamiPoints 	#MODDED
+	text = {
+		trigger = {
+			760 = {  #MODDED
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 760_hami_points 	#MODDED
+	}
+	text = { localization_key = "" }
+}
+
+#619 "Yarkand"
+defined_text = { #Country
+	name = GetYarkand
+	text = {
+		trigger = {
+			619 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_619
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetYarkandPoints
+	text = {
+		trigger = {
+			619 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 619_yarkand_points
+	}
+	text = { localization_key = "" }
+}
+
+#Yunnan
+
+#325 "Yunnan"
+defined_text = { #Country
+	name = GetYunnan
+	text = {
+		trigger = {
+			325 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_325
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetYunnanPoints
+	text = {
+		trigger = {
+			325 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 325_yunnan_points
+	}
+	text = { localization_key = "" }
+}
+
+#Guangxi Clique
+
+#591 "Hainan"
+defined_text = { #Country
+	name = GetHainan
+	text = {
+		trigger = {
+			591 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_591
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetHainanPoints
+	text = {
+		trigger = {
+			591 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 591_hainan_points
+	}
+	text = { localization_key = "" }
+}
+
+#592 "Canton" #MODDED
+defined_text = { #Country
+	name = GetGuangzhou
+	text = {
+		trigger = {
+			592 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_592
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetGuangzhouPoints
+	text = {
+		trigger = {
+			592 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 592_guangzhou_points
+	}
+	text = { localization_key = "" }
+}
+
+#593 "Guangdong"
+defined_text = { #Country
+	name = GetGuangdong
+	text = {
+		trigger = {
+			593 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_593
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetGuangdongPoints
+	text = {
+		trigger = {
+			593 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 593_guangdong_points
+	}
+	text = { localization_key = "" }
+}
+
+#594 "Nanning"
+defined_text = { #Country
+	name = GetNanning
+	text = {
+		trigger = {
+			594 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_594
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetNanningPoints
+	text = {
+		trigger = {
+			594 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 594_nanning_points
+	}
+	text = { localization_key = "" }
+}
+
+#599 "Guangxi"
+defined_text = { #Country
+	name = GetGuangxi
+	text = {
+		trigger = {
+			599 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = STATE_599
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name = GetGuangxiPoints
+	text = {
+		trigger = {
+			599 = {
+				WTT_is_active_political_struggle_state = yes
+				has_state_flag = majority_political_platform_@PREV
+			}
+		}
+		localization_key = 599_guangxi_points
+	}
+	text = { localization_key = "" }
+}
+
+
+ ## ###  ##  ### ###     #   #  ##   ###  ##  ###  ### ### #   #     #  #  ##  #   # ###
+#    #  #  #  #  #       ## ## #  #    # #  # #  #  #   #   # #      ## # #  # ## ## #
+ #   #  ####  #  ##      # # # ####    # #  # ###   #   #    #       # ## #### # # # ##
+  #  #  #  #  #  #       #   # #  # #  # #  # #  #  #   #    #       #  # #  # #   # #
+##   #  #  #  #  ###     #   # #  #  ##   ##  #  # ###  #    #       #  # #  # #   # ###
+
+#Call after scoping to desired state
+defined_text = { #Country
+	name = GetStateMajorityCountryName
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = CHI #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_CHI_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = PRC #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_PRC_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = GXC #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_GXC_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = YUN #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_YUN_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = SHX #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_SHX_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = XSM #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_XSM_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = SIK #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_SIK_GetNameDef
+	}
+ 	#=============================MODDEDv=============================
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = XIK #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_XIK_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = SIC #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_SIC_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = GUD #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_GUD_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = HPC #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_HPC_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = NEA #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_NEA_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = SHD #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_SHD_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = NXM #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_NXM_GetNameDef
+	}
+
+    text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = EGM #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_EGM_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = SHC #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_SHC_GetNameDef
+	}
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = GSM #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_GSM_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = HMI #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_HMI_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = TNG #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_TNG_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = PLM #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_PLM_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = KHR #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_KHR_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = KRS #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_KRS_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = ATM #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_ATM_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = XIA #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_XIA_GetNameDef
+	}
+
+	text = {
+		trigger = {
+			any_country_with_original_tag = { #MODDED
+				original_tag_to_check = SUY #MODDED
+				exists = yes #MODDED  #MODDED
+				PREV = { has_state_flag = majority_political_platform_@PREV }
+			}
+		}
+		localization_key = scope_SUY_GetNameDef
+	}
+
+	#=============================MODDED^=============================
+	text = { localization_key = "" }
+}
+
+ ## ###  ##  ### ###     ###   ##  ### #  # ###  ##
+#    #  #  #  #  #       #  # #  #  #  ## #  #  #
+ #   #  ####  #  ##      ###  #  #  #  # ##  #   #
+  #  #  #  #  #  #       #    #  #  #  #  #  #    #
+##   #  #  #  #  ###     #     ##  ### #  #  #  ##
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_CHI
+	text = {
+		trigger = {
+			has_event_target = scope_CHI
+		}
+		localization_key = CHI_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_PRC
+	text = {
+		trigger = {
+			has_event_target = scope_PRC
+		}
+		localization_key = PRC_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_GXC
+	text = {
+		trigger = {
+			has_event_target = scope_GXC
+		}
+		localization_key = GXC_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_YUN
+	text = {
+		trigger = {
+			has_event_target = scope_YUN
+		}
+		localization_key = YUN_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_SHX
+	text = {
+		trigger = {
+			has_event_target = scope_SHX
+		}
+		localization_key = SHX_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_XSM
+	text = {
+		trigger = {
+			has_event_target = scope_XSM
+		}
+		localization_key = XSM_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_SIK
+	text = {
+		trigger = {
+			has_event_target = scope_SIK
+		}
+		localization_key = SIK_local_state_support
+	}
+	text = { localization_key = "" }
+}
+#=============================MODDEDv=============================
+	#MODDED	#MODDED	#MODDED	#MODDED	#MODDED	#MODDED	#MODDED
+defined_text = { #Country
+	name =  GetLocalStateSupport_XIK
+	text = {
+		trigger = {
+			has_event_target = scope_XIK
+		}
+		localization_key = XIK_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_SIC
+	text = {
+		trigger = {
+			has_event_target = scope_SIC
+		}
+		localization_key = SIC_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_GUD
+	text = {
+		trigger = {
+			has_event_target = scope_GUD
+		}
+		localization_key = GUD_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_HPC
+	text = {
+		trigger = {
+			has_event_target = scope_HPC
+		}
+		localization_key = HPC_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_NEA
+	text = {
+		trigger = {
+			has_event_target = scope_NEA
+		}
+		localization_key = NEA_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_SHD
+	text = {
+		trigger = {
+			has_event_target = scope_SHD
+		}
+		localization_key = SHD_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_NXM
+	text = {
+		trigger = {
+			has_event_target = scope_NXM
+		}
+		localization_key = NXM_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_EGM
+	text = {
+		trigger = {
+			has_event_target = scope_EGM
+		}
+		localization_key = EGM_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_SHC
+	text = {
+		trigger = {
+			has_event_target = scope_SHC
+		}
+		localization_key = SHC_local_state_support
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name =  GetLocalStateSupport_GSM
+	text = {
+		trigger = {
+			has_event_target = scope_GSM
+		}
+		localization_key = GSM_local_state_support
+	}
+	text = { localization_key = "" }
+}
+defined_text = { #Country
+	name =  GetLocalStateSupport_HMI
+	text = {
+		trigger = {
+			has_event_target = scope_HMI
+		}
+		localization_key = HMI_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_TNG
+	text = {
+		trigger = {
+			has_event_target = scope_TNG
+		}
+		localization_key = TNG_local_state_support	#MODDED
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country		#MODDED	#MODDED
+	name =  GetLocalStateSupport_PLM
+	text = {
+		trigger = {
+			has_event_target = scope_PLM	#MODDED
+		}
+		localization_key = PLM_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country		#MODDED	#MODDED
+	name =  GetLocalStateSupport_KHR
+	text = {
+		trigger = {
+			has_event_target = scope_KHR	#MODDED
+		}
+		localization_key = KHR_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country		#MODDED	#MODDED
+	name =  GetLocalStateSupport_KRS
+	text = {
+		trigger = {
+			has_event_target = scope_KRS	#MODDED
+		}
+		localization_key = KRS_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country		#MODDED	#MODDED
+	name =  GetLocalStateSupport_ATM
+	text = {
+		trigger = {
+			has_event_target = scope_ATM	#MODDED
+		}
+		localization_key = ATM_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country		#MODDED	#MODDED
+	name =  GetLocalStateSupport_SUY
+	text = {
+		trigger = {
+			has_event_target = scope_SUY	#MODDED
+		}
+		localization_key = SUY_local_state_support
+	}
+	text = { localization_key = "" }
+}
+
+defined_text = { #Country
+	name =  GetLocalStateSupport_XIA
+	text = {
+		trigger = {
+			has_event_target = scope_XIA
+		}
+		localization_key = XIA_local_state_support	#MODDED
+	}
+	text = { localization_key = "" }
+}
+
+#=============================MODDED^=============================	#MODDED	#MODDED	#MODDED
+#    ##   ##   ##  #        ## #  # ###  ###   ##  ###  ###     #   #  ##  ###  ### ### ### ### ###   ##
+#   #  # #  # #  # #       #   #  # #  # #  # #  # #  #  #      ## ## #  # #  #  #  #    #  #   #  # #
+#   #  # #    #### #        #  #  # ###  ###  #  # ###   #      # # # #  # #  #  #  ##   #  ##  ###   #
+#   #  # #  # #  # #         # #  # #    #    #  # #  #  #      #   # #  # #  #  #  #    #  #   #  #   #
+###  ##   ##  #  # ###     ##   ##  #    #     ##  #  #  #      #   #  ##  ###  ### #   ### ### #  # ##
+
+defined_text = { #Country
+	name =  GetBackRoomBackstabberLoc
+	text = {
+		localization_key = backroom_backstabber
+	}
+}
+
+defined_text = { #Country
+	name =  GetPrinceOfTerrorLoc
+	text = {
+		localization_key = prince_of_terror
+	}
+}
+
+defined_text = { #Country
+	name =  GetLiberationRule
+	text = {
+		localization_key = liberating_states_will_gain_you_state_majority
+	}
+}

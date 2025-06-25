@@ -1,0 +1,282 @@
+add_namespace = pacific_war
+add_namespace = pacific_war_news
+
+country_event = { # USA get notification about peace with JAP
+    id = pacific_war.0
+    title = pacific_war.0.t
+    desc = pacific_war.0.d
+	picture = GFX_report_event_japan_europe_pact
+
+    is_triggered_only = yes
+    option = { # surrender
+        name = pacific_war.0.a
+        set_global_flag = pw_usa_offer_surrender
+        clr_global_flag = pw_usa_refuse_surrender
+        hidden_effect = {
+			JAP = { country_event = { id = pacific_war.1 days = 3 } }
+		}
+        ai_chance = {
+            factor = 10
+            modifier = {
+                OR = {
+                    NOT = { country_exists = CHI }
+                    CHI = { is_ally_with = JAP }
+                    605 = { is_controlled_by_ROOT_or_ally = yes }
+                }
+                add = 10
+            }
+            modifier = {
+                has_navy_size = { size < 100 }
+                add = 25
+            }
+            modifier = {
+                ENG = {
+                    any_enemy_country = { has_war_with = FROM }
+                    has_capitulated = yes
+                }
+                add = 50
+            }
+            modifier = {
+                SOV = {
+                    any_enemy_country = { has_war_with = FROM }
+                    has_capitulated = yes
+                }
+                add = 25
+            }
+            modifier = {
+                any_core_state = {
+                    is_controlled_by = JAP
+                    is_in_home_area = yes
+                }
+                factor = 10
+            }
+        }
+    }
+    option = { # never
+		name = pacific_war.0.b
+        set_global_flag = pw_usa_refuse_surrender
+        clr_global_flag = pw_usa_offer_surrender
+        hidden_effect = {
+			JAP = { country_event = { id = pacific_war.1 days = 3 } }
+		}
+        add_war_support = -0.05
+        add_stability = -0.05
+        ai_chance = {
+            factor = 0
+        }
+    }
+}
+
+country_event = { # JAP get response from USA
+    id = pacific_war.1
+    title = pacific_war.1.t
+    desc = pacific_war.1.d
+	picture = GFX_report_event_usa_macarthur_speech
+
+    is_triggered_only = yes
+    option = { # USA agrees to surrender
+        name = pacific_war.1.a
+        trigger = { has_global_flag = pw_usa_offer_surrender }
+		custom_effect_tooltip = pw_usa_surrender_tt		
+		hidden_effect = {
+				every_country = {					
+					limit = {
+						is_in_faction_with = USA
+					}
+					set_truce = {
+						target = JAP
+						days = 90
+					}
+				}
+	            white_peace = USA				
+				every_country = {					
+					limit = {
+						is_in_faction_with = ENG
+					}
+					set_truce = {
+						target = JAP
+						days = 90
+					}
+				}				
+			JAP = {
+			transfer_state = 629
+			transfer_state = 638
+            JAP ={
+                   set_autonomy = { target = INS autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            }
+        MAL = {				
+	        set_state_controller = 1055
+			set_state_owner = 1055
+	        set_state_controller =1058
+			set_state_owner = 1058
+            set_state_controller = 1061
+			set_state_owner = 1061
+	        set_state_controller = 336
+			set_state_owner = 336
+	        set_state_controller =1057
+			set_state_owner = 1057
+            set_state_controller = 1059
+			set_state_owner = 1059
+	        set_state_controller = 1056
+			set_state_owner = 1056
+	        set_state_controller =970
+			set_state_owner = 970
+            set_state_controller = 972
+			set_state_owner = 972
+		    set_state_controller = 971
+			set_state_owner = 971
+            set_state_controller = 333
+			set_state_owner = 333				
+            set_capital = {
+                state = 1055
+                remember_old_capital = no
+            }
+	            } 		
+            JAP ={
+                   set_autonomy = { target = INS autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            } 
+            JAP ={
+                   set_autonomy = { target = MAL autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            } 
+            JAP ={
+                   set_autonomy = { target = SIA autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            } 		
+            JAP ={			
+                        annex_country = { target = PHI }
+                        annex_country = { target = BUR }
+                        annex_country = { target = FIC }	
+            }						
+			every_country = { news_event = { id = pacific_war_news.0 days = 3 } }
+			pw_jap_scripted_peace = yes
+		}
+    }
+    }	
+    option = { # USA won't surrender, back to negotiation
+        name = pacific_war.1.b
+        trigger = { has_global_flag = pw_usa_refuse_surrender }
+        clr_country_flag = jap_offer_peace_usa
+    }
+}
+
+country_event = { # JAP offer unconditional peace
+    id = pacific_war.2
+    title = pacific_war.2.t
+    desc = pacific_war.2.d
+	picture = GFX_vnr_ph_v_day
+
+    is_triggered_only = yes
+    option = { # The war is over
+        name = pacific_war.2.a
+		custom_effect_tooltip = pw_jap_surrender_tt
+		hidden_effect = {
+			JAP = {
+				pw_allies_scripted_peace = yes
+			}
+			every_country = {
+				news_event = { id = pacific_war_news.2 days = 10 }
+			}
+		}
+    }
+}
+
+news_event = { # JAP victorty peace news
+    id = pacific_war_news.0
+    title = pacific_war_news.0.t
+    desc = pacific_war_news.0.d
+	picture = GFX_vnr_ph_usa_surrender
+
+    is_triggered_only = yes
+	immediate = {
+        hidden_effect = {
+            play_song = ph_death_of_antoku
+        }
+	}
+    option = {
+        name = pacific_war_news.0.a
+        trigger = { is_in_faction_with = JAP }
+    }
+    option = {
+        name = pacific_war_news.0.b
+        trigger = { tag = USA }
+    }
+    option = {
+        name = pacific_war_news.0.c
+        trigger = { NOT = { tag = USA } has_war_with = JAP }
+    }
+    option = {
+        name = pacific_war_news.0.e
+        trigger = { NOT = { is_in_faction_with = JAP has_war_with = JAP } }
+    }
+}
+
+news_event = { # August Storm
+    id = pacific_war_news.1
+    title = pacific_war_news.1.t
+    desc = pacific_war_news.1.d
+	picture = GFX_vnr_ph_august_storm
+
+    is_triggered_only = yes
+    immediate = {
+        hidden_effect = {
+            play_song = ph_farewell_of_slavianka
+        }
+    }
+    option = {
+        name = pacific_war_news.1.a
+        trigger = { tag = SOV }
+    }
+    option = {
+        name = pacific_war_news.1.b
+        trigger = { tag = JAP }
+    }
+    option = {
+        name = pacific_war_news.1.c
+        trigger = { NOT = { tag = SOV } has_war_with = JAP }
+    }
+    option = {
+        name = pacific_war_news.1.e
+        trigger = {
+            NOT = {
+                tag = SOV
+                tag = JAP
+                has_war_with = JAP
+            }
+        }
+    }
+}
+
+news_event = { # Japan surrender
+    id = pacific_war_news.2
+    title = pacific_war_news.2.t
+    desc = pacific_war_news.2.d
+	picture = GFX_vnr_ph_jap_surrender
+
+    is_triggered_only = yes
+	immediate = {
+        hidden_effect = {
+            play_song = ph_letters_from_iwo_jima
+        }
+	}
+    option = {
+        name = pacific_war_news.2.a
+        trigger = { is_in_faction_with = USA }
+    }
+    option = {
+        name = pacific_war_news.2.b
+        trigger = { tag = JAP }
+    }
+    option = {
+        name = pacific_war_news.2.c
+        trigger = { is_in_faction_with = CHI }
+    }
+    option = {
+        name = pacific_war_news.2.e
+        trigger = {
+            NOT = {
+                is_in_faction_with = USA
+				is_in_faction_with = CHI
+				tag = JAP
+            }
+        }
+    }
+}

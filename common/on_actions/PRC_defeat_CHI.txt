@@ -1,0 +1,31 @@
+on_actions = {
+	on_annex = {
+		effect = {
+			if = {
+				limit = {
+					FROM = {
+						TAG = event_target:WTT_current_china_leader
+					}
+					ROOT = {
+
+						TAG = event_target:WTT_communist_china
+
+						
+					}
+				}
+				set_global_flag = PRC_WIN_CHI
+				ROOT = {
+				clear_global_event_target = WTT_current_china_leader #former china not us
+				}
+				ROOT = {
+				save_global_event_target_as = Communist_China_Leader
+				}
+				GUD = {
+					set_rule = {
+						can_create_factions = no
+					}
+				}
+			}
+		}
+	}
+}

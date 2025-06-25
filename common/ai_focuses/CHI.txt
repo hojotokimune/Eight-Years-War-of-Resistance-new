@@ -1,0 +1,7 @@
+
+ai_historical_focus_list_GXC = {
+	ai_national_focuses = {
+		gxc_political_effort
+		gxc_2g_incident
+	}
+}

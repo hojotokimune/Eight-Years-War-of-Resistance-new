@@ -1,0 +1,10 @@
+﻿l_simp_chinese:
+ # Modifiers:
+ weekly_communism_drift_in_neighbors_and_subjects: "每周£texticon_communism£ §YTotalism§!支持度在附庸和邻国"
+
+ fascism_drift: "$national_populist_drift$"
+ communism_drift: "$totalist_drift$"
+ democratic_drift: "$market_liberal_drift$"
+ neutrality_drift: "$authoritarian_democrat_drift$"
+ political_advisor_cost_factor: "$KR_trade_laws_cost_factor$"
+ trade_laws_cost_factor: "$KR_trade_laws_cost_factor$"

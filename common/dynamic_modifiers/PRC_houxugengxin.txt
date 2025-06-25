@@ -1,0 +1,76 @@
+PRC_renminjiefangjunhaijun_dm = {
+	icon = "GFX_idea_prc_plaan_idea"
+	enable = { always = yes }
+
+	experience_gain_navy_factor = PRC_jfjhj_experience_gain_navy_factor
+	experience_gain_navy_unit_factor = PRC_jfjhj_experience_gain_navy_unit_factor
+	repair_speed_factor = PRC_jfjhj_repair_speed_factor
+	naval_accidents_chance = PRC_jfjhj_naval_accidents_chance
+	strike_force_movement_org_loss = PRC_jfjhj_strike_force_movement_org_loss
+	naval_has_potf_in_combat_attack = PRC_jfjhj_naval_has_potf_in_combat_attack
+	naval_has_potf_in_combat_defense = PRC_jfjhj_naval_has_potf_in_combat_defense
+	naval_coordination = PRC_jfjhj_naval_coordination
+	naval_critical_score_chance_factor = PRC_jfjhj_naval_critical_score_chance_factor
+	invasion_preparation = PRC_jfjhj_invasion_preparation
+	naval_invasion_capacity = PRC_jfjhj_naval_invasion_capacity
+	naval_invasion_penalty = PRC_jfjhj_naval_invasion_penalty
+	amphibious_invasion = PRC_jfjhj_amphibious_invasion
+	amphibious_invasion_defence = PRC_jfjhj_amphibious_invasion_defence
+	naval_detection = PRC_jfjhj_naval_detection
+	navy_capital_ship_attack_factor = PRC_jfjhj_navy_capital_ship_attack_factor
+	naval_hit_chance = PRC_jfjhj_naval_hit_chance
+	ships_at_battle_start = PRC_jfjhj_ships_at_battle_start
+	navy_submarine_attack_factor = PRC_jfjhj_navy_submarine_attack_factor
+	sub_retreat_speed = PRC_jfjhj_sub_retreat_speed
+	naval_mine_hit_chance = PRC_jfjhj_naval_mine_hit_chance
+	naval_mines_damage_factor = PRC_jfjhj_naval_mines_damage_factor
+	navy_screen_attack_factor = PRC_jfjhj_navy_screen_attack_factor
+	naval_torpedo_cooldown_factor = PRC_jfjhj_naval_torpedo_cooldown_factor
+	positioning = PRC_jfjhj_positioning
+	screening_efficiency = PRC_jfjhj_screening_efficiency
+	naval_damage_factor = PRC_jfjhj_naval_damage_factor
+	naval_defense_factor = PRC_jfjhj_naval_defense_factor
+	naval_morale_factor = PRC_jfjhj_naval_morale_factor
+	naval_speed_factor = PRC_jfjhj_naval_speed_factor
+	sortie_efficiency = PRC_jfjhj_sortie_efficiency
+	navy_carrier_air_agility_factor = PRC_jfjhj_navy_carrier_air_agility_factor
+	navy_carrier_air_attack_factor = PRC_jfjhj_navy_carrier_air_attack_factor
+	navy_carrier_air_targetting_factor = PRC_jfjhj_navy_carrier_air_targetting_factor
+}
+PRC_renminjiefangjunkongjun_dm = {
+	icon = "GFX_idea_prc_plaaf_idea"
+	enable = { always = yes }
+
+	air_accidents_factor = PRC_jfjkj_air_accidents_factor
+	air_ace_generation_chance_factor = PRC_jfjkj_air_ace_generation_chance_factor
+	air_agility_factor = PRC_jfjkj_air_agility_factor
+	air_attack_factor = PRC_jfjkj_air_attack_factor
+	air_defence_factor = PRC_jfjkj_air_defence_factor
+	air_bombing_targetting = PRC_jfjkj_air_bombing_targetting
+	air_cas_efficiency = PRC_jfjkj_air_cas_efficiency
+	air_cas_present_factor = PRC_jfjkj_air_cas_present_factor
+	air_escort_efficiency = PRC_jfjkj_air_escort_efficiency
+	air_fuel_consumption_factor = PRC_jfjkj_air_fuel_consumption_factor
+	air_intercept_efficiency = PRC_jfjkj_air_intercept_efficiency
+	air_maximum_speed_factor = PRC_jfjkj_air_maximum_speed_factor
+	air_mission_efficiency = PRC_jfjkj_air_mission_efficiency
+	air_mission_xp_gain_factor = PRC_jfjkj_air_mission_xp_gain_factor
+	air_nav_efficiency = PRC_jfjkj_air_nav_efficiency
+	air_night_penalty = PRC_jfjkj_air_night_penalty
+	air_range_factor = PRC_jfjkj_air_range_factor
+	air_strategic_bomber_bombing_factor = PRC_jfjkj_air_strategic_bomber_bombing_factor
+	air_strategic_bomber_night_penalty = PRC_jfjkj_air_strategic_bomber_night_penalty
+	air_superiority_detect_factor = PRC_jfjkj_air_superiority_detect_factor
+	air_superiority_efficiency = PRC_jfjkj_air_superiority_efficiency
+	air_training_xp_gain_factor = PRC_jfjkj_air_training_xp_gain_factor
+	air_weather_penalty = PRC_jfjkj_air_weather_penalty
+	air_wing_xp_loss_when_killed_factor = PRC_jfjkj_air_wing_xp_loss_when_killed_factor
+	army_bonus_air_superiority_factor = PRC_jfjkj_army_bonus_air_superiority_factor
+	enemy_army_bonus_air_superiority_factor = PRC_jfjkj_enemy_army_bonus_air_superiority_factor
+	experience_gain_air = PRC_jfjkj_experience_gain_air
+	experience_gain_air_factor = PRC_jfjkj_experience_gain_air_factor
+	mines_planting_by_air_factor = PRC_jfjkj_mines_planting_by_air_factor
+	ground_attack_factor = PRC_jfjkj_ground_attack_factor
+	mines_sweeping_by_air_factor = PRC_jfjkj_mines_sweeping_by_air_factor
+	strategic_bomb_visibility = PRC_jfjkj_strategic_bomb_visibility
+}

@@ -1,0 +1,56 @@
+on_actions = {
+	on_daily = {
+		effect = {
+			IF = {
+				limit = {
+					CHI = { has_war_with = JAP }	
+	    			
+					OR = {		#重庆
+        				605  = { is_controlled_by = JAP } 
+        				605  = { is_controlled_by = EHB }	
+	    			}	
+					
+					NOT = { has_global_flag = CHI_surrender }
+				}
+				news_event = {
+					id = Chongqing_lost.1
+					hours = 3
+				}
+			}
+		}
+	}
+	On_daily = {
+		effect = {
+			IF = {
+				limit = {
+					CHI = { has_war_with = JAP }	
+	    			AND= {
+						OR = {		#重庆
+        					605  = { is_controlled_by = JAP } 
+        					605  = { is_controlled_by = EHB }	
+	    				}	
+						OR = {		#南京
+        					1015  = { is_controlled_by = JAP } 
+        					1015  = { is_controlled_by = EHB }	
+	    				}	
+						
+						OR = {		#广州
+        					592  = { is_controlled_by = JAP }
+        					592  = { is_controlled_by = EHB }	
+	    				}	
+						OR = {		#汉口
+        					1034  = { is_controlled_by = JAP }
+        					1034  = { is_controlled_by = EHB }	
+	    				}		
+					}
+		
+					NOT = { has_global_flag = CHI_surrender }
+				}
+				news_event = {
+					id = CHI_surrender.1
+					days = 1
+				}
+			}
+		}
+	}
+}

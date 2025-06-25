@@ -1,0 +1,82 @@
+scientist_trait_scientist = {
+    allowed = {
+		always = no 
+	}
+	available = { 
+		always = no
+	}
+	modifier = {
+		special_project_speed_factor = 0.5
+		scientist_breakthrough_bonus_factor = 0.5
+		scientist_xp_gain_factor = 0.5
+	}
+}
+
+scientist_trait_air = {
+	specialization = { specialization_air }
+	allowed = {
+		always = no 
+	}
+	available = { 
+		always = no 
+	}
+	modifier = {
+		sp_tag_aircraft_speed_factor = 0.25
+		sp_tag_jet_speed_factor = 0.25
+		sp_tag_rocket_speed_factor = 0.25
+		sp_tag_helicopter_speed_factor = 0.25
+	}
+}
+
+scientist_trait_land = {
+	specialization = { specialization_land }
+	allowed = {
+		always = no 
+	}
+	available = { 
+		always = no 
+	}
+	modifier = {
+		sp_tag_artillery_speed_factor = 0.25
+		sp_tag_tank_speed_factor = 0.25
+	}
+}
+
+scientist_trait_naval = {
+	specialization = { specialization_naval }
+	allowed = {
+		always = no 
+	}
+	available = { 
+		always = no 
+	}
+	modifier = {
+		sp_tag_surface_ship_speed_factor = 0.25
+	}
+}
+
+scientist_trait_nuclear = {
+	specialization = { specialization_nuclear }
+	allowed = {
+		always = no 
+	}
+	available = { 
+		always = no 
+	}
+	modifier = {
+		specialization_nuclear_speed_factor = 0.25
+	}
+}
+
+scientist_trait_project = {
+	specialization = { specialization_nuclear }
+	allowed = {
+		always = no 
+	}
+	available = { 
+		always = no 
+	}
+	modifier = {
+		special_project_speed_factor = 0.5
+	}
+}

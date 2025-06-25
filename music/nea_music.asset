@@ -1,0 +1,1598 @@
+
+music = {
+	name = "ph_gunkan_march"
+	file = "ph_gunkan_march.ogg"
+	volume = 1
+}
+
+music = {
+	name = "renminyingxiongjinianbei"
+	file = "renminyingxiongjinianbei.ogg"
+	volume = 1
+}
+
+music = {
+	name = "ph_miyasan_miyasan"
+	file = "ph_miyasan_miyasan.ogg"
+	volume = 1
+}
+
+music = {
+	name = "ph_death_of_antoku"
+	file = "ph_death_of_antoku.ogg"
+	volume = 1
+}
+
+music = {
+	name = "ph_letters_from_iwo_jima"
+	file = "ph_letters_from_iwo_jima.ogg"
+	volume = 1
+}
+
+music = {
+	name = "ph_farewell_of_slavianka"
+	file = "ph_farewell_of_slavianka.ogg"
+	volume = 1
+}
+
+music = {
+	name = "wuxinghongqi"
+	file = "wuxinghongqi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "wuqiyingxiong"
+	file = "wuqiyingxiong.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "the_most_pretty_future_road"
+	file = "the_most_pretty_future_road.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "xiangnianmaozhuxi"
+	file = "xiangnianmaozhuxi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "herijunzailai"
+	file = "herijunzailai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "balijiefang"
+	file = "balijiefang.ogg"
+	volume = 1
+}
+
+music = {
+	name = "linsilingyuan"
+	file = "linsilingyuan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "gemingyongyuanshinianqing"
+	file = "gemingyongyuanshinianqing.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "jiujiuyanyang"
+	file = "jiujiuyanyang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "lostdream"
+	file = "lostdream.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "mingzhishanghai"
+	file = "mingzhishanghai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "gangtiezhihuan"
+	file = "gangtiezhihuan.ogg"
+	volume = 1
+}
+
+music = {
+	name = "battleofwuhan"
+	file = "battleofwuhan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_chiangs_speech"
+	file = "nea_chiangs_speech.ogg"
+	volume = 2
+}
+
+music = {
+	name = "kaiguodadian"
+	file = "kaiguodadian.ogg"
+	volume = 2
+}
+
+music = {
+	name = "appeal_of_18th_of_june"
+	file = "De Gaulle - Appeal Of 18th Of June.ogg"
+	volume = 1
+}
+
+music = {
+	name = "guojige_zhongwenban"
+	file = "guojige_zhongwenban.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Song_of_Horst_Wessel"
+	file = "Song_of_Horst_Wessel.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "guojige_russian"
+	file = "guojige_russian.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Katyusha"
+	file = "Katyusha.ogg"
+	volume = 1
+}
+
+music = {
+	name = "KMTJJ_1"
+	file = "KMTJJ.ogg"
+	volume = 1.50
+}
+
+music = {
+	name = "gepeier"
+	file = "gepeier.ogg"
+	volume = 1
+}
+
+music = {
+	name = "dadaoqu"
+	file = "dadaoqu.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "ger_war_sov"
+	file = "ger_war_sov.ogg"
+	volume = 1
+}
+
+music = {
+	name = "jingtaoluori"
+	file = "jingtaoluori.ogg"
+	volume = 4.5
+}
+
+music = {
+	name = "empireofthesun"
+	file = "empireofthesun.ogg"
+	volume = 1
+}
+
+music = {
+	name = "warofresistance"
+	file = "warofresistance.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "tiemuyanshuo"
+	file = "tiemuyanshuo.ogg"
+	volume = 1.00
+}
+
+music = {
+	name = "dayuanshuaiwolaila"
+	file = "dayuanshuaiwolaila.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "masaiqu"
+	file = "masaiqu.ogg"
+	volume = 0.8
+}
+
+####################
+# MAIN THEME
+music = {
+	name = "hoi4mainthemeallies"
+	file = "hoi4mainthemeallies.ogg"
+	volume = 0.7
+}
+
+# NEW EAST ASIA
+#music = {
+#	name = "nea_fenlieshijinxingqu"
+#	file = "nea_fenlieshijinxingqu.ogg"
+#	volume = 0.8
+#}
+music = {
+	name = "nea_minguo_kongjunjunxiao"
+	file = "nea_minguo_kongjunjunxiao.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_putianyue"
+	file = "nea_putianyue.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_lizhongtang"
+	file = "nea_lizhongtang.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_songlongqi"
+	file = "nea_songlongqi.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_wuqigonghege"
+	file = "nea_wuqigonghege.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_songminguo"
+	file = "nea_songminguo.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_xiziguniang"
+	file = "nea_xiziguniang.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_daqingdiguo_shuishijunge"
+	file = "nea_daqingdiguo_shuishijunge.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_chi_haijun_junxiaojunge"
+	file = "nea_chi_haijun_junxiaojunge.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_chufa"
+	file = "nea_chufa.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_fuzhan"
+	file = "nea_fuzhan.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_junjige"
+	file = "nea_junjige.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_shiwanqingnianshiwanjun"
+	file = "nea_shiwanqingnianshiwanjun.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_lantianjinxingqu"
+	file = "nea_lantianjinxingqu.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_woyouyizhiqiang"
+	file = "nea_woyouyizhiqiang.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_yexi"
+	file = "nea_yexi.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_yongshengdebayisi"
+	file = "nea_yongshengdebayisi.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_yongshijinxingqu"
+	file = "nea_yongshijinxingqu.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_chi_zhuangjiabingzhige"
+	file = "nea_chi_zhuangjiabingzhige.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_chi_kongjun_junge"
+	file = "nea_chi_kongjun_junge.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_chi_haijun_junge"
+	file = "nea_chi_haijun_junge.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_guomingemingge"
+	file = "nea_guomingemingge.ogg"
+	volume = 3.5
+}
+music = {
+	name = "nea_dead_man_s_secret"
+	file = "nea_dead_man_s_secret.ogg"
+	volume = 0.8
+}
+music = {
+	name = "nea_qijianzhange"
+	file = "nea_qijianzhange.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_epic_battle_and_war"
+	file = "nea_epic_battle_and_war.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_sanminzhuyige"
+	file = "nea_sanminzhuyige.ogg"
+	volume = 2
+}
+
+music = {
+	name = "nea_woaizhonghua"
+	file = "nea_woaizhonghua.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_qingyunge"
+	file = "nea_qingyunge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_zhaoheweixinzhige"
+	file = "nea_zhaoheweixinzhige.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_sihaidoushizhongguoren"
+	file = "nea_sihaidoushizhongguoren.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_huangpujunxiaoxiaoge"
+	file = "nea_huangpujunxiaoxiaoge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_huangpujunhun"
+	file = "nea_huangpujunhun.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_huanwoheshan"
+	file = "nea_huanwoheshan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_guofujiniange"
+	file = "nea_guofujiniange.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_guoqige"
+	file = "nea_guoqige.ogg"
+	volume = 1.6
+}
+
+music = {
+	name = "nea_manzhou_gongjinou"
+	file = "nea_manzhou_gongjinou.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_baoweihuanghe"
+	file = "nea_baoweihuanghe.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_daodirenhoufangqu"
+	file = "nea_daodirenhoufangqu.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_jiuguojunge"
+	file = "nea_jiuguojunge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_kangdige"
+	file = "nea_kangdige.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_qizhengpiaopiao"
+	file = "nea_qizhengpiaopiao.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_yeshanghai"
+	file = "nea_yeshanghai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_youjijun"
+	file = "nea_youjijun.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_zaitaihangshanshang"
+	file = "nea_zaitaihangshanshang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_farewellshasha"
+	file = "nea_farewellshasha.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_roseroseiloveyou"
+	file = "nea_roseroseiloveyou.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_theeveningprimrose"
+	file = "nea_theeveningprimrose.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_tianyagenv"
+	file = "nea_tianyagenv.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_yiyongjunjinxingqu"
+	file = "nea_yiyongjunjinxingqu.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "nea_nanniwan"
+	file = "nea_nanniwan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_gongxigongxi"
+	file = "nea_gongxigongxi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_herijunzailai"
+	file = "nea_herijunzailai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_jiazhengjing"
+	file = "nea_jiazhengjing.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_maomaoyu"
+	file = "nea_maomaoyu.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_woyaoni"
+	file = "nea_woyaoni.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_yueyuanhuahao"
+	file = "nea_yueyuanhuahao.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_minjiangyequ"
+	file = "nea_minjiangyequ.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_qiangweichuchukai"
+	file = "nea_qiangweichuchukai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_kangdingqingge"
+	file = "nea_kangdingqingge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_huangyangbiandan"
+	file = "nea_huangyangbiandan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_taiyangchulaixiyangyang"
+	file = "nea_taiyangchulaixiyangyang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_lanhuahua"
+	file = "nea_lanhuahua.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_wugefangyang"
+	file = "nea_wugefangyang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_molihua"
+	file = "nea_molihua.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_shangqugaoshanwangpingchuan"
+	file = "nea_shangqugaoshanwangpingchuan.ogg"
+	volume = 4.5
+}
+
+music = {
+	name = "nea_songhuajiangshang"
+	file = "nea_songhuajiangshang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_zouxikou"
+	file = "nea_zouxikou.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_songbie"
+	file = "nea_songbie.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_wuxijing"
+	file = "nea_wuxijing.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_changchengyao"
+	file = "nea_changchengyao.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_alamuhan"
+	file = "nea_alamuhan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_dabanchengdeguniang"
+	file = "nea_dabanchengdeguniang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_luyingzhige"
+	file = "nea_luyingzhige.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_bangeyueliangpashanglai"
+	file = "nea_bangeyueliangpashanglai.ogg"
+	volume = 4.5
+}
+
+music = {
+	name = "nea_xianqinidegaitoulai"
+	file = "nea_xianqinidegaitoulai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_zainayaoyuandedifang"
+	file = "nea_zainayaoyuandedifang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_balujunjinxingqu"
+	file = "nea_balujunjinxingqu.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_balujunladashuan"
+	file = "nea_balujunladashuan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_biyege"
+	file = "nea_biyege.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_chenshengzhuiji"
+	file = "nea_chenshengzhuiji.ogg"
+	volume = 0.85
+}
+
+music = {
+	name = "nea_dadaojinxingqu"
+	file = "nea_dadaojinxingqu.ogg"
+	volume = 1
+}
+
+music = {
+	name = "nea_dahejingshen"
+	file = "nea_dahejingshen.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_tanqiwoxinaidetupipa"
+	file = "nea_tanqiwoxinaidetupipa.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_gebabaizhuangshi"
+	file = "nea_gebabaizhuangshi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_junmindashengchan"
+	file = "nea_junmindashengchan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_kangrijunzhengdaxuexiaoge"
+	file = "nea_kangrijunzhengdaxuexiaoge.ogg"
+	volume = 1
+}
+
+music = {
+	name = "nea_chi_lujun_junge"
+	file = "nea_chi_lujun_junge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_qingzhushengli"
+	file = "nea_qingzhushengli.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_richuzhidi"
+	file = "nea_richuzhidi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_taipingyang"
+	file = "nea_taipingyang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_xinsijunjunge"
+	file = "nea_xinsijunjunge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_yanansong"
+	file = "nea_yanansong.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_zhishiqingniancongjunge"
+	file = "nea_zhishiqingniancongjunge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_youjiduige"
+	file = "nea_youjiduige.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_tuanjiejiushililiang"
+	file = "nea_tuanjiejiushililiang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_elegy"
+	file = "nea_elegy.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_vocal_inspirations"
+	file = "nea_vocal_inspirations.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_i_remember"
+	file = "nea_i_remember.ogg"
+	volume = 0.8
+}
+
+# PRC's 70th anniversary
+music = {
+	name = "nea_marchi_of_steel_torrent"
+	file = "nea_marchi_of_steel_torrent.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_the_great_east_wind"
+	file = "nea_the_great_east_wind.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_eagle_attack"
+	file = "nea_eagle_attack.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "nea_rushing_into_the_sky"
+	file = "nea_rushing_into_the_sky.ogg"
+	volume = 0.8
+}
+
+
+###new song
+
+music = {
+	name = "ErPao"
+	file = "ErPao.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "eryuelilai"
+	file = "eryuelilai.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "gechangerxiaofangniulang"
+	file = "gechangerxiaofangniulang.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "jiefangjunjunge"
+	file = "jiefangjunjunge.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JunGangZhiYe"
+	file = "JunGangZhiYe.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "kaixuange"
+	file = "kaixuange.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "liangjianqianzou"
+	file = "liangjianqianzou.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "mutongduandi"
+	file = "mutongduandi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "SanDaJiLvBaXiangZhuYi"
+	file = "SanDaJiLvBaXiangZhuYi.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "WoAiZuGuoDeLanTian"
+	file = "WoAiZuGuoDeLanTian.ogg"
+	volume = 4.50
+}
+
+music = {
+	name = "wodezuguo"
+	file = "wodezuguo.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "gechagnzuguo"
+	file = "gechagnzuguo.ogg"
+	volume = 0.8
+}
+
+
+##########
+music = {
+	name = "Anthem_of_the_Special_Forces"
+	file = "Anthem of the Special Forces.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Forward_to_the_Ocean"
+	file = "Forward to the Ocean.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "March_of_the_Chinese_Air_Force"
+	file = "March of the Chinese Air Force.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "No_Communist_Party_No_New_China"
+	file = "No Communist Party, No New China.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Ode_to_the_Motherland"
+	file = "Ode to the Motherland.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Socialism_is_Good"
+	file = "Socialism is Good.ogg"
+	volume = 1.2
+}
+
+music = {
+	name = "Song_of_the_57th_Division_of_the_National_Revolutionary_Army"
+	file = "Song of 57th division of National Revolutionary Army.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Song_of_the_Guangxi_Student_Soldiers"
+	file = "Song of Guangxi student soldiers.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Song_of_the_NRA_60th_Army"
+	file = "Song of the NRA 60th Army (Yunnan army).ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "The_Soul_of_Whampoa"
+	file = "Soul of Whampoa.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "The_People_Army_is_Loyal_to_the_Party"
+	file = "The_People_Army_is_Loyal_to_the_Party.ogg"
+	volume = 2.5
+}
+
+music = {
+	name = "The_People_Army_is_Loyal_to_the_Party_song"
+	file = "The_People_Army_is_Loyal_to_the_Party_song.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "We_Stand_Tall_on_the_Pacific_Ocean"
+	file = "We Stand tall on the Pacific Ocean.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "When_That_Day_Comes"
+	file = "When That Day Comes.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "With_Great_Loyalty_and_Courage"
+	file = "With Great Loyalty and Courage.ogg"
+	volume = 0.8
+}
+
+
+
+music = {
+	name = "reburn_pacific"
+	file = "reburn_pacific.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "107"
+	file = "107.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "111"
+	file = "111.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "113"
+	file = "113.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "114"
+	file = "114.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "116"
+	file = "116.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "117"
+	file = "117.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "119"
+	file = "119.ogg"
+	volume = 1.2
+}
+
+music = {
+	name = "126"
+	file = "126.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "129"
+	file = "129.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "134"
+	file = "134.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "132"
+	file = "132.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "200"
+	file = "200.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "317"
+	file = "317.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "249"
+	file = "249.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP1"
+	file = "JAP1.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP2"
+	file = "JAP2.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP3"
+	file = "JAP3.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP4"
+	file = "JAP4.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP5"
+	file = "JAP5.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP6"
+	file = "JAP6.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP7"
+	file = "JAP7.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP8"
+	file = "JAP8.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "JAP9"
+	file = "JAP9.ogg"
+	volume = 0.8
+}
+music = {
+	name = "JAP10"
+	file = "JAP10.ogg"
+	volume = 0.8
+}
+music = {
+	name = "JAP11"
+	file = "JAP11.ogg"
+	volume = 0.8
+}
+music = {
+	name = "JAP12"
+	file = "JAP12.ogg"
+	volume = 0.8
+}
+music = {
+	name = "JAP13"
+	file = "JAP13.ogg"
+	volume = 0.8
+}
+music = {
+	name = "JAP14"
+	file = "JAP14.ogg"
+	volume = 4.50
+}
+
+music = {
+	name = "WhereisArmo"
+	file = "Where Is Armo.ogg"
+	volume = 3.50
+}
+
+music = {
+	name = "TheLastEmperorMainTitleTheme"
+	file = "The Last Emperor (Main Title Theme).ogg"
+	volume = 3.50
+}
+
+music = {
+	name = "TheLastEmperorThemeVariation"
+	file = "The Last Emperor (Theme Variation 1).ogg"
+	volume = 3.50
+}
+
+music = {
+	name = "OpenTheDoor"
+	file = "Open The Door.ogg"
+	volume = 3.00
+}
+
+music = {
+	name = "FirstCoronation"
+	file = "First Coronation.ogg"
+	volume = 3.50
+}
+
+music = {
+	name = "EmperorsWaltz"
+	file = "Emperor's Waltz.ogg"
+	volume = 3.50
+}
+
+music = {
+	name = "PickingUpBrides"
+	file = "Picking Up Brides.ogg"
+	volume = 3.50
+}
+
+music = {
+	name = "乌拉尔山的花楸树（汉语版）"
+	file = "WhenJohnnyComesMarchingHome.ogg"
+	volume = 2.00
+}
+
+#4.27 New
+
+music = {
+	name = "翻身农奴把歌唱（武警合唱团）" #"东方出了一个顶红顶红的太阳......"
+	file = "Fanshengnongnu_Wujinghechangtuan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "翻身农奴把歌唱（才旦卓玛）" #"太阳里站着一个顶高顶高的菩萨......"
+	file = "Fanshengnuno_Caidanzhuoma.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "国民革命歌_Other_VER" #"联俄联共，扶助农工。"
+	file = "Song_of_National_Revolution.ogg"
+	volume = 0.8
+}
+
+#4.28New
+
+music = {
+	name = "Haidongqing"        #“万鹰之神”
+	file = "Haidongqing.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Dixie"              #“向联盟致敬”
+	file = "Dixie.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "Dixie_short"        #“向联盟致敬”
+	file = "Dixie_short.ogg"
+	volume = 4.50
+}
+
+music = {
+	name = "Jingzhongbaoguo"    #“狼烟起，江山北望——”
+	file = "Jingzhongbaoguo.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "东南苦行山"          #“来自中原一群伙伴，结庐东南山......”
+	file = "Dongnankuxinshan.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "大韩民国临时政府国歌" #"大韓獨立萬歲！"
+	file = "Song_of_PGOROK.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "骊歌"                #"毋忘所训,谨遵所嘱,从今知行弥笃。"
+	file = "Song_of_Farewell.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "萤之光"              #"蛍の光、窓の雪。"
+	file = "Hotarunohikari.ogg"
+	volume = 0.8
+}
+
+music = {
+	name = "迪克西(短)"        #“向联盟致敬”
+	file = "Dixie_short.ogg"
+	volume = 9.50
+}
+
+music = {
+	name = "人民解放军占领南京"        
+	file = "renminjiefangjunzhanlingnanjing.ogg"
+	volume = 3.50
+}
+music = {
+	name = "北平和平解放"        
+	file = "beipingjiefang.ogg"
+	volume = 3.50
+}
+music = {
+	name = "牺牲已到最后关头"        
+	file = "xishengyidaozuihouguantou.ogg"
+	volume = 2.50
+}
+music = {
+	name = "卖报歌"        
+	file = "maibaoge.ogg"
+	volume = 2.50
+}
+music = {
+	name = "共和国战歌"        
+	file = "gongheguozhange.ogg"
+	volume = 2.50
+}
+music = {
+	name = "哦，苏珊娜"        
+	file = "sushanna.ogg"
+	volume = 2.50
+}
+music = {
+	name = "乡村路带我回家"        
+	file = "xiangcunludaiwohuijia.ogg"
+	volume = 2.50
+}
+music = {
+	name = "浏阳河"        
+	file = "liuyanghe.ogg"
+	volume = 1.50
+}
+music = {
+	name = "上战场"        
+	file = "shangzhanchang.ogg"
+	volume = 3.00
+}
+music = {
+	name = "满洲娘"        
+	file = "manzhouniang.ogg"
+	volume = 3.00
+}
+music = {
+	name = "亚细亚的孤儿"        
+	file = "yaxiyaguer.ogg"
+	volume = 3.00
+}
+music = {
+	name = "风雨生信心"        
+	file = "fengyushengxinxin.ogg"
+	volume = 2.00
+}
+music = {
+	name = "1971年乔冠华在联合国的演讲"        
+	file = "lianheguo.ogg"
+	volume = 9.50
+}
+music = {
+	name = "1949年毛主席政治协商会议讲话"        
+	file = "maozhengxieyanjiang.ogg"
+	volume = 5.50
+}
+music = {
+	name = "1953年毛主席抗美援朝讲话"        
+	file = "maokangmeiyuanchao.ogg"
+	volume = 5.50
+}
+music = {
+	name = "淮河两岸鲜花开"        
+	file = "huaihe.ogg"
+	volume = 5.50
+}
+music = {
+	name = "东北抗日联军第一路军军歌"        
+	file = "dongbeikanglian.ogg"
+	volume = 5.50
+}
+music = {
+	name = "你可听到人民在呐喊？"        
+	file = "niketingdaorenminzainahan.ogg"
+	volume = 5.50
+}
+music = {
+	name = "咱们的领袖毛泽东"        
+	file = "lingxiumao.ogg"
+	volume = 5.50
+}
+music = {
+	name = "黄风岭八百里"        
+	file = "lingxiumao2.ogg"
+	volume = 5.50
+}
+music = {
+	name = "我来了"        
+	file = "wojiushilongwang.ogg"
+	volume = 5.50
+}
+music = {
+	name = "我们不是牛马我们是人"        
+	file = "womenbushiniumawomenshiren.ogg"
+	volume = 5.50
+}
+music = {
+	name = "台湾义勇队队歌"        
+	file = "taiwanyiyongdui.ogg"
+	volume = 5.50
+}
+music = {
+	name = "一定要把胜利的旗帜插到台湾"        
+	file = "jiefangtaiwan.ogg"
+	volume = 5.50
+}
+music = {
+	name = "让我们荡起双桨"        
+	file = "rangwomendangqishuangjiang.ogg"
+	volume = 5.50
+}
+music = {
+	name = "千年的仇要报"        
+	file = "qianniandechouyaobao.ogg"
+	volume = 5.50
+}
+music = {
+	name = "珍宝岛之歌"        
+	file = "zhenbaodao.ogg"
+	volume = 7.50
+}
+music = {
+	name = "东风吹战鼓擂"        
+	file = "dongfengchui.ogg"
+	volume = 7.50
+}
+music = {
+	name = "广阔天地大有作为"        
+	file = "guangkuotiandi.ogg"
+	volume = 6.50
+}
+music = {
+	name = "我们走在大路上"        
+	file = "womenzouzaidalushang.ogg"
+	volume = 6.50
+}
+music = {
+	name = "大海航行靠舵手"        
+	file = "dahaihangxingkaoduoshou.ogg"
+	volume = 6.50
+}
+music = {
+	name = "大明宫"        
+	file = "daminggong.ogg"
+	volume = 6.50
+}
+music = {
+	name = "弹起我心爱的土琵琶（老版）"        
+	file = "laotanqiwoxinaidetupipa.ogg"
+	volume = 6.50
+}
+music = {
+	name = "美丽的梭罗河"        
+	file = "suoluohe.ogg"
+	volume = 6.50
+}
+music = {
+	name = "东京北京"        
+	file = "dongjingbeijing.ogg"
+	volume = 6.50
+}
+music = {
+	name = "莫斯科北京"        
+	file = "mosikebeijing.ogg"
+	volume = 6.50
+}
+music = {
+	name = "我为祖国献石油"        
+	file = "xianshiyou.ogg"
+	volume = 6.50
+}
+music = {
+	name = "咱们工人有力量"        
+	file = "gongren.ogg"
+	volume = 6.50
+}
+music = {
+	name = "武汉会战"        
+	file = "wuhanhuizhan.ogg"
+	volume = 6.50
+}
+music = {
+	name = "战国七雄"        
+	file = "zhanguoqixiong.ogg"
+	volume = 6.50
+}
+music = {
+	name = "八路军军歌"        
+	file = "balujunjunge.ogg"
+	volume = 6.50
+}
+music = {
+	name = "冲锋号响"        
+	file = "chongfenghao.ogg"
+	volume = 6.50
+}
+music = {
+	name = "映山红"        
+	file = "yingshanhong.ogg"
+	volume = 6.50
+}
+music = {
+	name = "红星歌"        
+	file = "hongxingge.ogg"
+	volume = 6.50
+}
+music = {
+	name = "游京"        
+	file = "youjing.ogg"
+	volume = 6.50
+}
+music = {
+	name = "红色娘子军"        
+	file = "hongseniangzijun.ogg"
+	volume = 6.50
+}
+music = {
+	name = "我爱五指山，我爱万泉河"        
+	file = "woaiwuzhishan.ogg"
+	volume = 6.50
+}
+music = {
+	name = "远东游击队之歌（中文）"        
+	file = "yuandongyoujidui.ogg"
+	volume = 6.50
+}
+music = {
+	name = "抗联第三陆军成立纪念歌"        
+	file = "disanlujun.ogg"
+	volume = 6.50
+}
+music = {
+	name = "统一战线之歌"        
+	file = "tongyizhanxianzhige.ogg"
+	volume = 6.50
+}
+music = {
+	name = "工农的孩子"        
+	file = "gongnongdehaizi.ogg"
+	volume = 6.50
+}
+music = {
+	name = "水调歌头，重上井冈山"        
+	file = "chongshangjinggangshan.ogg"
+	volume = 6.50
+}
+music = {
+	name = "我是一个兵"        
+	file = "woshiyigebing.ogg"
+	volume = 6.50
+}
+music = {
+	name = "浪淘沙，北戴河"        
+	file = "beidaihe.ogg"
+	volume = 6.50
+}
+music = {
+	name = "沁园春，雪"        
+	file = "qinyuanchunxue.ogg"
+	volume = 6.50
+}
+music = {
+	name = "青玉案元夕"        
+	file = "qingyuananyuanxi.ogg"
+	volume = 6.50
+}
+music = {
+	name = "枪声"        
+	file = "枪声.ogg"
+	volume = 6.50
+}
+music = {
+	name = "浮光"
+	file = "the_history.ogg"
+	volume = 6.50
+}
+music = {
+	name = "指纹"
+	file = "指纹.ogg"
+	volume = 7.50
+}
+music = {
+	name = "我记得你眼里的依恋"
+	file = "我记得你眼里的依恋.ogg"
+	volume = 7.50
+}
+music = {
+	name = "劳动最光荣"
+	file = "劳动最光荣.ogg"
+	volume = 8.50
+}
+music = {
+	name = "七亿人民七亿兵"
+	file = "七亿人民七亿兵.ogg"
+	volume = 7.50
+}
+music = {
+	name = "尘缘"
+	file = "尘缘.ogg"
+	volume = 7.50
+}

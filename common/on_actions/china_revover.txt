@@ -1,0 +1,173 @@
+on_actions = {
+#####start
+	on_startup = {
+		effect = {
+		
+		set_global_flag = lishilingtu_qiyong
+		
+		every_state = {
+                                                          limit = {
+OR = {
+state = 1068
+}
+}
+
+add_core_of = SIK
+                                                }
+												
+		657 = {
+add_victory_points = {
+					province = 4725
+					value = 1
+				}
+}
+563 = {
+add_victory_points = {
+					province = 4677
+					value = 1
+				}
+}
+408 = {
+add_victory_points = {
+					province = 6989
+					value = 1
+				}
+}
+560 = {
+add_victory_points = {
+					province = 12559
+					value = 1
+				}
+		}
+		
+		
+		every_state = {
+                                                          limit = {
+OR = {
+state = 745
+}
+}
+
+add_core_of = MAN
+                                                }
+
+
+every_state = {
+                                                          limit = {
+OR = {
+state = 329
+}
+}
+
+remove_core_of = SOV
+                                                }
+												
+												
+					
+
+every_state = {
+                                                          limit = {
+OR = {
+state = 526
+state = 645
+state = 646
+}
+}
+remove_claim_by = JAP
+remove_core_of = JAP
+
+                                                }
+            
+every_state = {
+                                                          limit = {
+														  NOT = { state = 441 }
+OR = {
+is_core_of = TIB
+is_core_of = SIK
+state = 434
+state = 1068
+}
+}
+remove_claim_by = CHI
+remove_claim_by = PRC
+add_core_of = CHI
+add_core_of = PRC
+                                                }
+
+every_state = {
+                                                          limit = {
+OR = {
+state = 434
+}
+}
+
+add_core_of = TIB
+                                                }
+												
+												
+												
+every_state = {
+                                                          limit = {
+OR = {
+state = 537
+}
+}
+
+add_core_of = SOV
+                                                }												
+
+every_state = {
+                                                          limit = {
+OR = {
+state = 526
+}
+}
+
+add_claim_by = CHI
+                                                }
+
+
+every_state = {
+                                                          limit = {
+														  NOT = { state = 441 }
+OR = {
+is_core_of = CHI
+is_core_of = MAN
+is_core_of = SIK
+is_core_of = TIB
+}
+NOT = { is_core_of = MON }
+NOT = { is_core_of = TAN }
+}
+
+remove_claim_by = PRC
+
+
+add_core_of = PRC
+
+                                                }
+
+
+
+every_state = {
+                                                          limit = {
+OR = {
+is_core_of = MON
+is_core_of = TAN
+}
+}
+remove_claim_by = CHI
+#remove_claim_by = PRC
+add_core_of = CHI
+#add_core_of = PRC
+                                                }
+
+
+
+
+					
+		
+		
+		}
+		}
+		}

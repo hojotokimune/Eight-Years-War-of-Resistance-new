@@ -1,0 +1,170 @@
+add_namespace = Food_is_not_enough_laisi_dont_happy
+add_namespace = Food_is_enough_laisi_is_happy
+country_event = {
+	id = Food_is_not_enough_laisi_dont_happy.1  #来思没饭吃怒火等级1
+	title = Food_is_not_enough_laisi_dont_happy.1.t
+	desc = Food_is_not_enough_laisi_dont_happy.1.d
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = has_supp_cond_lower_than_40
+			check_variable = {
+				ROOT.supply_condition < 40
+			}
+		}
+		NOT = {
+			has_idea = laisi_angry_level1
+		}
+	}
+
+
+	immediate = { 
+		add_ideas = laisi_angry_level1
+
+		
+	}
+	option = {
+		name = Food_is_not_enough_laisi_dont_happy.1.a
+		trigger = {
+
+		}
+	}
+
+	
+}
+
+
+
+country_event = {
+	id = Food_is_not_enough_laisi_dont_happy.2  #来思没饭吃怒火等级2
+	title = Food_is_not_enough_laisi_dont_happy.2.t
+	desc = Food_is_not_enough_laisi_dont_happy.2.d
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = has_supp_cond_lower_than_30
+			check_variable = {
+				ROOT.supply_condition < 30
+			}
+		}
+		has_idea = laisi_angry_level1
+		NOT = {
+			has_idea = laisi_angry_level2
+		}
+	}
+
+
+	immediate = { 
+		add_ideas = laisi_angry_level2
+
+		
+	}
+	option = {
+		name = Food_is_not_enough_laisi_dont_happy.2.a
+		trigger = {
+			
+		}
+	}
+
+	
+}
+
+
+country_event = {
+	id = Food_is_not_enough_laisi_dont_happy.3  #来思没饭吃怒火等级3
+	title = Food_is_not_enough_laisi_dont_happy.3.t
+	desc = Food_is_not_enough_laisi_dont_happy.3.d
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = has_supp_cond_lower_than_20
+			check_variable = {
+				ROOT.supply_condition < 20
+			}
+		}
+		has_idea = laisi_angry_level1
+		has_idea = laisi_angry_level2
+		NOT = {
+			has_idea = laisi_angry_level3
+		}
+	}
+
+
+	immediate = { 
+		add_ideas = laisi_angry_level3
+
+		
+	}
+	option = {
+		name = Food_is_not_enough_laisi_dont_happy.3.a
+		trigger = {
+			
+		}
+	}
+
+	
+}
+
+country_event = {
+	id = Food_is_enough_laisi_is_happy.1  #来思有西瓜肚
+	title = Food_is_enough_laisi_is_happy.t
+	desc = Food_is_enough_laisi_is_happy.d
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = has_supp_cond_more_than_80
+			check_variable = {
+				ROOT.supply_condition > 80
+			}
+		}
+		
+		NOT = {
+			has_idea = laisi_big_stomach_is_full
+		}
+	}
+
+
+	immediate = { 
+		add_ideas = laisi_big_stomach_is_full
+
+		
+	}
+	option = {
+		name = Food_is_enough_laisi_is_happy.a
+		trigger = {
+			
+		}
+	}
+
+	
+}
+
+
+country_event = {
+	id = Food_is_not_very_enough_laisi_is_calm.1  #来思没了西瓜肚
+	title = Food_is_not_very_enough_laisi_is_calm.t
+	desc = Food_is_not_very_enough_laisi_is_calm.d
+	trigger = {
+		custom_trigger_tooltip = {
+			tooltip = has_supp_cond_less_than_80
+			check_variable = {
+				ROOT.supply_condition < 80
+			}
+		}
+		
+		
+			has_idea = laisi_big_stomach_is_full
+		
+	}
+
+
+	immediate = { 
+		remove_ideas = laisi_big_stomach_is_full
+
+		
+	}
+	option = {
+		name = Food_is_not_very_enough_laisi_is_calm.a
+		trigger = {
+			
+		}
+	}
+
+	
+}

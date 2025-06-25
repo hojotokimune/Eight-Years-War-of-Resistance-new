@@ -1,0 +1,78 @@
+MAN_historical_plan = {
+	name = "Manchukuo historical plan"
+	desc = "Historical behavior for Manchukuo"
+
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {#MODDED
+		OR = { #MODDED
+			is_historical_focus_on = yes #MODDED
+			has_game_rule = { #MODDED
+				rule = MAN_ai_behavior #MODDED
+				option = DEFAULT
+			}
+			has_game_rule = { #MODDED
+				rule = MAN_ai_behavior #MODDED
+				option = OBEDIENCE
+			}
+		}
+		NOT = { #MODDED
+			OR = { #MODDED
+				has_game_rule = { #MODDED
+					rule = MAN_ai_behavior #MODDED
+					option = INDEPENDENCE
+				}
+				 #MODDED
+				has_game_rule = {
+					rule = MAN_ai_behavior #MODDED
+					option = RANDOM
+				}
+			}
+		}
+		#MODDED
+	}
+	abort = {
+		JAP = {
+			#MODDED
+			has_completed_focus = JAP_strengthen_civilian_government
+			 #MODDED
+			 #MODDED
+		}
+	}
+
+	ai_national_focuses = {
+		#MODDEDv
+		MAN_obedience
+		MAN_exploitation_focus
+		MEN_State_religion
+		MAN_Policy_of_Japanese_immigrants
+		MAN_invite_japanese_settlers
+		MAN_Labour_law
+		MAN_Tenko_the_leftists_youth
+		MAN_raid_the_social_research_unit
+		#MODDED^
+	}
+
+	focus_factors = {
+		#MODDED
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

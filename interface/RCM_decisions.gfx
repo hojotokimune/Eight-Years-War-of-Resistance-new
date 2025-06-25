@@ -1,0 +1,91 @@
+spriteTypes = {	
+	spriteType = {
+		name = "GFX_decision_cat_generic_tokko"
+		texturefile = "gfx/interface/decisions/decision_cat_generic_tokko.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_war_of_resistance"
+		texturefile = "gfx/interface/decisions/decision_cat_war_of_resistance.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_generic_propaganda"
+		texturefile = "gfx/interface/decisions/decision_generic_propaganda.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ccp"
+		texturefile = "gfx/interface/decisions/decision_ccp.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kmt"
+		texturefile = "gfx/interface/decisions/decision_kmt.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ccp_extra"
+		texturefile = "gfx/interface/decisions/decision_ccp_extra.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_kmt_extra"
+		texturefile = "gfx/interface/decisions/decision_kmt_extra.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_sun_yat_sen"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_sun_yat_sen.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_chi_wipe_out_colonial_influence"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_chi_wipe_out_colonial_influence.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_suiyuan"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_suiyuan.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_chi_army_reform"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_chi_army_reform.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_chi_secure_domestic_stability"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_chi_secure_domestic_stability.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_picture_chi_decolonisation_effort"
+		texturefile = "gfx/interface/decisions/decision_cat_picture_chi_decolonisation_effort.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_decision_baseball"
+		texturefile = "gfx/interface/decisions/decision_cat_baseball.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_decision_church"
+		texturefile = "gfx/interface/decisions/decision_cat_church.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_category_baseball"
+		texturefile = "gfx/interface/decisions/decision_category_baseball.dds"
+	}
+	spriteType = {
+		name = "GFX_decision_ball" 
+		texturefile = "gfx/interface/decisions/decision_ball.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_cat_yan_xishan" 
+		texturefile = "gfx/interface/decisions/decision_cat_yan_xishan.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_cat_nwic" 
+		texturefile = "gfx/interface/decisions/decision_cat_nwic.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_cat_liangguang" 
+		texturefile = "gfx/interface/decisions/decision_cat_liangguang.dds"
+	}
+
+        spriteType = {
+		name = "GFX_decision_cat_liangguang" 
+		texturefile = "gfx/interface/decisions/decision_cat_liangguang.dds"
+	}
+        spriteType = {
+		name = "GFX_decision_cat_yan_and_zhu" 
+		texturefile = "gfx/interface/decisions/decision_cat_yan_and_zhu.dds"
+	}
+}

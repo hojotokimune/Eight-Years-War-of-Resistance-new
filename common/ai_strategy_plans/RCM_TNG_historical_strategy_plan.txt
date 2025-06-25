@@ -1,0 +1,72 @@
+SHX_warlord_historical_plan = {
+	name = "Tunganistan historical plan" #MODDED
+	desc = "Historical behavior for Tunganistan"
+	allowed = { #MODDED
+	    original_tag = TNG
+	}
+	enable = {
+		#has_country_flag = cooperation_with_nationalist_flag #MODDED
+		is_historical_focus_on = yes
+	}
+	abort = {
+	    NOT = {
+			has_focus_tree = RCM_tng
+		}
+	}
+
+	ai_national_focuses = {
+		#DO THESE ASAP
+		TNG_office_of_khotan
+        TNG_foreign_relations
+		TNG_befriend_nanking
+		TNG_agreement_with_provincal_government
+		TNG_befriend_uk
+		TNG_create_currency
+		TNG_infra
+		TNG_khotan_arms_factory
+		TNG_sinkiangs_last_nra
+		TNG_army_staff
+		TNG_camel_trading
+		TNG_commissariat
+		TNG_law_enforcement_team
+		TNG_focus_on_trade
+		TNG_rely_on_trading
+		TNG_tax_cut
+		TNG_support_ma_hushan
+		TNG_house_arrest_pro_soviet_officers
+		TNG_inner_issues
+		TNG_ignore_uyghurs
+		TNG_push_sinicization
+		TNG_hui_han_advantage
+		TNG_invest_education
+		TNG_khotan_industry
+	}
+
+	focus_factors = {
+		#Never attempt a take over
+		TNG_power_struggle = 0 
+		TNG_mas_conquest = 0 
+		#SHX_Invite_democrats = 0 
+	}
+
+	research = { #MODDED
+
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs) #MODDED
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+#MODDED^^^^^^^^^^^^

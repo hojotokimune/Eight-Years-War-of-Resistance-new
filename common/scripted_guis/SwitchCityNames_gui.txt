@@ -1,0 +1,38 @@
+scripted_gui = {
+	switch_city_names = {
+		context_type = player_context
+		window_name = "switch_city_names_container"
+		parent_window_token = top_bar
+		dirty = global.switching_frame
+
+		ai_enabled = {
+			always = no
+		}
+
+		#triggers = {
+		#	switch_city_names_button_click_enabled = {
+		#		
+		#	}
+		#}
+
+		effects = {
+			switch_city_names_button_click = {
+				if = {
+					limit = { has_global_flag = city_names_switched }
+					reset_city_names = yes
+					set_variable = { global.switching_frame = 1 }
+				}
+				else_if = {
+					switch_city_names = yes
+					set_variable = { global.switching_frame = 2 }
+				}
+			}
+		}
+
+		properties = {
+			switch_city_names_button = {
+				frame = global.switching_frame
+			}
+		}
+	}
+} 

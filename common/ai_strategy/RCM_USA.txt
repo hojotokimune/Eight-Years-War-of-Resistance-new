@@ -1,0 +1,635 @@
+Japan_is_very_cool_sometime = {
+	enable = {
+		OR = {
+		    tag = USA
+			tag = ENG
+		}
+		OR = { 
+		    has_government = n_socialism
+		    has_government = democratic
+		}
+	    OR = {
+		    JAP = { has_completed_focus = JAP_west_pacific_treaty_organization }
+			JAP = { 
+			    has_government = democratic
+			}
+		}
+	    JAP = { is_in_faction_with = ROOT }
+	}
+	abort = {
+		has_war_with = JAP
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "JAP"			
+		value = 2000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "JAP"			
+		value = 2000
+	}	
+    ai_strategy = {
+		type = declare_war
+		id = JAP
+		value = -5000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "JAP"
+		value = -5000
+	}
+}
+
+
+USA_dont_send_help_to_japan_unless_it_is_not_going_fascist_or_is_ally = {
+	enable = {
+	    original_tag = USA
+	    OR = { 
+		    has_government = n_socialism
+		    has_government = democratic
+		}
+	    NOT = { 
+			USA = { is_ally_with = JAP }
+			JAP = {
+				has_completed_focus = JAP_strengthen_civilian_government 
+			}
+		    JAP = {
+				has_completed_focus = JAP_consolidate_yonai_cabinet_focus
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+    
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "JAP"
+		value = -5000
+	}
+    
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "JAP"
+		value = -5000
+	}
+}
+
+USA_Socialist_countries_are_mostly_cool = {
+	enable = {
+		tag = USA
+		OR = {
+			has_government = n_socialism
+			has_government = democratic
+		}
+		DEN = {
+			OR = {
+				has_government = n_socialism
+				has_government = democratic
+			}
+		}
+	    NOR = {
+			OR = {
+				has_government = n_socialism
+				has_government = democratic
+			}
+		}
+	}
+	abort = {
+		NOT = { country_exists = ENG }
+	}	
+  
+    ai_strategy = {
+		type = declare_war
+		id = DEN
+		value = -5000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "DEN"
+		value = -5000
+	}
+	ai_strategy = {
+		type = declare_war
+		id = NOR
+		value = -5000
+	}
+    ai_strategy = {
+		type = antagonize
+		id = "NOR"
+		value = -5000
+	}
+}
+
+USA_strike_back_japan = { #after this we waiting for nukes
+	enable = {
+	    original_tag = USA
+		#OR = { 
+		#    has_government = n_socialism
+		#    has_government = democratic
+		#}
+		has_war_with = JAP
+	    OR = {
+		    NOT = { has_war_with = GER }
+			date > 1943.5.1
+		}
+	    NOT = {
+			OR = {
+			    645 = {
+				    controller = {
+					    is_in_faction_with = USA
+		            }
+			    }
+			    526 = {
+				    controller = {
+					    is_in_faction_with = USA
+		            }
+			    }
+			}
+        }		    
+		#is_historical_focus_on = yes
+	}
+	abort_when_not_enabled = yes
+    
+    ai_strategy = {
+		type = invade
+		id = "JAP"		
+		value = 5000
+	}
+    
+	ai_strategy = {
+		# use one of them
+	 	#type = front_unit_request
+	 	type = invasion_unit_request
+
+		#invasions will check invasion target, fronts will check provinces at front
+
+		#tag = PRC 				# province of a specific country
+		#state = 42 				# province on a state
+		#strategic_region = 65	# province on a strategic region
+		area = asia			# province on a specific ai area
+		country_trigger = {
+			tag = JAP	
+		} 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
+		state_trigger = { 
+			OR = {
+			    state = 645
+				state = 526
+		        state = 648
+			}
+		}
+		value = 1
+	}
+	
+	#ai_strategy = {
+	#	type = consider_weak
+	#	id = "JAP"
+	#	value = 500
+	#}
+}
+
+USA_stop_invade_japan = { 
+	enable = {
+	    is_in_faction_with = USA
+		#OR = { 
+		#    has_government = n_socialism
+		#    has_government = democratic
+		#}
+		has_war_with = JAP
+	    OR = {
+			OR = {
+			    controls_state = 645
+			    645 = {
+				    controller = {
+					    is_in_faction_with = USA
+		            }
+			    }
+			}
+	        OR = {
+			    controls_state = 526
+			    526 = {
+				    controller = {
+					    is_in_faction_with = USA
+		            }
+			    }
+			}
+		}		    
+	    NOT = {
+		    has_global_flag = JAP_nuke_1 #japan surrender when nuked
+		    has_global_flag = JAP_nuke_2
+	    }
+		is_historical_focus_on = yes
+		date < 1946.1.1
+	}
+	abort_when_not_enabled = yes
+    
+    ai_strategy = {
+		type = invade
+		id = "JAP"		
+		value = -7999
+	}
+    
+    ai_strategy = {
+		type = invasion_unit_request
+		tag = JAP
+		value = -1500
+	}
+}
+
+ENG_strike_back_japan = {
+	enable = {
+	    original_tag = ENG
+		#OR = { 
+		#    has_government = n_socialism
+		#    has_government = democratic
+		#}
+		has_war_with = JAP
+	    OR = {
+		    NOT = { has_war_with = GER }
+			date > 1943.5.1
+		}
+		NOT = {
+			OR = {
+			    645 = {
+				    controller = {
+					    has_war_with = JAP
+		            }
+			    }
+			    526 = {
+				    controller = {
+					    has_war_with = JAP
+		            }
+			    }
+			}
+        }	
+	}
+	abort_when_not_enabled = yes
+    
+    ai_strategy = {
+		type = invade
+		id = "JAP"		
+		value = 3000
+	}
+}
+
+USA_we_need_units = {
+	enable = {
+		tag = USA
+		check_variable = { ROOT.num_battalions < 4500 }
+		any_country = {
+			is_major = yes
+			any_enemy_country = {
+				is_major = yes
+			}
+		}
+		date > 1939.1.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = { #must be prepared
+        type = force_build_armies
+        value = 1500
+    }
+   
+	ai_strategy = {
+		type = spare_unit_factor
+		value = -2000
+	}
+	
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -100
+	}
+	
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 50
+	}
+    ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 50
+	}
+}
+
+USA_we_need_nukes = {
+	allowed = {
+		original_tag = USA
+	}
+	enable = {
+		OR = {
+		    is_researching_technology = nukes
+			can_research = nukes
+			has_tech = nukes
+		}
+		num_of_nukes < 3
+		OR = {
+		    has_war_with = JAP 
+			has_war_with = GER
+		}
+		date > 1944.5.1
+		nuclear_reactor < 21
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = building_target
+		id = nuclear_reactor
+		value = 45
+	}
+}
+
+USA_dont_go_too_far_in_korea = {
+	enable = {
+		has_war_with = KOR
+		OR = {
+		    is_in_faction_with = USA
+			is_in_faction_with = ENG 
+		}						
+		525 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+		999 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+		1000 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+		1001 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+		1002 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	abort = {
+	    NOT = { has_war_with = KOR }
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = NKR
+		target = military_access
+		value = -5000
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = NKT
+		target = military_access
+		value = -5000
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = KOR
+		value = -5000
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = KOR
+		value = -5000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SKR"
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SKT"
+		value = 5000
+	}
+}
+
+SOV_dont_go_too_far_in_korea = {
+	enable = {
+		has_war_with = KOR
+		OR = {
+		    is_ally_with = SOV	
+            tag = SOV
+        }			
+		527 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+		1004 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+		1003 = { 
+			controller = {
+			    is_ally_with = ROOT
+			}
+		}
+	}
+	
+	abort = {
+	    NOT = { has_war_with = KOR }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SKR
+		target = military_access
+		value = -5000
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SKT
+		target = military_access
+		value = -5000
+	}
+	
+	ai_strategy = {
+		type = conquer
+		id = KOR
+		value = -5000
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = KOR
+		value = -5000
+	}
+    ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NKR"
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NKT"
+		value = 5000
+	}
+}
+#Based on vanilla AI
+RCM_USA_naval_role_ratios_historical = { 
+	allowed = {
+		has_dlc = "Man the Guns"
+		original_tag = USA
+	}
+	enable = {
+		always = yes
+	}
+    abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bb
+		value = 10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_capital_bc
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_carrier
+		value = 3
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_submarine
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_screen
+		value = 2
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_escort
+		value = -35
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_light
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_cruiser_heavy
+		value = 5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_sweeper
+		value = -14
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = naval_mine_layer
+		value = -14
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 9		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 3		 #1 to 2
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = carrier
+		value = 8		 #1 to 2
+	}
+}
+
+mex_stop_embargo_everyone = {
+	enable = {
+		original_tag = MEX
+		NOT = {
+			OR = {
+				has_government = fascism
+				has_government = communism
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = USA
+		target = embargo
+		value = -1000
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ENG
+		target = embargo
+		value = -1000
+	}
+}
+
+buffer_japan_subject = {
+	enable = {
+		JAP = {
+			is_subject_of = ROOT
+		}
+	}
+	
+    abort_when_not_enabled = yes
+
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.1
+
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+ 			282
+			531
+			528
+			529
+			536
+			996
+ 		}
+		order_id = 1000
+		# ai areas that the orders will use these buffers in
+ 		area = asia
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = no
+ 		subtract_fronts_from_need = yes
+ 	}
+}

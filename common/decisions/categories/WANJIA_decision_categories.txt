@@ -1,0 +1,17 @@
+玩家专用决议 = {
+	icon = generic_political_actions
+	allowed = {
+                    AND = {
+                     TAG = CHI
+                      is_ai = no
+                      }
+	}
+	visible = {
+                      has_global_flag = CHI_no_longer_united_flag
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+	}
+}
+

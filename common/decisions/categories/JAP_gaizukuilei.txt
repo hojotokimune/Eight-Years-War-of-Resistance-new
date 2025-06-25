@@ -1,0 +1,8 @@
+改组“亲善”政权 = {       
+    allowed ={
+        tag = JAP
+    }
+    visible = {
+		always = yes
+	}
+}

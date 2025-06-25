@@ -1,0 +1,348 @@
+ph_damage_ships_eight = {
+  transfer_ship = {
+    prefer_name = "USS 亚利桑那"  # USS Arizona
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 俄克拉荷马"  # USS Oklahoma
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 西弗吉尼亚"  # USS West Virginia
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 加利福尼亚"  # USS California
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 内华达"  # USS Nevada
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 宾夕法尼亚"  # USS Pennsylvania
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 田纳西"  # USS Tennessee
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 马里兰"  # USS Maryland
+    type = battleship
+    target = TOS
+  }
+}
+ph_damage_ships_five = {
+  transfer_ship = {
+    prefer_name = "USS 亚利桑那"  # USS Arizona
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 俄克拉荷马"  # USS Oklahoma
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 西弗吉尼亚"  # USS West Virginia
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 加利福尼亚"  # USS California
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 内华达"  # USS Nevada
+    type = battleship
+    target = TOS
+  }
+}
+ph_damage_ships_four = {
+  transfer_ship = {
+    prefer_name = "USS 亚利桑那"  # USS Arizona
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 俄克拉荷马"  # USS Oklahoma
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 西弗吉尼亚"  # USS West Virginia
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 加利福尼亚"  # USS California
+    type = battleship
+    target = TOS
+  }
+}
+ph_damage_ships_three = {
+  transfer_ship = {
+    prefer_name = "USS 亚利桑那"  # USS Arizona
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 俄克拉荷马"  # USS Oklahoma
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 西弗吉尼亚"  # USS West Virginia
+    type = battleship
+    target = TOS
+  }
+}
+ph_damage_ships_two = {
+  transfer_ship = {
+    prefer_name = "USS 亚利桑那"  # USS Arizona
+    type = battleship
+    target = TOS
+  }
+  transfer_ship = {
+    prefer_name = "USS 俄克拉荷马"  # USS Oklahoma
+    type = battleship
+    target = TOS
+  }
+}
+ph_damage_ships_one = {
+  transfer_ship = {
+    prefer_name = "USS 亚利桑那"  # USS Arizona
+    type = battleship
+    target = TOS
+  }
+}
+ph_jap_create_fuchida = {
+  add_ace = {
+    name = "美津雄"  # Mitsuo
+    surname = "渊田"  # Fuchida
+    type = support_unique
+    is_female = no
+    callsign = "虎"  # Tora
+  }
+}
+ph_usa_create_best_and_mcclusky = {
+  add_ace = {
+    name = "理查德"  # Richard
+    surname = "百斯特"  # Best
+    callsign = "迪克"  # Dick
+    is_female = no
+    type = support_genius
+  }
+  add_ace = {
+    name = "克拉伦斯"  # Clarence
+    surname = "麦克拉斯基"  # McClusky
+    callsign = "韦德"  # Wade
+    is_female = no
+    type = support_genius
+  }
+}
+ph_usa_create_doolittle = {
+  add_ace = {
+    name = "詹姆斯"  # James
+    surname = "杜立特"  # Doolittle
+    callsign = "吉米"  # Jimmy
+    is_female = no
+    type = support_unique
+  }
+}
+pw_create_hondo_kessen_division_templates = {
+  set_technology = {
+    militia_tech = 1
+    popup = no
+  }
+  division_template = {
+    name = "本土决战师团"  # Hondo Kessen Shidan
+    is_locked = yes
+    division_names_group = JAP_MOT_01
+    force_allow_recruiting = no
+    regiments = {
+      infantry = {
+        x = 0
+        y = 0
+      }
+      infantry = {
+        x = 0
+        y = 1
+      }
+      infantry = {
+        x = 0
+        y = 2
+      }
+      infantry = {
+        x = 1
+        y = 0
+      }
+      infantry = {
+        x = 1
+        y = 1
+      }
+      infantry = {
+        x = 1
+        y = 2
+      }
+      infantry = {
+        x = 2
+        y = 0
+      }
+      infantry = {
+        x = 2
+        y = 1
+      }
+      infantry = {
+        x = 2
+        y = 2
+      }
+      motorized = {
+        x = 3
+        y = 0
+      }
+      motorized = {
+        x = 3
+        y = 1
+      }
+      light_armor = {
+        x = 4
+        y = 0
+      }
+      light_armor = {
+        x = 4
+        y = 1
+      }
+    }
+    support = {
+      engineer = {
+        x = 0
+        y = 0
+      }
+      recon = {
+        x = 0
+        y = 1
+      }
+      artillery = {
+        x = 0
+        y = 2
+      }
+    }
+  }
+  division_template = {
+    name = "本土防卫师团"  # Hondo Boei Shidan
+    is_locked = yes
+    division_names_group = JAP_INF_01
+    force_allow_recruiting = no
+    regiments = {
+      infantry = {
+        x = 0
+        y = 0
+      }
+      infantry = {
+        x = 0
+        y = 1
+      }
+      infantry = {
+        x = 0
+        y = 2
+      }
+      infantry = {
+        x = 0
+        y = 3
+      }
+      infantry = {
+        x = 1
+        y = 0
+      }
+      infantry = {
+        x = 1
+        y = 1
+      }
+      infantry = {
+        x = 1
+        y = 2
+      }
+      infantry = {
+        x = 2
+        y = 0
+      }
+      infantry = {
+        x = 2
+        y = 1
+      }
+      infantry = {
+        x = 2
+        y = 2
+      }
+    }
+    support = {
+      engineer = {
+        x = 0
+        y = 0
+      }
+    }
+  }
+  division_template = {
+    name = "国民义勇战斗队"  # Kokumin Giyū Sentōtai
+    is_locked = yes
+    division_names_group = JAP_INF_01
+    force_allow_recruiting = no
+    regiments = {
+      militia = {
+        x = 0
+        y = 0
+      }
+      militia = {
+        x = 0
+        y = 1
+      }
+      militia = {
+        x = 0
+        y = 2
+      }
+      militia = {
+        x = 0
+        y = 3
+      }
+    }
+  }
+}
+deploy_shidan_islands = {
+  create_unit = {
+    division = "division_template = \"本土防卫师团\" start_experience_factor = 0.3 start_equipment_factor = 0.7 start_manpower_factor = 0.8"
+    owner = JAP
+    count = 2
+  }
+  create_unit = {
+    division = "division_template = \"国民义勇战斗队\" start_experience_factor = 0 start_equipment_factor = 0.1 start_manpower_factor = 0.3"
+    owner = JAP
+    count = 4
+  }
+}
+deploy_shidan_home = {
+  create_unit = {
+    division = "division_template = \"本土决战师团\" start_experience_factor = 1 start_equipment_factor = 0.85 start_manpower_factor = 0.95"
+    owner = JAP
+    count = 1
+  }
+  create_unit = {
+    division = "division_template = \"本土防卫师团\" start_experience_factor = 0.3 start_equipment_factor = 0.7 start_manpower_factor = 0.8"
+    owner = JAP
+    count = 3
+  }
+  create_unit = {
+    division = "division_template = \"国民义勇战斗队\" start_experience_factor = 0.1 start_equipment_factor = 0.3 start_manpower_factor = 0.5"
+    owner = JAP
+    count = 6
+  }
+}

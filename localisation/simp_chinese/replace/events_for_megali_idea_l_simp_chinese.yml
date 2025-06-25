@@ -1,0 +1,67 @@
+﻿l_simp_chinese:
+ greece.900.t:0 "[From.GetNameDefCap] 邀请我们加入 [FROM.GetFactionName]！"
+ greece.900.desc:0 "[From.GetNameDefCap] 邀请我们加入他们的派系，作为盟友的次要版本。如果我们加入，他们承诺我们将一起面对我们的威胁。"
+ greece.900.a:0 "这听起来是个好主意！"
+ greece.900.b:0 "我们敬而远之。"
+ #
+ greece.901.t:0 "[From.GetNameDefCap] 加入 [ROOT.GetFactionName]！"
+ greece.901.desc:0 "[From.GetNameDefCap] 宣布他们将正式加入 [ROOT.GetFactionName]。我们在一起很强大！"
+ greece.901.a:0 "这太棒了！"
+ #
+ greece.902.t:0 "[From.GetNameDefCap] 拒绝我们的邀请！"
+ greece.902.desc:0 "[From.GetNameDefCap] 宣布出于地缘政治和关系原因他们不会加入 [ROOT.GetFactionName]。"
+ greece.902.16.a:0 "不幸的是。"
+ #
+ greece.909.t:0 "[From.GetNameDefCap] 要求我们屈服！"
+ greece.909.desc:0 "[From.GetNameDefCap] 要求我们交出武器并向他们屈服。大概他们会试图建立一个对他们更友好的政府。"
+ greece.909.a:0 "至少我们保留了一些自主权……"
+ greece.909.b:0 "我们永远不会屈服于希腊人！"
+ #
+ greece.910.t:0 "保加利亚投降！"
+ greece.910.desc:0 "保加利亚人已经决定，满足我们的要求符合他们的最大利益。我们不必再担心保加利亚的侵略性。"
+ greece.910.a:0 "太棒了！"
+ #
+ greece.911.t:0 "保加利亚捍卫者！"
+ greece.911.desc:0 "保加利亚人拒绝了我们组建一个更有利政府的要求。他们声称他们有权决定国家，不必屈服于我们的要求。"
+ greece.911.a:0 "如果我们想维护巴尔干地区的和平，我们别无选择。"
+ greece.911.b:0 "他们有道理。"
+ #
+ greece.912.t:0 "[From.GetNameDefCap] 要求我们释放阿尔巴尼亚！"
+ greece.912.desc:0 "希腊人已经明确表示他们希望我们释放我们的阿尔巴尼亚领土，但他们终于发出了最后通牒。希腊和他们的派系成员要求我们将我们新获得的领土归还给它 前主人。"
+ greece.912.a:0 "我们会屈服，只是为了维护和平。"
+ greece.912.b:0 "我们不会放弃我们的新领土！"
+ #
+ greece.913.t:0 "意大利同意释放阿尔巴尼亚！"
+ greece.913.desc:0 "意大利人已正式同意解放阿尔巴尼亚并撤销他们对阿尔巴尼亚领土的主张。阿尔巴尼亚前政府已经恢复，现在正在重新控制阿尔巴尼亚的城镇和城市。 "
+ greece.913.a:0 "这是对抗法西斯威胁的重大胜利！"
+ #
+ greece.915.t:0 "意大利拒绝释放阿尔巴尼亚！"
+ greece.915.desc:0 "意大利人以'阿尔巴尼亚是意大利的合法领土'为借口拒绝释放阿尔巴尼亚。与我们的盟友一起，我们应该能够迅速打击以确保阿尔巴尼亚等地的自由。"
+ greece.915.a:0 "他们让我们别无选择！"
+ #
+ greece.906.t:0 "联盟请求。"
+ greece.906.desc:0 "希腊邀请我们加入他们的派系。与他们结盟可以使我们成为地区强国并帮助我们抵抗外国势力"
+ greece.906.a:0 "我们接受。"
+ greece.906.b:0 "我们拒绝"
+ #
+ greece.907.t:0 "[From.GetNameDefCap] 接受！"
+ greece.907.desc:0 "[From.GetNameDefCap] 接受了我们的联盟请求。我们团结一致！"
+ greece.907.a:0 "希腊国防联盟万岁！"
+ #
+ greece.908.t:0 "[From.GetNameDefCap] 拒绝！"
+ greece.908.desc:0 "[From.GetNameDefCap] 拒绝了我们的联盟请求。就这样吧，我们可以在没有他们的情况下继续前进。"
+ greece.908.a:0 "不幸"
+ #
+ greece.903.t:0 "[From.GetNameDefCap] 请求控制英属亚美尼亚"
+ greece.903.desc:0 "[From.GetNameDefCap] 要求我们让他们控制亚美尼亚的托管地，声称因为他们离得更近，所以他们可以更准确地管理托管地。"
+ greece.903.a:0 "听起来很合理。"
+ greece.903.b:0 "我们同意他们的想法，只是为了亚美尼亚的保护国！"
+ #
+ greece.904.t:0 "[From.GetNameDefCap] 转移亚美尼亚！"
+ greece.904.desc:0 "英国人接受了我们的请求，将他们对亚美尼亚的委任权移交给我们。既然他们在我们的控制之下，我们可以继续将他们视为傀儡，或者我们可以将他们完全纳入国家 "
+ greece.904.a:0 "他们仍将是一项授权。"
+ greece.904.b:0 "整合亚美尼亚委任统治。"
+ #
+ greece.905.t:0 "[From.GetNameDefCap] 拒绝我们的请求！"
+ greece.905.desc:0 "[From.GetNameDefCap] 拒绝了我们将他们在亚美尼亚的授权移交给我们的请求。他们声称这样做会破坏他们在执行 Megali Idea 时同意的协议。"
+ greece.905.a:0 "不幸的是。"

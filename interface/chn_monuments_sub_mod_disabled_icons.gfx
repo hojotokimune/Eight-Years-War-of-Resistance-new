@@ -1,0 +1,142 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_monument_dujiangyan_disabled"
+        textureFile = "gfx/interface/monuments/chn/dujiangyan.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_terracotta_army_disabled"
+        textureFile = "gfx/interface/monuments/chn/terracotta_army.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_silk_road_disabled"
+        textureFile = "gfx/interface/monuments/chn/silk_road.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_longmen_grottoes_disabled"
+        textureFile = "gfx/interface/monuments/chn/longmen_grottoes.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_beijing_hangzhou_grand_canal_disabled"
+        textureFile = "gfx/interface/monuments/chn/beijing_hangzhou_grand_canal.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_tai_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_tai.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_shanhaiguan_disabled"
+        textureFile = "gfx/interface/monuments/chn/shanhaiguan.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_zhenbeitai_disabled"
+        textureFile = "gfx/interface/monuments/chn/zhenbeitai.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_jiayuguan_disabled"
+        textureFile = "gfx/interface/monuments/chn/jiayuguan.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_hua_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_hua.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_heng_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_heng.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_heng2_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_heng2.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_song_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_song.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_wutai_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_wutai.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_mount_qingcheng_disabled"
+        textureFile = "gfx/interface/monuments/chn/mount_qingcheng.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_yellow_crane_tower_disabled"
+        textureFile = "gfx/interface/monuments/chn/yellow_crane_tower.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_pavilion_of_prince_teng_disabled"
+        textureFile = "gfx/interface/monuments/chn/pavilion_of_prince_teng.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_yueyang_tower_disabled"
+        textureFile = "gfx/interface/monuments/chn/yueyang_tower.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_stork_tower_disabled"
+        textureFile = "gfx/interface/monuments/chn/stork_tower.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_penglai_pavilion_disabled"
+        textureFile = "gfx/interface/monuments/chn/penglai_pavilion.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_leifeng_tower_disabled"
+        textureFile = "gfx/interface/monuments/chn/leifeng_tower.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_dayan_pagoda_disabled"
+        textureFile = "gfx/interface/monuments/chn/dayan_pagoda.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_bronze_bird_terrace_disabled"
+        textureFile = "gfx/interface/monuments/chn/bronze_bird_terrace.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_loulan_disabled"
+        textureFile = "gfx/interface/monuments/chn/loulan.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_sanxingdui_site_disabled"
+        textureFile = "gfx/interface/monuments/chn/sanxingdui_site.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_huangdi_mausoleum_disabled"
+        textureFile = "gfx/interface/monuments/chn/huangdi_mausoleum.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_monument_to_the_people's_heroes_disabled"
+        textureFile = "gfx/interface/monuments/chn/monument_to_the_people's_heroes.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+    spriteType = {
+        name = "GFX_monument_great_hall_of_the_people_disabled"
+        textureFile = "gfx/interface/monuments/chn/great_hall_of_the_people.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+}

@@ -1,0 +1,627 @@
+music = {
+	name = "1"
+	file = "1.ogg"
+	volume = 0.8
+
+}
+music = {	
+	name = "2"
+	file = "2.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "3"
+	file = "3.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "4"
+	file = "4.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "5"
+	file = "5.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "6"
+	file = "6.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "7"
+	file = "7.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "8"
+	file = "8.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "9"
+	file = "9.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "10"
+	file = "10.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "11"
+	file = "11.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "12"
+	file = "12.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "13"
+	file = "13.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "14"
+	file = "14.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "15"
+	file = "15.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "16"
+	file = "16.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "17"
+	file = "17.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "18"
+	file = "18.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "19"
+	file = "19.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "20"
+	file = "20.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "21"
+	file = "21.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "22"
+	file = "22.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "23"
+	file = "23.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "24"
+	file = "24.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "25"
+	file = "25.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "26"
+	file = "26.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "27"
+	file = "27.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "28"
+	file = "28.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "29"
+	file = "29.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "30"
+	file = "30.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "31"
+	file = "31.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "32"
+	file = "32.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "33"
+	file = "33.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "34"
+	file = "34.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "35"
+	file = "35.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "36"
+	file = "36.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "37"
+	file = "37.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "38"
+	file = "38.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "39"
+	file = "39.ogg"
+	volume = 0.8
+}
+
+music = {	
+	name = "40"
+	file = "40.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "41"
+	file = "41.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "42"
+	file = "42.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "43"
+	file = "43.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "44"
+	file = "44.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "45"
+	file = "45.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "46"
+	file = "46.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "47"
+	file = "47.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "48"
+	file = "48.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "49"
+	file = "49.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "50"
+	file = "50.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "51"
+	file = "51.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "52"
+	file = "52.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "53"
+	file = "53.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "54"
+	file = "54.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "55"
+	file = "55.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "56"
+	file = "56.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "57"
+	file = "57.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "58"
+	file = "58.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "59"
+	file = "59.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "60"
+	file = "60.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "61"
+	file = "61.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "62"
+	file = "62.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "63"
+	file = "63.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "64"
+	file = "64.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "65"
+	file = "65.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "66"
+	file = "66.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "67"
+	file = "67.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "68"
+	file = "68.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "69"
+	file = "69.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "70"
+	file = "70.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "71"
+	file = "71.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "72"
+	file = "72.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "73"
+	file = "73.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "74"
+	file = "74.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "75"
+	file = "75.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "76"
+	file = "76.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "77"
+	file = "77.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "78"
+	file = "78.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "79"
+	file = "79.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "80"
+	file = "80.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "81"
+	file = "81.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "82"
+	file = "82.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "83"
+	file = "83.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "84"
+	file = "84.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "85"
+	file = "85.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "86"
+	file = "86.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "87"
+	file = "87.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "88"
+	file = "88.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "89"
+	file = "89.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "90"
+	file = "90.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "91"
+	file = "91.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "92"
+	file = "92.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "93"
+	file = "93.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "94"
+	file = "94.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "95"
+	file = "95.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "96"
+	file = "96.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "97"
+	file = "97.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "98"
+	file = "98.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "99"
+	file = "99.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "100"
+	file = "100.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "101"
+	file = "101.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "102"
+	file = "102.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "103"
+	file = "103.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "104"
+	file = "104.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "105"
+	file = "105.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "106"
+	file = "106.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1071"
+	file = "1071.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "108"
+	file = "108.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "109"
+	file = "109.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "110"
+	file = "110.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1111"
+	file = "1111.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "112"
+	file = "112.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1131"
+	file = "1131.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1141"
+	file = "1141.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "115"
+	file = "115.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1161"
+	file = "1161.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1171"
+	file = "1171.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "118"
+	file = "118.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "1191"
+	file = "1191.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "120"
+	file = "120.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "121"
+	file = "121.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "122"
+	file = "122.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "123"
+	file = "123.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "124"
+	file = "124.ogg"
+	volume = 0.8
+}
+music = {	
+	name = "125"
+	file = "125.ogg"
+	volume = 0.8
+}

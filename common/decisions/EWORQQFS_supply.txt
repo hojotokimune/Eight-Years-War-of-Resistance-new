@@ -1,0 +1,43 @@
+EWORQQFS_supplyisuseful = {
+	EWORQQFS_supplyis_very_useful_add_10 = {
+		icon = generic_political_actions
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		cost = 999
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				ROOT.supply_condition_base = 10
+			}
+			custom_effect_tooltip = gain_base_supp_cond_p10_tt2
+		}
+	}
+	EWORQQFS_supplyis_very_useful_decrease_10 = {
+		icon = generic_political_actions
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		visible = {
+			always = yes
+		}
+		cost = 999
+		fire_only_once = no
+		complete_effect = {
+			add_to_variable = {
+				ROOT.supply_condition_base = -10
+			}
+			custom_effect_tooltip = lose_base_supp_cond_p10_tt2
+		}
+	}
+}
+

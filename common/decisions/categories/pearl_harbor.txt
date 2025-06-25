@@ -1,0 +1,785 @@
+vnr_pearl_harbor_category = {
+    ph_attack_countdown = {
+        icon = GFX_decision_jap_pacific_guardian
+        allowed = { always = no }
+        activation = {
+            always = no
+        }
+        available = {
+            has_country_flag = ph_attack_approved
+        }
+        cancel_trigger = {
+            can_launch_pearl_harbor = no
+        }
+        is_good = no
+        days_mission_timeout = 365
+        timeout_effect = {
+            custom_effect_tooltip = ph_attack_timeout_tt
+            if = {
+                limit = { is_ai = no }
+                add_war_support = -0.2
+                add_stability = -0.2
+                clr_global_flag = vnr_pearl_harbor_ongoing
+                USA = {
+                    send_embargo = ROOT
+                }
+            }
+            # add a safe for dumb AI
+            else = {
+                country_event = { 
+                    id = vnr_pearl_harbor.4
+                    days = 8
+                    random_days = 4
+                }
+            }
+            
+            if = {
+                limit = { has_idea = jap_ph_preparation_1 }
+                remove_ideas = jap_ph_preparation_1
+            }
+            if = {
+                limit = { has_idea = jap_ph_preparation_2 }
+                remove_ideas = jap_ph_preparation_2
+            }
+            if = {
+                limit = { has_idea = jap_ph_preparation_3 }
+                remove_ideas = jap_ph_preparation_3
+            }
+        }
+        complete_effect = {
+            custom_effect_tooltip = ph_attack_start_tt
+        }
+    }
+
+    ph_initial_war_game = {
+        icon = GFX_decision_eng_trade_unions_support
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+        }
+        fire_only_once = yes
+        days_remove = 25
+        remove_effect = {
+            navy_experience = 5
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.05 }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_initial_last_diplomatic_push = {
+        icon = GFX_decision_generic_political_address
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+        }
+        
+        fire_only_once = yes
+        days_remove = 60
+        cost = 25
+        modifier = {
+            political_power_factor = -0.15
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_initial_last_diplomatic_push_tt
+            hidden_effect = {
+                country_event = vnr_pearl_harbor.9
+            }
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.05 }
+
+            if = {
+                limit = { is_ai = yes }
+                add_political_power = 25
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_initial_contact_undercovers = {
+        icon = GFX_decision_generic_political_discourse
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+        }
+        
+        fire_only_once = yes
+        cost = 25
+        days_remove = 30
+        remove_effect = {
+            if = {
+                limit = { has_dlc = "La Resistance" }
+                add_intel = {
+                    target = USA
+                    civilian_intel = 10
+                    navy_intel = 20
+                    airforce_intel = 20
+                }
+            }
+            else = {
+                add_war_support = 0.05
+            }
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+
+            if = {
+                limit = { is_ai = yes }
+                add_political_power = 25
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_initial_persuade_general_staff = {
+        icon = GFX_decision_hol_exchange_intelligence_data
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = ph_initial_persuade_general_staff_tt
+                has_country_flag = {
+                    flag = ph_preparation
+                    value > 2
+                }
+            }
+        }
+        fire_only_once = yes
+        cost = 15
+        complete_effect = {
+            FROM = { 
+                country_event = vnr_pearl_harbor.1
+            }
+
+            if = {
+                limit = { is_ai = yes }
+                add_political_power = 15
+				add_command_power = 60
+            }
+        }
+        ai_will_do = {
+            factor = 50
+            modifier = {
+                has_war = yes
+                factor = 10
+            }
+            modifier = {
+                has_war = no
+                factor = 2
+            }
+        }
+    }
+
+    ph_planning_exercise = {
+        icon = GFX_decision_generic_air
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 3
+            }
+        }
+        fire_only_once = yes
+        
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        days_remove = 120
+
+        modifier = {
+            navy_carrier_air_agility_factor = -0.25
+            navy_carrier_air_attack_factor = -0.25
+            navy_carrier_air_targetting_factor = -0.25
+            air_training_xp_gain_factor = 0.1
+        }
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            navy_experience = 10
+            air_experience = 10
+            ph_jap_create_fuchida = yes
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+
+            if = {
+                limit = { is_ai = yes }
+                add_command_power = 15
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_planning_pick_Nagumo = {
+        icon = GFX_decision_generic_army_support
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 3
+            }
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = ph_planning_pick_Nagumo_tt
+                has_country_flag = {
+                    flag = ph_preparation
+                    value > 6
+                }
+            }
+        }
+        fire_only_once = yes
+        cost = 10
+        complete_effect = {
+            FROM = { country_event = vnr_pearl_harbor.2 }
+            add_command_power = 10
+            if = {
+                limit = { is_ai = yes }
+                add_political_power = 10
+				add_command_power = 60
+            }
+        }
+        ai_will_do = {
+            factor = 50
+            modifier = {
+                has_war = yes
+                factor = 10
+            }
+            modifier = {
+                has_war = no
+                factor = 2
+            }
+        }
+    }
+    ph_planning_first_air_fleet = {
+        icon = GFX_decision_generic_naval
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 3
+            }
+        }
+        available = {
+            has_navy_size = {
+                size > 5
+                type = carrier
+            }
+        }
+        
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        days_remove = 60
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        modifier = {
+            experience_gain_navy_unit_factor = 0.1
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_planning_first_air_fleet_tt
+            navy_experience = 10
+            add_manpower = 5000
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+            if = {
+                limit = { is_ai = yes }
+                add_command_power = 15
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_planning_store_fuel = {
+        icon = GFX_decision_oil
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 3
+            }
+        }
+        days_remove = 90
+        fire_only_once = yes
+        modifier = {
+            consumer_goods_factor = 0.2
+            production_speed_fuel_silo_factor = 1
+            fuel_gain_factor = 0.3
+        }
+        complete_effect = {
+            add_command_power = 20
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+
+    ph_final_assemble_ships = {
+        icon = GFX_decision_generic_naval
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 7
+            }
+        }
+        available = {
+            has_navy_size = {
+                size > 5
+                type = carrier
+            }
+        }
+        
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        days_remove = 60
+        modifier = {
+            navy_org_factor = -0.1
+        }
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_final_assemble_ships_tt
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+
+            if = {
+                limit = { is_ai = yes }
+                add_command_power = 15
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_final_sub_picket_line = {
+        icon = GFX_decision_infiltrate_state
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 7
+            }
+        }
+        
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        days_remove = 60
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+        }
+        modifier = {
+            spotting_chance = 0.1
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_final_sub_picket_line_tt
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+
+            if = {
+                limit = { is_ai = yes }
+                add_command_power = 15
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    ph_final_north_pacific_route = {
+        icon = GFX_decision_hol_draw_up_staff_plans
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_global_flag = vnr_pearl_harbor_ongoing
+            has_country_flag = {
+                flag = ph_preparation
+                value > 7
+            }
+        }
+        
+        fire_only_once = yes
+        custom_cost_trigger = { command_power > 14.99 }
+        custom_cost_text = decision_cost_CP_15
+        days_remove = 60
+        modifier = {
+            navy_visibility = -0.1
+        }
+        complete_effect = {
+            hidden_effect = {
+                add_command_power = -15
+            }
+            add_equipment_to_stockpile = {
+                type = convoy
+                amount = -10
+            }
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_final_north_pacific_route_tt
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+
+            if = {
+                limit = { is_ai = yes }
+                add_command_power = 15
+            }
+        }
+        ai_will_do = {
+            factor = 50
+        }
+    }
+    
+    ph_mission_is_a_go = {
+        icon = GFX_decision_eng_trade_unions_demand
+        visible = {
+            can_launch_pearl_harbor = yes
+            has_country_flag = {
+                flag = ph_preparation
+                value > 10
+            }
+        }
+        days_remove = 7
+        fire_only_once = yes
+        complete_effect = {
+            add_timed_idea = {
+                idea = jap_ph_preparation_3
+                days = 200
+            }
+            hidden_effect = {
+                if = {
+                    limit = { has_idea = jap_ph_preparation_2 }
+                    remove_ideas = jap_ph_preparation_2
+                }
+            }
+            set_country_flag = ph_attack_approved
+        }
+        remove_effect = {
+            custom_effect_tooltip = ph_mission_is_a_go_tt
+            FROM = { country_event = vnr_pearl_harbor.3 }
+        }
+        ai_will_do = {
+            factor = 50
+            modifier = {
+                has_war = yes
+                factor = 10
+            }
+            modifier = {
+                has_war = no
+                factor = 2
+            }
+        }
+    }
+}
+
+vnr_pacific_game_category = {
+    ph_keep_pacific_presence = {
+        icon = GFX_decision_generic_naval
+        allowed = {
+            always = no
+        }
+        activation = {
+            always = no
+        }
+        available = {
+            always = no
+        }
+        cancel_trigger = {
+            OR = {
+                has_global_flag = vnr_attack_on_pearl_harbor
+                has_war_with = JAP
+            }
+        }
+        days_mission_timeout = 365
+        timeout_effect = {
+            custom_effect_tooltip = ph_keep_pacific_presence_tt
+        }
+    }
+    ph_cutoff_Japan = {
+        icon = GFX_decision_generic_break_treaty
+        visible = {
+            can_sanction_japan = yes
+        }
+        available = {
+            custom_trigger_tooltip = {
+                tooltip = ph_cutoff_Japan_tt
+                check_variable  = { anti_ph_score = 1 }
+            }
+        }
+        cancel_trigger = {
+            has_global_flag = vnr_attack_on_pearl_harbor
+        }
+        fire_only_once = yes
+        days_remove = 7
+        remove_effect = {
+            JAP = {
+                add_war_support = -0.1
+                add_stability = -0.1
+                add_timed_idea = {
+                    idea = jap_cutoff_from_west
+                    days = 180
+                }
+            }
+        }
+    }
+    ph_propaganda_war_crimes = {
+        icon = GFX_decision_eng_propaganda_campaigns
+        visible = {
+            can_sanction_japan = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 10
+        days_remove = 30
+        days_re_enable = 20
+        remove_effect = {
+            custom_effect_tooltip = anti_ph_score_add_5
+            hidden_effect = {
+                add_to_variable = { var = anti_ph_score value = 0.05 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                has_political_power > 50
+                factor = 10
+            }
+        }
+    }
+    ph_loan_to_resistance = {
+        icon = GFX_decision_generic_industry
+        visible = {
+            can_sanction_japan = yes
+        }
+        available = {
+            any_other_country = {
+                has_war_with = JAP
+            }
+        }
+        cancel_if_not_visible = yes
+        cost = 25
+        days_remove = 35
+        days_re_enable = 30
+        remove_effect = {
+            custom_effect_tooltip = anti_ph_score_add_10
+            every_country = {
+                limit = { 
+                    has_war_with = JAP
+                    NOT = { has_government = fascism }
+                }
+                add_political_power = 25
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 3000
+                }
+                add_equipment_to_stockpile = {
+                    type = support_equipment
+                    amount = 500
+                }
+            }
+            hidden_effect = {
+                add_to_variable = { var = anti_ph_score value = 0.1 }
+            }
+        }
+        ai_will_do = {
+            factor = 1
+            modifier = {
+                any_other_country = {
+                    has_war_with = JAP
+                    NOT = { has_government = communism }
+                }
+                factor = 20
+            }
+        }
+    }
+    ph_deal_with_japs = {
+        icon = GFX_decision_ger_mefo_bills
+        visible = {
+            can_sanction_japan = yes
+        }
+        cancel_if_not_visible = yes
+        days_remove = 30
+        days_re_enable = 30
+        modifier = {
+            consumer_goods_factor = -0.1
+        }
+        remove_effect = {
+            custom_effect_tooltip = anti_ph_score_min_5
+            add_political_power = 25
+            hidden_effect = {
+				if = {
+					limit = { check_variable = { anti_ph_score > 0 } }
+					subtract_from_variable = { var = anti_ph_score value = 0.05 }
+				}
+            }
+        }
+        ai_will_do = {
+            factor = 3
+        }
+    }
+
+    ph_reinfoce_naval_base = {
+        icon = GFX_decision_generic_construction
+        visible = {
+            can_sanction_japan = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 10
+        days_remove = 60
+        days_re_enable = 30
+        modifier = {
+            consumer_goods_factor = 0.1
+            production_speed_naval_base_factor = 0.2
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+    ph_reinforce_bunker = {
+        icon = GFX_decision_generic_mountain_fortification
+        visible = {
+            can_sanction_japan = yes
+        }
+        cancel_if_not_visible = yes
+        cost = 10
+        days_remove = 60
+        days_re_enable = 30
+        modifier = {
+            consumer_goods_factor = 0.1
+            production_speed_coastal_bunker_factor = 0.2
+        }
+        ai_will_do = {
+            factor = 1
+        }
+    }
+    ph_reinforce_philippines = {
+        icon = GFX_decision_generic_prepare_civil_war
+        visible = {
+            can_sanction_japan = yes
+            has_subject = PHI
+        }
+        cancel_if_not_visible = yes
+        custom_cost_trigger = { has_equipment = { infantry_equipment > 499 } }
+        custom_cost_text = decision_cost_ie_500
+        days_remove = 60
+        days_re_enable = 60
+        complete_effect = {
+            hidden_effect = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = -500
+                }
+            }
+            PHI = {
+                add_equipment_to_stockpile = {
+                    type = infantry_equipment
+                    amount = 3000
+                }
+            }
+        }
+        remove_effect = {
+            PHI = {
+                add_manpower = 3000
+                army_experience = 10
+            }
+        }
+        ai_will_do = {
+            factor = 0
+        }
+    }
+}
+
+political_actions = {
+    ph_embargo_japan = {
+        visible = {
+            is_ai = yes
+            JAP = {
+                has_offensive_war = yes
+            }
+            has_government = democratic
+            NOT = { has_war_with = JAP }
+        }
+        available = {
+            has_war_support > 0.3
+        }
+        fire_only_once = yes        
+        cost = 10
+        complete_effect = {
+            send_embargo = JAP
+            every_country = {
+                limit = { is_subject_of = ROOT }
+                send_embargo = JAP
+            }
+
+            if = {
+                limit = { is_ai = yes }
+                add_political_power = 100
+            }
+        }
+
+        ai_will_do = {
+            factor = 0
+            modifier = {
+                date > 1939.1.1
+                add = 1
+            }
+            modifier = {
+                is_major = yes
+                factor = 50
+            }
+            modifier = {
+                num_subjects > 0
+                factor = 5
+            }
+        }
+    }
+}

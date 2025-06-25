@@ -1,0 +1,1155 @@
+political_actions = {
+	JAP_dismantle_indochina = {
+		icon = jap_conquer_china
+		visible = {
+			tag = JAP
+			has_war_with = FIC
+			FIC = {
+				has_capitulated = yes
+			}
+		}
+		available = {
+			#FIC = { is_in_faction_with = ROOT }
+			#NOT = { #BURMA
+			#	controls_state = 288
+			#	controls_state = 640
+			#}
+		}
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 0
+		cost = 10
+		complete_effect = {
+			VIN = {
+				annex_country = {
+					target = FIC
+					transfer_troops = no
+				}
+			}
+			transfer_state = 286 #Cochinchina
+			transfer_state = 979
+			LAO = {
+				transfer_state = 670
+				transfer_state = 984
+				transfer_state = 985
+				if = {
+					limit = {
+						VIN = {
+							controls_state = 981
+						}
+					}
+					transfer_state = 981
+				}
+			}
+			
+			CAM = {
+				transfer_state = 741
+				transfer_state = 982
+				if = {
+					limit = {
+						VIN = {
+							controls_state = 983
+						}
+					}
+					transfer_state = 983
+				}
+			}
+			puppet = VIN	
+			puppet = LAO 
+			puppet = CAM
+		}
+	}
+
+	VIC_remove_catroux = {
+		icon = jap_conquer_china
+		available = {
+			AND = {
+				OR = {
+					original_tag = FRA
+					tag = FRA
+				}
+				has_government = fascism
+			}
+			FIC = {
+				is_subject = no
+				has_country_leader = { ruling_only = yes name = "Georges Catroux" }
+			}
+		}
+		allowed = {
+			OR = {
+				original_tag = FRA
+				tag = FRA
+			}
+		}
+		activation = {
+			has_government = fascism
+			FIC = {
+				is_subject = no
+			}
+			has_global_flag = fall_of_france
+		}
+		selectable_mission = yes
+		days_mission_timeout = 25
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		modifier = {
+		}
+		days_remove = 0
+		cost = 0
+		complete_effect = {
+			FIC = {
+				country_event = { days = 1 id = rcmindochina.3  #jean decoux appointed
+				}
+			}
+		}
+		timeout_effect = {
+			FIC = {
+				country_event = {
+					days = 1 id = rcmindochina.4 #indochina defects?
+				}
+			}
+		}
+	}
+}
+
+fic_industrial_decisions = {
+
+	FIC_transindochinese_railway_dec = {
+		icon = generic_construction
+		fire_only_once = yes
+		days_remove = 300 # Stays for 5 days before being removed
+		days_re_enable = duration_of_infra_reenable # Will show up in the interface and can be selected again after 5 days
+		cost = 50
+		available = { #can do
+			has_completed_focus = FIC_transindochinese_railway
+			num_of_civilian_factories_available_for_projects > 1
+			controls_state = 286
+			controls_state = 670
+			controls_state = 988
+			controls_state = 741
+		}
+		remove_effect = { #run effect when removed/finished
+			every_owned_state = {
+				limit = {
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			reenable_duration = yes
+		}
+		cancel_trigger = { #will abort
+			custom_trigger_tooltip = {
+				tooltip = does_not_meet_pre
+				NOT = {
+					controls_state = 286
+					controls_state = 670
+					controls_state = 988
+					controls_state = 741
+				}
+			}
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	FIC_aircraft_production_factory = {
+		icon = generic_air
+		fire_only_once = yes
+		days_remove = 583 # Stays for 5 days before being removed
+		cost = 100
+		available = { #can do
+			has_completed_focus = FIC_local_pilot_formation
+			num_of_civilian_factories_available_for_projects > 4
+		}
+		remove_effect = { #run effect when removed/finished
+			add_ideas = fic_aircraft_factory
+			set_country_flag = fic_breguet_unlocked
+			custom_effect_tooltip = available_designer
+			show_ideas_tooltip = snai
+			hidden_effect = {
+				set_technology = {
+					fighter1 = 1
+				}
+			}
+			random_owned_controlled_state = {
+				prioritize = { 988 }
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		cancel_trigger = { #will abort
+
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 5
+		}
+		ai_will_do = {
+			factor = 5
+		}
+	}
+}
+
+FIC_guangzhouwan_development = {
+	FIC_succesful_expansion_ktw = {
+		icon = generic_construction
+		available = {
+			728 = {
+				infrastructure > 6
+				naval_base > 5
+				coastal_bunker > 3
+			}
+		}
+		activation = {
+			has_completed_focus = FIC_guangzhouwan_navalbase
+			is_ai = no
+		}
+		selectable_mission = no
+		days_mission_timeout = 2000
+		is_good = no
+		fire_only_once = yes
+		complete_effect = {
+			add_political_power = 100
+			add_stability = 0.03
+			728 = {
+				add_extra_state_shared_building_slots = 3
+				add_building_construction = {
+					type = dockyard
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		timeout_effect = {
+			add_political_power = -50
+		}
+	}
+	
+	FIC_reinvest_coal_profits_ktw = {
+		icon = ger_mefo_bills
+		fire_only_once = yes
+		days_remove = 180 # Stays for 5 days before being removed
+		days_re_enable = duration_of_infra_reenable # Will show up in the interface and can be selected again after 5 days
+		cost = 100
+		available = { #can do
+			controls_state = 728
+		}
+		remove_effect = { #run effect when removed/finished
+			728 = {
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		cancel_trigger = { #will abort
+			custom_trigger_tooltip = {
+				tooltip = does_not_meet_pre
+				NOT = {
+					controls_state = 728
+				}
+			}
+		}
+		modifier = { #active during the course of the decision
+		
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	FIC_expand_naval_infrastructure_ktw = {
+		icon = generic_construction
+		fire_only_once = yes
+		days_remove = 360 # Stays for 5 days before being removed
+		days_re_enable = duration_of_infra_reenable # Will show up in the interface and can be selected again after 5 days
+		cost = 50
+		available = { #can do
+			controls_state = 728
+			num_of_civilian_factories_available_for_projects > 2
+		}
+		remove_effect = { #run effect when removed/finished
+			728 = {
+				add_building_construction = {
+					type = naval_base
+					level = 2
+					province = 11981
+					instant_build = yes
+				}
+			}
+		}
+		cancel_trigger = { #will abort
+			custom_trigger_tooltip = {
+				tooltip = does_not_meet_pre
+				NOT = {
+					controls_state = 728
+				}
+			}
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 3
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	FIC_coastal_artillery_ktw = {
+		icon = generic_industry
+		fire_only_once = yes
+		days_remove = 90 # Stays for 5 days before being removed
+		days_re_enable = duration_of_infra_reenable # Will show up in the interface and can be selected again after 5 days
+		cost = 10
+		available = { #can do
+			controls_state = 728
+			num_of_civilian_factories_available_for_projects > 1
+			has_equipment = {
+				artillery_equipment_1 > 49
+			}
+		}
+		complete_effect = {
+			add_equipment_to_stockpile = {
+				type = artillery_equipment_1
+				amount = -50
+				producer = FIC
+			}
+		}
+		remove_effect = { #run effect when removed/finished
+			728 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 3
+					province = 11981
+					instant_build = yes
+				}
+			}
+		}
+		cancel_trigger = { #will abort
+			custom_trigger_tooltip = {
+				tooltip = does_not_meet_pre
+				NOT = {
+					controls_state = 728
+				}
+			}
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	FIC_inland_fortifications_ktw = {
+		icon = generic_ignite_civil_war
+		fire_only_once = yes
+		days_remove = 360 # Stays for 5 days before being removed
+		days_re_enable = duration_of_infra_reenable # Will show up in the interface and can be selected again after 5 days
+		cost = 25
+		available = { #can do
+			controls_state = 728
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		remove_effect = { #run effect when removed/finished
+			728 = {
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 11981
+					instant_build = yes
+				}
+			}
+		}
+		cancel_trigger = { #will abort
+			custom_trigger_tooltip = {
+				tooltip = does_not_meet_pre
+				NOT = {
+					controls_state = 728
+				}
+			}
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+	
+	FIC_expand_airport_ktw = {
+		icon = generic_air
+		fire_only_once = yes
+		days_remove = 500 # Stays for 5 days before being removed
+		days_re_enable = duration_of_infra_reenable # Will show up in the interface and can be selected again after 5 days
+		cost = 25
+		available = { #can do
+			controls_state = 728
+			num_of_civilian_factories_available_for_projects > 1
+		}
+		remove_effect = { #run effect when removed/finished
+			728 = {
+				add_building_construction = {
+					type = air_base
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		cancel_trigger = { #will abort
+			custom_trigger_tooltip = {
+				tooltip = does_not_meet_pre
+				NOT = {
+					controls_state = 728
+				}
+			}
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 2
+		}
+		ai_will_do = {
+			factor = 10
+		}
+	}
+}
+
+fic_franco_siam_war = {
+	SIA_attack_fic = {
+		icon = jap_conquer_china
+		visible = {
+			NOT = {
+				OR = {
+					controls_state = 980
+					controls_state = 981
+					controls_state = 983
+				}
+			}
+			tag = SIA
+		}
+		available = {
+			FIC = { OR = { has_government = fascism has_government = democratic } }
+			has_global_flag = fall_of_france
+		    is_neighbor_of = FIC
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		targets = { FIC }
+		target_trigger = {
+			FROM = {
+				tag = FIC
+			}
+		}
+		war_with_target_on_remove = yes
+		days_remove = 30
+		cost = 10
+		complete_effect = {
+			hidden_effect = {
+				set_global_flag = frasiamwarpreparation
+				FIC = { country_event = { id = rcmindochina.27 days = 1 } }
+				add_ideas = fic_regional_war
+			}
+		}
+		remove_effect = {
+			add_state_claim = 980
+			add_state_claim = 981
+			add_state_claim = 983
+			declare_war_on = {
+				type = annex_everything
+				target = FIC
+			}
+			hidden_effect = {
+				news_event = RCM_news.6
+			}
+		}
+	}
+	
+	JAP_peace_fic_sia = {
+		icon = jap_conquer_china
+		visible = {
+			tag = JAP
+			NOT = {
+				has_global_flag = already_FIC_SIA_peace
+			}
+		}
+		target_trigger = {
+			FROM = {
+				tag = FIC
+			}
+		}
+		available = {
+			SIA = {
+				has_war_with = FIC
+			}
+			OR = {
+				SIA = {
+					OR = {
+						controls_state = 983
+						AND = {
+							controls_state = 670
+							controls_state = 985
+						}
+					}
+				}
+				FIC = {
+					surrender_progress > 0.3
+				}
+			}
+		}
+		is_good = no
+		#fire_only_once = yes
+		ai_will_do = {
+			factor = 5000
+		}
+		days_remove = 0
+		cost = 0
+		complete_effect = {
+			set_global_flag = already_FIC_SIA_peace
+			SIA = { country_event = rcmindochina.8 }
+		}
+	}
+}
+
+
+fic_organize_defence = {
+	fic_the_berenger_plan = {		
+		icon = hol_draw_up_staff_plans
+		visible = {
+			controls_state = 286
+		}
+		available = {
+		
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 15
+		cost = 0
+		remove_effect = {
+			add_ideas = fic_berenger_plan
+		}
+	}
+	
+	fic_saigon_holdout = {		
+		icon = generic_scorched_earth
+		visible = {
+			has_idea = fic_berenger_plan
+		}
+		available = {
+			controls_state = 286
+			has_idea = fic_leve_en_masse
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 15
+		cost = 0
+		remove_effect = {
+			286 = {
+				add_building_construction = {
+					type = coastal_bunker
+					level = 2
+					province = 4401
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 4401
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 1396
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7238
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 7347
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 10261
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 12232
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	fic_northlao_holdout = {		
+		icon = generic_scorched_earth
+		visible = {
+			has_idea = fic_berenger_plan
+		}
+		available = {
+			controls_state = 286
+			has_idea = fic_leve_en_masse
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		modifier = {
+			civilian_factory_use = 1
+		}
+		days_remove = 15
+		cost = 0
+		remove_effect = {
+			670 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 12398
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 12433
+					instant_build = yes
+				}
+			}
+			988 = {
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 4529
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = bunker
+					level = 1
+					province = 12319
+					instant_build = yes
+				}
+			}
+		}
+	}
+	
+	fic_meet_local_rulers = {		
+		icon = generic_political_discourse
+		visible = {
+			controls_state = 286
+		}
+		available = {
+		
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 7
+		cost = 10
+		remove_effect = {
+			country_event = { id = rcmindochina.23 days = 1 }
+		}
+	}
+	
+	fic_levee_en_masse = {		
+		icon = generic_civil_support
+		visible = {
+			controls_state = 286
+			has_country_flag = ficmet_local_leaders
+		}
+		available = {
+			has_country_flag = ficmet_local_leaders
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 15
+		cost = 25
+		remove_effect = {
+			add_ideas = fic_leve_en_masse
+		}
+	}
+	fic_intensify_opium_smuggling = {		
+		icon = ger_mefo_bills
+		visible = {
+			has_country_flag = ficmet_local_leaders
+		}
+		available = {
+			
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 30
+		cost = 50
+		remove_effect = {
+			swap_ideas = {
+				remove_idea = FIC_opium_profits_1
+				add_idea = FIC_opium_profits_2
+			}
+		}
+	}
+	
+	fic_arm_hmong_tribesmen = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			OR = {
+				has_idea = FIC_opium_profits_2
+				has_idea = fic_berenger_plan
+			}
+		}
+		available = {
+			has_idea = FIC_opium_profits_2
+			has_idea = fic_berenger_plan			
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 90
+		cost = 25
+		remove_effect = {
+			custom_effect_tooltip = armed_hmongs_tt
+			set_country_flag = armed_hmongs
+		}
+	}
+	
+	fic_hmong_uprising = {		
+		icon = generic_ignite_civil_war
+		visible = {
+			has_country_flag = armed_hmongs
+		}
+		available = {
+			has_equipment = {
+				infantry_equipment_0 > 1999
+			}	
+			670 = {
+				OR = {
+					is_controlled_by_jap_or_its_puppet = yes
+					controller = {
+						is_in_faction_with = JAP
+						JAP = { is_subject = no }
+					}
+				}
+			}
+			988 = { #Tonkin
+				OR = {
+					is_controlled_by_jap_or_its_puppet = yes
+					controller = {
+						is_in_faction_with = JAP
+						JAP = { is_subject = no }
+					}
+				}
+			}		
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			add_command_power = -10
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = -2000
+				producer = FIC
+			}
+		}
+		remove_effect = {
+			custom_effect_tooltip = fic_hmong_uprising_tt
+			hidden_effect = { load_oob = "FIC_hmongs" }
+		}
+	}
+}
+
+fic_federalization = {
+
+	fic_expand_council = {		
+		icon = generic_form_nation
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+
+		}
+		days_remove = 365
+		cost = 100
+		remove_effect = {
+			set_country_flag = fic_fedreforms1
+			swap_ideas = {
+				remove_idea = FIC_colonial_government
+				add_idea = FIC_colonial_government1
+			}
+		}
+	}
+	
+	fic_increase_council_activity = {		
+		icon = generic_political_discourse
+		visible = {
+			has_country_flag = fic_fedreforms1
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+
+		}
+		days_remove = 550
+		cost = 150
+		remove_effect = {
+			set_country_flag = fic_fedreforms2
+			swap_ideas = {
+				remove_idea = FIC_colonial_government1
+				add_idea = FIC_colonial_government2
+			}
+		}
+	}
+	
+	fic_legislative_council = {		
+		icon = generic_decision
+		visible = {
+			has_country_flag = fic_fedreforms2
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+
+		}
+		days_remove = 730
+		cost = 200
+		remove_effect = {
+			set_country_flag = fic_fedreforms3
+			swap_ideas = {
+				remove_idea = FIC_colonial_government2
+				add_idea = FIC_colonial_government3
+			}
+		}
+	}
+	
+	fic_govern_with_council = {		
+		icon = eng_ally_imperialist_coup
+		visible = {
+			has_country_flag = fic_fedreforms3
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+
+		}
+		days_remove = 730
+		cost = 250
+		remove_effect = {
+			set_country_flag = fic_fedreforms4
+			swap_ideas = {
+				remove_idea = FIC_colonial_government3
+				add_idea = FIC_colonial_government4
+			}
+		}
+	}
+
+}
+
+#Decolonization
+
+fic_baodai_reformms = {
+
+	fic_currency_reform = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_unite_annamtonkin = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_status_of_cochinchina = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_aboutsurete = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_aboutarmy = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_about_tariffs = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_fedproposal = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_defining_foreignrelations = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+	
+	fic_status_of_colonists = {		
+		icon = generic_prepare_civil_war
+		visible = {
+			always = yes
+		}
+		is_good = no
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}
+		available = {
+			NOT = {
+				has_country_flag = fic_currentlyreforming
+			}
+		}
+		days_remove = 30
+		cost = 0
+		complete_effect = {
+			set_country_flag = fic_currentlyreforming
+			#country_event = { id = rcmindochina.10 days = 1 }
+		}
+		remove_effect = {
+			clr_country_flag = fic_currentlyreforming
+		}
+	}
+}

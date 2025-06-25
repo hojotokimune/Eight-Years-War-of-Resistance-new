@@ -1,0 +1,61 @@
+JAP_intervene_in_china = {
+	priority = 150
+	allowed = {
+		original_tag = JAP
+	}
+}
+
+JAP_southern_expansion = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+	}
+}
+
+JAP_pacific_guardian = {
+	icon = GFX_decision_category_jap_pacific_guardian 		#MODDED
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = JAP_pacific_guardian
+	}
+}
+
+JAP_colonial_independence = {
+	allowed = {
+		original_tag = JAP
+	}
+
+	visible = {
+		is_puppet = no
+		has_completed_focus = JAP_pacific_guardian
+	}
+}
+JAP_interservice_rivalry = {
+	icon = power_struggle 		#MODDED
+	picture = GFX_decision_cat_picture_ger_case_anton
+	priority = {
+		factor = 250
+		modifier = {
+			factor = 0
+			has_country_flag = JAP_war_conferences_cd
+		}
+	} 		#MODDED
+	#MODDED
+	visible = {
+		NOT = {
+			has_government = communism
+		}
+	}
+	#MODDED
+	allowed = {
+		original_tag = JAP
+		has_dlc = "Waking the Tiger"
+	}
+}

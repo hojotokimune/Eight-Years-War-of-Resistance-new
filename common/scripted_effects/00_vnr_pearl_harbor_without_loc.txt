@@ -1,0 +1,602 @@
+USA_ph_declare_war_JAP = {
+    effect_tooltip = {
+        declare_war_on = {
+            target = JAP
+            type = annex_everything
+        }
+    }
+}
+
+JAP_ph_declare_war_SEA = {
+    add_to_array = { global.jap_southern_doctrine_targets = MAL }
+    add_to_array = { global.jap_southern_doctrine_targets = INS }
+    add_to_array = { global.jap_southern_doctrine_targets = AST }
+    add_to_array = { global.jap_southern_doctrine_targets = PHI }
+
+    for_each_scope_loop = {
+        array = global.jap_southern_doctrine_targets
+        every_core_state = {
+            limit = {
+                owner = {
+                    NOT = { is_ally_with = ROOT }
+                    NOT = { has_non_aggression_pact_with = ROOT }
+                    NOT = { has_war_with = ROOT }
+                }
+            }
+            owner = {
+                if = {
+                    limit = { NOT = { has_war_with = ROOT } }
+                    ROOT = {
+                        declare_war_on = {
+                            target = PREV
+                            type = annex_everything
+                        }
+                    }
+                }
+            }
+        }
+
+        if = {
+            limit = { NOT = { tag = AST } }
+            add_timed_idea = {
+                idea = sea_under_surprise_attack
+                days = 120
+            }
+        }
+    }
+
+	USA_ph_join_allies = yes
+
+    add_ideas = jap_greater_east_asia_war_1
+}
+
+USA_ph_join_allies = {
+    USA = {
+		if = {
+			limit = {
+				ENG = {
+					NOT = { has_war_with = PREV }
+					has_government = PREV
+					is_in_faction = yes
+					is_subject = no
+					is_puppet = no
+					has_war_with_major = yes
+				}
+			}
+			ENG = {
+				faction_leader = { add_to_faction = PREV.PREV }
+			}
+		}
+	}
+}
+
+SIA_ph_join_co_prosperity_sphere = {
+    SIA = {
+        if = {
+            limit = {
+                has_war = no
+                is_in_faction = no
+            }
+            ROOT = { 
+                add_to_faction = PREV
+                every_enemy_country = {
+                    SIA = {
+                        add_to_war = {
+                            targeted_alliance = ROOT
+                            enemy = PREV
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+USA_ph_damage_ships = {
+    USA = {
+        if = {
+            limit = { is_ai = yes }
+            ph_damage_ships_eight = yes
+            set_country_flag = vnr_ph_damaged_ship_eight
+        }
+        else = {
+            if = {
+                limit = {
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 7
+                        state = 629
+                    }
+                }
+                ph_damage_ships_eight = yes
+                set_country_flag = vnr_ph_damaged_ship_eight
+            }
+            else_if = {
+                limit = {
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size < 8
+                        state = 629
+                    }
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 4
+                        state = 629
+                    }
+                }
+                ph_damage_ships_five = yes
+                set_country_flag = vnr_ph_damaged_ship_five
+            }
+            else_if = {
+                limit = {
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size < 5
+                        state = 629
+                    }
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 3
+                        state = 629
+                    }
+                }
+                ph_damage_ships_four = yes
+                set_country_flag = vnr_ph_damaged_ship_four
+            }
+            else_if = {
+                limit = {
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size < 4
+                        state = 629
+                    }
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 2
+                        state = 629
+                    }
+                }
+                ph_damage_ships_three = yes
+                set_country_flag = vnr_ph_damaged_ship_three
+            }
+            else_if = {
+                limit = {
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size < 3
+                        state = 629
+                    }
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 1
+                        state = 629
+                    }
+                }
+                ph_damage_ships_two = yes
+                set_country_flag = vnr_ph_damaged_ship_two
+            }
+            else_if = {
+                limit = {
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size < 2
+                        state = 629
+                    }
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 0
+                        state = 629
+                    }
+                }
+                ph_damage_ships_one = yes
+                set_country_flag = vnr_ph_damaged_ship_one
+            }
+            else = {
+                set_country_flag = vnr_ph_damaged_ship_zero
+            }
+        }
+
+        damage_units = {
+            state = 629
+            org_damage = 0.6
+            str_damage = 0.1
+            ratio = yes
+            army = no
+            navy = yes
+        }
+    }
+
+    TOS = {
+        destroy_ships = { type = battleship count = all }
+    }
+}
+
+ph_repair_ships_vnr = {
+    # if ships are less than five, they will be completely lost because Japs can concentrate their fire on them more easily
+    if = {
+        limit = { has_country_flag = vnr_ph_damaged_ship_eight }
+        load_oob = 02_USA_repair_8
+    }
+    else_if = {
+        limit = { has_country_flag = vnr_ph_damaged_ship_five }
+        load_oob = 02_USA_repair_5
+    }
+}
+
+ph_repair_ships_no_vnr = {
+    # if ships are less than five, they will be completely lost because Japs can concentrate their fire on them more easily
+    if = {
+        limit = { has_country_flag = vnr_ph_damaged_ship_eight }
+        load_oob = 01_USA_repair_8
+    }
+    else_if = {
+        limit = { has_country_flag = vnr_ph_damaged_ship_five }
+        load_oob = 01_USA_repair_5
+    }
+}
+
+ph_repair_ships = {
+    if = {
+        limit = { has_global_flag = vnr_enabled }
+        ph_repair_ships_vnr = yes
+    }
+    else = {
+        ph_repair_ships_no_vnr = yes
+    }
+}
+
+vnr_release_puppet = {
+    overlord = {
+        set_autonomy = {
+            target = PREV
+            autonomy_state = autonomy_free
+            end_wars = no
+            end_civil_wars = no
+        }
+    }
+    leave_faction = yes
+}
+
+pw_jap_scripted_peace = {
+    # force occupied zone out of their faction
+    for_each_scope_loop = {
+        array = global.jap_southern_doctrine_targets
+        if = {
+            limit = { has_war_with = JAP }
+            hidden_effect = {
+                if = { 
+                    limit = { is_subject = yes } 
+                    vnr_release_puppet = yes
+                }
+                add_war_support = -1
+                add_stability = -1
+            }
+
+            leave_faction = yes
+        }
+    }
+	
+	# transfer pacific islands and burma
+	every_enemy_country = {
+		limit = {
+			OR = { 
+				is_in_faction_with = USA
+				is_in_faction_with = ENG
+			}
+		}
+        every_owned_state = {
+            limit = { 
+                OR = {
+                    is_core_of = HAW
+                    is_core_of = FIJ
+                    is_core_of = TAH
+                    is_core_of = BRM
+                    is_core_of = GUM
+                    is_core_of = FSM
+                    is_core_of = CHI
+                }
+            }
+            transfer_state_to = JAP
+        }
+	}
+
+    every_other_country = {
+        limit = { is_in_faction_with = USA has_war_with = JAP }
+        white_peace = JAP
+        remove_wargoal = {
+            type = all
+            target = JAP
+        }
+    }
+    every_other_country = {
+        limit = { is_in_faction_with = ENG has_war_with = JAP }
+        white_peace = JAP
+        remove_wargoal = {
+            type = all
+            target = JAP
+        }
+    }
+	every_country = {
+		limit = { is_in_faction_with = JAP }
+		every_enemy_country = {
+			limit = {
+				OR = {
+					is_in_faction_with = USA
+					is_in_faction_with = ENG
+				}
+			}
+			white_peace = PREV
+			remove_wargoal = {
+				type = all
+				target = PREV
+			}
+		}
+	}
+	
+	# peace deal with southern countries
+    for_each_scope_loop = {
+        array = global.jap_southern_doctrine_targets
+        if = {
+            limit = { has_war_with = JAP }
+			JAP = {
+				start_peace_conference = {
+					tag = PREV
+					winner_scope = FACTION
+					score_factor = 5
+				}
+			}
+        }
+    }
+	
+	# USA humiliated
+    USA = {
+        add_timed_idea = {
+            idea = usa_pw_defeated_in_pacific
+            days = 180
+        }
+    }
+}
+
+pw_allies_scripted_peace = {
+    # China regain land from Japan
+    CHI = {
+        if = {
+            limit = {
+                exists = no
+                any_core_state = {
+                    is_controlled_by = JAP
+                }
+            }
+            release = CHI
+        }
+        every_core_state = {
+            limit = { is_owned_by = JAP }
+            transfer_state_to = PREV
+        }
+        if = {
+            limit = { is_subject_of = JAP }
+            vnr_release_puppet = yes
+        }
+        
+
+        if = {
+            limit = { has_war_with = JAP }
+            every_other_country = {
+                limit = {
+                    any_owned_state = { is_core_of = PREV.PREV }
+                    is_ally_with = JAP
+                }
+                if = {
+                    limit = { is_subject = yes }
+                    vnr_release_puppet = yes
+                }
+
+                CHI = {
+                    start_peace_conference = {
+                        tag = PREV
+                        winner_scope = FACTION
+                        score_factor = 1
+                    }
+                }
+            }
+        }
+    }
+
+    # disband co-prosperity sphere
+    every_other_country = {
+        limit = { is_in_faction_with = JAP }
+        delete_unit = {}
+        if = {
+            limit = { is_subject = yes }
+            vnr_release_puppet = yes
+        }
+		else = {
+			every_enemy_country = {
+				white_peace = PREV
+			}
+		}
+    }
+    transfer_navy = { target = USA }
+    delete_unit = {}
+    # USA occupy Japan
+    USA = {
+        annex_country = {
+            target = JAP
+            transfer_troops = no
+        }
+        release_puppet = JAP
+    }
+    
+	# transfer pacific islands
+    every_controlled_state = {
+        limit = { 
+            OR = {
+                is_core_of = GUM 
+                is_core_of = FSM
+            }
+        }
+        transfer_state_to = USA
+    }
+	526 = { transfer_state_to = USA }
+
+    # make Japan a new country
+    remove_ideas = {
+        jap_hondo_kessen_1
+        jap_hondo_kessen_2
+        jap_ph_attack_two_waves
+        jap_ph_attack_three_waves
+        state_shintoism
+        JAP_militarism
+        JAP_interservice_rivalry_army_dominant 
+        JAP_interservice_rivalry_army_strengthened 
+        JAP_interservice_rivalry_balanced 
+        JAP_interservice_rivalry_navy_strengthened 
+        JAP_interservice_rivalry_navy_dominant 
+        jap_food_crisis_1
+        jap_food_crisis_2
+        jap_food_crisis_3
+    }
+    add_ideas = {
+        civilian_economy
+        free_trade
+        disarmed_nation
+        jap_article_nine
+        JAP_hirohito
+    }
+    add_timed_idea = { idea = jap_economic_recovery days = 365 }
+    add_timed_idea = { idea = jap_food_crisis_3 days = 365 }
+    add_war_support = -1
+
+    USA = {
+        # return Indochina
+	    every_owned_state = {
+	    	limit = { is_core_of = VIN }
+	    	transfer_state_to = FRA
+	    }
+	    every_owned_state = {
+	    	limit = { is_core_of = CAM }
+	    	transfer_state_to = FRA
+	    }
+	    every_owned_state = {
+	    	limit = { is_core_of = LAO }
+	    	transfer_state_to = FRA
+	    }
+    }
+}
+
+jap_add_coastal_bunker = {
+    add_building_construction = {
+        type = coastal_bunker
+        level = 2
+        instant_build = yes
+        province = {
+            all_provinces = yes
+            limit_to_coastal = yes
+            limit_to_victory_point = yes
+        }
+    }
+    add_building_construction = {
+        type = coastal_bunker
+        level = 1
+        instant_build = yes
+        province = {
+            all_provinces = yes
+            limit_to_naval_base = yes
+        }
+    }
+}
+
+jap_add_food_crisis = {
+    if = {
+        limit = {
+            NOT = {
+                has_idea = jap_food_crisis_1
+                has_idea = jap_food_crisis_2
+                has_idea = jap_food_crisis_3
+            }
+        }
+        add_ideas = jap_food_crisis_1
+    }
+    else_if = {
+        limit = { has_idea = jap_food_crisis_1 }
+        swap_ideas = {
+            remove_idea = jap_food_crisis_1
+            add_idea = jap_food_crisis_2
+        }
+    }
+    else_if = {
+        limit = { has_idea = jap_food_crisis_2 }
+        swap_ideas = {
+            remove_idea = jap_food_crisis_2
+            add_idea = jap_food_crisis_3
+        }
+    }
+}
+
+pacific_war_gui_set_owner = {
+    set_variable = { pacific_owner = 4 }
+    if = {
+        limit = { pw_is_ally_with_sov = yes }
+        set_variable = { pacific_owner = 1 }
+    }
+    if = {
+        limit = { pw_is_ally_with_usa = yes }
+        set_variable = { pacific_owner = 2 }
+    }
+    if = {
+        limit = { pw_is_ally_with_jap = yes }
+        set_variable = { pacific_owner = 3 }
+    }
+}
+
+update_pacific_war_gui = {
+    408 = { pacific_war_gui_set_owner = yes }
+    330 = { pacific_war_gui_set_owner = yes }
+    328 = { pacific_war_gui_set_owner = yes }
+    605 = { pacific_war_gui_set_owner = yes }
+    527 = { pacific_war_gui_set_owner = yes }
+    525 = { pacific_war_gui_set_owner = yes }
+    524 = { pacific_war_gui_set_owner = yes }
+    282 = { pacific_war_gui_set_owner = yes }
+    671 = { pacific_war_gui_set_owner = yes }
+    289 = { pacific_war_gui_set_owner = yes }
+    431 = { pacific_war_gui_set_owner = yes }
+    336 = { pacific_war_gui_set_owner = yes }
+    335 = { pacific_war_gui_set_owner = yes }
+    327 = { pacific_war_gui_set_owner = yes }
+    285 = { pacific_war_gui_set_owner = yes }
+    737 = { pacific_war_gui_set_owner = yes }
+    361 = { pacific_war_gui_set_owner = yes }
+    276 = { pacific_war_gui_set_owner = yes }
+}
+
+update_jap_victory_idea_in_SEA = {
+    if = {
+        limit = { has_idea = jap_greater_east_asia_war_1 }
+        swap_ideas = {
+            remove_idea = jap_greater_east_asia_war_1
+            add_idea = jap_greater_east_asia_war_2
+        }
+    }
+    else_if = {
+        limit = { has_idea = jap_greater_east_asia_war_2 }
+        swap_ideas = {
+            remove_idea = jap_greater_east_asia_war_2
+            add_idea = jap_greater_east_asia_war_3
+        }
+    }
+    else_if = {
+        limit = { has_idea = jap_greater_east_asia_war_3 }
+        swap_ideas = {
+            remove_idea = jap_greater_east_asia_war_3
+            add_idea = jap_greater_east_asia_war_4
+        }
+    }
+    else_if = {
+        limit = { has_idea = jap_greater_east_asia_war_4 }
+        swap_ideas = {
+            remove_idea = jap_greater_east_asia_war_4
+            add_idea = jap_greater_east_asia_war_5
+        }
+    }
+}

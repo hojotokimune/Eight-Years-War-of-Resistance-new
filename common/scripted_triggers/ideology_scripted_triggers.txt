@@ -1,0 +1,54 @@
+
+is_enemy_ideology = {
+	OR = {
+		AND = {
+			has_government = communism
+			ROOT = {
+				OR = {
+					has_government = fascism
+					has_government = democratic
+					has_government = neutrality #<MODDED
+				}
+			}
+		}
+		AND = {
+			has_government = democratic
+			ROOT = {
+				OR = {
+					has_government = communism
+					has_government = fascism
+				}
+			}
+		}
+		AND = {
+			has_government = fascism
+			ROOT = {
+				OR = {
+					has_government = democratic
+					has_government = communism
+					has_government = n_socialism #<MODDED
+				}
+			}
+		}
+		#MODDEDv
+		AND = {
+			has_government = neutrality #MODDED
+			ROOT = {
+				OR = {
+					has_government = communism #MODDED
+					has_government = n_socialism
+				}
+			}
+		}
+		AND = {
+			has_government = n_socialism #MODDED
+			ROOT = {
+				OR = {
+					has_government = neutrality #MODDED
+					has_government = fascism
+				}
+			}
+		}
+		#MODDED^
+	}
+}

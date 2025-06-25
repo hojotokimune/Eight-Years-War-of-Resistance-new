@@ -1,0 +1,71 @@
+统一西北三马{
+    要求二马屈服 = {
+		icon = generic_prepare_civil_war 
+		available = {	
+			}			
+        cost = 50
+		days_remove = 1
+        fire_only_once = yes 
+		ai_will_do = { 
+		    	factor = 0
+		}
+		visible = { 
+		}
+        remove_effect = {
+        XSM ={
+            set_autonomy = { target = NXM autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            set_autonomy = { target = GSM autonomy_state = autonomy_jiaozong freedom_level = 0.50  }			
+            }
+        }           
+    }			
+    统一马家军 = {
+		icon = generic_prepare_civil_war 
+		available = {
+			NXM = {
+				is_puppet_of = XSM
+			}
+			GSM = {
+				is_puppet_of = XSM
+			}			
+		}
+        cost = 100
+		days_remove = 50
+            fire_only_once = yes #仅可触发一次 yes/no
+		    ai_will_do = { #ai倾向
+		    	factor = 0
+		}
+		visible = { 
+		}
+        remove_effect = { 
+        616 = {
+            add_core_of = XSM
+        }
+        1031 = {
+            add_core_of = XSM
+        }
+        1044 = {
+            add_core_of = XSM
+        }
+        1053 = {
+            add_core_of = XSM
+        }
+        283 = {
+            add_core_of = XSM
+        }		
+		XSM = {
+               annex_country = { target = NXM }		
+               annex_country = { target = GSM }
+               annex_country = { target = XII }	
+               set_state_controller = 1031
+			   set_state_owner = 1031
+               set_state_controller = 1044
+			   set_state_owner = 1044
+               set_state_controller = 1053
+			   set_state_owner = 1053
+               set_state_controller = 283
+			   set_state_owner = 283			   
+				set_cosmetic_tag = XSM_MA		   
+					}					
+    }
+		}
+}

@@ -1,0 +1,477 @@
+
+add_namespace = roc_prc_flavor_events
+add_namespace = cw_ccw_events
+###################################
+## PRC ROC CHINESE FLAVOR EVENTS ##
+###################################
+
+country_event = { #Zhao Yiman Executed - 1936
+	id = roc_prc_flavor_events.2
+	title = roc_prc_flavor_events.2.t
+	desc = roc_prc_flavor_events.2.d
+	picture = GFX_report_event_zhao_yiman
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.2.a
+		add_war_support = 0.05
+		trigger = { tag = PRC }
+		hidden_effect = {
+			every_other_country = {
+				limit = {
+					is_literally_china = yes
+					NOT = {
+						is_ally_with = JAP
+					}
+				}
+				country_event = roc_prc_flavor_events.2
+			}
+		}
+	}
+	option = {
+		name = roc_prc_flavor_events.2.b
+		trigger = {
+			NOT = {
+				tag = PRC
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #Chiang Meets With 12-9 Students
+	id = roc_prc_flavor_events.3
+	title = roc_prc_flavor_events.3.t
+	desc = roc_prc_flavor_events.3.d
+	picture = GFX_report_event_chiang_kai_shek_speaking_kmt
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.3.a
+		swap_ideas = {
+			remove_idea = chi_december_ninth_movement_1
+			add_idea = chi_december_ninth_movement_2
+		}
+		hidden_effect = {
+			country_event = {
+				id =  roc_prc_flavor_events.4
+				days = 340
+			}
+		}
+	}
+}
+
+country_event = { #Chiang Meets With 12-9 Students #part 2
+	id = roc_prc_flavor_events.4
+	title = roc_prc_flavor_events.4.t
+	desc = roc_prc_flavor_events.4.d
+	picture = GFX_report_event_chiang_speech
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.4.a
+		remove_ideas = chi_december_ninth_movement_2
+		add_timed_idea = {
+			idea = chi_december_ninth_movement_3
+			days = 180
+		}
+		add_timed_idea = {
+			idea = chi_martial_law_idea_eywor
+			days = 180
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #PRC sends Zhou to CHI
+	id = roc_prc_flavor_events.5
+	title = roc_prc_flavor_events.5.t
+	desc = roc_prc_flavor_events.5.d
+	picture = GFX_report_event_zhou
+	
+	immediate = {
+	}
+
+	trigger = {
+		tag = PRC
+		has_war_with = JAP
+		is_in_faction_with = CHI
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = roc_prc_flavor_events.5.a
+		effect_tooltip = {
+		    CHI = {
+				add_ideas = chi_zhou_enlai_idea_1
+			}
+		}
+		CHI = {
+			country_event = {
+				id = roc_prc_flavor_events.6
+				days = 2
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #CHI receive Zhou Enlai
+	id = roc_prc_flavor_events.6
+	title = roc_prc_flavor_events.6.t
+	desc = roc_prc_flavor_events.6.d
+	picture = GFX_report_event_zhou
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.6.a
+		add_ideas = chi_zhou_enlai_idea_1
+		hidden_effect = {
+			country_event = {
+				id = roc_prc_flavor_events.10
+				days = 10
+			}
+		}
+	}
+}
+
+country_event = { #CHI relocate Zhou to Chongqing
+	id = roc_prc_flavor_events.7
+	title = roc_prc_flavor_events.7.t
+	desc = roc_prc_flavor_events.7.d
+	picture = GFX_report_event_move_to_chongqing_1
+	
+	immediate = {
+		1035 = {
+		add_manpower = -30000
+		damage_building = { type = infrastructure damage = 2 } damage_building = { type = rail_way damage = 2 } damage_building = { type = industrial_complex damage = 2 }		
+		}			
+	}
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.7.a
+		custom_effect_tooltip = THIS_IS_HISTORICAL_TT
+		add_stability = -0.05		
+		country_event = {
+			id = roc_prc_flavor_events.8
+			days = 3
+		}
+		hidden_effect = {
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = roc_prc_flavor_events.7.b
+		add_stability = -0.05		
+		hidden_effect = {
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = { #CHI Investigate Fire, Execute Arsons
+	id = roc_prc_flavor_events.8
+	title = roc_prc_flavor_events.8.t
+	desc = roc_prc_flavor_events.8.d
+	picture = GFX_report_event_handgun_dropped
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.8.a
+		add_political_power = -25
+		add_manpower = -3
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #CHI - Zhou Enlai wants to create New China Daily
+	id = roc_prc_flavor_events.10
+	title = roc_prc_flavor_events.10.t
+	desc = roc_prc_flavor_events.10.d
+	picture = GFX_report_event_zhou_enlai_w_others
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.10.a
+		custom_effect_tooltip = THIS_IS_HISTORICAL_TT
+		add_political_power = 50
+		add_war_support = 0.1
+		if = {
+			limit = {
+				has_idea = chi_zhou_enlai_idea_2
+			}
+			swap_ideas = {
+				remove_idea = chi_zhou_enlai_idea_2
+				add_idea = chi_zhou_enlai_idea_3
+			}
+		}
+		if = {
+			limit = {
+				has_idea = chi_zhou_enlai_idea_1
+			}
+			swap_ideas = {
+				remove_idea = chi_zhou_enlai_idea_1
+				add_idea = chi_zhou_enlai_idea_2
+			}
+		}
+		hidden_effect = {
+		}
+		ai_chance = {
+			base = 100
+		}
+	}
+	option = {
+		name = roc_prc_flavor_events.10.b
+		add_political_power = -40
+		add_stability = 0.05
+		add_war_support = -0.1
+		hidden_effect = {
+		}
+		ai_chance = {
+			base = 0
+		}
+	}
+}
+
+country_event = { #Chiang defends himself early january
+	id = roc_prc_flavor_events.13
+	title = roc_prc_flavor_events.13.t
+	desc = roc_prc_flavor_events.13.d
+	picture = GFX_report_event_chiang_kai_shek_speech_alt
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = roc_prc_flavor_events.13.a
+		add_political_power = -10
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #Wuhan Strategy
+	id = roc_prc_flavor_events.19
+	title = roc_prc_flavor_events.19.t
+	desc = roc_prc_flavor_events.19.d
+	picture = GFX_report_event_chiang_kai_shek_with_officers
+	
+	immediate = {
+	}
+
+	trigger = {
+		tag = CHI
+		has_war_with = JAP
+		1034 = {
+			is_owned_by = ROOT
+			NOT = { is_fully_controlled_by = ROOT }
+			any_neighbor_state = {
+				controller = { has_war_with = ROOT }
+			}
+		}
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = roc_prc_flavor_events.19.a
+		1034 = {
+			add_dynamic_modifier = {
+				modifier = chi_wuhan_strategy
+				scope = CHI
+				days = 138
+			}
+		}
+		hidden_effect = {		
+		}
+	}
+}
+
+country_event = { #Chiang Orders Student Armies
+	id = roc_prc_flavor_events.20
+	title = roc_prc_flavor_events.20.t
+	desc = roc_prc_flavor_events.20.d
+	picture = GFX_report_event_chiang_kai_shek_looking_at_map
+	
+	immediate = {
+	}
+
+	trigger = {
+		tag = CHI
+		has_war_with = JAP
+		date > 1938.10.1
+		has_country_leader = {
+			character = CHI_chiang_kai_shek
+			ruling_only = yes
+		}
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = roc_prc_flavor_events.20.a
+		add_ideas = CHI_student_army
+		add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 3500
+			producer = CHI
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #Chiang Orders National Mobilization
+	id = roc_prc_flavor_events.21
+	title = roc_prc_flavor_events.21.t
+	desc = roc_prc_flavor_events.21.d
+	picture = GFX_report_event_chiang_kai_shek_speech_alt
+	
+	immediate = {
+		hidden_effect = {
+			scoped_play_song = EYWOR_CKS_General_Mobilization
+		}
+	}
+
+	trigger = {
+		tag = CHI
+		has_war_with = JAP
+		date > 1939.4.9
+		has_country_leader = {
+			character = CHI_chiang_kai_shek
+			ruling_only = yes
+		}
+	}
+
+	is_triggered_only = no
+	fire_only_once = yes
+
+	option = {
+		name = roc_prc_flavor_events.21.a
+		add_political_power = 25
+		add_war_support = 0.05
+		add_ideas = CHI_chinese_national_mobilization
+		hidden_effect = {
+		}
+	}
+}
+country_event = { #Destroying Industiral Site - backfire
+	id = cw_ccw_events.22
+	title = cw_ccw_events.22.t
+	desc = cw_ccw_events.22.d
+	picture = GFX_report_event_worker_protests
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_ccw_events.22.a
+		add_political_power = -250
+		add_stability = -0.2
+		add_war_support = -0.25
+		every_controlled_state = {
+			limit = {
+				is_controlled_by = ROOT
+				NOT = {
+					state = 524
+				}
+			}
+			damage_building = {
+				type = infrastructure
+    			damage = 2
+			}
+			damage_building = {
+				type = arms_factory
+    			damage = 2
+			}
+			damage_building = {
+				type = industrial_complex
+    			damage = 2
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}
+
+country_event = { #Destroying Industiral Site - success
+	id = cw_ccw_events.23
+	title = cw_ccw_events.23.t
+	desc = cw_ccw_events.23.d
+	picture = GFX_report_event_generic_construction_site
+	
+	immediate = {
+	}
+
+	is_triggered_only = yes
+
+	option = {
+		name = cw_ccw_events.23.a
+		add_stability = 0.1
+		add_war_support = 0.1
+		add_political_power = 125
+		every_controlled_state = {
+			limit = {
+				is_controlled_by = ROOT
+				NOT = {
+					state = 524
+				}
+			}
+			damage_building = {
+				type = infrastructure
+    			damage = 5
+			}
+			damage_building = {
+				type = arms_factory
+    			damage = 8
+			}
+			damage_building = {
+				type = industrial_complex
+    			damage = 5
+			}
+		}
+		hidden_effect = {
+		}
+	}
+}

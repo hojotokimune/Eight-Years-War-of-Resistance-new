@@ -1,0 +1,1354 @@
+
+PRC_production = {
+	enable = {
+	    tag = PRC
+    }
+
+	abort = {
+		always = no
+	}
+
+    ai_strategy = {
+		type = equipment_production_min_factories
+		id = infantry
+		value = 1 #MODDED
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 110
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 30
+	}
+
+	ai_strategy = {
+		type = equipment_production_min_factories
+		id = artillery
+		value = 1
+	}
+}
+
+PRC_product_if_u_have_weapon = {
+	enable = {
+	    tag = PRC
+        has_equipment = {
+            infantry_equipment > 875
+        }
+		check_variable = { This.num_battalions < 1001 }
+		has_manpower > 10000
+		has_war_with = JAP
+		num_of_military_factories < 6
+    }
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+        type = force_build_armies
+        value = 800
+	}
+    
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 300
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 200
+	}
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -500
+	}
+}
+
+PRC_product_if_u_have_weapon_2 = {
+	enable = {
+	    tag = PRC
+        has_equipment = {
+            infantry_equipment > 875
+        }
+		check_variable = { this.num_battalions < 1001 }
+		has_manpower > 10000
+		has_war_with = JAP
+		num_of_military_factories > 6
+    }
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+        type = force_build_armies
+        value = 5000
+	}
+    
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 15000
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 150
+	}
+
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = -1500
+	}
+}
+
+PRC_no_tanks = {
+	enable = {
+	    tag = PRC
+        NOT = {
+			OR = {
+				is_major = yes
+				#controls_state = 608
+				OR = {
+					has_equipment = { light_tank_chassis > 0 }
+					has_equipment = { medium_tank_chassis > 0 }
+					has_equipment = { heavy_tank_chassis > 0 }
+					has_equipment = { modern_tank_chassis > 0 }
+				}
+			}
+		}	
+    }
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -9999 #MODDED
+	}
+}
+
+PRC_lets_not_help_kmt = {
+	enable = {
+	    tag = PRC
+        has_war_with = JAP
+    }
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = support
+		id = "CHI"
+		value = -2000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "CHI"
+		value = -5000
+	}
+}
+
+PRC_lets_not_rush_kmt = {
+	enable = {
+	    tag = PRC
+        has_war_with = CHI
+        has_global_flag = CHI_no_longer_united_flag
+	    CHI = {
+		    casualties_k < 500
+	    }
+	    CHI = { is_ai = no }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "CHI"
+		value = -1000
+	}
+    
+	ai_strategy = {
+		type = front_control
+
+		tag = CHI
+
+		ratio = 0.8
+
+		priority = 300
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+PRC_lets_not_rush_kmt_2 = {
+	enable = {
+	    tag = PRC
+        has_war_with = CHI
+        has_global_flag = CHI_no_longer_united_flag
+	    CHI = {
+		    casualties_k > 500
+	    }
+	    CHI = {
+		    casualties_k < 1000
+	    }
+	    CHI = { is_ai = no }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "CHI"
+		value = -700
+	}
+    
+	ai_strategy = {
+		type = front_control
+
+		tag = CHI
+
+		ratio = 0.5
+
+		priority = 300
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+PRC_lets_not_rush_kmt_3 = {
+	enable = {
+	    tag = PRC
+        has_war_with = CHI
+        has_global_flag = CHI_no_longer_united_flag
+	    CHI = {
+		    casualties_k > 1000
+	    }
+	    CHI = {
+		    casualties_k < 1500
+	    }
+	    CHI = { is_ai = no }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "CHI"
+		value = -300
+	}
+
+    ai_strategy = {
+		type = front_control
+
+		tag = CHI
+
+		ratio = 0.3
+
+		priority = 300
+		ordertype = front
+		execution_type = careful
+		execute_order = yes
+	}
+}
+
+PRC_lets_not_rush_kmt_4 = { 
+	enable = {
+	    tag = PRC
+        has_war_with = CHI
+        has_global_flag = CHI_no_longer_united_flag
+	    CHI = {
+		    casualties_k > 1500
+	    }
+	    CHI = { is_ai = no }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "CHI"
+		value = 2
+	}
+}
+
+PRC_kill_roc_already = { 
+	enable = {
+	   tag = PRC
+       has_war_with = CHI
+       has_global_flag = CHI_no_longer_united_flag
+	   controls_state = 716
+	   controls_state = 608
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "CHI"
+		value = 3500
+	}
+}
+
+PRC_lets_not_waste_armies = {
+	enable = {
+	    tag = PRC
+        has_war_with = event_target:WTT_current_china_leader
+        date > 1940.1.1
+	    NOT = { has_war_with = SOV }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = garrison
+		value = -6000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SOV"
+		value = 9999
+	} 
+	ai_strategy = {
+		type = ignore
+		id = "MON"
+		value = 9999
+	} 
+	ai_strategy = {
+		type = ignore
+		id = "KOR"
+		value = 9999
+	} 
+	ai_strategy = {
+		type = ignore
+		id = "DPR"
+		value = 9999
+	} 
+	ai_strategy = {
+		type = spare_unit_factor
+		value = -4500
+	}
+    ai_strategy = {
+		type = prepare_for_war
+		id = "SOV"
+		value = -9999
+	} 
+    ai_strategy = {
+		type = prepare_for_war
+		id = "MON"
+		value = -9999
+	} 
+    ai_strategy = {
+		type = prepare_for_war
+		id = "KOR"
+		value = -9999
+	} 
+	ai_strategy = {
+		type = prepare_for_war
+		id = "DPR"
+		value = -9999
+	} 
+}
+
+Soviet_bloc_help_mao = {
+	enable = {
+	    has_government = communism
+		NOT = { has_war_with = PRC }
+	    #has_global_flag = CHI_no_longer_united_flag
+        date > 1940.1.1
+	    NOT = { has_war_with = GER }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = PRC
+		value = 8000
+	}
+    ai_strategy = {
+		type = support
+		id = PRC
+		value = 8000
+	}
+}
+
+Western_doesnt_like_mao = {
+	enable = {
+		OR = {
+			tag = ENG
+			tag = FRA
+            tag = NZL
+			tag = AST
+		    tag = CAN
+            tag = IRE
+            tag = USA
+            tag = LIT
+            tag = LAT
+            tag = EST
+            tag = SAU
+            tag = PAR
+            tag = NOR
+            tag = DEN
+		}
+	    PRC = { has_government = communism }
+    }
+
+	abort_when_not_enabled = yes
+       
+    ai_strategy = {
+		type = diplo_action_desire
+		id = "PRC"
+		target = guarantee
+		value = -5000
+	}
+    ai_strategy = {
+		type = diplo_action_desire
+		id = PRC
+		target = military_access
+		value = -5000
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = PRC
+		target = docking_rights
+		value = -5000
+	}
+}
+
+Mon_dont_send_volunteers = {
+	allowed = {
+	    OR = {
+		    tag = MON
+			tag = PRC
+	    }
+	}
+	enable = {
+	    has_government = communism
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PRC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "PLM"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "XIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "GUD"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XSM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GSM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NXM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EGM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "TNG"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "HMI"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ATM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KRS"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KHR"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NEA"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHD"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHC"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XIA"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SUY"
+		value = -5000
+	}
+}
+
+SOV_dont_send_volunteers_when_sik_civil_war = {
+	allowed = {
+	    tag = SOV
+	}
+	enable = {
+        OR = {
+	        SIK = { has_civil_war = yes }
+	        SIK = { NOT = { has_government = communism } }
+	    }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PRC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "PLM"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "XIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "GUD"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SUY"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KRS"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ATM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KHR"
+		value = -5000
+	}
+}
+
+SOV_dont_send_help_to_KMT_when_chinese_civil_war_going = {
+	enable = {
+	    has_government = communism 
+	    event_target:WTT_communist_china = { has_war_with = event_target:WTT_current_china_leader }
+	    date > 1940.1.1
+	}
+	abort_when_not_enabled = yes
+    
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "PLM"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "XIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "GUD"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "TNG"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "HMI"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_volunteers_desire
+		id = "KHR"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "KRS"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ATM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SUY"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "CHI"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SHX"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "PLM"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "XIK"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "YUN"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "GXC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "GUD"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SIC"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "TNG"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "HMI"
+		value = -5000
+	}
+    ai_strategy = {
+		type = send_lend_lease_desire
+		id = "KHR"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "KRS"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "ATM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = "SUY"
+		value = -5000
+	}
+}
+
+PRC_lets_not_attack_shx_plm_early = {
+	enable = {
+	    tag = PRC
+        has_war_with = event_target:WTT_current_china_leader
+        has_war_with = SUY
+		has_war_with = SHX 
+	    NOT = { controls_state = 716 }
+		NOT = { controls_state = 1015 }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "SHX"
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = consider_weak
+		id = "SUY"
+		value = -150
+	}
+    
+	ai_strategy = {
+		type = front_control
+
+		tag = SHX
+
+		ratio = 0.75
+
+		priority = 300
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+
+PRC_lets_not_attack_shx_plm_early = {
+	enable = {
+	    tag = PRC
+        has_war_with = event_target:WTT_current_china_leader
+        has_war_with = PLM
+		has_war_with = SUY
+	    NOT = { controls_state = 716 }
+		NOT = { controls_state = 608 }
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = consider_weak
+		id = "SHX"
+		value = -1000
+	}
+	
+	ai_strategy = {
+		type = consider_weak
+		id = "SUY"
+		value = -150
+	}
+    
+	ai_strategy = {
+		type = front_control
+
+		tag = SHX
+
+		ratio = 0.75
+
+		priority = 300
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+PRC_dont_lend_lease = { #except for shc, nea
+	enable = {
+	    tag = PRC
+		has_war_with = JAP
+        any_allied_country = {
+			is_literally_china = yes
+			has_war_with = JAP
+		}
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = CHI
+		value = -10000
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = PLM
+		value = -10000
+	}
+    
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SHX
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = HPC
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SHD
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = XSM
+		value = -10000
+	}
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = GSM
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = NXM
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = EGM
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = GUD
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = GXC
+		value = -10000
+	}
+	
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = XIK
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SIC
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SIK
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = SUY
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = TNG
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = KHR
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = HMI
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = KRS
+		value = -10000
+	}
+
+	ai_strategy = {
+		type = send_lend_lease_desire
+		id = ATM
+		value = -10000
+	}
+}
+
+mao_west_conquest_EGM = {
+	enable = {
+		tag = PRC
+		has_war_with = EGM
+		has_active_mission = PRC_attack_ma_hongbin_mission
+		has_completed_focus = PRC_contact_Zhang_Xueliang_focus
+		1030 = {
+			has_state_flag = I_choose_this_state_to_DMZ
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = spare_unit_factor
+		value = -7000
+	}
+	ai_strategy = {
+		type = garrison
+		value = -9999
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = "EGM"
+		value = 7999
+	}
+	ai_strategy = {
+		type = conquer
+		id = "EGM"
+		value = 9999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "EGM"
+		value = 9999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "CHI"
+		value = -9999
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CHI"
+		value = 9999
+	}
+    ai_strategy = {
+		type = conquer
+		id = "CHI"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "CHI"
+		value = -9999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "NEA"
+		value = -9999
+	}
+	ai_strategy = {
+		type = ignore
+		id = "NEA"
+		value = 9999
+	}
+	ai_strategy = {
+		type = conquer
+		id = "NEA"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "NEA"
+		value = -9999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SHX"
+		value = -9999
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SHX"
+		value = 9999
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SHX"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "SHX"
+		value = -9999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SUY"
+		value = -9999
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SUY"
+		value = 9999
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SUY"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "SUY"
+		value = -9999
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "SHC"
+		value = -9999
+	}
+	ai_strategy = {
+		type = ignore
+		id = "SHC"
+		value = 9999
+	}
+	ai_strategy = {
+		type = conquer
+		id = "SHC"
+		value = -9999
+	}
+	ai_strategy = {
+		type = invade
+		id = "SHC"
+		value = -9999
+	}
+	#ai_strategy = {
+	#	type = invade
+	#	id = "NXM"
+	#	value = 3999
+	#}
+	#ai_strategy = {
+	#	type = consider_weak
+	#	id = "NXM"
+	#	value = 3999
+	#}
+	#used for increasing/decreasing unit requests for invasions or fronts
+	ai_strategy = {
+		# use one of them
+	 	type = front_unit_request
+	 	#type = invasion_unit_request
+
+		#invasions will check invasion target, fronts will check provinces at front
+
+		#tag = PRC 				# province of a specific country
+		#state = 42 				# province on a state
+		#strategic_region = 65	# province on a strategic region
+		area = asia			# province on a specific ai area
+		country_trigger = {
+			tag = EGM
+		} 	# a trigger to check agaisnt a specific country. scope is enemy country from scope is our country
+		state_trigger = { 
+			OR = {
+				state = 1029
+				state = 1031
+				state = 1044
+			}
+		} 	# a trigger to check agaisnt a state. scope is state. from scope is enemy country from.from scope is our country
+
+		value = 9999				# will be added as a factor over regular requests
+	}
+}
+
+PRC_retreat_from_shaanxi = {
+	enable = {
+		tag = PRC
+		has_global_flag = CHI_no_longer_united_flag
+		any_enemy_country = {
+			is_literally_china = yes
+			num_of_controlled_states > 15
+		}
+		OR = {
+			NOT = {
+				controls_state = 1029
+			}
+			NOT = {
+				has_full_control_of_state = 1030
+			}
+			AND = {
+				NOT = {
+					controls_state = 608
+				}
+				NOT = {
+					has_full_control_of_state = 1020
+				}
+				NOT = {
+					has_full_control_of_state = 611
+				}
+			}
+		}
+		any_owned_state = {
+			is_controlled_by = ROOT
+			is_in_home_area = yes
+			OR = {
+				region = 143
+				region = 155
+				region = 243
+				region = 242
+			}
+		}
+		count_triggers = {
+			amount > 4
+			controls_state = 715
+			controls_state = 716
+			controls_state = 1008
+			controls_state = 328
+			controls_state = 1007
+			controls_state = 1011
+			controls_state = 714
+			controls_state = 717
+			controls_state = 1005
+			controls_state = 610
+			controls_state = 745
+			controls_state = 761
+			controls_state = 608
+			controls_state = 609
+			controls_state = 611
+			controls_state = 614
+			controls_state = 621
+			controls_state = 746
+			controls_state = 1014
+			controls_state = 615
+			controls_state = 1017
+			controls_state = 1027
+			controls_state = 1013
+			#controls_state = 622
+			controls_state = 616
+			controls_state = 612
+			#controls_state = 1029
+			#controls_state = 744
+			#controls_state = 1031
+			controls_state = 1012
+			controls_state = 1016
+			controls_state = 1044
+			controls_state = 991
+			controls_state = 1019
+			controls_state = 1020
+			controls_state = 998
+		}
+		1030 = {
+			is_controlled_by = ROOT
+			is_capital = yes
+		}
+		always = no ###
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.5
+
+		order_id = 2000
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+			715
+			716
+			1008
+			328
+			1007
+			1011
+			714
+			717
+			1005
+			610
+			745
+			761
+			608
+			609
+			611
+			614
+			621
+			746
+			1014
+			615
+			1017
+			1027
+			1013
+			#622
+			616
+			612
+			#1029
+			#744
+			#1031
+			1012
+			1016
+			1044
+			991
+			1019
+			1020
+			998
+ 		}
+	
+		# ai areas that the orders will use these buffers in
+ 		#area = europe
+ 		area = asia
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = no
+ 		subtract_fronts_from_need = no
+ 	}
+}
+
+PRC_dont_lend_lease = { #except for shc, nea
+	enable = {
+	    tag = event_target:WTT_communist_china
+		has_global_flag = CHI_no_longer_united_flag
+		any_enemy_country = {
+			is_literally_china = yes
+			num_of_controlled_states > 14
+		}
+		any_neighbor_country = {
+			OR = {
+				tag = SOV
+				tag = KOR
+				tag = DPR
+				tag = MON
+			}
+			has_government = communism
+		}
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = diplo_action_desire
+		id = KOR
+		target = military_access
+		value = 5000
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SOV
+		target = military_access
+		value = 5000
+	}
+
+	ai_strategy = {
+		type = diplo_action_desire
+		id = MON
+		target = military_access
+		value = 5000
+	}
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = DPR
+		target = military_access
+		value = 5000
+	}
+}

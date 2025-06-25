@@ -1,0 +1,478 @@
+建立少数民族自治区政府 = {
+    建立广西壮族自治区 = {
+		icon = POL_looming_peasants_strike
+		available = {	
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }		
+			has_government = communism
+            1039 = { is_controlled_by = PRC }
+            1038 = { is_controlled_by = PRC }			
+            594 = { is_controlled_by = PRC }
+            599 = { is_controlled_by = PRC }
+            1066 = { is_controlled_by = PRC }					
+		}
+        cost = 50
+        fire_only_once = yes
+        days_remove = 50
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {	
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }		
+			has_government = communism		
+            1039 = { is_controlled_by = PRC }
+            1038 = { is_controlled_by = PRC }			
+            594 = { is_controlled_by = PRC }
+            599 = { is_controlled_by = PRC }
+            1066 = { is_controlled_by = PRC }
+		}
+        remove_effect = { hidden_effect = { every_subject_country = { inherit_technology = GXC } } 
+        1039 = {
+            add_core_of = GXC
+        }
+        1038 = {
+            add_core_of = GXC
+        }
+        594 = {
+            add_core_of = GXC
+        }
+        599 = {
+            add_core_of = GXC
+        }
+        1066 = {
+            add_core_of = GXC
+        }		
+        GXC = {
+            give_military_access = PRC #给共和国军通
+			transfer_state = 1039
+			transfer_state = 1038			
+			transfer_state = 594
+			transfer_state = 599			
+            transfer_state = 1066				
+				hidden_effect = {
+					load_focus_tree = { tree = generic_focus keep_completed = no }
+					every_army_leader = { retire = yes }
+					every_unit_leader = { retire = yes }
+					every_character = { retire = yes }
+				remove_ideas = CHI_fractured_administration_idea				
+				remove_ideas = CHI_fractured_administration_idea_1	
+				remove_ideas = CHI_fractured_administration_idea_2
+				remove_ideas = CHI_fractured_administration_idea_3	
+				remove_ideas = CHI_warlord_state_idea
+				remove_ideas = CHI_warlord_state_idea_2	
+				remove_ideas = CHI_warlord_state_idea_cav
+				remove_ideas = CHI_warlord_state_idea_mnt				
+				remove_ideas = unbalanced_industry
+				remove_ideas = incompetent_heavy_industry
+				remove_ideas = CHI_incompetent_officers
+				remove_ideas = incompetent_heavy_industry						
+				remove_ideas = zhongguoshiwu
+				remove_ideas = GXC_Iron_will_1				
+				remove_ideas = GXC_Iron_will				
+				remove_ideas = GXC_Iron_will_2
+				remove_ideas = GXC_Iron_will_3				
+				remove_ideas = GXC_Guangxi_economy
+				remove_ideas = GXC_Japanese_consultant				
+				remove_ideas = GXC_Baojia_system
+				remove_ideas = iliterate_population
+				remove_ideas = no_proper_equipment_design			
+				remove_ideas = CHI_whampoa_military_academy				
+				remove_ideas = GXC_New_guangxi_clique_independence
+				remove_ideas = GXC_New_guangxi_clique			
+				remove_ideas = PRC_government_corruption	
+				remove_ideas = GXC_org	
+				remove_ideas = GXC_old_officals						
+				remove_ideas = CHI_civil_war_debuff_4
+				remove_ideas = agrarion_socitey_generic				
+				remove_ideas = agrarion_socitey_generic_1				
+				remove_ideas = agrarion_socitey_generic_2				
+				remove_ideas = agrarion_socitey_generic_3				
+				remove_ideas = CHI_civil_war_debuff	
+				remove_ideas = CHI_civil_war_debuff_1	
+				remove_ideas = CHI_civil_war_debuff_2
+				remove_ideas = CHI_civil_war_debuff_3
+				remove_ideas = CHI_civil_war_debuff_5
+				remove_ideas = GXC_New_guangxi_clique				
+				remove_ideas = GXC_New_guangxi_clique_com				
+				set_cosmetic_tag = GXC_zizhiqu					
+				}
+                add_ideas = agrarian_reform_idea_PRC_tudigaigefa	
+			set_party_name = {
+					ideology = communism
+					name = "广西壮族自治区人民政府"
+					long_name = "广西壮族自治区人民政府"
+				}
+			create_country_leader = {
+                name = "韦国清"
+                desc = "POLITICS_CHENCHENG_DESC"
+                picture = "gfx/leaders/PRC/weiguoqing.jpg"
+                expire = "1965.1.1"
+                ideology = marxism
+                traits = { baizhanlaobing 
+                }
+            }
+            set_politics = {   #设置意识形态
+                ruling_party = communism
+                #last_election = "1932.5.1"   #上次大选
+                #election_frequency = 48    #选举频率
+                elections_allowed = yes   
+            }			
+			every_state = {
+				limit = { or = { has_state_flag = original_sik_state is_owned_by = event_target:xinjiangbingtuan is_owned_by = GXC } }
+				add_core_of = root
+				add_extra_state_shared_building_slots = 5
+				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_2 scope = event_target:WTT_communist_china }
+				add_state_modifier = {
+				modifier = {
+							local_supplies = 0.15
+							}	
+				}	
+			}	
+            set_capital = {
+                state = 594
+                remember_old_capital = no
+            }
+		}
+				set_autonomy = { target = GXC autonomy_state = autonomy_military_region freedom_level = 0.50 }    
+		}
+
+    }
+
+    建立内蒙古自治区 = {
+		icon = POL_looming_peasants_strike
+		available = {
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }			
+			has_government = communism
+            761 = { is_controlled_by = PRC }
+            1011 = { is_controlled_by = PRC }	
+            715 = { is_controlled_by = PRC }			
+			1009 = { is_controlled_by = PRC }
+			1012 = { is_controlled_by = PRC }
+			1062 = { is_controlled_by = PRC }
+			612 = { is_controlled_by = PRC }
+			1020 = { is_controlled_by = PRC }
+			1014 = { is_controlled_by = PRC }
+			621 = { is_controlled_by = PRC }
+			1019 = { is_controlled_by = PRC }
+			746 = { is_controlled_by = PRC }
+		}
+        cost = 50
+        fire_only_once = yes
+        days_remove = 50
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }			
+			has_government = communism
+            761 = { is_controlled_by = PRC }
+            1011 = { is_controlled_by = PRC }	
+            715 = { is_controlled_by = PRC }			
+			1009 = { is_controlled_by = PRC }
+			1012 = { is_controlled_by = PRC }
+			1062 = { is_controlled_by = PRC }
+			612 = { is_controlled_by = PRC }
+			1020 = { is_controlled_by = PRC }
+			1014 = { is_controlled_by = PRC }
+			621 = { is_controlled_by = PRC }
+			1019 = { is_controlled_by = PRC }
+			746 = { is_controlled_by = PRC }
+		}		
+        remove_effect = { hidden_effect = { every_subject_country = { inherit_technology = SUY } }
+        761 = {
+            add_core_of = SUY
+        }
+        1020 = {
+            add_core_of = SUY
+        }
+	    1014 = {
+            add_core_of = SUY
+        }	
+	    621 = {
+            add_core_of = SUY
+        }		
+        1011 = {
+            add_core_of = SUY
+        }
+        715 = {
+            add_core_of = SUY
+        }
+        599 = {
+            add_core_of = SUY
+        }
+        1009 = {
+            add_core_of = SUY
+        }
+        1012 = {
+            add_core_of = SUY
+        }
+        1062 = {
+            add_core_of = SUY
+        }
+        612 = {
+            add_core_of = SUY
+        }
+        1019 = {
+            add_core_of = SUY
+        }
+        746 = {
+            add_core_of = SUY
+        }		
+        611 = {
+            remove_core_of = SUY
+        }
+        SUY ={
+				hidden_effect = {
+					load_focus_tree = { tree = generic_focus keep_completed = no }
+					every_army_leader = { retire = yes }
+					every_unit_leader = { retire = yes }
+					every_character = { retire = yes }
+				remove_ideas = CHI_fractured_administration_idea				
+				remove_ideas = CHI_fractured_administration_idea_1	
+				remove_ideas = CHI_fractured_administration_idea_2
+				remove_ideas = CHI_fractured_administration_idea_3	
+				remove_ideas = CHI_warlord_state_idea
+				remove_ideas = CHI_warlord_state_idea_2	
+				remove_ideas = CHI_warlord_state_idea_cav
+				remove_ideas = CHI_warlord_state_idea_mnt				
+				remove_ideas = KMT_Strategic_initiative				
+				remove_ideas = CHI_fractured_administration_idea_1
+				remove_ideas = unbalanced_industry
+				remove_ideas = incompetent_heavy_industry
+				remove_ideas = CHI_incompetent_officers
+				remove_ideas = incompetent_heavy_industry					
+				remove_ideas = zhongguoshiwu			
+				remove_ideas = iliterate_population
+				remove_ideas = no_proper_equipment_design			
+				remove_ideas = CHI_whampoa_military_academy
+				remove_ideas = PRC_government_corruption	
+				remove_ideas = PRC_govemment_corruption	
+				remove_ideas = agrarion_socitey_generic				
+				remove_ideas = agrarion_socitey_generic_1				
+				remove_ideas = agrarion_socitey_generic_2				
+				remove_ideas = agrarion_socitey_generic_3	
+				set_cosmetic_tag = SUY_zizhiqu				
+				}
+            give_military_access = PRC #给共和国军通
+			transfer_state = 761
+			transfer_state = 1011			
+			transfer_state = 715
+			transfer_state = 1014			
+            transfer_state = 1009
+            transfer_state = 1012
+            transfer_state = 612
+            transfer_state = 1019
+            transfer_state = 746
+            transfer_state = 1020
+            transfer_state = 621
+            transfer_state = 1062						
+                add_ideas = agrarian_reform_idea_PRC_tudigaigefa			
+                add_ideas = MON_nomadic					
+			set_party_name = {
+					ideology = communism
+					name = "内蒙古自治区人民政府"
+					long_name = "内蒙古自治区人民政府"
+				}			
+            create_country_leader = {
+                name = "乌兰夫"
+                desc = "POLITICS_LIUZHI_DESC"
+                picture = "gfx/leaders/PRC/wulanfu.png"
+                expire = "1965.1.1"
+                ideology = marxism
+                traits = { baizhanlaobing
+                }
+            }
+            set_politics = {   #设置意识形态
+                ruling_party = communism
+                #last_election = "1932.5.1"   #上次大选
+                #election_frequency = 48    #选举频率
+                elections_allowed = yes   
+            }			
+			every_state = {
+				limit = { or = { has_state_flag = original_sik_state is_owned_by = event_target:xinjiangbingtuan is_owned_by = SUY } }
+				add_core_of = root
+				add_extra_state_shared_building_slots = 5
+				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_2 scope = event_target:WTT_communist_china }
+				add_state_modifier = {
+				modifier = {
+							local_supplies = 0.15
+							}	
+				}	
+			}	
+            set_province_name = {
+                                 id = 10424
+                                 name = "呼和浩特"
+                               }			
+            set_capital = {
+                state = 1020
+                remember_old_capital = no
+            }
+        }      
+				set_autonomy = { target = SUY autonomy_state = autonomy_military_region freedom_level = 0.50 }        
+		}
+
+    }
+    建立宁夏回族自治区 = {
+		icon = POL_looming_peasants_strike 
+		available = {
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }			
+			has_government = communism
+			616 = { is_controlled_by = PRC }
+		}
+        cost = 50
+        fire_only_once = yes
+        days_remove = 50
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }			
+			has_government = communism
+			616 = { is_controlled_by = PRC }
+		}
+        remove_effect = { hidden_effect = { every_subject_country = { inherit_technology = NXM } }
+        616 = {
+            add_core_of = NXM
+        }
+        NXM ={
+				hidden_effect = {
+					load_focus_tree = { tree = generic_focus keep_completed = no }
+					every_army_leader = { retire = yes }
+					every_unit_leader = { retire = yes }
+					every_character = { retire = yes }
+				remove_ideas = CHI_fractured_administration_idea				
+				remove_ideas = CHI_fractured_administration_idea_1	
+				remove_ideas = CHI_fractured_administration_idea_2
+				remove_ideas = CHI_fractured_administration_idea_3	
+				remove_ideas = CHI_warlord_state_idea
+				remove_ideas = CHI_warlord_state_idea_2	
+				remove_ideas = CHI_warlord_state_idea_cav
+				remove_ideas = CHI_warlord_state_idea_mnt				
+				remove_ideas = CHI_fractured_administration_idea_1
+				remove_ideas = unbalanced_industry
+				remove_ideas = incompetent_heavy_industry
+				remove_ideas = CHI_incompetent_officers
+				remove_ideas = incompetent_heavy_industry					
+				remove_ideas = zhongguoshiwu			
+				remove_ideas = iliterate_population
+				remove_ideas = no_proper_equipment_design			
+				remove_ideas = CHI_whampoa_military_academy
+				remove_ideas = xsm_majiajun
+				remove_ideas = PRC_government_corruption
+				remove_ideas = agrarion_socitey_generic				
+				remove_ideas = agrarion_socitey_generic_1				
+				remove_ideas = agrarion_socitey_generic_2				
+				remove_ideas = agrarion_socitey_generic_3				
+				set_cosmetic_tag = NXM_zizhiqu					
+				}
+                give_military_access = PRC #给共和国军通
+			    transfer_state = 616						
+                add_ideas = agrarian_reform_idea_PRC_tudigaigefa
+			set_party_name = {
+					ideology = communism
+					name = "宁夏回族自治区人民政府"
+					long_name = "宁夏回族自治区人民政府"
+				}			
+            create_country_leader = {
+                name = "刘格平"
+                desc = "POLITICS_HUZONGNAN_DESC"
+                picture = "gfx/leaders/PRC/liugeping.png"
+                expire = "1965.1.1"
+                ideology = marxism
+                traits = { national_integralist 
+                }
+            }
+            set_politics = {   #设置意识形态
+                ruling_party = communism
+                #last_election = "1932.5.1"   #上次大选
+                #election_frequency = 48    #选举频率
+                elections_allowed = yes   
+            }			
+			every_state = {
+				limit = { or = { has_state_flag = original_sik_state is_owned_by = event_target:xinjiangbingtuan is_owned_by = NXM } }
+				add_core_of = root
+				add_extra_state_shared_building_slots = 5
+				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_2 scope = event_target:WTT_communist_china }
+				add_state_modifier = {
+				modifier = {
+							local_supplies = 0.15
+							}	
+				}		
+			}
+            set_capital = {
+                state = 616
+                remember_old_capital = no
+            }    
+    }
+				set_autonomy = { target = NXM autonomy_state = autonomy_military_region freedom_level = 0.50 }    
+}
+	}
+    整合民族自治区 = {
+		icon = POL_looming_peasants_strike 
+		available = {
+			GXC = {
+				is_puppet_of = PRC
+			}
+			SUY = {
+				is_puppet_of = PRC
+			}
+			NXM = {
+				is_puppet_of = PRC
+			}
+			SIK = {
+				is_puppet_of = PRC
+			}
+			TIB = {
+				is_puppet_of = PRC
+			}			
+		}
+        cost = 300
+        fire_only_once = yes
+        days_remove = 50
+		ai_will_do = {
+			factor = 100
+		}
+		visible = {
+		    OR = {
+			has_completed_focus = PRC_TIB_minzhugaige_focus	
+			has_completed_focus = PRC_TIB_minzhugaige_focus_gaizao	
+            }			
+			has_government = communism
+		}
+        remove_effect = {		
+		PRC = {
+               annex_country = { target = GXC }
+					}		
+		PRC = {
+               annex_country = { target = SUY }
+					}
+		PRC = {
+               annex_country = { target = NXM }
+					}
+		PRC = {
+               annex_country = { target = SIK }
+					}						
+		PRC = {
+               annex_country = { target = TIB }
+					}					
+}
+	}	
+}
+

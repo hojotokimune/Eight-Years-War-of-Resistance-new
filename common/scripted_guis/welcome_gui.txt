@@ -1,0 +1,22 @@
+scripted_gui = {
+	bakang_welcome = {
+		context_type = player_context
+		window_name = "bakang_welcome_container"
+		dirty = bakang_welcome
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = bakang_welcome
+		}
+
+		effects = {
+			options_button_click = {
+				clr_country_flag = bakang_welcome
+			}
+		}
+	}
+}
+

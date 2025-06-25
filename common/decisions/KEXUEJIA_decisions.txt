@@ -1,0 +1,51 @@
+
+	邀请科学家回国 = {
+	
+		发出邀请 = {
+
+			icon = generic_political_actions
+
+			available = {
+            OR = {
+                AND = {
+                    TAG = PRC
+                    OR = {
+               					CHI = {
+							num_of_controlled_states < 15
+							exists = yes
+							is_puppet = no
+							has_global_flag = roc_in_taiwan_flag
+					              } 
+                                      NOT = { country_exists = CHI } 
+                    }
+                }
+                AND = {
+                    TAG = CHI
+                    NOT = { country_exists = PRC } 
+                    every_state = {
+					limit = {
+						is_core_of = CHI
+					}
+                      NOT = {
+                        is_controlled_by = JAP
+                      }
+			}
+                }
+            }
+               }
+
+			fire_only_once = yes
+		    ai_will_do = {
+			factor = 1000
+		    }
+			visible = {
+                     always = yes
+			}
+			complete_effect = {
+            set_country_flag = Kexuejia_Yijinghuigui
+			}
+		}
+
+	}
+
+

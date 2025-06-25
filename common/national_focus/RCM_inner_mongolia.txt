@@ -1,0 +1,1322 @@
+focus_tree = {
+	id = RCM_inner_mongolia
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = PLM
+			is_inner_mongolian_tags = yes
+		}
+	}
+	
+	default = no
+	
+	continuous_focus_position = { x = 20 y = 1200 }
+
+	focus = {
+		id = PLM_maintain_autonomy
+		icon = GFX_focus_generic_horse_studs
+		x = -5
+		y = 0
+		cost = 7.15
+
+		#available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {
+			add_political_power = 120
+			add_stability = 0.05			
+		}
+	}
+
+	focus = {
+		id = PLM_follow_the_chinese
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		x = -7
+		y = 1
+		cost = 7.15
+		mutually_exclusive = { focus = PLM_contact_the_japanese }
+		prerequisite = {
+			focus = PLM_maintain_autonomy
+		}
+		#available_if_capitulated = yes
+		available = {		
+			OR = {
+				AND = {
+					is_subject = no
+					event_target:WTT_current_china_leader = {
+						exists = yes
+						is_subject = no
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				is_subject_of = event_target:WTT_current_china_leader
+				is_in_faction_with = event_target:WTT_current_china_leader
+				AND = {
+					is_subject = yes
+					overlord = {
+						is_warlord = yes
+					}
+				}
+			}
+			if = {
+				limit = {
+					is_ai = yes
+					is_historical_focus_on = yes
+					OR = {
+						tag = PLM
+						tag = ULA
+					}
+				}
+				hidden_trigger = {
+					always = no
+				}
+			}	
+		}
+		completion_reward = {		
+			if = {
+				limit = {
+					NOT = {
+						OR = {
+							tag = PLM
+							tag = ULA
+						}
+					}
+				}
+				custom_effect_tooltip = THIS_IS_HISTORICAL_TT
+			}
+			set_country_flag = cooperation_with_nationalist_flag
+			#custom_effect_tooltip = CHI_cooperation_with_the_nationalists_effect_tooltip
+			if = {
+				limit = {
+					is_subject = yes
+				}
+				OVERLORD = {
+					add_opinion_modifier = { modifier =  Nations_friendly target = ROOT }
+				}
+				else = {
+					event_target:WTT_current_china_leader = { add_opinion_modifier = { modifier = Nations_friendly target = ROOT } }
+				}
+			}
+			add_stability = 0.05
+			#PRC = { add_opinion_modifier = { modifier = RCM_cooperation_with_the_nationalists_negative target = ROOT } }
+			#add_opinion_modifier = { modifier = RCM_cooperation_with_the_nationalists_negative target = PRC }
+		}
+	}
+
+	focus = {
+		id = PLM_chinese_help
+		icon = GFX_focus_NRA
+		x = -7
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = PLM_follow_the_chinese
+			#focus = PLM_contact_the_japanese
+		}
+		#available_if_capitulated = yes
+		available = {
+			OR = {
+				AND = {
+					is_subject = no
+					event_target:WTT_current_china_leader = {
+						exists = yes
+						is_subject = no
+						NOT = {
+							has_war_with = ROOT
+						}
+					}
+				}
+				is_subject_of = event_target:WTT_current_china_leader
+				is_in_faction_with = event_target:WTT_current_china_leader
+			}	
+		}
+		completion_reward = {
+		    add_stability = 0.05			
+			if = {
+				limit = {
+                    has_war_with = JAP
+				}
+			add_ideas = man_rangribenguizigunchuqu
+			add_ideas = chi_ningsibuqu			
+						PLM = {
+			 give_military_access = CHI #给民国军通
+            set_state_controller = 746
+			set_state_owner = 746
+    }			
+			}							
+			random_owned_controlled_state = {
+				limit = {
+					#is_core_of = ROOT
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			random_owned_controlled_state = {
+				limit = {
+					#is_core_of = ROOT
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = unbalanced_industry
+				add_idea = unbalanced_industry_1
+			}
+			unlock_decision_tooltip = PLM_industry_decision
+		}
+	}
+
+	focus = {
+		id = PLM_develop_agriculture
+		icon = GFX_focus_generic_farmland
+		x = -6
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PLM_chinese_help
+		}
+		#available_if_capitulated = yes
+		available = {
+			any_owned_state = {
+				is_controlled_by = ROOT
+				is_core_of = ROOT
+				OR = {
+					has_state_category = rural
+					has_state_category = pastoral
+				}
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					OR = {
+						has_state_category = rural
+					    has_state_category = pastoral
+					}
+				}
+				set_state_category = town 
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_northwest_cav_military_academy
+		icon = GFX_goal_generic_cavalry
+		x = -8
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PLM_chinese_help
+		}
+		#available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {
+		    add_ideas = PLM_northwest_cav_military_academy
+		}
+	}
+
+	focus = {
+		id = PLM_seek_modernization
+		icon = GFX_focus_generic_modernize_industry
+		x = -5
+		y = 2
+		cost = 10
+		prerequisite = {
+			focus = PLM_follow_the_chinese
+			focus = PLM_contact_the_japanese
+		}
+		#available_if_capitulated = yes
+		available = {
+			OR = {
+				AND = {
+					has_completed_focus = PLM_follow_the_chinese
+                    OR = {
+						AND = {
+							is_subject = no
+							NOT = {
+								is_in_faction_with =JAP
+							}
+							event_target:WTT_current_china_leader = {
+								exists = yes
+								is_subject = no
+								NOT = {
+									has_war_with = ROOT
+								}
+							}
+						}
+						is_subject_of = event_target:WTT_current_china_leader
+						is_in_faction_with = event_target:WTT_current_china_leader
+						AND = {
+							is_subject = yes
+							overlord = {
+								is_warlord = yes
+							}
+						}
+					}	
+				}
+                AND = {
+					has_completed_focus = PLM_contact_the_japanese
+                    OR = {
+						AND = {
+							is_subject = no
+							NOT = {
+								is_in_faction_with = event_target:WTT_current_china_leader
+							}
+							JAP = {
+								exists = yes
+								is_subject = no
+								NOT = {
+									has_government = communism
+								}
+								NOT = {
+									has_war_with = ROOT
+								}
+								any_allied_country = {
+									tag = ECA
+									has_character = PLM_prince_demchugdongrub
+								}
+							}
+						}
+						AND = {
+							is_subject_of = JAP
+							JAP = {
+								any_allied_country = {
+									tag = ECA
+									has_character = PLM_prince_demchugdongrub
+								}
+							}
+						}
+						is_in_faction_with = JAP
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+                    controls_state = 612
+				}
+				612 = {
+					add_building_construction = {
+						type = infrastructure
+						level = 2
+						instant_build = yes
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_unite_our_league
+		icon = GFX_goal_generic_national_unity
+		x = -5
+		y = 4
+		cost = 10
+		mutually_exclusive = { focus = PLM_merge_with_de_wang }
+		prerequisite = {
+			focus = PLM_chinese_help
+			focus = PLM_japanese_help
+		}
+		#available_if_capitulated = yes
+		available = {
+			has_stability > 0.79
+		}
+		completion_reward = {
+				remove_idea = CHI_mongolian_league_banner
+				add_idea = CHI_mongolian_league_banner_2
+		}
+	}
+
+	focus = {
+		id = PLM_expansionism
+		icon = GFX_goal_generic_territory_or_war
+		x = -5
+		y = 5
+		cost = 10
+		prerequisite = {
+			focus = PLM_unite_our_league
+		}
+		#available_if_capitulated = yes
+		available = {
+			is_subject = no
+			num_of_factories > 9
+		}
+		completion_reward = {
+		    add_war_support = 0.1
+			add_state_core = 1012
+			add_state_core = 612
+			add_state_core = 1062
+			add_state_core = 1069
+			add_state_core = 1014
+			add_state_core = 621
+			add_state_core = 746
+			#add_state_core = 1062
+			add_state_core = 1069
+			add_state_core = 761
+			add_state_core = 715
+			add_state_core = 1009
+			MON = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+			}
+			TAN = {
+				every_core_state = {
+					add_core_of = ROOT
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_unite_inner_mongolia
+		icon = GFX_goal_generic_occupy_states_ongoing_war
+		x = -5
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PLM_expansionism
+		}
+		#available_if_capitulated = yes
+		available = {
+			any_core_state = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_144
+						region = 144
+					}
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_244
+						region = 244
+					}
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_155
+						region = 155
+					}
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_242
+						region = 242
+					}
+				}
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		completion_reward = {
+		    every_core_state = {
+				limit = {
+					OR = {
+						custom_trigger_tooltip = {
+							tooltip = is_in_strat_144
+							region = 144
+						}
+						custom_trigger_tooltip = {
+							tooltip = is_in_strat_244
+							region = 244
+						}
+						custom_trigger_tooltip = {
+							tooltip = is_in_strat_155
+							region = 155
+						}
+						custom_trigger_tooltip = {
+							tooltip = is_in_strat_242
+							region = 242
+						}
+					}
+					NOT = {
+						is_owned_by = ROOT
+					}
+				}
+				owner = {
+					#set_country_flag
+					country_event = {
+						id = MEN.25 hours = 12
+					}
+				}
+			}
+		}
+		bypass = {
+			all_core_state = {
+				OR = {
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_144
+						region = 144
+					}
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_244
+						region = 244
+					}
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_155
+						region = 155
+					}
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_242
+						region = 242
+					}
+				}
+				is_owned_by = ROOT
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_claim_chinese_lands
+		icon = GFX_focus_attack_china
+		x = -7
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PLM_expansionism
+		}
+		#available_if_capitulated = yes
+		available = {
+            
+		}
+		completion_reward = {
+		    add_state_claim = 1020
+			add_state_claim = 1019
+			add_state_claim = 1062
+			add_state_claim = 611
+			add_state_claim = 616
+		}
+		bypass = {
+            owns_state = 1020
+			owns_state = 1019
+			owns_state = 1062
+			owns_state = 611
+			owns_state = 616
+		}
+	}
+
+	focus = {
+		id = PLM_retake_outter_mongolia
+		icon = GFX_focus_generic_attack_mongolia
+		x = -3
+		y = 6
+		cost = 10
+		prerequisite = {
+			focus = PLM_expansionism
+		}
+		#available_if_capitulated = yes
+		available = {
+		}
+		completion_reward = {
+			declare_war_on = {
+					target = MON
+					type = annex_everything
+				}
+		}
+		bypass = {
+			OR = {
+				MON = {
+					exists = no
+				}
+				has_war_with = MON
+				all_core_state = {
+					OR = {
+						custom_trigger_tooltip = {
+							tooltip = is_in_strat_152
+							region = 152
+						}
+						custom_trigger_tooltip = {
+							tooltip = is_in_strat_266
+							region = 266
+						}
+					}
+					is_owned_by = ROOT
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_a_mongolian_nation
+		icon = GFX_focus_LIT_organize_the_iron_wolf
+		x = -5
+		y = 7
+		cost = 10
+		prerequisite = {
+			focus = PLM_claim_chinese_lands
+		}
+		prerequisite = {
+			focus = PLM_unite_inner_mongolia
+		}
+		prerequisite = {
+			focus = PLM_retake_outter_mongolia
+		}
+		#available_if_capitulated = yes
+		available = {
+			has_completed_focus = PLM_school_2
+			NOT = {
+				has_idea = no_proper_equipment_design
+			}
+			NOT = {
+				has_idea = incompetent_heavy_industry
+			}
+			custom_trigger_tooltip = {
+				tooltip = no_unbalance_industry_tt
+				NOT = {
+					OR = {
+						has_idea = unbalanced_industry
+						has_idea = unbalanced_industry_2
+						has_idea = unbalanced_industry_3
+					}
+				}
+			}
+			all_core_state = {
+				OR = {
+					is_owned_by = ROOT
+					owner = {
+						is_subject_of = ROOT
+					}
+				}
+			}
+			custom_trigger_tooltip = {
+				tooltip = any_inner_mongolian_nation_exists_tt
+				NOT = {
+					any_other_country = {
+						has_cosmetic_tag = PLM_inner_mongolia
+					}
+				}
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					has_idea = CHI_mongolian_league_banner
+				}
+				remove_ideas = CHI_mongolian_league_banner
+			}
+			if = {
+				limit = {
+					has_idea = CHI_japanese_spies
+				}
+				remove_ideas = CHI_japanese_spies
+			}
+			drop_cosmetic_tag = yes
+			set_cosmetic_tag = PLM_inner_mongolia
+			add_political_power = 100
+			load_focus_tree = { tree = generic_focus keep_completed = yes }
+			custom_effect_tooltip = warn_focus_change_tt
+		}
+	}
+
+
+	focus = {
+		id = PLM_contact_the_japanese
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		x = -3
+		y = 1
+		cost = 7.15
+        mutually_exclusive = { focus = PLM_follow_the_chinese }
+		prerequisite = {
+			focus = PLM_maintain_autonomy
+		}
+		available_if_capitulated = yes
+		available = {
+			OR = {
+				AND = {
+					is_subject = no
+					JAP = {
+						exists = yes
+						is_subject = no
+						NOT = {
+							has_government = communism
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+						any_allied_country = {
+							tag = ECA
+							has_character = PLM_prince_demchugdongrub
+						}
+					}
+				}
+				AND = {
+					is_subject_of = JAP
+					JAP = {
+						any_allied_country = {
+							tag = ECA
+							has_character = PLM_prince_demchugdongrub
+						}
+					}
+				}
+				AND = {
+					has_war_with = JAP
+					any_owned_state = {
+						is_capital = yes
+						is_controlled_by_jap_or_its_puppet = yes
+					}
+				}
+				is_in_faction_with = JAP
+			}
+		}
+		completion_reward = {
+			if = {
+				limit = {
+					OR = {
+						tag = PLM
+						tag = ULA
+					}
+				}
+				custom_effect_tooltip = THIS_IS_HISTORICAL_TT
+			}
+			JAP = {
+				add_opinion_modifier = { modifier =  Nations_friendly target = ROOT }
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_idea = CHI_japanese_spies
+					}
+				}
+				add_ideas = CHI_japanese_spies
+			}
+			add_political_power = 120
+		}
+	}
+
+	focus = {
+		id = PLM_japanese_help
+		icon = GFX_focus_jap_manchurian_project
+		x = -3
+		y = 2
+		cost = 10
+		prerequisite = {
+			#focus = PLM_follow_the_chinese
+			focus = PLM_contact_the_japanese
+		}
+		available_if_capitulated = yes
+		available = {
+			#any_owned_state = {
+			#	#is_core_of = ROOT
+			#	is_fully_controlled_by = ROOT
+			#}	  
+			OR = {
+				AND = {
+					is_subject = no
+					JAP = {
+						exists = yes
+						is_subject = no
+						NOT = {
+							has_government = communism
+						}
+						NOT = {
+							has_war_with = ROOT
+						}
+						any_allied_country = {
+							tag = ECA
+							has_character = PLM_prince_demchugdongrub
+						}
+					}
+				}
+				AND = {
+					is_subject_of = JAP
+					JAP = {
+						any_allied_country = {
+							tag = ECA
+							has_character = PLM_prince_demchugdongrub
+						}
+					}
+				}
+				AND = {
+					has_war_with = JAP
+					any_owned_state = {
+						is_capital = yes
+						is_controlled_by_jap_or_its_puppet = yes
+					}
+				}
+				is_in_faction_with = JAP
+			}
+		}
+		completion_reward = {
+		    add_war_support = 0.1
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+			swap_ideas = {
+				remove_idea = unbalanced_industry
+				add_idea = unbalanced_industry_1
+			}
+			unlock_decision_tooltip = PLM_industry_decision
+		}
+	}
+
+	focus = {
+		id = PLM_learn_bushido
+		icon = GFX_focus_generic_japanese_imperial_glory
+		x = -4
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PLM_japanese_help
+		}
+		available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {
+		    add_ideas = JAP_superior_will_2
+		}
+	}
+
+	focus = {
+		id = PLM_opium
+		icon = GFX_goal_generic_trade
+		x = -2
+		y = 3
+		cost = 10
+		prerequisite = {
+			focus = PLM_japanese_help
+		}
+		available_if_capitulated = yes
+		available = {
+			#any_owned_state = {
+			#	is_fully_controlled_by = ROOT
+			#}
+		}
+		completion_reward = {
+			add_ideas = CHI_embrace_the_opium_trade
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_merge_with_de_wang
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		x = -3
+		y = 4
+		cost = 10
+		mutually_exclusive = { focus = PLM_unite_our_league }
+		prerequisite = {
+			focus = PLM_opium
+		}
+		prerequisite = {
+			focus = PLM_learn_bushido
+		}
+		available_if_capitulated = yes
+		available = {
+			ECA = {
+				#is_neighbor_of = ROOT
+				has_capitulated = no
+				exists = yes
+				has_character = PLM_prince_demchugdongrub
+			}
+			OR = {
+				NOT = {
+					has_war_with = ECA
+				}
+				AND = {
+					has_capitulated = yes
+					any_owned_state = {
+						is_capital = yes
+						OR = {
+							is_controlled_by_jap_or_its_puppet = yes
+							is_controlled_by = ECA
+						}
+					}
+				}
+			}
+		}
+		completion_reward = {
+			ECA = {
+				country_event = MEN.18
+			}
+		    effect_tooltip = {
+				every_unit_leader = {
+					set_nationality = ECA
+				}
+				ECA = {
+					annex_country = {
+						target = ROOT transfer_troops = yes
+					}
+				}
+				if = {
+					limit = {
+						ECA = {
+							is_ai = yes
+						}
+					}
+				    ECA = {
+						change_tag_from = ROOT
+					}
+					else = {
+				        custom_effect_tooltip = GAME_OVER_TT
+					}
+				}
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_develop_suiyuan
+		icon = GFX_focus_generic_land_reclamation
+		x = 1
+		y = 0
+		cost = 7.15
+        #prerequisite = {
+		#	focus = PLM_maintain_autonomy
+		#}
+		#available_if_capitulated = yes
+		available = {
+			any_owned_state = {
+				is_capital = yes
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+			}
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_capital = yes
+					is_core_of = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+			}
+			add_tech_bonus = {
+				name = industrial_bonus
+				bonus = 0.5
+				uses = 1
+				category = industry
+			}
+		}
+	}
+
+	focus = { 
+		id = PLM_infra
+		icon = GFX_goal_generic_construct_infrastructure
+		cost = 7.15
+		prerequisite = {
+			focus = PLM_develop_suiyuan
+		}
+		x = 0
+		y = 1
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT
+					infrastructure < 5
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			if = {
+				limit = {
+					num_of_controlled_states > 1
+				}
+			    random_controlled_state = {
+					limit = {
+						infrastructure < 5
+					}
+					add_building_construction = {
+						type = infrastructure
+						level = 1
+						instant_build = yes
+					}
+				}
+			}
+		}
+		available = {
+			any_owned_state = {
+				is_core_of = ROOT
+				is_controlled_by = ROOT
+				infrastructure < 5
+			}	    
+		}	
+	}
+
+	focus = {
+		id = PLM_export_animal_products
+		icon = GFX_focus_ARG_capitalize_the_beef_industry
+		cost = 7.15
+		prerequisite = {
+			focus = PLM_infra
+		}
+		x = -1
+		y = 2
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		available = {
+			#any_owned_state = {
+			#	is_core_of = ROOT
+			#	is_fully_controlled_by = ROOT
+			#}	    
+		}	
+	}
+
+	focus = {
+		id = PLM_industry
+		icon = GFX_goal_generic_construct_civ_factory
+		cost = 7.15
+		prerequisite = {
+			focus = PLM_infra
+		}
+		prerequisite = {
+			focus = PLM_export_animal_products
+		}
+		x = 0
+		y = 3
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			random_owned_controlled_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes										
+		}
+		available = {
+			any_owned_state = {
+				is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}	    
+		}	
+	}
+
+	focus = {
+		id = PLM_elementary_school 
+		icon = GFX_COOP_compulsory_education
+		cost = 10
+		prerequisite = {
+			focus = PLM_develop_suiyuan
+		}
+		x = 2
+		y = 1
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = iliterate_population
+				add_idea = iliterate_population_1
+			}
+			#add_research_slot = 1
+		}
+		available = {
+			
+		}	
+	}
+
+	focus = {
+		id = PLM_school
+		icon = GFX_COOP_compulsory_education
+		cost = 10
+		prerequisite = {
+			focus = PLM_industry
+		}
+		x = 0
+		y = 4
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			swap_ideas = {
+				remove_idea = iliterate_population_1
+				add_idea = iliterate_population_2
+			}
+			#add_research_slot = 1
+		}
+		available = {
+			has_completed_focus = PLM_elementary_school
+		}	
+	}
+
+	focus = {
+		id = PLM_school_2
+		icon = GFX_COOP_compulsory_education
+		cost = 10
+		prerequisite = {
+			focus = PLM_school
+		}
+		x = 0
+		y = 5
+		ai_will_do = {
+			factor = 2
+		}
+		completion_reward = {
+			remove_ideas = iliterate_population_2
+		}
+		available = {
+
+		}	
+	}
+
+	focus = {
+		id = PLM_establish_security_hq
+		icon = GFX_focus_FIN_strengthen_military_administration
+		x = 3
+		y = 0
+		cost = 5
+
+		#available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {			
+		add_equipment_to_stockpile = {#always biggest gap
+						type = support_equipment
+						amount = 5000 #not a typo
+						producer = ROOT
+		}
+		add_equipment_to_stockpile = {#always biggest gap
+						type = infantry_equipment
+						amount = 7000 #not a typo
+						producer = ROOT
+		}
+			add_equipment_to_stockpile = {
+				type = artillery_equipment
+				amount = 200
+				producer = JAP
+			}					
+		}			
+	}
+
+	
+	focus = {
+		id = PLM_expand_troops
+		icon = GFX_goal_generic_military_sphere
+		x = 4
+		y = 1
+		cost = 7.15
+        prerequisite = {
+			focus = PLM_establish_security_hq
+		}
+		#available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {
+			army_experience = 10
+			add_war_support = 0.03	
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    1014= {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = PLM
+				count = 6
+			    }
+			}		
+		}		
+	}
+
+	focus = {
+		id = PLM_mongolian_army
+		icon = GFX_focus_generic_little_entente
+		x = 5
+		y = 2
+		cost = 7.15
+        prerequisite = {
+			focus = PLM_expand_troops
+		}
+		#available_if_capitulated = yes
+		available = {
+			has_army_manpower = {
+				size > 2999
+			}
+		}
+		completion_reward = {
+			add_war_support = 0.05
+			army_experience = 20
+			if = {
+				limit = {
+					OR = {
+						has_idea = disarmed_nation
+						has_idea = volunteer_only
+					}
+				}
+				add_ideas = limited_conscription
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_purchase_arms
+		icon = GFX_focus_generic_reorient_production
+		x = 2
+		y = 2
+		cost = 7.15
+        prerequisite = {
+			focus = PLM_expand_troops
+		}
+		prerequisite = {
+			focus = PLM_infra
+		}
+		#available_if_capitulated = yes
+		available = {
+			OR = {
+				has_completed_focus = PLM_japanese_help
+				has_completed_focus = PLM_chinese_help
+			}
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+	}
+
+	focus = {
+		id = PLM_our_own_military_industry
+		icon = GFX_goal_generic_construct_mil_factory
+		x = 2
+		y = 4
+		cost = 7.15
+        prerequisite = {
+			focus = PLM_purchase_arms
+		}
+		prerequisite = {
+			focus = PLM_industry
+		}
+		#available_if_capitulated = yes
+		available = {
+			any_owned_state = {
+				#is_core_of = ROOT
+				is_fully_controlled_by = ROOT
+			}	  
+		}
+		completion_reward = {
+			add_offsite_building = {
+				type = arms_factory
+				level = 2
+			}		
+			random_owned_state = {
+				limit = {
+					is_fully_controlled_by = ROOT
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = arms_factory
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+	}
+	focus = {
+		id = PLM_military_academy
+		icon = GFX_focus_generic_military_academy
+		x = 4
+		y = 3
+		cost = 7.15
+        prerequisite = {
+			focus = PLM_expand_troops
+			focus = PLM_mongolian_army
+			focus = PLM_purchase_arms
+		}
+		#available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {
+			#army_experience = 25
+			add_ideas = CHI_generic_military_academy
+		}
+	}
+
+	focus = {
+		id = PLM_army_doctrine
+		icon = GFX_goal_generic_army_doctrines
+		x = 4
+		y = 4
+		cost = 7.15
+        prerequisite = {
+			focus = PLM_military_academy
+		}
+		#available_if_capitulated = yes
+		available = {
+			
+		}
+		completion_reward = {
+			#army_experience = 25
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category = land_doctrine
+			}
+		}
+	}
+}

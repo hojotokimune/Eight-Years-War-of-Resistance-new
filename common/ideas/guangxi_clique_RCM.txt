@@ -1,0 +1,1065 @@
+ideas = {
+    hidden_ideas = {
+		GXC_hunan_idea = {
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+				OR = {
+					has_war_with = JAP
+				    GXC = {
+						is_in_faction = no
+					}
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				surrender_limit = 0.99
+			}
+		}
+	} 
+	country = {
+
+		GXC_disjointed_command = {
+			picture = hol_de_vaarplicht
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = -0.15
+				army_org_regain = -0.2
+			}
+		}
+		
+		GXC_reform_debuff = {
+			picture = generic_flexible_foreign_policy2
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = -0.2
+				stability_factor = -0.1
+			}
+		}
+		
+		GXC_JAP_payment = {
+			picture = SPR_seize_the_gold_reserves
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+			}
+		}
+		
+		GXC_payment = {
+			picture = SPR_relocate_the_gold_reserves
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.25
+			}
+		}
+		
+		GXC_propaganda_2 = {
+			picture = FRA_national_mobilization_focus
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				war_support_weekly = 0.00025
+				stability_weekly = 0.001
+			    n_socialism_drift = 0.05
+			}
+		}
+		
+		GXC_peoples_revolutionary_army = {
+			picture = MEX_revolutionary_army
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.15
+				#experience_gain_army_unit = 0.05
+				experience_loss_factor = -0.15
+				land_night_attack = 0.15
+				land_reinforce_rate = 0.05
+				dig_in_speed_factor = 0.05
+				combat_width_factor = -0.1
+			}
+		}
+		
+		GXC_peoples_government = {
+		
+			picture = generic_morale_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.1
+				economy_cost_factor = -0.15
+				mobilization_laws_cost_factor = -0.1
+				trade_laws_cost_factor = -0.15
+				political_advisor_cost_factor = -0.15
+				monthly_population = 0.1
+				party_popularity_stability_factor = 0.25
+				war_support_weekly_factor = 0.005
+				tank_manufacturer_cost_factor = -0.1
+				naval_manufacturer_cost_factor = -0.1
+				aircraft_manufacturer_cost_factor = -0.1
+				materiel_manufacturer_cost_factor = -0.1
+				industrial_concern_cost_factor = -0.1
+			}
+		}
+		
+		GXC_land_reform = {
+			picture = generic_agrarian_society
+			allowed_civil_war = {
+				OR = {
+					has_government = n_socialism
+					has_government = communism
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.15
+				industrial_capacity_factory = 0.1
+			}
+		}
+		
+		GXC_org_2 = {
+			picture = generic_spy_coup
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				stability_factor = 0.1
+				war_stability_factor = 0.1
+				encryption_factor = 0.1
+				drift_defence_factor = 0.05
+				resistance_activity = -0.1
+				agency_upgrade_time = -0.1
+			}
+		}
+		
+		GXC_org = {
+			picture = generic_spy_intel
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				#stability_factor = 0.05
+				war_stability_factor = 0.1
+				encryption_factor = 0.05
+				drift_defence_factor = 0.05
+				resistance_activity = -0.1
+			}
+		}
+		
+		GXC_save_country_army = {
+			picture = kmt_shield
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_strength_factor = 0.1
+				army_org_factor = 0.05
+				army_morale_factor = 0.1
+				org_loss_when_moving = -0.1
+			}
+		}
+		
+		GXC_defend_anhui_idea = {
+			picture = MEX_revolutionary_army
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.15
+				army_core_defence_factor = 0.1
+				dig_in_speed_factor = 0.2
+				max_dig_in_factor = 0.25
+				terrain_penalty_reduction = 0.1
+				consumer_goods_factor = -0.3
+				custom_modifier_tooltip = goes_away_when_at_peace_with_JAP_tt
+			}
+		}
+		
+		GXC_ngc_in_anhui = {
+			picture = generic_infantry_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				conscription_factor = 0.2
+				max_command_power = 10
+			}
+		}
+		GXC_student_army = {
+			picture = chi_chinese_support
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+			removal_cost = -1
+			
+			modifier = {
+				war_support_factor = 0.1
+				attrition = -0.1
+				no_supply_grace = 72
+				custom_modifier_tooltip = goes_away_when_at_peace_with_JAP_tt
+			}
+		}
+		GXC_old_officals = {
+			picture = usa_great_depression
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.3
+                industrial_capacity_factory = -0.1
+				political_power_gain = -0.1
+			}
+		}
+		GXC_propaganda = {
+			picture = FRA_national_mobilization_focus
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				war_support_weekly = 0.001
+				stability_weekly = 0.001
+				drift_defence_factor = 0.05
+				war_stability_factor = 0.05
+				surrender_limit = 0.15
+			}
+		}
+		GXC_Military_Region = {
+			picture = chi_wargaming_division
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 25
+				command_power_gain_mult = 0.1
+				land_reinforce_rate = 0.02
+				grant_medal_cost_factor = -0.1
+				custom_modifier_tooltip = goes_away_when_at_peace_with_JAP_tt
+			}
+		}
+		GXC_Military_Region_2 = {
+			picture = chi_wargaming_division
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_command_power = 30
+				command_power_gain_mult = 0.2
+				land_reinforce_rate = 0.03
+				experience_gain_army_factor = 0.05
+				#army_org_factor = 0.025
+				grant_medal_cost_factor = -0.15
+				war_support_weekly = 0.0025
+				custom_modifier_tooltip = goes_away_when_at_peace_with_JAP_tt
+			}
+		}
+		GXC_Iron_will = {
+		
+			picture = MEX_politicised_army
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_infantry_attack_factor = 0.1
+				army_infantry_defence_factor = 0.1			
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				army_org_factor = 0.05
+			}
+		}
+		GXC_Iron_will_2 = {
+		
+			picture = MEX_politicised_army_2
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_infantry_attack_factor = 0.2
+				army_infantry_defence_factor = 0.2
+				army_core_attack_factor = 0.2
+				army_core_defence_factor = 0.2
+				army_org_factor = 0.15
+			}
+		}
+		GXC_Guangxi_economy = {
+		
+			picture = prc_permit_opium_trade
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				war_support_factor = -0.15
+				#industrial_capacity_factory = -0.05
+				#production_lack_of_resource_penalty_factor = -0.25
+			}
+		}
+		GXC_Guangxi_economy_2 = {
+		
+			picture = generic_agrarian_reform
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+				industrial_capacity_factory = 0.05
+			}
+		}
+		GXC_Militia_system = {
+		
+			picture = citizen_militia_1
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.05
+				training_time_factor = -0.05
+			    modifier_army_sub_unit_militia_attack_factor = 0.025
+				modifier_army_sub_unit_militia_defence_factor = 0.025
+			}
+		}
+		GXC_Militia_system_2 = {
+			name = GXC_Militia_system
+		
+			picture = citizen_militia_2
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.1
+				conscription_factor = 0.05
+				training_time_factor = -0.05
+				modifier_army_sub_unit_militia_attack_factor = 0.05
+				modifier_army_sub_unit_militia_defence_factor = 0.05
+			}
+		}
+		GXC_Militia_system_3 = {
+			name = GXC_Militia_system
+		
+			picture = citizen_militia_2
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_speed = 0.15
+				training_time_factor = -0.05
+				conscription_factor = 0.1
+			    modifier_army_sub_unit_militia_attack_factor = 0.075
+				modifier_army_sub_unit_militia_defence_factor = 0.075
+			}
+		}
+		GXC_Baojia_system = {
+		
+			picture = POL_ideology_drift_defence
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.15
+			    stability_weekly = 0.001
+			}
+		}
+		GXC_United_guangxi = {
+		
+			picture = vittoria_mutilata
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				drift_defence_factor = 0.5
+			    stability_weekly = 0.001
+			}
+		}
+		GXC_Japanese_consultant = {
+		
+			picture = warrior_traditions_idea
+			
+			available = {
+				NOT = { has_war_with = JAP }
+			}
+
+            cancel = { 
+			    AND = {
+					is_ally_with = event_target:WTT_current_china_leader 
+				    CHI = { is_ally_with = JAP } 
+				}
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {				
+			    land_doctrine_cost_factor = -0.05
+			}
+		}
+		GXC_Japanese_consultant_2 = {
+			name = GXC_Japanese_consultant
+		
+			picture = jap_militarism_showa
+			
+			available = {
+				NOT = { has_war_with = JAP }
+			}
+            cancel = { 
+			    AND = {
+					is_ally_with = event_target:WTT_current_china_leader 
+				    CHI = { is_ally_with = JAP } 
+				}
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_infantry_attack_factor = 0.05
+				army_infantry_defence_factor = 0.05
+			}
+			
+			modifier = {				
+			    land_doctrine_cost_factor = -0.1
+			}
+		}
+		GXC_Guangxi_military_modernization = {
+		
+			picture = generic_intel_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.03
+			}
+		}
+		GXC_Guangxi_military_modernization_eng = {
+			name = GXC_Guangxi_military_modernization
+		
+			picture = CZE_planning_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.03
+				max_planning = 0.1
+				mobilization_speed = 0.1
+			}
+		}
+		GXC_Guangxi_military_modernization_2 = {
+			name = GXC_Guangxi_military_modernization
+		
+			picture = generic_intel_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.03
+				land_reinforce_rate = 0.02
+			}
+		}
+		GXC_Guangxi_military_modernization_jap = {
+			name = GXC_Guangxi_military_modernization
+		
+			picture = generic_morale_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				experience_gain_army = 0.03
+				army_morale_factor = 0.1
+			}
+		}
+		
+		GXC_New_guangxi_clique = {
+		
+			picture = regional_warlord
+			#picture = kmt_gun
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				command_power_gain_mult = 0.2
+                army_core_attack_factor = 0.15
+                army_core_defence_factor = 0.15
+			}
+		}
+		GXC_New_guangxi_clique_chiang_reshuffle = {
+			name = GXC_New_guangxi_clique
+		
+			picture = regional_warlord
+			
+			available = {
+				is_subject_of = event_target:WTT_current_china_leader
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.25
+				command_power_gain_mult = 0.15
+				production_lack_of_resource_penalty_factor = -0.1
+				mobilization_laws_cost_factor = -0.25
+				economy_cost_factor = -0.25
+				trade_laws_cost_factor = -0.25
+				political_advisor_cost_factor = -0.25
+				tank_manufacturer_cost_factor = -0.25
+				naval_manufacturer_cost_factor = -0.25
+				aircraft_manufacturer_cost_factor = -0.25
+				materiel_manufacturer_cost_factor = -0.25
+				industrial_concern_cost_factor = -0.25
+			}
+		}
+		GXC_New_guangxi_clique_independence = {
+			name = GXC_New_guangxi_clique
+		
+			picture = regional_warlord
+			#picture = chi_whampoa_military_academy
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.15
+				command_power_gain_mult = 0.15
+				#autonomy_gain = 0.1
+			}
+		}
+		GXC_New_guangxi_clique_dem = {
+			name = GXC_New_guangxi_clique
+		
+			picture = generic_democratic_drift_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2
+				command_power_gain_mult = 0.1
+				democratic_drift = 0.02
+			}
+		}
+		GXC_New_guangxi_clique_dem_2 = {
+			name = GXC_New_guangxi_clique
+		
+			picture = generic_democratic_drift_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2
+				command_power_gain_mult = 0.1
+				democratic_drift = 0.1
+				democratic_acceptance = 85
+			}
+		}
+		GXC_New_guangxi_clique_net = {
+			name = GXC_New_guangxi_clique
+		
+			picture = neutrality_idea
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				neutrality_drift = 0.02
+				political_power_gain = 0.1
+				command_power_gain_mult = 0.15
+				neutrality_acceptance = 85
+			}
+		}
+		GXC_New_guangxi_clique_right = {
+			name = GXC_New_guangxi_clique
+		
+			picture = regional_warlord
+			#picture = generic_fascism_drift_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.2
+				command_power_gain_mult = 0.15
+				army_morale_factor = 0.1
+				#fascism_drift = 0.1
+			}
+		}
+		GXC_New_guangxi_clique_com = {
+			name = GXC_New_guangxi_clique
+		
+			picture = regional_warlord_china_communist
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				command_power_gain_mult = 0.1
+				weekly_manpower = 1000
+				n_socialism_drift = 0.1
+			}
+		}
+		GXC_New_guangxi_clique_fpg = {
+		
+			picture = regional_warlord_china_communist
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				command_power_gain_mult = 0.1
+				weekly_manpower = 1000
+				n_socialism_drift = 0.1
+			}
+		}
+		GXC_New_guangxi_clique_fpg_neu = {
+			name = GXC_New_guangxi_clique_fpg
+		
+			picture = regional_warlord_china_communist
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				political_power_gain = 0.1
+				command_power_gain_mult = 0.1
+				weekly_manpower = 1000
+				neutrality_drift = 0.02
+			}
+		}
+		GXC_Separate_revolution = {
+		
+			picture = home_of_revolution
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				training_time_factor = -0.1
+				#send_volunteer_divisions_required = -0.5
+				#send_volunteers_tension = -0.25
+			}
+		}
+		EFM_Southwest_two_agencies = {
+		
+			picture = liangguang_kmt
+
+			available = {
+				NOT = { is_subject = yes }
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				production_speed_buildings_factor = 0.05
+				economy_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
+				political_advisor_cost_factor = -0.1
+			}
+		}
+		
+		GXC_Integration_of_southwestern_institutions = {
+		
+			picture = liangguang_kmt_integrated
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				mobilization_laws_cost_factor = -0.1
+				economy_cost_factor = -0.1
+				trade_laws_cost_factor = -0.1
+				political_advisor_cost_factor = -0.1
+				tank_manufacturer_cost_factor = -0.1
+				naval_manufacturer_cost_factor = -0.1
+				aircraft_manufacturer_cost_factor = -0.1
+				materiel_manufacturer_cost_factor = -0.1
+				industrial_concern_cost_factor = -0.1
+			}
+		}
+		GXC_Democratic_revolutionary_army = {
+		
+			picture = generic_war_preparation
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteers_tension = -1.0
+				send_volunteer_size = 5
+				democratic_acceptance = 100
+			}
+		}
+
+		GXC_Improve_resource_utilization_efficiency = {
+		
+			picture = generic_goods_red_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.15
+			}
+		}
+		
+		GXC_Vow_before_one_troops = {
+		
+			picture = generic_morale_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				army_morale_factor = 0.1
+			}
+		}
+		
+		GXC_Fourth_theater = {
+		
+			picture = CZE_planning_bonus
+
+			available = {
+				has_war_with = JAP
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				max_planning = 0.1
+				army_chief_cost_factor = -0.05
+				high_command_cost_factor = -0.05
+				army_leader_cost_factor = -0.05
+			}
+		}
+		
+		
+		GXC_Cooperation_with_japan = {
+		
+			picture = generic_air_bonus
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			research_bonus = {
+				air_doctrine = 0.07
+				naval_doctrine = 0.07
+			}
+			
+			modifier = {
+				air_ace_generation_chance_factor = 0.1
+			}
+		}
+		
+		GXC_Rebuild_fujian_peoples_government = {
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = generic_communist_army
+			
+			modifier = {
+				army_core_attack_factor = 0.1
+				army_core_defence_factor = 0.1
+				monthly_population = 0.25
+			}
+		}
+		
+		GXC_Aircraft_parts_factory = {
+		
+			picture = generic_production_bonus
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+            cancel = {
+				has_completed_focus = GXC_China_of_new_guangxi
+			}
+
+			removal_cost = -1
+			
+			equipment_bonus = {
+				small_plane_airframe = {
+					build_cost_ic = -10
+					instant = yes
+				}
+			}
+		}
+		
+		GXC_Order_foreign_fighters = {
+			
+			available = {
+				is_subject = no
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_war_preparation
+			
+			modifier = {
+				license_air_purchase_cost = -0.1
+			}
+		}
+		GXC_Order_warships_to_japan = {
+			
+			available = {
+				is_subject = no
+				has_war = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+
+			picture = generic_coastal_defense_ships
+			
+			modifier = {
+				license_naval_purchase_cost = -0.1
+			}
+		}
+		
+		GXC_Trade_agreement_with_commonwealth = {
+		
+			picture = generic_constitutional_guarantees
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				industrial_capacity_factory = 0.1
+			}
+		}
+	}
+}

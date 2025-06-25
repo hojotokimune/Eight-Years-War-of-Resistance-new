@@ -1,0 +1,77 @@
+##### ALLIED Speeches
+
+
+
+music = {
+	name = "peace_in_our_time"
+	file = "Chamberlain - Peace In Our Time.ogg"
+	volume = 1.5
+}
+music = {
+	name = "war_with_germany"
+	file = "Chamberlain - Declaration Of War.ogg"
+	volume = 1.5
+}
+music = {
+	name = "blood_toil_tears_and_sweat"
+	file = "Churchill - Blood, Toil, Tears And Sweat.ogg"
+	volume = 1.5
+}
+music = {
+	name = "we_shall_fight_on_the_beaches"
+	file = "Churchill - We Shall Fight On The Beaches.ogg"
+	volume = 1.5
+}
+music = {
+	name = "their_finest_hour"
+	file = "Churchill - Their Finest Hour.ogg"
+	volume = 1.5
+}
+music = {
+	name = "arsenal_of_democracy"
+	file = "Roosevelt - The Great Arsenal of Democracy.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "no_invincible_armies"
+	file = "Stalin - History Shows That There Are No Invincible Armies.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "day_of_infamy"
+	file = "Roosevelt - A Day Which Will Live In Infamy.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "order_of_the_day"
+	file = "Eisenhower - Order Of The Day.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "i_have_returned"
+	file = "MacArthur - I Have Returned.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "warning_to_japan"
+	file = "Truman - Warning To Japan.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "victory_parade"
+	file = "Zhukov - Victory Parade.ogg"
+	volume = 1.5
+}
+
+music = {
+	name = "guns_are_silent"
+	file = "MacArthur - Today The Guns Are Silent.ogg"
+	volume = 1.5
+}
+

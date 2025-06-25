@@ -1,0 +1,367 @@
+NCHI = {
+	CHI_he_yingqin2 = {     
+		activation = {                         
+			has_completed_focus = he_yingqin 
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = CHI_he_yingqin2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = CHI_he_yingqin2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = CHI_he_yingqin2
+			} 
+		}
+		
+	}
+	CHI_he_yingqin3 = {     
+		activation = {                         
+			has_completed_focus = CHI_he_yingqin2 
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = CHI_he_yingqin3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = CHI_he_yingqin3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = CHI_he_yingqin3
+			} 
+		}
+		
+	}
+	kung_hsiang_hsi2 = {     
+		activation = {                         
+			has_completed_focus = kong_xiang_xi
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = kung_hsiang_hsi2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = kung_hsiang_hsi2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = kung_hsiang_hsi2
+			} 
+		}
+		
+	}
+	kung_hsiang_hsi3 = {     
+		activation = {                         
+			has_completed_focus = kung_hsiang_hsi2
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = kung_hsiang_hsi3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = kung_hsiang_hsi3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = kung_hsiang_hsi3
+			} 
+		}
+		
+	}
+	CHI_chen_cheng2 = {     
+		activation = {                         
+			has_completed_focus = CHI_chen_cheng1
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = CHI_chen_cheng2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = CHI_chen_cheng2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = CHI_chen_cheng2
+			} 
+		}
+		
+	}
+	CHI_chen_cheng3 = {     
+		activation = {                         
+			has_completed_focus = CHI_chen_cheng2
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = CHI_chen_cheng3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = CHI_chen_cheng3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = CHI_chen_cheng3
+			} 
+		}
+		
+	}
+	jiang_jingguo2 = {     
+		activation = {                         
+			has_completed_focus = chiang_ching_kuo
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = jiang_jingguo2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = jiang_jingguo2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = jiang_jingguo2
+			} 
+		}
+		
+	}
+	jiang_jingguo3 = {     
+		activation = {                         
+			has_completed_focus = jiang_jingguo2
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = jiang_jingguo3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = jiang_jingguo3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = jiang_jingguo3
+			} 
+		}
+		
+	}
+	chen_guofu2 = {     
+		activation = {                         
+			has_completed_focus = chen_guofu_HX
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = chen_guofu2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = chen_guofu2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = chen_guofu2
+			} 
+		}
+		
+	}
+	chen_guofu3 = {     
+		activation = {                         
+			has_completed_focus = chen_guofu2
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = chen_guofu3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = chen_guofu3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = chen_guofu3
+			} 
+		}
+		
+	}
+	dai_li2 = {     
+		activation = {                         
+			has_completed_focus = dai_li_HX
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = dai_li2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = dai_li2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = dai_li2
+			} 
+		}
+		
+	}
+	dai_li3 = {     
+		activation = {                         
+			has_completed_focus = dai_li2
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = dai_li3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = dai_li3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = dai_li3
+			} 
+		}
+		
+	}
+	CHI_t_v_soong2 = {     
+		activation = {                         
+			has_completed_focus = CHI_song_zi_wen
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = CHI_t_v_soong2}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = CHI_t_v_soong2
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = CHI_t_v_soong2
+			} 
+		}
+		
+	}
+	CHI_t_v_soong3 = {     
+		activation = {                         
+			has_completed_focus = CHI_t_v_soong2
+		}                                    
+		available = {                           
+			always=no
+		}
+		fire_only_once = yes
+		visible = {
+			not={has_completed_focus = CHI_t_v_soong3}
+		}
+		is_good = yes                        
+	
+		days_mission_timeout = 140
+		
+		timeout_effect = {                      
+			   complete_national_focus = {
+				focus = CHI_t_v_soong3
+				use_side_message = yes
+			}
+			hidden_effect = {
+				deactivate_shine_on_focus = CHI_t_v_soong3
+			} 
+		}
+		
+	}
+	
+}

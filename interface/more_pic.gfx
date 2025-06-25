@@ -1,0 +1,26 @@
+spriteTypes = { 
+	SpriteType = { 
+		name = "GFX_news_event_kmt_burma"
+		texturefile = "gfx/event_pictures/news_event_kmt_burma.dds"  
+	}
+        SpriteType = { 
+		name = "GFX_news_event_burma_independence"
+		texturefile = "gfx/event_pictures/news_event_burma_independence.dds"   
+	}
+         SpriteType = { 
+		name = "GFX_news_event_invasion_of_iran"
+		texturefile = "gfx/event_pictures/news_event_burma_independence.dds"    
+	} 
+         SpriteType = { 
+		name = "GFX_news_event_azad_hind"
+		texturefile = "gfx/event_pictures/news_event_azad_hind.dds" 
+	}
+         SpriteType = { 
+		name = "GFX_news_event_Continuation_War"
+		texturefile = "gfx/event_pictures/news_event_Continuation_War.dds" 
+	}
+         SpriteType = { 
+		name = "GFX_news_event_lapland"
+		texturefile = "gfx/event_pictures/news_event_lapland.dds"
+	}
+}

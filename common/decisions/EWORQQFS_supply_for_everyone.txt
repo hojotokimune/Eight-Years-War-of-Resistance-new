@@ -1,0 +1,119 @@
+EWORQQFS_supply_for_everyone = {
+	Print_out_more_money = {
+		icon = generic_political_actions
+		allowed = {
+			always = yes
+		}
+		available = {
+			NOT = {
+				has_idea = CHI_hyper_inflation_5
+			}
+			custom_trigger_tooltip = {
+				tooltip = has_supp_cond_lower_than_40
+				check_variable = {
+					ROOT.supply_condition < 40
+				}
+			}
+		}
+		visible = {
+			always = yes
+		}
+		cost = 10
+		fire_only_once = no
+		complete_effect = {
+			RCM_increase_inflation_level = yes
+			add_to_variable = {
+				ROOT.supply_condition_base = 10
+			}
+			custom_effect_tooltip = gain_base_supp_cond_p10_tt2
+		}
+		days_re_enable = 5
+		ai_will_do = {
+			base = 30
+		}
+	}
+    
+
+
+
+	Recover_from_level1_laisi_angry = {
+		icon = generic_political_actions
+		allowed = {
+			has_idea = laisi_angry_level1
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_supp_cond_more_than_40
+				check_variable = {
+					ROOT.supply_condition > 40
+				}
+			}
+			has_idea = laisi_angry_level1
+		}
+		visible = {
+			always = yes
+		}
+		cost = 10
+		fire_only_once = no
+		complete_effect = {
+			remove_ideas = laisi_angry_level1
+		}
+		ai_will_do = {
+			base = 3000
+		}
+	}
+
+	Recover_from_level2_laisi_angry = {
+		icon = generic_political_actions
+		allowed = {
+			has_idea = laisi_angry_level2
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_supp_cond_more_than_30
+				check_variable = {
+					ROOT.supply_condition > 30
+				}
+			}
+			has_idea = laisi_angry_level2
+		}
+		visible = {
+			always = yes
+		}
+		cost = 20
+		fire_only_once = no
+		complete_effect = {
+			remove_ideas = laisi_angry_level2
+		}
+		ai_will_do = {
+			base = 3000
+		}
+	}
+
+	Recover_from_level3_laisi_angry = {
+		icon = generic_political_actions
+		allowed = {
+			has_idea = laisi_angry_level3
+		}
+		available = {
+			custom_trigger_tooltip = {
+				tooltip = has_supp_cond_more_than_20
+				check_variable = {
+					ROOT.supply_condition > 20
+				}
+			}
+			has_idea = laisi_angry_level3
+		}
+		visible = {
+			always = yes
+		}
+		cost = 30
+		fire_only_once = no
+		complete_effect = {
+			remove_ideas = laisi_angry_level3
+		}
+		ai_will_do = {
+			base = 3000
+		}
+	}
+}

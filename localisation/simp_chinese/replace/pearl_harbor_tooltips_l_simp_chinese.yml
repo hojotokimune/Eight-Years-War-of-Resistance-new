@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ west_virginia.desc:0 "为了重建我们的太平洋舰队，我们已经开始了一个项目。§C USS West Virginia §! 战舰将被修复并移至海豹滩（靠近洛斯角）"
+ california.desc:0 "为了重建我们的太平洋舰队，我们已经启动了一个项目。§C USS California §! 战舰将被修复并移至海豹海滩（靠近洛斯角）"
+ nevada.desc:0 "为了重建我们的太平洋舰队，我们已经启动了一个项目。§C USS USS Nevada §! 战舰将被修复并移至海豹滩（靠近洛斯角）"
+ tennessee.desc:0 "为了重建我们的太平洋舰队，我们已经启动了一个项目。§C USS Tennessee §! 战舰将被修复并移至海豹滩（靠近洛斯角）"
+ maryland.desc:0 "为了重建我们的太平洋舰队，我们已经启动了一个项目。§C USS Maryland §! 战舰将被修复并移至海豹滩（靠近洛斯角）"
+
+
+ west_virginia.effect:0 "将修理好的 §C USS West Virginia §! 移至海豹滩。"
+ california.effect:0 "将已修复的 §C USS California §! 移至海豹海滩。"
+ nevada.effect:0 "将已修复的§C USS Nevada §! 移至海豹海滩。"
+ tennessee.effect:0 "将修复的 §C USS Tennessee §! 移至海豹海滩。"
+ maryland.effect:0 "将已修复的 §C USS 马里兰 §! 移至海豹海滩。"

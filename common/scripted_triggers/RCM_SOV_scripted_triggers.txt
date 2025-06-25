@@ -1,0 +1,19 @@
+#SOV #these are causing the Invalid scope errors. They works though. Dunno how to fix them. leave it alone for now.
+pavel_r_in_USSR = {
+	OR = {
+		CHI = {
+			NOT = { has_completed_focus = CHI_the_soviet_volunteer_group }
+		}
+		has_global_flag = SOV_recalled_advisors
+		has_global_flag = term_over_pavel_r
+	}
+}
+pavel_z_in_USSR = {
+	OR = {
+		CHI = {
+			NOT = { has_completed_focus = CHI_the_soviet_volunteer_group }
+		}
+		has_global_flag = SOV_recalled_advisors
+		has_global_flag = term_over_pavel_z
+	}
+}

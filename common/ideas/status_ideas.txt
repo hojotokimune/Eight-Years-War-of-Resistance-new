@@ -1,0 +1,143 @@
+ideas = {
+	country = {
+		##STATUS IDEAS
+		STATUS_recognized_china_idea = {
+			picture = recognized_china
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				is_legit_china = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = 0.05
+			}
+		}
+		STATUS_a_nation_devided_idea = {
+			picture = a_nation_devided
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				is_legit_china = yes
+			}
+			removal_cost = -1
+			
+			modifier = {
+				political_power_factor = 0.1
+				stability_factor = -0.05
+			}
+		}
+		##WARLORD
+		STATUS_regional_warlord_KMT_idea = {
+			picture = regional_warlord
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = neutrality
+			}
+			removal_cost = -500
+			
+			modifier = {
+				neutrality_drift = 0.01 #0.01
+				political_power_gain = -1
+				political_advisor_cost_factor = -0.5
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				military_leader_cost_factor = -0.25
+				join_faction_tension = 0.25
+			}
+		}
+		STATUS_regional_warlord_DEM_idea = {
+			picture = regional_warlord
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			
+			modifier = {
+				democratic_drift = 0.01 #0.01
+				political_power_gain = -1
+				political_advisor_cost_factor = -0.5
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				military_leader_cost_factor = -0.25
+				join_faction_tension = 0.25
+			}
+		}
+		STATUS_regional_warlord_COM_idea = {
+			picture = regional_warlord_china_communist
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				communism_drift = 0.01 #0.01
+				political_power_gain = -1
+				political_advisor_cost_factor = -0.5
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				military_leader_cost_factor = -0.25
+				join_faction_tension = 0.25
+			}
+		}
+		STATUS_regional_warlord_FAS_idea = {
+			picture = regional_warlord_china_communist
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = fascism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				fascism_drift = 0.01 #0.01
+				political_power_gain = -1
+				political_advisor_cost_factor = -0.5
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				military_leader_cost_factor = -0.25
+				join_faction_tension = 0.25
+			}
+		}
+		STATUS_regional_warlord_SOL_idea = {
+			picture = regional_warlord_china_communist
+			
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = n_socialism
+			}
+			removal_cost = -1
+			
+			modifier = {
+				n_socialism_drift = 0.01 #0.01
+				political_power_gain = -1
+				political_advisor_cost_factor = -0.5
+				trade_laws_cost_factor = -0.25
+				mobilization_laws_cost_factor = -0.25
+				military_leader_cost_factor = -0.25
+				join_faction_tension = 0.25
+			}
+		}
+	}
+}

@@ -1,0 +1,126 @@
+﻿#######################################################################
+######本文件编辑于24.5.11，为避免xinde_l_simp_chinese.yml冲突所设置######
+#######################################################################
+l_simp_chinese:
+ 
+ CHI_chinese_national:0 "中华民族"
+ CHI_chinese_national_desc:0 "§L中国者，中国人的中国。中国人的政治，中国人任之。驱除鞑虏后，光复我民族的国家，敢有为石敬瑭、吴三桂所为者，天下人共击之。§!"
+ CHI_chinese_culture:0 "取其精华，去其糟粕"
+ CHI_chinese_culture_desc:0 "我们现在提倡读书要用批判的眼光，要取其精华，去其糟粕，这个主张古代读书人却没有胆量提出。"
+ CHI_five_yuan:0 "五院制"
+ CHI_five_yuan_desc:0 "就中国政府权的情形讲，只有司法、立法、行政三个权是由皇帝拿在掌握之中，其余监察权和考试权还是独立的。就是中国的专制政府，从前也可以说是三权分立的，和外国从前的专制政府便大不相同。从前外国在专制政府的时候，无论是什么权都是由皇帝一个人垄断。中国在专制政府的时候，关于考试权和监察权，皇帝还没有垄断。所以分开政府的大权，便可以说外国是三权分立，中国也是三权分立。中国从前实行君权、考试权和监察权的分立，有了几千年。外国实行立法权、司法权和行政权的分立，有了一百多年。不过外国近来实行这种三权分立，还是不大完全。中国从前实行那种三权分立，更是有很大的流弊。我们现在要集合中外的精华，防止一切的流弊，便要采用外国的行政权、立法权、司法权，加入中国的考试权和监察权，连成一个很好的完壁，造成一个五权分立的政府。像这样的政府，才是世界上最完全、最良善的政府。国家有了这样的纯良政府，才可以做到民有、民治、民享的国家。"
+ form_country_east_asia_coring_states_tt: "获得选择决议所需§Y全部地区以及外蒙古、香港、澳门和广州湾§!的核心"
+ form_CHI_neigehuafei: "政治界面任命花费: §G-10%§!"
+ EHB_xiawenyun_desc:0 "§L夏文运(1906—1978)，字承尧，化名何益之，出生于金州老虎山会大朱家屯（今大连市金州区七顶山满族乡大朱家屯）。1932年3月于日本京都帝国大学文学部毕业后回到大连，同年担任侵华日军参谋部第二课课长和知鹰二的随身翻译。之后为李宗仁所劝，成为秘密情报人员，刺探日方机密，助力中国军队取得台儿庄战役的重大胜利。夏文运提供的情报在价值及迅速、准确方面在抗战初期“是独一无二”，对抗战之功实不可没。曾任伪《新民报》社社长、伪山西省政府建设厅厅长。§!"
+#获得核心决策本地化
+ form_country_China_required_states_tt: "控制§Y中华民国§!开局所控制的全部地区" # ROC
+ form_country_PRC_required_states_tt: "控制§Y中华人民共和国§!开局所控制的全部地区" #PRC
+ form_country_Japan_required_states_tt: "控制§Y日本§!开局所控制的全部地区" #Japan
+ form_country_Manchuku_required_states_tt: "控制§Y满洲国§!开局所控制的全部地区" #Manchuku
+ form_country_ECA_required_states_tt: "控制§Y察东自治区§!开局所控制的全部地区" #ECA
+ form_country_PLM_required_states_tt: "控制§Y百灵庙蒙政会§!开局所控制的全部地区" #PLM
+ form_country_SUY_required_states_tt: "控制§Y绥军§!开局所控制的全部地区" #SUY
+ form_country_SHX_required_states_tt: "控制§Y晋系§!开局所控制的全部地区" #SHX
+ form_country_SHC_required_states_tt: "控制§Y榆林集团§!开局所控制的全部地区" #SHC
+ form_country_EGM_required_states_tt: "控制§Y陇东马家军§!开局所控制的全部地区" #EGM
+ form_country_SANMA_required_states_tt: "控制§Y西北三马§!开局所控制的全部地区" #NXM,GSM,XSM
+ form_country_NEA_required_states_tt: "控制§Y西北剿匪总司令部§!开局所控制的全部地区" #NEA
+ form_country_SIC_required_states_tt: "控制§Y川系§!开局所控制的全部地区" #SIC
+ form_country_XIK_required_states_tt: "控制§Y西康建省委员会§!开局所控制的全部地区" #XIK
+ form_country_YUN_required_states_tt: "控制§Y滇系§!开局所控制的全部地区" #YUN
+ form_country_TIB_required_states_tt: "控制§Y西藏§!开局所控制的全部地区" #TIB
+ form_country_SIK_required_states_tt: "控制§Y新疆地区各地方政权§!开局所控制的全部地区" #SIK_SinKiang
+ form_country_GXC_required_states_tt: "控制§Y新桂系§!开局所控制的全部地区" #GXC
+ form_country_GUD_required_states_tt: "控制§Y粤系§!开局所控制的全部地区" #GUD
+ form_east_asia_union_category:0 "复兴东亚"
+ form_east_asia_union_category_desc:0 "是骊歌，是萤之光，是大韩民国临时政府国歌，是东亚三国的复兴梦"
+ form_east_asia_union:0 "友谊地久天长"
+ form_east_asia_union_desc:0 "东亚三国在近代对苏格兰民歌《友谊地久天长》均有改编——中国的《骊歌》，日本的《萤之光》和大韩民国临时政府的《大韩民国临时政府国歌》，《友谊地久天长》在事实上成为了东亚联邦的象征，东亚三国复兴的代名词。"
+ CHI_may_fifth_DC:0 "五五宪草"
+ CHI_may_fifth_DC_desc:0 "1936年5月5日,先后经过两次向社会公布并征求意见修改、立法院审查、国民党中央审查等程序的《中华民国宪法草案》完成,向全社会公布。共8章148条,分为总纲、人民之权利义务、国民大会、中央政府、地方制度、国民经济、教育、宪法之施行修正。原定1936年11月召开国民大会,正式讨论、通过。但由于日寇侵华,全民族进入抗敌御侮的战时状态,国民大会一再延期,该宪法草案未能完成立法程序。"
+ CHI_industrial_plan:0 "实业计划"
+ CHI_industrial_plan_desc:0 "欲使外国之资本主义，以造成中国之社会主义。"
+ CHI_shanchuanzhuangli:0 "光我民族，促进大同"
+ CHI_shanchuanzhuangli_desc:0 "毋自暴自弃，毋故步自封"
+ CHI_minquan_idea: "每日民主主义支持度: §G+0.10§!"
+ CHI_minquanism:0 "民权主义"
+ CHI_minquanism_desc:0 "民权主义旨在实现政治革命，创立民国，推翻封建君主专制制度，建立资产阶级民主共和国"
+ CHI_Minzuism:0 "民族主义"
+ CHI_Minzuism_desc:0 "民族主义旨在驱除鞑虏，恢复中华。这一主张旨在通过革命手段推翻帝国主义支持的清朝封建统治，恢复中国的民族独立和国家主权。同时提倡民族平等，国内各民族应一律平等。建立五族共和的国家，以维护国家统一和民族团结。"
+ CHI_minshengism:0 "民生主义"
+ CHI_minshengism_desc:0 "民生主义旨在解决土地和资本两大问题，提出了平均地权和节制资本两项经济纲领。平均地权的宗旨是通过变革旧的土地制度，实现土地国有，以避免工商业发达后土地涨价而出现的社会问题。节制资本则是通过国家力量遏制私人资本的膨胀和垄断，实现资本国有，以避免西方资本主义的一些弊端。"
+ CHI_minshengism2:0 "民生主义"
+ CHI_minshengism2_desc:0 "民生主义旨在解决土地和资本两大问题，提出了平均地权和节制资本两项经济纲领。平均地权的宗旨是通过变革旧的土地制度，实现土地国有，以避免工商业发达后土地涨价而出现的社会问题。节制资本则是通过国家力量遏制私人资本的膨胀和垄断，实现资本国有，以避免西方资本主义的一些弊端。"
+ CHI_minshengism3:0 "民生主义"
+ CHI_minshengism3_desc:0 "民生主义旨在解决土地和资本两大问题，提出了平均地权和节制资本两项经济纲领。平均地权的宗旨是通过变革旧的土地制度，实现土地国有，以避免工商业发达后土地涨价而出现的社会问题。节制资本则是通过国家力量遏制私人资本的膨胀和垄断，实现资本国有，以避免西方资本主义的一些弊端。"      
+ EAU_UNIFIED_communism: "东亚人民联盟"
+ EAU_UNIFIED_democratic: "东亚联邦"
+ EAU_UNIFIED_neutrality: "东亚联盟"
+ EAU_UNIFIED_fascism: "东亚帝国"
+ EAU_UNIFIED_communism_DEF: "东亚人民联盟"
+ EAU_UNIFIED_democratic_DEF: "东亚联邦"
+ EAU_UNIFIED_neutrality_DEF: "东亚联盟"
+ EAU_UNIFIED_fascism_DEF: "东亚帝国"
+ EAU_yanse_communism: "东亚人民联盟"
+ EAU_yanse_democratic: "东亚联邦"
+ EAU_yanse_neutrality: "东亚联盟"
+ EAU_yanse_fascism: "东亚帝国"
+ EAU_yanse_communism_DEF: "东亚人民联盟"
+ EAU_yanse_democratic_DEF: "东亚联邦"
+ EAU_yanse_neutrality_DEF: "东亚联盟"
+ EAU_yanse_fascism_DEF: "东亚帝国" 
+ nan_news.1.t: "东亚实现统一"
+ nan_news.1.desc: "[This.GetNewsIcon]东亚的复兴，是从历史的沉寂中振作的区域性觉醒。它不仅标志着经济与科技的巨大飞跃，更是文化与精神复苏的象征。传统智慧与现代创新的结合，塑造了一个充满活力、和谐与希望的未来。东亚的每一步前进，都向世界证明了其坚韧不拔的精神和无限的潜力。"
+ nan_news.1.a: "英特纳雄耐尔，就一定会实现！"
+ nan_news.1.c: "勿忘所训，谨遵所嘱，从今知行弥笃"
+ nan_news.1.e: "蛍の光、窓の雪。"
+ nan_news.1.d: "勇敢、强壮、隐忍、坚定。"
+ CHI_equalization_of_land_ownership:0 "平均地权"
+ CHI_equalization_of_land_ownership_desc:0 "工业愈进步，商业愈发达，则资本家与地主之利愈大，而工人愈穷苦矣。故同盟会之主张，创立民国后，则继之以平均地权，倘能达此目的，则社会问题已解决过半矣。"
+ CHI_reforming_idea:0 "改革进行时"
+ nan.1.t: "中华民国民主化运动"
+ nan.1.d: "在中华民国，一股要求民主化的浪潮正在兴起。学生们，作为这场运动的先锋，纷纷走上街头，表达他们对更广泛民主参与和政治透明度的渴望。他们手持标语牌，高喊口号，要求政府进行改革，实现真正的民主制度。这些年轻的面孔代表着国家的未来，他们不满于现状，渴望变革。他们的行动引起了社会各界的关注，许多人开始支持他们的诉求。学生们的勇气和决心激励着整个社会向着更加公正和自由的方向前进。"
+ nan.1.a: "你可听人民在呐喊？"
+ CHI_fight_for_right_focus: "鼓动学生运动"
+ CHI_reforming_idea: "改革进行中"
+ CHI_reforming_idea:0 "改革进行中"
+ CHI_reforming_idea_desc:0 "改革是一个国家进步的根本，国民大会已经确立了改革的目标，这次改革无疑需要很长的时间，但我们必须要进行下去。" 
+ CHI_institutional_reform_focus_desc:0 "国民党第五次全国代表大会后，大会将通过中央执行委员会组织纲要，中央委员会组织法，中央政治会议更名为中央政治委员会，中央政治委员会也将进行改组。"
+ CHI_fight_for_right_focus_desc:0 "在中华民国，一股要求民主化的浪潮正在兴起。学生们，作为这场运动的先锋，纷纷走上街头，表达他们对更广泛民主参与和政治透明度的渴望。他们手持标语牌，高喊口号，要求政府进行改革，实现真正的民主制度。这些年轻的面孔代表着国家的未来，他们不满于现状，渴望变革。"
+ CHI_establishment_wartime_administration:0 "组建紧急战时行政机构"
+ CHI_establishment_wartime_administration_desc:0 "该死的日本人向我们宣战了，为了保护新生的宪政民主共和国，我们必须采取一些非常措施。"
+ CHI_unlock_wartime_acts_category: "可以颁布§Y中华民国战时紧急法案§!"
+ form_CHI_emergency_power_category: "中华民国战时紧急法案"
+ form_CHI_emergency_power: "授予[CHI.GetLeader]战时紧急权力"
+ form_CHI_wartime_acts_category: "中华民国战时紧急法案"
+ form_CHI_wartime_acts_1: "中华民国战时紧急法案第一号"
+ form_CHI_wartime_acts_2: "中华民国战时紧急法案第二号"
+ form_CHI_wartime_acts_3: "中华民国战时紧急法案第三号"
+ form_CHI_wartime_acts_4: "中华民国战时紧急法案第四号"
+ form_CHI_wartime_acts_5: "中华民国战时紧急法案第五号"
+ form_CHI_wartime_acts_6: "中华民国战时紧急法案第六号"
+ form_CHI_wartime_acts_7: "中华民国战时紧急法案第七号"
+ form_CHI_wartime_acts_8: "中华民国战时紧急法案第八号"
+ form_CHI_wartime_acts_9: "全国军民同胞团结起来，把日本侵略者赶出中国去！"
+ CHI_one_party_neutrality: "§G选择此路线后中华民国将会进入国民党一党专政的威权统治。§!"
+ CHI_time_of_neutrality: "中华民国处于§G威权统治§!之下"
+ CHI_lock_the_power_flag: "§Y已授予过[CHI.GetLeader]战时紧急权力§!"
+ form_lock_CHI_wartime_acts_1: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_2: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_3: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_4: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_5: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_6: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_7: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_8: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_9: "已颁布过§Y该项法案§!"
+ form_lock_CHI_wartime_acts_1_flag: "已经颁布§Y第一项法案§!"
+ form_lock_CHI_wartime_acts_2_flag: "已经颁布§Y第二项法案§!"
+ form_lock_CHI_wartime_acts_3_flag: "已经颁布§Y第三项法案§!"
+ form_lock_CHI_wartime_acts_4_flag: "已经颁布§Y第四项法案§!"
+ form_lock_CHI_wartime_acts_5_flag: "已经颁布§Y第五项法案§!"
+ form_lock_CHI_wartime_acts_6_flag: "已经颁布§Y第六项法案§!"
+ form_lock_CHI_wartime_acts_7_flag: "已经颁布§Y第七项法案§!"
+ form_lock_CHI_wartime_acts_8_flag: "已经颁布§Y第八项法案§!"
+ JAP_base_camp_battle_report: "大本营战报"
+ JAP_base_camp_battle_report_desc: "帝国在印度支那和太平洋的战场遇到了一点抵抗，但我们的臣民会忽略这些“小细节”的。"

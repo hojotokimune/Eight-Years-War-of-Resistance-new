@@ -1,0 +1,6 @@
+﻿########Do not use my models or skins without my express permission chris@our-world.org####
+#I lost my home, businesses & family in an earthquake in New Zealand in 2011.  Runied my life.  I headed off around the world with what I had left to start a new life.  Got stranded in Lima, Peru.  Lost the last of my money here with extortion.  Please dont take my work without permisiion, it is how I pay for food.
+#Models list
+#FG42 based of AoTian model.
+#MP44 based of Vadim model.
+#G43 based of ElvinT model.

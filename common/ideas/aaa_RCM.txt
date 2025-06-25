@@ -1,0 +1,1063 @@
+ideas = {
+	hidden_ideas = {
+		socialist_like_commies = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = n_socialism
+			}
+			removal_cost = -1
+			modifier = {
+				communism_acceptance = 45
+				democratic_acceptance = 25
+				fascism_acceptance = -40
+			}
+		}
+		commies_like_socialist = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+			removal_cost = -1
+			modifier = {
+				n_socialism_acceptance = 45
+			}
+		}
+		democratic_dont_hate_socialist = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = democratic
+			}
+			removal_cost = -1
+			modifier = {
+				n_socialism_acceptance = 25
+			}
+		}
+		socialist_dont_hate_democratic = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = n_socialism
+			}
+			removal_cost = -1
+			modifier = {
+				democratic_acceptance = 25
+			}
+		}
+		no_ammo_cost_idea = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = yes
+			}
+			removal_cost = -1
+			modifier = {
+				#ammunition_factor = 1
+				ammunition_consumption_factor = -1
+			}
+		}
+	}
+		################################
+		##### Hyper inflation level ####
+		################################
+	inflation = { #comment this to reenable ES#
+		law = yes
+		use_list_view = yes
+		CHI_hyper_inflation_none = {
+
+			picture = chi_hyper_inflation_none
+
+			allowed = {
+				always = yes
+			}
+
+			traits = {
+				#plus_point_1_per_week
+				#plus_point_2_per_week
+				#hide_cost
+				#hide_cost_0_inf
+			}
+			on_add = {
+				#custom_effect_tooltip = plus_point_1_per_week_tt
+			}
+			removal_cost = -1
+			cost = -1
+			modifier = {
+				#stability_weekly = 0.001
+			}
+			allowed_to_remove = { #MODDED
+				always = no
+			}
+		}
+
+		CHI_hyper_inflation_1 = {
+
+			picture = chi_hyper_inflation
+
+			allowed = {
+				always = yes
+			}
+			on_add = {
+				custom_effect_tooltip = low_economic_mobilisation_TT
+			}
+			traits = {
+				minus_point_1_per_week
+				#plus_point_1_per_week
+				#hide_cost_1_inf
+				#hide_cost_1_inf
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cost = -1
+			removal_cost = -1
+			default = yes
+			modifier = {
+				consumer_goods_expected_value = 0.03
+				war_support_factor = -0.05
+				industrial_capacity_factory = -0.05
+				industrial_capacity_dockyard = -0.05
+				local_resources_factor = -0.05
+				production_speed_buildings_factor = -0.05
+			}
+			allowed_to_remove = { #MODDED
+				always = no
+			}
+		}
+
+
+		CHI_hyper_inflation_2 = {
+
+			picture = chi_hyper_inflation2
+
+			allowed = {
+				always = yes
+			}
+
+			traits = {
+				minus_point_2_per_week
+				#hide_cost_2_inf
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cost = -1
+			removal_cost = -1
+			on_add = {
+				custom_effect_tooltip = partial_economic_mobilisation_TT
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.06
+				war_support_factor = -0.1
+				industrial_capacity_factory = -0.1
+				industrial_capacity_dockyard = -0.1
+				local_resources_factor = -0.1
+				production_speed_buildings_factor = -0.1
+			}
+			allowed_to_remove = { #MODDED
+				always = no
+			}
+		}
+
+		CHI_hyper_inflation_3 = {
+
+			picture = chi_hyper_inflation3
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cost = -1
+			removal_cost = -1
+
+			traits = {
+				minus_point_3_per_week
+				#hide_cost_3_inf
+			}
+			on_add = {
+				custom_effect_tooltip = war_economy_TT
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.12
+				war_support_factor = -0.15
+				industrial_capacity_factory = -0.15
+				industrial_capacity_dockyard = -0.15
+				local_resources_factor = -0.15
+				production_speed_buildings_factor = -0.15
+			}
+			allowed_to_remove = { #MODDED
+				always = no
+			}
+		}
+
+		CHI_hyper_inflation_4 = {
+
+			picture = chi_hyper_inflation4
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cost = -1
+			removal_cost = -1
+			traits = {
+				minus_point_4_per_week
+				#hide_cost_4_inf
+			}
+			on_add = {
+				custom_effect_tooltip = point_4_TT
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.24
+				war_support_factor = -0.25
+				industrial_capacity_factory = -0.2
+				industrial_capacity_dockyard = -0.2
+				local_resources_factor = -0.2
+				production_speed_buildings_factor = -0.2
+			}
+			allowed_to_remove = { #MODDED
+				always = no
+			}
+		}
+
+		CHI_hyper_inflation_5 = {
+
+			picture = chi_hyper_inflation5
+
+			allowed = {
+				always = yes
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			cost = -1
+			removal_cost = -1
+			traits = {
+				minus_point_5_per_week
+				#hide_cost_5_inf
+			}
+			on_add = {
+				custom_effect_tooltip = tot_economic_mobilisation_TT
+			}
+			modifier = {
+				consumer_goods_expected_value = 0.48
+				war_support_factor = -0.25
+				industrial_capacity_factory = -0.25
+				industrial_capacity_dockyard = -0.25
+				local_resources_factor = -0.25
+				production_speed_buildings_factor = -0.25
+			}
+			allowed_to_remove = { #MODDED
+				always = no
+			}
+		}
+	}
+	economy = {
+		law = yes
+		unstable_economy = {
+			allowed = {
+				always = no
+			}
+			on_add = {#MODDEDV
+				custom_effect_tooltip = plus_point_1_per_week_tt
+			}
+			traits = {
+				plus_point_1_per_week
+			}
+			removal_cost = -1
+			level = 2
+			modifier = {
+				consumer_goods_expected_value = 0.4
+				war_stability_factor = -0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = -0.35
+				production_speed_arms_factory_factor = -0.35
+				production_speed_dockyard_factor = -0.35
+				conversion_cost_civ_to_mil_factor = 0.35
+				conversion_cost_mil_to_civ_factor = 0.35
+				production_factory_efficiency_gain_factor = -0.2
+				line_change_production_efficiency_factor = -0.2
+				max_fuel_factor = -0.3
+				fuel_gain_factor = -0.4
+				ammunition_capacity_factor = -0.3
+				ammunition_factor = -0.4
+			}
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = has_taken_monetary_reform_decision_tt
+					has_country_flag = has_taken_monetary_reform_decision
+				}
+				#has_completed_focus = CHI_monetary_reform
+			}
+
+			cancel_if_invalid = no
+		}
+		warlord_economy = {
+			allowed = {
+				always = no
+			}
+			on_add = {#MODDEDV
+				custom_effect_tooltip = civilian_economy_TT
+			}
+			traits = {
+				plus_point_2_per_week
+			}
+			removal_cost = -1
+			level = 2
+			modifier = {
+				consumer_goods_expected_value = 0.4
+				war_stability_factor = -0.1
+				#production_speed_infrastructure_factor = 0.1
+				production_speed_industrial_complex_factor = -0.35
+				production_speed_arms_factory_factor = -0.25
+				production_speed_dockyard_factor = -0.35
+				conversion_cost_civ_to_mil_factor = 0.25
+				conversion_cost_mil_to_civ_factor = 0.35
+				production_factory_efficiency_gain_factor = -0.2
+				line_change_production_efficiency_factor = -0.2
+				max_fuel_factor = -0.3
+				fuel_gain_factor = -0.4
+			}
+			#uncomment this to reenable ES#traits = {
+			#uncomment this to reenable ES#	no_inflation_risk
+			#uncomment this to reenable ES#}
+			allowed_to_remove = {
+				custom_trigger_tooltip = {
+					tooltip = has_taken_monetary_reform_decision_tt
+					has_country_flag = has_taken_monetary_reform_decision
+				}
+				#has_completed_focus = CHI_monetary_reform
+			}
+
+			cancel_if_invalid = no
+		}
+		JAP_national_mobilization_law_idea = {
+			allowed = {
+				always = no
+			}
+			removal_cost = -1
+			level = 5
+			modifier = {
+				consumer_goods_expected_value = 0.4
+				offensive_war_stability_factor = 0.2
+				production_speed_infrastructure_factor = 0.2
+				production_speed_industrial_complex_factor = 0.2
+				production_speed_arms_factory_factor = 0.2
+				production_speed_dockyard_factor = 0.1
+				conversion_cost_civ_to_mil_factor = -0.2
+				conversion_cost_mil_to_civ_factor = -0.2
+				production_factory_start_efficiency_factor = 0.1
+				production_factory_efficiency_gain_factor = 0.1
+				line_change_production_efficiency_factor = 0.1
+				max_fuel_factor = -0.25
+				fuel_gain_factor = -0.25
+			}
+			#uncomment this to reenable ES#traits = {
+			#uncomment this to reenable ES#	inflation_on_crises
+			#uncomment this to reenable ES#}
+			allowed_to_remove = {
+				has_war = no
+			}
+
+			cancel_if_invalid = no
+		}
+	}
+	country = {
+		#british Idea cause their upkeep too high
+		RCM_sun_never_sets = {
+			allowed = {
+				tag = ENG
+			}
+			picture = eng_the_sun_never_sets
+			allowed_civil_war = {
+				is_faction_leader = yes
+			}
+			available = {
+				OR = {
+					NOT = {
+						has_completed_focus = ENG_enforce_decolonization
+						has_completed_focus = ENG_decolonization
+					}
+					AND = {
+						check_variable = { This.gov_upk_ratio_final < 2 tooltip = gov_upk_ratio_tt }
+						check_variable = { This.sphe_upk_ratio_final < 2 tooltip = sphe_upk_ratio_tt }
+					}
+				}
+			}
+			modifier = {
+				supply_national_upkeep_factor = -0.5
+			}
+		}
+		RCM_Comintern_moribund = {
+			allowed = {
+				always = no
+			}
+			picture = hol_de_vaarplicht
+			allowed_civil_war = {
+				is_faction_leader = yes
+			}
+			available = {
+				is_faction_leader = yes
+				has_government = communism
+				#OR = {
+				#	has_war_together_with = ENG
+				#	has_war_together_with = USA
+				#}
+			}
+			removal_cost = -1
+			rule = {
+				can_only_justify_war_on_threat_country = yes
+				can_create_factions = no			
+			}
+			modifier = {
+				ai_get_ally_desire_factor = -9000
+			}
+		}
+		RCM_general_frost = {
+			allowed = {
+				always = no
+			}
+			picture = FRA_army_of_aggression_focus
+			allowed_civil_war = {
+				has_war_with = SOV
+			}
+			available = {
+				has_war_with = SOV
+			}
+			removal_cost = -1
+			#targeted_modifier = {
+			#	tag = SOV
+			#	out_of_supply_factor = 0.3
+			#	unit_upkeep_attrition_factor = 0.05
+			#	mobilization_speed = -0.3
+			#	winter_attrition_factor = 0.3
+			#	acclimatization_cold_climate_gain_factor = -0.25
+			#}
+		}
+		RCM_manageable_economy = {
+			allowed = {
+				always = no
+			}
+			picture = generic_central_management
+			allowed_civil_war = {
+				always = yes
+			}
+			available = {
+				num_of_factories < 15
+			}
+			removal_cost = -1
+			modifier = {
+				stability_factor = 0.05
+			}
+		}
+		WRL_compulsory_education_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_army_war_college
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				research_speed_factor = 0.07
+			}
+		}
+		RCM_rationing_idea = {
+			allowed = {
+				always = no
+			}
+			picture = generic_central_management
+			allowed_civil_war = {
+				always = yes
+			}
+
+			removal_cost = -1
+			modifier = {
+				#uncomment this to reenable ES#stability_factor = 0.05 
+				stability_weekly = 0.003 #comment this to reenable ES#
+			}
+		}
+		RCM_civil_war_economy_idea = { #cause crazy inflation
+
+			picture = chi_war_of_resistance3
+
+			allowed = {
+				always = yes
+			}
+			available = {
+				OR = {
+					has_civil_war = yes
+					AND = {
+						tag = event_target:WTT_current_china_leader
+						has_global_flag = CCW_restarts
+						any_enemy_country = {
+							tag = event_target:WTT_communist_china
+						}
+					}
+					AND = {
+						tag = event_target:WTT_current_china_leader
+						has_war_with = NEA
+						NEA = {
+							is_faction_leader = yes
+						}
+					}
+					has_idea = CHI_illegal_regime
+				}
+			}
+			removal_cost = -1
+			cost = -1
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.3
+			}
+		}
+		CHI_ideological_education_socialism = {
+			allowed = {
+				always = no
+			}
+			picture = generic_army_war_college
+			allowed_civil_war = {
+				OR = {
+					has_government = neutrality
+					has_government = n_socialism
+				}
+			}
+
+			removal_cost = -1
+			modifier = {
+				n_socialism_drift = 0.05 #0.02
+			}
+		}
+		#SOV occuppy_non_war  ###commie stuff, for SOV in ally#doesnt work lol
+		SOV_socialist_expansionism = {
+			picture = tfv_can_conscription_crisis
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+
+			rule = {
+				can_occupy_non_war = no
+			}
+		}
+		#JAPANESE　PUPPET GOVERMENT ideas
+		JPG_illegal_regime_1 = {
+			name = CHI_illegal_regime
+			picture = generic_purge
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.3
+				war_support_factor = -0.4
+				#surrender_limit = -0.35
+			}
+            cancel = {
+            NOT = { country_exists = CHI }
+            }			
+		}
+		JPG_illegal_regime_2 = {
+			name = CHI_illegal_regime
+			picture = generic_purge
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.24
+				war_support_factor = -0.32
+				#surrender_limit = -0.28
+			}
+            cancel = {
+            NOT = { country_exists = CHI }
+            }			
+		}
+		JPG_illegal_regime_3 = {
+			name = CHI_illegal_regime
+			picture = generic_purge
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.18
+				war_support_factor = -0.24
+				#surrender_limit = -0.21
+			}
+            cancel = {
+            NOT = { country_exists = CHI }
+            }			
+		}
+		JPG_illegal_regime_4 = {
+			name = CHI_illegal_regime
+			picture = generic_purge
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.12
+				war_support_factor = -0.16
+				#surrender_limit = -0.14
+			}
+            cancel = {
+            NOT = { country_exists = CHI }
+            }			
+		}
+		JPG_illegal_regime_5 = {
+			name = CHI_illegal_regime
+			picture = generic_purge
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = no
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				stability_factor = -0.06
+				war_support_factor = -0.08
+				#surrender_limit = -0.07
+			}
+            cancel = {
+            NOT = { country_exists = CHI }
+            }			
+		}
+		JPG_expanded_propaganda_machines = {
+			picture = usa_magic
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.25
+				political_power_factor = 0.1
+				conscription = 0.005
+				conscription_factor = 0.05
+			}
+		}
+		JPG_arms_confiscation = {
+			picture = MEX_callistas
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				foreign_subversive_activites = -0.1
+				resistance_growth = -0.15
+				stability_factor = 0.1
+			}
+		}
+		JPG_benefits_of_collaboration_idea = {
+			picture = generic_deal_with_the_devil
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.015
+				non_core_manpower = 0.02
+				resistance_growth = -0.1
+				stability_factor = 0.05
+				war_support_factor = 0.05
+			}
+		}
+		JPG_local_arms_workshops_idea = {
+			picture = ast_volunteer_defence_corps
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+			}
+			equipment_bonus = {
+				infantry_equipment = {
+					build_cost_ic = -0.05 instant = yes
+				}
+			}
+		}
+		JPG_jap_mil_advisors = {
+			picture = kodoha_unrest
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				army_org_factor = 0.05
+				army_morale_factor = 0.05
+				experience_gain_army_factor = 0.1
+			}
+		}
+		JPG_rapid_mobilisation = {
+			picture = generic_manpower_bonus
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				training_time_army_factor = -0.1
+				mobilization_speed = 0.075
+			}
+		}
+		JPG_rural_militias = {
+			picture = MEX_politicised_army
+			
+			allowed = { always = no }
+			
+			allowed_civil_war = { always = yes }
+			
+			removal_cost = -1
+			
+			modifier = {
+				conscription = 0.01
+				resistance_growth_on_our_occupied_states = 0.05
+			}
+		}
+		#PRC com uprise
+		prepared_for_operation = {
+			picture = chi_war_of_resistance3
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = communism
+			}
+
+			removal_cost = -1
+			modifier = {
+			}
+		}
+		#SIC
+		leader_hospitalized = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			available = {
+				has_government = neutrality
+			}
+			removal_cost = -1
+			modifier = {
+				drift_defence_factor = -0.1
+			}
+			cancel_if_invalid = yes
+		}
+		#MAN, unit 731
+		men_behind_the_sun = {
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				NOT = {
+					has_government = democratic
+				}
+			}
+			removal_cost = -1
+			modifier = {
+				conscription = -0.02
+				war_support_weekly = -0.002
+			}
+		}
+		#FRA, popular front
+		FRA_front_populaire = {
+			picture = ast_abandon_the_westminster_system
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = fascism
+				}
+			}
+
+			modifier = {
+				democratic_acceptance = 50
+				n_socialism_acceptance = 50
+				communism_acceptance = 10
+			}
+		}
+		socialist_partisans_recruiting = {
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_socialism_drift_bonus
+
+			modifier = {
+				conscription = -0.002
+				n_socialism_drift = 0.05 #0.02
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		socialist_opposition_voicing_protests = {
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_socialism_drift_bonus
+
+			modifier = {
+				political_power_factor = -0.5
+				n_socialism_drift = 0.05 #0.02
+			}
+
+			ai_will_do = {
+				factor = 0
+			}
+		}
+		socialist_revolutionaries = {
+
+			removal_cost = -1
+
+			allowed = {
+				always = no # Triggered via event
+			}
+
+			picture = generic_socialism_drift_bonus
+
+			modifier = {
+				stability_factor = -0.1
+			}
+		}
+		socialist_influence = {
+
+
+			allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				has_government = n_socialism
+			}
+			removal_cost = -1
+			picture = generic_socialism_drift_bonus
+
+			modifier = {
+				n_socialism_drift = 0.1 #0.05
+				n_socialism_acceptance = 85
+			}
+		}
+
+	}
+	foreign_advisor = {
+		generic_usa_advisor = {
+			ledger = army
+			allowed = {
+				NOT = { original_tag = CHI }
+				NOT = { original_tag = USA }
+			}
+			available = {
+				OR = {
+					is_in_faction_with = USA
+					is_subject_of = USA
+				}
+				country_exists = USA
+			}
+			traits = { firepower_advisory_team }
+		}
+
+		generic_eng_advisor = {
+			ledger = navy
+			allowed = {
+				NOT = { original_tag = ENG }
+			}
+			available = {
+				OR = {
+					is_in_faction_with = ENG
+					is_subject_of = ENG
+				}
+				country_exists = ENG
+			}
+			traits = { naval_advisory_team }
+		}
+
+		generic_ger_advisor = {
+			ledger = army
+			allowed = {
+				NOT = { original_tag = CHI }
+				NOT = { original_tag = GER }
+			}
+			available = {
+				OR = {
+					is_in_faction_with = GER
+					is_subject_of = GER
+				}
+				country_exists = GER
+			}
+			traits = { mobile_warfare_mission }
+			modifier = {
+				training_time_army_factor = -0.1
+			}
+		}
+
+		generic_sov_advisor = {
+			ledger = army
+			allowed = {
+				NOT = { original_tag = SOV }
+			}
+			available = {
+				if = {
+					limit = {
+						original_tag = SIK
+					}
+					has_completed_focus = SIK_Soviet_advisers
+					OR = {
+						has_idea = SIK_Support_idea
+						has_idea = SIK_Weakened_ussr_influence
+					}
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				else_if = {
+					limit = {
+						original_tag = TNG
+					}
+					has_completed_focus = TNG_send_more_officers_to_ussr
+					NOT = {
+						has_war_with = SOV
+					}
+				}
+				else = {
+					OR = {
+						is_in_faction_with = SOV
+						is_subject_of = SOV
+					}
+				}
+				country_exists = SOV
+			}
+			traits = { mass_assault_mission }
+		}
+
+		generic_ita_advisor = {
+			ledger = army
+			allowed = {
+				NOT = { original_tag = ITA }
+			}
+			available = {
+				OR = {
+					is_in_faction_with = ITA
+					is_subject_of = ITA
+				}
+				country_exists = ITA
+			}
+			traits = { field_artillery_specialists }
+			research_bonus = {
+				artillery = 0.15
+			}
+		}
+		generic_fra_advisor = {
+			ledger = army
+			allowed = {
+				NOT = { original_tag = FRA }
+			}
+			available = {
+				OR = {
+					is_in_faction_with = FRA
+					is_subject_of = FRA
+				}
+				country_exists = FRA
+			}
+			traits = { military_advisory_team }
+		}
+		generic_jap_advisor = {
+			ledger = navy
+			allowed = {
+				NOT = { original_tag = JAP }
+			}
+			available = {
+				OR = {
+					is_in_faction_with = JAP
+					is_subject_of = JAP
+				}
+				country_exists = JAP
+			}
+			traits = { battle_plan_mission }
+		}
+	}
+}

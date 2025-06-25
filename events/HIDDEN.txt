@@ -1,0 +1,742 @@
+add_namespace = history_hide
+
+# 莫斯科的火星兵
+news_event = {
+	id = history_hide.001
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_moscow }
+		SOV = { has_government = communism }
+		NOT = {
+                                           219 = {
+                                           is_fully_controlled_by = SOV
+                                           }
+                                }
+	}
+	
+	immediate = {
+		SOV = {
+			country_event = history_hide.002
+		}
+	}
+	
+
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+#波罗的海国家问题
+country_event = {
+	id = history_hide.994
+	title = history_hide.994.t
+	desc = history_hide.994.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.994.a
+		ai_chance = { factor = 999 }
+		complete_national_focus = SOV_claims_in_baltic
+		annex_country = {
+			target = LIT
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = LAT
+			transfer_troops = yes
+		}
+		annex_country = {
+			target = EST
+			transfer_troops = yes
+		}
+	}
+}
+
+
+
+# 苏联攻势
+country_event = {
+	id = history_hide.995
+	title = history_hide.996.t
+	desc = history_hide.996.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.996.a
+		ai_chance = { factor = 999 }
+		add_ideas = sov_defense_ger1943
+		unlock_decision_tooltip = sov_attack_1943
+	}
+}
+
+
+
+
+
+##苏联攻势
+news_event = {
+	id = history_hide.996
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		SOV = { has_war_with = GER }
+		or = {
+			has_global_flag = { flag = battle_stalingrad days > 90 }
+			date > 1942.11.1
+		}
+		217 = { is_controlled_by = SOV }
+		218 = { is_controlled_by = SOV }
+	}
+	
+	immediate = {
+			SOV = {
+				country_event = history_hide.995
+			}
+	}
+	
+
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+
+##最速攻占挪威！
+news_event = {
+	id = history_hide.997
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		NOR = { has_war_with = GER }
+		GER = { has_completed_focus = GER_operation_weserubung }
+		GER = { is_ai = yes }
+		NOR = { is_ai = yes }
+		NOR = { is_in_faction_with = ENG }
+	}
+	
+	immediate = {
+			GER = {
+			transfer_state = 110
+			division_template = {
+				name = "10步4炮3反坦克炮"
+				regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }		
+		
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }	
+				
+				artillery_brigade = { x = 3 y = 0 }
+				artillery_brigade = { x = 3 y = 1 }
+				artillery_brigade = { x = 3 y = 2 }
+				artillery_brigade = { x = 3 y = 3 }
+				anti_tank_brigade = { x = 4 y = 0 }
+				anti_tank_brigade = { x = 4 y = 1 }
+				anti_tank_brigade = { x = 4 y = 2 }
+				}
+				support = {
+				logistics_company = { x = 0 y = 0 } 
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 } 
+				anti_tank = { x = 0 y = 3 } 
+				anti_air = { x = 0 y = 4 }
+				}
+				}
+			110 = {
+				create_unit = {
+				division = "name = \"10步4炮3反坦克炮\" division_template = \"10步4炮3反坦克炮\" start_experience_factor = 0.75 "
+				owner = GER
+				count = 12
+				}
+			}
+			NOR = {
+				transfer_state = 110
+			}
+		}
+	}
+	
+
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+
+
+##防止傻子德国ai41年就冲到斯大林格勒，傻逼ai我草泥马
+news_event = {
+	id = history_hide.998
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		SOV = { has_war_with = GER }
+		SOV = { has_government = communism }
+		SOV = { is_ai = yes }
+		GER = { is_ai = yes }
+		NOT = {  
+                218 = { is_controlled_by = SOV }
+							}
+	}
+	
+	immediate = {
+		    218 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			234 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            238 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            245 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			228 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            235 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+	
+	}
+	
+
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+
+
+news_event = {
+	id = history_hide.999
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		SOV = { has_war_with = GER }
+		SOV = { has_government = communism }
+		SOV = { is_ai = yes }
+		NOT = {
+                                           218 = {
+                                           is_controlled_by = SOV
+                                           }
+                                }
+	}
+	
+	immediate = {
+		SOV = {
+			division_template = {
+				name = "10步4炮3反坦克炮"
+				regiments = {
+							infantry = { x = 0 y = 0 }
+							infantry = { x = 0 y = 1 }
+							infantry = { x = 0 y = 2 }
+							infantry = { x = 0 y = 3 }
+							
+							infantry = { x = 1 y = 0 }
+							infantry = { x = 1 y = 1 }
+							infantry = { x = 1 y = 2 }
+							infantry = { x = 1 y = 3 }		
+		
+							infantry = { x = 2 y = 0 }
+							infantry = { x = 2 y = 1 }	
+				
+				artillery_brigade = { x = 3 y = 0 }
+				artillery_brigade = { x = 3 y = 1 }
+				artillery_brigade = { x = 3 y = 2 }
+				artillery_brigade = { x = 3 y = 3 }
+				anti_tank_brigade = { x = 4 y = 0 }
+				anti_tank_brigade = { x = 4 y = 1 }
+				anti_tank_brigade = { x = 4 y = 2 }
+				}
+				support = {
+				logistics_company = { x = 0 y = 0 } 
+				engineer = { x = 0 y = 1 }
+				artillery = { x = 0 y = 2 } 
+				anti_tank = { x = 0 y = 3 } 
+				anti_air = { x = 0 y = 4 }
+				}
+				}
+					238 = {
+						create_unit = {
+						division = "name = \"10步4炮3反坦克炮\" division_template = \"10步4炮3反坦克炮\" start_experience_factor = 0.75 "
+						owner = SOV
+						count = 8
+						}
+					}
+					218 = {
+						create_unit = {
+						division = "name = \"10步4炮3反坦克炮\" division_template = \"10步4炮3反坦克炮\" start_experience_factor = 0.75 "
+						owner = SOV
+						count = 8
+						}
+					}
+					234 = {
+						create_unit = {
+						division = "name = \"10步4炮3反坦克炮\" division_template = \"10步4炮3反坦克炮\" start_experience_factor = 0.75 "
+						owner = SOV
+						count = 8
+						}
+					}
+		}
+	}
+	
+
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+country_event = {
+	id = history_hide.002
+	title = history_hide.002.t
+	desc = history_hide.002.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.002.a
+		ai_chance = { factor = 999 }
+		add_political_power = 300
+		add_war_support = 0.3
+		division_template = {
+		name = "10步4炮3反坦克炮"
+		regiments = {
+		            infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+					
+					infantry = { x = 1 y = 0 }
+					infantry = { x = 1 y = 1 }
+					infantry = { x = 1 y = 2 }
+					infantry = { x = 1 y = 3 }		
+
+					infantry = { x = 2 y = 0 }
+					infantry = { x = 2 y = 1 }	
+		
+		artillery_brigade = { x = 3 y = 0 }
+		artillery_brigade = { x = 3 y = 1 }
+		artillery_brigade = { x = 3 y = 2 }
+		artillery_brigade = { x = 3 y = 3 }
+		anti_tank_brigade = { x = 4 y = 0 }
+		anti_tank_brigade = { x = 4 y = 1 }
+		anti_tank_brigade = { x = 4 y = 2 }
+		}
+		support = {
+		logistics_company = { x = 0 y = 0 } 
+		engineer = { x = 0 y = 1 }
+		artillery = { x = 0 y = 2 } 
+		anti_tank = { x = 0 y = 3 } 
+		anti_air = { x = 0 y = 4 }
+		}
+	    }
+		    219 = {
+				create_unit = {
+				division = "name = \"10步4炮3反坦克炮\" division_template = \"10步4炮3反坦克炮\" start_experience_factor = 0.75 "
+				owner = SOV
+				count = 50
+			    }
+			}
+
+	}
+}
+
+# 德国防守苏联1942-1944
+country_event = {
+	id = history_hide.003
+	title = history_hide.003.t
+	desc = history_hide.003.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.003.a
+		ai_chance = { factor = 999 }
+		add_timed_idea = {
+				idea = ger_defense_sov1942
+				days = 730
+			} 
+	}
+}
+
+news_event = {
+	id = history_hide.004
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_moscow }
+		SOV = { has_government = communism }
+		date > 1942.1.1
+		GER = { is_ai = yes }
+		SOV = { is_ai = yes }
+	}
+	
+	immediate = {
+		GER = {
+			country_event = history_hide.003
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+# 苏联ai未经计划的攻势
+country_event = {
+	id = history_hide.005
+	title = history_hide.005.t
+	desc = history_hide.005.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = {
+					GER = { is_ai = yes }
+				}
+				264 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					247 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					258 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					260 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					265 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					237 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					236 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					235 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					232 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					233 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					827 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					231 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					254 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					257 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					239 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+					255 = {
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					}
+			}
+		}
+	}
+
+	option = {
+		name = history_hide.005.b
+		ai_chance = { factor = 1 }
+		add_timed_idea = {
+			idea = operation_taifeng
+			days = 90 }
+	}
+}
+
+news_event = {
+	id = history_hide.006
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		PRC = { has_war_with = JAP }
+		CHI = { has_war_with = JAP }
+		PRC = { has_government = communism }
+		date > 1941.1.1
+		CHI = { is_ai = yes }
+		JAP = { is_ai = yes }
+		PRC = { is_ai = yes }
+	}
+	
+	immediate = {
+		PRC = {
+			country_event = history_hide.007
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+country_event = {
+	id = history_hide.007
+	title = history_hide.007.t
+	desc = history_hide.007.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.007.a
+		ai_chance = { factor = 999 }
+		1027 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            998 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			615 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            1017 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            614 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			1077 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            607 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            744 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			597 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            608 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            1020 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			1014 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			1013 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+            611 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+	}
+	option = {
+		name = history_hide.007.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+news_event = {
+	id = history_hide.008
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		PRC = { has_war_with = JAP }
+		CHI = { has_war_with = JAP }
+		PRC = { has_government = communism }
+		date > 1941.1.1
+		SOV = { has_war_with = JAP }
+		CHI = { is_ai = yes }
+		JAP = { is_ai = yes }
+		PRC = { is_ai = yes }
+	}
+	
+	immediate = {
+		PRC = {
+			country_event = history_hide.009
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
+}
+
+country_event = {
+	id = history_hide.009
+	title = history_hide.007.t
+	desc = history_hide.007.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.007.a
+		ai_chance = { factor = 999 }
+		1027 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            998 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+			615 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            1017 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            614 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+			1077 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            607 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            744 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+			597 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            608 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            1020 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+			1014 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+			1013 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+            611 = {
+            remove_dynamic_modifier = { modifier = unplanned_offensive }
+            }
+	}
+	option = {
+		name = history_hide.007.b
+		ai_chance = { factor = 1 }
+	}
+}
+
+#海狮计划
+news_event = {
+	id = history_hide.011
+	title = history_hide.011.t
+	desc = history_hide.011.d
+	picture = GFX_haishijihua
+
+	major = yes
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = history_hide.011.a
+		trigger = {
+			NOT = {
+				TAG = ENG
+				TAG = GER
+			}
+		}
+		
+	}
+	option = {
+		name = history_hide.011.b
+		trigger = { TAG = GER }
+		add_war_support = 0.05
+	}
+	option = {
+		name = history_hide.011.c
+		trigger = { TAG = ENG }
+		add_war_support = 1
+	}
+}

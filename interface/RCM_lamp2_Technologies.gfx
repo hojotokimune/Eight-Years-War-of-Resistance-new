@@ -1,0 +1,6790 @@
+spriteTypes = {
+
+
+
+#_CHI infantry weapons#
+SpriteType = {
+name = "GFX_CHI_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_CHI motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_CHI_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_CHI great war tank#
+SpriteType = {
+name = "GFX_CHI_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_CHI light tank#
+SpriteType = {
+name = "GFX_CHI_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_CHI medium tank#
+SpriteType = {
+name = "GFX_CHI_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_CHI heavy tank#
+SpriteType = {
+name = "GFX_CHI_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_CHI main battle tank#
+SpriteType = {
+name = "GFX_CHI_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_CHI super heavy tank#
+SpriteType = {
+name = "GFX_CHI_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_CHI fighter#
+SpriteType = {
+name = "GFX_CHI_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_CHI CAS#
+SpriteType = {
+name = "GFX_CHI_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_CHI_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_CHI_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_CHI naval bomber#
+SpriteType = {
+name = "GFX_CHI_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_CHI_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_CHI jet fighter#
+SpriteType = {
+name = "GFX_CHI_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_CHI_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_CHI tactical bomber#
+SpriteType = {
+name = "GFX_CHI_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_CHI jet tactical bomber#
+SpriteType = {
+name = "GFX_CHI_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_CHI_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_CHI heavy fighter#
+SpriteType = {
+name = "GFX_CHI_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_CHI strategic bomber#
+SpriteType = {
+name = "GFX_CHI_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_CHI jet strategic bomber#
+SpriteType = {
+name = "GFX_CHI_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+
+#������������_PRC infantry weapons#
+SpriteType = {
+name = "GFX_PRC_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_PRC motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_PRC_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+
+#����һս̹��_PRC great war tank#
+SpriteType = {
+name = "GFX_PRC_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_gwtank.dds"
+} 
+
+
+#������̹��_PRC light tank#
+SpriteType = {
+name = "GFX_PRC_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_adv_light_tank.dds"
+}
+
+
+#��������̹��_PRC medium tank#
+SpriteType = {
+name = "GFX_PRC_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_adv_main_tank.dds"
+}
+
+
+#��������̹��_PRC heavy tank#
+SpriteType = {
+name = "GFX_PRC_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PRC_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_PRC main battle tank#
+SpriteType = {
+name = "GFX_PRC_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_main_battle_tank.dds"
+}
+
+
+#��������̹��_PRC super heavy tank#
+SpriteType = {
+name = "GFX_PRC_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_superheavy_tank.dds"
+}
+
+
+
+
+#####
+#SHX#
+#####
+#������������_SHX infantry weapons#
+SpriteType = {
+name = "GFX_SHX_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_shx_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_shx_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_SHX motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_SHX_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_SHX great war tank#
+SpriteType = {
+name = "GFX_SHX_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_SHX light tank#
+SpriteType = {
+name = "GFX_SHX_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_SHX medium tank#
+SpriteType = {
+name = "GFX_SHX_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_SHX heavy tank#
+SpriteType = {
+name = "GFX_SHX_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_SHX main battle tank#
+SpriteType = {
+name = "GFX_SHX_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_SHX super heavy tank#
+SpriteType = {
+name = "GFX_SHX_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_SHX fighter#
+SpriteType = {
+name = "GFX_SHX_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_SHX CAS#
+SpriteType = {
+name = "GFX_SHX_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHX_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHX_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_SHX naval bomber#
+SpriteType = {
+name = "GFX_SHX_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHX_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_SHX jet fighter#
+SpriteType = {
+name = "GFX_SHX_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHX_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_SHX tactical bomber#
+SpriteType = {
+name = "GFX_SHX_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_SHX jet tactical bomber#
+SpriteType = {
+name = "GFX_SHX_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SHX_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_SHX heavy fighter#
+SpriteType = {
+name = "GFX_SHX_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_SHX strategic bomber#
+SpriteType = {
+name = "GFX_SHX_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_SHX jet strategic bomber#
+SpriteType = {
+name = "GFX_SHX_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#SUY#
+#####
+#������������_SUY infantry weapons#
+SpriteType = {
+name = "GFX_SUY_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_shx_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_shx_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_SUY motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_SUY_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_SUY great war tank#
+SpriteType = {
+name = "GFX_SUY_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_SUY light tank#
+SpriteType = {
+name = "GFX_SUY_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_SUY medium tank#
+SpriteType = {
+name = "GFX_SUY_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_SUY heavy tank#
+SpriteType = {
+name = "GFX_SUY_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_SUY main battle tank#
+SpriteType = {
+name = "GFX_SUY_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_SUY super heavy tank#
+SpriteType = {
+name = "GFX_SUY_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_SUY fighter#
+SpriteType = {
+name = "GFX_SUY_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_SUY CAS#
+SpriteType = {
+name = "GFX_SUY_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SUY_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_SUY_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_SUY naval bomber#
+SpriteType = {
+name = "GFX_SUY_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SUY_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_SUY jet fighter#
+SpriteType = {
+name = "GFX_SUY_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SUY_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_SUY tactical bomber#
+SpriteType = {
+name = "GFX_SUY_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_SUY jet tactical bomber#
+SpriteType = {
+name = "GFX_SUY_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SUY_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_SUY heavy fighter#
+SpriteType = {
+name = "GFX_SUY_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_SUY strategic bomber#
+SpriteType = {
+name = "GFX_SUY_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SUY_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_SUY jet strategic bomber#
+SpriteType = {
+name = "GFX_SUY_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+
+#####
+#GXC#
+#####
+#�����������_GXC infantry weapons#
+SpriteType = {
+name = "GFX_GXC_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_GXC motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_GXC_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_GXC great war tank#
+SpriteType = {
+name = "GFX_GXC_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_GXC light tank#
+SpriteType = {
+name = "GFX_GXC_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_GXC medium tank#
+SpriteType = {
+name = "GFX_GXC_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_GXC heavy tank#
+SpriteType = {
+name = "GFX_GXC_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_GXC main battle tank#
+SpriteType = {
+name = "GFX_GXC_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_GXC super heavy tank#
+SpriteType = {
+name = "GFX_GXC_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_GXC fighter#
+SpriteType = {
+name = "GFX_GXC_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_GXC CAS#
+SpriteType = {
+name = "GFX_GXC_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GXC_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_GXC_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_GXC naval bomber#
+SpriteType = {
+name = "GFX_GXC_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GXC_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_GXC jet fighter#
+SpriteType = {
+name = "GFX_GXC_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GXC_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_GXC tactical bomber#
+SpriteType = {
+name = "GFX_GXC_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_GXC jet tactical bomber#
+SpriteType = {
+name = "GFX_GXC_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_GXC_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_GXC heavy fighter#
+SpriteType = {
+name = "GFX_GXC_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_GXC strategic bomber#
+SpriteType = {
+name = "GFX_GXC_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_GXC jet strategic bomber#
+SpriteType = {
+name = "GFX_GXC_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#XIA#
+#####
+#�����������_XIA infantry weapons#
+SpriteType = {
+name = "GFX_XIA_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_XIA motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_XIA_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_XIA great war tank#
+SpriteType = {
+name = "GFX_XIA_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_XIA light tank#
+SpriteType = {
+name = "GFX_XIA_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_XIA medium tank#
+SpriteType = {
+name = "GFX_XIA_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_XIA heavy tank#
+SpriteType = {
+name = "GFX_XIA_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_XIA main battle tank#
+SpriteType = {
+name = "GFX_XIA_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_XIA super heavy tank#
+SpriteType = {
+name = "GFX_XIA_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_XIA fighter#
+SpriteType = {
+name = "GFX_XIA_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_XIA CAS#
+SpriteType = {
+name = "GFX_XIA_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIA_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIA_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_XIA naval bomber#
+SpriteType = {
+name = "GFX_XIA_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIA_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_XIA jet fighter#
+SpriteType = {
+name = "GFX_XIA_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIA_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_XIA tactical bomber#
+SpriteType = {
+name = "GFX_XIA_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_XIA jet tactical bomber#
+SpriteType = {
+name = "GFX_XIA_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_XIA_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_XIA heavy fighter#
+SpriteType = {
+name = "GFX_XIA_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_XIA strategic bomber#
+SpriteType = {
+name = "GFX_XIA_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIA_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_XIA jet strategic bomber#
+SpriteType = {
+name = "GFX_XIA_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+
+#####
+#YUN#
+#####
+#�����������_YUN infantry weapons#
+SpriteType = {
+name = "GFX_YUN_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_YUN motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_YUN_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_YUN great war tank#
+SpriteType = {
+name = "GFX_YUN_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_YUN light tank#
+SpriteType = {
+name = "GFX_YUN_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_YUN medium tank#
+SpriteType = {
+name = "GFX_YUN_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_YUN heavy tank#
+SpriteType = {
+name = "GFX_YUN_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_YUN main battle tank#
+SpriteType = {
+name = "GFX_YUN_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_YUN super heavy tank#
+SpriteType = {
+name = "GFX_YUN_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_YUN fighter#
+SpriteType = {
+name = "GFX_YUN_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_YUN CAS#
+SpriteType = {
+name = "GFX_YUN_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_YUN_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_YUN_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_YUN naval bomber#
+SpriteType = {
+name = "GFX_YUN_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_YUN_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_YUN jet fighter#
+SpriteType = {
+name = "GFX_YUN_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_YUN_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_YUN tactical bomber#
+SpriteType = {
+name = "GFX_YUN_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_YUN jet tactical bomber#
+SpriteType = {
+name = "GFX_YUN_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_YUN_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_YUN heavy fighter#
+SpriteType = {
+name = "GFX_YUN_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_YUN strategic bomber#
+SpriteType = {
+name = "GFX_YUN_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_YUN jet strategic bomber#
+SpriteType = {
+name = "GFX_YUN_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#XSM#
+#####
+#���Ҿ���������_XSM infantry weapons#
+SpriteType = {
+name = "GFX_XSM_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_XSM motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_XSM_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_XSM great war tank#
+SpriteType = {
+name = "GFX_XSM_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_XSM light tank#
+SpriteType = {
+name = "GFX_XSM_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_XSM medium tank#
+SpriteType = {
+name = "GFX_XSM_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_XSM heavy tank#
+SpriteType = {
+name = "GFX_XSM_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_XSM main battle tank#
+SpriteType = {
+name = "GFX_XSM_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_XSM super heavy tank#
+SpriteType = {
+name = "GFX_XSM_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_XSM fighter#
+SpriteType = {
+name = "GFX_XSM_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_XSM CAS#
+SpriteType = {
+name = "GFX_XSM_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XSM_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_XSM_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_XSM naval bomber#
+SpriteType = {
+name = "GFX_XSM_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XSM_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_XSM jet fighter#
+SpriteType = {
+name = "GFX_XSM_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XSM_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_XSM tactical bomber#
+SpriteType = {
+name = "GFX_XSM_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_XSM jet tactical bomber#
+SpriteType = {
+name = "GFX_XSM_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_XSM_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_XSM heavy fighter#
+SpriteType = {
+name = "GFX_XSM_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_XSM strategic bomber#
+SpriteType = {
+name = "GFX_XSM_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_XSM jet strategic bomber#
+SpriteType = {
+name = "GFX_XSM_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#######
+##RCM##
+#######
+
+#####
+#GSM#
+#####
+SpriteType = {
+name = "GFX_GSM_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_GSM motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_GSM_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_GSM great war tank#
+SpriteType = {
+name = "GFX_GSM_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_GSM light tank#
+SpriteType = {
+name = "GFX_GSM_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_GSM medium tank#
+SpriteType = {
+name = "GFX_GSM_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_GSM heavy tank#
+SpriteType = {
+name = "GFX_GSM_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_GSM main battle tank#
+SpriteType = {
+name = "GFX_GSM_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_GSM super heavy tank#
+SpriteType = {
+name = "GFX_GSM_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_GSM fighter#
+SpriteType = {
+name = "GFX_GSM_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_GSM CAS#
+SpriteType = {
+name = "GFX_GSM_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GSM_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_GSM_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_GSM naval bomber#
+SpriteType = {
+name = "GFX_GSM_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GSM_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_GSM jet fighter#
+SpriteType = {
+name = "GFX_GSM_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GSM_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_GSM tactical bomber#
+SpriteType = {
+name = "GFX_GSM_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_GSM jet tactical bomber#
+SpriteType = {
+name = "GFX_GSM_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_GSM_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_GSM heavy fighter#
+SpriteType = {
+name = "GFX_GSM_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_GSM strategic bomber#
+SpriteType = {
+name = "GFX_GSM_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_GSM jet strategic bomber#
+SpriteType = {
+name = "GFX_GSM_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#EGM#
+#####
+SpriteType = {
+name = "GFX_EGM_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_EGM motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_EGM_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_EGM great war tank#
+SpriteType = {
+name = "GFX_EGM_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_EGM light tank#
+SpriteType = {
+name = "GFX_EGM_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_EGM medium tank#
+SpriteType = {
+name = "GFX_EGM_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_EGM heavy tank#
+SpriteType = {
+name = "GFX_EGM_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_EGM main battle tank#
+SpriteType = {
+name = "GFX_EGM_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_EGM super heavy tank#
+SpriteType = {
+name = "GFX_EGM_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_EGM fighter#
+SpriteType = {
+name = "GFX_EGM_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_EGM CAS#
+SpriteType = {
+name = "GFX_EGM_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_EGM_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_EGM_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_EGM naval bomber#
+SpriteType = {
+name = "GFX_EGM_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_EGM_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_EGM jet fighter#
+SpriteType = {
+name = "GFX_EGM_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_EGM_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_EGM tactical bomber#
+SpriteType = {
+name = "GFX_EGM_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_EGM jet tactical bomber#
+SpriteType = {
+name = "GFX_EGM_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_EGM_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_EGM heavy fighter#
+SpriteType = {
+name = "GFX_EGM_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_EGM strategic bomber#
+SpriteType = {
+name = "GFX_EGM_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_EGM_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_EGM jet strategic bomber#
+SpriteType = {
+name = "GFX_EGM_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+
+#####
+#NXM#
+#####
+SpriteType = {
+name = "GFX_NXM_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_NXM motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_NXM_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_NXM great war tank#
+SpriteType = {
+name = "GFX_NXM_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_NXM light tank#
+SpriteType = {
+name = "GFX_NXM_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_NXM medium tank#
+SpriteType = {
+name = "GFX_NXM_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_NXM heavy tank#
+SpriteType = {
+name = "GFX_NXM_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_NXM main battle tank#
+SpriteType = {
+name = "GFX_NXM_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_NXM super heavy tank#
+SpriteType = {
+name = "GFX_NXM_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_NXM fighter#
+SpriteType = {
+name = "GFX_NXM_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_NXM CAS#
+SpriteType = {
+name = "GFX_NXM_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NXM_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_NXM_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_NXM naval bomber#
+SpriteType = {
+name = "GFX_NXM_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NXM_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_NXM jet fighter#
+SpriteType = {
+name = "GFX_NXM_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NXM_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_NXM tactical bomber#
+SpriteType = {
+name = "GFX_NXM_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_NXM jet tactical bomber#
+SpriteType = {
+name = "GFX_NXM_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_NXM_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_NXM heavy fighter#
+SpriteType = {
+name = "GFX_NXM_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_NXM strategic bomber#
+SpriteType = {
+name = "GFX_NXM_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_NXM jet strategic bomber#
+SpriteType = {
+name = "GFX_NXM_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#HMI#
+#####
+SpriteType = {
+name = "GFX_HMI_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+#����Ħ��/�����ؾ�_HMI motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_HMI_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_HMI great war tank#
+SpriteType = {
+name = "GFX_HMI_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_HMI light tank#
+SpriteType = {
+name = "GFX_HMI_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_HMI medium tank#
+SpriteType = {
+name = "GFX_HMI_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_HMI heavy tank#
+SpriteType = {
+name = "GFX_HMI_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_HMI main battle tank#
+SpriteType = {
+name = "GFX_HMI_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_HMI super heavy tank#
+SpriteType = {
+name = "GFX_HMI_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_HMI fighter#
+SpriteType = {
+name = "GFX_HMI_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_HMI CAS#
+SpriteType = {
+name = "GFX_HMI_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_HMI_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_HMI_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_HMI naval bomber#
+SpriteType = {
+name = "GFX_HMI_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_HMI_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_HMI jet fighter#
+SpriteType = {
+name = "GFX_HMI_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_HMI_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_HMI tactical bomber#
+SpriteType = {
+name = "GFX_HMI_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_HMI jet tactical bomber#
+SpriteType = {
+name = "GFX_HMI_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_HMI_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_HMI heavy fighter#
+SpriteType = {
+name = "GFX_HMI_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_HMI strategic bomber#
+SpriteType = {
+name = "GFX_HMI_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_HMI jet strategic bomber#
+SpriteType = {
+name = "GFX_HMI_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+
+#####
+#TNG#
+#####
+SpriteType = {
+name = "GFX_TNG_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_TNG motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_TNG_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_TNG great war tank#
+SpriteType = {
+name = "GFX_TNG_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_TNG light tank#
+SpriteType = {
+name = "GFX_TNG_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_TNG medium tank#
+SpriteType = {
+name = "GFX_TNG_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_TNG heavy tank#
+SpriteType = {
+name = "GFX_TNG_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_TNG main battle tank#
+SpriteType = {
+name = "GFX_TNG_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_TNG super heavy tank#
+SpriteType = {
+name = "GFX_TNG_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_TNG fighter#
+SpriteType = {
+name = "GFX_TNG_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_TNG CAS#
+SpriteType = {
+name = "GFX_TNG_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_TNG_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_TNG_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_TNG naval bomber#
+SpriteType = {
+name = "GFX_TNG_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_TNG_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_TNG jet fighter#
+SpriteType = {
+name = "GFX_TNG_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_TNG_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_TNG tactical bomber#
+SpriteType = {
+name = "GFX_TNG_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_TNG jet tactical bomber#
+SpriteType = {
+name = "GFX_TNG_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_TNG_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_TNG heavy fighter#
+SpriteType = {
+name = "GFX_TNG_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_TNG strategic bomber#
+SpriteType = {
+name = "GFX_TNG_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_TNG jet strategic bomber#
+SpriteType = {
+name = "GFX_TNG_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#KHR#
+#####
+SpriteType = {
+name = "GFX_KHR_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_KHR motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_KHR_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_KHR great war tank#
+SpriteType = {
+name = "GFX_KHR_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_KHR light tank#
+SpriteType = {
+name = "GFX_KHR_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_KHR medium tank#
+SpriteType = {
+name = "GFX_KHR_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_KHR heavy tank#
+SpriteType = {
+name = "GFX_KHR_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_KHR main battle tank#
+SpriteType = {
+name = "GFX_KHR_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_KHR super heavy tank#
+SpriteType = {
+name = "GFX_KHR_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_KHR fighter#
+SpriteType = {
+name = "GFX_KHR_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_KHR CAS#
+SpriteType = {
+name = "GFX_KHR_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_KHR_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_KHR_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_KHR naval bomber#
+SpriteType = {
+name = "GFX_KHR_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_KHR_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_KHR jet fighter#
+SpriteType = {
+name = "GFX_KHR_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_KHR_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_KHR tactical bomber#
+SpriteType = {
+name = "GFX_KHR_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_KHR jet tactical bomber#
+SpriteType = {
+name = "GFX_KHR_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_KHR_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_KHR heavy fighter#
+SpriteType = {
+name = "GFX_KHR_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_KHR strategic bomber#
+SpriteType = {
+name = "GFX_KHR_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_KHR_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_KHR jet strategic bomber#
+SpriteType = {
+name = "GFX_KHR_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#KRS#
+#####
+SpriteType = {
+name = "GFX_KRS_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_KRS motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_KRS_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_KRS great war tank#
+SpriteType = {
+name = "GFX_KRS_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_KRS light tank#
+SpriteType = {
+name = "GFX_KRS_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_KRS medium tank#
+SpriteType = {
+name = "GFX_KRS_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_KRS heavy tank#
+SpriteType = {
+name = "GFX_KRS_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_KRS main battle tank#
+SpriteType = {
+name = "GFX_KRS_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_KRS super heavy tank#
+SpriteType = {
+name = "GFX_KRS_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_KRS fighter#
+SpriteType = {
+name = "GFX_KRS_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_KRS CAS#
+SpriteType = {
+name = "GFX_KRS_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_KRS_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_KRS_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_KRS naval bomber#
+SpriteType = {
+name = "GFX_KRS_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_KRS_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_KRS jet fighter#
+SpriteType = {
+name = "GFX_KRS_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_KRS_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_KRS tactical bomber#
+SpriteType = {
+name = "GFX_KRS_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_KRS jet tactical bomber#
+SpriteType = {
+name = "GFX_KRS_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_KRS_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_KRS heavy fighter#
+SpriteType = {
+name = "GFX_KRS_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_KRS strategic bomber#
+SpriteType = {
+name = "GFX_KRS_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_KRS_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_KRS jet strategic bomber#
+SpriteType = {
+name = "GFX_KRS_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#ATM#
+#####
+SpriteType = {
+name = "GFX_ATM_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_xsm_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_ATM motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_ATM_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_ATM great war tank#
+SpriteType = {
+name = "GFX_ATM_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_ATM light tank#
+SpriteType = {
+name = "GFX_ATM_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_ATM medium tank#
+SpriteType = {
+name = "GFX_ATM_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_ATM heavy tank#
+SpriteType = {
+name = "GFX_ATM_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_ATM main battle tank#
+SpriteType = {
+name = "GFX_ATM_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_ATM super heavy tank#
+SpriteType = {
+name = "GFX_ATM_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_ATM fighter#
+SpriteType = {
+name = "GFX_ATM_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_ATM CAS#
+SpriteType = {
+name = "GFX_ATM_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_ATM_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_ATM_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_ATM naval bomber#
+SpriteType = {
+name = "GFX_ATM_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_ATM_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_ATM jet fighter#
+SpriteType = {
+name = "GFX_ATM_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_ATM_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_ATM tactical bomber#
+SpriteType = {
+name = "GFX_ATM_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_ATM jet tactical bomber#
+SpriteType = {
+name = "GFX_ATM_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_ATM_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_ATM heavy fighter#
+SpriteType = {
+name = "GFX_ATM_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_ATM strategic bomber#
+SpriteType = {
+name = "GFX_ATM_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_ATM_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_ATM jet strategic bomber#
+SpriteType = {
+name = "GFX_ATM_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#SIC#
+#####
+#������������_SIC infantry weapons#
+SpriteType = {
+name = "GFX_SIC_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_SIC motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_SIC_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_SIC great war tank#
+SpriteType = {
+name = "GFX_SIC_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_SIC light tank#
+SpriteType = {
+name = "GFX_SIC_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_SIC medium tank#
+SpriteType = {
+name = "GFX_SIC_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_SIC heavy tank#
+SpriteType = {
+name = "GFX_SIC_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_SIC main battle tank#
+SpriteType = {
+name = "GFX_SIC_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_SIC super heavy tank#
+SpriteType = {
+name = "GFX_SIC_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_SIC fighter#
+SpriteType = {
+name = "GFX_SIC_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_SIC CAS#
+SpriteType = {
+name = "GFX_SIC_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SIC_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_SIC_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_SIC naval bomber#
+SpriteType = {
+name = "GFX_SIC_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SIC_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_SIC jet fighter#
+SpriteType = {
+name = "GFX_SIC_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SIC_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_SIC tactical bomber#
+SpriteType = {
+name = "GFX_SIC_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_SIC jet tactical bomber#
+SpriteType = {
+name = "GFX_SIC_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SIC_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_SIC heavy fighter#
+SpriteType = {
+name = "GFX_SIC_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_SIC strategic bomber#
+SpriteType = {
+name = "GFX_SIC_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_SIC jet strategic bomber#
+SpriteType = {
+name = "GFX_SIC_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#HPC#
+#####
+#������������_HPC infantry weapons#
+SpriteType = {
+name = "GFX_HPC_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_HPC motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_HPC_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_HPC great war tank#
+SpriteType = {
+name = "GFX_HPC_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_HPC light tank#
+SpriteType = {
+name = "GFX_HPC_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_HPC medium tank#
+SpriteType = {
+name = "GFX_HPC_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_HPC heavy tank#
+SpriteType = {
+name = "GFX_HPC_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_HPC main battle tank#
+SpriteType = {
+name = "GFX_HPC_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_HPC super heavy tank#
+SpriteType = {
+name = "GFX_HPC_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_HPC fighter#
+SpriteType = {
+name = "GFX_HPC_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_HPC CAS#
+SpriteType = {
+name = "GFX_HPC_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_HPC_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_HPC_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_HPC naval bomber#
+SpriteType = {
+name = "GFX_HPC_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_HPC_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_HPC jet fighter#
+SpriteType = {
+name = "GFX_HPC_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_HPC_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_HPC tactical bomber#
+SpriteType = {
+name = "GFX_HPC_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_HPC jet tactical bomber#
+SpriteType = {
+name = "GFX_HPC_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_HPC_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_HPC heavy fighter#
+SpriteType = {
+name = "GFX_HPC_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_HPC strategic bomber#
+SpriteType = {
+name = "GFX_HPC_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_HPC jet strategic bomber#
+SpriteType = {
+name = "GFX_HPC_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#GUD#
+#####
+#������������_GUD infantry weapons#
+SpriteType = {
+name = "GFX_GUD_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_GUD motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_GUD_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_GUD great war tank#
+SpriteType = {
+name = "GFX_GUD_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_GUD light tank#
+SpriteType = {
+name = "GFX_GUD_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_GUD medium tank#
+SpriteType = {
+name = "GFX_GUD_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_GUD heavy tank#
+SpriteType = {
+name = "GFX_GUD_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_GUD main battle tank#
+SpriteType = {
+name = "GFX_GUD_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_GUD super heavy tank#
+SpriteType = {
+name = "GFX_GUD_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_GUD fighter#
+SpriteType = {
+name = "GFX_GUD_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_GUD CAS#
+SpriteType = {
+name = "GFX_GUD_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GUD_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_GUD_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_GUD naval bomber#
+SpriteType = {
+name = "GFX_GUD_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GUD_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_GUD jet fighter#
+SpriteType = {
+name = "GFX_GUD_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_GUD_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_GUD tactical bomber#
+SpriteType = {
+name = "GFX_GUD_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_GUD jet tactical bomber#
+SpriteType = {
+name = "GFX_GUD_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_GUD_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_GUD heavy fighter#
+SpriteType = {
+name = "GFX_GUD_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_GUD strategic bomber#
+SpriteType = {
+name = "GFX_GUD_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_GUD jet strategic bomber#
+SpriteType = {
+name = "GFX_GUD_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#XIK#
+#####
+#������������_XIK infantry weapons#
+SpriteType = {
+name = "GFX_XIK_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_XIK motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_XIK_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_XIK great war tank#
+SpriteType = {
+name = "GFX_XIK_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_XIK light tank#
+SpriteType = {
+name = "GFX_XIK_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_XIK medium tank#
+SpriteType = {
+name = "GFX_XIK_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_XIK heavy tank#
+SpriteType = {
+name = "GFX_XIK_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_XIK main battle tank#
+SpriteType = {
+name = "GFX_XIK_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_XIK super heavy tank#
+SpriteType = {
+name = "GFX_XIK_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_XIK fighter#
+SpriteType = {
+name = "GFX_XIK_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_XIK CAS#
+SpriteType = {
+name = "GFX_XIK_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIK_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIK_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_XIK naval bomber#
+SpriteType = {
+name = "GFX_XIK_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIK_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_XIK jet fighter#
+SpriteType = {
+name = "GFX_XIK_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_XIK_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_XIK tactical bomber#
+SpriteType = {
+name = "GFX_XIK_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_XIK jet tactical bomber#
+SpriteType = {
+name = "GFX_XIK_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_XIK_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_XIK heavy fighter#
+SpriteType = {
+name = "GFX_XIK_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_XIK strategic bomber#
+SpriteType = {
+name = "GFX_XIK_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_XIK jet strategic bomber#
+SpriteType = {
+name = "GFX_XIK_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#PLM#
+#####
+#������������_PLM infantry weapons#
+SpriteType = {
+name = "GFX_PLM_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_PLM motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_PLM_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_PLM great war tank#
+SpriteType = {
+name = "GFX_PLM_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_PLM light tank#
+SpriteType = {
+name = "GFX_PLM_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_PLM medium tank#
+SpriteType = {
+name = "GFX_PLM_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_PLM heavy tank#
+SpriteType = {
+name = "GFX_PLM_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_PLM main battle tank#
+SpriteType = {
+name = "GFX_PLM_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_PLM super heavy tank#
+SpriteType = {
+name = "GFX_PLM_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_PLM fighter#
+SpriteType = {
+name = "GFX_PLM_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_PLM CAS#
+SpriteType = {
+name = "GFX_PLM_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_PLM_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_PLM_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_PLM naval bomber#
+SpriteType = {
+name = "GFX_PLM_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_PLM_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_PLM jet fighter#
+SpriteType = {
+name = "GFX_PLM_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_PLM_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_PLM tactical bomber#
+SpriteType = {
+name = "GFX_PLM_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_PLM jet tactical bomber#
+SpriteType = {
+name = "GFX_PLM_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_PLM_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_PLM heavy fighter#
+SpriteType = {
+name = "GFX_PLM_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_PLM strategic bomber#
+SpriteType = {
+name = "GFX_PLM_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_PLM jet strategic bomber#
+SpriteType = {
+name = "GFX_PLM_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#SHD#
+#####
+#������������_SHD infantry weapons#
+SpriteType = {
+name = "GFX_SHD_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_SHD motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_SHD_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_SHD great war tank#
+SpriteType = {
+name = "GFX_SHD_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_SHD light tank#
+SpriteType = {
+name = "GFX_SHD_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_SHD medium tank#
+SpriteType = {
+name = "GFX_SHD_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_SHD heavy tank#
+SpriteType = {
+name = "GFX_SHD_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_SHD main battle tank#
+SpriteType = {
+name = "GFX_SHD_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_SHD super heavy tank#
+SpriteType = {
+name = "GFX_SHD_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_SHD fighter#
+SpriteType = {
+name = "GFX_SHD_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_SHD CAS#
+SpriteType = {
+name = "GFX_SHD_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHD_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHD_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_SHD naval bomber#
+SpriteType = {
+name = "GFX_SHD_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHD_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_SHD jet fighter#
+SpriteType = {
+name = "GFX_SHD_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHD_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_SHD tactical bomber#
+SpriteType = {
+name = "GFX_SHD_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_SHD jet tactical bomber#
+SpriteType = {
+name = "GFX_SHD_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SHD_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_SHD heavy fighter#
+SpriteType = {
+name = "GFX_SHD_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_SHD strategic bomber#
+SpriteType = {
+name = "GFX_SHD_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_SHD jet strategic bomber#
+SpriteType = {
+name = "GFX_SHD_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+#####
+#NEA#
+#####
+#������������_NEA infantry weapons#
+SpriteType = {
+name = "GFX_NEA_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_NEA motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_NEA_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_NEA great war tank#
+SpriteType = {
+name = "GFX_NEA_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_NEA light tank#
+SpriteType = {
+name = "GFX_NEA_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_NEA medium tank#
+SpriteType = {
+name = "GFX_NEA_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_NEA heavy tank#
+SpriteType = {
+name = "GFX_NEA_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_NEA main battle tank#
+SpriteType = {
+name = "GFX_NEA_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_NEA super heavy tank#
+SpriteType = {
+name = "GFX_NEA_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_NEA fighter#
+SpriteType = {
+name = "GFX_NEA_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_NEA CAS#
+SpriteType = {
+name = "GFX_NEA_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NEA_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_NEA_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_NEA naval bomber#
+SpriteType = {
+name = "GFX_NEA_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NEA_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_NEA jet fighter#
+SpriteType = {
+name = "GFX_NEA_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_NEA_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_NEA tactical bomber#
+SpriteType = {
+name = "GFX_NEA_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_NEA jet tactical bomber#
+SpriteType = {
+name = "GFX_NEA_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_NEA_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_NEA heavy fighter#
+SpriteType = {
+name = "GFX_NEA_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_NEA strategic bomber#
+SpriteType = {
+name = "GFX_NEA_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_NEA jet strategic bomber#
+SpriteType = {
+name = "GFX_NEA_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+
+
+
+#####
+#SHC#
+#####
+#������������_SHC infantry weapons#
+SpriteType = {
+name = "GFX_SHC_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_0.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_infantry_weapons1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_improved_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_advanced_infantry_weapons_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_infantry_equipment_3.dds"
+}
+
+
+#����Ħ��/�����ؾ�_SHC motorized/mechanized vehicles#
+SpriteType = {
+name = "GFX_SHC_motorised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_motorized_equipment_1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_motorized_equipment_1.dds"
+}
+
+
+#����һս̹��_SHC great war tank#
+SpriteType = {
+name = "GFX_SHC_gwtank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_gwtank.dds"
+} 
+
+
+#������̹��_SHC light tank#
+SpriteType = {
+name = "GFX_SHC_basic_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_improved_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_light_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_advanced_light_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_light_tank.dds"
+}
+
+
+#��������̹��_SHC medium tank#
+SpriteType = {
+name = "GFX_SHC_basic_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_improved_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_main_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_advanced_medium_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_main_tank.dds"
+}
+
+
+#��������̹��_SHC heavy tank#
+SpriteType = {
+name = "GFX_SHC_basic_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_basic_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_improved_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_imp_heavy_tank.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_advanced_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_adv_heavy_tank.dds"
+}
+
+
+#������ս̹��_SHC main battle tank#
+SpriteType = {
+name = "GFX_SHC_main_battle_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_main_battle_tank.dds"
+}
+
+
+#��������̹��_SHC super heavy tank#
+SpriteType = {
+name = "GFX_SHC_super_heavy_tank_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_superheavy_tank.dds"
+}
+
+
+#����ս����_SHC fighter#
+SpriteType = {
+name = "GFX_SHC_early_fighter_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_fighter.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_fighter3.dds"
+}
+
+
+#���������ը��_SHC CAS#
+SpriteType = {
+name = "GFX_SHC_CAS1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHC_CAS2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS2.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHC_CAS3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_CAS3.dds"
+}
+
+
+#����������ը��_SHC naval bomber#
+SpriteType = {
+name = "GFX_SHC_naval_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHC_naval_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_naval_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_naval_bomber3.dds"
+}
+
+
+#��������ս����_SHC jet fighter#
+SpriteType = {
+name = "GFX_SHC_jet_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter1.dds"
+}	
+
+SpriteType = {
+name = "GFX_SHC_jet_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_fighter2.dds"
+}
+
+
+#����ս����ը��_SHC tactical bomber#
+SpriteType = {
+name = "GFX_SHC_early_bomber_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_early_bomber.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_tactical_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_tactical_bomber3.dds"
+}
+
+
+#��������ս����ը��_SHC jet tactical bomber#
+SpriteType = {
+name = "GFX_SHC_jet_tactical_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber2.dds"
+}	
+	
+SpriteType = {
+name = "GFX_SHC_jet_tactical_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_tactical_bomber1.dds"
+}
+
+
+#��������ս����_SHC heavy fighter#
+SpriteType = {
+name = "GFX_SHC_heavy_fighter1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_heavy_fighter2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_heavy_fighter3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_heavy_fighter3.dds"
+}
+
+
+#����ս�Ժ�ը��_SHC strategic bomber#
+SpriteType = {
+name = "GFX_SHC_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_strategic_bomber2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_strategic_bomber3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_strategic_bomber3.dds"
+}
+
+
+#��������ս�Ժ�ը��_SHC jet strategic bomber#
+SpriteType = {
+name = "GFX_SHC_jet_strategic_bomber1_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_chi_jet_strategic_bomber1.dds"
+}
+
+###########
+#MECH TECH#
+###########
+
+
+
+
+
+#####
+#CHI#
+#####
+SpriteType = {
+name = "GFX_CHI_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_CHI_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+#####
+#XIK#
+#####
+SpriteType = {
+name = "GFX_XIK_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_XIK_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#PLM#
+#####
+SpriteType = {
+name = "GFX_PLM_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_PLM_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#SHD#
+#####
+SpriteType = {
+name = "GFX_SHD_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHD_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#NEA#
+#####
+SpriteType = {
+name = "GFX_NEA_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_NEA_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+#####
+#SHC#
+#####
+SpriteType = {
+name = "GFX_SHC_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHC_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+#####
+#TNG#
+#####
+SpriteType = {
+name = "GFX_TNG_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_TNG_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#HMI#
+#####
+SpriteType = {
+name = "GFX_HMI_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_HMI_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#NXM#
+#####
+SpriteType = {
+name = "GFX_NXM_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_NXM_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+#####
+#GSM#
+#####
+SpriteType = {
+name = "GFX_GSM_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_GSM_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+#####
+#XSM#
+#####
+SpriteType = {
+name = "GFX_XSM_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_XSM_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#SHX#
+#####
+SpriteType = {
+name = "GFX_SHX_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SHX_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#GXC#
+#####
+SpriteType = {
+name = "GFX_GXC_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_GXC_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#YUN#
+#####
+SpriteType = {
+name = "GFX_YUN_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_YUN_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#SIC#
+#####
+SpriteType = {
+name = "GFX_SIC_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_SIC_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#HPC#
+#####
+SpriteType = {
+name = "GFX_HPC_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_HPC_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+#####
+#GUD#
+#####
+SpriteType = {
+name = "GFX_GUD_mechanised_infantry_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_1.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_mechanised_infantry2_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_2.dds"
+}
+
+SpriteType = {
+name = "GFX_GUD_mechanised_infantry3_medium"
+texturefile = "gfx/interface/technologies/RCM_lamp_prc_mechanized_equipment_3.dds"
+}
+
+
+
+
+#JAP ICONS
+
+	#Japanese great war tank#
+        SpriteType = {
+            name = "GFX_JAP_gwtank_medium"
+            texturefile = "gfx/interface/technologies/JAP_gwtank.dds"
+        } 
+
+    #Japanese light tank#
+	    SpriteType = {
+            name = "GFX_JAP_basic_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/JAP_basic_light_tank_aa.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_JAP_improved_light_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_imp_light_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_improved_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/JAP_imp_light_tank_aa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_advanced_light_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_adv_light_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_advanced_light_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_adv_light_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_advanced_light_spaa_medium"
+            texturefile = "gfx/interface/technologies/JAP_adv_light_tank_aa.dds"
+        }
+
+    #Japanese medium tank#
+        SpriteType = {
+            name = "GFX_JAP_basic_medium_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_basic_main_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_basic_medium_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_basic_main_tank_spa.dds"
+        }
+
+		SpriteType = {
+            name = "GFX_JAP_basic_medium_spaa_medium"
+            texturefile = "gfx/interface/technologies/JAP_basic_main_tank_aa.dds"
+        }
+		
+        SpriteType = {
+            name = "GFX_JAP_improved_medium_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_imp_main_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_improved_medium_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_imp_main_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_advanced_medium_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_adv_main_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_advanced_medium_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_adv_main_tank_spa.dds"
+        }
+
+    #Japanese heavy tank#
+        SpriteType = {
+            name = "GFX_JAP_basic_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_basic_heavy_tank_td.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_basic_heavy_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_basic_heavy_tank_spa.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_improved_heavy_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_imp_heavy_tank_td.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_improved_heavy_art_medium"
+            texturefile = "gfx/interface/technologies/JAP_imp_heavy_tank_spa.dds"
+        }
+
+	#Japanese main battle tank#
+        SpriteType = {
+            name = "GFX_JAP_modern_td_medium"
+            texturefile = "gfx/interface/technologies/JAP_main_battle_tank_td.dds"
+        }
+	
+    #Japanese jet fighter#
+        SpriteType = {
+            name = "GFX_JAP_jet_fighter2_medium"
+            texturefile = "gfx/interface/technologies/jap_jet_fighter2.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_JAP_jet_fighter1_medium"
+            texturefile = "gfx/interface/technologies/jap_jet_fighter1.dds"
+        }
+		
+    #Japanese jet tactical bomber#
+	    SpriteType = {
+            name = "GFX_JAP_jet_tactical_bomber1_medium"
+            texturefile = "gfx/interface/technologies/jap_jet_tactical_bomber1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_jet_tactical_bomber2_medium"
+            texturefile = "gfx/interface/technologies/jap_jet_tactical_bomber2.dds"
+        }
+
+	#Japanese rocket interceptor#
+        SpriteType = {
+            name = "GFX_JAP_rocket_interceptor_equipment_1_medium"
+            texturefile = "gfx/interface/technologies/jap_rocket_interceptor_1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_rocket_interceptor_equipment_2_medium"
+            texturefile = "gfx/interface/technologies/jap_rocket_interceptor_2.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_rocket_interceptor_equipment_3_medium"
+            texturefile = "gfx/interface/technologies/jap_rocket_interceptor_3.dds"
+        }
+		
+    #Japanese carrier-based CAS#
+        SpriteType = {
+            name = "GFX_JAP_cv_CAS1_medium"
+            texturefile = "gfx/interface/technologies/JAP_CAS1_cv.dds"
+        }	
+
+    #Japanese carrier-based fighter#
+        SpriteType = {
+            name = "GFX_JAP_cv_early_fighter_medium"
+            texturefile = "gfx/interface/technologies/JAP_early_fighter_cv.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_cv_fighter3_medium"
+            texturefile = "gfx/interface/technologies/JAP_fighter3_cv.dds"
+        }
+
+	#Japanese transport plane#	
+	    SpriteType = {
+		    name = "GFX_JAP_transport_plane_equipment_medium"
+		    texturefile = "gfx/interface/technologies/jap_transport_plane_equipment.dds"
+	    }
+		
+    #Japanese infantry weapon#
+        SpriteType = {
+            name = "GFX_JAP_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/JAP_infantry_equipment_0.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_infantry_weapons1_medium"
+            texturefile = "gfx/interface/technologies/JAP_infantry_equipment_1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_improved_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/JAP_infantry_equipment_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_advanced_infantry_weapons_medium"
+            texturefile = "gfx/interface/technologies/JAP_infantry_equipment_3.dds"
+        }
+
+    #Japanese mobile infantry vehicle#
+        SpriteType = {
+            name = "GFX_JAP_mechanised_infantry_medium"
+            texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_1.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_mechanised_infantry2_medium"
+            texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_2.dds"
+        }
+
+	#Japanese amphibious vehicle#
+	    SpriteType = {
+		    name = "GFX_JAP_amphibious_mechanized_infantry_2_medium"
+		    texturefile = "gfx/interface/technologies/jap_amphibious_mech_2.dds"
+	    }
+	
+    #Japanese howitzer#
+        SpriteType = {
+            name = "GFX_JAP_gw_artillery_medium"
+            texturefile = "gfx/interface/technologies/JAP_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_artillery1_medium"
+            texturefile = "gfx/interface/technologies/JAP_Art_2.dds"
+        }	
+	
+        SpriteType = {
+            name = "GFX_JAP_artillery4_medium"
+            texturefile = "gfx/interface/technologies/JAP_Art_3.dds"
+        }	
+
+    #Japanese AA#
+        SpriteType = {
+            name = "GFX_JAP_interwar_antiair_medium"
+            texturefile = "gfx/interface/technologies/JAP_AA_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_antiair2_medium"
+            texturefile = "gfx/interface/technologies/JAP_AA_2.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_antiair5_medium"
+            texturefile = "gfx/interface/technologies/JAP_AA_3.dds"
+        }	
+
+    #Japanese AT#
+        SpriteType = {
+            name = "GFX_JAP_interwar_antitank_medium"
+            texturefile = "gfx/interface/technologies/JAP_AT_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_antitank2_medium"
+            texturefile = "gfx/interface/technologies/JAP_AT_2.dds"
+        }	
+
+        SpriteType = {
+            name = "GFX_JAP_antitank5_medium"
+            texturefile = "gfx/interface/technologies/JAP_AT_3.dds"
+        }	
+
+    #Japanese rocket artillery#
+        SpriteType = {
+            name = "GFX_JAP_rocket_artillery_medium"
+            texturefile = "gfx/interface/technologies/JAP_Rocket_Art_1.dds"
+        }
+
+        SpriteType = {
+            name = "GFX_JAP_rocket_artillery4_medium"
+            texturefile = "gfx/interface/technologies/JAP_Rocket_Art_2.dds"
+        }
+		
+		SpriteType = {
+            name = "GFX_JAP_motorized_rocket_unit_medium"
+            texturefile = "gfx/interface/technologies/JAP_motorized_rocket_unit.dds"
+        }		
+
+    #Japanese submarines#
+	    SpriteType = {
+		    name = "GFX_JAP_early_submarine_medium"
+		    texturefile = "gfx/interface/technologies/JAP_submarine1.dds"
+	    }	
+		SpriteType = {	
+			name = "GFX_JAP_early_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine1.dds"
+		}	
+
+		SpriteType = {
+			name = "GFX_JAP_basic_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine2.dds"
+		}	
+		SpriteType = {
+			name = "GFX_JAP_basic_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine2.dds"
+		}	
+
+		SpriteType = {
+			name = "GFX_JAP_improved_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine3.dds"
+		}
+		SpriteType = {
+			name = "GFX_JAP_improved_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine3.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_JAP_advanced_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine4.dds"
+		}
+		SpriteType = {
+			name = "GFX_JAP_advanced_ship_hull_submarine_medium"
+			texturefile = "gfx/interface/technologies/JAP_submarine4.dds"
+		}
+	
+		SpriteType = {
+		    name = "GFX_JAP_ship_hull_cruiser_submarine_medium"
+		    texturefile = "gfx/interface/technologies/jap_cruiser_submarine.dds"
+	    }
+		
+	#Japanese destroyer#
+	    SpriteType = {
+		    name = "GFX_JAP_early_destroyer_medium"
+		    texturefile = "gfx/interface/technologies/JAP_destroyer1.dds"
+	    }	
+	    SpriteType = {	
+	    	name = "GFX_JAP_early_ship_hull_light_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_destroyer1.dds"
+    	}
+
+	    SpriteType = {
+	    	name = "GFX_JAP_basic_destroyer_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_destroyer2.dds"
+	    }	
+    	SpriteType = {
+	    	name = "GFX_JAP_basic_ship_hull_light_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_destroyer2.dds"
+	    }
+		
+	    SpriteType = {
+	    	name = "GFX_JAP_improved_destroyer_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_destroyer3.dds"
+	    }
+		SpriteType = {
+    		name = "GFX_JAP_improved_ship_hull_light_medium"
+    		texturefile = "gfx/interface/technologies/JAP_destroyer3.dds"
+    	}
+		
+		SpriteType = {
+		    name = "GFX_JAP_advanced_destroyer_medium"
+		    texturefile = "gfx/interface/technologies/JAP_destroyer4.dds"
+	    }
+		SpriteType = {
+		    name = "GFX_JAP_advanced_ship_hull_light_medium"
+    		texturefile = "gfx/interface/technologies/JAP_destroyer4.dds"
+    	}
+		
+	#Japanese light cruiser#
+	    SpriteType = {
+	    	name = "GFX_JAP_early_light_cruiser_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_light_cruiser1.dds"
+	    }	
+     	SpriteType = {	
+	    	name = "GFX_JAP_early_ship_hull_cruiser_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_light_cruiser1.dds"
+	    }
+	    SpriteType = {
+	     	name = "GFX_JAP_ship_hull_cruiser_1_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_light_cruiser1.dds"
+	    }	
+		
+	    SpriteType = {
+	    	name = "GFX_JAP_basic_light_cruiser_medium"
+    		texturefile = "gfx/interface/technologies/JAP_light_cruiser2.dds"
+	    }
+		SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_2_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_light_cruiser2.dds"
+	    }
+
+		SpriteType = {
+    		name = "GFX_JAP_improved_light_cruiser_medium"
+    		texturefile = "gfx/interface/technologies/JAP_light_cruiser3.dds"
+    	}
+	    SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_3_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_light_cruiser3.dds"
+	    }		
+	
+    	SpriteType = {
+    		name = "GFX_JAP_advanced_light_cruiser_medium"
+    		texturefile = "gfx/interface/technologies/JAP_light_cruiser4.dds"
+    	}
+	    SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_4_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_light_cruiser4.dds"
+	    }
+		
+	#Japanese heavy cruiser#
+	    SpriteType = {
+	    	name = "GFX_JAP_early_light_cruiser_capital_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser1.dds"
+	    }
+		SpriteType = {
+		    name = "GFX_JAP_early_heavy_cruiser_medium"
+		    texturefile = "gfx/interface/technologies/JAP_heavy_cruiser1.dds"
+	    }
+		SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_1_capital_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser1.dds"
+	    }
+	
+		SpriteType = {
+    		name = "GFX_JAP_basic_light_cruiser_capital_medium"
+    		texturefile = "gfx/interface/technologies/JAP_heavy_cruiser2.dds"
+    	}
+    	SpriteType = {
+    		name = "GFX_JAP_basic_heavy_cruiser_medium"
+    		texturefile = "gfx/interface/technologies/JAP_heavy_cruiser2.dds"
+	    }
+		SpriteType = {
+    		name = "GFX_JAP_basic_ship_hull_cruiser_medium"
+    		texturefile = "gfx/interface/technologies/JAP_heavy_cruiser2.dds"
+    	}
+		SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_2_capital_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser2.dds"
+	    }
+		
+	    SpriteType = {
+    		name = "GFX_JAP_improved_light_cruiser_capital_medium"
+    		texturefile = "gfx/interface/technologies/JAP_heavy_cruiser3.dds"
+    	}
+    	SpriteType = {
+	    	name = "GFX_JAP_improved_heavy_cruiser_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser3.dds"
+	    }
+		SpriteType = {
+    		name = "GFX_JAP_improved_ship_hull_cruiser_medium"
+    		texturefile = "gfx/interface/technologies/JAP_heavy_cruiser3.dds"
+    	}
+	    SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_3_capital_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser3.dds"
+	    }		
+	
+		SpriteType = {
+    		name = "GFX_JAP_advanced_light_cruiser_capital_medium"
+    		texturefile = "gfx/interface/technologies/JAP_heavy_cruiser4.dds"
+    	}
+		SpriteType = {
+		    name = "GFX_JAP_advanced_heavy_cruiser_medium"
+		    texturefile = "gfx/interface/technologies/JAP_heavy_cruiser4.dds"
+	    }
+		SpriteType = {
+		    name = "GFX_JAP_advanced_ship_hull_cruiser_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser4.dds"
+	    }
+	    SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_4_capital_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_cruiser4.dds"
+	    }
+		
+		SpriteType = {
+	    	name = "GFX_JAP_ship_hull_cruiser_coastal_defense_ship_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_cruiser_coastal_defense_ship.dds"
+	    }
+		
+	#Japanese battle cruiser#
+		SpriteType = {	
+		    name = "GFX_JAP_early_battlecruiser_medium"
+		    texturefile = "gfx/interface/technologies/JAP_battlecruiser1.dds"
+	    }
+
+	    SpriteType = {
+		    name = "GFX_JAP_basic_battlecruiser_medium"
+		    texturefile = "gfx/interface/technologies/JAP_battlecruiser2.dds"
+	    }
+		
+	#Japanese battleship#
+    	SpriteType = {
+    		name = "GFX_JAP_early_battleship_medium"
+    		texturefile = "gfx/interface/technologies/JAP_battleship1.dds"
+	    }	
+	    SpriteType = {	
+	    	name = "GFX_JAP_early_ship_hull_heavy_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_battleship1.dds"
+	    }	
+
+    	SpriteType = {
+    		name = "GFX_JAP_basic_battleship_medium"
+    		texturefile = "gfx/interface/technologies/JAP_battleship2.dds"
+    	}
+	    SpriteType = {
+	    	name = "GFX_JAP_basic_ship_hull_heavy_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_battleship2.dds"
+	    }
+
+    	SpriteType = {
+    		name = "GFX_JAP_improved_battleship_medium"
+    		texturefile = "gfx/interface/technologies/JAP_battleship3.dds"
+    	}
+    	SpriteType = {
+    		name = "GFX_JAP_improved_ship_hull_heavy_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_battleship3.dds"
+	    }		
+	
+		SpriteType = {
+    		name = "GFX_JAP_advanced_battleship_medium"
+    		texturefile = "gfx/interface/technologies/JAP_battleship4.dds"
+    	}
+    	SpriteType = {
+    		name = "GFX_JAP_advanced_ship_hull_heavy_medium"
+    		texturefile = "gfx/interface/technologies/JAP_battleship4.dds"
+    	}
+		
+	#Japanese super-heavy battleship#
+	   	SpriteType = {
+	    	name = "GFX_JAP_heavy_battleship_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_battleship1.dds"
+    	}
+		SpriteType = {
+		    name = "GFX_JAP_ship_hull_super_heavy_1_medium"
+		    texturefile = "gfx/interface/technologies/JAP_heavy_battleship1.dds"
+	    }
+		
+	    SpriteType = {
+	    	name = "GFX_JAP_heavy_battleship2_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_heavy_battleship2.dds"
+	    }
+
+    #Japanese carrier#
+       	SpriteType = {
+		    name = "GFX_JAP_ship_hull_carrier_conversion_ca_medium"
+		    texturefile = "gfx/interface/technologies/JAP_carrier_conversion_ca.dds"
+	    }	
+
+		SpriteType = {
+	    	name = "GFX_JAP_early_carrier_medium"
+	    	texturefile = "gfx/interface/technologies/JAP_carrier1.dds"
+		}
+		SpriteType = {	
+			name = "GFX_JAP_early_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier1.dds"
+		}	
+
+		SpriteType = {
+			name = "GFX_JAP_basic_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier2.dds"
+		}
+			SpriteType = {
+			name = "GFX_JAP_basic_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier2.dds"
+		}
+
+		SpriteType = {
+			name = "GFX_JAP_improved_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier3.dds"
+		}
+		SpriteType = {
+			name = "GFX_JAP_improved_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier3.dds"
+		}
+	
+		SpriteType = {
+			name = "GFX_JAP_advanced_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier4.dds"
+		}
+		SpriteType = {
+			name = "GFX_JAP_advanced_ship_hull_carrier_medium"
+			texturefile = "gfx/interface/technologies/JAP_carrier4.dds"
+		}
+
+	#Japanese torpedo cruiser
+		SpriteType = {
+		   name = "GFX_JAP_torpedo_cruiser_medium"
+		   texturefile = "gfx/interface/technologies/JAP_torpedo_cruiser.dds"
+	    }
+		
+		SpriteType = {
+		    name = "GFX_JAP_ship_hull_torpedo_cruiser_medium"
+		    texturefile = "gfx/interface/technologies/JAP_torpedo_cruiser.dds"
+	    }
+}

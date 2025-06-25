@@ -1,0 +1,42 @@
+usa_isolationism_modifier = {
+    icon = GFX_USA_shield
+    enable = { always = yes }
+    remove_trigger = {
+        has_war_with_major = yes
+    }
+    # politics
+    economy_cost_factor = USA.politics_debuff_1
+    mobilization_laws_cost_factor = USA.politics_debuff_1
+    war_support_weekly_factor = USA.politics_debuff_2
+
+    # conscription and training
+    conscription_factor = USA.conscription_debuff_2
+    training_time_factor = USA.conscription_debuff_1
+    mobilization_speed = USA.conscription_debuff_2
+
+    # military
+    experience_gain_army_factor = USA.military_debuff_1
+    experience_gain_navy_factor = USA.military_debuff_1
+    experience_gain_air_factor = USA.military_debuff_1
+    production_speed_bunker_factor = USA.military_debuff_2
+    production_speed_coastal_bunker_factor = USA.military_debuff_2
+
+    # factory
+    conversion_cost_civ_to_mil_factor = USA.factory_debuff_1
+}
+
+jap_puppet_cabinet = {
+    enable = { always = yes }
+    remove_trigger = {
+        OR = {
+            NOT = { has_government = fascism }
+            is_subject = yes
+        }
+    }
+    surrender_limit = JAP.buff_20
+    offensive_war_stability_factor = JAP.buff_20
+    political_power_factor = JAP.debuff_20
+    economy_cost_factor = JAP.debuff_20
+    mobilization_laws_cost_factor = JAP.debuff_20
+    fascism_drift = JAP.buff_3
+}

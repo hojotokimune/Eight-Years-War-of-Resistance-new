@@ -1,0 +1,118 @@
+
+	玩家专用决议 = {
+	
+		请求美国轻坦部队 = {
+
+			icon = generic_political_actions
+
+			available = {
+                      has_global_flag = CHI_no_longer_united_flag
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+               }
+
+		    ai_will_do = {
+			factor = 0
+		    }
+		    days_re_enable = 35
+			visible = {
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+			}
+		cost = 100
+			complete_effect = {
+            add_ideas = chi_guyongjun			
+		hidden_effect = {
+                        CHI = {
+                        qing_tan_shi = yes
+                                }
+		}
+			custom_effect_tooltip = qing_tan_shi_tt
+		
+		                    }			
+			}
+
+
+
+		请求美国中坦部队 = {
+
+			icon = generic_political_actions
+
+			available = {
+                      has_global_flag = CHI_no_longer_united_flag
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+               }
+
+		    ai_will_do = {
+			factor = 0
+		    }
+		    days_re_enable = 35
+			visible = {
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+			}
+		cost = 200
+			complete_effect = {	
+            add_ideas = chi_guyongjun				
+		hidden_effect = {
+                        CHI = {
+                        zhong_tan_ke_shi = yes
+                                }
+		}
+			custom_effect_tooltip = zhong_tan_ke_shi_tt
+		
+		                    }			
+			}
+
+
+
+
+		请求美国重坦部队 = {
+
+			icon = generic_political_actions
+
+			available = {
+                      has_global_flag = CHI_no_longer_united_flag
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+               }
+
+		    ai_will_do = {
+			factor = 0
+		    }
+		    days_re_enable = 35
+			visible = {
+                                  OR = {
+                                    has_global_flag = PRC_War_of_Liberation_focus_flag
+				    has_war_with = PRC
+                               }
+			}
+		cost = 300
+			complete_effect = {	
+            add_ideas = chi_guyongjun				
+		hidden_effect = {
+                        CHI = {
+                        zhong_tan_shi = yes
+                                }
+		}
+			custom_effect_tooltip = zhong_tan_shi_tt
+		
+		                    }			
+			}
+
+
+
+	}
+
+

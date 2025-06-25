@@ -1,0 +1,1200 @@
+#Add to scripted triggers if more levels of hyper inflation is added
+CHI_hyper_inflation_clear_all = {
+	remove_ideas = {
+		CHI_hyper_inflation_1
+		CHI_hyper_inflation_2
+		CHI_hyper_inflation_3
+		CHI_hyper_inflation_4
+		CHI_hyper_inflation_5
+	}
+}
+
+#Important to put HIGHEST first
+RCM_increase_inflation_level = {  #MODDED
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = CHI_inflation_up_tt
+	hidden_effect = { #MODDEDvv
+		if = {
+			limit = { has_idea = CHI_hyper_inflation_4 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_4
+				add_idea = CHI_hyper_inflation_5
+			}
+		}
+		else_if = {
+			limit = { has_idea = CHI_hyper_inflation_3 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_3
+				add_idea = CHI_hyper_inflation_4
+			}
+		}
+		else_if = {
+			limit = { has_idea = CHI_hyper_inflation_2 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_2
+				add_idea = CHI_hyper_inflation_3
+			}
+		}
+		else_if = {
+			limit = { has_idea = CHI_hyper_inflation_1 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_1
+				add_idea = CHI_hyper_inflation_2
+			}
+		}
+		else_if = {
+			limit = { NOT = { has_idea = CHI_hyper_inflation_1 } }
+			add_ideas = CHI_hyper_inflation_1
+		}
+	} #MODDEDvv
+}
+RCM_increase_inflation_2_levels = {  #MODDED
+	# level 5 not relevant. Cannot go above.
+	custom_effect_tooltip = CHI_inflation_up_2_tt
+	hidden_effect = {
+		if = {
+			limit = { has_idea = CHI_hyper_inflation_4 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_4
+				add_idea = CHI_hyper_inflation_5
+			}
+		}
+		else_if = {
+			limit = { has_idea = CHI_hyper_inflation_3 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_3
+				add_idea = CHI_hyper_inflation_5
+			}
+		}
+		else_if = {
+			limit = { has_idea = CHI_hyper_inflation_2 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_2
+				add_idea = CHI_hyper_inflation_4
+			}
+		}
+		else_if = {
+			limit = { has_idea = CHI_hyper_inflation_1 }
+			swap_ideas = {
+				remove_idea = CHI_hyper_inflation_1
+				add_idea = CHI_hyper_inflation_3
+			}
+		}
+		else_if = {
+			limit = { NOT = { has_idea = CHI_hyper_inflation_1 } }
+			add_ideas = CHI_hyper_inflation_2
+		}
+	}
+}
+#Important to put LOWEST first
+CHI_hyper_inflation_level_down = {
+	custom_effect_tooltip = CHI_inflation_down_tt
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_1 }
+		#Makes the tooltip clearer if player looks at the effect early in the game
+		#effect_tooltip = {  #MODDED
+		#	swap_ideas = {
+		#		remove_idea = CHI_hyper_inflation_1
+		#		add_idea = CHI_hyper_inflation_none
+		#	}
+		#}
+		#hidden_effect = { remove_ideas = CHI_hyper_inflation_1 }  #MODDED
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_1  #MODDED
+			add_idea = CHI_hyper_inflation_none #MODDED
+		}
+		 #MODDED
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_2 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_2
+			add_idea = CHI_hyper_inflation_1
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_3 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_3
+			add_idea = CHI_hyper_inflation_2
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_4 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_4
+			add_idea = CHI_hyper_inflation_3
+		}
+	}
+	if = {
+		limit = { has_idea = CHI_hyper_inflation_5 }
+		swap_ideas = {
+			remove_idea = CHI_hyper_inflation_5
+			add_idea = CHI_hyper_inflation_4
+		}
+	}
+}
+
+# CHI_integrating_warlords #
+
+CHI_warlord_integration_up = {
+	FROM = { set_country_flag = ongoing_integration_flag } #MODDED
+	if = { #MODDED
+		limit = { #MODDED
+			NOT = { has_variable = warlord_integration_count } #MODDED
+		} #MODDED
+		set_variable = { warlord_integration_count = 0 }
+	} #MODDED
+	add_to_variable = { #MODDED
+		warlord_integration_count = 1 #MODDED
+	} #MODDED
+	if = {
+		limit = {
+			has_idea = CHI_warlord_integration_4
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_4
+			add_idea = CHI_warlord_integration_5
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_warlord_integration_3
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_3
+			add_idea = CHI_warlord_integration_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_warlord_integration_2
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_2
+			add_idea = CHI_warlord_integration_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_warlord_integration_1
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_1
+			add_idea = CHI_warlord_integration_2
+		}
+	}
+	else = {
+		add_ideas = CHI_warlord_integration_1
+	}
+}
+
+
+CHI_warlord_integration_down = {
+	subtract_from_variable = { #MODDED
+		global.warlord_integration_count = 1 #MODDED
+	} #MODDED
+	if = {
+		limit = {
+			has_idea = CHI_warlord_integration_5
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_5
+			add_idea = CHI_warlord_integration_4
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_warlord_integration_4
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_4
+			add_idea = CHI_warlord_integration_3
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_warlord_integration_3
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_3
+			add_idea = CHI_warlord_integration_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_warlord_integration_2
+		}
+		swap_ideas = {
+			remove_idea = CHI_warlord_integration_2
+			add_idea = CHI_warlord_integration_1
+		}
+	}
+	else = {
+		remove_ideas = CHI_warlord_integration_1
+	}
+}
+
+  #MODDED, no infiltration
+
+  #MODDED, no infilt.
+
+CHI_unity_level_up = {
+	if = {
+		limit = {
+			has_idea = CHI_chinese_unity_2
+		}
+		swap_ideas = {
+			remove_idea = CHI_chinese_unity_2
+			add_idea = CHI_chinese_unity_3
+		}
+	}
+	if = {
+		limit = {
+			has_idea = CHI_chinese_unity_1
+		}
+		swap_ideas = {
+			remove_idea = CHI_chinese_unity_1
+			add_idea = CHI_chinese_unity_2
+		}
+	}
+	if = {
+		limit = {
+			NOT = {
+				OR = {
+					has_idea = CHI_chinese_unity_1
+					has_idea = CHI_chinese_unity_2
+					has_idea = CHI_chinese_unity_3
+				}
+			}
+		}
+		add_ideas = CHI_chinese_unity_1
+	}
+}
+
+CHI_unity_level_down = {
+	if = {
+		limit = {
+			has_idea = CHI_chinese_unity_2
+		}
+		swap_ideas = {
+			remove_idea = CHI_chinese_unity_2
+			add_idea = CHI_chinese_unity_1
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_chinese_unity_3
+		}
+		swap_ideas = {
+			remove_idea = CHI_chinese_unity_3
+			add_idea = CHI_chinese_unity_2
+		}
+	}
+	else_if = {
+		limit = {
+			has_idea = CHI_chinese_unity_1
+		}
+		remove_ideas = CHI_chinese_unity_1
+	}
+}
+
+CHI_set_ally_strat_on_current_leader = {
+	if = {
+		limit = {
+			FROM = {
+				tag = CHI
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "CHI"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = SHX
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "SHX"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = GXC
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "GXC"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = YUN
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "YUN"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = XSM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "XSM"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = SIK
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "SIK"
+            value = 200
+        }
+	}
+	##  #MODDED
+	#NXM  #MODDED
+	#SIC  #MODDED
+	#NEA  #MODDEDvvvvvvvvvvvvvvvvvvvvv
+	#GUD
+	#XIK
+	#SHD
+	#HPC
+	#HMI
+	#TNG
+	#PLM(is_warlord)
+	else_if = {
+		limit = {
+			FROM = {
+				tag = NXM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "NXM"	#MODDED	#MODDED
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = SHC
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "SHC"	#MODDED	#MODDED
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = GSM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "GSM"	#MODDED	#MODDED
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = EGM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "EGM"	#MODDED	#MODDED
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = SIC
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "SIC"	#MODDED	#MODDED
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = NEA
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED	#MODDED
+            id = "NEA"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = NXM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED	#MODDED
+            id = "NXM"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = SHC
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED	#MODDED
+            id = "SHC"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = GSM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED	#MODDED
+            id = "GSM"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = EGM
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED	#MODDED
+            id = "EGM"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = GUD
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "GUD"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = SHD	#MODDED	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "SHD"
+            value = 200
+        }
+	}
+	else_if = {
+		limit = {
+			FROM = {
+				tag = HPC
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED	#MODDED
+            id = "HPC"
+            value = 200
+        }
+	}
+	else_if = { #MODDED
+		limit = {
+			FROM = {
+				tag = HMI
+			}
+		}
+		add_ai_strategy = {
+            type = alliance
+            id = "HMI"	#MODDED	#MODDED
+            value = 200
+        }
+	}
+	else_if = { #MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = TNG #MODDED
+			}
+		}
+		add_ai_strategy = {	#MODDED	#MODDED
+            type = alliance
+            id = "TNG"
+            value = 200
+        }
+	}
+	else_if = {	#MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = PLM
+				is_warlord = yes	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED
+            id = "PLM"
+            value = 200
+        }
+	}
+	else_if = {	#MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = KHR
+				is_warlord = yes	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED
+            id = "KHR"
+            value = 200
+        }
+	}
+	else_if = {	#MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = XIA
+				is_warlord = yes	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED
+            id = "XIA"
+            value = 200
+        }
+	}
+	else_if = {	#MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = KRS
+				is_warlord = yes	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED
+            id = "KRS"
+            value = 200
+        }
+	}
+	else_if = {	#MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = ATM
+				is_warlord = yes	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED
+            id = "ATM"
+            value = 200
+        }
+	}
+	else_if = {	#MODDED
+		limit = {
+			FROM = { #MODDED
+				tag = SUY
+				is_warlord = yes	#MODDED
+			}
+		}
+		add_ai_strategy = {
+            type = alliance	#MODDED
+            id = "SUY"
+            value = 200
+        }
+	}
+}
+  #MODDED^  #MODDED  #MODDED  #MODDED
+remove_all_inflation = {   #MODDED
+	remove_ideas = {
+		CHI_hyper_inflation_1  #MODDED
+		CHI_hyper_inflation_2  #MODDED
+		CHI_hyper_inflation_3  #MODDED
+		CHI_hyper_inflation_4  #MODDED
+		CHI_hyper_inflation_5  #MODDED
+	}  #MODDED
+
+}  #MODDED
+CHI_negative_spirit_transfer = {   #THIS IS MODDEDvvvvvvvvvvvvvvvvv
+	#if = {
+	#	limit = {
+	#		event_target:old_leader = { has_idea = CHI_incompetent_officers }
+	#	}
+	#	add_ideas = CHI_incompetent_officers
+	#}
+	if = {	#MODDED	#MODDED
+		limit = {
+			event_target:old_leader = { has_idea = CHI_nine_power_treaty }
+		}
+		add_ideas = CHI_nine_power_treaty
+	}	#MODDED	#MODDED
+	if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_army_corruption_3 }
+		}
+		add_ideas = CHI_army_corruption_3
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_army_corruption_2 }
+		}
+		add_ideas = CHI_army_corruption_2
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_army_corruption_1 }
+		}
+		add_ideas = CHI_army_corruption_1
+	}
+	else_if = {	#MODDED	#MODDED
+		limit = {
+			event_target:old_leader = { has_idea = CHI_army_corruption_0 }
+		}
+		add_ideas = CHI_army_corruption_0
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_army_corruption_00 }	#MODDED
+		}
+		add_ideas = CHI_army_corruption_00	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_army_corruption_000 }	#MODDED
+		}
+		add_ideas = CHI_army_corruption_000	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_000 }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_000	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_000_for_tt }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_000_for_tt	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_00 }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_00	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_00_for_tt }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_00_for_tt	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_0 }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_0	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_0_for_tt }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_0_for_tt	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_1 }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_1	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_1_for_tt }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_1_for_tt	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_2 }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_2	#MODDED
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_superior_to_the_wrl_2_for_tt }	#MODDED
+		}
+		add_ideas = CHI_superior_to_the_wrl_2_for_tt	#MODDED
+	}
+	#if = {
+	#	limit = {	#MODDED	#MODDED
+	#		event_target:old_leader = { has_idea = CHI_ineffective_bureaucracy }
+	#	}
+	#	add_ideas = CHI_ineffective_bureaucracy
+	#}
+	if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_hyper_inflation_none }
+		}
+		hidden_effect = {
+			remove_all_inflation = yes	#MODDED	#MODDED
+		}
+		add_ideas = CHI_hyper_inflation_none
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_hyper_inflation_1 }
+		}
+		hidden_effect = {
+			remove_all_inflation = yes	#MODDED	#MODDED
+		}
+		add_ideas = CHI_hyper_inflation_1
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_hyper_inflation_2 }
+		}
+		hidden_effect = {
+			remove_all_inflation = yes	#MODDED	#MODDED
+		}
+		add_ideas = CHI_hyper_inflation_2
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_hyper_inflation_3 }
+		}
+		hidden_effect = {
+			remove_all_inflation = yes	#MODDED	#MODDED
+		}
+		add_ideas = CHI_hyper_inflation_3
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_hyper_inflation_4 }
+		}
+		hidden_effect = {
+			remove_all_inflation = yes	#MODDED	#MODDED
+		}
+		add_ideas = CHI_hyper_inflation_4
+	}
+	else_if = {
+		limit = {
+			event_target:old_leader = { has_idea = CHI_hyper_inflation_5 }
+		}
+		hidden_effect = {
+			remove_all_inflation = yes	#MODDED	#MODDED
+		}
+		add_ideas = CHI_hyper_inflation_5
+	}
+	if = {	#MODDED	#MODDED
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_1
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_1
+		}
+		add_ideas = CHI_inch_blood_1	#MODDED	#MODDED
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_2
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_2
+		}
+		add_ideas = CHI_inch_blood_2
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_3	#MODDED	#MODDED
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_3
+		}
+		add_ideas = CHI_inch_blood_3
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_4
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_4
+		}
+		add_ideas = CHI_inch_blood_4
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_5
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_5
+		}
+		add_ideas = CHI_inch_blood_5
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_6
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_6
+		}
+		add_ideas = CHI_inch_blood_6
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_7
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_7
+		}
+		add_ideas = CHI_inch_blood_7
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_8
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_8
+		}
+		add_ideas = CHI_inch_blood_8
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_9
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_9
+		}
+		add_ideas = CHI_inch_blood_9
+	}
+	else_if = {
+		limit = {
+			ROOT = {
+				has_idea = CHI_inch_blood_10
+			}
+		}
+		every_country = { #reset the Inch blood mechanics
+			clr_country_flag = CHI_inch_blood_up_decision_flag
+			remove_ideas = CHI_inch_blood_10
+		}
+		add_ideas = CHI_inch_blood_10
+	}
+}
+
+add_suiyuan_stronghold = {
+	if = {
+		limit = {
+			1019 = {
+				is_controlled_by_jap_or_its_puppet = no
+			}
+		}
+		1019 = { add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP } }
+	}
+	if = {
+		limit = {
+			746 = {
+				is_controlled_by_jap_or_its_puppet = no
+			}
+		}
+		746 = { add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP } }
+	}
+	#621 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = SHX } } #historically JAPAN was in sui
+	#746 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = SHX } }
+	#621 = { add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP } }
+	#746 = { add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP } }
+	#621 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+	#746 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+	#621 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = PLM } }
+	#746 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = PLM } }
+	for_each_scope_loop = {
+		array = global.big_china
+		if = {
+			limit = {
+				NOT = {
+					state = 1034 #wuhan
+				}
+				OR = {
+					#region = 246 #central china except wuhan
+					region = 200 #tsinghai
+					region = 144 #ningsia
+					region = 165 #sichuan
+					region = 245 #shanganning
+					state = 748 #guizou
+					state = 603 #guizou
+					state = 1039 #N. Kwangsi
+					state = 325 #kunming
+				}
+			}
+			for_each_scope_loop = {
+				array = global.warlord_states
+				if = {
+					limit = {
+						exists = yes
+						NOT = { tag = SIK }
+						NOT = { tag = KHR }
+						NOT = { tag = HMI }
+						NOT = { tag = TNG }
+						NOT = { tag = KRS }
+						NOT = { tag = ATM }
+						NOT = {
+							has_war_with = event_target:WTT_current_china_leader
+						}
+					}
+					#PREV = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = PREV } }
+					#PREV = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+				}
+			}
+		}
+		if = {
+			limit = {
+				OR = {
+					is_owned_and_controlled_by = XIK
+					state = 751 #western sichuan
+				}
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = XIK }
+		}
+		if = {
+			limit = {
+				region = 246 #central china except wuhan
+				NOT = {
+					state = 1034 #wuhan
+				}
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader }
+			if = {
+				limit = {
+					NOT = { state = 620 } #620 is hubei, add only hunan to hunan
+				}
+				#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = XIA }
+			}
+		}
+		if = {
+			limit = {
+				region = 245
+				is_owned_and_controlled_by = event_target:WTT_communist_china
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_communist_china }
+		}
+		if = {
+			limit = {
+				region = 245 #shanganning
+				is_owned_and_controlled_by = NEA
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = NEA }
+		}
+		if = {
+			limit = {
+				region = 245 #shanganning
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader }
+		}
+		if = {
+			limit = {
+				OR = {
+					region = 200 #tsinghai
+					region = 144 #ningsia
+					region = 165 #sichuan
+				}
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader }
+		}
+		if = {
+			limit = {
+				region = 200 #tsinghai
+				is_owned_and_controlled_by = XSM
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = XSM }
+		}
+		if = {
+			limit = {
+				is_owned_and_controlled_by = NXM
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = NXM }
+		}
+		if = {
+			limit = {
+				is_owned_and_controlled_by = GSM
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = GSM }
+		}
+		if = {
+			limit = {
+				is_owned_and_controlled_by = EGM
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = EGM }
+		}
+		if = {
+			limit = {
+				region = 165 #sichuan
+			}
+			#add_dynamic_modifier = { modifier = suiyuan_stronghold scope = SIC }
+		}
+		if = {
+			limit = {
+				NOT = {
+					state = 1034 #wuhan
+				}
+				OR = {
+					#region = 246 #central china except wuhan
+					region = 200 #tsinghai
+					region = 144 #ningsia
+					region = 165 #sichuan
+					region = 245 #shanganning
+					state = 748 #guizou
+					state = 603 #guizou
+					state = 1039 #N. Kwangsi
+					state = 325 #kunming
+				}
+			}
+			add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP }
+		}
+	}
+
+	#748 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+	#603 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+
+	#GXC N. Kwangsi
+	#1039 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+	#1039 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = GXC } }
+	
+	#YUN Kunming
+	#325 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = event_target:WTT_current_china_leader } }
+	#325 = { add_dynamic_modifier = { modifier = suiyuan_stronghold scope = YUN } }
+
+    #Shanghai and Nanking, Canton  
+	613 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+	1078 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+	1015 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+	592 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+    #Shandong
+	if = {
+		limit = {
+			country_exists = SHD
+			NOT = {
+				SHD = {
+                    OR = {
+						has_completed_focus = CHI_cooperation_with_the_nationalists
+						has_completed_focus = CHI_cooperation_with_the_communists
+					}
+				}
+			}
+		}
+	    SHD = {
+			every_owned_state = {
+				add_dynamic_modifier = { modifier = shd_modifier scope = JAP }
+			}
+		}
+	}
+}
+
+add_shaan_stronghold = {
+	for_each_scope_loop = {
+		array = global.big_china
+		if = {
+			limit = {
+				OR = {
+					#region = 144 #ningsia
+					region = 245 #shanganning
+				}
+				NOT = {
+					OR = {
+						state = 744
+						#state = 1030
+					}
+				}
+			}
+			add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP }
+		}
+	}
+}
+
+add_japanese_buffs_in_china = {
+	613 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+	1078 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+	1015 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+	592 = { add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP } }
+    #Shandong
+	if = {
+		limit = {
+			country_exists = SHD
+			NOT = {
+				SHD = {
+                    OR = {
+						has_completed_focus = CHI_cooperation_with_the_nationalists
+						has_completed_focus = CHI_cooperation_with_the_communists
+					}
+				}
+			}
+		}
+	    SHD = {
+			every_owned_state = {
+				add_dynamic_modifier = { modifier = shd_modifier scope = JAP }
+			}
+		}
+	}
+}
+#=============^MODDED^==============================

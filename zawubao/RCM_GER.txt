@@ -1,0 +1,290 @@
+GER_poland_first = {
+	enable = {
+		original_tag = GER
+        has_war_with = POL
+		POL = { has_capitulated = no }
+	}
+	abort = {
+		OR = {
+			POL = { has_capitulated = yes }
+			POL = { exists = no }
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+    ai_strategy = {
+		type = declare_war
+		id = "HOL"
+		value = -9999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "BEL"
+		value = -9999
+	}
+	ai_strategy = {
+		type = declare_war
+		id = "LUX"
+		value = -9999
+	}
+}
+
+GER_we_should_not_die_in_the_west = {
+	enable = {
+	    original_tag = GER
+        has_war_with = SOV
+	}
+	abort = {
+       NOT = { has_war_with = SOV }
+	}
+    abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = "ENG"
+		value = -100
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = "USA"
+		value = -100
+	}
+    ai_strategy = {
+		type = consider_weak
+		id = "FRA"
+		value = -100
+	}
+}
+GER_italy_is_trap = {
+	enable = {
+		original_tag = GER
+		ITA = { surrender_progress > 0.5 }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ITA"
+		value = 2000
+	}
+}
+
+#Germany_and_Italy_is_cool = {
+	#enable = {
+		#tag = BUL
+		#is_historical_focus_on = yes
+	#}
+	#abort = {
+	#}
+	#
+	#ai_strategy = {
+		#type = befriend
+		#id = "GER"			
+		#value = 500
+	#}
+#
+    #ai_strategy = {
+		#type = befriend
+		#id = "ITA"			
+		#value = 500
+	#}
+
+#}
+
+
+#guo#
+  
+
+protect_somaliland = {
+	enable = {
+		tag = ITA
+		has_war_with = ETH
+	}
+	abort = {
+		NOT = { country_exists = ETH }
+	}
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.15
+
+	
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+ 			559
+			844
+			835
+ 		}
+		order_id = 300
+		# ai areas that the orders will use these buffers in
+ 		area = africa
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = yes
+ 		subtract_fronts_from_need = no
+ 	}
+}
+
+GER_dont_go_AOI = {
+	enable = {
+		#original_tag = GER
+		is_in_faction_with = ITA
+	    is_in_faction_with = AOI
+	    AOI = { is_subject_of = ITA }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "AOI"
+		value = 2000
+	}
+}
+
+GER_SOV_is_not_weak_after_this_point = {
+
+	enable = {
+		SOV = {
+			is_ai = yes
+		}
+		tag = GER
+		casualties_inflicted_by = {
+			opponent = SOV
+			thousands > 2000
+		}
+	    date > 1943.2.10
+	    SOV = { surrender_progress < 0.6 }
+		is_historical_focus_on = yes
+	}
+
+	abort = {
+		#always = no  #MODDED
+	    OR = {
+		    NOT = { has_war_with = SOV }
+			NOT = { has_war_with = ENG } 
+		    SOV = { surrender_progress > 0.6 }
+		}
+	
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = "SOV"
+		value = -1500
+	}
+}
+
+ita_less_units_in_south = { #guo
+	enable = {
+		original_tag = ITA
+		has_war_with = ENG
+		ENG = {
+			surrender_progress < 0.05
+		}
+		NOT = {
+			has_civil_war = yes
+		}
+		907 = { is_controlled_by_enemy = yes } #guo
+        448 = { is_controlled_by_enemy = yes } #guo
+		450 = { is_controlled_by_enemy = yes } #guo
+		451 = { is_controlled_by_enemy = yes } #guo
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.85
+
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+ 			1
+			2
+			39
+			114
+			157
+			162
+			161
+			158
+			159
+			160
+			850
+			735
+			44
+			805
+			115
+			156
+			849
+			
+			851
+			21
+			22
+			
+			186
+			182
+			47
+			185
+			44
+			103
+			
+			731
+ 		}
+        order_id = 3500
+		# ai areas that the orders will use these buffers in
+ 		area = europe
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = no
+ 		subtract_fronts_from_need = yes
+ 	}
+}
+GER_no_vol_for_eca = {
+
+	enable = {
+		tag = GER
+		is_historical_focus_on = yes
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "ECA"
+		value = -2500
+	}
+}
+
+GER_dont_rush_sov_too_much = { #guo
+
+	enable = {
+		tag = GER
+		has_war_with = SOV
+		check_variable = {
+			This.infantry_equipment_deficit > 35000 #guo
+		}
+		not = { has_idea = GER_barbarossa } #guo
+	}
+
+    abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = consider_weak
+		id = "SOV"
+		value = -7590
+	}
+
+	ai_strategy = {
+		type = front_control
+		tag = SOV
+		
+		ratio = 1 #guo
+		priority = 9999 #guo
+		ordertype = front
+		execution_type = careful
+		execute_order = no
+	}
+}
+
+#guo#GER_ignore_lux

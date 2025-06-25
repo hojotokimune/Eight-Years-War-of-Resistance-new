@@ -1,0 +1,1468 @@
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
+### search_filters = {FOCUS_FILTER_RESEARCH}
+### search_filters = {FOCUS_FILTER_INDUSTRY}
+### search_filters = {FOCUS_FILTER_STABILITY}
+### search_filters = {FOCUS_FILTER_WAR_SUPPORT}
+### search_filters = {FOCUS_FILTER_MANPOWER}
+### search_filters = {FOCUS_FILTER_ANNEXATION}
+
+focus_tree = {
+	id = SRR_base_area_focus
+	
+	country = {
+		factor = 0
+	}
+	
+	default = no
+
+	continuous_focus_position = { x = 150 y = 1800 }
+    focus = {
+		id = BA_li_yus_return
+		icon = GFX_focus_generic_land_reclamation
+		x = 6
+		y = 0
+
+		cost = 0
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 100
+			add_stability = 0.15
+			add_war_support = 0.15
+			add_offsite_building = { type = arms_factory level = 5 }
+		}
+	}
+	focus = {
+		id = BA_report_to_the_central_committee
+		icon = GFX_focus_centralize_power
+		prerequisite = { focus = BA_li_yus_return }
+		relative_position_id = BA_li_yus_return
+		x = 2
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = -25
+			add_stability = 0.03
+		}
+	}
+	focus = {
+		id = BA_smuggle_arms_to_volunteers
+		icon = GFX_focus_FIN_weapon_caches
+		prerequisite = { focus = BA_li_yus_return }
+		relative_position_id = BA_li_yus_return
+		x = -2
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 2000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = PRC
+			}
+		}
+	}
+	focus = {
+		id = BA_formation_of_shantung_column
+		icon = GFX_goal_CHI_SMZYZW
+		prerequisite = { focus = BA_smuggle_arms_to_volunteers }
+		prerequisite = { focus = BA_report_to_the_central_committee }
+		relative_position_id = BA_li_yus_return
+		x = 0
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = spawn_troops_in_shandong_tt
+			hidden_effect = {
+		if = {
+		limit = {
+			NOT = { has_template = "八路军抗日游击支队" }
+		}
+		division_template = {
+			name = "八路军抗日游击支队"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+			597 = {
+					create_unit = {
+						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
+						count = 4
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SRR
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BA_host_a_work_conference
+		icon = GFX_focus_prc_large_soviet_conference
+		prerequisite = { focus = BA_formation_of_shantung_column }
+		relative_position_id = BA_formation_of_shantung_column
+		x = -1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 200
+			add_stability = 0.20
+		}
+	}
+	focus = {
+		id = BA_sabotage_japanese_lines
+		icon = GFX_focus_NVA_refuse_to_extradite_japanese
+		prerequisite = { focus = BA_host_a_work_conference }
+		relative_position_id = BA_formation_of_shantung_column
+		x = -1
+		y = 3
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_command_power = 60
+			army_experience = 50
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 1
+				category = land_doctrine
+			}
+			hidden_effect = {
+		if = {
+			limit = {
+			PRC = { is_ai = no }  
+			}	
+				play_song = "弹起我心爱的土琵琶（老版）"
+		}				
+			}			
+		}
+	}
+	focus = {
+		id = BA_denounce_han_fujus_treason
+		icon = GFX_focus_BRA_tribunal
+		prerequisite = { focus = BA_formation_of_shantung_column }
+		relative_position_id = BA_formation_of_shantung_column
+		x = 1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		every_country = {
+				limit = {
+			is_in_faction_with = SRR
+				}
+			add_war_support = 0.15
+		}
+		}
+	}
+	focus = {
+		id = BA_ease_the_burdens_of_flooding
+		icon = GFX_focus_generic_concessions
+		prerequisite = { focus = BA_denounce_han_fujus_treason }
+		relative_position_id = BA_formation_of_shantung_column
+		x = 1
+		y = 3
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			PRC = {
+			add_manpower = 2000
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = SRR
+			}
+			}
+
+		}
+	}
+	focus = {
+		id = BA_shantung_anti_japanese_salvation_movement
+		icon = GFX_focus_generic_news
+		prerequisite = { focus = BA_host_a_work_conference focus = BA_denounce_han_fujus_treason }
+		relative_position_id = BA_formation_of_shantung_column
+		x = 0
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			SRR = {
+           add_ideas = chi_chinese_war_of_resistance
+			}
+						
+					every_country = {
+				limit = {
+			is_in_faction_with = SRR
+			NOT = {
+				TAG = CHI
+			}
+				}
+			add_ideas = chi_chinese_war_of_resistance
+					}
+		}
+	}
+	focus = {
+		id = BA_continue_the_fight
+		icon = GFX_focus_PRC_50s_the_army_mutinies
+		prerequisite = { focus = BA_sabotage_japanese_lines }
+		prerequisite = { focus = BA_ease_the_burdens_of_flooding }
+		relative_position_id = BA_formation_of_shantung_column
+		x = 0
+		y = 4
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = spawn_troops_in_shandong_tt
+			hidden_effect = {
+						if = {
+		limit = {
+			NOT = { has_template = "八路军抗日游击支队" }
+		}
+		division_template = {
+			name = "八路军抗日游击支队"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+							597 = {
+					create_unit = {
+						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
+						count = 4
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SRR
+					}
+				}
+					country_event = {
+					id = ccw.6655 
+				}				
+			}
+		}
+	}
+	focus = {
+		id = BA_restructure_the_party
+		icon = GFX_focus_PRC_central_committee
+		prerequisite = { focus = BA_formation_of_shantung_column focus = BA_shantungs_branch_of_kangri }
+		relative_position_id = BA_li_yus_return
+		x = 3
+		y = 3
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 150
+		}
+	}
+	focus = {
+		id = BA_shantungs_branch_of_kangri
+		icon = GFX_focus_kangda
+		prerequisite = { focus = BA_report_to_the_central_committee }
+		prerequisite = { focus = BA_smuggle_arms_to_volunteers }
+		relative_position_id = BA_li_yus_return
+		x = 8
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			PRC = { has_completed_focus = PRC_kangda_focus }
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_war_support = 0.05
+			add_political_power = 25
+		}
+	}
+	focus = {
+		id = BA_study_lin_biaos_tactics
+		icon = GFX_focus_KPA_peoples_committees
+		prerequisite = { focus = BA_shantungs_branch_of_kangri }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = 2
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			army_experience = 25
+			add_command_power = 50
+		}
+	}
+	focus = {
+		id = BA_protracted_warfare
+		icon = GFX_focus_promote_prolonged_warfare
+		prerequisite = { focus = BA_shantungs_branch_of_kangri }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = -2
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_ideas = on_protracted_war
+		}
+	}
+	focus = {
+		id = BA_reorganise_local_militias
+		icon = GFX_focus_war_communism
+		prerequisite = { focus = BA_protracted_warfare }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = -3
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			custom_effect_tooltip = spawn_troops_in_shandong_tt
+			hidden_effect = {
+						if = {
+		limit = {
+			NOT = { has_template = "八路军抗日游击支队" }
+		}
+		division_template = {
+			name = "八路军抗日游击支队"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+							597 = {
+					create_unit = {
+						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
+						count = 4
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SRR
+					}
+				}
+			}
+		}
+	}
+	focus = {
+		id = BA_support_shaanxis_efforts
+		icon = GFX_focus_PRC_CCW_for_a_better_future
+		prerequisite = { focus = BA_protracted_warfare }
+		prerequisite = { focus = BA_study_lin_biaos_tactics }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = 0
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			send_equipment = {
+				equipment = infantry_equipment
+				amount = 5000
+				target = PRC
+			}
+		}
+	}
+	focus = {
+		id = BA_recruiting_schemes
+		icon = GFX_focus_seven_gentlemen
+		prerequisite = { focus = BA_study_lin_biaos_tactics }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = 3
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 100000
+		}
+	}
+	focus = {
+		id = BA_maintain_order_to_the_countryside
+		icon = GFX_focus_KPA_enforce_dicipline
+		prerequisite = { focus = BA_reorganise_local_militias }
+		prerequisite = { focus = BA_support_shaanxis_efforts }
+		prerequisite = { focus = BA_recruiting_schemes }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = -1
+		y = 3
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+						    add_ideas = prc_jianzujianxi
+		}
+	}
+	focus = {
+		id = BA_enforce_the_disciplinary_rules
+		icon = GFX_focus_NOR_moscows_education_centers
+		prerequisite = { focus = BA_reorganise_local_militias }
+		prerequisite = { focus = BA_support_shaanxis_efforts }
+		prerequisite = { focus = BA_recruiting_schemes }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = 1
+		y = 3
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_political_power = 25
+			add_stability = 0.05
+			add_popularity = {
+				ideology = communism
+				popularity = 0.05
+			}
+			swap_ideas = {
+				remove_idea = PRC_reorganized_departments_CHI
+				add_idea = PRC_reorganized_departments_CHI_2
+			}
+		}
+	}
+	focus = {
+		id = BA_develop_the_rural_areas
+		icon = GFX_focus_generic_low_cost_housing
+		prerequisite = { focus = BA_maintain_order_to_the_countryside }
+		prerequisite = { focus = BA_enforce_the_disciplinary_rules }
+		relative_position_id = BA_shantungs_branch_of_kangri
+		x = 0
+		y = 4
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BA_expand_our_operations
+		icon = GFX_focus_NVA_harassment_campaign
+		prerequisite = { focus = BA_smuggle_arms_to_volunteers }
+		prerequisite = { focus = BA_report_to_the_central_committee }
+		relative_position_id = BA_li_yus_return
+		x = -8
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			one_random_industrial_complex = yes
+			one_random_industrial_complex = yes
+		}
+	}
+	focus = {
+		id = BA_infiltrate_shanxi
+		icon = GFX_focus_logistical_reform
+		prerequisite = { focus = BA_expand_our_operations }
+		relative_position_id = BA_expand_our_operations
+		x = 0
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				controls_state = 1027
+			}
+			1027 = {
+				owner = {
+					NOT = {
+						tag = PRC
+					}
+				}
+			}
+		}
+
+		bypass = {
+			OR = {
+								has_global_flag = CHI_no_longer_united_flag
+				1027 = {
+				owner = {
+						tag = PRC
+				}
+			}
+			}
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			1027 = {
+				add_dynamic_modifier = {
+					modifier = prc_dynamic_modifier_shandong_guerillas
+					scope = ROOT
+				}
+				add_core_of = ROOT
+				set_state_owner_to = ROOT
+			}
+		}
+	}
+	focus = {
+		id = BA_mobilize_shanxis_populace
+		icon = GFX_focus_generic_limited_social_mobilization
+		prerequisite = { focus = BA_infiltrate_shanxi }
+		relative_position_id = BA_infiltrate_shanxi
+		x = 1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = BA_absorb_local_partisans
+		icon = GFX_focus_SWE_refuge_for_revolutionaries
+		prerequisite = { focus = BA_infiltrate_shanxi }
+		relative_position_id = BA_infiltrate_shanxi
+		x = -1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+						custom_effect_tooltip = spawn_troops_in_shandong_tt
+						hidden_effect = {
+									if = {
+		limit = {
+			NOT = { has_template = "八路军抗日游击支队" }
+		}
+		division_template = {
+			name = "八路军抗日游击支队"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+							597 = {
+					create_unit = {
+						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
+						count = 4
+						prioritize_location = 7055
+						allow_spawning_on_enemy_provs = yes
+						country_score = {
+							base = 5
+						}
+						owner = SRR
+					}
+				}
+			}
+			
+		}
+	}
+	focus = {
+		id = BA_arm_local_partisans
+		icon = GFX_focus_ICE_thungur_hnifur
+		prerequisite = { focus = BA_absorb_local_partisans }
+		prerequisite = { focus = BA_mobilize_shanxis_populace }
+		relative_position_id = BA_infiltrate_shanxi
+		x = 0
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 2000
+				producer = PRC
+			}
+		}
+	}
+	focus = {
+		id = BA_infiltrate_henan
+		icon = GFX_focus_SWE_lottakoren
+		prerequisite = { focus = BA_expand_our_operations }
+		relative_position_id = BA_expand_our_operations
+		x = 4
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				controls_state = 607
+			}
+			607 = {
+				owner = {
+					NOT = {
+						tag = PRC
+					}
+				}
+			}
+		}
+
+		bypass = {
+			OR = {
+				has_global_flag = CHI_no_longer_united_flag
+							607 = {
+				owner = {
+						tag = PRC
+				}
+			}
+			}
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			607 = {
+				add_dynamic_modifier = {
+					modifier = prc_dynamic_modifier_shandong_guerillas
+					scope = ROOT
+				}
+				add_core_of = ROOT
+				set_state_owner_to = ROOT
+			}
+		}
+	}
+	focus = {
+		id = BA_distribuate_land_in_henan
+		icon = GFX_focus_PRC_50s_the_land_reforms
+		prerequisite = { focus = BA_infiltrate_henan }
+		relative_position_id = BA_infiltrate_henan
+		x = -1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+			has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			607 = {
+				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = SRR }
+			}
+			
+		}
+	}
+	focus = {
+		id = BA_mobilize_henans_populace
+		icon = GFX_focus_CHI_50s_will
+		prerequisite = { focus = BA_infiltrate_henan }
+		relative_position_id = BA_infiltrate_henan
+		x = 1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = BA_ambush_japanese_convoys
+		icon = GFX_focus_ETH_freedom_at_gunpoint
+		prerequisite = { focus = BA_distribuate_land_in_henan }
+		prerequisite = { focus = BA_mobilize_henans_populace }
+		relative_position_id = BA_infiltrate_henan
+		x = 0
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			EHB = {
+				add_manpower = -5000
+			}
+			JAP = {
+                add_manpower = -5000
+			}
+			
+		}
+	}
+	focus = {
+		id = BA_infiltrate_hebei
+		icon = GFX_focus_generic_infiltration
+		prerequisite = { focus = BA_expand_our_operations }
+		relative_position_id = BA_expand_our_operations
+		x = -4
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+			any_enemy_country = {
+				controls_state = 614
+				controls_state = 1077
+			}
+			1077 = {
+				owner = {
+					NOT = {
+						tag = PRC
+					}
+				}
+			}
+			614 = {
+				owner = {
+					NOT = {
+						tag = PRC
+					}
+				}
+			}
+		}
+
+		bypass = {
+			OR = {
+			614 = {
+				owner = {
+						tag = PRC
+				}
+			}
+							has_global_flag = CHI_no_longer_united_flag
+			}
+
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			1077 = {
+				add_dynamic_modifier = {
+					modifier = prc_dynamic_modifier_shandong_guerillas
+					scope = ROOT
+				}
+				add_core_of = ROOT
+				set_state_owner_to = ROOT
+			}
+			614 = {
+				add_dynamic_modifier = {
+					modifier = prc_dynamic_modifier_shandong_guerillas
+					scope = ROOT
+				}
+				add_core_of = ROOT
+				set_state_owner_to = ROOT
+			}
+			1028 = {
+				add_dynamic_modifier = {
+					modifier = prc_dynamic_modifier_shandong_guerillas
+					scope = ROOT
+				}
+				add_core_of = ROOT
+				set_state_owner_to = ROOT
+			}
+		}
+	}
+	focus = {
+		id = BA_mobilize_hebeis_populace
+		icon = GFX_focus_CHI_50s_will
+		prerequisite = { focus = BA_infiltrate_hebei }
+		relative_position_id = BA_infiltrate_hebei
+		x = 1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+							has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_manpower = 5000
+		}
+	}
+	focus = {
+		id = BA_redistribute_land_in_hebei
+		icon = GFX_focus_PRC_50s_the_land_reforms
+		prerequisite = { focus = BA_infiltrate_hebei }
+		relative_position_id = BA_infiltrate_hebei
+		x = -1
+		y = 1
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+						has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			614 = {
+							add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = SRR }
+			}
+
+		}
+	}
+	focus = {
+		id = BA_reinforce_hebei
+		icon = GFX_focus_SWE_state_paid_vacation
+		prerequisite = { focus = BA_redistribute_land_in_hebei }
+		prerequisite = {focus = BA_mobilize_hebeis_populace }
+		relative_position_id = BA_infiltrate_hebei
+		x = 0
+		y = 2
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+						has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+		add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = PRC
+			}
+		}
+	}
+	focus = {
+		id = BA_unify_the_base_area
+		icon = GFX_focus_NOR_empower_sivorg
+		prerequisite = { focus = BA_ambush_japanese_convoys }
+		prerequisite = { focus = BA_arm_local_partisans }
+		prerequisite = { focus = BA_reinforce_hebei }
+		relative_position_id = BA_expand_our_operations
+		x = 0
+		y = 4
+
+		cost = 3.6
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+						has_global_flag = CHI_no_longer_united_flag
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			set_cosmetic_tag = SRR_SHD
+             create_country_leader = {
+                name = "朱德"
+                desc=PRC_zhu_de_desc
+                picture = "gfx/leaders/PRC/Portrait_PRC_Zhu_De.dds"
+                expire = "1965.1.1"
+                ideology = marxism
+                traits = { popular_figurehead army_chief_organizational_3 youjizhandashi
+                }
+                       }			
+		}
+	}
+	focus = {
+		id = BA_the_japanese_are_defeated
+		icon = GFX_focus_KPA_ban_japanese_jurisdication
+		prerequisite = { focus = BA_continue_the_fight focus = BA_unify_the_base_area focus = BA_develop_the_rural_areas }
+		relative_position_id = BA_li_yus_return
+		x = 0
+		y = 8
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		has_global_flag = CHI_no_longer_united_flag
+		NOT = {
+        has_war_with = JAP 
+		}
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 30000
+				producer = JAP
+			}
+		}
+	}
+	focus = {
+		id = BA_rejoin_our_comrades_in_yenan
+		icon = GFX_Focus_CCP_Flag_Rising
+		prerequisite = { focus = BA_the_japanese_are_defeated }
+		relative_position_id = BA_the_japanese_are_defeated
+		x = 0
+		y = 1
+
+		cost = 1
+
+		ai_will_do = {
+			factor = 1
+		}
+
+		available = {
+		}
+
+		bypass = {
+		}
+
+		cancel_if_invalid = yes
+		continue_if_invalid = no
+		available_if_capitulated = yes
+
+		search_filters = { FOCUS_FILTER_POLITICAL }
+		completion_reward = {
+			every_state = {
+				limit = {
+					is_owned_by = ROOT
+				}
+				add_core_of = PRC
+				remove_core_of = SRR
+				remove_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = SRR }
+				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = PRC }
+			}
+           SRR = {
+                   	every_unit_leader = {
+				set_nationality = PRC
+			}
+               }
+			PRC = {
+				annex_country = {
+					target = ROOT
+					transfer_troops = yes
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,394 @@
+on_actions = {
+	on_daily_PRC = {
+				effect = {
+				if = {
+								limit = {
+									has_global_flag = enable_commie_ridden_states_line
+								}
+								every_state = {
+									limit = {
+										has_state_flag = commie_ridden_states
+									}
+								}
+								set_border_war = no
+							}
+			IF = {
+				limit = {
+					has_global_flag = roc_in_taiwan_flag
+					NOT = { has_completed_focus = PRC_xibaipo }
+					tag = PRC
+				}
+			complete_national_focus = PRC_xibaipo
+			}
+		}
+	}
+	on_daily_SOV = {
+				effect = {
+				if = {
+					limit = {
+						tag = SOV
+				        has_war_with = GER
+                        is_ai = yes
+					    is_historical_focus_on = yes
+					date > 1944.6.22
+					}
+				SOV = {
+                    add_ideas = SOV_bagelajiang
+					}
+
+				}
+		}
+	}
+	on_startup = {
+		effect = {
+
+
+
+                      IRQ = {
+                       load_focus_tree = generic_focus
+                   }
+                      AFG = {
+                       load_focus_tree = generic_focus
+                   }
+                      PER = {
+                       load_focus_tree = generic_focus
+                   }
+
+				if = {
+					limit = {
+		GER = {
+                        is_ai = yes
+                     }
+					}
+				GER = {
+add_ideas = joseph_goebbels
+add_ideas = rudolf_hess
+add_ideas = martin_bormann
+add_ideas = heinrich_himmler
+add_ideas = GER_hermann_goring
+add_ideas = speer
+add_ideas = todt
+					}
+
+				}
+
+
+
+
+		every_country = {
+		country_event = rcmgeneric.979
+		}
+
+
+
+
+	JAP = {
+		add_ideas = rcm_jap_imperial_japanese_army
+	}
+                         
+                 	1067 = {
+    	add_core_of = PRC
+              }
+		    1078 = {
+				set_victory_points = {
+					province = 13505
+					value = 15
+				}
+                        }
+		    1078 = {
+				set_victory_points = {
+					province = 7014
+					value = 2
+				}
+                        }
+		    613 = {
+				set_victory_points = {
+					province = 13506
+					value = 1
+				}
+                        }	
+		    613 = {
+				set_victory_points = {
+					province = 13507
+					value = 2
+				}
+                        }
+		    1077 = {
+				set_victory_points = {
+					province = 1084
+					value = 1
+				}
+                        }	
+		    1028 = {
+				set_victory_points = {
+					province = 1200
+					value = 3
+				}
+                        }
+		    597 = {
+				set_victory_points = {
+					province = 4181
+					value = 3
+				}
+				set_victory_points = {
+					province = 7055
+					value = 1
+				}	
+				set_victory_points = {
+					province = 10050
+					value = 1
+				}				
+                        }							
+		    598 = {
+				set_victory_points = {
+					province = 4082
+					value = 1
+				}
+                        }
+		    606 = {
+				set_victory_points = {
+					province = 1001
+					value = 2
+				}
+                        }						
+		    1015 = {
+				set_victory_points = {
+					province = 11982
+					value = 4
+				}
+                        }	
+		    1041 = {
+				set_victory_points = {
+					province = 1395
+					value = 2
+				}
+                        }	
+		    1023 = {
+				set_victory_points = {
+					province = 2030
+					value = 1
+				}
+                        }		
+		    1038 = {
+				set_victory_points = {
+					province = 7044
+					value = 2
+				}
+                        }						
+		    1067 = {
+				add_victory_points = {
+					province = 13402
+					value = 1
+				}
+                        }
+
+		    1029 = {
+				add_victory_points = {
+					province = 10880
+					value = -3
+				}
+                        }
+
+		    1029 = {
+		set_victory_points = {
+			province = 10880
+			value = 1
+		}
+                        }
+
+		    1067 = {
+				add_victory_points = {
+					province = 13509
+					value = 2
+				}
+                        }
+
+		    1067 = {
+				set_victory_points = {
+					province = 13509
+					value = 1
+				}
+                        }
+
+		    600 = {
+				add_victory_points = {
+					province = 12495
+					value = -1
+				}
+                        }
+
+		    600 = {
+		set_victory_points = {
+			province = 12495
+			value = 1
+		}
+                        }
+
+		    1017 = {
+		set_victory_points = {
+			province = 12300
+			value = 1
+		}
+                        }
+
+		    608 = {
+				add_victory_points = {
+					province = 4140
+					value = -4
+				}
+                        }
+		    744 = {
+				set_victory_points = {
+					province = 2006
+					value = 2
+				}
+                        }	
+
+		    1046 = {
+				set_victory_points = {
+					province = 12656
+					value = 1
+				}
+                        }						
+		    1066 = {
+				set_victory_points = {
+					province = 1018
+					value = 1
+				}
+                        }
+		    1028 = {
+				set_victory_points = {
+					province = 1200
+					value = 4
+				}
+                        }						
+
+		random_country = {
+			limit = { is_ai = no }
+			country_event = ccw.587
+		}      
+		
+		}
+		
+
+
+
+
+
+        }
+	on_war_relation_added = {
+	    effect = {
+		    if = {
+			    limit = {
+				    tag = PRC
+					FROM = { tag = CHI }
+					has_global_flag = CHI_no_longer_united_flag
+					NOT = { has_global_flag = chinese_civil_war_effects_fired }
+				}
+				hidden_effect = {
+					PRC = {
+						#add_ideas = prc_suiyuan_corridor
+						#add_ideas = prc_ccw_peoples_army
+						#add_ideas = prc_ccw_peoples_support
+						add_ideas = prc_war_of_liberation_1
+						add_ideas = prc_ccw_never_surrender
+				    	complete_national_focus = PRC_CCW_the_chinese_civil_war
+						if = {
+							limit = {
+								NOT = {
+									has_completed_focus = PRC_War_of_Liberation
+								}
+							}
+							every_owned_state = {
+								add_dynamic_modifier = { modifier = communist_stronghold scope = event_target:WTT_communist_china }
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								region = 144
+					    		region = 200
+							}
+						}
+						add_dynamic_modifier = { modifier = PRC_focus_south_not_west scope = PRC }
+					}
+					CHI = {
+						add_timed_idea = {
+							idea = chi_initial_offensive_buff
+							days = 250
+						}
+					}
+					set_global_flag = chinese_civil_war_effects_fired
+				}
+			}
+			if = {
+			    limit = {
+				    tag = CHI
+					FROM = { tag = PRC }
+					has_global_flag = CHI_no_longer_united_flag
+					NOT = { has_global_flag = chinese_civil_war_effects_fired }
+				}
+				hidden_effect = {
+					PRC = {
+						#add_ideas = prc_suiyuan_corridor
+						#add_ideas = prc_ccw_peoples_army
+						#add_ideas = prc_ccw_peoples_support
+						add_ideas = prc_war_of_liberation_1
+						add_ideas = prc_ccw_never_surrender
+				    	complete_national_focus = PRC_CCW_the_chinese_civil_war
+						if = {
+							limit = {
+								NOT = {
+									has_completed_focus = PRC_War_of_Liberation
+								}
+							}
+							every_owned_state = {
+								add_dynamic_modifier = { modifier = communist_stronghold scope = event_target:WTT_communist_china }
+							}
+						}
+					}
+					every_state = {
+						limit = {
+							OR = {
+								region = 144
+					    		region = 200
+							}
+						}
+						add_dynamic_modifier = { modifier = PRC_focus_south_not_west scope = PRC }
+					}
+					CHI = {
+						add_timed_idea = {
+							idea = chi_initial_offensive_buff
+							days = 250
+						}
+					}
+					set_global_flag = chinese_civil_war_effects_fired
+				}
+			}
+		}
+	}
+	on_state_control_changed = {
+		effect = {
+			if = {
+				limit = { #Nanking
+					tag = PRC
+					has_war_with = CHI
+					has_global_flag = CHI_no_longer_united_flag
+					FROM = { tag = CHI }
+					FROM.FROM = { state = 1015 }
+				}
+				PRC = {
+					PRC_war_of_liberation_spirit_upgrade = yes
+					add_days_mission_timeout = {
+						mission = eywor_prc_war_of_liberation_spirit_upgrade
+						days = 90
+					}
+				}
+			}
+		}
+	}
+    }
+
+
+

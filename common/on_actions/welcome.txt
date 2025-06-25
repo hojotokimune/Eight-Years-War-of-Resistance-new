@@ -1,0 +1,84 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			every_country = {
+				limit = { 
+					is_ai = no
+					NOT = { tag = GER }
+					NOT = { tag = SOV }
+					NOT = { tag = USA }
+					NOT = { tag = CHI }
+				 }
+				add_to_array = { 
+					array = global.players
+				}
+			}
+			every_country = {
+				limit = { 
+					is_ai = no
+					tag = GER 
+				 }
+				add_to_array = { 
+					array = global.players_GER
+				}
+			}
+			every_country = {
+				limit = { 
+					is_ai = no
+					tag = SOV
+				 }
+				add_to_array = { 
+					array = global.players_SOV
+				}
+			}
+			every_country = {
+				limit = { 
+					is_ai = no
+					tag = USA
+				 }
+				add_to_array = { 
+					array = global.players_USA
+				}
+			}
+
+			every_country = {
+				limit = { 
+					is_ai = no
+					tag = CHI
+				 }
+				add_to_array = { 
+					array = global.players_CHI
+				}
+			}
+
+			for_each_scope_loop = {
+				array = global.players
+				set_country_flag = bakang_welcome
+			}
+
+			for_each_scope_loop = {
+				array = global.players_GER
+				set_country_flag = show_welcome_splash_GER
+				play_song = Song_of_Horst_Wessel
+			}
+
+			for_each_scope_loop = {
+				array = global.players_SOV
+				set_country_flag = show_welcome_splash_SOV
+				play_song = lets_go
+			}
+			
+			for_each_scope_loop = {
+				array = global.players_USA
+				set_country_flag = show_welcome_splash_USA
+				play_song = 共和国战歌
+			}
+
+			for_each_scope_loop = {
+				array = global.players_CHI
+				set_country_flag = show_welcome_splash_CHI
+				play_song = nea_huangpujunhun
+			}
+		}
+	}
+}

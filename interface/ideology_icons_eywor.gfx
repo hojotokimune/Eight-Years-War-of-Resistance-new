@@ -1,0 +1,109 @@
+spriteTypes = {
+
+	spriteType = {
+        name = "GFX_ideology_marxism"
+        texturefile = "gfx/interface/ideologies/marxism.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_stalinism"
+        texturefile = "gfx/interface/ideologies/stalinism.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_leninism"
+        texturefile = "gfx/interface/ideologies/leninism.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_maoism"
+        texturefile = "gfx/interface/ideologies/maoism.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_PRC_marxism"
+        texturefile = "gfx/interface/ideologies/marxism_ccp.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_KPA_stalinism"
+        texturefile = "gfx/interface/ideologies/stalinism_juche.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_anti_revisionism"
+        texturefile = "gfx/interface/ideologies/marxism_ccp.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_nazism"
+        texturefile = "gfx/interface/ideologies/nazism.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_gen_nazism"
+        texturefile = "gfx/interface/ideologies/nazism.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_fascism_ideology"
+        texturefile = "gfx/interface/ideologies/fascism_group.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_ITA_fascism_ideology"
+        texturefile = "gfx/interface/ideologies/fascism_mussolini.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_JAP_fascism_ideology"
+        texturefile = "gfx/interface/ideologies/taisei_yokusankai.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_VIN_conservatism"
+        texturefile = "gfx/interface/ideologies/can_lao.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_VIN_despotism"
+        texturefile = "gfx/interface/ideologies/conservative.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_PRC_maoism_2"
+        texturefile = "gfx/interface/ideologies/maoism_4.dds"
+    }	
+	spriteType = {
+        name = "GFX_ideology_sanmin_political_tutelage"
+        texturefile = "gfx/interface/ideologies/tutelage.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_sanmin_military_rule"
+        texturefile = "gfx/interface/ideologies/tutelage.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_sanmin_constitutional_government"
+        texturefile = "gfx/interface/ideologies/sanmin.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_liberalism"
+        texturefile = "gfx/interface/ideologies/liberal.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_conservatism"
+        texturefile = "gfx/interface/ideologies/conservative.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_socialism"
+        texturefile = "gfx/interface/ideologies/n_socialism_group.dds"
+    }
+	spriteType = {
+        name = "GFX_ideology_NVA_marxism"
+        texturefile = "gfx/interface/ideologies/hoism.dds"
+    }
+    spriteType = {
+        name = "GFX_ideology_NLF_marxism"
+        texturefile = "gfx/interface/ideologies/hoism.dds"
+    }
+
+    ## Autonomy ##
+    spriteType = {
+        name = "GFX_autonomy_eywor_soviet_satellite_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_eywor_soviet_satellite.dds"
+    }
+    spriteType = {
+        name = "GFX_autonomy_eywor_occupation_government_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_eywor_occupation_government.dds"
+    }
+    spriteType = {
+        name = "GFX_autonomy_eywor_prc_military_region_icon"
+        texturefile = "gfx/interface/autonomy/autonomy_eywor_prc_military_region.dds"
+    }
+}

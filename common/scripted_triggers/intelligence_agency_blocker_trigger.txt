@@ -1,0 +1,15 @@
+# By Yard1
+
+can_create_intelligence_agency = {
+	# change as desired
+	#always = yes
+	OR = {
+		hidden_trigger = {
+			NOT = {
+				is_warlord = yes
+			}
+		}
+		is_legit_china = yes
+	    tag = event_target:WTT_communist_china
+	}
+}

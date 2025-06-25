@@ -1,0 +1,49 @@
+RCM_save_ur_xp_for_templates = {
+	enable = {
+	  OR = {
+            tag = ENG
+		    tag = GER
+	        tag = SOV
+		    tag = JAP          
+            tag = ITA
+		    tag = USA
+        }
+    }
+	abort = {
+        always = no
+    }
+	
+    ai_strategy = {
+        type = land_xp_spend_priority
+		id = division_template
+        value = 50
+    }
+}
+
+Save_ur_naval_xp_for_templates = { #doesnt work, edit defines instead
+	enable = {
+	    OR = {
+            always = no
+            tag = ENG
+		    tag = GER
+	        #tag = SOV
+		    tag = JAP          
+            tag = ITA
+		    tag = USA
+        }
+    }
+	abort = {
+        always = no
+    }
+	
+    ai_strategy = {
+        type = navy_xp_spend_priority
+		id = naval_doctrine
+        value = -200
+    }
+    ai_strategy = {
+        type = navy_xp_spend_priority
+		id = create_equipment_variant
+        value = 5000
+    }
+}

@@ -1,0 +1,13 @@
+邀请科学家回国 = {
+	icon = generic_political_actions
+	allowed = {
+                     OR = {
+                     TAG = CHI
+                     TAG = PRC
+                           }
+	}
+	visible = {
+          always = yes
+	}
+}
+

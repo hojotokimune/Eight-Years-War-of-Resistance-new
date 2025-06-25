@@ -1,0 +1,223 @@
+ENG_boost_french_resistance = {
+	enable = {
+	    or = {
+		tag = ENG
+		is_in_faction_with = ENG
+		}
+		not = { tag = FRA }
+		date > 1941.1.1
+		has_war_with = GER
+		num_of_operatives > 1
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_boost_resistance
+		value = 2500
+		operation_target = GER
+	}
+	ai_strategy = {
+		type = operation_equipment_priority
+		value = 100
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 2000
+		mission_target = GER
+		num_operatives = 1
+		state = 15#诺曼底
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 2000
+		mission_target = ITA
+		num_operatives = 1
+		state = 15#诺曼底
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1500
+		mission_target = GER
+		num_operatives = 1
+		state = 14#
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1500
+		mission_target = ITA
+		num_operatives = 1
+		state = 14#
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1500
+		mission_target = GER
+		num_operatives = 1
+		state = 29#
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1500
+		mission_target = ITA
+		num_operatives = 1
+		state = 29#
+	}
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1000
+		mission_target = GER
+		num_operatives = 1
+		state = 6
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1000
+		mission_target = GER
+		num_operatives = 1
+		state = 16 # Paris
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1000
+		mission_target = GER
+		num_operatives = 1
+		state = 14
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1000
+		mission_target = GER
+		num_operatives = 1
+		state = 55 # Hessen
+	}
+	ai_strategy = {
+		type = operative_mission
+		mission = counter_intelligence
+		value = 5000
+		mission_target = ROOT
+		num_operatives = 1
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_civilian
+		value = 1200
+		operation_target = GER
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_armed_forces_army
+		value = 1200
+		operation_target = GER
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_infiltrate_armed_forces_airforce
+		value = 1200
+		operation_target = GER
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_steal_tech_civilian
+		value = 1500
+		operation_target = GER
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_steal_tech_army
+		value = 1350
+		operation_target = GER
+	}
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_rescue_operative
+		value = 2000
+		operation_target = GER
+	}
+}
+
+
+ENG_boost_french_resistance_make_contant = {
+	enable = {
+	    or = {
+		tag = ENG
+		is_in_faction_with = ENG
+		}
+		not = { tag = FRA }
+		date > 1941.1.1
+		has_war_with = GER
+		num_of_operatives > 3
+			
+		num_finished_operations = {
+			operation = operation_make_resistance_contacts
+			target = GER
+			value < 1
+		}
+		NOT = {
+			has_operation_token = {
+				tag = GER
+				token = token_resistance_contacts
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = operative_operation
+		operation = operation_make_resistance_contacts
+		value = 1200
+		operation_target = GER
+	}
+}
+
+ENG_heavy_water_raids = {
+	allowed = {
+		original_tag = ENG
+	}
+	
+	enable = {
+		has_global_flag = GER_heavy_water_production_underway
+		has_war_with = GER
+		num_of_operatives > 4
+		GER = {
+			controls_state = 110
+		}
+		110 = {
+			resistance > 52
+		}
+	}
+	
+	abort = { always = no }
+	
+	ai_strategy = {
+		type = operative_operation
+		operation = heavy_water_raid
+		value = 2000
+		operation_target = GER
+	}
+	
+	ai_strategy = {
+		type = operative_mission
+		mission = build_intel_network
+		value = 1200
+		mission_target = GER
+		state = 110
+	}
+	
+	ai_strategy = {
+		type = operation_equipment_priority
+		value = 100
+	}
+}
+

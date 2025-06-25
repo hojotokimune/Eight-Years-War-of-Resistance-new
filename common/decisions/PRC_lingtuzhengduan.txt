@@ -1,0 +1,141 @@
+prc_lingtuzhengduan = {
+	prc_zangnan = {
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = PRC_xinanlingtu
+		}
+		available = {
+			has_completed_focus = PRC_xinanlingtu
+			ROOT = {
+				any_owned_state = {
+					any_neighbor_state = {
+						state = 434
+					}
+				}
+				divisions_in_state = {
+					type = infantry
+					size > 5
+					state = 322
+				}
+			}
+		}
+		days_remove = 10
+		cost = 25
+		
+		remove_effect = {
+			ROOT = {
+				country_event = prc_lingtu.1
+			}
+		}
+	}
+	prc_jiangxin = {
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = PRC_xinanlingtu
+			NOT = {
+				has_decision = prc_zangnan
+			}
+			1021 = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		available = {
+			1021 = {
+				NOT = {
+					is_owned_by = ROOT
+				}
+			}
+		}
+		cost = 25
+		days_remove = 10
+		remove_effect = {
+			country_event = prc_lingtu.4
+		}
+	}
+	prc_menggu = {
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = PRC_Demand_mongolia
+		}
+		cost = 25
+		days_remove = 10
+		remove_effect = {
+			country_event = prc_lingtu.6
+		}
+	}
+	prc_tuwa = {
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = PRC_Demand_mongolia
+			330 = {
+				is_owned_by = ROOT
+			}
+		}
+		available = {
+			330 = {
+				is_owned_by = ROOT
+			}
+		}
+		cost = 25
+		days_remove = 10
+		remove_effect = {
+			country_event = prc_lingtu.8
+		}
+	}
+	prc_hk = {
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = PRC_HKMC
+		}
+		available = {
+			ROOT = {
+				any_owned_state = {
+						any_neighbor_state = {
+							state = 326
+						}
+				}
+				
+				divisions_in_state = {
+					type = infantry
+					size > 9
+					state = 592
+				}
+				ic_ratio = {
+					tag = ENG
+					ratio > 1
+				}
+			}
+		}
+		days_remove = 10
+		cost = 25
+		remove_effect = {
+			transfer_state = 326
+		}
+	}
+	prc_macau = {
+		fire_only_once = yes
+		visible = {
+			has_completed_focus = PRC_HKMC
+		}
+		available = {
+			ROOT = {
+				any_owned_state = {
+						any_neighbor_state = {
+							state = 326
+						}
+				}
+				ic_ratio = {
+					tag = POR
+					ratio > 1
+				}
+			}
+		}
+		days_remove = 10
+		cost = 25
+		remove_effect = {
+			transfer_state = 729
+		}
+	}
+}

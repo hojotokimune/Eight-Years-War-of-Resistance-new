@@ -1,0 +1,10 @@
+rcm_recruit_partisan_units_cat = {#新四军
+	icon = GFX_decision_category_spr_the_seeds_of_revolution
+	allowed = {
+	   tag = PRC
+	}	
+	visible = {		
+       has_government = communism
+       has_war_with = JAP	
+	}
+}

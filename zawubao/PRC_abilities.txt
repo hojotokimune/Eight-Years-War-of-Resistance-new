@@ -1,0 +1,320 @@
+ability = {	
+	#强行军
+	PRC_Forced_March = {
+		name = ABILITY_FORCED_MARCH
+		desc = ABILITY_FORCED_MARCH_DESC
+		icon = GFX_ability_PRC_Forced_March
+		
+		sound_effect = command_power_ability_offensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {				
+				has_completed_focus = tzxx_PRC_Revitalize
+			}
+		}
+		
+		#陆地行军+25%、携带补给+72小时、跨河速度惩罚-20%
+		unit_modifiers = {
+			no_supply_grace = 72
+			river_crossing_factor = -0.2
+			desert = { movement = 0.2
+			}
+			hills = { movement = 0.2
+			}
+			forest = { movement = 0.2
+			}
+			mountain = { movement = 0.2
+			}
+			plains = { movement = 0.2
+			}
+			urban = { movement = 0.2
+			}
+			jungle = { movement = 0.2
+			}
+			marsh = { movement = 0.2
+			}
+		}		
+		cost = 0.15
+		duration = 168
+		cooldown = 480
+		
+		one_time_effect = {
+			supply_units = 72
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support > 0.1
+					command_power > 1.0
+				}
+				check_variable = { num_units_offensive_combats > 5 }
+				
+				set_temp_variable = { temp = avg_offensive_combat_status }
+				check_variable = { temp > 0.45 }
+				check_variable = { ai_random > temp }
+				
+				add = 4
+			}
+		}
+	}
+	
+		#冲锋与反冲锋
+		PRC_Charge = {
+		name = ABILITY_CHARGE
+		desc = ABILITY_CHARGE_DESC
+		icon = GFX_ability_PRC_Charge
+		
+		sound_effect = command_power_ability_defensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {				
+				has_completed_focus = tzxx_PRC_Revitalize
+			}
+		}
+		
+		cost = 0.08
+		duration = 168
+		cooldown = 320
+		
+		
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				combat_offense = 0.10
+				combat_defense = 0.10
+				combat_breakthrough = 0.10
+				org_damage_multiplier = -0.33
+				war_support_reduction_on_damage = 0.15
+				days = 7
+				tooltip = ABILITY_LAST_STAND_TOOLTIP
+			}
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support > 0.4
+				}
+				
+				check_variable = { num_units_defensive_combats > 6 }
+				
+				set_temp_variable = { temp = avg_defensive_combat_status }
+				check_variable = { temp < 0.40 }
+				check_variable = { ai_random > temp }
+				
+				add = 3
+			}
+		}
+	}
+	
+	
+		#坑道战术
+		PRC_Dig = {
+		name = ABILITY_DIG
+		desc = ABILITY_DIG_DESC
+		icon = GFX_ability_PRC_Dig
+		
+		sound_effect = command_power_ability_offensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {				
+				has_completed_focus = tzxx_PRC_Reorganize_operational_concept_system
+			}
+		}
+		
+		cost = 0.10
+		duration = 168
+		cooldown = 240
+		unit_modifiers = {
+			dig_in_speed_factor = 0.75
+		}			
+	
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				combat_entrenchment = 0.2
+				org_damage_multiplier = 0.25
+				str_damage_multiplier = 0.25
+				days = 7
+				tooltip = ABILITY_LAST_STAND_TOOLTIP
+			}
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					has_war_support > 0.4
+				}
+				
+				check_variable = { num_units_defensive_combats > 6 }
+				
+				set_temp_variable = { temp = avg_defensive_combat_status }
+				check_variable = { temp < 0.40 }
+				check_variable = { ai_random > temp }
+				
+				add = 3
+			}
+		}
+	}
+	
+	
+	#城市攻坚
+	PRC_Shelling = {
+		name = ABILITY_SHELLING
+		desc = ABILITY_SHELLING_DESC
+		icon = GFX_ability_PRC_Shelling
+			
+		sound_effect = command_power_ability_offensive
+			
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {				
+				has_completed_focus = tzxx_PRC_PLA
+			}
+		}
+		
+		unit_modifiers = {
+			fort = {
+				attack = 0.1
+				movement = 0.1	
+			}
+			urban = {
+				attack = 0.1
+				movement = 0.1
+			}			
+			fortification_damage = 2.0
+			fortification_collateral_chance = 2.0
+		}
+		cost = 0.15
+		duration = 168
+		cooldown = 480
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 10
+				}
+				
+				set_temp_variable = { temp = num_units_offensive_combats }
+				check_variable = { temp > 6 }
+				set_temp_variable = { temp2 = num_units_offensive_combats_against@fort }
+				divide_temp_variable = { temp2 = temp }
+				check_variable = { temp2 > 0.5 }
+				
+				add = 3
+			}
+		}
+	}
+	
+	#精神动员
+	PRC_communism_plan = {
+		name = ABILITY_COMMUNISM_PLAN
+		desc = ABILITY_COMMUNISM_PLAN_DESC
+		icon = GFX_ability_PRC_Sickle_hammer
+		
+		sound_effect = command_power_ability_defensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {				
+				has_completed_focus = tzxx_PRC_Revitalize
+			}
+		}
+		
+		cost = 0.04
+		duration = 72
+		
+		unit_modifiers = {
+			planning_speed = 2.5
+		}
+		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units > 6 }
+				check_variable = { unit_ratio_ready_for_plan > 0.55 }
+				check_variable = { avg_unit_planning_ratio < 0.4 }
+				
+				add = 3
+			}
+		}
+	}
+	
+	#协同作战
+	PRC_Synergy = {
+		name = ABILITY_SYNERGY
+		desc = ABILITY_SYNERGY_DESC
+		icon = GFX_ability_PRC_Synergy
+		
+		sound_effect = command_power_ability_defensive
+		
+		type = army_leader
+		
+		allowed = {
+			is_leading_army_group = no
+			is_border_war = no
+			OWNER = {				
+				has_completed_focus = tzxx_PRC_Inheritance_military_education
+			}
+		}
+		
+		cost = 0.08
+		duration = 150
+		
+		unit_modifiers = {
+			planning_speed = 0.2
+			land_reinforce_rate = 0.10
+			coordination_bonus = 0.20
+		}
+		one_time_effect = {
+			add_temporary_buff_to_units = {
+				initiative = 0.25
+				days = 7
+				tooltip = ABILITY_LAST_STAND_TOOLTIP
+			}
+		}		
+		
+		ai_will_do = {
+			factor = -1
+			modifier = {
+				FROM = {
+					command_power > 2.0
+				}
+				check_variable = { num_units > 6 }
+				check_variable = { unit_ratio_ready_for_plan > 0.55 }
+				check_variable = { avg_unit_planning_ratio < 0.4 }
+				
+				add = 2
+			}
+		}
+	}
+}

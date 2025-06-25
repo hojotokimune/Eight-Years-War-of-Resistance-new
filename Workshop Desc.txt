@@ -1,0 +1,110 @@
+[img]https://steamuserimages-a.akamaihd.net/ugc/775102709099534592/2C661B287DE3D13E1F32EB1419140A3A98407888/[/img]
+[h1][b]Current Version[/b][/h1]
+[b]Current Version is compatible with 1.14.x[/b]
+[b]You can report bugs or problems on the Discord.[/b]
+
+[h1][b]Offical authorization[/b][/h1]
+Most of our developers and modders are from the old Discord.
+That's why we form this team.
+and WanNiang is one of the 2 developers (another is Natt) in 1.10 EYWOR. He allowed us to adapte EYWOR to the current version.
+[img]https://i.imgur.com/UbYmn32.png[/img]
+--------------------------------------------------------------------------
+
+[h1][b]Join our new [url=https://discord.gg/5uZjhx2zxY]Discord Server[/url] for more info and updates![/b][/h1]
+[h1][b]Mod content is no longer free for use. Please contact us for related inquiries.[/b][/h1]
+
+[list]
+    [*][b]Compatible with 1.14.x and all DLCs.[/b] Waking The Tigher is recommended for this mod, although not required, we strongly recommend playing this mod with all DLCs.
+    [*][b]Historical AI on is strongly recommended[/b]. Turn it off at your own risk.
+    [*][b]1939 scenario is removed and we don't plan to add it back.[/b]
+[/list]
+
+Eight Years' War of Resistance started off as a mod that aims to slightly adjust the Asian Theater of World War II, but eventually grown into an overhaul mod that focus on the region of East Asia and South East Asia. This is a renewed release of the project. The mod aims to create an in-depth, historical, polished and fun experience for you to enjoy. 
+
+[img]https://steamuserimages-a.akamaihd.net/ugc/1747940478282198582/1188F84B11B366AE0BD997DF27DAF40BE2074A7F/[/img]
+
+New historical nations are added in the Asia along with unique skins, events, focus trees, decisions, unique tech and dynamic news interface. Asian majors, namely China and Japan, have been reworked extensively. More extensive and historical focus trees are added along with new advisors, events, and decisions. A great amount of new graphics are added, and efforts are made to ensure the icons have a quality and style similar to the vanilla ones.
+
+[h1][b]Playability[/b][/h1]
+
+◆ [b]Current Nations w/ National Focuses:[/b]
+　 – Japan, China, Communist China, Sinkiang, Indochina, Mongolia, Manchukuo, East Hebei A.C.(Will be Collaborationist China later), the US, New Guangxi Clique, Shanxi Clique, Tunganistan
+◆ [b]Current Nations w/o completely unique National Focuses but are playable and have flavors:[/b]
+　 – East Chahar, Pailingmiao Council, Northeastern Army, Burma, the Warlords (WTT only).
+◆ [b]Note:[/b]
+　 –  If you want to play as Reorganized Nationalist China, play as the
+　　 East Hebei Autonomous Council to form it.
+　 –  If you want to play as Mengjiang, play as East Chahar autonomous region. 
+　　 Prince Demchugdongrub will defect to you later. 
+　 –  If you want to play as a Suiyuan warlord, play as the Pailingmiao Council. You get to choose
+　　 to either defect or stay loyal to Nanking in an event. Choose stay for the warlord.
+◆ [b]Known issues:[/b]
+　 –  There are a couple unfixable broken tooltips and news event locs. Does not affect gameplay.
+
+[h1][b]Unique Skins & Tech Variants[/b][/h1]
+For most warlords and Japanese client states, new custom skins and tech are added, adding more flavor to the game. Most of these are even available without Waking the Tiger DLC!
+
+[h1][b]Ideology[/b][/h1]
+This mod adds a new ideology Socialism. The ideology has its own political advisers and political decisions!
+
+[h1][b]Supply Condition and Inflation[/b][/h1]
+This mod add in a new mechanic Supply Condition to represent war exhaustion. Your infrastructure, divisions, occupation, factories and stability will all affect your supply condition. And it will affect your war support and several army stats. Along with supply condition, there's also a Inflation mechanic for all countries. Inflation occurs when stability is too low for your trade law.
+
+[h1][b]Partisans[/b][/h1]
+As communist china, a new Partisan mechanic is introduced. You can unlock it after completing the Partisan Offensive focus. It is represented with the yellow bands in the screenshots, and you can do various operations in those regions!
+
+...and much more!
+
+[img]https://steamuserimages-a.akamaihd.net/ugc/1747940478282309213/B4A111A68A2BFBC64A07CC440A7764AAF3F35E58/[/img]
+
+[h1][b]Current Devs:[/b][/h1]
+　 – [b]Ken HK[/b], Project Lead
+　 – [b]Aug[/b], Map adaptation(1.11~1.12)
+　 – [b]Se(Stareye)[/b] and [b]Chunchun[/b], coder
+　 – [b]Glen[/b] and [b]Corcrete[/b], test and debug
+
+[h1][b]Current Credits:[/b][/h1]
+　 – Some ai codes are based on [b]time lapses[/b]' [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2318957791]Downsize AirForce[/url]
+　 – Hundreds new dlc portraits are based on [b]Scotvince[/b]'s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=960885363]Historical Portraits[/url]
+　 – Some large & small portraits and icons are based on [b]Portrochen[/b]'s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=2507703832]TY'S KR Graphic Improvement[/url]
+　 - Some Focus icons are from [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1521695605]Kaiserreich[/url]
+　 – Thanks to [b]UKKRHEE[/b] & [b]Nika[/b] for the original Korean Map.
+　 – Thanks to [b]Sol Inherent[/b] for help about some of the codes.
+　 – Thanks to [b]Ndlf[/b] for the officer corp's advisor theorist entry.
+　 – Thanks to [b]Nsyw[/b] for some of the portraits.
+　 – Thanks to [b]カラーの人[/b] for some of the Japnese characters & photos.
+　 - Thanks to [b]Articus Caesar[/b] for the portrait of Liu Pin.
+
+[h1][b]1.10 Devs:[/b][/h1]
+　 – Natt, Project Lead
+　 – Kappa, assistance in Manchoukuo's content, OOB, locs, and some other events
+　 – Small Pinky, localization
+　 – Ken HK, for additional generals
+　 – Chunchun and Stareye, for translation and portrait assistance
+　 – Burger King Hotline, for creating the former 1.10 fork
+
+[h1][b]Featured Mods:[/b][/h1]
+　 – East Focus mod - Wanniang
+　 – Lamp's Eqpt Icons & Lamp's Chinese Eqpt Icons  - 电灯弗里曼 (Lamp)
+　 – Chinese Army Skin - Muhammad_Liberalist
+　 – Chen's Flavorful Chinese Theater - Portrochen
+　 – Mongolia National Focus - Mordred
+　 – Historical Japanese OOB with Manchukuo [EN] - Ukiwa
+　 – Burma – Kaba Ma Kyei - Chewy Yui
+　 – Nationalist China: Yellow River Flood - [TFB] Moominpappa
+　 – Historical Portraits - Scotvince
+　 - Ammunition - Spielkrokodil &Anni 
+
+[img]https://steamuserimages-a.akamaihd.net/ugc/1747940478282306816/0618E9352D886096DE9214C539EE92F64D7D7492/[/img]
+
+Huge thanks to Wanniang, the author of the East Focus mod
+The prototype of this mod is based on roemer9’s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=1137402160]Better Realism Project[/url], which I partially participated in
+The portraits of the mod is mostly adopted from VictorXoda’s [url=https://steamcommunity.com/sharedfiles/filedetails/?id=733860347]Black & White Portraits[/url].
+Some portraits are adopted from A Portrait Mod by Brutus Mars.
+Thanks to 田銀時 (袁銀)-TW for reworking the skins!
+Credits to the Darkest Hour mod team for allowing us to develop on its dynamic news event headers prototype.
+Thanks to Burger King Hotline for creating the former 1.10 fork!
+Thanks Nuttachais and Darijus for their PSD templates in Modding Coop
+Thanks HighMountainGuy for some event localisation
+Thanks Vkdlsejghf for finding errors in localisation
+Thanks to all the people who helped us.

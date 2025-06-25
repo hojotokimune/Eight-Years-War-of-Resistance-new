@@ -1,0 +1,12 @@
+prc_lingtuzhengduan = {
+    icon = GFX_decision_category_generic
+    allowed = { 
+        tag = PRC
+    }  
+    desc = prc_lingtuzhengduan_cat_d
+    visible = {
+		is_puppet = no
+		has_completed_focus = PRC_lingtu
+	}  
+    priority = 100
+}

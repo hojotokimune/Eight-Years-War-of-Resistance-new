@@ -1,0 +1,503 @@
+spriteTypes = {
+    #guo
+	
+	spriteType = {
+		name = "GFX_ideology_neutrality_group"
+		texturefile = "gfx/interface/ideologies/neutrality_group.dds"
+	}	
+	
+	spriteType = {
+		name = "GFX_ideology_communism_group"
+		texturefile = "gfx/interface/ideologies/communism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_fascism_group"
+		texturefile = "gfx/interface/ideologies/fascism_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_democratic_group"
+		texturefile = "gfx/interface/ideologies/democratic_group.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_conservatism"
+		texturefile = "gfx/interface/ideologies/conservatism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_liberalism"
+		texturefile = "gfx/interface/ideologies/liberalism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_socialism"
+		texturefile = "gfx/interface/ideologies/socialism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_anarchist_communism"
+		texturefile = "gfx/interface/ideologies/anarchist_communism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_anti_revisionism"
+		texturefile = "gfx/interface/ideologies/anti_revisionism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_leninism"
+		texturefile = "gfx/interface/ideologies/leninism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_marxism"
+		texturefile = "gfx/interface/ideologies/marxism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_stalinism"
+		texturefile = "gfx/interface/ideologies/stalinism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_falangism"
+		texturefile = "gfx/interface/ideologies/falangism.dds"
+	}
+
+	spriteType = {
+		name = "GFX_ideology_fascism_ideology"
+		texturefile = "gfx/interface/ideologies/fascism_ideology.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_nazism"
+		texturefile = "gfx/interface/ideologies/nazism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_gen_nazism"
+		texturefile = "gfx/interface/ideologies/nazism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_rexism"
+		texturefile = "gfx/interface/ideologies/rexism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_centrism"
+		texturefile = "gfx/interface/ideologies/centrism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_moderatism"
+		texturefile = "gfx/interface/ideologies/centrism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_oligarchism"
+		texturefile = "gfx/interface/ideologies/oligarchism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_despotism"
+		texturefile = "gfx/interface/ideologies/despotism.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_ideology_anarchism"
+		texturefile = "gfx/interface/ideologies/anarchism.dds"
+	}
+	
+	spriteType = { #guo
+		name = "GFX_ideology_sanmin_political_tutelage"
+		texturefile = "gfx/interface/ideologies/sanmin_political_tutelage.dds"
+	}
+	spriteType = { #guo
+		name = "GFX_ideology_sanmin_constitutional_government"
+		texturefile = "gfx/interface/ideologies/sanmin_constitutional_government.dds"
+	}
+	spriteType = { #guo
+		name = "GFX_ideology_sanmin_military_rule"
+		texturefile = "gfx/interface/ideologies/sanmin_military_rule.dds"
+	}
+	#guo
+	
+	
+	
+	
+	SpriteType = {
+		name = "GFX_GER_swedish_trade_agreement"
+		texturefile = "gfx/interface/goals/GER_swedish_trade_agreement.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_autarky"
+		texturefile = "gfx/interface/goals/GER_autarky.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_low_countries_membership"
+		texturefile = "gfx/interface/goals/focus_hol_united_netherlands.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_baltic_membership"
+		texturefile = "gfx/interface/goals/focus_SOV_baltic_security.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_scandinavian_membership"
+		texturefile = "gfx/interface/goals/focus_generic_scandinavia_flags.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_pool_technical_know_how"
+		texturefile = "gfx/interface/goals/goal_generic_scientific_exchange.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_strike_at_the_source"
+		texturefile = "gfx/interface/goals/focus_attack_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_polish_membership"
+		texturefile = "gfx/interface/goals/GER_poland_friend.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_finnish_membership"
+		texturefile = "gfx/interface/goals/focus_invite_finland.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_central_european_alliance"
+		texturefile = "gfx/interface/goals/focus_POL_beck_ribbentrop.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_danubian_expansion"
+		texturefile = "gfx/interface/goals/focus_invite_romania.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_danubian_membership"
+		texturefile = "gfx/interface/goals/GER_czech_friend.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_anti_comintern_pact_unaligned"
+		texturefile = "gfx/interface/goals/GER_anti_comintern_pact_unaligned.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_effort2"
+		texturefile = "gfx/interface/goals/focus_generic_refit_civilian_ships.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_effort"
+		texturefile = "gfx/interface/goals/focus_POL_develop_polish_shipbuilding.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_focus_on_the_true_enemy"
+		texturefile = "gfx/interface/goals/focus_attack_britain.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_u_boat_effort"
+		texturefile = "gfx/interface/goals/focus_generic_midget_submarines.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_tackle_the_communist_threat"
+		texturefile = "gfx/interface/goals/focus_attack_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_anti_soviet_pact_unaligned"
+		texturefile = "gfx/interface/goals/GER_anti_soviet_pact.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_see_to_the_eastern_front"
+		texturefile = "gfx/interface/goals/GER_demand_memel.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_carte_blanche_for_alsace_and_french_colonies"
+		texturefile = "gfx/interface/goals/focus_attack_france.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_ally_the_shade"
+		texturefile = "gfx/interface/goals/focus_chi_british_cooperation.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_expatriate_the_communists"
+		texturefile = "gfx/interface/goals/focus_SOV_the_last_purge.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_a_new_and_better_germany"
+		texturefile = "gfx/interface/goals/focus_generic_population_growth.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_reestablish_free_elections"
+		texturefile = "gfx/interface/goals/focus_spr_torchbearers_of_tomorrow.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_secure_the_new_state"
+		texturefile = "gfx/interface/goals/focus_spr_the_anti_fascist_workers_revolution.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_soviet_ally"
+		texturefile = "gfx/interface/goals/focus_chi_mission_to_the_soviet_union.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_turkey_puppet"
+		texturefile = "gfx/interface/goals/focus_generic_attack_turkey.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_turkey_friend"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_turkey.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_nationalist_spain_ally"
+		texturefile = "gfx/interface/goals/focus_intervention_spain_nationalists.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_italy_ally"
+		texturefile = "gfx/interface/goals/focus_befriend_italy.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_operation_tannenbaum"
+		texturefile = "gfx/interface/goals/focus_attack_switzerland.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_war_with_france"
+		texturefile = "gfx/interface/goals/focus_attack_france.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_weserubung"
+		texturefile = "gfx/interface/goals/focus_generic_attack_denmark.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_danzig_vs_slovakia"
+		texturefile = "gfx/interface/goals/focus_generic_polish_deal.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_war_with_greece"
+		texturefile = "gfx/interface/goals/focus_generic_attack_greece.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_second_ljubljana_award"
+		texturefile = "gfx/interface/goals/focus_generic_befriend_bulgaria.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_first_ljubljana_award"
+		texturefile = "gfx/interface/goals/GER_align_hungary.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_improve_national_spirit"
+		texturefile = "gfx/interface/goals/GER_german_war_economy.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_japan_friend"
+		texturefile = "gfx/interface/goals/focus_chi_collaboration_with_the_japanese.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_china_friend"
+		texturefile = "gfx/interface/goals/focus_chi_cooperation_with_the_nationalists.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_ussr_war_goal"
+		texturefile = "gfx/interface/goals/focus_attack_soviet.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_anti_comitern_pact"
+		texturefile = "gfx/interface/goals/focus_ger_great_red_menace.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_autobahn"
+		texturefile = "gfx/interface/goals/focus_SOV_the_road_of_life.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_integrate_war_economies"
+		texturefile = "gfx/interface/goals/focus_SOV_merge_plants.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_mol_rib_pact"
+		texturefile = "gfx/interface/goals/focus_POL_beck_ribbentrop.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_align_romania"
+		texturefile = "gfx/interface/goals/focus_invite_romania.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_no_balkan_communism"
+		texturefile = "gfx/interface/goals/GER_no_balkan_communism.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_no_reds_in_western_europe"
+		texturefile = "gfx/interface/goals/GER_no_reds_in_western_europe.dds"
+	}
+	SpriteType = {
+		name = "GFX_GER_safeguard_the_baltic"
+		texturefile = "gfx/interface/goals/GER_safeguard_the_baltic.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_second_vienna_award"
+		texturefile = "gfx/interface/goals/GER_second_vienna_award.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_first_vienna_award"
+		texturefile = "gfx/interface/goals/GER_first_vienna_award.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_the_central_powers"
+		texturefile = "gfx/interface/goals/GER_the_central_powers.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_rearmament"
+		texturefile = "gfx/interface/goals/GER_naval_rearmament.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_prepare_italian_coup"
+		texturefile = "gfx/interface/goals/GER_prepare_italian_coup.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_our_place_in_the_sun"
+		texturefile = "gfx/interface/goals/GER_our_place_in_the_sun.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_rebuild_the_high_seas_fleet"
+		texturefile = "gfx/interface/goals/GER_rebuild_the_high_seas_fleet.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_crossing_the_atlantic"
+		texturefile = "gfx/interface/goals/GER_crossing_the_atlantic.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_reinstate_imperial_possessions"
+		texturefile = "gfx/interface/goals/GER_reinstate_imperial_possessions.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_schlieffen_once_more"
+		texturefile = "gfx/interface/goals/GER_schlieffen_once_more.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_plan_z"
+		texturefile = "gfx/interface/goals/GER_plan_z.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_trade_interdiction"
+		texturefile = "gfx/interface/goals/GER_trade_interdiction.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_the_iberian_problem"
+		texturefile = "gfx/interface/goals/GER_the_iberian_problem.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_anti_soviet_pact"
+		texturefile = "gfx/interface/goals/GER_anti_soviet_pact.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_naval_air_effort"
+		texturefile = "gfx/interface/goals/GER_naval_air_effort.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_long_range_escorts"
+		texturefile = "gfx/interface/goals/GER_long_range_escorts.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_army_innovation_2"
+		texturefile = "gfx/interface/goals/GER_army_innovation_2.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_army_innovation"
+		texturefile = "gfx/interface/goals/GER_army_innovation.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_reintegrate_luxemburg_and_alsace_lorraine"
+		texturefile = "gfx/interface/goals/GER_reintegrate_luxemburg_and_alsace_lorraine.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_rhineland"
+		texturefile = "gfx/interface/goals/GER_rhineland.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_dutch_friend"
+		texturefile = "gfx/interface/goals/GER_dutch_friend.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_denmark_friend"
+		texturefile = "gfx/interface/goals/GER_denmark_friend.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_norway_friend"
+		texturefile = "gfx/interface/goals/GER_norway_friend.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_sweden_friend"
+		texturefile = "gfx/interface/goals/GER_sweden_friend.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_fate_of_greece"
+		texturefile = "gfx/interface/goals/GER_fate_of_greece.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_anschluss"
+		texturefile = "gfx/interface/goals/GER_anschluss.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_fate_of_yugoslavia"
+		texturefile = "gfx/interface/goals/GER_fate_of_yugoslavia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_demand_memel"
+		texturefile = "gfx/interface/goals/GER_demand_memel.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_demand_slovenia"
+		texturefile = "gfx/interface/goals/GER_demand_slovenia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_end_of_czechoslovakia"
+		texturefile = "gfx/interface/goals/GER_end_of_czechoslovakia.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_demand_sudetenland"
+		texturefile = "gfx/interface/goals/GER_demand_sudetenland.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_wunderwaffe"
+		texturefile = "gfx/interface/goals/focus_wonderweapons.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_soviet_treaty"
+		texturefile = "gfx/interface/goals/GER_soviet_treaty.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_german_war_economy"
+		texturefile = "gfx/interface/goals/GER_german_war_economy.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_four_year_plan"
+		texturefile = "gfx/interface/goals/GER_four_year_plan.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_rocketry_focus"
+		texturefile = "gfx/interface/goals/GER_rocketry_focus.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_air_innovation_2"
+		texturefile = "gfx/interface/goals/GER_air_innovation_2.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_air_innovation"
+		texturefile = "gfx/interface/goals/GER_air_innovation.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_tactical_air_effort"
+		texturefile = "gfx/interface/goals/GER_tactical_air_effort.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_strategic_air_effort"
+		texturefile = "gfx/interface/goals/GER_strategic_air_effort.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_poland_friend"
+		texturefile = "gfx/interface/goals/GER_poland_friend.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_czech_friend"
+		texturefile = "gfx/interface/goals/GER_czech_friend.dds"			
+	}
+	SpriteType = {
+		name = "GFX_GER_align_hungary"
+		texturefile = "gfx/interface/goals/GER_align_hungary.dds"			
+	}
+}

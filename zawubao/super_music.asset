@@ -1,0 +1,374 @@
+music = {
+	name = "super_ww2"
+	file = "ww2.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_ww3"
+	file = "ww3.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_ww3_NATO"
+	file = "ww3_allies.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_sino_japanese_war"
+	file = "sino_japanese_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_spainish_civil_war"
+	file = "spainish_civil_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_italian_civil_war"
+	file = "italian_civil_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_pacific_war"
+	file = "pacific_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_barbarossa"
+	file = "barbarossa.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_nationalist_victory"
+	file = "nationalist_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_republican_victory"
+	file = "republican_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_anarchist_victory"
+	file = "anarchist_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_communist_victory"
+	file = "communist_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_falangist_victory"
+	file = "falangist_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_stalinist_victory"
+	file = "stalinist_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_carlist_victory"
+	file = "carlist_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_british_collapse"
+	file = "british_collapse.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_fall_germany"
+	file = "fall_germany.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_soviet_end"
+	file = "soviet_end.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_japanese_surrender"
+	file = "japanese_surrender.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_fall_america"
+	file = "fall_america.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_nuke"
+	file = "super_nuke.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_imperial_federation"
+	file = "imperial_federation.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_decolonization"
+	file = "decolonization.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_king_edward"
+	file = "king_edward.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_mosley"
+	file = "mosley.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_communist_uk"
+	file = "communist_uk.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_german_civil_war"
+	file = "german_civil_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_kaiser"
+	file = "kaiser.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_german_democracy"
+	file = "german_democracy.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_endsieg"
+	file = "endsieg.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_fall_france"
+	file = "fall_france.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_fall_poland"
+	file = "fall_poland.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_unholy_alliance"
+	file = "unholy_alliance.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_austria_hungary"
+	file = "austria_hungary.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_eastern_front"
+	file = "eastern_front.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_victoria"
+	file = "victoria.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_fall_china"
+	file = "fall_china.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_chinese_civil_war"
+	file = "chinese_civil_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_unify_china_commie"
+	file = "unify_china_commie.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_unify_china_nationalist"
+	file = "unify_china_nationalist.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_russo_japanese_war"
+	file = "russo_japanese_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_qing"
+	file = "qing.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_geacps"
+	file = "geacps.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_japanese_civil_war"
+	file = "japanese_civil_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_chinese_victory"
+	file = "chinese_victory.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_russian_civil_war_commie"
+	file = "russian_civil_war_commie.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_russian_civil_war_white"
+	file = "russian_civil_war_white.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_romanov"
+	file = "romanov.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_plc"
+	file = "plc.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_winter_war"
+	file = "winter_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_macedon"
+	file = "macedon.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_byzantium"
+	file = "byzantium.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_turan"
+	file = "turan.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_ottoman_empire"
+	file = "ottoman_empire.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_balkan_unification"
+	file = "balkan_unification.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_fall_brazil"
+	file = "fall_brazil.ogg"
+	volume = 1.50
+}
+
+music = {
+	name = "super_american_civil_war"
+	file = "american_civil_war.ogg"
+	volume = 1.50
+}
+
+music = {
+	name = "super_fall_of_new_york"
+	file = "fall_ny.ogg"
+	volume = 1.50
+}
+
+music = {
+	name = "super_fall_of_los_angeles"
+	file = "fall_la.ogg"
+	volume = 1.50
+}
+
+music = {
+	name = "super_leopoldine"
+	file = "fall_leopoldine.ogg"
+	volume = 1.50
+}
+music = {
+	name = "china_yellow_river"
+	file = "yellow_river.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_bay_of_pigs"
+	file = "bay_of_pigs.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_american_mexican_war"
+	file = "american_mexican_war.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_prc"
+	file = "prc.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_paris_liberated"
+	file = "paris_liberated.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_tokyo_soviet"
+	file = "tokyo_soviet.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_tokyo_america"
+	file = "tokyo_america.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_tokyo_china"
+	file = "tokyo_china.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_ethiopian_victory"
+	file = "victory_ethiopia.ogg"
+	volume = 1.50
+}
+music = {
+	name = "super_moscow_allies"
+	file = "moscow_allies.ogg"
+	volume = 1.50
+}
+music = {
+    name = "super_iraqi_war"
+	file = "iraqi_war.ogg"
+	volume = 1.50
+}
+music = {
+    name = "super_fascist"
+	file = "tno.ogg"
+	volume = 1.50
+}
+music = {
+    name = "super_democratic"
+	file = "world_democracy.ogg"
+	volume = 1.50
+}
+music = {
+    name = "super_communist"
+	file = "world_revolution.ogg"
+	volume = 1.50
+}

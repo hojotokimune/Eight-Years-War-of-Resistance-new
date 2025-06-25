@@ -1,0 +1,53 @@
+on_actions = {
+	on_capitulation_immediate = {
+		#Soviet / Anglo-Soviet Invasion of Iran
+		effect = {
+			if = {
+				limit = {
+					original_tag = PER
+					FROM = { original_tag = SOV }
+				}
+				if = { #Soviets alone (or joint but ENG died)
+					limit = {
+						OR = {
+							has_global_flag = SOV_soviet_invasion_of_iran_flag
+							AND = {
+								has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
+								NOT = { country_exists = ENG }
+							}
+						}
+					}
+					FROM = {
+						white_peace = PER
+						puppet = ROOT #SOV puppet Iran
+					}
+
+					if = {
+						limit = {
+							has_global_flag = SOV_soviet_invasion_of_iran_flag
+						}
+						clr_global_flag = SOV_soviet_invasion_of_iran_flag
+					}
+					else = {
+						clr_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
+					}
+					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.156 days = 1  } } #Hidden Effect to transfer states and give resource rights
+				}
+				else_if = {
+					limit = {
+						has_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
+					}
+					FROM = { white_peace = PER }
+					ENG = {
+						white_peace = PER
+						puppet = ROOT #ENG gets to puppet Iran
+					}
+
+					clr_global_flag = SOV_agreed_anglo_soviet_invasion_of_iran_flag
+
+					FROM = { country_event = { id = NSB_soviet_foreign_politics_events.157 days = 1 } }  #Hidden Effect to transfer states and give resource rights and military access
+				}
+			}
+		}
+	}
+}

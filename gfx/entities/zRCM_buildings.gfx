@@ -1,0 +1,175 @@
+objectTypes = {
+	
+	#### Artillery ########################################################
+	#south cliques
+	pdxmesh = {
+		name = "GXC_artillery_mesh"
+		file = "gfx/models/units/artillery/GXC_artillery_75_type_jin_12.mesh"
+		
+		animation = { id = "idle"  			type = "GXC_artillery_75_type_jin_12_idle_animation" }
+		animation = { id = "move"  			type = "GXC_artillery_75_type_jin_12_moving_animation" }
+		animation = { id = "attack"  		type = "GXC_artillery_75_type_jin_12_attack_animation" }
+	}
+	pdxmesh = {
+		name = "GUD_artillery_mesh"
+		file = "gfx/models/units/artillery/GXC_artillery_75_type_jin_12.mesh"
+		
+		animation = { id = "idle"  			type = "GXC_artillery_75_type_jin_12_idle_animation" }
+		animation = { id = "move"  			type = "GXC_artillery_75_type_jin_12_moving_animation" }
+		animation = { id = "attack"  		type = "GXC_artillery_75_type_jin_12_attack_animation" }
+	}
+	pdxmesh = {
+		name = "YUN_artillery_mesh"
+		file = "gfx/models/units/artillery/GXC_artillery_75_type_jin_12.mesh"
+		
+		animation = { id = "idle"  			type = "GXC_artillery_75_type_jin_12_idle_animation" }
+		animation = { id = "move"  			type = "GXC_artillery_75_type_jin_12_moving_animation" }
+		animation = { id = "attack"  		type = "GXC_artillery_75_type_jin_12_attack_animation" }
+	}
+	##############
+	#NORTH AND others
+	pdxmesh = {
+		name = "SHD_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "NEA_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "SHC_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "HPC_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "XSM_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "NXM_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "GSM_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "PLM_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "HMI_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "TNG_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "SIC_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+	pdxmesh = {
+		name = "XIK_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+        pdxmesh = {
+		name = "KHR_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+        pdxmesh = {
+		name = "XIA_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+         pdxmesh = {
+		name = "KRS_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+         pdxmesh = {
+		name = "ATM_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+         pdxmesh = {
+		name = "SUY_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+         pdxmesh = {
+		name = "EGM_artillery_mesh"
+		file = "gfx/models/units/artillery/CHI_artillery_75_type_10_gan.mesh"
+		
+		animation = { id = "idle"  			type = "CHI_artillery_75_type_10_gan_idle_animation" }
+		animation = { id = "move"  			type = "CHI_artillery_75_type_10_gan_moving_animation" }
+		animation = { id = "attack"  		type = "CHI_artillery_75_type_10_gan_attack_animation" }
+	}
+}

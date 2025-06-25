@@ -1,0 +1,11 @@
+﻿l_simp_chinese:
+ has_controls_state_prc_tt:0 "控制§Y$PRC_communism$§!所有地区"
+ has_controls_state_chi_tt:0 "控制§Y$CHI_neutrality$§!所有地区"
+ has_controls_state_man_tt:0 "控制§Y$MAN_ADJ$§!所有地区"
+ has_controls_state_men_tt:0 "控制§Y$MEN$§!所有地区"
+ has_controls_state_shx_tt:0 "控制§Y$SHX$§!所有地区"
+ has_controls_state_xsm_tt:0 "控制§Y$XSM$§!所有地区"
+ has_controls_state_sik_tt:0 "控制§Y$SIK$§!所有地区"
+ has_controls_state_tib_tt:0 "控制§Y$TIB$§!所有地区"
+ has_controls_state_gxc_tt:0 "控制§Y$GXC$§!所有地区"
+ has_controls_state_yun_tt:0 "控制§Y$YUN$§!所有地区"

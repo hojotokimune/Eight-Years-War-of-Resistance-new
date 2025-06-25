@@ -1,0 +1,24 @@
+ideas = {
+
+	country = {
+	
+	liuqiuwenti_idea = {
+		    picture = generic_goods_red_bonus
+			
+			available = {
+			    controls_state = 526
+			}
+			
+			cancel = {
+			    
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = 0.05
+			}
+	}
+	
+	}
+}

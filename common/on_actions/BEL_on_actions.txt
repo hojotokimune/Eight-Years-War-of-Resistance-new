@@ -1,0 +1,38 @@
+on_actions = {
+	on_declare_war = {
+    effect = {
+        if = {
+            limit = {
+				NOT = { BEL = { has_country_flag = BEL_germany_declared_war } } 
+                tag = GER
+                FROM = { tag = BEL }
+            }
+           BEL = { set_country_flag = BEL_germany_declared_war }
+			}
+		}
+	}
+	on_civil_war_end = {
+		effect = {
+			if = {
+				limit = {
+					original_tag = FRA
+					has_government = communism
+					BEL = {
+						has_completed_focus = BEL_support_french_revolution
+					}
+					FRA = {
+						NOT = {
+							has_completed_focus = FRA_destroy_the_counter_revolution
+						}
+					}
+				}
+				BEL = {
+					set_autonomy = {
+						target = PREV
+						autonomy_state = autonomy_puppet
+					}
+				}
+			}
+		}
+	}
+}

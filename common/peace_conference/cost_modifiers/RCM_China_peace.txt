@@ -1,0 +1,18 @@
+# Scripted cost modifiers for peace actions.
+# See documentation.info file for more detailed scripting information.
+
+peace_action_modifiers = {
+    #opertation fork
+    RCM_China_puppet = {
+        peace_action_type = { take_states puppet }
+
+        enable = {
+            ROOT = { is_literally_china = yes }
+            FROM = { is_literally_china_including_chinese_puppets = yes }
+            FROM.FROM = { 
+                is_literally_china_including_chinese_puppets = yes
+            }
+        }
+        cost_multiplier = 0.5
+    }
+}

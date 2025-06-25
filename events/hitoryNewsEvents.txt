@@ -1,0 +1,2864 @@
+add_namespace = history_laisi
+
+# The Fall of minsk
+news_event = {
+	id = history_laisi.001
+	title = history_events.001.t
+	desc = history_events.001.d
+	picture = GFX_fall_minsk
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		206 = { is_controlled_by = GER }
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_minsk }
+		SOV = { has_government = communism }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_minsk
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.001.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+		effect_tooltip = { 
+			SOV = { add_timed_idea = {
+				idea = sov_shocked_by_barbarossa1
+				days = 180 }
+		}
+	}
+	}
+	option = {
+		name = history_events.001.b
+		trigger = { TAG = GER }
+		add_war_support = 0.1
+		effect_tooltip = { 
+			SOV = { 
+				add_timed_idea = {
+				idea = sov_shocked_by_barbarossa1
+				days = 180
+			} 
+			}
+		}
+	}
+	option = {
+		name = history_events.001.c
+		trigger = { TAG = SOV }
+		add_war_support = -0.1
+		add_timed_idea = {
+				idea = sov_shocked_by_barbarossa1
+				days = 180
+			}
+		unlock_decision_tooltip = SOV_remove_shocked_by_barbar
+	}
+}
+
+# The Fall of smolensk
+news_event = {
+	id = history_laisi.002
+	title = history_events.002.t
+	desc = history_events.002.d
+	picture = GFX_fall_smolensk
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		242 = { is_controlled_by = GER }
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = fall_of_smolensk }
+		SOV = { has_government = communism }
+	}
+	
+	immediate = {
+		set_global_flag = fall_of_smolensk
+		hidden_effect = { 
+			GER = {
+			country_event = history_hide.005
+		}
+	}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.002.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = history_events.002.b
+		trigger = { TAG = GER }
+		add_war_support = 0.1
+	}
+	option = {
+		name = history_events.002.c
+		trigger = { TAG = SOV }
+		add_war_support = -0.05
+	}
+}
+
+# The regain of minsk
+news_event = {
+	id = history_laisi.003
+	title = history_events.003.t
+	desc = history_events.003.d
+	picture = GFX_regain_minsk
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		206 = { is_controlled_by = SOV }
+		SOV = { has_war_with = GER }
+		has_global_flag = fall_of_minsk
+		NOT = { has_global_flag = regain_of_minsk }
+		SOV = { has_government = communism }
+	}
+	
+	immediate = {
+		set_global_flag = regain_of_minsk
+		 hidden_effect = {
+					115 = {
+						add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA }
+						}
+						if = {
+							limit = {
+								GER = { has_war_with = ENG }
+								GER = { has_war_with = USA }
+								GER = { has_government = fascism }
+							}
+							GER = { country_event = laisi2hao.12 }
+						}
+					if = {
+						limit = {
+							GER = { is_ai = yes }
+							USA = { is_ai = yes }
+							ENG = { is_ai = yes }
+						}
+						USA = {
+							transfer_state = 15
+							division_template = {
+								name = "10坦8机步"
+								regiments = {
+											medium_armor = { x = 0 y = 0 }
+											medium_armor = { x = 0 y = 1 }
+											medium_armor = { x = 0 y = 2 }
+											medium_armor = { x = 0 y = 3 }
+											
+											medium_armor = { x = 1 y = 0 }
+											medium_armor = { x = 1 y = 1 }
+											medium_armor = { x = 1 y = 2 }
+											medium_armor = { x = 1 y = 3 }		
+						
+											medium_armor = { x = 2 y = 0 }
+											medium_armor = { x = 2 y = 1 }	
+								
+								mechanized = { x = 3 y = 0 }
+								mechanized = { x = 3 y = 1 }
+								mechanized = { x = 3 y = 2 }
+								mechanized = { x = 3 y = 3 }
+								mechanized = { x = 4 y = 0 }
+								mechanized = { x = 4 y = 1 }
+								mechanized = { x = 4 y = 2 }
+								mechanized = { x = 4 y = 3 }
+								}
+								support = {
+								logistics_company = { x = 0 y = 0 } 
+								engineer = { x = 0 y = 1 }
+								artillery = { x = 0 y = 2 } 
+								anti_tank = { x = 0 y = 3 } 
+								anti_air = { x = 0 y = 4 }
+								}
+								}
+									15 = {
+										create_unit = {
+										division = "name = \"10坦8机步\" division_template = \"10坦8机步\" start_experience_factor = 0.75 "
+										owner = USA
+										count = 24
+										}
+									}
+									FRA = { transfer_state = 15 }
+						}
+					}
+	                }
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.003.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = history_events.003.b
+		trigger = { TAG = GER }
+		add_war_support = -0.1
+	}
+	option = {
+		name = history_events.003.c
+		trigger = { TAG = SOV }
+		add_war_support = 0.1
+	}
+}
+
+# The end of bagration
+news_event = {
+	id = history_laisi.004
+	title = history_events.004.t
+	desc = history_events.004.d
+	picture = GFX_end_bagration
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		94 = { is_controlled_by = SOV }
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = end_bagration }
+		has_global_flag = regain_of_minsk
+		SOV = { has_government = communism }
+	}
+	
+	immediate = {
+		set_global_flag = end_bagration
+		hidden_effect = {
+			play_song = "katyusha"
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.004.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = history_events.004.b
+		trigger = { TAG = GER }
+		add_war_support = -0.1
+	}
+	option = {
+		name = history_events.004.c
+		trigger = { TAG = SOV }
+		add_war_support = 0.1
+	}
+}
+
+# The battle of sicily
+news_event = {
+	id = history_laisi.005
+	title = history_events.005.t
+	desc = history_events.005.d
+	picture = GFX_land_sicily
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		NOT = { 
+			115 = { is_controlled_by = ITA } 
+			}
+		ITA = { has_war_with = USA }
+		ITA = { has_war_with = ENG }
+		NOT = { has_global_flag = land_sicily }
+		ITA = { is_in_faction_with = GER}
+		GER = { has_government = fascism }
+	}
+	
+	immediate = {
+		set_global_flag = land_sicily
+		hidden_effect = {
+			    115 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA days = 360 }
+				}
+				156 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA days = 360 }
+				}
+				117 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA days = 360 }
+				}
+				849 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA days = 360 }
+				}
+				2 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA days = 360 }
+					}
+				167 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = USA days = 360 }
+					}
+				115 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = ENG days = 360 }
+					}
+				156 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = ENG days = 360 }
+					}
+				117 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = ENG days = 360 }
+					}
+				849 = {
+				add_dynamic_modifier = { modifier = usa_normandy_modifier scope = ENG days = 360 }
+					}
+				if = {
+					limit = { 
+						USA = { is_ai = yes }
+					    ITA = { is_ai = yes }
+				}
+				ITA = { add_ideas = ita_zako }
+				USA = {
+					transfer_state = 115
+					transfer_state = 156
+					transfer_state = 849
+					division_template = {
+						name = "10坦8机步"
+						regiments = {
+									medium_armor = { x = 0 y = 0 }
+									medium_armor = { x = 0 y = 1 }
+									medium_armor = { x = 0 y = 2 }
+									medium_armor = { x = 0 y = 3 }
+									
+									medium_armor = { x = 1 y = 0 }
+									medium_armor = { x = 1 y = 1 }
+									medium_armor = { x = 1 y = 2 }
+									medium_armor = { x = 1 y = 3 }		
+				
+									medium_armor = { x = 2 y = 0 }
+									medium_armor = { x = 2 y = 1 }	
+						
+						mechanized = { x = 3 y = 0 }
+						mechanized = { x = 3 y = 1 }
+						mechanized = { x = 3 y = 2 }
+						mechanized = { x = 3 y = 3 }
+						mechanized = { x = 4 y = 0 }
+						mechanized = { x = 4 y = 1 }
+						mechanized = { x = 4 y = 2 }
+						mechanized = { x = 4 y = 3 }
+						}
+						support = {
+						logistics_company = { x = 0 y = 0 } 
+						engineer = { x = 0 y = 1 }
+						artillery = { x = 0 y = 2 } 
+						anti_tank = { x = 0 y = 3 } 
+						anti_air = { x = 0 y = 4 }
+						}
+						}
+							115 = {
+								create_unit = {
+								division = "name = \"10坦8机步\" division_template = \"10坦8机步\" start_experience_factor = 0.75 "
+								owner = USA
+								count = 12
+								}
+							}
+							156 = {
+								create_unit = {
+								division = "name = \"10坦8机步\" division_template = \"10坦8机步\" start_experience_factor = 0.75 "
+								owner = USA
+								count = 12
+								}
+							}
+							849 = {
+								create_unit = {
+								division = "name = \"10坦8机步\" division_template = \"10坦8机步\" start_experience_factor = 0.75 "
+								owner = USA
+								count = 12
+								}
+							}
+							ITA = {
+								transfer_state = 115
+								transfer_state = 156
+								transfer_state = 849 }
+				}
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.005.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = ITA
+				TAG = USA
+				TAG = ENG
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = history_events.005.b
+		trigger = { TAG = GER }
+		add_war_support = -0.01
+	}
+	option = {
+		name = history_events.005.c
+		trigger = { TAG = USA }
+		add_war_support = 0.1
+	}
+	option = {
+		name = history_events.005.e
+		trigger = { TAG = ITA }
+		add_war_support = -0.1
+	}
+	option = {
+		name = history_events.005.f
+		trigger = { TAG = ENG }
+		add_war_support = 0.1
+	}
+	option = {
+		name = history_events.005.g
+		trigger = { TAG = SOV }
+		add_war_support = 0.01
+	}
+}
+
+# The battle of kiev
+news_event = {
+	id = history_laisi.006
+	title = history_events.006.t
+	desc = history_events.006.d
+	picture = GFX_battle_kiev
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = battle_kiev }
+		has_global_flag = fall_of_kiev
+		SOV = { has_government = communism }
+	}
+	
+	immediate = {
+		set_global_flag = battle_kiev
+	}
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = history_events.006.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = history_events.006.b
+		trigger = { TAG = GER }
+		add_war_support = 0.1
+	}
+	option = {
+		name = history_events.006.c
+		trigger = { TAG = SOV }
+		add_war_support = -0.1
+	}
+}
+
+
+# The regain of kiev
+news_event = {
+	id = history_laisi.008
+	title = history_events.008.t
+	desc = history_events.008.d
+	picture = GFX_regain_kiev
+	
+	major = yes
+
+	trigger = {
+		202 = { is_controlled_by = SOV }
+		SOV = { has_war_with = GER }
+		has_global_flag = fall_of_kiev
+		NOT = { has_global_flag = regain_of_kiev }
+		SOV = { has_government = communism }
+	}
+	
+	immediate = {
+		set_global_flag = regain_of_kiev
+		hidden_effect = {
+			if = {
+				limit = {
+					POL = {
+						is_in_faction_with = USA
+					}
+				}
+			SOV = { add_to_faction = POL }
+			}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.008.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = history_events.008.b
+		trigger = { TAG = GER }
+		add_war_support = -0.1
+	}
+	option = {
+		name = history_events.008.c
+		trigger = { TAG = SOV }
+		add_war_support = 0.1
+	}
+}
+
+# 四国分区占领德国
+news_event = {
+	id = history_laisi.009
+	title = history_events.009.t
+	desc = history_events.009.d
+	picture = GFX_ger_fall
+	
+	major = yes
+
+	trigger = {
+		NOT = {
+			SOV = { has_war_with = GER }
+			USA = { has_war_with = GER }
+		    ENG = { has_war_with = GER }
+		    FRA = { has_war_with = GER }
+		}
+		NOT = { has_global_flag = ger_zhanbai }
+		SOV = { has_government = communism }
+		USA = { has_government = democratic }
+		has_global_flag = gangtiezhihuan
+		has_global_flag = had_yalta_conference
+	}
+	
+	immediate = {
+		set_global_flag = ger_zhanbai
+		hidden_effect = {
+			264 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				247 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				258 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				260 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				265 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				237 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				236 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				235 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				232 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				233 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				827 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				231 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				254 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				257 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				239 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+				255 = {
+				remove_dynamic_modifier = { modifier = unplanned_offensive }
+				}
+		POL = { transfer_state = 5
+		transfer_state = 63
+		transfer_state = 68
+		transfer_state = 66
+		transfer_state = 67
+		}
+		SOV = { transfer_state = 188
+		transfer_state = 763
+		transfer_state = 1073
+		}
+		USA = { transfer_state = 1072
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+		WGR = {
+				set_stability = 0.5
+				set_war_support = 0
+				transfer_state = 1063
+				add_state_core = 1063
+				transfer_state = 52
+				add_state_core = 52
+				transfer_state = 53
+				add_state_core = 53
+				transfer_state = 54
+				add_state_core = 54
+				transfer_state = 55
+				add_state_core = 55
+				add_state_core = 50
+				transfer_state = 50				
+				set_capital = { state = 52 }
+				set_cosmetic_tag = ally_occupation_of_ger
+				set_party_name = { ideology = democratic long_name = "盟国管制委员会" name = "盟国管制委员会" }
+				set_politics = {
+				    ruling_party = democratic
+					elections_allowed = no
+				}
+			if = {
+				limit = {
+				USA = {
+				exists = yes
+				is_democratic_type = yes
+				is_major = yes
+				is_faction_leader = yes
+				}
+				}
+				USA = {
+					puppet = WGR
+				}
+				WGR = {
+				create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="德怀特·戴维·艾森豪威尔"
+				   picture = "gfx/leaders/WGR/Eisenhower_Governor.dds"
+				   ideology = liberalism
+				   traits = { ally_Officer ACG_supreme_commander_of_allied }
+			    }
+				set_politics = {
+				    ruling_party = democratic
+					elections_allowed = no
+				}
+				add_popularity = { ideology = democratic popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				USA = {
+				is_in_faction_with = ENG
+				is_in_faction_with = FRA
+				}
+				ENG = { is_subject = no }
+				FRA = { is_subject = no }
+				}
+				USA = { country_event = { id = PRC_luobinghui.5 days = 0 } }
+				}
+				}
+		}
+	    DDR = {
+				if = {
+				limit = {
+				SOV = {
+				exists = yes
+				is_major = yes
+				is_faction_leader = yes
+				has_government = communism
+				}
+				}
+				set_stability = 0.5
+				set_war_support = 0
+				transfer_state = 60
+				add_state_core = 60
+				transfer_state = 61
+				add_state_core = 61
+				transfer_state = 62
+				add_state_core = 62
+				transfer_state = 64
+				add_state_core = 64
+				transfer_state = 65
+				add_state_core = 64
+				set_cosmetic_tag = sov_occupation_of_ger
+				set_party_name = { ideology = communism long_name = "盟国管制委员会" name = "盟国管制委员会" }
+				set_politics = {
+					ruling_party = communism
+					elections_allowed = no
+				}
+				
+				if = {
+				limit = {
+				always = no #guo
+				SOV = { has_character = SOV_Vasily_Sokolovsky }
+				}
+				SOV = {
+				SOV_Vasily_Sokolovsky = { promote_leader = yes set_nationality = DDR }
+				}
+				
+				DDR = {
+				SOV_Vasily_Sokolovsky = {
+			    add_country_leader_role = {
+				country_leader = {
+					expire = "1989.1.1"
+					desc=POLITICS_SOKOLOVKSY_DESC
+					ideology = stalinism
+					traits = {
+					Soviet_Officer
+					}
+				}
+				promote_leader = yes
+			    }
+		        }
+				}
+				
+				}
+				else = {
+				DDR = {
+			    create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="格奥尔基·朱可夫"
+				   #desc=POLITICS_SOKOLOVKSY_DESC
+				   picture = "gfx/leaders/SOV/Portrait_Soviet_Gregory_Zhukov.dds"
+				   ideology = stalinism
+				   traits = { Soviet_Officer }
+			    }
+				set_cosmetic_tag = sov_occupation_of_ger
+			    }
+				SOV = {
+				country_event = { id = fate_of_jiajizhanfan.25 days = 270 }
+				}
+				}
+				
+				#else = {
+				#DDR = {
+			    #create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				#   name="瓦西里·索科洛夫斯基"
+				#   desc=POLITICS_SOKOLOVKSY_DESC
+				#   picture = "gfx/leaders/DDR/vasily_sokolovsky.dds"
+				#   ideology = stalinism
+				#   traits = { Soviet_Officer }
+			    #}
+				#set_cosmetic_tag = sov_occupation_of_ger
+			    #}
+				#}
+				
+				if = {
+				limit = {
+				always = yes
+				}
+				SOV = { puppet = DDR }
+				add_popularity = { ideology = communism popularity = 1 }
+				}
+				
+				}
+				}
+		if = {
+				limit = {
+				NOT = { has_global_flag = ally_occupation_of_ger_dont_happen }
+				}
+				
+				create_dynamic_country = {
+				original_tag = WGR
+				save_global_event_target_as = ENG_occupation_of_ger
+				set_country_flag = ENG_occupation_of_ger
+				event_target:ENG_occupation_of_ger = {
+				add_state_core = 909
+				transfer_state = 909
+				add_state_core = 58
+				transfer_state = 58
+				add_state_core = 59
+				transfer_state = 59
+				add_state_core = 56
+				transfer_state = 56
+				add_state_core = 57
+				transfer_state = 57
+				add_state_core = 51
+				transfer_state = 51
+				set_capital = { state = 51 }
+				}
+				set_cosmetic_tag = ENG_occupation_of_ger
+				
+				random_country = {
+					limit = {
+						has_country_flag = ENG_occupation_of_ger
+					}                     
+					ENG = {
+						puppet = PREV
+					}
+					add_popularity = { ideology = democratic popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				ENG = { is_democratic_type = yes }
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 0
+		            neutrality = 0
+				    democratic = 100
+				}
+				set_party_name = {
+					ideology = democratic
+					name = "盟国管制委员会"
+					long_name = "盟国管制委员会"
+				}
+				create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="伯纳德·劳·蒙哥马利"
+				   picture = "gfx/leaders/WGR/Montgomery_Governor.dds"
+				   ideology = liberalism
+				   traits = { ally_Officer }
+			    }
+				set_cosmetic_tag = ENG_occupation_of_ger
+				}
+				
+				every_state = {
+				limit = {
+				NOT = { state = 909 }
+				NOT = { state = 58 }
+				NOT = { state = 59 }
+				NOT = { state = 56 }
+				NOT = { state = 57 }
+				NOT = { state = 51 }
+				}
+				event_target:ENG_occupation_of_ger = { remove_state_core = PREV }
+				}
+				
+			    }
+				
+				create_dynamic_country = {
+				original_tag = WGR
+				save_global_event_target_as = FRA_occupation_of_ger
+				set_country_flag = FRA_occupation_of_ger
+				event_target:FRA_occupation_of_ger = {
+				add_state_core = 42
+				transfer_state = 42
+				add_state_core = 1064
+				transfer_state = 1064
+				set_capital = { state = 42 }
+				}
+				set_cosmetic_tag = FRA_occupation_of_ger
+				
+				random_country = {
+					limit = {
+						has_country_flag = FRA_occupation_of_ger
+					}                     
+					FRA = {
+						puppet = PREV
+					}
+					add_popularity = { ideology = democratic popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				FRA = { is_democratic_type = yes }
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 0
+		            neutrality = 0
+				    democratic = 100
+				}
+				set_party_name = {
+					ideology = democratic
+					name = "盟国管制委员会"
+					long_name = "盟国管制委员会"
+				}
+				create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="让·拉特尔·德·塔西尼"
+				   picture = "gfx/leaders/WGR/Marie_Governor.dds"
+				   ideology = liberalism
+				   traits = { ally_Officer }
+			    }
+				set_cosmetic_tag = FRA_occupation_of_ger
+				}
+				
+				every_state = {
+				limit = {
+				NOT = { state = 42 }
+				NOT = { state = 1064 }
+				}
+				event_target:FRA_occupation_of_ger = { remove_state_core = PREV }
+				}
+				
+			    }
+			
+			    create_dynamic_country = {
+				original_tag = WGR
+				save_global_event_target_as = ENG_occupation_of_ger
+				set_country_flag = ENG_occupation_of_ger
+				event_target:ENG_occupation_of_ger = {
+				add_state_core = 909
+				transfer_state = 909
+				add_state_core = 58
+				transfer_state = 58
+				add_state_core = 59
+				transfer_state = 59
+				add_state_core = 56
+				transfer_state = 56
+				add_state_core = 57
+				transfer_state = 57
+				add_state_core = 51
+				transfer_state = 51
+				set_capital = { state = 51 }
+				}
+				set_cosmetic_tag = ENG_occupation_of_ger
+				
+				random_country = {
+					limit = {
+						has_country_flag = ENG_occupation_of_ger
+					}                     
+					ENG = {
+						puppet = PREV
+					}
+					add_popularity = { ideology = democratic popularity = 1 }
+				}
+				
+				if = {
+				limit = {
+				ENG = { is_democratic_type = yes }
+				}
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+		            communism = 0
+		            neutrality = 0
+				    democratic = 100
+				}
+				set_party_name = {
+					ideology = democratic
+					name = "盟国管制委员会"
+					long_name = "盟国管制委员会"
+				}
+				create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+				   name="伯纳德·劳·蒙哥马利"
+				   picture = "gfx/leaders/WGR/Montgomery_Governor.dds"
+				   ideology = liberalism
+				   traits = { ally_Officer }
+			    }
+				set_cosmetic_tag = ENG_occupation_of_ger
+				}
+				
+				every_state = {
+				limit = {
+				NOT = { state = 909 }
+				NOT = { state = 58 }
+				NOT = { state = 59 }
+				NOT = { state = 56 }
+				NOT = { state = 57 }
+				NOT = { state = 51 }
+				}
+				event_target:ENG_occupation_of_ger = { remove_state_core = PREV }
+				}
+				
+			    }
+				
+			}
+	}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.009.a
+		trigger = {
+			has_government = communism
+		}
+			add_war_support = 0.1
+			effect_tooltip = { 
+			SOV = { transfer_state = 64
+		transfer_state = 62
+		transfer_state = 61
+		transfer_state = 65
+
+		transfer_state = 60
+		transfer_state = 188
+		transfer_state = 763
+		}
+		POL = { transfer_state = 5
+		transfer_state = 63
+		transfer_state = 68
+		transfer_state = 66
+		transfer_state = 67
+		}
+		USA = { transfer_state = 52
+		transfer_state = 53
+		transfer_state = 54
+		transfer_state = 55
+		transfer_state = 1063
+		transfer_state = 50		
+		}
+		FRA = { transfer_state = 42
+		transfer_state = 1064
+		}
+		ENG = { transfer_state = 909
+		transfer_state = 58
+		transfer_state = 56
+		transfer_state = 59
+		transfer_state = 57
+		transfer_state = 51
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+			}
+		}
+		option = {
+		name = history_events.009.b
+		trigger = { has_government = democratic }
+		add_war_support = 0.1
+		effect_tooltip = { 
+		SOV = { transfer_state = 64
+		transfer_state = 62
+		transfer_state = 61
+		transfer_state = 65
+
+		transfer_state = 60
+		transfer_state = 188
+		transfer_state = 763
+		}
+		POL = { transfer_state = 5
+		transfer_state = 63
+		transfer_state = 68
+		transfer_state = 66
+		transfer_state = 67
+		}
+		USA = { transfer_state = 52
+		transfer_state = 53
+		transfer_state = 54
+		transfer_state = 55
+		transfer_state = 1063
+		transfer_state = 50		
+		}
+		FRA = { transfer_state = 42
+		transfer_state = 1064
+		}
+		ENG = { transfer_state = 909
+		transfer_state = 58
+		transfer_state = 56
+		transfer_state = 59
+		transfer_state = 57
+		transfer_state = 51
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+			}
+	}
+	option = {
+		name = history_events.009.c
+		trigger = {
+			NOT = { 
+			has_government = democratic
+			has_government = communism
+			}
+		}
+		effect_tooltip = { 
+		SOV = { transfer_state = 64
+		transfer_state = 62
+		transfer_state = 61
+		transfer_state = 65
+
+		transfer_state = 60
+		transfer_state = 188
+		transfer_state = 763
+		}
+		POL = { transfer_state = 5
+		transfer_state = 63
+		transfer_state = 68
+		transfer_state = 66
+		transfer_state = 67
+		}
+		USA = { transfer_state = 52
+		transfer_state = 53
+		transfer_state = 54
+		transfer_state = 55
+		transfer_state = 1063
+		transfer_state = 50		
+		}
+		FRA = { transfer_state = 42
+		transfer_state = 1064
+		}
+		ENG = { transfer_state = 909
+		transfer_state = 58
+		transfer_state = 56
+		transfer_state = 59
+		transfer_state = 57
+		transfer_state = 51
+		}
+		5 = { add_core_of = POL }
+		63 = { add_core_of = POL }
+		68 = { add_core_of = POL }
+		66 = { add_core_of = POL }
+		67 = { add_core_of = POL }
+			}
+	}
+}
+
+
+# 第二次布列斯特条约
+news_event = {
+	id = history_laisi.010
+	title = history_events.010.t
+	desc = history_events.010.d
+	picture = GFX_death_stalin
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		SOV = { has_war_with = GER }
+		NOT = { has_global_flag = sov_peace_ger }
+		SOV = { has_government = communism }
+		NOT = {
+			195 = { is_controlled_by = SOV }
+			219 = { is_controlled_by = SOV }
+			217 = { is_controlled_by = SOV }
+			229 = { is_controlled_by = SOV }
+		}
+	}
+	
+	immediate = {
+		set_global_flag = sov_peace_ger
+		hidden_effect = {
+			SOV = {
+				release = KAZ
+				release = UZB
+				release = TMS
+				release = TAJ
+				release = KYR
+				}
+			GER = { transfer_state = 97
+		        transfer_state = 137
+				 }
+				 FIN = { transfer_state = 146
+				 transfer_state = 216
+				 transfer_state = 215
+				 transfer_state = 213
+				 transfer_state = 147
+				 transfer_state = 722
+				 }
+				 ROM = { transfer_state = 78
+				 transfer_state = 80
+				 transfer_state = 766
+				 }
+				 MAN = { transfer_state = 408
+				 transfer_state = 409
+				 transfer_state = 657
+				 transfer_state = 560
+				 transfer_state = 561
+				 }
+				 JAP = { transfer_state = 655
+				 }
+			SOV = { add_country_leader_role = {
+				character = SOV_lazar_kaganovich
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = stalinism
+					desc = sov_kagang_tno_desc
+					traits = {
+						iron_lazar
+					}	
+				}
+				promote_leader = yes				
+			}		
+			}
+			every_country = {
+				limit = { has_war_with = SOV }
+				white_peace = SOV
+				}
+				10 = {
+					add_core_of = R02
+				}
+				90 = {
+					add_core_of = R02
+				}
+				88 = {
+					add_core_of = R02
+				}
+				92 = {
+					add_core_of = R02
+				}
+				814 = {
+					add_core_of = R02
+				}
+				89 = {
+					add_core_of = R02
+				}
+				91 = {
+					add_core_of = R02
+				}	
+			R02 = {
+				set_state_controller = 10
+				set_state_owner = 10
+				set_state_controller = 90
+				set_state_owner = 90
+				set_state_controller = 88
+				set_state_owner = 88
+				set_state_controller = 92
+				set_state_owner = 92	
+				set_state_controller = 89
+				set_state_owner = 89
+				set_state_controller = 91
+				set_state_owner = 91	
+				
+				
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "汉斯·弗兰克"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/GER/pol.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 88
+					remember_old_capital = no
+				}
+			}
+				93 = {
+					add_core_of = R10
+				}
+				201 = {
+					add_core_of = R10
+				}
+				199 = {
+					add_core_of = R10
+				}
+				198 = {
+					add_core_of = R10
+				}
+				834 = {
+					add_core_of = R10
+				}
+				192 = {
+					add_core_of = R10
+				}
+				202 = {
+					add_core_of = R10
+				}
+				203 = {
+					add_core_of = R10
+				}
+				197 = {
+					add_core_of = R10
+				}
+				193 = {
+					add_core_of = R10
+				}
+				225 = {
+					add_core_of = R10
+				}
+				259 = {
+					add_core_of = R10
+				}
+				221 = {
+					add_core_of = R10
+				}
+				226 = {
+					add_core_of = R10
+				}
+				200 = {
+					add_core_of = R10
+				}
+				196 = {
+					add_core_of = R10
+				}
+				227 = {
+					add_core_of = R10
+				}
+				228 = {
+					add_core_of = R10
+				}
+			R10 = {
+				set_state_controller = 93
+				set_state_owner = 93
+				set_state_controller = 201
+				set_state_owner = 201
+				set_state_controller = 199
+				set_state_owner = 199
+				set_state_controller = 198
+				set_state_owner = 198
+				set_state_controller = 834
+				set_state_owner = 834
+				set_state_controller = 192
+				set_state_owner = 192
+				set_state_controller = 202
+				set_state_owner = 202
+				set_state_controller = 203
+				set_state_owner = 203
+				set_state_controller = 197
+				set_state_owner = 197
+				set_state_controller = 193
+				set_state_owner = 193
+				set_state_controller = 225
+				set_state_owner = 225
+				set_state_controller = 259
+				set_state_owner = 259
+				set_state_controller = 221
+				set_state_owner = 221
+				set_state_controller = 226
+				set_state_owner = 226
+				set_state_controller = 200
+				set_state_owner = 200
+				set_state_controller = 196
+				set_state_owner = 196
+				set_state_controller = 227
+				set_state_owner = 227
+				set_state_controller = 228
+				set_state_owner = 228
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "埃里希·科赫"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/R10/portrait_R10_Erich_Koch.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 202
+					remember_old_capital = no
+				}
+			}
+			94 = {
+					add_core_of = R09
+				}
+				95 = {
+					add_core_of = R09
+				}
+				96 = {
+					add_core_of = R09
+				}
+				194 = {
+					add_core_of = R09
+				}
+				204 = {
+					add_core_of = R09
+				}
+				206 = {
+					add_core_of = R09
+				}
+				207 = {
+					add_core_of = R09
+				}
+				241 = {
+					add_core_of = R09
+				}
+				11 = {
+					add_core_of = R09
+				}
+				784 = {
+					add_core_of = R09
+				}
+				189 = {
+					add_core_of = R09
+				}
+				12 = {
+					add_core_of = R09
+				}
+				190 = {
+					add_core_of = R09
+				}
+				13 = {
+					add_core_of = R09
+				}
+				191 = {
+					add_core_of = R09
+				}
+				815 = {
+					add_core_of = R09
+				}
+				809 = {
+					add_core_of = R09
+				}
+				808 = {
+					add_core_of = R09
+				}
+				810 = {
+					add_core_of = R09
+				}
+				814 = {
+					add_core_of = R09
+				}
+				813 = {
+					add_core_of = R09
+				}
+				812 = {
+					add_core_of = R09
+				}
+				811 = {
+					add_core_of = R09
+				}
+			R09 = {
+				set_state_controller = 94
+				set_state_owner = 94
+				set_state_controller = 95
+				set_state_owner = 95
+				set_state_controller = 96
+				set_state_owner = 96
+				set_state_controller = 194
+				set_state_owner = 194
+				set_state_controller = 204
+				set_state_owner = 204
+				set_state_controller = 206
+				set_state_owner = 206
+				set_state_controller = 207
+				set_state_owner = 207
+				set_state_controller = 241
+				set_state_owner = 241
+				set_state_controller = 11
+				set_state_owner = 11
+				set_state_controller = 784
+				set_state_owner = 784
+				set_state_controller = 189
+				set_state_owner = 189
+				set_state_controller = 12
+				set_state_owner = 12
+				set_state_controller = 190
+				set_state_owner = 190
+				set_state_controller = 13
+				set_state_owner = 13
+				set_state_controller = 191
+				set_state_owner = 191
+				set_state_controller = 814
+				set_state_owner = 814
+				set_state_controller = 815
+				set_state_owner = 815
+				set_state_controller = 809
+				set_state_owner = 809
+				set_state_controller = 808
+				set_state_owner = 808
+				set_state_controller = 810
+				set_state_owner = 810
+				set_state_controller = 814
+				set_state_owner = 814
+				set_state_controller = 813
+				set_state_owner = 813
+				set_state_controller = 812
+				set_state_owner = 812
+				set_state_controller = 811
+				set_state_owner = 811
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "欣里希·洛泽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/R09/portrait_R09_Hinrich_Lohse.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 808
+					remember_old_capital = no
+				}
+			}
+			195 = {
+					add_core_of = R12
+				}
+				208 = {
+					add_core_of = R12
+				}
+				209 = {
+					add_core_of = R12
+				}
+				263 = {
+					add_core_of = R12
+				}
+				210 = {
+					add_core_of = R12
+				}
+				246 = {
+					add_core_of = R12
+				}
+				247 = {
+					add_core_of = R12
+				}
+				248 = {
+					add_core_of = R12
+				}
+				351 = {
+					add_core_of = R12
+				}
+				242 = {
+					add_core_of = R12
+				}
+				243 = {
+					add_core_of = R12
+				}
+				219 = {
+					add_core_of = R12
+				}
+				248 = {
+					add_core_of = R12
+				}
+				253 = {
+					add_core_of = R12
+				}
+				205 = {
+					add_core_of = R12
+				}
+				224 = {
+					add_core_of = R12
+				}
+				240 = {
+					add_core_of = R12
+				}
+				220 = {
+					add_core_of = R12
+				}
+				222 = {
+					add_core_of = R12
+				}
+				223 = {
+					add_core_of = R12
+				}
+				254 = {
+					add_core_of = R12
+				}
+				252 = {
+					add_core_of = R12
+				}
+				258 = {
+					add_core_of = R12
+				}
+				260 = {
+					add_core_of = R12
+				}
+				257 = {
+					add_core_of = R12
+				}
+				255 = {
+					add_core_of = R12
+				}
+				239 = {
+					add_core_of = R12
+				}
+				265 = {
+					add_core_of = R12
+				}
+				829 = {
+					add_core_of = R12
+				}
+				250 = {
+					add_core_of = R12
+				}
+				401 = {
+					add_core_of = R12
+				}
+				244 = {
+					add_core_of = R12
+				}
+				264 = {
+					add_core_of = R12
+				}
+			R12 = {
+				set_state_controller = 195
+				set_state_owner = 195
+				set_state_controller = 208
+				set_state_owner = 208
+				set_state_controller = 209
+				set_state_owner = 209
+				set_state_controller = 263
+				set_state_owner = 263
+				set_state_controller = 210
+				set_state_owner = 210
+				set_state_controller = 246
+				set_state_owner = 246
+				set_state_controller = 247
+				set_state_owner = 247
+				set_state_controller = 248
+				set_state_owner = 248
+				set_state_controller = 351
+				set_state_owner = 351
+				set_state_controller = 242
+				set_state_owner = 242
+				set_state_controller = 243
+				set_state_owner = 243
+				set_state_controller = 219
+				set_state_owner = 219
+				set_state_controller = 248
+				set_state_owner = 248
+				set_state_controller = 253
+				set_state_owner = 253
+				set_state_controller = 205
+				set_state_owner = 205
+				set_state_controller = 224
+				set_state_owner = 224
+				set_state_controller = 240
+				set_state_owner = 240
+				set_state_controller = 220
+				set_state_owner = 220
+				set_state_controller = 222
+				set_state_owner = 222
+				set_state_controller = 223
+				set_state_owner = 223
+				set_state_controller = 254
+				set_state_owner = 254
+				set_state_controller = 252
+				set_state_owner = 252
+				set_state_controller = 258
+				set_state_owner = 258
+				set_state_controller = 260
+				set_state_owner = 260
+				set_state_controller = 257
+				set_state_owner = 257
+				set_state_controller = 255
+				set_state_owner = 255
+				set_state_controller = 239
+				set_state_owner = 239
+				set_state_controller = 265
+				set_state_owner = 265
+				set_state_controller = 829
+				set_state_owner = 829
+				set_state_controller = 250
+				set_state_owner = 250
+				set_state_controller = 401
+				set_state_owner = 401
+				set_state_controller = 244
+				set_state_owner = 244
+				set_state_controller = 264
+				set_state_owner = 264
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "齐格弗里德·卡什"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/R12/portrait_R12_Siegfried_Kasche.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 219
+					remember_old_capital = no
+				}
+			}
+			245 = {
+					add_core_of = R11
+				}
+				217 = {
+					add_core_of = R11
+				}
+				236 = {
+					add_core_of = R11
+				}
+				218 = {
+					add_core_of = R11
+				}
+				238 = {
+					add_core_of = R11
+				}
+				237 = {
+					add_core_of = R11
+				}
+				232 = {
+					add_core_of = R11
+				}
+				233 = {
+					add_core_of = R11
+				}
+				234 = {
+					add_core_of = R11
+				}
+				235 = {
+					add_core_of = R11
+				}
+				826 = {
+					add_core_of = R11
+				}
+				827 = {
+					add_core_of = R11
+				}
+				828 = {
+					add_core_of = R11
+				}
+				821 = {
+					add_core_of = R11
+				}
+				229 = {
+					add_core_of = R11
+				}
+				230 = {
+					add_core_of = R11
+				}
+				231 = {
+					add_core_of = R11
+				}
+			R11 = {
+				set_state_controller = 245
+				set_state_owner = 245
+				set_state_controller = 217
+				set_state_owner = 217
+				set_state_controller = 236
+				set_state_owner = 236
+				set_state_controller = 218
+				set_state_owner = 218
+				set_state_controller = 238
+				set_state_owner = 238
+				set_state_controller = 237
+				set_state_owner = 237
+				set_state_controller = 232
+				set_state_owner = 232
+				set_state_controller = 233
+				set_state_owner = 233
+				set_state_controller = 234
+				set_state_owner = 234
+				set_state_controller = 235
+				set_state_owner = 235
+				set_state_controller = 826
+				set_state_owner = 826
+				set_state_controller = 827
+				set_state_owner = 827
+				set_state_controller = 828
+				set_state_owner = 828
+				set_state_controller = 821
+				set_state_owner = 821
+				set_state_controller = 229
+				set_state_owner = 229
+				set_state_controller = 230
+				set_state_owner = 230
+				set_state_controller = 231
+				set_state_owner = 231
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "弗雷德里克·威廉·保卢斯"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/GER/Portrait_Germany_Friedrich_Paulus.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 217
+					remember_old_capital = no
+				}
+			}
+			214 = {
+					add_core_of = R14
+				}
+				879 = {
+					add_core_of = R14
+				}
+				880 = {
+					add_core_of = R14
+				}
+				825 = {
+					add_core_of = R14
+				}
+				262 = {
+					add_core_of = R14
+				}
+				397 = {
+					add_core_of = R14
+				}
+				398 = {
+					add_core_of = R14
+				}
+				399 = {
+					add_core_of = R14
+				}
+				400 = {
+					add_core_of = R14
+				}
+				833 = {
+					add_core_of = R14
+				}
+				256 = {
+					add_core_of = R14
+				}
+				249 = {
+					add_core_of = R14
+				}
+				251 = {
+					add_core_of = R14
+				}
+				652 = {
+					add_core_of = R14
+				}
+				651 = {
+					add_core_of = R14
+				}
+				582 = {
+					add_core_of = R14
+				}
+				573 = {
+					add_core_of = R14
+				}
+				581 = {
+					add_core_of = R14
+				}
+				579 = {
+					add_core_of = R14
+				}
+				580 = {
+					add_core_of = R14
+				}
+				653 = {
+					add_core_of = R14
+				}
+				403 = {
+					add_core_of = R14
+				}
+				571 = {
+					add_core_of = R14
+				}
+				582 = {
+					add_core_of = R14
+				}
+				572 = {
+					add_core_of = R14
+				}
+			R14 = {
+				set_state_controller = 214
+				set_state_owner = 214
+				set_state_controller = 879
+				set_state_owner = 879
+				set_state_controller = 880
+				set_state_owner = 880
+				set_state_controller = 825
+				set_state_owner = 825
+				set_state_controller = 262
+				set_state_owner = 262
+				set_state_controller = 397
+				set_state_owner = 397
+				set_state_controller = 398
+				set_state_owner = 398
+				set_state_controller = 399
+				set_state_owner = 399
+				set_state_controller = 400
+				set_state_owner = 400
+				set_state_controller = 833
+				set_state_owner = 833
+				set_state_controller = 256
+				set_state_owner = 256
+				set_state_controller = 249
+				set_state_owner = 249
+				set_state_controller = 251
+				set_state_owner = 251
+				set_state_controller = 652
+				set_state_owner = 652
+				set_state_controller = 651
+				set_state_owner = 651
+				set_state_controller = 582
+				set_state_owner = 582
+				set_state_controller = 573
+				set_state_owner = 573
+				set_state_controller = 581
+				set_state_owner = 581
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "安德烈·安德烈耶维奇·弗拉索夫"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/GER/Portrait_Soviet_Andrey_Vlasov.dds"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 249
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.010.a
+		trigger = {
+			NOT = {
+				TAG = GER
+				TAG = SOV
+			}
+		}
+		effect_tooltip = { 
+			SOV = { add_timed_idea = {
+				idea = defeat111
+				days = 60 }
+		}
+	}
+	}
+	option = {
+		name = history_events.010.b
+		trigger = { TAG = GER }
+		add_war_support = 0.35
+		effect_tooltip = { 
+			SOV = { 
+				add_timed_idea = {
+				idea = defeat111
+				days = 60
+			} 
+			}
+		}
+	}
+	option = {
+		name = history_events.010.c
+		trigger = { TAG = SOV }
+		add_war_support = -1
+		add_timed_idea = {
+				idea = defeat111
+				days = 60
+			}
+	}
+}
+
+# 元首的胜利演讲
+news_event = {
+	id = history_laisi.011
+	title = history_events.011.t
+	desc = history_events.011.d
+	picture = GFX_victory_ger
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		NOT = {
+			SOV = { has_war_with = GER }
+		}
+		NOT = { has_global_flag = victory_ger }
+		GER = { has_government = fascism }
+		has_global_flag = sov_peace_ger
+	}
+	
+	immediate = {
+		set_global_flag = victory_ger
+		hidden_effect = {
+	                    play_song = "victory_ger" 
+						JAP = { complete_national_focus = JAP_secure_china }
+						if = { 
+							limit = {
+								CHI = { is_ai = yes }
+				                PRC = { is_ai = yes }
+				                JAP = { is_ai = yes }
+								MAN = { is_ai = yes }
+							}
+							JAP = { 
+								add_ideas = jap_defeat_china111
+							 }
+						 }
+						 if = {
+							limit = {
+								ENG = { is_ai = yes }
+								USA = { is_ai = yes }
+								GER = { is_ai = yes }
+							}
+							GER = { country_event = history_hide.010 }
+						 }
+	                }
+	                }
+	
+	mean_time_to_happen = {
+		days = 14
+	}
+	
+	option = {
+		name = history_events.011.a
+		trigger = {
+			has_government = democratic
+		}
+		add_war_support = -0.15
+		add_stability = -0.15
+		effect_tooltip = { 
+			GER = {
+				add_war_support = 0.5
+				add_stability = 0.5
+			}
+			JAP = { complete_national_focus = JAP_secure_china }
+		}
+		hidden_effect = {
+	                    play_song = "victory_ger"
+	                }
+	
+	}
+	option = {
+		name = history_events.011.b
+		trigger = { TAG = GER }
+		add_war_support = 0.5
+		add_stability = 0.5
+		effect_tooltip = { 
+			ENG = {
+				add_war_support = -0.15
+				add_stability = -0.15
+			}
+			USA = {
+				add_war_support = -0.15
+				add_stability = -0.15
+			}
+			JAP = { complete_national_focus = JAP_secure_china }
+		}
+			hidden_effect = {
+	                    play_song = "victory_ger" 
+	                }
+		
+	}
+	option = {
+		name = history_events.011.c
+		trigger = { 
+			NOT = {
+            tag = GER
+		 }
+		 has_government = fascism
+		}
+		add_war_support = 0.1
+		effect_tooltip = { 
+			ENG = {
+				add_war_support = -0.15
+				add_stability = -0.15
+			}
+			USA = {
+				add_war_support = -0.15
+				add_stability = -0.15
+			}
+			JAP = { complete_national_focus = JAP_secure_china }
+		}
+			hidden_effect = {
+	                    play_song = "victory_ger" 
+	                }
+	
+	}
+	option = {
+		name = history_events.011.e
+		trigger = { 
+			NOT = {
+            has_government = fascism
+			has_government = democratic
+		 }
+		}
+		effect_tooltip = { 
+			ENG = {
+				add_war_support = -0.15
+				add_stability = -0.15
+			}
+			USA = {
+				add_war_support = -0.15
+				add_stability = -0.15
+			}
+			JAP = { complete_national_focus = JAP_secure_china }
+		}
+			hidden_effect = {
+	                    play_song = "house_of_the_rising_sun" 
+	                }
+	
+	}
+}
+
+# 斯卡布罗条约
+news_event = {
+	id = history_laisi.013
+	title = history_events.013.t
+	desc = history_events.013.d
+	picture = GFX_eng_peace_ger
+	
+	major = yes
+	
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		ENG = { has_war_with = GER }
+		NOT = { has_global_flag = eng_peace_ger }
+		GER = { has_government = fascism }
+		ENG = { has_government = democratic }
+		121 = { is_controlled_by = GER }
+		121 = { is_owned_by = ENG }
+		has_global_flag = fall_of_london_ger
+		has_global_flag = sov_peace_ger
+	}
+	
+	immediate = {
+		set_global_flag = eng_peace_ger
+		hidden_effect = {
+				GER = { transfer_state = 85
+		                transfer_state = 86
+		                transfer_state = 807
+		                transfer_state = 72
+		                transfer_state = 28
+		                transfer_state = 912
+						transfer_state = 8
+						puppet = NOR
+						puppet = YUG
+						annex_country = { 
+			target = POL #国家tag
+			transfer_troops = no #是否把部队一起吞了
+		}
+		} 
+		        SPA = { transfer_state = 118
+				        transfer_state = 461
+		                transfer_state = 462
+		}
+		        TUR = { transfer_state = 183
+		        transfer_state = 677
+		        transfer_state = 553
+		        transfer_state = 554
+				transfer_state = 680
+		}
+				every_state = {
+					limit = {
+						OR = {
+							state = 123
+							state = 127
+							state = 338
+							state = 126
+							state = 125
+							state = 129
+							state = 128
+							state = 122
+							state = 130
+							state = 131
+							state = 132
+							state = 133
+							state = 121
+							state = 136
+							state = 120
+							state = 119
+							state = 931
+							state = 932
+							state = 933
+						}
+						is_owned_by = GER
+					}
+				}
+				123 = {
+					add_core_of = R06
+				}
+				127 = {
+					add_core_of = R06
+				}
+				338 = {
+					add_core_of = R06
+				}
+				126 = {
+					add_core_of = R06
+				}
+				125 = {
+					add_core_of = R06
+				}
+				129 = {
+					add_core_of = R06
+				}
+				128 = {
+					add_core_of = R06
+				}
+				122 = {
+					add_core_of = R06
+				}
+				130 = {
+					add_core_of = R06
+				}
+				131 = {
+					add_core_of = R06
+				}
+				132 = {
+					add_core_of = R06
+				}
+				133 = {
+					add_core_of = R06
+				}
+				121 = {
+					add_core_of = R06
+				}
+				136 = {
+					add_core_of = R06
+				}
+				120 = {
+					add_core_of = R06
+				}
+				119 = {
+					add_core_of = R06
+				}
+				931 = {
+					add_core_of = R06
+				}
+				932 = {
+					add_core_of = R06
+				}
+				933 = {
+					add_core_of = R06
+				}
+			R06 = {
+				set_state_controller = 123
+				set_state_owner = 123
+				set_state_controller = 127
+				set_state_owner = 127
+				set_state_controller = 338
+				set_state_owner = 338
+				set_state_controller = 126
+				set_state_owner = 126
+				set_state_controller = 125
+				set_state_owner = 125
+				set_state_controller = 129
+				set_state_owner = 129
+				set_state_controller = 128
+				set_state_owner = 128
+				set_state_controller = 122
+				set_state_owner = 122
+				set_state_controller = 130
+				set_state_owner = 130
+				set_state_controller = 131
+				set_state_owner = 131
+				set_state_controller = 132
+				set_state_owner = 132
+				set_state_controller = 133
+				set_state_owner = 133
+				set_state_controller = 121
+				set_state_owner = 121
+				set_state_controller = 136
+				set_state_owner = 136
+				set_state_controller = 120
+				set_state_owner = 120
+				set_state_controller = 119
+				set_state_owner = 119
+				set_state_controller = 931
+				set_state_controller = 932
+				set_state_owner = 931
+				set_state_owner = 932
+				set_state_controller = 933
+				set_state_owner = 933
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "保罗·约瑟夫·戈培尔"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/GER/Portrait_Germany_Paul_Joseph_Goebbels.jpg"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 126
+					remember_old_capital = no
+				}
+			}
+			every_state = {
+					limit = {
+						OR = {
+							state = 6
+							state = 7
+							state = 29
+							state = 34
+							state = 35
+							state = 36
+							state = 1069
+							state = 1070
+						}
+						is_owned_by = GER
+					}
+				}
+				6 = {
+					add_core_of = R03
+				}
+				7 = {
+					add_core_of = R03
+				}
+				29 = {
+					add_core_of = R03
+				}
+				34 = {
+					add_core_of = R03
+				}
+				35 = {
+					add_core_of = R03
+				}
+				36 = {
+					add_core_of = R03
+				}
+				1069 = {
+					add_core_of = R03
+				}
+				1070 = {
+					add_core_of = R03
+				}
+			R03 = {
+				set_state_controller = 6
+				set_state_owner = 6
+				set_state_controller = 7
+				set_state_owner = 7
+				set_state_controller = 29
+				set_state_owner = 29
+				set_state_controller = 34
+				set_state_owner = 34
+				set_state_controller = 35
+				set_state_owner = 35
+				set_state_controller = 36
+				set_state_owner = 36
+				set_state_controller = 1069
+				set_state_owner = 1069
+				set_state_controller = 1070
+				set_state_owner = 1070
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "亚瑟·赛斯·英夸特"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/R03/portrait_R03_Arthur_Seyss_Inquart.png"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 7
+					remember_old_capital = no
+				}
+			}
+		every_state = {
+					limit = {
+						OR = {
+							state = 17
+							state = 18
+							state = 16
+							state = 15
+							state = 785
+							state = 14
+							state = 30
+							state = 24
+							state = 27
+							state = 20
+							state = 26
+							state = 33
+							state = 25
+							state = 23
+							state = 31
+							state = 806
+							state = 19
+							state = 22
+							state = 21
+							state = 32
+							state = 735
+							state = 851
+						}
+						is_owned_by = GER
+					}
+				}
+				17 = {
+					add_core_of = R04
+				}
+				18 = {
+					add_core_of = R04
+				}
+				16 = {
+					add_core_of = R04
+				}
+				15 = {
+					add_core_of = R04
+				}
+				785 = {
+					add_core_of = R04
+				}
+				14 = {
+					add_core_of = R04
+				}
+				30 = {
+					add_core_of = R04
+				}
+				24 = {
+					add_core_of = R04
+				}
+				27 = {
+					add_core_of = R04
+				}
+				20 = {
+					add_core_of = R04
+				}
+				26 = {
+					add_core_of = R04
+				}
+				33 = {
+					add_core_of = R04
+				}
+				25 = {
+					add_core_of = R04
+				}
+				23 = {
+					add_core_of = R04
+				}
+				31 = {
+					add_core_of = R04
+				}
+				806 = {
+					add_core_of = R04
+				}
+				19 = {
+					add_core_of = R04
+				}
+				22 = {
+					add_core_of = R04
+				}
+				21 = {
+					add_core_of = R04
+				}
+				32 = {
+					add_core_of = R04
+				}
+				735 = {
+					add_core_of = R04
+				}
+				851 = {
+					add_core_of = R04
+				}
+			R04 = {
+				set_state_controller = 17
+				set_state_owner = 17
+				set_state_controller = 18
+				set_state_owner = 18
+				set_state_controller = 16
+				set_state_owner = 16
+				set_state_controller = 15
+				set_state_owner = 15
+				set_state_controller = 785
+				set_state_owner = 785
+				set_state_controller = 14
+				set_state_owner = 14
+				set_state_controller = 30
+				set_state_owner = 30
+				set_state_controller = 24
+				set_state_owner = 24
+				set_state_controller = 27
+				set_state_owner = 27
+				set_state_controller = 20
+				set_state_owner = 20
+				set_state_controller = 26
+				set_state_owner = 26
+				set_state_controller = 33
+				set_state_owner = 33
+				set_state_controller = 25
+				set_state_owner = 25
+				set_state_controller = 23
+				set_state_owner = 23
+				set_state_controller = 31
+				set_state_owner = 31
+				set_state_controller = 806
+				set_state_owner = 806
+				set_state_controller = 19
+				set_state_owner = 19
+				set_state_controller = 22
+				set_state_owner = 22
+				set_state_controller = 21
+				set_state_owner = 21
+				set_state_controller = 32
+				set_state_owner = 32
+				set_state_controller = 735
+				set_state_owner = 735
+				set_state_controller = 851
+				set_state_owner = 851
+				GER = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = GER } }#guo
+					if = {
+						limit = {
+							NOT = {
+								has_dlc = "Death or Dishonor"
+							}
+						}
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_integrated_puppet
+							end_wars = no
+						}
+					}
+					else = {
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					}
+				}
+				create_country_leader = {
+					name = "海因里希·希姆莱"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/GER/Portrait_Germany_Heinrich_Himmler.jpg"
+					expire = "1965.1.1"
+					ideology = nazism
+					traits = { prince_of_terror#guo
+					}
+				}
+				set_capital = {
+					state = 16
+					remember_old_capital = no
+				}
+			}
+		    every_country = {
+				limit = { has_war_with = GER }
+				white_peace = GER
+				}
+			every_country = {
+				limit = { has_war_with = ITA }
+				white_peace = ITA
+				}
+			every_country = {
+				limit = { has_war_with = HUN }
+				white_peace = HUN
+				}
+			every_country = {
+				limit = { has_war_with = ROM }
+				white_peace = ROM
+				}
+			every_country = {
+				limit = { has_war_with = SLO }
+				white_peace = SLO
+				}
+			every_country = {
+				limit = { has_war_with = FIN }
+				white_peace = FIN
+				}
+			every_country = {
+				limit = { has_war_with = IRQ }
+				white_peace = IRQ
+				}
+			every_country = {
+				limit = { has_war_with = BUL }
+				white_peace = BUL
+				}
+			every_country = {
+				limit = { has_war_with = PER }
+				white_peace = PER
+				}
+			ITA = { transfer_state = 116
+		                transfer_state = 1
+						transfer_state = 269
+		                transfer_state = 268
+		                transfer_state = 447
+		                transfer_state = 446
+		                transfer_state = 454
+		                transfer_state = 455
+						transfer_state = 458
+		                transfer_state = 665
+						transfer_state = 103
+						transfer_state = 735
+						transfer_state = 448
+		                transfer_state = 449
+						transfer_state = 450
+		                transfer_state = 451
+						transfer_state = 661
+						transfer_state = 662
+						transfer_state = 663
+						transfer_state = 273
+						puppet = EGY
+						puppet = GRE
+						puppet = SAU
+						annex_country = { 
+			target = ETH #国家tag
+			transfer_troops = no #是否把部队一起吞了
+		}
+		}
+		IRE = { transfer_state = 119 }
+		BUL = { transfer_state = 184
+		        transfer_state = 731
+                transfer_state = 106
+				transfer_state = 803
+				 }
+	    PER = { 
+			transfer_state = 412
+            transfer_state = 413
+			transfer_state = 419
+		    transfer_state = 420
+			transfer_state = 417
+			transfer_state = 416
+		}
+		RAJ = { 
+			set_politics = {
+			ruling_party = democratic
+		}
+		}
+		every_country = {
+			limit = {
+				is_subject_of = ENG
+			}
+			ENG = { end_puppet = PREV }
+		}
+		ENG = { 
+			set_cosmetic_tag = ENG_at_CAN
+			transfer_state = 331
+			transfer_state = 730
+		}
+		USA = { 
+			remove_from_faction = RAJ
+		    remove_from_faction = PER
+				every_country = {
+				limit = { is_in_faction_with = USA
+				          NOT = {
+							tag = USA
+							tag = ENG
+							tag = FRA
+							tag = AST
+							tag = NZL
+							tag = SAF
+						  }
+				 }
+				 USA = { remove_from_faction = PREV }
+				}
+		}
+		every_country = {
+				limit = { has_war_with = RAJ }
+				white_peace = RAJ
+				}
+		every_country = {
+				limit = { has_idea = lianheguojiaxuanyan }
+				remove_ideas = lianheguojiaxuanyan
+				}
+		}
+	}
+	
+	mean_time_to_happen = {
+		days = 7
+	}
+	
+	option = {
+		name = history_events.013.a
+		trigger = { 
+			NOT = { 
+            tag = GER
+            tag = USA
+            tag = ENG
+            tag = FRA			
+			}
+		}
+	}
+	option = {
+		name = history_events.013.b
+		trigger = { tag = GER }
+		add_stability = 0.1
+		add_war_support = 0.1
+	}
+	option = {
+		name = history_events.013.c
+		trigger = { OR = { tag = USA tag = ENG tag = FRA } }
+		add_stability = -0.1
+		add_war_support = -0.1
+	}
+}

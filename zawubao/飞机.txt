@@ -1,0 +1,585 @@
+#10863;4996;impassable;-1;-1;-1;-1;-1;; #12730;2098;impassable;-1;-1;-1;-1;-1;;Himalayas
+#ai空军设计#
+country_event = {#36轻战
+	id = zizhi_hidden_event.1
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_36_light_fighter_done }
+		has_tech = range_improvements
+		has_tech = survivability_studies
+		has_tech = aa_hmg
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "36轻战"
+			type = small_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = light_mg_4x
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = fuel_tanks_small
+			}
+		}
+		set_country_flag = AI_36_light_fighter_done
+	}
+	option = {}
+}
+country_event = {#40轻战
+	id = zizhi_hidden_event.2
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_40_light_fighter_done }
+		has_tech = improved_small_airframe
+		has_tech = engines_3
+		has_tech = range_improvements
+		has_tech = survivability_studies
+		has_tech = aa_hmg
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "40轻战"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+                fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = fuel_tanks_small
+                special_type_slot_3 = armor_plate_small
+			}
+		}
+		set_country_flag = AI_40_light_fighter_done
+	}
+	option = {}
+}
+country_event = {#44轻战
+	id = zizhi_hidden_event.3
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_44_light_fighter_done }
+		has_tech = aa_cannon_1
+		has_tech = advanced_small_airframe
+		has_tech = engines_4
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "44轻战"
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_1 = heavy_mg_4x
+                fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = fuel_tanks_small
+                special_type_slot_3 = armor_plate_small
+			}
+		}
+		set_country_flag = AI_44_light_fighter_done
+	}
+	option = {}
+}
+country_event = {#喷气轻战
+	id = zizhi_hidden_event.4
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_45_light_fighter_done }
+		has_tech = modern_small_airframe
+		has_tech = aa_cannon_3
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "喷气轻战"
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_1 = aircraft_cannon_2_2x
+				fixed_auxiliary_weapon_slot_2 = heavy_mg_4x
+				fixed_auxiliary_weapon_slot_3 = heavy_mg_4x
+				engine_type_slot = jet_engine_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = armor_plate_small
+				special_type_slot_3 = armor_plate_small
+			}
+		}
+		set_country_flag = AI_45_light_fighter_done
+	}
+	option = {}
+}
+
+country_event = {#36CAS
+	id = zizhi_hidden_event.5
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_36_cas_fighter_done }
+		has_tech = engines_2
+		has_tech = range_improvements
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "36CAS"
+			type = small_plane_cas_airframe_1
+			modules = {
+				fixed_main_weapon_slot = bomb_locks
+				fixed_auxiliary_weapon_slot_1 = bomb_locks
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = fuel_tanks_small
+				special_type_slot_2 = non_strategic_materials_small
+			}
+		}
+		set_country_flag = AI_36_cas_fighter_done
+	}
+	option = {}
+}
+country_event = {#40CAS
+	id = zizhi_hidden_event.6
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_40_cas_fighter_done }
+		has_tech = improved_small_airframe
+		has_tech = range_improvements
+		has_tech = survivability_studies
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "40CAS"
+			type = small_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = non_strategic_materials_small
+				special_type_slot_2 = fuel_tanks_small	
+			}
+		}
+		set_country_flag = AI_40_cas_fighter_done
+	}
+	option = {}
+}
+country_event = {#44CAS
+	id = zizhi_hidden_event.7
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_44_cas_fighter_done }
+		has_tech = advanced_small_airframe
+		has_tech = range_improvements
+		has_tech = survivability_studies
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "44CAS"
+			type = small_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_3 = heavy_bomb_locks
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = dive_brakes_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = fuel_tanks_small
+			}
+		}
+		set_country_flag = AI_44_cas_fighter_done
+	}
+	option = {}
+}
+country_event = {#喷气CAS
+	id = zizhi_hidden_event.8
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_45_cas_fighter_done }
+		has_tech = modern_small_airframe
+		has_tech = range_improvements
+		has_tech = survivability_studies
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "喷气CAS"
+			type = small_plane_airframe_4
+			modules = {
+				fixed_main_weapon_slot = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_1 = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_2 = heavy_bomb_locks
+				fixed_auxiliary_weapon_slot_3 = heavy_bomb_locks
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = self_sealing_fuel_tanks_small
+				special_type_slot_2 = fuel_tanks_small
+				special_type_slot_3 = drop_tanks
+				special_type_slot_4 = dive_brakes_small
+			}
+		}
+		set_country_flag = AI_45_cas_fighter_done
+	}
+	option = {}
+}
+
+country_event = {#40战略
+	id = zizhi_hidden_event.9
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_40_large_plane_done }
+		has_tech = advanced_large_airframe
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "40战略"
+			type = large_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_3 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_4 = large_bomb_bay
+				engine_type_slot = engine_4_4x
+				special_type_slot_1 = self_sealing_fuel_tanks_large
+				special_type_slot_2 = radio_navigation_2
+				special_type_slot_3 = air_ground_radar_2
+				special_type_slot_4 = bomb_sights_2
+			}
+		}
+		set_country_flag = AI_40_large_plane_done
+	}
+	option = {}
+}
+country_event = {#44战略
+	id = zizhi_hidden_event.10
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_44_large_plane_done }
+		has_tech = advanced_large_airframe
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "44战略"
+			type = large_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = large_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_2 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_3 = large_bomb_bay
+				fixed_auxiliary_weapon_slot_4 = large_bomb_bay
+				engine_type_slot = engine_4_4x
+				special_type_slot_1 = self_sealing_fuel_tanks_large
+				special_type_slot_2 = radio_navigation_2
+				special_type_slot_3 = air_ground_radar_2
+				special_type_slot_4 = bomb_sights_2
+				special_type_slot_5 = cannon_defense_turret_2x
+				special_type_slot_6 = cannon_defense_turret_2x
+			}
+		}
+		set_country_flag = AI_44_large_plane_done
+	}
+	option = {}
+}
+
+country_event = {#40战术
+	id = zizhi_hidden_event.11
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_40_medium_plane_done }
+		has_tech = improved_medium_airframe
+		has_tech = engines_3
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "40战术"
+			type = medium_plane_airframe_2
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 =  torpedo_mounting
+				fixed_auxiliary_weapon_slot_3 =  torpedo_mounting
+				engine_type_slot = engine_4_2x
+				special_type_slot_1 = self_sealing_fuel_tanks_medium
+				special_type_slot_2 = air_ground_radar_2
+				special_type_slot_3 = radio_navigation_2
+				special_type_slot_4 = fuel_tanks_medium
+			}
+		}
+		set_country_flag = AI_40_medium_plane_done
+	}
+	option = {}
+}
+country_event = {#44战术
+	id = zizhi_hidden_event.12
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_44_medium_plane_done }
+		has_tech = advanced_medium_airframe
+		has_tech = engines_4
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "44战术"
+			type = medium_plane_airframe_3
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 =  torpedo_mounting
+				fixed_auxiliary_weapon_slot_3 =  torpedo_mounting
+				fixed_auxiliary_weapon_slot_4 =  tank_buster_2
+				engine_type_slot = engine_4_2x
+				special_type_slot_1 = self_sealing_fuel_tanks_medium
+				special_type_slot_2 = air_ground_radar_2
+				special_type_slot_3 = radio_navigation_2
+				special_type_slot_4 = fuel_tanks_medium
+			}
+		}
+		set_country_flag = AI_44_medium_plane_done
+	}
+	option = {}
+}
+country_event = {#36战术
+	id = zizhi_hidden_event.13
+	hidden = yes
+	mean_time_to_happen = { days = 2 }
+	fire_only_once = no
+	trigger = {
+	    is_ai = yEs
+		not = { has_country_flag = AI_36_medium_plane_done }
+		has_tech = basic_medium_airframe
+		has_tech = engines_3
+	}
+	immediate = {
+		create_equipment_variant = {
+		    name = "36战术"
+			type = medium_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_1 = medium_bomb_bay
+				fixed_auxiliary_weapon_slot_2 =  torpedo_mounting
+				fixed_auxiliary_weapon_slot_3 =  torpedo_mounting
+				engine_type_slot = engine_3_2x
+				special_type_slot_1 = self_sealing_fuel_tanks_medium
+				special_type_slot_2 = fuel_tanks_medium
+			}
+		}
+		set_country_flag = AI_36_medium_plane_done
+	}
+	option = {}
+}
+
+add_namespace = Germanplane
+
+country_event = {#36海轰
+	id = Germanplane.11
+	#hidden = yes
+	mean_time_to_happen = { days = 2 }
+	title = ""
+	desc = ""
+	fire_only_once = no
+
+	trigger = {
+		is_ai = yEs
+		not = { has_country_flag = AI_36_naval_fighter_done }
+		has_tech = range_improvements
+	}
+	
+	option = {
+		create_equipment_variant = {
+			type = small_plane_naval_bomber_airframe_1
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting
+				engine_type_slot = engine_2_1x
+				special_type_slot_1 = floats
+				special_type_slot_2 = drop_tanks
+			}
+		}
+		set_country_flag = AI_36_naval_fighter_done
+	}
+}
+country_event = {#40海轰
+	id = Germanplane.12
+	#hidden = yes
+	mean_time_to_happen = { days = 2 }
+	title = ""
+	desc = ""
+	fire_only_once = no
+
+	trigger = { 
+		is_ai = yEs
+		not = { has_country_flag = AI_40_naval_fighter_done }
+		has_tech = engines_3
+		has_tech = air_torpedoe_2
+		has_tech = improved_small_airframe
+		has_tech = range_improvements
+		has_tech = survivability_studies
+	}
+	
+	option = {
+		create_equipment_variant = {
+			type = small_plane_naval_bomber_airframe_2
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting_2
+				engine_type_slot = engine_3_1x
+				special_type_slot_1 = floats
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = drop_tanks
+			}
+		}
+		set_country_flag = AI_40_naval_fighter_done
+	}
+}
+country_event = {#44海轰
+	id = Germanplane.13
+	#hidden = yes
+	mean_time_to_happen = { days = 2 }
+	title = ""
+	desc = ""
+	fire_only_once = no
+
+	trigger = { 
+		is_ai = yEs
+		not = { has_country_flag = AI_44_naval_fighter_done }
+		has_tech = engines_4
+		has_tech = air_torpedoe_3
+		has_tech = advanced_small_airframe
+		has_tech = range_improvements
+		has_tech = survivability_studies
+	}
+	
+	option = {
+		create_equipment_variant = {
+			type = small_plane_naval_bomber_airframe_3
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting_3
+				engine_type_slot = engine_4_1x
+				special_type_slot_1 = floats
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = drop_tanks
+			}
+		}
+		set_country_flag = AI_44_naval_fighter_done
+	}
+}
+country_event = {#现代海轰
+	id = Germanplane.14
+	#hidden = yes
+	mean_time_to_happen = { days = 2 }
+	title = ""
+	desc = ""
+	fire_only_once = no
+
+	trigger = { 
+		is_ai = yEs
+		not = { has_country_flag = AI_45_naval_fighter_done }
+		has_tech = modern_small_airframe
+		has_tech = range_improvements
+		has_tech = survivability_studies
+	}
+	
+	option = {
+		create_equipment_variant = {
+			type = small_plane_naval_bomber_airframe_4
+			modules = {
+				fixed_main_weapon_slot = torpedo_mounting_3
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = floats
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = drop_tanks
+			}
+		}
+		set_country_flag = AI_45_naval_fighter_done
+	}
+}
+country_event = {#现代海轰导弹
+	id = Germanplane.15
+	#hidden = yes
+	mean_time_to_happen = { days = 2 }
+	title = ""
+	desc = ""
+	fire_only_once = no
+
+	trigger = { 
+		is_ai = yEs
+		not = { has_country_flag = AI_45_rocket_fighter_done }
+		has_tech = modern_small_airframe
+		has_tech = advanced_rocket_engines
+	}
+	
+	option = {
+		create_equipment_variant = {
+			type = small_plane_naval_bomber_airframe_4
+			modules = {
+				fixed_main_weapon_slot = guided_anti_ship_missile
+				engine_type_slot = jet_engine_2x
+				special_type_slot_1 = floats
+				special_type_slot_2 = self_sealing_fuel_tanks_small
+				special_type_slot_3 = fuel_tanks_small
+				special_type_slot_4 = fuel_tanks_small
+			}
+		}
+		set_country_flag = AI_45_rocket_fighter_done
+	}
+}
+
+country_event = {#侦查
+	id = Germanplane.16
+	#hidden = yes
+	mean_time_to_happen = { days = 2 }
+	title = ""
+	desc = ""
+	fire_only_once = no
+
+	trigger = { 
+		is_ai = yEs
+		not = { has_country_flag = AI_recon_fighter_done }
+		date > 1939.1.1
+	}
+	
+	option = {
+		create_equipment_variant = {
+			type = medium_plane_scout_plane_airframe_1
+			modules = {
+				fixed_main_weapon_slot = recon_camera
+				engine_type_slot = engine_2_2x
+				special_type_slot_1 = self_sealing_fuel_tanks_medium
+				special_type_slot_2 = fuel_tanks_medium
+				special_type_slot_3 = armor_plate_medium
+			}
+		}
+		set_country_flag = AI_recon_fighter_done
+	}
+}

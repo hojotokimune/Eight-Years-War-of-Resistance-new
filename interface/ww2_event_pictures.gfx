@@ -1,0 +1,272 @@
+spriteTypes = {
+
+	spriteType = {
+        name = "GFX_news_event_normandy_landings_dday"
+        texturefile = "gfx/event_pictures/normandy_landings_dday.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_defence_of_wuhan_roc"
+        texturefile = "gfx/event_pictures/defence_of_wuhan.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_defence_of_changsha"
+        texturefile = "gfx/event_pictures/defence_of_changsha.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_azerbaijan_defeated"
+        texturefile = "gfx/event_pictures/azerbaijan_defeated.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_defence_of_shanghai_1937"
+        texturefile = "gfx/event_pictures/defence_of_shanghai_1937.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_british_iraq_war"
+        texturefile = "gfx/event_pictures/british_iraq_war.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_attack_pearl_harbor"
+        texturefile = "gfx/event_pictures/attack_pearl_harbor.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_german_surrender_event"
+        texturefile = "gfx/event_pictures/german_surrender_event.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_korean_war"
+        texturefile = "gfx/event_pictures/korean_war.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_pva_in_korea"
+        texturefile = "gfx/event_pictures/pva_in_korea.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_sino_soviet_treaty"
+        texturefile = "gfx/event_pictures/sino_soviet_treaty.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_operation_bagration_soviet"
+        texturefile = "gfx/event_pictures/operation_bagration_soviet.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_sihang_warehouse"
+        texturefile = "gfx/event_pictures/sihang_warehouse.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_unit_731_warcrime"
+        texturefile = "gfx/event_pictures/unit_731_warcrime.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_chi_winter_offensive"
+        texturefile = "gfx/event_pictures/chi_winter_offensive.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_chi_war_with_ger"
+        texturefile = "gfx/event_pictures/chi_war_with_ger.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_sov_repulse_leningrad"
+        texturefile = "gfx/event_pictures/sov_repulse_leningrad.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_sov_repulse_moscow"
+        texturefile = "gfx/event_pictures/sov_repulse_moscow.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_sov_repulse_stalingrad"
+        texturefile = "gfx/event_pictures/sov_repulse_stalingrad.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_first_indochina_war"
+        texturefile = "gfx/event_pictures/first_indochina_war.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_fall_of_saigon"
+        texturefile = "gfx/event_pictures/fall_of_saigon.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_pingjin_campaign_event"
+        texturefile = "gfx/event_pictures/pingjin_campaign_event.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_shanghai_campaign"
+        texturefile = "gfx/event_pictures/shanghai_campaign.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_liaoshen_campaign"
+        texturefile = "gfx/event_pictures/liaoshen_campaign.dds"
+    }
+	spriteType = {
+        name = "GFX_news_event_huaihai_campaign"
+        texturefile = "gfx/event_pictures/huaihai_campaign.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_battle_of_jinan"
+        texturefile = "gfx/event_pictures/battle_of_jinan.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_battle_of_east_henan"
+        texturefile = "gfx/event_pictures/battle_of_east_henan.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_nva_victory_over_french"
+        texturefile = "gfx/event_pictures/nva_victory_over_french.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_liberation_of_moscow"
+        texturefile = "gfx/event_pictures/liberation_of_moscow.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_puyi_restores_qing"
+        texturefile = "gfx/event_pictures/puyi_restores_qing.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_first_indo_pakistani_war"
+        texturefile = "gfx/event_pictures/first_indo_pakistani_war.dds"
+    }
+    spriteType = {
+        name = "GFX_news_event_kashmir_war_pakistani_victory"
+        texturefile = "gfx/event_pictures/kashmir_war_pakistani_victory.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chI_minh"
+        texturefile = "gfx/event_pictures/report_event_ho_chI_minh.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chi_minh_constitution"
+        texturefile = "gfx/event_pictures/report_event_ho_chi_minh_constitution.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chI_minh_happy"
+        texturefile = "gfx/event_pictures/report_event_ho_chI_minh_happy.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chI_minh_disapproval"
+        texturefile = "gfx/event_pictures/report_event_ho_chI_minh_disapproval.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_vincent_auriol"
+        texturefile = "gfx/event_pictures/report_event_vincent_auriol.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_lin_wang"
+        texturefile = "gfx/event_pictures/report_event_lin_wang.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_lin_wang_sun_jen"
+        texturefile = "gfx/event_pictures/report_event_lin_wang_sun_jen.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_29th_route_army"
+        texturefile = "gfx/event_pictures/report_event_29th_route_army.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_speaking_kmt"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_speaking_kmt.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_norman_berthune_dead"
+        texturefile = "gfx/event_pictures/report_event_norman_berthune_dead.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_norman_berthune_in_yanan"
+        texturefile = "gfx/event_pictures/report_event_norman_berthune_in_yanan.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_sukarno_speech"
+        texturefile = "gfx/event_pictures/report_event_sukarno_speech.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_yang_yongtai"
+        texturefile = "gfx/event_pictures/report_event_yang_yongtai.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_zhao_yiman"
+        texturefile = "gfx/event_pictures/report_event_zhao_yiman.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_liu_zhidan"
+        texturefile = "gfx/event_pictures/report_event_liu_zhidan.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_duan_qirui"
+        texturefile = "gfx/event_pictures/report_event_duan_qirui.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_thinking"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_thinking.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_looking_at_map"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_looking_at_map.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_speech_alt"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_speech_alt.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_zhou_enlai_w_others"
+        texturefile = "gfx/event_pictures/report_event_zhou_enlai_w_others.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_with_officers"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_with_officers.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chi_punch_japan"
+        texturefile = "gfx/event_pictures/report_event_chi_punch_japan.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_zhou_fohai"
+        texturefile = "gfx/event_pictures/report_event_zhou_fohai.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_yasuji_okamura"
+        texturefile = "gfx/event_pictures/report_event_yasuji_okamura.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_george_marshal"
+        texturefile = "gfx/event_pictures/report_event_george_marshal.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_marshall_mission_meeting"
+        texturefile = "gfx/event_pictures/report_event_marshall_mission_meeting.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chiang_ching_kuo"
+        texturefile = "gfx/event_pictures/report_event_chiang_ching_kuo.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_mei_ling"
+        texturefile = "gfx/event_pictures/report_event_mei_ling.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_sad_kai_shek"
+        texturefile = "gfx/event_pictures/report_event_sad_kai_shek.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_chen_jieru"
+        texturefile = "gfx/event_pictures/report_event_chen_jieru.dds"
+    }
+	## Decision ##
+	spriteType = {
+        name = "GFX_decision_indochina_war"
+        texturefile = "gfx/interface/decisions/decision_indochina_war.dds"
+    }
+	spriteType = {
+        name = "GFX_decision_chinese_civil_war"
+        texturefile = "gfx/interface/decisions/decision_chinese_civil_war.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_long_yun"
+        texturefile = "gfx/interface/decisions/decision_long_yun.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_communist_partisans"
+        texturefile = "gfx/interface/decisions/decision_communist_partisans.dds"
+    }
+    spriteType = {
+        name = "GFX_decision_politics_of_china"
+        texturefile = "gfx/interface/decisions/decision_politics_of_china.dds"
+    }
+}

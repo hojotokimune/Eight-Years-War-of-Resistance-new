@@ -1,0 +1,144 @@
+CHI_zongduxiaqu = {
+	CHI_zongduxiaqu_india= {
+		icon = ger_reichskommissariats
+		available = {
+			has_completed_focus = CHI_cult_of_chiang_kai_shek
+			has_government = fascism
+			423 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			424 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			425 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			426 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			427 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			428 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			429 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			430 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			431 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			432 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			433 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			434 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			435 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			436 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			437 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			438 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			439 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			281 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			422 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			320 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			321 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+		}
+		cost = 0
+		fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			has_completed_focus = CHI_cult_of_chiang_kai_shek
+			has_government = fascism
+		}
+		complete_effect = { hidden_effect = { every_subject_country = { inherit_technology = CHI } }#guo
+
+		create_dynamic_country = {
+			original_tag = NEN
+			save_global_event_target_as = CHI_india_zongdu
+			event_target:CHI_india_zongdu = {
+			add_ideas = agrarion_society_generic_3
+			add_ideas = raj_tubang_idea
+			set_cosmetic_tag = CHI_india_zongdu
+			set_popularities = {
+				fascism = 100
+				communism = 0
+				neutrality = 0
+				democratic = 0
+			}
+			set_party_name = {
+				ideology = fascism
+				name = "中华总督"
+				long_name = "中华总督"
+			}
+			create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+		   name="陈果夫"
+		   picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Guofu.dds"
+		   ideology = sanmin_military_rule
+		   traits = {  }
+		}
+			}												                 
+				CHI ={
+					set_autonomy = { target = event_target:CHI_india_zongdu autonomy_state = autonomy_CHI_zongduxiaqu freedom_level = 0.50  }
+			 } 
+			 set_capital = { state = 439 }
+			 every_state = {
+				limit = {
+					OR = {
+						state = 423
+						state = 424
+						state = 425
+						state = 426
+						state = 427
+						state = 428
+						state = 429
+						state = 430
+						state = 431
+						state = 432
+						state = 433
+						state = 434
+						state = 435
+						state = 436
+						state = 437
+						state = 438
+						state = 439
+						state = 281
+						state = 422
+						state = 320
+						state = 321
+					}
+					is_owned_by = CHI
+				}
+				add_core_of = event_target:CHI_india_zongdu
+				event_target:CHI_india_zongdu = { transfer_state = PREV }
+			}
+			}
+		}
+	}
+}

@@ -1,0 +1,57 @@
+spriteTypes = {
+    frameAnimatedSpriteType = {
+    	name = "GFX_news_event_operation_little_saturn"
+    	texturefile = "gfx/event_pictures/operation_little_saturn.dds"
+    	noOfFrames = 40
+    	loadType = "INGAME"
+    	transparencecheck = no
+    	animation_rate_fps = 10
+    	looping = yes
+    	play_on_show = yes
+    	pause_on_loop = 0.0
+	}
+    frameAnimatedSpriteType = {
+    	name = "GFX_news_event_proclamation_of_prc_event_animated"
+    	texturefile = "gfx/event_pictures/proclamation_of_prc_event.dds"
+    	noOfFrames = 39
+    	loadType = "INGAME"
+    	transparencecheck = no
+    	animation_rate_fps = 6
+    	looping = yes
+    	play_on_show = yes
+    	pause_on_loop = 0.0
+	}
+    frameAnimatedSpriteType = {
+    	name = "GFX_news_event_operation_bagration_animated"
+    	texturefile = "gfx/event_pictures/operation_bagration.dds"
+    	noOfFrames = 38
+    	loadType = "INGAME"
+    	transparencecheck = no
+    	animation_rate_fps = 7
+    	looping = yes
+    	play_on_show = yes
+    	pause_on_loop = 0.0
+	}
+    frameAnimatedSpriteType = {
+    	name = "GFX_news_event_normandy_landings_animated"
+    	texturefile = "gfx/event_pictures/normandy_landings_animated.dds"
+    	noOfFrames = 16
+    	loadType = "INGAME"
+    	transparencecheck = no
+    	animation_rate_fps = 7
+    	looping = yes
+    	play_on_show = yes
+    	pause_on_loop = 0.0
+	}
+	frameAnimatedSpriteType = {
+    	name = "GFX_news_event_shanghai_campaign_animated"
+    	texturefile = "gfx/event_pictures/shanghai_campaign_animated.dds"
+    	noOfFrames = 40
+    	loadType = "INGAME"
+    	transparencecheck = no
+    	animation_rate_fps = 7
+    	looping = yes
+    	play_on_show = yes
+    	pause_on_loop = 0.0
+	}
+}

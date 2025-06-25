@@ -1,0 +1,7 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_monument_mountain_khentii_disabled"
+        textureFile = "gfx/interface/monuments/mng/mountain_khentii.dds"
+        effectFile = "gfx/FX/monument_disabled_shader.lua"
+    }
+}

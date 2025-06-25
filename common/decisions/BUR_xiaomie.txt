@@ -1,0 +1,97 @@
+
+	teshumingling = {
+	
+		xiaomieweizhengfu = {
+
+			icon = generic_political_actions
+
+	allowed = {
+    tag = BUR
+	}
+
+			available = {
+            OR = {
+			JAP = {
+				has_global_flag = JAP_defeated
+			}
+			JAP = {
+				is_puppet_of = CHI
+			}
+			JAP = {
+				is_puppet_of = USA
+			} 
+ 			JAP = {
+				is_puppet_of = SOV
+			}
+  			JAP = {
+				is_puppet_of = ENG
+			}
+  			JAP = {
+				is_puppet_of = PRC
+			} 
+   			JAP = {
+				is_puppet_of = FRA
+			}
+NOT = { country_exists = JAP }          
+            }
+        country_exists = HSE			
+               }
+
+			fire_only_once = yes
+		    ai_will_do = {
+			factor = 1000
+		    }
+			visible = {
+            OR = {
+			JAP = {
+				has_global_flag = JAP_defeated
+			}
+			JAP = {
+				is_puppet_of = CHI
+			}
+			JAP = {
+				is_puppet_of = USA
+			} 
+ 			JAP = {
+				is_puppet_of = SOV
+			}
+  			JAP = {
+				is_puppet_of = ENG
+			}
+  			JAP = {
+				is_puppet_of = PRC
+			} 
+   			JAP = {
+				is_puppet_of = FRA
+			}
+NOT = { country_exists = JAP }			
+            }
+        country_exists = HSE			
+			}
+			complete_effect = {
+                           ROOT = {
+                                     annex_country = { target = HSE transfer_troops = no }
+                                  }
+        288 = {
+            remove_core_of = HSE
+        }
+        640 = {
+            remove_core_of = HSE
+        }
+        992 = {
+            remove_core_of = HSE
+        }
+        993 = {
+            remove_core_of = HSE
+        }
+        993 = {
+            remove_core_of = HSE
+        }
+        1021 = {
+            remove_core_of = HSE
+        }								  
+			}
+		}
+	}
+
+

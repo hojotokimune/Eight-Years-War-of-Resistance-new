@@ -1,0 +1,426 @@
+PRC_economic_devastation_down = {
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_economic_devastation
+				add_idea = prc_50s_ideas_economic_devastation_none
+			}
+		}
+		hidden_effect = { remove_ideas = prc_50s_ideas_economic_devastation }
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_1 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_1
+			add_idea = prc_50s_ideas_economic_devastation
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_2 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_2
+			add_idea = prc_50s_ideas_economic_devastation_1
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_3 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_3
+			add_idea = prc_50s_ideas_economic_devastation_2
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_4 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_4
+			add_idea = prc_50s_ideas_economic_devastation_3
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_5 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_5
+			add_idea = prc_50s_ideas_economic_devastation_4
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_6 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_6
+			add_idea = prc_50s_ideas_economic_devastation_5
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_7 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_7
+			add_idea = prc_50s_ideas_economic_devastation_6
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_8 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_8
+			add_idea = prc_50s_ideas_economic_devastation_7
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_9 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_9
+			add_idea = prc_50s_ideas_economic_devastation_8
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_10 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_10
+			add_idea = prc_50s_ideas_economic_devastation_9
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_11 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_11
+			add_idea = prc_50s_ideas_economic_devastation_10
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_12 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_12
+			add_idea = prc_50s_ideas_economic_devastation_11
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_economic_devastation_13 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_economic_devastation_13
+			add_idea = prc_50s_ideas_economic_devastation_12
+		}
+	}
+}
+
+PRC_fractured_administration_down = {
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_fractured_administration
+				add_idea = prc_50s_ideas_fractured_administration_none
+			}
+		}
+		hidden_effect = { remove_ideas = prc_50s_ideas_fractured_administration }
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_1 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_1
+			add_idea = prc_50s_ideas_fractured_administration
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_2 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_2
+			add_idea = prc_50s_ideas_economic_devastation_1
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_3 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_3
+			add_idea = prc_50s_ideas_fractured_administration_2
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_4 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_4
+			add_idea = prc_50s_ideas_fractured_administration_3
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_5 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_5
+			add_idea = prc_50s_ideas_fractured_administration_4
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_6 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_6
+			add_idea = prc_50s_ideas_fractured_administration_5
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_7 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_7
+			add_idea = prc_50s_ideas_fractured_administration_6
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_8 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_8
+			add_idea = prc_50s_ideas_fractured_administration_7
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_fractured_administration_9 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_fractured_administration_9
+			add_idea = prc_50s_ideas_fractured_administration_8
+		}
+	}
+}
+
+PRC_land_reform_fiasco_up = {
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_12 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_12
+			add_idea = prc_50s_ideas_ongoing_land_reform_13
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_11 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_11
+			add_idea = prc_50s_ideas_ongoing_land_reform_12
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_10 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_10
+			add_idea = prc_50s_ideas_ongoing_land_reform_11
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_9 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_9
+			add_idea = prc_50s_ideas_ongoing_land_reform_10
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_8 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_8
+			add_idea = prc_50s_ideas_ongoing_land_reform_9
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_7 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_7
+			add_idea = prc_50s_ideas_ongoing_land_reform_8
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_6 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_6
+			add_idea = prc_50s_ideas_ongoing_land_reform_7
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_5 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_5
+			add_idea = prc_50s_ideas_ongoing_land_reform_6
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_4 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_4
+			add_idea = prc_50s_ideas_ongoing_land_reform_5
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_3 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_3
+			add_idea = prc_50s_ideas_ongoing_land_reform_4
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_2 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_2
+			add_idea = prc_50s_ideas_ongoing_land_reform_3
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_ongoing_land_reform_1 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_ongoing_land_reform_1
+			add_idea = prc_50s_ideas_ongoing_land_reform_2
+		}
+	}
+}
+
+PRC_land_reform_fiasco_clr = {
+	if = {
+		limit = { 
+		    or = {
+			    has_idea = prc_50s_ideas_ongoing_land_reform_1
+				has_idea = prc_50s_ideas_ongoing_land_reform_2
+				has_idea = prc_50s_ideas_ongoing_land_reform_3
+				has_idea = prc_50s_ideas_ongoing_land_reform_4
+				has_idea = prc_50s_ideas_ongoing_land_reform_5
+				has_idea = prc_50s_ideas_ongoing_land_reform_6
+				has_idea = prc_50s_ideas_ongoing_land_reform_7
+				has_idea = prc_50s_ideas_ongoing_land_reform_8
+				has_idea = prc_50s_ideas_ongoing_land_reform_9
+				has_idea = prc_50s_ideas_ongoing_land_reform_10
+				has_idea = prc_50s_ideas_ongoing_land_reform_11
+				has_idea = prc_50s_ideas_ongoing_land_reform_12
+				has_idea = prc_50s_ideas_ongoing_land_reform_13
+			}
+		}
+		remove_ideas = {
+		    prc_50s_ideas_ongoing_land_reform_1
+			prc_50s_ideas_ongoing_land_reform_2
+			prc_50s_ideas_ongoing_land_reform_3
+			prc_50s_ideas_ongoing_land_reform_4
+			prc_50s_ideas_ongoing_land_reform_5
+			prc_50s_ideas_ongoing_land_reform_6
+			prc_50s_ideas_ongoing_land_reform_7
+			prc_50s_ideas_ongoing_land_reform_8
+			prc_50s_ideas_ongoing_land_reform_9
+			prc_50s_ideas_ongoing_land_reform_10
+			prc_50s_ideas_ongoing_land_reform_11
+			prc_50s_ideas_ongoing_land_reform_12
+			prc_50s_ideas_ongoing_land_reform_13
+		}
+	}
+}
+
+PRC_civil_war_devastation_down = {
+	if = {
+		limit = { has_idea = prc_50s_ideas_civil_war_devastation_1 }
+		effect_tooltip = {
+			swap_ideas = {
+				remove_idea = prc_50s_ideas_civil_war_devastation_1
+				add_idea = prc_50s_ideas_civil_war_devastation_none
+			}
+		}
+		hidden_effect = { remove_ideas = prc_50s_ideas_civil_war_devastation_1 }
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_civil_war_devastation_2 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_civil_war_devastation_2
+			add_idea = prc_50s_ideas_civil_war_devastation_1
+		}
+	}
+	if = {
+		limit = { has_idea = prc_50s_ideas_civil_war_devastation_3 }
+		swap_ideas = {
+			remove_idea = prc_50s_ideas_civil_war_devastation_3
+			add_idea = prc_50s_ideas_civil_war_devastation_2
+		}
+	}
+}
+
+PRC_war_of_liberation_spirit_upgrade = {
+	if = {
+		limit = { has_idea = prc_war_of_liberation_11 }
+		CHI = {
+			add_stability = -0.15
+			add_war_support = -0.15
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_10 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_10
+			add_idea = prc_war_of_liberation_11
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_9 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_9
+			add_idea = prc_war_of_liberation_10
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_8 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_8
+			add_idea = prc_war_of_liberation_9
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_7 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_7
+			add_idea = prc_war_of_liberation_8
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_6 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_6
+			add_idea = prc_war_of_liberation_7
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_5 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_5
+			add_idea = prc_war_of_liberation_6
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_4 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_4
+			add_idea = prc_war_of_liberation_5
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_3 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_3
+			add_idea = prc_war_of_liberation_4
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_2 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_2
+			add_idea = prc_war_of_liberation_3
+		}
+	}
+	if = {
+		limit = { has_idea = prc_war_of_liberation_1 }
+		swap_ideas = {
+			remove_idea = prc_war_of_liberation_1
+			add_idea = prc_war_of_liberation_2
+		}
+	}
+}
+
+PRC_clr_all_war_of_liberation_ideas = {
+	remove_ideas = {
+		prc_war_of_liberation_1
+		prc_war_of_liberation_2
+		prc_war_of_liberation_3
+		prc_war_of_liberation_4
+		prc_war_of_liberation_5
+		prc_war_of_liberation_6
+		prc_war_of_liberation_7
+		prc_war_of_liberation_8
+		prc_war_of_liberation_9
+		prc_war_of_liberation_10
+		prc_war_of_liberation_11
+	}
+}

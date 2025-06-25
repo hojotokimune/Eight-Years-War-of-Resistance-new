@@ -1,0 +1,6 @@
+﻿l_simp_chinese:
+ PRC_renminjiefangjunhaijun_dm:0 "中国人民解放军海军"
+ PRC_renminjiefangjunkongjun_dm:0 "中国人民解放军空军"
+ pla_dongtaikongjun:0 "§C获得人民解放军空军的buff，完成后续国策后此buff会获得增强§!"
+ pla_dongtaihaijun:0 "§C获得人民解放军海军的buff，完成后续国策后此buff会获得增强§!"
+ prc_junfageju:0 "军阀割据"

@@ -1,0 +1,20 @@
+#scripted triggers for Division Medals feature
+
+should_have_chinese_medals_trigger = {
+	is_literally_china = yes
+    NOT = { has_government = communism }
+    NOT = { original_tag = KHR }
+    NOT = { original_tag = KRS }
+    NOT = { original_tag = ATM }
+    NOT = { original_tag = PRC }
+	NOT = { original_tag = MAN }
+    NOT = { has_completed_focus = SIK_east_turkestan_council } 
+	NOT = { has_completed_focus = SIK_Turkic_land }
+    NOT = { has_idea = SIK_For_the_TAR_revolution  }
+}
+
+should_have_chinese_reform_medals_trigger = {
+	is_literally_china = yes
+    NOT = { has_government = communism }
+    has_completed_focus = CHI_german_training_method
+}

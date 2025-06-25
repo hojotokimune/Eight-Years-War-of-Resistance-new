@@ -1,0 +1,66 @@
+shadow_kaiguan = {
+
+	shadow_kaiqi = {
+		icon = eng_trade_unions_support
+		allowed = {
+		OR = {
+			is_literally_china = yes
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+				tag = EHB								
+		}			
+		}
+		visible = {
+                    always = yes
+		}
+		days_remove = 1
+		available = {
+                    always = yes
+		}
+		priority = 1
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+                 set_global_flag = enable_commie_ridden_states_line
+		}
+	}
+
+
+	shadow_guanbi = {
+		icon = eng_trade_unions_support
+		allowed = {
+		OR = {
+			is_literally_china = yes
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+				tag = EHB								
+		}
+		}
+		visible = {
+                    always = yes
+		}
+		days_remove = 1
+		available = {
+                    always = yes
+		}
+		priority = 1
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+                 clr_global_flag = enable_commie_ridden_states_line
+		}
+	}
+
+
+
+
+}
+
+
+

@@ -1,0 +1,1740 @@
+focus_tree = {
+	id = indochina_independent
+	country = {
+		factor = 0
+		modifier = {
+			add = 100
+			tag = FIC
+			has_country_flag = indo_independent
+		}
+	}
+	default = no
+	continuous_focus_position = { x = -50 y = 1600 }
+	
+	
+	focus = {
+		id = FIC_baodais_reform
+		icon = GFX_focus_generic_strike_at_democracy2
+		cost = 21.5
+		x = 20
+		y = 0
+		available = {
+			has_global_flag = baodais_reform
+		}
+		completion_reward = {
+			#jules brevié comes during the focus
+			add_political_power = 150
+			add_ideas = fic_baodai_solution
+			unlock_decision_category_tooltip = fic_baodai_reformms
+		}
+	}
+	
+	focus = {
+		id = FIC_remove_colonial_administration
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_baodais_reform }
+		relative_position_id = FIC_baodais_reform
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_the_constitutional_debate
+		icon = GFX_GENERIC_New_Constitution
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_remove_colonial_administration }
+		relative_position_id = FIC_remove_colonial_administration
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_the_indochinese_constitution
+		icon = GFX_constitution_focus
+		cost = 0
+		x = -2
+		y = 1
+		prerequisite = { focus = FIC_the_constitutional_debate }
+		relative_position_id = FIC_the_constitutional_debate
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_french_corrected_constitution
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		x = -17
+		y = 1
+		prerequisite = { focus = FIC_the_indochinese_constitution }
+		relative_position_id = FIC_the_indochinese_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_tiger_of_cailay
+		icon = GFX_focus_hol_united_netherlands
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_french_corrected_constitution }
+		relative_position_id = FIC_french_corrected_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_control_the_army_vna
+		icon = GFX_GENERIC_Political_Army
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_tiger_of_cailay }
+		relative_position_id = FIC_tiger_of_cailay
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_support_binh_xuyen
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_control_the_army_vna }
+		mutually_exclusive = { focus = FIC_crush_binh_xuyen }
+		relative_position_id = FIC_control_the_army_vna
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	focus = {
+		id = FIC_crush_binh_xuyen
+		icon = GFX_goal_generic_occupy_start_war
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_control_the_army_vna }
+		mutually_exclusive = { focus = FIC_support_binh_xuyen }
+		relative_position_id = FIC_control_the_army_vna
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_southern_pacification
+		icon = GFX_COOP_army_guy
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_crush_binh_xuyen focus = FIC_support_binh_xuyen }
+		relative_position_id = FIC_support_binh_xuyen
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_recreate_secret_police
+		icon = GFX_COOP_secret_agents
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = { focus = FIC_tiger_of_cailay }
+		relative_position_id = FIC_tiger_of_cailay
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_crackdown_on_communist_act
+		icon = GFX_SOV_Great_Purge
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_recreate_secret_police }
+		relative_position_id = FIC_recreate_secret_police
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_anticommunist_united_front
+		icon = GFX_goal_continuous_counter_insurgency
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_crackdown_on_communist_act }
+		relative_position_id = FIC_crackdown_on_communist_act
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_support_big_buisnesses
+		icon = GFX_focus_institutional_reform
+		cost = 10
+		x = -3
+		y = 1
+		prerequisite = { focus = FIC_tiger_of_cailay }
+		relative_position_id = FIC_tiger_of_cailay
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_attract_french_investments
+		icon = GFX_goal_generic_intelligence_exchange
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_support_big_buisnesses }
+		relative_position_id = FIC_support_big_buisnesses
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_criminals_for_public_works
+		icon = GFX_focus_CZE_german_puppet
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_attract_french_investments }
+		relative_position_id = FIC_attract_french_investments
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_affirm_our_authority
+		icon = GFX_GENERIC_Populist_Politics
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_southern_pacification }
+		prerequisite = { focus = FIC_criminals_for_public_works }
+		prerequisite = { focus = FIC_anticommunist_united_front }
+		relative_position_id = FIC_southern_pacification
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_liberal_constitution
+		icon = GFX_SPR_Unite_the_Conservatives
+		cost = 10
+		x = -8
+		y = 1
+		prerequisite = { focus = FIC_the_indochinese_constitution }
+		relative_position_id = FIC_the_indochinese_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_the_constitutionalist_party
+		icon = GFX_GENERIC_Ideology_Liberalism
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_liberal_constitution }
+		mutually_exclusive = { focus = FIC_the_emperors_party }
+		relative_position_id = FIC_liberal_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_empower_the_legislature
+		icon = GFX_focus_const_assembly
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_the_constitutionalist_party }
+		relative_position_id = FIC_the_constitutionalist_party
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_educate_citizens
+		icon = GFX_COOP_compulsory_education
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_empower_the_legislature }
+		relative_position_id = FIC_empower_the_legislature
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_end_monopolies
+		icon = GFX_Generic_Austerity_Measures
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_educate_citizens }
+		relative_position_id = FIC_educate_citizens
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_improve_the_workers_life
+		icon = GFX_focus_healthcare_program
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_end_monopolies }
+		relative_position_id = FIC_end_monopolies
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_encourage_entrepreneurship
+		icon = GFX_focus_generic_the_giant_wakes
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_improve_the_workers_life }
+		prerequisite = { focus = FIC_educate_citizens }
+		relative_position_id = FIC_improve_the_workers_life
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_gather_middleclass_support
+		icon = GFX_GENERIC_Modern_Elitism
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_the_constitutionalist_party focus = FIC_the_emperors_party }
+		relative_position_id = FIC_the_constitutionalist_party
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_support_reforms_in_laos_and_cam
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_gather_middleclass_support }
+		relative_position_id = FIC_gather_middleclass_support
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_religious_tolerance
+		icon = GFX_GENERIC_Ideology_Theocracy
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_support_reforms_in_laos_and_cam }
+		mutually_exclusive = { focus = FIC_ban_sects }
+		relative_position_id = FIC_support_reforms_in_laos_and_cam
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FIC_ban_sects
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_support_reforms_in_laos_and_cam }
+		mutually_exclusive = { focus = FIC_religious_tolerance }
+		relative_position_id = FIC_support_reforms_in_laos_and_cam
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+		
+	focus = {
+		id = FIC_ensure_freedom_ofpress
+		icon = GFX_goal_support_democracy
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_ban_sects focus = FIC_religious_tolerance }
+		relative_position_id = FIC_religious_tolerance
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_the_emperors_party
+		icon = GFX_focus_generic_home_defense
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_liberal_constitution }
+		mutually_exclusive = { focus = FIC_the_constitutionalist_party }
+		relative_position_id = FIC_liberal_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_strong_executive
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_the_emperors_party }
+		relative_position_id = FIC_the_emperors_party
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_empower_the_mandarins
+		icon = GFX_goal_tfv_strengthen_commonwealth_ties
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_strong_executive }
+		relative_position_id = FIC_strong_executive
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_work_with_missionnaries
+		icon = GFX_focus_mex_restore_the_army_of_christ
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_empower_the_mandarins }
+		relative_position_id = FIC_empower_the_mandarins
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_protect_traditions
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_work_with_missionnaries }
+		relative_position_id = FIC_work_with_missionnaries
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_state_capitalism
+		icon = GFX_focus_mex_privatisation
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_protect_traditions }
+		prerequisite = { focus = FIC_empower_the_mandarins }
+		relative_position_id = FIC_protect_traditions
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FIC_enlightened_indochina
+		icon = GFX_goal_generic_propaganda
+		cost = 10
+		x = 0
+		y = 2
+		prerequisite = { focus = FIC_ensure_freedom_ofpress }
+		prerequisite = { focus = FIC_state_capitalism focus = FIC_encourage_entrepreneurship }
+		relative_position_id = FIC_ensure_freedom_ofpress
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_peoples_constitution
+		icon = GFX_focus_rethink_socialism
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_the_indochinese_constitution }
+		relative_position_id = FIC_the_indochinese_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_strengthen_qdd_front
+		icon = GFX_VIN_vnqdd_focus
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_peoples_constitution }
+		relative_position_id = FIC_peoples_constitution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_adopt_tridemism
+		icon = GFX_three_principle_focus
+		cost = 10
+		x = -1
+		y = 1
+		mutually_exclusive = { focus = FIC_survival_nationalism }
+		prerequisite = { focus = FIC_strengthen_qdd_front }
+		relative_position_id = FIC_strengthen_qdd_front
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_survival_nationalism
+		icon = GFX_goal_generic_demand_territory
+		cost = 10
+		x = 1
+		y = 1
+		mutually_exclusive = { focus = FIC_adopt_tridemism }
+		prerequisite = { focus = FIC_strengthen_qdd_front }
+		relative_position_id = FIC_strengthen_qdd_front
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_approach_indochinese_nationalists
+		icon = GFX_VIN_empower_vnqdd
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_adopt_tridemism focus = FIC_survival_nationalism }
+		relative_position_id = FIC_adopt_tridemism
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_proclaim_the_republic
+		icon = GFX_focus_rom_abdicate
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_approach_indochinese_nationalists }
+		prerequisite = { focus = FIC_adopt_tridemism focus = FIC_survival_nationalism }
+		mutually_exclusive = { focus = FIC_a_new_monarchy }
+		relative_position_id = FIC_approach_indochinese_nationalists
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_a_new_monarchy
+		icon = GFX_focus_hun_elect_a_king
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_approach_indochinese_nationalists }
+		prerequisite = { focus = FIC_adopt_tridemism focus = FIC_survival_nationalism }
+		mutually_exclusive = { focus = FIC_proclaim_the_republic }
+		relative_position_id = FIC_approach_indochinese_nationalists
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_peoples_welfare
+		icon = GFX_goal_generic_consumer_goods
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_proclaim_the_republic focus = FIC_a_new_monarchy }
+		mutually_exclusive = { focus = FIC_collectivization }
+		relative_position_id = FIC_proclaim_the_republic
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_collectivization
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = { focus = FIC_proclaim_the_republic focus = FIC_a_new_monarchy }
+		mutually_exclusive = { focus = FIC_peoples_welfare }
+		relative_position_id = FIC_proclaim_the_republic
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_approach_nanjing
+		icon = GFX_focus_chi_cooperation_with_the_nationalists
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_collectivization focus = FIC_peoples_welfare }
+		mutually_exclusive = { focus = FIC_move_towards_autarky }
+		relative_position_id = FIC_peoples_welfare
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_move_towards_autarky
+		icon = GFX_goal_anschluss
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = { focus = FIC_collectivization focus = FIC_peoples_welfare }
+		mutually_exclusive = { focus = FIC_approach_nanjing }
+		relative_position_id = FIC_peoples_welfare
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_qdd_front_congress
+		icon = GFX_VIN_vnqdd_congress
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_move_towards_autarky focus = FIC_approach_nanjing }
+		relative_position_id = FIC_approach_nanjing
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_power_vacuum
+		icon = GFX_focus_generic_strike_at_democracy1
+		cost = 0
+		x = 2
+		y = 1
+		prerequisite = { focus = FIC_the_constitutional_debate }
+		relative_position_id = FIC_the_constitutional_debate
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	
+	focus = {
+		id = FIC_the_indochinese_revolution
+		icon = GFX_PRC_War_of_National_Liberation
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = { focus = FIC_power_vacuum }
+		relative_position_id = FIC_power_vacuum
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+
+	focus = {
+		id = FIC_create_the_peoples_army
+		icon = GFX_SOV_Peoples_Army
+		cost = 10
+		x = -2
+		y = 1
+		prerequisite = { focus = FIC_the_indochinese_revolution }
+		relative_position_id = FIC_the_indochinese_revolution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}	
+	
+	focus = {
+		id = FIC_organize_revolutionary_struggle
+		icon = GFX_goal_continuous_stage_uprisings
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_the_indochinese_revolution }
+		relative_position_id = FIC_the_indochinese_revolution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_start_social_revo
+		icon = GFX_PRC_The_Long_March
+		cost = 10
+		x = 2
+		y = 1
+		prerequisite = { focus = FIC_the_indochinese_revolution }
+		relative_position_id = FIC_the_indochinese_revolution
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_final_victory_com
+		icon = GFX_SOV_Soviet_Democracy
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_organize_revolutionary_struggle }
+		relative_position_id = FIC_organize_revolutionary_struggle
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_la_lutte
+		icon = GFX_SOV_Permanent_Revolution
+		cost = 0
+		x = -2
+		y = 1
+		prerequisite = { focus = FIC_final_victory_com }
+		relative_position_id = FIC_final_victory_com
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_the_partys_line
+		icon = GFX_focus_generic_join_comintern
+		cost = 0
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_final_victory_com }
+		relative_position_id = FIC_final_victory_com
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_the_agrarian_faction
+		icon = GFX_focus_prc_agrarian_socialism
+		cost = 0
+		x = 2
+		y = 1
+		prerequisite = { focus = FIC_final_victory_com }
+		relative_position_id = FIC_final_victory_com
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_revolution_in_urban
+		icon = GFX_Generic_Urban_Warfare
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_la_lutte }
+		relative_position_id = FIC_la_lutte
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_organize_syndicates
+		icon = GFX_focus_eng_liberate_the_home_of_marx
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_revolution_in_urban }
+		relative_position_id = FIC_revolution_in_urban
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_purge_feudals
+		icon = GFX_goal_tfv_burn_the_royal_portraits
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_the_partys_line focus = FIC_the_agrarian_faction focus = FIC_la_lutte }
+		relative_position_id = FIC_the_partys_line
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_vanguard_party
+		icon = GFX_goal_support_communism
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_purge_feudals }
+		relative_position_id = FIC_purge_feudals
+		available = {
+			has_completed_focus = FIC_the_partys_line
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_reinforce_peasants_militias
+		icon = GFX_focus_YUG_pan_slavic_congress
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_the_agrarian_faction }
+		relative_position_id = FIC_the_agrarian_faction
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_sideline_opponents_agr
+		icon = GFX_focus_eng_concessions_to_the_trade_unions
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_reinforce_peasants_militias }
+		relative_position_id = FIC_reinforce_peasants_militias
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_deal_fatal_blow_to_landlords
+		icon = GFX_goal_generic_political_pressure
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_organize_syndicates }
+		mutually_exclusive = { focus = FIC_rectification_campaign focus = FIC_redistribute_land focus = FIC_setup_collective_farms }
+		relative_position_id = FIC_organize_syndicates
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_rectification_campaign
+		icon = GFX_draft_focus
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_organize_syndicates focus = FIC_vanguard_party }
+		mutually_exclusive = { focus = FIC_deal_fatal_blow_to_landlords focus = FIC_redistribute_land focus = FIC_setup_collective_farms }
+		relative_position_id = FIC_vanguard_party
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_redistribute_land
+		icon = GFX_goal_generic_soviet_construction
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_sideline_opponents_agr focus = FIC_vanguard_party }
+		mutually_exclusive = { focus = FIC_deal_fatal_blow_to_landlords focus = FIC_rectification_campaign focus = FIC_setup_collective_farms }
+		relative_position_id = FIC_vanguard_party
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_setup_collective_farms
+		icon = GFX_focus_peasant_growth
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_sideline_opponents_agr }
+		mutually_exclusive = { focus = FIC_deal_fatal_blow_to_landlords focus = FIC_rectification_campaign focus = FIC_redistribute_land }
+		relative_position_id = FIC_sideline_opponents_agr
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_worker_assemblies
+		icon = GFX_focus_generic_soviet_politics
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_deal_fatal_blow_to_landlords focus = FIC_rectification_campaign }
+		relative_position_id = FIC_deal_fatal_blow_to_landlords
+		available = {
+			has_completed_focus = FIC_organize_syndicates
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_strengthen_politburo
+		icon = GFX_assembly_const_focus
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_rectification_campaign focus = FIC_redistribute_land }
+		relative_position_id = FIC_rectification_campaign
+		available = {
+			has_completed_focus = FIC_vanguard_party
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_peasant_councils
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_redistribute_land focus = FIC_setup_collective_farms }
+		relative_position_id = FIC_redistribute_land
+		available = {
+			has_completed_focus = FIC_sideline_opponents_agr
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_le_militant
+		icon = GFX_SOV_Red_Army
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_worker_assemblies }
+		mutually_exclusive = { focus = FIC_left_wing_unity focus = FIC_desurbanization }
+		relative_position_id = FIC_worker_assemblies
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_left_wing_unity
+		icon = GFX_goal_befriend_soviet
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_strengthen_politburo focus = FIC_worker_assemblies focus = FIC_peasant_councils }
+		mutually_exclusive = { focus = FIC_le_militant focus = FIC_desurbanization }
+		relative_position_id = FIC_strengthen_politburo
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_desurbanization
+		icon = GFX_focus_eng_crush_the_dream
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_peasant_councils }
+		mutually_exclusive = { focus = FIC_le_militant focus = FIC_left_wing_unity }
+		relative_position_id = FIC_peasant_councils
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_commit_to_international_revolution
+		icon = GFX_SOV_Transpolar_Flight
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_left_wing_unity focus = FIC_le_militant focus = FIC_desurbanization }
+		relative_position_id = FIC_left_wing_unity
+		available = {
+			
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_bao_absolutism
+		icon = GFX_focus_rom_royal_dictatorship
+		cost = 10
+		x = 10
+		y = 1
+		prerequisite = { focus = FIC_power_vacuum }
+		relative_position_id = FIC_power_vacuum
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_empower_privy_council
+		icon = GFX_goal_demand_sudetenland
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_bao_absolutism }
+		relative_position_id = FIC_bao_absolutism
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_reform_civil_service
+		icon = GFX_goal_generic_national_unity
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = { focus = FIC_bao_absolutism }
+		relative_position_id = FIC_bao_absolutism
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_an_imperial_capital
+		icon = GFX_focus_generic_industry_3
+		cost = 10
+		x = -3
+		y = 1
+		prerequisite = { focus = FIC_bao_absolutism }
+		relative_position_id = FIC_bao_absolutism
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_control_legislature
+		icon = GFX_GENERIC_Nationalize_Industry
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_empower_privy_council }
+		relative_position_id = FIC_empower_privy_council
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_revere_the_emperor
+		icon = GFX_focus_man_claim_the_mandate_of_heaven
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_an_imperial_capital }
+		relative_position_id = FIC_an_imperial_capital
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_expand_the_imperial_guard
+		icon = GFX_focus_generic_little_entente
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_revere_the_emperor }
+		relative_position_id = FIC_revere_the_emperor
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_meet_other_monarchs
+		icon = GFX_goal_generic_major_alliance
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_expand_the_imperial_guard }
+		relative_position_id = FIC_expand_the_imperial_guard
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_empower_technocrats
+		icon = GFX_goal_generic_production2
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_reform_civil_service }
+		relative_position_id = FIC_reform_civil_service
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_educational_reform
+		icon = GFX_focus_generic_treaty
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_empower_technocrats }
+		relative_position_id = FIC_empower_technocrats
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_appease_religious_tensions
+		icon = GFX_focus_MON_buddhism
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_educational_reform }
+		relative_position_id = FIC_educational_reform
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_crush_opposition_bao
+		icon = GFX_goal_generic_secret_weapon
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_control_legislature }
+		relative_position_id = FIC_control_legislature
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_restore_constitution
+		icon = GFX_GENERIC_New_Constitution
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_meet_other_monarchs }
+		prerequisite = { focus = FIC_crush_opposition_bao }
+		prerequisite = { focus = FIC_appease_religious_tensions }
+		mutually_exclusive = { focus = FIC_puppet_civ_government focus = FIC_imperial_primacy }
+		relative_position_id = FIC_meet_other_monarchs
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_puppet_civ_government
+		icon = GFX_focus_usa_voter_registration_act
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = { focus = FIC_meet_other_monarchs }
+		prerequisite = { focus = FIC_crush_opposition_bao }
+		prerequisite = { focus = FIC_appease_religious_tensions }
+		mutually_exclusive = { focus = FIC_restore_constitution focus = FIC_imperial_primacy }
+		relative_position_id = FIC_meet_other_monarchs
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_imperial_primacy
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		x = 5
+		y = 1
+		prerequisite = { focus = FIC_meet_other_monarchs }
+		prerequisite = { focus = FIC_crush_opposition_bao }
+		prerequisite = { focus = FIC_appease_religious_tensions }
+		relative_position_id = FIC_meet_other_monarchs
+		mutually_exclusive = { focus = FIC_restore_constitution focus = FIC_puppet_civ_government }
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	} 
+	
+	focus = {
+		id = FIC_keeper_of_greatness
+		icon = GFX_focus_generic_self_management
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_imperial_primacy focus = FIC_puppet_civ_government focus = FIC_restore_constitution }
+		relative_position_id = FIC_puppet_civ_government
+		available = {
+			NOT = { 
+				has_completed_focus = FIC_restore_constitution
+			}
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	
+	focus = {
+		id = FIC_return_of_cuongde
+		icon = GFX_COOP_national_populism
+		cost = 10
+		x = 19
+		y = 1
+		prerequisite = { focus = FIC_power_vacuum }
+		relative_position_id = FIC_power_vacuum
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_purge_profrench_cuongde
+		icon = GFX_goal_tfv_saf_anti_colonialist_crusade
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_return_of_cuongde }
+		relative_position_id = FIC_return_of_cuongde
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_ally_with_caodai
+		icon = GFX_focus_generic_diplomatic_treaty
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_purge_profrench_cuongde }
+		relative_position_id = FIC_purge_profrench_cuongde
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_ally_with_hoa_hao
+		icon = GFX_goal_generic_dangerous_deal
+		cost = 10
+		x = -1
+		y = 1
+		prerequisite = { focus = FIC_ally_with_caodai }
+		mutually_exclusive = { focus = FIC_suppress_hoa_hao }
+		relative_position_id = FIC_ally_with_caodai
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_suppress_hoa_hao
+		icon = GFX_focus_eng_move_to_secure_the_dominions
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_ally_with_caodai }
+		mutually_exclusive = { focus = FIC_ally_with_hoa_hao }
+		relative_position_id = FIC_ally_with_caodai
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_integrate_sect_militias
+		icon = GFX_goal_generic_military_sphere
+		cost = 10
+		x = 1
+		y = 1
+		prerequisite = { focus = FIC_ally_with_hoa_hao focus = FIC_suppress_hoa_hao }
+		relative_position_id = FIC_ally_with_hoa_hao
+		available = {
+
+		}
+		completion_reward = {
+
+		}
+	}
+	
+	focus = {
+		id = FIC_cooperate_with_jap_companies
+		icon = GFX_focus_jap_zaibatsu
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = { focus = FIC_return_of_cuongde }
+		relative_position_id = FIC_return_of_cuongde
+		available = {
+
+		}
+		completion_reward = {
+			#daÏnan koosi Dainan Kōshi, Matsushita Mitsuhiro
+		}
+	}
+	
+	focus = {
+		id = FIC_align_with_japan
+		icon = GFX_focus_chi_collaboration_with_the_japanese
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_cooperate_with_jap_companies }
+		relative_position_id = FIC_cooperate_with_jap_companies
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_kempetai_advisors
+		icon = GFX_goal_reorg_JAP
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_align_with_japan }
+		relative_position_id = FIC_align_with_japan
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_assert_total_control
+		icon = GFX_focus_generic_support_the_left_right
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_kempetai_advisors }
+		relative_position_id = FIC_kempetai_advisors
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_implement_phan_boi_chau_ideas
+		icon = GFX_focus_chi_legislative_yuan
+		cost = 10
+		x = -3
+		y = 1
+		prerequisite = { focus = FIC_return_of_cuongde }
+		relative_position_id = FIC_return_of_cuongde
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_a_new_empire_cuongde
+		icon = GFX_focus_rom_handle_king
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_implement_phan_boi_chau_ideas }
+		relative_position_id = FIC_implement_phan_boi_chau_ideas
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}	
+	
+	focus = {
+		id = FIC_visit_the_east
+		icon = GFX_focus_research2
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_a_new_empire_cuongde }
+		relative_position_id = FIC_a_new_empire_cuongde
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_nationalist_rethoric
+		icon = GFX_goal_support_fascism
+		cost = 10
+		x = 0
+		y = 1
+		prerequisite = { focus = FIC_visit_the_east }
+		relative_position_id = FIC_visit_the_east
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+	
+	focus = {
+		id = FIC_rising_dragon_ofcopropsphere
+		icon = GFX_focus_jap_pacific_guardian
+		cost = 10
+		x = 3
+		y = 1
+		prerequisite = { focus = FIC_nationalist_rethoric }
+		prerequisite = { focus = FIC_integrate_sect_militias }
+		prerequisite = { focus = FIC_assert_total_control }
+		relative_position_id = FIC_nationalist_rethoric
+		available = {
+
+		}
+		completion_reward = {
+			
+		}
+	}
+}

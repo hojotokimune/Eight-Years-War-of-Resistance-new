@@ -1,0 +1,147 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_decision_cat_pearl_harbor"
+		texturefile = "gfx/event_pictures/pearl_harbor/decision_cat_pearl_harbor.png"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_pacific_war"
+		texturefile = "gfx/event_pictures/pearl_harbor/decision_cat_pacific_war.png"
+	}
+	spriteType = {
+		name = "GFX_decision_cat_hondo_kessen"
+		texturefile = "gfx/event_pictures/pearl_harbor/decision_cat_hondo_kessen.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_jap_command"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_jap_command.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_nagumo"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_nagumo.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_attack"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_attack.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_carrier"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_carrier.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_nimitz"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_nimitz.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_doolittle_raid"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_doolittle_raid.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_august_storm"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_august_storm.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_v_day"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_v_day.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_jap_surrender"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_jap_surrender.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_usa_surrender"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_usa_surrender.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_operation_downfall"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_operation_downfall.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_landing"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_landing.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_bombing"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_bombing.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_superfortress"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_superfortress.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_capitol_hill"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_capitol_hill.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_boulder_dam"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_boulder_dam.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_golden_gate"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_golden_gate.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_justices"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_justices.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_lexington"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_lexington.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_atlantic_charter"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_atlantic_charter.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_coup"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_coup.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_resign"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_resign.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_inuka"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_inuka.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_okada"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_okada.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_fumimaro"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_fumimaro.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_tojo"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_tojo.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_diet"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_diet.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_coup_news"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_coup_news.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_martial_law"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_martial_law.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_invasion_thailand"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_invasion_thailand.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_battle_shanghai"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_battle_shanghai.png"
+	}
+	spriteType = {
+		name = "GFX_vnr_ph_chiang"
+		texturefile = "gfx/event_pictures/pearl_harbor/vnr_ph_chiang.png"
+	}
+
+	spriteType = {
+		name = "GFX_USA_shield"
+		texturefile = "gfx/interface/ideas/USA_shield.png"
+	}
+}

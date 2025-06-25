@@ -1,0 +1,283 @@
+spriteTypes = {	
+
+	SpriteType = {
+		name = "GFX_fall_minsk"
+		texturefile = "gfx/event_pictures/fall_minsk.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_fall_smolensk"
+		texturefile = "gfx/event_pictures/fall_smolensk.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_regain_minsk"
+		texturefile = "gfx/event_pictures/regain_minsk.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_laisi"
+		texturefile = "gfx/leaders/GNG/laisi.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SOV_lazar_kaganovich"
+		texturefile = "gfx/leaders/GNG/SOV_lazar_kaganovich.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_end_bagration"
+		texturefile = "gfx/event_pictures/end_bagration.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_land_sicily"
+		texturefile = "gfx/event_pictures/land_sicily.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_battle_kiev"
+		texturefile = "gfx/event_pictures/battle_kiev.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_regain_kiev"
+		texturefile = "gfx/event_pictures/regain_kiev.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_PRC_Tokyo_fall"
+		texturefile = "gfx/event_pictures/PRC_Tokyo_fall.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_north_south_korea"
+		texturefile = "gfx/event_pictures/north_south_korea.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ger_fall"
+		texturefile = "gfx/event_pictures/ger_fall.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_death_stalin"
+		texturefile = "gfx/event_pictures/death_stalin.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_victory_ger"
+		texturefile = "gfx/event_pictures/victory_ger.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_haishijihua"
+		texturefile = "gfx/event_pictures/haishijihua.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_fall_of_chongqing"
+		texturefile = "gfx/event_pictures/fall_of_chongqing.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_eng_peace_ger"
+		texturefile = "gfx/event_pictures/eng_peace_ger.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_xiaweiyihebao"
+		texturefile = "gfx/event_pictures/xiaweiyihebao.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_treaty_of_singapore"
+		texturefile = "gfx/event_pictures/treaty_of_singapore.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_OFN"
+		texturefile = "gfx/event_pictures/OFN.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_tuanjiexieding"
+		texturefile = "gfx/event_pictures/tuanjiexieding.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_gongrongquan"
+		texturefile = "gfx/event_pictures/gongrongquan.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_news_operation_blue"
+		texturefile = "gfx/event_pictures/news_operation_blue.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_battle_stalingrad"
+		texturefile = "gfx/event_pictures/battle_stalingrad.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Heydrich_died"
+		texturefile = "gfx/event_pictures/Heydrich_died.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_Heydrich_surive"
+		texturefile = "gfx/event_pictures/Heydrich_surive.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_hitler_died"
+		texturefile = "gfx/event_pictures/hitler_died.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_hitler_surive"
+		texturefile = "gfx/event_pictures/hitler_surive.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_rommel_died"
+		texturefile = "gfx/event_pictures/rommel_died.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ideology_USB_Soclib_Centrism"
+		texturefile = "gfx/interface/ideologies/USB_Soclib_Centrism.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ger_attack_pol"
+		texturefile = "gfx/decision_pictures/ger_attack_pol.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_ger_Skorzney_large"
+		texturefile = "gfx/leaders/GER/Skorzney.jpg"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_idea_baisefangan"
+		texturefile = "gfx/interface/ideas/idea_baisefangan.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_idea_operation_taifeng"
+		texturefile = "gfx/interface/ideas/idea_operation_taifeng.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_idea_pro_soilders"
+		texturefile = "gfx/interface/ideas/UMC_GER_idea_foreign_nationalists.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_idea_operation_haishi"
+		texturefile = "gfx/interface/ideas/idea_operation_haishi.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_idea_ger_attack_netherlands"
+		texturefile = "gfx/interface/ideas/idea_ger_attack_netherlands.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_the_triumphant_will"
+		texturefile = "gfx/interface/goals/ger/GER_the_triumphant_will.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_you_club"
+		texturefile = "gfx/interface/goals/ger/GER_you_club.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_ussr_war_goals"
+		texturefile = "gfx/interface/goals/ger/GER_ussr_war_goals.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_revive_our_warrior_spirit"
+		texturefile = "gfx/interface/goals/ger/GER_revive_our_warrior_spirit.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_adopt_new_panzer"
+		texturefile = "gfx/interface/goals/ger/GER_adopt_new_panzer.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_AFG_GER_new_guard"
+		texturefile = "gfx/interface/goals/ger/AFG_GER_new_guard.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_AFG_GER_old_guard"
+		texturefile = "gfx/interface/goals/ger/AFG_GER_old_guard.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_NSM_heil_hitler"
+		texturefile = "gfx/interface/goals/ger/NSM_heil_hitler.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_lujun_yanxi"
+		texturefile = "gfx/interface/goals/ger/GER_lujun_yanxi.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_Berlin_Moscow_Axis"
+		texturefile = "gfx/interface/goals/ger/GER_Berlin_Moscow_Axis.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_NSM_establish_our_narrative"
+		texturefile = "gfx/interface/goals/ger/NSM_establish_our_narrative.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_NSM_man_the_factories"
+		texturefile = "gfx/interface/goals/ger/NSM_man_the_factories.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_the_new_germania"
+		texturefile = "gfx/interface/goals/ger/GER_the_new_germania.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_stalin_rehabilitate2"
+		texturefile = "gfx/interface/goals/ger/focus_SOV_stalin_rehabilitate2.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SOV_labor_militarization"
+		texturefile = "gfx/interface/goals/ger/SOV_labor_militarization.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_focus_SOV_rename_back_the_cities"
+		texturefile = "gfx/interface/goals/ger/focus_SOV_rename_back_the_cities.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_intensify_nighttime_sorties"
+		texturefile = "gfx/interface/goals/ger/GER_intensify_nighttime_sorties.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_GER_operation_white_focus"
+		texturefile = "gfx/interface/goals/ger/GER_operation_white_focus.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_SOV_lazar_kaganovich"
+		texturefile = "gfx/leaders/GNG/SOV_lazar_kaganovich.png"
+		legacy_lazy_load = no
+	}
+}

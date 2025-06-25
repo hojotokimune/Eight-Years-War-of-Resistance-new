@@ -1,0 +1,128 @@
+﻿l_simp_chinese:
+ MAN_xiangribenjiedongxi_decisions_categories:0 "[jue_yi_ming_cheng_localization_key]"
+ MAN_xiangribenjiedongxi_decisions_categories_desc:0 "[jue_yi_miao_shu_localization_key]"
+ jue_yi_ming_cheng_localization_key_0:0 "帮日本“保管”一些物品"
+ jue_yi_miao_shu_localization_key_0:0 "溥仪作为日本天皇裕仁的“兄弟”,帮他分忧保管一点东西也是理所当然的吧？"
+
+
+ #借用决议
+ jie_yong_ji_chuang:0 "[jie_yong_ji_chuang_localization_key]"
+ jie_yong_chan_xian:0 "[jie_yong_jun_gong_localization_key]"
+ jie_yong_chuan_wu:0 "借用船坞建设材料"
+ jie_yong_bu_dui:0 "[jie_yong_bu_dui_localization_key]"
+ jie_yong_jian_dui:0 "帮日本保管舰船"
+ jie_yong_fei_ji:0 "[jie_yong_fei_ji_localization_key]"
+ mi_mi_zhuan_yi:0 "[mi_mi_zhuan_yi_localization_key]"
+ jie_yong_dao_yu:0 "帮助经营岛屿"
+ jie_yong_jiang_ling:0 "为宣统效力"
+ pian_qu_ri_ben_hao_gan:0 "皇兄皇弟"
+ jie_yong_tian_huang:0 "邀请天皇参加新京皇室派对"
+ jie_yong_jing_sheng:0 "借用民族精神"
+ jie_yong_zi_yuan:0 "[jie_yong_zi_yuan_localization_key]"
+ jie_yong_ke_ji:0 "[jie_yong_ke_ji_localization_key]"
+ jie_yong_jun_gong_zu_zhi:0 "[jie_yong_jun_gong_zu_zhi_localization_key]"
+
+
+ #事件
+ jieyong.1.t:0 "借用民用工厂"
+ jieyong.1.d:0 "宣统向裕仁索取民用工厂，裕仁大喜，乃允之"
+ jieyong.1.a:0 "我们会好好使用这些民用工厂的，小皇帝（裕仁）"
+
+ jieyong.2.t:0 "借用生产线"
+ jieyong.2.d:0 "宣统向裕仁借用一些军事设备，裕仁大喜，此小事也，乃允之"
+ jieyong.2.a:0 "我们会充分利用这些军用工厂的，小皇帝（裕仁）"
+
+ jieyong.3.t:0 "借用日本船坞"
+ jieyong.3.d:0 "宣统向裕仁表达建设海军船坞进行通商的想法，裕仁狂喜，乃允之"
+ jieyong.3.a:0 "我们不只是生产一些渔船，商船，运输船而已啊，小皇帝（裕仁）"
+
+ jieyong.4.t:0 "借用日本军队"
+ jieyong.4.d:0 "宣统向裕仁征兵50万，裕仁大喜，乃允之"
+ jieyong.4.a:0 "我们拿了这些军队，枪口朝向谁就不好说了"
+
+ jieyong.5.t:0 "借用日本舰队"
+ jieyong.5.d:0 "宣统向裕仁表达愿意使日本海军在其港口停靠，裕仁大喜，乃允之"
+ jieyong.5.a:0 "(借用两艘随机主力舰)"
+ jieyong.5.b:0 "(借用5艘轻巡)"
+ jieyong.5.c:0 "(借用10艘驱逐)"
+ jieyong.5.e:0 "(借用10艘潜艇)"
+
+
+ jieyong.6.t:0 "飞机炒股"
+ jieyong.6.d:0 "宣统向裕仁表示，愿把200架飞机炒股到20万架飞机，裕仁狂喜，乃连夜允之"
+ jieyong.6.a:0 "那么炒股下跌后飞机没了也很正常吧？"
+
+ jieyong.7.t:0 "秘密转移"
+ jieyong.7.d:0 "宣统向裕仁表示，最近有许多日本人来到此地，恐难以管理，愿设立征兵处管理这些人，裕仁大喜，乃允之"
+ jieyong.7.a:0 "日本人来到我们的地盘，那么事情就由不得他们了"
+
+ jieyong.8.t:0 "索取度假岛屿"
+ jieyong.8.d:0 "宣统向裕仁表示，希望日本给几个度假胜地，裕仁大喜，乃允之"
+ jieyong.8.a:0 "岛屿不光是用来度假的"
+
+ jieyong.9.t:0 "借用将领"
+ jieyong.9.d:0 "宣统向裕仁表示，希望日本派遣一些军事顾问来协助开设陆军学校，裕仁大喜，乃允之"
+ jieyong.9.a:0 "来了就不要走了，我们可是有督战队的"
+
+ jieyong.10.t:0 "获得日本信任"
+ jieyong.10.d:0 "为何宣统皇帝向裕仁屡屡借用东西不还而裕仁能依旧大喜呢？原来是我们宣统皇帝拥有高超的外交技巧啊，由此宣统获得了裕仁无条件的服从"
+ jieyong.10.a:0 "皇帝万岁！"
+
+ jieyong.11.t:0 "邀请天皇出行"
+ jieyong.11.d:0 "康德向裕仁发出一起参加新京皇室派对的邀请，裕仁大喜，乘坐火车来到皇姑屯站时，火车突然爆炸，所幸“裕仁”毫发无伤，经历了一次愉快的出行"
+ jieyong.11.a:0 "一切按计划进行"
+
+ jieyong.12.t:0 "获得民族精神"
+ jieyong.12.d:0 "通过借用日本大量的物品，我国已经能够聚集强大的军事力量，现在，让我们将这些东西整合吧"
+ jieyong.12.a:0 "以其人之道,还以其人之身!"
+ 
+ jieyong.13.t:0 "借用资源"
+ jieyong.13.d:0 "康德向裕仁表示，我们大清掌握最先进的开采技术和搬运矿山技术，日本所有的矿产都应该交由我们打理，裕仁大喜，乃允之"
+ jieyong.13.a:0 "这只是日本从中华大地掠夺的万分之一罢了"
+
+ jieyong.14.t:0 "借用科技"
+ jieyong.14.d:0 "康德向裕仁表示，我们大清地大物博无所不有，日本想要我们的资源（实际上没给）需要用贡品来换，裕仁大喜，此何足道也"
+ jieyong.14.a:0 "要求精美的雕像(工业科技)"
+ jieyong.14.b:0 "要求精美的机械制品(电子科技)"
+ jieyong.14.c:0 "要求精美的舰船模型(海军科技)"
+
+ jieyong.15.t:0 "借用军工组织"
+ jieyong.15.d:0 "康德与“裕仁”于新京亲切会谈，会后，裕仁同意投资50万美元在大清境内建设军用企业，双方都对本次会谈十分满意"
+ jieyong.15.a:0 "我们的“裕仁”小皇帝确实十分有用呢"
+
+
+#脚本本地化文件
+ 
+
+ jie_yong_localization_key_0:0 "§Y借用机床§!"
+ 
+ jie_yong_jun_gong_localization_key_0:0 "§G借用武器生产线§!"
+ 
+ jie_yong_bu_dui_localization_key_0:0 "借用日本前线部队"
+ 
+ jie_yong_fei_ji_localization_key_0:0 "飞机炒股"
+ 
+ mi_mi_zhuan_yi_localization_key_0:0 "借点天线宝宝"
+ 
+ jie_yong_zi_yuan_localization_key_0:0 "康德移山"
+
+ jie_yong_ke_ji_localization_key_0:0 "向日本索要科技"
+
+ jie_yong_jun_gong_zu_zhi_localization_key_0:0 "找裕仁要点制造商"
+
+
+#决议图标本地化air_experience
+ lu_jun_jin_yan_localisation_key:0 "5£army_experience"
+ hai_jun_jin_yan_localisation_key:0 "5£navy_experience"
+ kong_jun_jin_yan_localisation_key:0 "5£air_experience"
+
+#关系修饰符
+ bang_mang_bao_cun:0 "皇兄帮忙储存装备"
+ bang_mang_chao_gu:0 "皇兄帮忙拿飞机炒股"
+ bang_mang_ting_chuan:0 "皇兄帮忙管理舰队"
+ tian_huang_chu_xing:0 "天皇出游"
+ xin_ren:0 "已经变成大清大人的形状了捏"
+
+ #FLAG翻译
+ ROOT.ke_yi_shi_yong_flag:0 "把制造商送给满洲国"
+

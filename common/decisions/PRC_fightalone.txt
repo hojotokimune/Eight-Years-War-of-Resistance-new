@@ -1,0 +1,219 @@
+prc_fightalone = {
+	prc_jieguankangri = {
+		fire_only_once = yes
+		complete_effect = {
+			every_state = {
+				limit = {
+				    OR = {
+					is_core_of = CHI
+					is_core_of = event_target:WTT_current_china_leader
+					has_state_flag = original_chi_state
+					}
+					not = {
+					is_core_of = TAN
+					is_core_of = MON
+					is_core_of = SOV
+					}
+					NOT = { has_state_flag = original_tib_state }
+					NOT = { has_state_flag = original_sik_state }
+				}
+				add_core_of = ROOT
+			}
+			524 = {
+				add_core_of = ROOT
+			}
+		}
+	}
+	prc_fazhanxinsijun = {
+		fire_only_once = yes
+		cost = 25
+		days_remove = 50		
+		remove_effect = {
+			ROOT = {
+			add_ideas = prc_xinsijun
+			add_ideas = prc_feimapaixiangyan
+			}	
+		}
+		available = {
+			has_completed_focus = PRC_partisan_offensive
+		}
+	}
+	prc_sue_for_peace_JAP = {
+		icon = generic_political_discourse
+
+		available = {
+			has_war_with = JAP
+			NOT = {
+				OR = {
+					has_idea = CHI_sunfall_sea
+					has_idea = CHI_arc
+				}
+			}
+			OR = {
+				#AND = {
+					#check_if_no_sov_occupied_man = yes
+					
+				#}
+				custom_trigger_tooltip = { #Reclaimed whole continent
+					tooltip = JAP_sue_for_peace_TT
+					JAP = {
+						NOT = {
+							controls_state = 525
+							controls_state = 527
+							controls_state = 1009
+							controls_state = 1007
+							controls_state = 1006
+							controls_state = 1010
+							controls_state = 714
+							controls_state = 717
+						}						
+					}
+					JAP_or_its_puppet_dont_control_any_chinese_cores_exclude_TW = yes
+				}
+				JAP = { #august storm, soviet occupation
+					any_enemy_country = {
+						NOT = {
+							tag = ROOT
+							is_warlord = yes
+							tag = event_target:WTT_communist_china
+						}
+						ic_ratio = { 
+							tag = ROOT 
+							ratio > 0.7
+						}
+						is_major = yes
+						owns_state = 408
+						controls_state = 408
+						controls_state = 328
+						controls_state = 716
+					}
+				}
+			}
+			
+		}
+		targets = { JAP }
+		target_trigger = {
+			#Target is FROM
+			FROM = {
+				tag = JAP
+			}
+		}
+
+		visible = {
+			714 = {
+				controller = {
+					NOT = {
+						is_controlled_by_jap_or_its_puppet = yes
+					}
+					NOT = {
+						has_war_together_with = JAP
+					}
+				}
+			}
+			tag = PRC
+		}
+
+		cost = 0
+
+		#fire_only_once = yes
+
+		ai_will_do = {
+			factor = 4000
+		}
+
+		complete_effect = {
+			country_event = {
+				id = prc_xinkangri.1
+			}
+		}
+	}
+    prc_taiwankangzhan = {
+		icon = generic_prepare_civil_war
+		days_remove = 50
+        cost = 150
+        fire_only_once = yes
+		ai_will_do = {
+			factor = 1000
+		}		
+		available = {
+            NOT = { country_exists = CHI }   		
+			has_government = communism
+		}		
+        remove_effect = {	
+        CHI = {
+			transfer_state = 524					
+			add_ideas = xingxingzhihuo_keyiliaoyuan_5	
+            remove_ideas = central_club	
+            remove_ideas = the_blueshirts	
+            remove_ideas = CHI_nine_power_treaty
+            remove_ideas = CHI_fractured_administration_idea_1	
+            remove_ideas = CHI_fractured_administration_idea_2
+            remove_ideas = CHI_fractured_administration_idea_3
+            remove_ideas = CHI_fractured_administration_idea_4			
+		    set_cosmetic_tag = CHI_yiyongjun
+			set_party_name = {
+					ideology = communism
+					name = "台湾民主自治同盟"
+					long_name = "台湾民主自治同盟"
+				}			
+            create_country_leader = {
+                name = "谢雪红"
+                desc = "POLITICS_SITUMEITANG_DESC"
+                picture = "gfx/leaders/PRC/xiexuehong.jpg"
+                expire = "1965.1.1"
+                ideology = marxism 
+                traits = { national_integralist 
+                }
+            }
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+	            communism = 100
+            }
+            set_politics = {   #设置意识形态
+                ruling_party = communism
+                #last_election = "1932.5.1"   #上次大选
+                #election_frequency = 48    #选举频率
+                elections_allowed = yes   
+            }
+			set_cosmetic_tag = CHI_yiyongjun				
+		division_template = {
+					name = "民兵团"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}										   
+		    524 = {
+				create_unit = {
+				division = "name = \"民兵部队\" division_template = \"民兵团\" start_experience_factor = 0.2 "
+				owner = CHI
+				count = 6
+			    }
+			}										   			
+                }
+			524 = {
+				add_core_of = CHI
+			}				
+                set_autonomy = { target = CHI autonomy_state = PRC_dihouwuzhuang freedom_level = 0.50}
+		    hidden_effect = {               
+				play_song = "台湾义勇队队歌"       
+                    }
+                    }
+               }
+	prc_hebingtaiwan = {
+		fire_only_once = yes
+		days_remove = 7		
+		remove_effect = {
+		PRC = {
+	        annex_country = { target = CHI transfer_troops = yes }
+			524 = {
+				add_core_of = PRC
+			}			   
+					}	
+		}
+		available = {
+	    NOT = { has_war_with = JAP }
+		}
+	}			   
+}

@@ -1,0 +1,6 @@
+ai_historical_focus_list_NEA = {
+	ai_national_focuses = {
+		nea_xian_incident
+		CHI_cooperation_with_the_nationalists
+	}
+}

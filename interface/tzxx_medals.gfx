@@ -1,0 +1,32 @@
+
+
+###### 太祖雄心-Medals #######
+
+spriteTypes = {
+    spriteType = {
+		name = "GFX_PRC_medal_1"
+		texturefile = "gfx/interface/medals/PRC_medal_1.dds"
+	}
+    spriteType = {
+		name = "GFX_PRC_medal_2"
+		texturefile = "gfx/interface/medals/PRC_medal_2.dds"
+	}
+    spriteType = {
+		name = "GFX_PRC_medal_3"
+		texturefile = "gfx/interface/medals/PRC_medal_3.dds"
+	}
+    spriteType = {
+		name = "GFX_PRC_medal_4"
+		texturefile = "gfx/interface/medals/PRC_medal_4.dds"
+	}
+	spriteType = {
+		name = "GFX_medal_icon_prc"
+		texturefile = "gfx/interface/medals/prc_medal_strip.dds"
+		noOfFrames = 4
+    }
+	spriteType = {
+		name = "GFX_medal_icon_prc_large"
+		texturefile = "gfx/interface/medals/prc_medal_strip_large.dds"
+		noOfFrames = 4
+    }
+}

@@ -1,0 +1,137 @@
+ideas = {
+
+	naval_manufacturer = {
+		
+		designer = yes
+		
+		irrawaddy_flottila_company = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+			picture = irrawaddy_flottila_company
+						
+			research_bonus = {
+				naval_equipment = 0.10
+			}
+			
+			traits = { convoy_escort_naval_manufacturer }
+
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+
+	aircraft_manufacturer = {
+			
+		designer = yes
+		
+		hawker_BUR = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+			
+			picture = hawker
+			
+			research_bonus = {
+				air_equipment = 0.15
+			}
+			
+			traits = { CAS_manufacturer } 
+			
+			ai_will_do = {
+				factor = 1
+			}
+		}				
+	}
+	
+	industrial_concern = {
+		
+		burmah_oil_company = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			picture = burmah_oil_company
+			
+			research_bonus = {
+				industry = 0.05
+				synth_resources = 0.15
+			}
+			
+			traits = { refinery_concern }
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+		
+		umfcci = {
+			
+			allowed = {
+				original_tag = BUR
+			}
+			
+			picture = umfcci
+			
+			research_bonus = {
+				industry = 0.15
+				
+			}
+			
+			traits = { industrial_concern }	
+			
+			ai_will_do = {
+				factor = 0.5
+			}
+		}
+	}
+		
+	materiel_manufacturer = {
+			
+		designer = yes
+		
+		rangoon_arsenal = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+
+			picture = rangoon_arsenal
+			
+			research_bonus = {
+				infantry_weapons = 0.05
+				artillery = 0.05
+			}
+			
+			traits = { artillery_manufacturer }
+			
+			modifier = {
+			}
+		}
+	}
+		
+	tank_manufacturer = {
+		vickers_armstrong_BUR = {
+			
+			allowed = {
+				original_TAG = BUR
+			}
+			
+			picture = vickers_armstrong_eng
+			
+			research_bonus = {
+				armor = 0.15
+			}
+			
+			traits = { fast_tank_manufacturer }
+			
+			ai_will_do = {
+			factor = 1
+			}
+		}
+	}
+}

@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_switch_city_names_button"
+		texturefile = "gfx/interface/switch_city_names_button.dds"
+		noOfFrames = 2
+	}
+}

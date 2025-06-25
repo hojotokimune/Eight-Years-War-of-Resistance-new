@@ -1,0 +1,70 @@
+
+#### Inner Circle Assets ####
+
+spriteTypes = {	
+
+	### Fhurer Assets ###
+	spriteType = {
+		name = "Portrait_JIANG"
+		texturefile = "gfx/interface/inner_circle/Portrait_JIANG.dds"
+	}
+	spriteType = {
+		name = "portrait_chi_he_yingqin_HX"
+		texturefile = "gfx/interface/inner_circle/portrait_chi_he_yingqin.dds"
+	}
+	spriteType = {
+		name = "CHI_song_ziwen"
+		texturefile = "gfx/interface/inner_circle/CHI_song_ziwen.png"
+	}
+	spriteType = {
+		name = "YUN_chen_cheng"
+		texturefile = "gfx/interface/inner_circle/YUN_chen_cheng.png"
+	}
+	spriteType = {
+		name = "Portrait_KMT_Chiang_Ching_kuo"
+		texturefile = "gfx/interface/inner_circle/Portrait_KMT_Chiang_Ching_kuo.png"
+	}
+	spriteType = {
+		name = "YUN_chen_guofu"
+		texturefile = "gfx/interface/inner_circle/YUN_chen_guofu.png"
+	}
+	spriteType = {
+		name = "Portrait_CHI_Dai_Chunfeng"
+		texturefile = "gfx/interface/inner_circle/Portrait_CHI_Dai_Chunfeng.png"
+	}
+	spriteType = {
+		name = "idea_chi_chen_cheng"
+		texturefile = "gfx/interface/inner_circle/idea_chi_chen_cheng.dds"
+	}
+	spriteType = {
+		name = "idea_chi_chiang_ching_kuo"
+		texturefile = "gfx/interface/inner_circle/idea_chi_chiang_ching_kuo.dds"
+	}
+	spriteType = {
+		name = "idea_chi_chen_guofu"
+		texturefile = "gfx/interface/inner_circle/idea_chi_chen_guofu.dds"
+	}
+	spriteType = {
+		name = "idea_chi_dai_li"
+		texturefile = "gfx/interface/inner_circle/idea_chi_dai_li.dds"
+	}
+	spriteType = {
+		name = "idea_chi_he_yingqin"
+		texturefile = "gfx/interface/inner_circle/idea_chi_he_yingqin.dds"
+	}
+	spriteType = {
+		name = "idea_chi_t_v_soong"
+		texturefile = "gfx/interface/inner_circle/idea_chi_t_v_soong.dds"
+	}
+	spriteType = {
+		name = "idea_chi_h_h_kung"
+		texturefile = "gfx/interface/inner_circle/idea_chi_h_h_kung.dds"
+	}
+	spriteType = {
+		name = "chi_h_h_kung"
+		texturefile = "gfx/interface/inner_circle/chi_h_h_kung.png"
+	}
+	
+
+
+}

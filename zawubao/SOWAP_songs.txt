@@ -1,0 +1,2257 @@
+music_station = "SOWAP"
+
+music = {
+	song = "Bella_ciao"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+		}
+	}
+}
+music = {
+	song = "101"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "102"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "103"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "104"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "105"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "106"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "107"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "108"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "109"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "110"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "111"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "112"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "113"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "114"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "115"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "116"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "117"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "118"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "119"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "120"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "121"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "122"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "123"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "124"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "125"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "126"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+				}
+	}
+}
+music = {
+	song = "127"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "128"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "129"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "130"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "131"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "132"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "133"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "134"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+
+music = {
+	song = "135"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "136"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "137"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "138"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "139"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "140"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "141"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "142"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "143"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "144"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "145"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "146"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "147"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "148"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "149"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "150"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "151"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "152"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "153"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "154"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "155"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "156"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "157"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "158"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "159"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "160"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "161"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "162"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "163"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "164"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "165"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "166"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "167"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "168"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "169"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "170"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "171"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "172"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "173"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "174"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "175"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "176"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "177"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "178"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "179"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "180"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "181"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "182"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "183"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "184"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "185"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "186"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "187"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "188"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "189"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "190"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "191"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "192"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "193"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "194"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "195"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "196"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "197"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "198"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "199"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "200"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "201"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "202"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "203"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "204"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "205"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "206"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "207"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "208"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "209"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+music = {
+	song = "210"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "211"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "212"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "213"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "214"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "215"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "216"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "217"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "218"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "219"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "220"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "221"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "222"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "223"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "224"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "225"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "226"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "227"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "228"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "229"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "230"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "231"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "232"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "233"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "234"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "235"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "236"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "237"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "238"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "239"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "240"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "241"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "242"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "243"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "244"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "245"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "246"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "247"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "248"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "249"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "250"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "251"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "252"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "253"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "254"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "255"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "256"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "257"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "258"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "259"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "260"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "261"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "262"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "263"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "264"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "265"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "266"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "267"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "268"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "269"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "270"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "271"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "272"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "273"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "274"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "275"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "276"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "277"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "278"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "279"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "280"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "281"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "282"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "283"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "284"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "285"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "286"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "287"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "288"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "289"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "290"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "291"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "292"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "293"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "294"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "295"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "296"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "297"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "298"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "299"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "300"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "301"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "302"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "303"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "304"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "305"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "306"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "307"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "308"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "309"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "310"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "311"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "312"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "313"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "314"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "315"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "316"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "317"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "318"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "319"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "320"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "321"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+music = {
+	song = "322"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+ music = {
+	song = "323"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "324"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "325"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "326"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "327"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "328"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "329"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "330"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "331"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "332"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "333"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "334"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "335"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "336"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "337"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "338"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "339"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "340"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "341"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+ music = {
+	song = "342"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+ music = {
+	song = "343"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}
+ music = {
+	song = "344"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}	
+ music = {
+	song = "345"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}		 
+ music = {
+	song = "346"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}		 
+ music = {
+	song = "347"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}		
+ music = {
+	song = "348"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}				
+ music = {
+	song = "349"
+
+	chance = {
+		modifier = {
+			factor = 3 TAG = PRC has_government = communism
+			}
+	}
+}				
+ 
+ 
+
+

@@ -1,0 +1,8 @@
+spriteTypes = {
+
+	spriteType = {
+		name = "GFX_nea_album_art"
+		texturefile = "gfx/nea_album_art.dds"
+		noOfFrames = 2
+	}
+}

@@ -1,0 +1,14 @@
+Foreign_Sup_category = {
+
+	icon = idkman
+
+	allowed = {
+		  original_tag = CHI
+                     }
+	available = {
+                      }
+                    visible = {
+                          has_completed_focus = CHI_reorganization_our_armed_forces
+		}
+
+}

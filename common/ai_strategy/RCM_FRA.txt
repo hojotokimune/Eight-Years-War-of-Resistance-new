@@ -1,0 +1,33 @@
+# befriend
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect
+# influence
+
+leon_bum_dont_hate_uk = {
+	enable = {
+		tag = FRA
+		has_completed_focus = FRA_go_with_britain
+		country_exists = ENG
+	}
+	abort = {
+		NOT = { country_exists = ENG }
+	}
+	
+	ai_strategy = {
+		type = befriend
+		id = "ENG"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 800
+	}	
+}

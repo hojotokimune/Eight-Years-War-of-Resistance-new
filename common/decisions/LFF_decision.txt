@@ -1,0 +1,811 @@
+laissez_faire_cat = {
+	Funding_embrace_1 = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			NOT = { has_idea = chi_fubai }		
+			num_of_civilian_factories > 10
+		}
+		visible = {
+			has_country_flag = lf_lv0
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 25
+		complete_effect = {
+        add_timed_idea = { 
+			idea = chi_fubai
+			days = 365
+            }		
+			clr_country_flag = lf_lv0			
+			set_country_flag = lf_lv1
+			add_to_variable = {
+				LFdate = -10
+			}
+			add_days_mission_timeout = {
+				mission = GUAY_land_owners_finding_funding_for_other
+				days = -15
+			}
+		}
+	}
+	Funding_embrace_2 = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			NOT = { has_idea = chi_fubai }		
+			num_of_civilian_factories > 15
+		}
+		visible = {
+			has_country_flag = lf_lv1
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 50
+		complete_effect = {
+        add_timed_idea = { 
+			idea = chi_fubai
+			days = 365
+            }		
+			clr_country_flag = lf_lv1
+			set_country_flag = lf_lv2
+			add_to_variable = {
+				LFdate = -15
+			}
+			add_days_mission_timeout = {
+				mission = GUAY_land_owners_finding_funding_for_other
+				days = -10
+			}
+		}
+	}
+	Funding_embrace_3 = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			NOT = { has_idea = chi_fubai }		
+			num_of_civilian_factories > 25
+		}
+		visible = {
+			has_country_flag = lf_lv2
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 100
+		complete_effect = {
+        add_timed_idea = { 
+			idea = chi_fubai
+			days = 365
+            }		
+			clr_country_flag = lf_lv2
+			set_country_flag = lf_lv3
+			add_to_variable = {
+				LFdate = -10
+			}
+			add_days_mission_timeout = {
+				mission = GUAY_land_owners_finding_funding_for_other
+				days = -15
+			}
+		}
+	}
+	Stop_funding_embrace_arms = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			has_country_flag = embrace_arms
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_arms
+		}
+	}
+	Stop_funding_embrace_dock = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			has_country_flag = embrace_dock
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_dock
+		}
+	}
+	Stop_funding_embrace_abase = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			
+				has_country_flag = embrace_air_base
+			
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_air_base
+		}
+	}
+	Stop_funding_embrace_aair = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+			
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			
+				has_country_flag = embrace_anti_airs
+			
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_anti_airs
+		}
+	}
+	Stop_funding_embrace_istru = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+			
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			
+				has_country_flag = embrace_infrastructure
+		
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_infrastructure	
+		}
+	}
+	Stop_funding_embrace_radarstation = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+			
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			
+				has_country_flag = embrace_radar_station
+			
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_radar_station
+		}
+	}
+	Stop_funding_embrace_supply = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			
+				has_country_flag = embrace_supply_node
+			
+			has_country_flag = start_laissez_faire
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			
+			clr_country_flag = embrace_supply_node
+		}
+	}
+	Stop_funding_embrace_slot = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			
+				has_country_flag = embrace_slot
+			
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_slot
+		}
+	}
+	Stop_funding_embrace_civil = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			
+				has_country_flag = embrace_civilian
+			
+			has_country_flag = start_laissez_faire
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 10
+		complete_effect = {
+			clr_country_flag = embrace_civilian
+		}
+	}
+	Funding_embrace_arms = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_arms
+			}
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_arms
+		}
+	}
+	Funding_embrace_dock = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_dock
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_dock
+		}
+	}
+	Funding_embrace_abase = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_air_base
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_air_base
+		}
+	}
+	Funding_embrace_aair = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+			
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_anti_airs
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_anti_airs
+		}
+	}
+	Funding_embrace_istru = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+			
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_infrastructure
+			}
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_infrastructure	
+		}
+	}
+	Funding_embrace_radarstation = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+			
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_radar_station
+			}
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_radar_station
+		}
+	}
+	Funding_embrace_supply = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			not = {
+				has_country_flag = embrace_supply_node
+			}
+			has_country_flag = start_laissez_faire
+		}
+		ai_will_do = {
+            factor = 0
+        }
+		cost = 50
+		complete_effect = {
+
+			set_country_flag = embrace_supply_node
+		}
+	}
+	Funding_embrace_slot = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+			not = {
+				has_country_flag = embrace_slot
+			}
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_slot
+		}
+	}
+	Funding_embrace_civil = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			not = {
+				has_country_flag = embrace_civilian
+			}
+			has_country_flag = start_laissez_faire
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 50
+		complete_effect = {
+			set_country_flag = embrace_civilian
+		}
+	}
+	Funding_embrace_4 = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		available = {
+			num_of_civilian_factories > 50
+		}
+		visible = {
+			has_country_flag = lf_lv3
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 100
+		complete_effect = {
+        add_timed_idea = { 
+			idea = chi_fubai
+			days = 365
+            }		
+			clr_country_flag = lf_lv3
+			set_country_flag = lf_lv4
+			add_to_variable = {
+				LFdate = -30
+			}
+			add_days_mission_timeout = {
+				mission = GUAY_land_owners_finding_funding_for_other
+				days = -30
+			}
+		}
+	}
+	START_funding_for_other = {
+		fire_only_once = no
+		allowed = {
+			always = yes
+		}
+		visible = {
+			not = {
+				has_country_flag = start_laissez_faire
+			}
+		}
+		ai_will_do = {
+            factor = 50
+        }
+		cost = 10
+		complete_effect = {
+			set_country_flag = lf_lv0
+			set_country_flag = start_laissez_faire
+			set_variable = {
+				LFdate = 120
+			}
+			activate_mission = GUAY_land_owners_finding_funding_for_other
+		}
+	}
+	GUAY_land_owners_finding_funding_for_other = {
+		fire_only_once = no
+		icon = GFX_decision_gre_paying_ifc_debt
+		allowed = {
+		}
+		visible = {
+			has_country_flag = start_laissez_faire
+		}
+		is_good = yes
+		available = { 
+                                             NOT = {
+                                         tag = CHI
+                                                     }
+                            }
+		ai_will_do = {
+            factor = 50
+        }
+		activation = {
+			always = no
+		}
+		days_mission_timeout = ROOT.LFdate
+		complete_effect = {
+			clr_country_flag = start_laissez_faire
+		}
+		timeout_effect = {
+
+			custom_effect_tooltip = GUAY_laissez_faire_stats
+
+			random_state = {
+				limit = {
+					is_controlled_by = ROOT
+					impassable = no
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+					}
+				}
+				random_list = {
+					seed = random 
+					1.5 = {
+						modifier = {
+							free_building_slots = {
+								building = industrial_complex
+								size < 1
+							}
+							factor = 0
+						}
+						modifier = {
+							ROOT = {
+								has_completed_focus = GUAY_empower_the_land_owners
+							}
+							factor = 2.5
+						}
+						modifier = {
+							has_variable = ROOT.is_literally_not_a_factory
+							add = var:ROOT.is_literally_not_a_factory
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_civilian
+							}
+							factor = 8
+						}
+						if = {
+							limit = {
+								has_variable = ROOT.is_literally_not_a_factory
+							}
+							clear_variable = ROOT.is_literally_not_a_factory
+						}
+						add_building_construction = {
+							type = industrial_complex
+							level = 1
+							instant_build = yes
+						}
+
+						ROOT = { add_to_variable = { built_a_civ = 1 } }
+					}
+					1.5 = {
+						modifier = {
+							free_building_slots = {
+								building = arms_factory
+								size < 1  
+							}
+							factor = 0
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_arms
+							}
+							factor = 8
+						}
+						modifier = {
+							has_variable = ROOT.is_literally_not_a_factory
+							add = var:ROOT.is_literally_not_a_factory
+						}
+						if = {
+							limit = {
+								has_variable = ROOT.is_literally_not_a_factory
+							}
+							clear_variable = ROOT.is_literally_not_a_factory
+						}
+
+						add_building_construction = {
+							type = arms_factory
+							level = 1
+							instant_build = yes
+						}
+
+						ROOT = { add_to_variable = { built_a_mil = 1 } }
+					}
+					2 = {
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_dock
+							}
+							factor = 8
+						}
+						modifier = {
+							free_building_slots = {
+								building = dockyard
+								size < 1 
+							}
+							factor = 0
+						}
+						modifier = {
+							ROOT = {
+								any_core_state = {
+									is_coastal = no
+								}
+							}
+							factor = 0
+						}
+						add_building_construction = {
+							type = dockyard
+							level = 1
+							instant_build = yes
+						}
+						modifier = {
+							ROOT = {
+								has_completed_focus = GUAY_empower_the_land_owners
+							}
+							factor = 2.5
+						}
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.1 }
+						ROOT = { add_to_variable = { built_a_dockyard = 1 } }
+					}
+					3 = {
+						modifier = {
+							infrastructure > 4
+							factor = 0
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_infrastructure
+							}
+							factor = 8
+						}
+						add_building_construction = {
+							type = infrastructure
+							level = 1
+							instant_build = yes
+						}
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.15 }
+						ROOT = { add_to_variable = { built_a_infra = 1 } }
+					}
+					3 = {
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_air_base
+							}
+							factor = 8
+						}
+						modifier = {
+							air_base > 9
+							factor = 0
+						}
+						add_building_construction = {
+							type = air_base
+							level = 1
+							instant_build = yes
+						}
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.25 }
+						ROOT = { add_to_variable = { built_an_airbase = 1 } }
+					}
+
+					3 = {
+						modifier = {
+							anti_air_building > 4
+							factor = 0
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_anti_airs
+							}
+							factor = 8
+						}
+						modifier = {
+							ROOT = { NOT = {  has_tech = interwar_antiair } }
+							factor = 0
+						}
+						add_building_construction = {
+							type = anti_air_building
+							level = 1
+							instant_build = yes
+						}
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.2 }
+						ROOT = { add_to_variable = { built_an_aa = 1 } }
+					}
+
+					2 = {
+						modifier = {
+							radar_station > 4
+							factor = 0
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_radar_station
+							}
+							factor = 8
+						}
+						modifier = { #level 1
+							ROOT = { NOT = {  has_tech = radio_detection } }
+							factor = 0
+						}
+
+						modifier = { #level 2
+							radar_station > 0
+							ROOT = { NOT = {  has_tech = decimetric_radar } }
+							factor = 0
+						}
+
+						modifier = { #level 3
+							radar_station > 2
+							ROOT = { NOT = {  has_tech = improved_decimetric_radar } }
+							factor = 0
+						}
+
+						modifier = { #level 4
+							radar_station > 3
+							ROOT = { NOT = {  has_tech = centimetric_radar } }
+							factor = 0
+						}
+						modifier = { #level 5
+							radar_station > 4
+							ROOT = { NOT = {  has_tech = improved_centimetric_radar } }
+							factor = 0
+						}
+
+						modifier = { #level 6
+							radar_station > 4
+							ROOT = { NOT = {  has_tech = advanced_centimetric_radar } }
+							factor = 0
+						}
+
+						add_building_construction = {
+							type = radar_station
+							level = 1
+							instant_build = yes
+						}
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.25 }
+						ROOT = { add_to_variable = { built_a_radar = 1 } }
+					}
+
+					0.1 =	{
+						add_building_construction = {
+							type = supply_node
+							province = {
+								all_provinces = yes
+							}
+							level = 1
+							instant_build = yes
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_supply_node
+							}
+							factor = 8
+						}
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.2 }
+						ROOT = { add_to_variable = { built_a_hub = 1 } }
+					}
+
+					2 = {
+						modifier = {
+							free_building_slots = {
+								building = industrial_complex
+								size < 1 
+							}
+							factor = 2
+						}
+						modifier = {
+							ROOT = {
+								has_country_flag = embrace_slot
+							}
+							factor = 8
+						}
+						modifier = {
+							ROOT = {
+								has_completed_focus = GUAY_empower_the_land_owners
+							}
+							factor = 2.5
+						}
+						add_extra_state_shared_building_slots = 1
+						add_to_variable = { ROOT.is_literally_not_a_factory = 0.1 }
+						ROOT = { add_to_variable = { added_slot = 1 } }
+
+					}
+				}
+					
+			}
+			activate_mission = GUAY_land_owners_finding_funding_for_other
+		}
+	}
+}

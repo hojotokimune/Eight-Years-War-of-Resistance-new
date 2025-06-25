@@ -1,0 +1,17 @@
+guiTypes = {
+	containerWindowType = {
+		name = "switch_city_names_container"
+		position = { x=-371 y=7 }
+		orientation = upper_right
+
+		buttonType = {
+			name = "switch_city_names_button"
+			position = { x = 0 y = 0 }
+			quadTextureSprite = "GFX_switch_city_names_button"
+			clicksound = click_ok
+			oversound = ui_menu_over
+			pdx_tooltip = switch_city_names_button_tooltip
+			pdx_tooltip_delayed = switch_city_names_button_tooltip_desc
+		}
+	}
+} 

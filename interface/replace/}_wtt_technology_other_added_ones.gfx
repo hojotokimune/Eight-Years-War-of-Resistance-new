@@ -1,0 +1,1945 @@
+SpriteTypes = {
+	#XIK ones
+	SpriteType = {	name = "GFX_XIK_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_XIK_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_XIK_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_XIK_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_XIK_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_XIK_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_XIK_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_XIK_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_XIK_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIK_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIK_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_XIK_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_XIK_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_XIK_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIK_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIK_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_XIK_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_XIK_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_XIK_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_XIK_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIK_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIK_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIK_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_XIK_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_XIK_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_XIK_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_XIK_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_XIK_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_XIK_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_XIK_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIK_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_XIK_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_XIK_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIK_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_XIK_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIK_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIK_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_XIK_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_XIK_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_XIK_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_XIK_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIK_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_XIK_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_XIK_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIK_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIK_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_XIK_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_XIK_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_XIK_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_XIK_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #
+	#SIC ones
+	SpriteType = {	name = "GFX_SIC_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_SIC_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_SIC_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SIC_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_SIC_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_SIC_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_SIC_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_SIC_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SIC_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SIC_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SIC_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SIC_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_SIC_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_SIC_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_SIC_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_SIC_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_SIC_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_SIC_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_SIC_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_SIC_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SIC_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_SIC_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SIC_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_SIC_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_SIC_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_SIC_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SIC_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SIC_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SIC_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_SIC_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_SIC_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_SIC_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_SIC_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SIC_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_SIC_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_SIC_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SIC_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_SIC_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_SIC_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SIC_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SIC_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SIC_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_SIC_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_SIC_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SIC_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SIC_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_SIC_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_SIC_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIC_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SIC_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #
+	#HPC ones
+	SpriteType = {	name = "GFX_HPC_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_HPC_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_HPC_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_HPC_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_HPC_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_HPC_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_HPC_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_HPC_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_HPC_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_HPC_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_HPC_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_HPC_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_HPC_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_HPC_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_HPC_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_HPC_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_HPC_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_HPC_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_HPC_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_HPC_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_HPC_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_HPC_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_HPC_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_HPC_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_HPC_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_HPC_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_HPC_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_HPC_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_HPC_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_HPC_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_HPC_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_HPC_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_HPC_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_HPC_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_HPC_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_HPC_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_HPC_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_HPC_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_HPC_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_HPC_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_HPC_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_HPC_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_HPC_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_HPC_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_HPC_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_HPC_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_HPC_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_HPC_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HPC_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_HPC_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #
+	#NEA ones
+	SpriteType = {	name = "GFX_NEA_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_NEA_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_NEA_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_NEA_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_NEA_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_NEA_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_NEA_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_NEA_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_NEA_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_NEA_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_NEA_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_NEA_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_NEA_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_NEA_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_NEA_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_NEA_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_NEA_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_NEA_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_NEA_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_NEA_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_NEA_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_NEA_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_NEA_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_NEA_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_NEA_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_NEA_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_NEA_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_NEA_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_NEA_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_NEA_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_NEA_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_NEA_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_NEA_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_NEA_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_NEA_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_NEA_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_NEA_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_NEA_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_NEA_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_NEA_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_NEA_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_NEA_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_NEA_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_NEA_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_NEA_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_NEA_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_NEA_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        SpriteType = {
+		name = "GFX_NEA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_NEA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #
+ 
+	#SHC ones
+	SpriteType = {	name = "GFX_SHC_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_SHC_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_SHC_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SHC_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_SHC_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_SHC_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_SHC_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_SHC_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SHC_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHC_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHC_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SHC_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_SHC_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_SHC_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHC_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHC_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_SHC_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_SHC_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_SHC_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_SHC_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHC_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHC_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHC_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_SHC_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_SHC_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_SHC_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SHC_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SHC_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SHC_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_SHC_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHC_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_SHC_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_SHC_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHC_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_SHC_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHC_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHC_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_SHC_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+	#IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_SHC_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SHC_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SHC_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHC_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_SHC_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_SHC_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHC_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHC_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_SHC_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_SHC_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SHC_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SHC_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #
+
+        #SHD ones
+	SpriteType = {	name = "GFX_SHD_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_SHD_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_SHD_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SHD_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_SHD_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_SHD_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_SHD_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_SHD_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SHD_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHD_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHD_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SHD_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_SHD_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_SHD_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHD_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHD_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_SHD_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_SHD_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_SHD_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_SHD_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHD_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHD_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHD_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_SHD_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_SHD_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_SHD_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SHD_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SHD_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SHD_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_SHD_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHD_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_SHD_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_SHD_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHD_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_SHD_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_SHD_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHD_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_SHD_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_SHD_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SHD_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SHD_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SHD_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_SHD_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_SHD_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SHD_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SHD_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_SHD_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_SHD_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SHD_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SHD_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #
+	#PLM ones
+	SpriteType = {	name = "GFX_PLM_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_PLM_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_PLM_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_PLM_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_PLM_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_PLM_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_PLM_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_PLM_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_PLM_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_PLM_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_PLM_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_PLM_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_PLM_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_PLM_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_PLM_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_PLM_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_PLM_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_PLM_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_PLM_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_PLM_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_PLM_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_PLM_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_PLM_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_PLM_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_PLM_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_PLM_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_PLM_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_PLM_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_PLM_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_PLM_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_PLM_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_PLM_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_PLM_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_PLM_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_PLM_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_PLM_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_PLM_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_PLM_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_PLM_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_PLM_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_PLM_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_PLM_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_PLM_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_PLM_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_PLM_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_PLM_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_PLM_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_PLM_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PLM_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_PLM_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #SUY ones
+	SpriteType = {	name = "GFX_SUY_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_SUY_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_SUY_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SUY_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_SUY_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_SUY_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_SUY_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_SUY_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SUY_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SUY_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SUY_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SUY_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_SUY_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_SUY_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_SUY_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_SUY_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_SUY_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_SUY_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_SUY_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_SUY_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SUY_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_SUY_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SUY_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_SUY_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_SUY_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_SUY_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_SUY_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SUY_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_SUY_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_SUY_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_SUY_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_SUY_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_SUY_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SUY_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_SUY_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_SUY_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SUY_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_SUY_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_SUY_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_SUY_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_SUY_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_SUY_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_SUY_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_SUY_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_SUY_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_SUY_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_SUY_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        SpriteType = {
+		name = "GFX_SUY_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SUY_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_SUY_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #XIA
+        SpriteType = {	name = "GFX_XIA_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_advanced_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_light_td_medium" texturefile = "gfx/interface/technologies/chi_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_adv_medium_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_artillery1_medium" texturefile = "gfx/interface/technologies/chi_artillery_2.dds" }
+	SpriteType = {	name = "GFX_XIA_artillery4_medium" texturefile = "gfx/interface/technologies/chi_artillery_3.dds" }
+	SpriteType = {	name = "GFX_XIA_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_basic_light_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_basic_medium_art_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank_spa.dds" }
+	SpriteType = {	name = "GFX_XIA_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_basic_medium_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	SpriteType = {	name = "GFX_XIA_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	SpriteType = {	name = "GFX_XIA_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	SpriteType = {	name = "GFX_XIA_early_bomber_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+	SpriteType = {	name = "GFX_XIA_early_fighter_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_XIA_fighter1_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIA_fighter2_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIA_fighter3_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_XIA_gw_artillery_medium" texturefile = "gfx/interface/technologies/chi_artillery_1.dds" }
+	SpriteType = {	name = "GFX_XIA_gwtank_medium" texturefile = "gfx/interface/technologies/chi_gwtank.dds" }
+	SpriteType = {	name = "GFX_XIA_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIA_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIA_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_improved_infantry_weapons.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_light_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/chi_imp_medium_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_infantry_weapons_medium" texturefile = "gfx/interface/technologies/chi_basic_equipment.dds" }
+	SpriteType = {	name = "GFX_XIA_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/chi_infantry_weapons1.dds" }
+	SpriteType = {	name = "GFX_XIA_interwar_antiair_medium" texturefile = "gfx/interface/technologies/CHI_AA_1.dds" }
+	SpriteType = {	name = "GFX_XIA_interwar_antitank_medium" texturefile = "gfx/interface/technologies/CHI_AT_1.dds" }
+	SpriteType = {	name = "GFX_XIA_jet_fighter1_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIA_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIA_jet_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIA_main_battle_tank_medium" texturefile = "gfx/interface/technologies/CHI_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_XIA_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry2.dds" }
+	SpriteType = {	name = "GFX_XIA_mechanised_infantry3_medium" texturefile = "gfx/interface/technologies/chi_mechanised_infantry3.dds" }
+	SpriteType = {	name = "GFX_XIA_modern_art_medium" texturefile = "gfx/interface/technologies/chi_main_battle_tank_spa.dds" }
+	SpriteType = {	name = "GFX_XIA_motorised_infantry_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_XIA_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/chi_motorised_infantry.dds" }
+	SpriteType = {	name = "GFX_XIA_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/chi_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_XIA_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIA_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_XIA_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/CHI_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_XIA_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIA_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_XIA_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/chi_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_XIA_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIA_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_XIA_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/chi_transport_plane_equipment.dds" }
+	#
+        SpriteType = {
+		name = "GFX_XIA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/chi_mechanised_infantry.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_XIA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_XIA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/usa_armored_car_equipment_3.dds"
+	}
+        #BBA
+        #SpriteType = {	name = "GFX_XIA_CAS1_medium" texturefile = "gfx/interface/technologies/chi_cas1.dds" }
+	#SpriteType = {	name = "GFX_XIA_CAS2_medium" texturefile = "gfx/interface/technologies/chi_cas2.dds" }
+	#SpriteType = {	name = "GFX_XIA_CAS3_medium" texturefile = "gfx/interface/technologies/chi_cas3.dds" }
+	#SpriteType = {	name = "GFX_XIA_jet_fighter2_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter2.dds" }
+	#SpriteType = {	name = "GFX_XIA_jet_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber2.dds" }
+        #SpriteType = {	name = "GFX_XIA_naval_bomber1_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber1.dds" }
+	#SpriteType = {	name = "GFX_XIA_naval_bomber2_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber2.dds" }
+	#SpriteType = {	name = "GFX_XIA_naval_bomber3_medium" texturefile = "gfx/interface/technologies/chi_naval_bomber3.dds" }
+        #SpriteType = {	name = "GFX_XIA_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter2.dds" }
+	#SpriteType = {	name = "GFX_XIA_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/chi_heavy_fighter3.dds" }
+        #IW heavy is generic
+        #BBA
+        SpriteType = {	name = "GFX_XIA_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_fighter.dds" }
+	SpriteType = {	name = "GFX_XIA_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter2.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_fighter3.dds" }
+	SpriteType = {	name = "GFX_XIA_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_XIA_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_early_bomber.dds" }
+        SpriteType = {	name = "GFX_XIA_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_XIA_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_XIA_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_XIA_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_strategic_bomber3.dds" }
+        SpriteType = {	name = "GFX_XIA_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/chi_jet_strategic_bomber1.dds" }
+        #
+        #MON and Tan
+        SpriteType = {
+		name = "GFX_MON_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+        
+        SpriteType = {
+		name = "GFX_MON_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+
+        SpriteType = {
+		name = "GFX_MON_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_CAS1_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_CAS2_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_CAS3_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MON_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber3.dds"
+	}	
+
+	
+	SpriteType = {
+		name = "GFX_MON_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MON_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_fighter.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_bomber.dds"
+	}
+	
+        SpriteType = {
+		name = "GFX_MON_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_1.dds"
+	}	
+
+        SpriteType = {
+		name = "GFX_MON_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_MON_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_spart.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+
+        SpriteType = {
+		name = "GFX_MON_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MON_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_medium_plane_1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_MON_iw_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_transport_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_MON_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_MON_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_plane_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_railway_gun_medium"
+		texturefile = "gfx/interface/technologies/SOV_railway_gun.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_basic_train_medium"
+		texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/SOV_train_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_armored_train_medium"
+		texturefile = "gfx/interface/technologies/SOV_train_equipment_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/sov_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_jet_plane_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_MON_heavy_plane_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_plane_1.dds"
+	}
+        #LAR
+	SpriteType = {
+		name = "GFX_MON_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MON_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/sov_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/sov_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MON_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/sov_armored_car_equipment_3.dds"
+	}
+        #TAN
+        SpriteType = {
+		name = "GFX_TAN_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_0.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/SOV_infantry_equipment_2.dds"
+	}
+        SpriteType = {
+		name = "GFX_TAN_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_CAS1_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_CAS2_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_CAS3_medium"
+		texturefile = "gfx/interface/technologies/SOV_CAS3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_fighter3.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_TAN_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/SOV_naval_bomber3.dds"
+	}	
+
+	
+	SpriteType = {
+		name = "GFX_TAN_fighter1_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_fighter2_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_TAN_fighter3_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_fighter.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_bomber.dds"
+	}
+        SpriteType = {
+		name = "GFX_TAN_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_motorized_equipment_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_motorised_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/SOV_mechanized_equipment_1.dds"
+	}	
+
+        SpriteType = {
+		name = "GFX_TAN_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_TAN_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_improved_heavy_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_heavy_spart.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_improved_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_advanced_medium_td_medium"
+		texturefile = "gfx/interface/technologies/SOV_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_improved_medium_art_medium"
+		texturefile = "gfx/interface/technologies/SOV_imp_main_tank.dds"
+	}
+        
+        SpriteType = {
+		name = "GFX_TAN_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_tactical_bomber3.dds"
+	}	
+	SpriteType = {
+		name = "GFX_TAN_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_medium_plane_1.dds"
+	}	
+	SpriteType = {
+		name = "GFX_TAN_iw_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_transport_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TAN_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TAN_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_plane_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_railway_gun_medium"
+		texturefile = "gfx/interface/technologies/SOV_railway_gun.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_basic_train_medium"
+		texturefile = "gfx/interface/technologies/SOV_train_equipment_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_wartime_train_medium"
+		texturefile = "gfx/interface/technologies/SOV_train_equipment_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_armored_train_medium"
+		texturefile = "gfx/interface/technologies/SOV_train_equipment_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_basic_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_improved_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_advanced_light_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_light_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_basic_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_improved_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_advanced_medium_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_medium_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_basic_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_improved_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_2.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_advanced_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_tank_chassis_3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_super_heavy_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_superheavy_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_main_battle_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/SOV_main_battle_tank.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_amphibious_tank_chassis_medium"
+		texturefile = "gfx/interface/technologies/sov_amphibious_tank_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_jet_plane_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_jet_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TAN_heavy_plane_1_medium"
+		texturefile = "gfx/interface/technologies/SOV_heavy_plane_1.dds"
+	}
+        #LAR
+	SpriteType = {
+		name = "GFX_TAN_scout_plane1_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_scout_plane2_medium"
+		texturefile = "gfx/interface/technologies/sov_scout_plane_2.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TAN_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/sov_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/sov_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TAN_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/sov_armored_car_equipment_3.dds"
+	}
+
+        #TIB ones
+	#infantry, TFV DLC required i think
+	SpriteType = {
+		name = "GFX_TIB_infantry_weapons1_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_1.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TIB_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/ENG_infantry_equipment_3.dds"
+	}
+        #
+        SpriteType = {
+		name = "GFX_TIB_rocket_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_2_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_rocket_artillery_medium"
+		texturefile = "gfx/interface/technologies/Rocket_Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_artillery4_medium"
+		texturefile = "gfx/interface/technologies/Art_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_artillery1_medium"
+		texturefile = "gfx/interface/technologies/Art_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_gw_artillery_medium"
+		texturefile = "gfx/interface/technologies/Art_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_antitank5_medium"
+		texturefile = "gfx/interface/technologies/AT_3_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_antitank2_medium"
+		texturefile = "gfx/interface/technologies/AT_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_interwar_antitank_medium"
+		texturefile = "gfx/interface/technologies/AT_1_allies.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_antiair5_medium"
+		texturefile = "gfx/interface/technologies/AA_3_allies.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TIB_antiair2_medium"
+		texturefile = "gfx/interface/technologies/AA_2_allies.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_interwar_antiair_medium"
+		texturefile = "gfx/interface/technologies/AA_1_allies.dds"
+	}	
+	
+#	SpriteType = {
+#		name = "GFX_TIB_artillery_equipment_medium"
+#		texturefile = "gfx/interface/technologies/ENG_artillery_equipment.dds"
+#	}	
+	
+	### ENG aircraft ###	
+
+	SpriteType = {
+		name = "GFX_TIB_CAS1_medium"
+		texturefile = "gfx/interface/technologies/ENG_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_CAS2_medium"
+		texturefile = "gfx/interface/technologies/ENG_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_CAS3_medium"
+		texturefile = "gfx/interface/technologies/ENG_CAS3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TIB_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_fighter3_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_fighter1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_fighter2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_fighter3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber1.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_TIB_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber2.dds"
+	}	
+		
+	SpriteType = {
+		name = "GFX_TIB_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_naval_bomber3.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TIB_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber2.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber3.dds"
+	}	
+
+	
+	### ENG tanks ###
+
+	SpriteType = {
+		name = "GFX_TIB_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_light_tank.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_TIB_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_light_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_main_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_main_battle_tank.dds"
+	}	
+
+	SpriteType = {
+		name = "GFX_TIB_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_basic_heavy_tank.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/ENG_superheavy_tank.dds"
+	}
+        SpriteType = {
+		name = "GFX_TIB_iw_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_basic_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_improved_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_advanced_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_modern_small_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_plane_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_iw_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_early_bomber.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_basic_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber1.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TIB_improved_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TIB_advanced_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_TIB_modern_medium_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_jet_medium_plane_1.dds"
+	}
+	SpriteType = {
+		name = "GFX_TIB_iw_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_plane_2.dds"
+	}		
+	SpriteType = {
+		name = "GFX_TIB_basic_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber1.dds"
+	}	
+	
+	SpriteType = {
+		name = "GFX_TIB_improved_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber2.dds"
+	}		
+	
+	SpriteType = {
+		name = "GFX_TIB_advanced_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_strategic_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_TIB_modern_large_airframe_medium"
+		texturefile = "gfx/interface/technologies/ENG_heavy_plane_3.dds"
+	}
+}

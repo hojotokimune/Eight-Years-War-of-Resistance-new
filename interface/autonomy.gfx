@@ -1,0 +1,65 @@
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_jiaozong_icon
+		textureFile = "gfx/interface/autonomy/autonomy_jiaozong.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_tubang_icon
+		textureFile = "gfx/interface/autonomy/autonomy_tubang.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_jiamengguo_icon
+		textureFile = "gfx/interface/autonomy/autonomy_jiamengguo.png"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_BRITISH_wangguan_icon
+		textureFile = "gfx/interface/autonomy/autonomy_BRITISH_wangguan.png"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_wangguan_icon
+		textureFile = "gfx/interface/autonomy/autonomy_wangguan.png"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_USA_baohuguo_icon
+		textureFile = "gfx/interface/autonomy/autonomy_USA_baohuguo.png"
+	}
+	spriteType = {
+		name = GFX_autonomy_ENG_baohuguo_icon
+		textureFile = "gfx/interface/autonomy/autonomy_ENG_baohuguo.png"
+		legacy_lazy_load = no
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_PRC_dihouwuzhuang_icon
+		textureFile = "gfx/interface/autonomy/PRC_dihouwuzhuang.dds"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_NFA_communism_icon
+		textureFile = "gfx/flags/medium/NFA_communism.tga"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_NFA_communism_icon
+		textureFile = "gfx/flags/small/NFA_communism.tga"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_NFA_communism_icon
+		textureFile = "gfx/flags/NFA_communism.tga"
+	}
+}

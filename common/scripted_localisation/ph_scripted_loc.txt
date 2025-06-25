@@ -1,0 +1,266 @@
+defined_text = {
+    name = get_pacific_war_usa_loc
+    text = {
+        trigger = {
+            has_war_with = JAP
+            has_global_flag = vnr_attack_on_pearl_harbor
+        }
+        localization_key = pacific_war_usa_loc_1
+    }
+    text = {
+        localization_key = pacific_war_usa_loc_2
+    }
+}
+
+defined_text = {
+    name = get_doolittle_landing_area
+    text = {
+        trigger = {
+            CHI = {
+                any_core_state = { owner = { has_war_with = JAP } }
+            }
+            
+        }
+        localization_key = doolittle_landing_china_loc
+    }
+    text = {
+        localization_key = doolittle_landing_soviet_loc
+    }
+}
+
+defined_text = {
+    name = get_usa_response_title
+    text = {
+        trigger = { has_global_flag = pw_usa_offer_surrender }
+        localization_key = usa_surrender_title_loc
+    }
+    text = {
+        localization_key = usa_refuse_title_loc
+    }
+}
+
+defined_text = {
+    name = get_usa_response_desc
+    text = {
+        trigger = { has_global_flag = pw_usa_offer_surrender }
+        localization_key = usa_surrender_desc_loc
+    }
+    text = {
+        localization_key = usa_refuse_desc_loc
+    }
+}
+
+defined_text = {
+    name = get_pacific_war_area_name
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 285 } }
+    	localization_key = pacific_war_area_name_1
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 276 } }
+    	localization_key = pacific_war_area_name_2
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 605 } }
+    	localization_key = pacific_war_area_name_3
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 671 } }
+    	localization_key = pacific_war_area_name_4
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 335 } }
+    	localization_key = pacific_war_area_name_5
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 282 } }
+    	localization_key = pacific_war_area_name_6
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 336 } }
+    	localization_key = pacific_war_area_name_7
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 328 } }
+    	localization_key = pacific_war_area_name_8
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 330 } }
+    	localization_key = pacific_war_area_name_9
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 527 } }
+    	localization_key = pacific_war_area_name_10
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 327 } }
+    	localization_key = pacific_war_area_name_11
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 431 } }
+    	localization_key = pacific_war_area_name_12
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 289 } }
+    	localization_key = pacific_war_area_name_13
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 737 } }
+    	localization_key = pacific_war_area_name_14
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 525 } }
+    	localization_key = pacific_war_area_name_15
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 408 } }
+    	localization_key = pacific_war_area_name_16
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 524 } }
+    	localization_key = pacific_war_area_name_17
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 361 } }
+    	localization_key = pacific_war_area_name_18
+    }
+}
+
+defined_text = {
+    name = get_pacific_war_area_intro
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 285 } }
+    	localization_key = pacific_war_area_intro_1
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 276 } }
+    	localization_key = pacific_war_area_intro_2
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 605 } }
+    	localization_key = pacific_war_area_intro_3
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 671 } }
+    	localization_key = pacific_war_area_intro_4
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 335 } }
+    	localization_key = pacific_war_area_intro_5
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 282 } }
+    	localization_key = pacific_war_area_intro_6
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 336 } }
+    	localization_key = pacific_war_area_intro_7
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 328 } }
+    	localization_key = pacific_war_area_intro_8
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 330 } }
+    	localization_key = pacific_war_area_intro_9
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 527 } }
+    	localization_key = pacific_war_area_intro_10
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 327 } }
+    	localization_key = pacific_war_area_intro_11
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 431 } }
+    	localization_key = pacific_war_area_intro_12
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 289 } }
+    	localization_key = pacific_war_area_intro_13
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 737 } }
+    	localization_key = pacific_war_area_intro_14
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 525 } }
+    	localization_key = pacific_war_area_intro_15
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 408 } }
+    	localization_key = pacific_war_area_intro_16
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 524 } }
+    	localization_key = pacific_war_area_intro_17
+    }
+    text = {
+    	trigger = { check_variable = { pacific_gui_selected_area_id = 361 } }
+    	localization_key = pacific_war_area_intro_18
+    }
+}
+
+defined_text = {
+    name = get_pacific_war_faction_name
+    text = {
+        trigger = { 
+            var:pacific_gui_selected_area_id = { 
+                controller = { pw_is_ally_with_jap = yes }
+            } 
+        }
+        localization_key = pacific_war_faction_name_1
+    }
+    text = {
+        trigger = { 
+            var:pacific_gui_selected_area_id = { 
+                controller = { pw_is_ally_with_sov = yes }
+            } 
+        }
+        localization_key = pacific_war_faction_name_2
+    }
+    text = {
+        trigger = { 
+            var:pacific_gui_selected_area_id = { 
+                controller = { pw_is_ally_with_usa = yes }
+            } 
+        }
+        localization_key = pacific_war_faction_name_3
+    }
+    text = {
+        localization_key = pacific_war_faction_name_4
+    }
+}
+
+defined_text = {
+    name = get_china_theater_title
+    text = {
+        trigger = {
+            tag = PRC
+        }
+        localization_key = prc_china_theater_title
+    }
+    text = {
+        trigger = {
+            tag = JAP
+        }
+        localization_key = jap_china_theater_title
+    }
+}
+
+defined_text = {
+    name = get_china_theater_desc
+    text = {
+        trigger = {
+            tag = PRC
+        }
+        localization_key = prc_china_theater_desc
+    }
+    text = {
+        trigger = {
+            tag = JAP
+        }
+        localization_key = jap_china_theater_desc
+    }
+}

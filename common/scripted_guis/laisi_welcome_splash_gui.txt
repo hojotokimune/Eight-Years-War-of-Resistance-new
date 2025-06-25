@@ -1,0 +1,83 @@
+scripted_gui = {
+	GER_welcome_splash = {
+		context_type = player_context
+		window_name = "GER_welcome_splash_container"
+		dirty = GER_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = show_welcome_splash_GER
+		}
+
+		effects = {
+			options_button_GER_click = {
+				clr_country_flag = show_welcome_splash_GER
+				#country_event = kr.political.1       #触发一个事件
+			}
+		}
+	}
+	SOV_welcome_splash = {
+		context_type = player_context
+		window_name = "SOV_welcome_splash_container"
+		dirty = SOV_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = show_welcome_splash_SOV
+		}
+
+		effects = {
+			options_button_SOV_click = {
+				clr_country_flag = show_welcome_splash_SOV
+				#country_event = kr.political.1       #触发一个事件
+			}
+		}
+	}
+	USA_welcome_splash = {
+		context_type = player_context
+		window_name = "USA_welcome_splash_container"
+		dirty = USA_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = show_welcome_splash_USA
+		}
+
+		effects = {
+			options_button_USA_click = {
+				clr_country_flag = show_welcome_splash_USA
+				#country_event = kr.political.1       #触发一个事件
+			}
+		}
+	}
+	CHI_welcome_splash = {
+		context_type = player_context
+		window_name = "CHI_welcome_splash_container"
+		dirty = CHI_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = show_welcome_splash_CHI
+		}
+
+		effects = {
+			options_button_CHI_click = {
+				clr_country_flag = show_welcome_splash_CHI
+				#country_event = kr.political.1       #触发一个事件
+			}
+		}
+	}
+}
+

@@ -1,0 +1,160 @@
+====================================
+create a state
+====================================
+1.NUDGE TOOL
+2. manpower, state scale, history
+3. check Scripted trigger and focus tree files
+4. check event files
+#what you can do is move the necessary files to another folder and do a "search in files" there,
+#as it will be a lot quicker.
+5. localization
+6. validation
+	- Buildings
+	- Unit Stacks
+	#always validate all states
+7. strat region
+8. supply area
+====================================
+troubleshoot
+====================================
+#remember to type country_event
+	don't do this:
+(X) PRC = {
+		days = 1 id = EFM_Comchina.13
+	}
+(O) PRC = {
+		country_event = {
+			days = 1 id = EFM_Comchina.13
+		}
+	}
+------------------------------------
+#sometimes it takes twice to boot the game properly
+------------------------------------
+#NO "if" command within a trigger/condition brasket
+------------------------------------
+#these are effects/commands
+every_XXX = {
+	limit = { XXX } <= Optional
+}
+random_XXX = {
+	limit = { XXX } <= Optional
+}
+------------------------------------
+#these are triggers/conditions
+any_XXX = {
+	limit = { XXX } <= NO!! THIS IS WRONG!!
+}
+all_XXX = { <= All means All, no exception, so this trigger will be hard to use
+	limit = { XXX } <= NO!! THIS IS WRONG!!
+}
+------------------------------------
+#JUST ADDED A NEW STATE
+	remember to validate
+------------------------------------
+#HOW TO FIX 1939 CRASH
+	most likely =>
+	history/countries have problems
+	==> probably PRC's add_to_war in its hist. file
+	how to fix?
+	change the state owner of Shanxi in 1939
+------------------------------------
+#unlock_national_focus as a command should only be used when those focus are "available"
+(does not include mutually exclusive lockout, those are also counted as available as long as you met the criteria)
+------------------------------------
+#NO NUMBERS IN A FLAG(the command, not the national flags)
+============================================================
+#DMZ LOOP (LOOP COUNTRY should NOT own the TARGET STATE)
+*LOOP COUNTRY = a 3rd party country to run the code/loop
+*TARGET STATE = the state you wanna set up your dmz in
+============================================================
+	CREATE AN DMZ:(EYWOR EXCLUSIVE)
+		TARGET_STATE_ID = { set_demilitarized_zone = yes }
+		TARGET_STATE_ID = { set_state_flag = I_choose_this_state_to_DMZ }
+		#LOOP_COUNTRY_TAG = {  outdated! use on_action instead
+		#	country_event = {
+		#		id = EFM_Comchina.9013
+		#	}
+		#}
+------------------------------------
+	END AN DMZ:(EYWOR EXCLUSIVE)
+		TARGET_STATE_ID = { set_demilitarized_zone = no }
+		#LOOP_COUNTRY_TAG = { outdated!
+		#	country_event = {
+		#		id = EFM_Comchina.9015
+		#	}
+		#}
+====================================
+build ic cost idea don't works when added in history file
+====================================
+#base-factor error:
+	NO mtth along with is_triggered_only
+====================================
+#RANDOM INITIALIZING CRASH
+	CHECK country Ideas' allowed brasket (national spirit), it should always be always no
+#REGEX:
+#search generals id (do it in sublime): (?:(?<=create_field_marshal \= \{\n)|(?<=create_corps_commander \= \{\n)|(?<=create_navy_leader \= \{\n))(?:\t.+$\n)+?\tid = (\d+?$)
+====================================
+#How to convert using imagemagick
+#step 1.
+#Open cmd, type
+#cd /d [folder path to images]
+#step 2.
+#magick mogrify -format dds -define dds:compression=none *.png
+#FOR DOING VARIABLES AND ARRAYS NEVER CAPITALIZE G in global
+=============================
+convert set politics
+SEARCH:
+
+set\_politics \= \{\n*\t*parties \= \{(?:\n*\t*\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})(?:\n*\t*\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t*\n*\t(\t*\w+) \= \{\n*\t*\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t*\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t*\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})\n\t((\t*)\})
+
+REPLACE:
+
+set_popularities = {\n$12\t$1 $2\n$12\t$3 $4\n$12\t$5 $6\n$12\t$7 $8\n$12\t$9 $10\n$11\n$12set_politics = {
+
+
+AND
+
+SEARCH:
+
+set\_politics \= \{((?:\n*\t*.*){2})\n\t*parties \= \{(?:\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?(?:\n*\t(\t*\w+) \= \{\n*\t*popularity (\= \d+)\n*\t*\})?\n\t((\t*)\})
+
+REPLACE:
+
+set_popularities = {\n$2 $3\n$4 $5\n$6 $7\n$8 $9\n$10 $11\n$12\n$13set_politics = {$13$1
+
+convert drifts:
+SEARCH: _drift = ([-]?[0-9]\..[0-9]?[^#\s]?)\s?[#]([-]?[0-9\.]*)
+REPLACE:	_drift = $2 #$1
+
+===============================
+SWAP STATES (in sublime)
+
+regex > (use this to get the state 868)
+
+(?<!victory_points)(?<!provinces)(?<=\w) *= *{[^{}]*\K(?<!location = )(?<!days = )(?<!\.)(?<!thousands < )(?<!value = )(?<!factor = )(?<!amount = )(?<!value = -)(?<!#)(?<!animation_time = )(?<!,)(?<!\d)806(?!\d)|(?<!location = )(?<!days = )(?<!\.)(?<!thousands < )(?<!value = )(?<!factor = )(?<!amount = )(?<!value = -)(?<!#)(?<!animation_time = )(?<!,)(?<!\d)806(?!\d)(?![^{}]*\})
+
+exclude >
+
+-unitstacks.txt, -buildings.txt, -definition.csv, -strategicregions, -RCM_Indochina_l_english.yml, -*.dds, -*.tga, -*.ogg, -*.fnt, -*.mesh, -*.wav
+
+NOt necessary?
+#remember to change state files' name afterwards and do it like this
+#ex: 123<=>667
+#123=>123temp
+#667=>123
+#123temp=>667
+
+===============things to  check when update
+0. get the game to run and fix gui
+1. states/provinces/stratregions
+2. merge common/event/decisions... etc. with winmerge
+3. clear error logs & replace obsolete tokens
+4. check dlc portraits and decolorize new portraits
+5. update the new dynamic news event headers
+6. validate using cwtools
+7. update the province indeces and vp indeces using py scripts
+
+(AAA-generic) (this is for checking tag has most occupation breakdown, if this broke alternative way will be to just check core tag and faction leader)
+1st section = > use VP py to index, remember no blank state files. Edit py file to set path. work fine in D:\ and remember do a merge state files pack first instead
+2nd section = > same, but use province index py
+3rd section = > simply add new state ids and copypaste the code. they are all the same.

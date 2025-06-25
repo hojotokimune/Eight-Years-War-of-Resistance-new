@@ -1,0 +1,190 @@
+USA_leave_philippines_poor_defense = {
+    allowed = {
+        original_tag = USA
+    }
+    enable = {
+        has_subject = PHI
+        date < 1943.1.1
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = area_priority
+        id = just_philippines
+        value = -100
+    }
+}
+
+USA_avoid_naval_operation_ph = {
+    allowed = {
+        original_tag = USA
+    }
+    enable = {
+        has_war_with = JAP
+        has_global_flag = vnr_attack_on_pearl_harbor
+        date < 1943.6.1
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = naval_avoid_region
+        id = 177
+        value = 300
+    }
+    ai_strategy = {
+        type = naval_avoid_region
+        id = 94
+        value = 300
+    }
+    ai_strategy = {
+        type = naval_avoid_region
+        id = 95
+        value = 300
+    }
+    ai_strategy = {
+        type = naval_avoid_region
+        id = 96
+        value = 300
+    }
+    ai_strategy = {
+        type = naval_avoid_region
+        id = 97
+        value = 300
+    }
+}
+
+ENG_focus_on_europe = {
+	allowed = {
+        original_tag = ENG
+    }
+    enable = {
+        has_war_with = GER
+    }
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+        type = area_priority
+        id = malaya
+        value = -1000
+    }
+	ai_strategy = {
+        type = area_priority
+        id = east_indies
+        value = -1000
+    }
+	ai_strategy = {
+        type = area_priority
+        id = burma
+        value = -1000
+    }
+    ai_strategy = {
+        type = area_priority
+        id = UK
+        value = 1000
+    }
+    ai_strategy = {
+        type = area_priority
+        id = north_africa
+        value = 300
+    }
+}
+
+USA_operation_downfall_go = {
+    allowed = {
+        original_tag = USA
+    }
+    enable = {
+        is_subject = no
+        has_war_with = JAP
+        has_country_flag = operation_downfall_go
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = invade
+        id = JAP
+        value = 500
+    }
+    ai_strategy = {
+        type = invasion_unit_request
+        strategic_region = 154
+        value = 30
+    }
+    ai_strategy = {
+        type = invasion_unit_request
+        state = 528
+        value = 20
+    }
+    ai_strategy = {
+        type = naval_invasion_focus
+        value = 80
+    }
+}
+
+ENG_protect_the_channel = {
+	allowed = { original_tag = ENG }
+	enable = {
+		has_war_with = GER
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 18 #english channel
+		value = -100
+	}
+    ai_strategy = {
+        type = strike_force_home_base
+        id = 18
+        value = 200
+    }
+}
+
+ENG_burma_stalemate = {
+    allowed = {
+        original_tag = ENG
+        original_tag = RAJ
+    }
+    enable = {
+        has_war_with = JAP
+    }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = front_control
+        area = burma
+        priority = 100
+        ratio = 0.15
+        ordertype = front
+        execution_type = careful
+        execute_order = no
+        manual_attack = no
+    }
+    ai_strategy = {
+        type = front_unit_request
+        country_trigger = { is_in_faction_with = JAP }
+        value = -150
+    }
+    ai_strategy = {
+        type = front_unit_request
+        area = asia
+        value = -100
+    }
+}
+
+CHI_only_defend_south_border = {
+    allowed = { is_literally_china = yes }
+    enable = { has_war_with = JAP }
+    abort_when_not_enabled = yes
+
+    ai_strategy = {
+        type = front_control
+        area = burma
+        priority = 100
+        ratio = 0.15
+        ordertype = front
+        execution_type = careful
+        execute_order = no
+        manual_attack = no
+    }
+}

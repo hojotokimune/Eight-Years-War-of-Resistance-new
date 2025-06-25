@@ -1,0 +1,192 @@
+every_possible_country = {
+	
+	generate_character = {
+		token_base = shared_silent_workhorse
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { silent_workhorse }
+
+		}
+	}
+
+	generate_character = {
+		token_base = shared_editor
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { editor }
+
+		}
+	}
+	
+	generate_character = {
+		token_base = shared_head_of_intelligence
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				not = { tag = PRC }
+				not = { tag = CHI }
+				not = { tag = JAP }
+				not = { tag = USA }
+			}
+			
+			traits = { head_of_intelligence }
+
+		}
+	}
+	
+	generate_character = {
+		token_base = shared_captain_of_industry
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { captain_of_industry }
+
+		}
+	}
+
+	generate_character = {
+		token_base = shared_war_industrialist
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { war_industrialist }
+
+		}
+	}
+
+	generate_character = {
+		token_base = shared_financial_expert
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { financial_expert }
+
+		}
+	}
+
+	generate_character = {
+		token_base = shared_economist
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { economist }
+
+		}
+	}
+	
+	generate_character = {
+		token_base = shared_lieutenant_of_industry
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { lieutenant_of_industry }
+
+		}
+	}
+	
+	generate_character = {
+		token_base = shared_war_profiteer
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { war_profiteer }
+
+		}
+	}
+	
+	generate_character = {
+		token_base = shared_armaments_organizer
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+				not = { tag = GER }
+			}
+
+			traits = { armaments_organizer }
+
+		}
+	}
+	
+	generate_character = {
+		token_base = shared_education_reformer
+		portraits = { 
+			army = { small = GFX_idea_666 }
+		}
+		advisor={
+			slot = political_advisor
+			allowed = {
+				#is_literally_china = no
+				not = { tag = PRC }
+			}
+			
+			traits = { education_reformer }
+
+		}
+	}
+}

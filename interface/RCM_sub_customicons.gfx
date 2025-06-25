@@ -1,0 +1,11 @@
+spriteTypes = { 
+        SpriteType = { 
+		name = "GFX_idea_chi_maag"
+		texturefile = "gfx/interface/ideas/chi_maag.dds"
+	}
+        SpriteType = { 
+		name = "GFX_idea_chi_stag"
+		texturefile = "gfx/interface/ideas/chi_stag.dds"
+	}
+ 
+}

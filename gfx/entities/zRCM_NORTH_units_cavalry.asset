@@ -1,0 +1,265 @@
+
+############
+#
+#
+# NORTH
+#SHD NEA PLM HPC SUY
+#
+############
+##########
+	entity = {
+		name = "SHD_sabre_entity"
+		clone = "SHX_sabre_entity"
+	}
+
+	entity = {
+		name = "SHD_sabre_holder_entity"
+		clone = "SHX_sabre_holder_entity"
+	}
+
+	entity = {
+		name = "SHD_infantry_rider_entity"
+		clone = "SHX_infantry_rider_entity"
+	}
+
+	entity = {
+		name = "SHD_cavalry_entity"
+		clone = "SHX_cavalry_entity"
+	}
+
+	entity = {
+		name = "SHD_cavalry_rifle_combined_entity"
+		clone = "SHX_cavalry_rifle_combined_entity"
+
+	}
+
+	entity = {
+		name = "SHD_infantry_2_rider_entity"
+		clone = "SHX_infantry_2_rider_entity"
+	}
+
+	entity = {
+		name = "SHD_cavalry_2_entity"
+		clone = "SHX_cavalry_2_entity"
+	}
+
+	entity = {
+		name = "SHD_cavalry_2_combined_entity"
+		clone = "SHX_cavalry_2_combined_entity"
+
+
+	}
+##########
+	entity = {
+		name = "NEA_sabre_entity"
+		clone = "SHX_sabre_entity"
+	}
+
+	entity = {
+		name = "NEA_sabre_holder_entity"
+		clone = "SHX_sabre_holder_entity"
+	}
+
+	entity = {
+		name = "NEA_infantry_rider_entity"
+		clone = "SHX_infantry_rider_entity"
+	}
+
+	entity = {
+		name = "NEA_cavalry_entity"
+		clone = "SHX_cavalry_entity"
+	}
+
+	entity = {
+		name = "NEA_cavalry_rifle_combined_entity"
+		clone = "SHX_cavalry_rifle_combined_entity"
+
+	}
+
+	entity = {
+		name = "NEA_infantry_2_rider_entity"
+		clone = "SHX_infantry_2_rider_entity"
+	}
+
+	entity = {
+		name = "NEA_cavalry_2_entity"
+		clone = "SHX_cavalry_2_entity"
+	}
+
+	entity = {
+		name = "NEA_cavalry_2_combined_entity"
+		clone = "SHX_cavalry_2_combined_entity"
+
+
+	}
+##########
+	entity = {
+		name = "SHC_sabre_entity"
+		clone = "SHX_sabre_entity"
+	}
+
+	entity = {
+		name = "SHC_sabre_holder_entity"
+		clone = "SHX_sabre_holder_entity"
+	}
+
+	entity = {
+		name = "SHC_infantry_rider_entity"
+		clone = "SHX_infantry_rider_entity"
+	}
+
+	entity = {
+		name = "SHC_cavalry_entity"
+		clone = "SHX_cavalry_entity"
+	}
+
+	entity = {
+		name = "SHC_cavalry_rifle_combined_entity"
+		clone = "SHX_cavalry_rifle_combined_entity"
+
+	}
+
+	entity = {
+		name = "SHC_infantry_2_rider_entity"
+		clone = "SHX_infantry_2_rider_entity"
+	}
+
+	entity = {
+		name = "SHC_cavalry_2_entity"
+		clone = "SHX_cavalry_2_entity"
+	}
+
+	entity = {
+		name = "SHC_cavalry_2_combined_entity"
+		clone = "SHX_cavalry_2_combined_entity"
+
+
+	}
+##########
+	entity = {
+		name = "HPC_sabre_entity"
+		clone = "SHX_sabre_entity"
+	}
+
+	entity = {
+		name = "HPC_sabre_holder_entity"
+		clone = "SHX_sabre_holder_entity"
+	}
+
+	entity = {
+		name = "HPC_infantry_rider_entity"
+		clone = "SHX_infantry_rider_entity"
+	}
+
+	entity = {
+		name = "HPC_cavalry_entity"
+		clone = "SHX_cavalry_entity"
+	}
+
+	entity = {
+		name = "HPC_cavalry_rifle_combined_entity"
+		clone = "SHX_cavalry_rifle_combined_entity"
+
+	}
+
+	entity = {
+		name = "HPC_infantry_2_rider_entity"
+		clone = "SHX_infantry_2_rider_entity"
+	}
+
+	entity = {
+		name = "HPC_cavalry_2_entity"
+		clone = "SHX_cavalry_2_entity"
+	}
+
+	entity = {
+		name = "HPC_cavalry_2_combined_entity"
+		clone = "SHX_cavalry_2_combined_entity"
+
+
+	}
+##########
+	entity = {
+		name = "PLM_sabre_entity"
+		clone = "SHX_sabre_entity"
+	}
+
+	entity = {
+		name = "PLM_sabre_holder_entity"
+		clone = "SHX_sabre_holder_entity"
+	}
+
+	entity = {
+		name = "PLM_infantry_rider_entity"
+		clone = "SHX_infantry_rider_entity"
+	}
+
+	entity = {
+		name = "PLM_cavalry_entity"
+		clone = "SHX_cavalry_entity"
+	}
+
+	entity = {
+		name = "PLM_cavalry_rifle_combined_entity"
+		clone = "SHX_cavalry_rifle_combined_entity"
+
+	}
+
+	entity = {
+		name = "PLM_infantry_2_rider_entity"
+		clone = "SHX_infantry_2_rider_entity"
+	}
+
+	entity = {
+		name = "PLM_cavalry_2_entity"
+		clone = "SHX_cavalry_2_entity"
+	}
+	entity = {
+		name = "PLM_cavalry_2_combined_entity"
+		clone = "SHX_cavalry_2_combined_entity"
+
+
+	}
+##########
+	entity = {
+		name = "SUY_sabre_entity"
+		clone = "SHX_sabre_entity"
+	}
+
+	entity = {
+		name = "SUY_sabre_holder_entity"
+		clone = "SHX_sabre_holder_entity"
+	}
+
+	entity = {
+		name = "SUY_infantry_rider_entity"
+		clone = "SHX_infantry_rider_entity"
+	}
+
+	entity = {
+		name = "SUY_cavalry_entity"
+		clone = "SHX_cavalry_entity"
+	}
+
+	entity = {
+		name = "SUY_cavalry_rifle_combined_entity"
+		clone = "SHX_cavalry_rifle_combined_entity"
+
+	}
+
+	entity = {
+		name = "SUY_infantry_2_rider_entity"
+		clone = "SHX_infantry_2_rider_entity"
+	}
+
+	entity = {
+		name = "SUY_cavalry_2_entity"
+		clone = "SHX_cavalry_2_entity"
+	}
+
+	entity = {
+		name = "SUY_cavalry_2_combined_entity"
+		clone = "SHX_cavalry_2_combined_entity"
+
+
+	}

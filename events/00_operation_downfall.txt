@@ -1,0 +1,119 @@
+add_namespace = operation_downfall
+add_namespace = operation_downfall_news
+
+country_event = { # approve operation downfall or not?
+    id = operation_downfall.0
+    title = operation_downfall.0.t
+    desc = operation_downfall.0.d
+    picture = GFX_vnr_ph_operation_downfall
+
+    is_triggered_only = yes
+    option = { # yes
+        name = operation_downfall.0.a
+        add_political_power = -100
+        set_global_flag = operation_downfall_flag
+        add_tech_bonus = {
+            bonus = 0.5
+            uses = 1
+            category = tp_tech
+        }
+        activate_mission = pw_operation_downfall
+    }
+    option = { # no
+        name = operation_downfall.0.b
+    }
+}
+
+country_event = { # Japan gets notification about US cutting its crops production
+    id = operation_downfall.1
+    title = operation_downfall.1.t
+    desc = operation_downfall.1.d
+    picture = GFX_report_event_japanese_officers
+
+    is_triggered_only = yes
+    option = {
+        add_war_support = 0.05
+        add_stability = -0.05
+        jap_add_food_crisis = yes
+        name = operation_downfall.1.a
+    }
+}
+
+news_event = { # operation downfall news
+    id = operation_downfall_news.0
+    title = operation_downfall_news.0.t
+    desc = operation_downfall_news.0.d
+    picture = GFX_vnr_ph_landing
+
+    is_triggered_only = yes
+    option = {
+        name = operation_downfall_news.0.a
+        trigger = {
+            has_war_with = JAP
+        }
+    }
+    option = {
+        name = operation_downfall_news.0.b
+        trigger = {
+            is_in_faction_with = JAP
+        }
+    }
+    option = {
+        name = operation_downfall_news.0.c
+        trigger = {
+            NOT = { has_war_with = JAP is_in_faction_with = JAP }
+        }
+    }
+}
+
+news_event = { # LeMay firebombing
+    id = operation_downfall_news.1
+    title = operation_downfall_news.1.t
+    desc = operation_downfall_news.1.d
+    picture = GFX_vnr_ph_bombing
+
+    is_triggered_only = yes
+    option = {
+        name = operation_downfall_news.1.a
+        trigger = { tag = JAP }
+    }
+    option = {
+        name = operation_downfall_news.1.b
+        trigger = { has_war_with = JAP }
+    }
+    option = {
+        name = operation_downfall_news.1.c
+        trigger = {
+            NOT = {
+                tag = JAP
+                has_war_with = JAP
+            }
+        }
+    }
+}
+
+news_event = { # US uses chemical weapons
+    id = operation_downfall_news.2
+    title = operation_downfall_news.2.t
+    desc = operation_downfall_news.2.d
+    picture = GFX_vnr_ph_superfortress
+
+    is_triggered_only = yes
+    option = {
+        name = operation_downfall_news.2.a
+        trigger = { tag = JAP }
+    }
+    option = {
+        name = operation_downfall_news.2.b
+        trigger = { tag = USA }
+    }
+    option = {
+        name = operation_downfall_news.2.c
+        trigger = {
+            NOT = {
+                tag = JAP
+                tag = USA
+            }
+        }
+    }
+}

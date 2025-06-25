@@ -1,0 +1,15 @@
+﻿l_simp_chinese:
+ #maintheme:0 "Main Theme - Allies"
+
+ # The Modded Music
+ WhereisArmo:0 "Where is Armo （阿嬷在哪）"
+ TheLastEmperorMainTitleTheme:0 "The Last Emperor (Main Title Theme) （《末代皇帝》主题曲）"
+ TheLastEmperorThemeVariation:0 "The Last Emperor (Theme Variation 1) （末代皇帝主题曲变奏）"
+ OpenTheDoor:0 "Open The Door （把门打开）"
+ FirstCoronation:0 "First Coronation （登基）"
+ EmperorsWaltz:0 "Emperor's Waltz （皇帝的华尔兹）"
+ PickingUpBrides:0 "Picking Up Brides （选妃）"
+ WhenJohnnyComesMarchingHome:0 "When Johnny Comes Marching Home （当约翰尼迈步回家时）"
+
+ #Radio
+ tle_radio_TITLE:0 "末代皇帝"

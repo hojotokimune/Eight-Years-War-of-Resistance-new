@@ -1,0 +1,108 @@
+spriteTypes = {
+		
+	spriteType = {
+		name = "GFX_report_event_China_election"
+		texturefile = "gfx/event_pictures/report_event_Chiang_Hu_Election.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_nra_march"
+		texturefile = "gfx/event_pictures/report_event_nra_march.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_chinese_soldiers_chungking"
+		texturefile = "gfx/event_pictures/report_event_chinese_soldiers_chungking.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_report_event_chinese_high_commander"
+		texturefile = "gfx/event_pictures/report_event_chinese_high_commander.dds"
+	}
+	
+        spriteType = {
+		name = "GFX_report_event_chinese_civil_war"
+		texturefile = "gfx/event_pictures/report_event_chinese_civil_war.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_chiang_speech"
+		texturefile = "gfx/event_pictures/news_event_chiang_speech.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_chiang_speech2"
+		texturefile = "gfx/event_pictures/news_event_chiang_speech2.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_chinese_victory"
+		texturefile = "gfx/event_pictures/news_event_chinese_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_chinese_soldiers_march"
+		texturefile = "gfx/event_pictures/news_event_chinese_soldiers_march.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_government_victory"
+		texturefile = "gfx/event_pictures/news_event_government_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_communist_victory"
+		texturefile = "gfx/event_pictures/news_event_communist_victory.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_chinese_civil_war"
+		texturefile = "gfx/event_pictures/news_event_chinese_civil_war.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_news_event_chinese_united_front"
+		texturefile = "gfx/event_pictures/news_event_chinese_united_front.dds"
+	}
+
+	spriteType = {
+		name = "GFX_news_event_south_anhui_incident"
+		texturefile = "gfx/event_pictures/news_event_south_anhui_incident.dds"
+	}
+	spriteType = {
+		name = "GFX_news_event_us_airforce_c47_crash"
+		texturefile = "gfx/event_pictures/news_event_us_airforce_c47_crash.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_battle_of_beping"
+		texturefile = "gfx/event_pictures/news_event_battle_of_beping.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_canton_operation"
+		texturefile = "gfx/event_pictures/news_event_canton_operation.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_battle_of_taiyuan_1937"
+		texturefile = "gfx/event_pictures/news_event_battle_of_taiyuan_1937.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_battle_of_hong_kong"
+		texturefile = "gfx/event_pictures/news_event_battle_of_hong_kong.dds" 
+	}
+        spriteType = {
+		name = "GFX_news_event_fall_of_sg"
+		texturefile = "gfx/event_pictures/news_event_fall_of_sg.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_river_crossing_campaign" 
+		texturefile = "gfx/event_pictures/news_event_river_crossing_campaign.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_northern_shaanxi_campaign" 
+		texturefile = "gfx/event_pictures/news_event_northern_shaanxi_campaign.dds"
+	}
+        spriteType = {
+		name = "GFX_news_event_liaoshen_campaign"
+		texturefile = "gfx/event_pictures/news_event_liaoshen_campaign.dds"
+	}
+}

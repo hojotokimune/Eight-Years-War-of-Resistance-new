@@ -1,0 +1,223 @@
+MAN_default_plan = {
+	name = "Manchukuo default plan"
+	desc = "Behavior for Manchukuo until they decide on one of the branches"
+
+	allowed = {
+		original_tag = MAN
+	}
+	enable = { #MODDED
+		NOT = { #MODDED
+			OR = { #MODDED
+				has_completed_focus = MAN_assertiveness #MODDED
+				has_completed_focus = MAN_obedience  #MODDED
+			#MODDED
+			} #MODDED
+		} #MODDED
+	} #MODDED
+
+	abort = {
+		OR = { #MODDED
+			has_completed_focus = MAN_assertiveness #MODDED
+			has_completed_focus = MAN_obedience  #MODDED
+		#MODDED
+		}
+	}
+		#MODDED
+
+	ai_national_focuses = {
+	#MODDED no need
+		MAN_obedience
+	}
+
+	focus_factors = {
+		#MODDED
+	}
+
+	research = {
+		infantry_weapons = 15.0
+		industry = 10.0
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MAN_alternate_plan_assertive = {
+	name = "Manchukuo plan for Assertiveness"
+	desc = "Behavior for Manchukuo when they decide to go assertive"
+
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {
+		has_completed_focus = MAN_assertiveness
+	}
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		#MODDED no need
+	}
+
+	focus_factors = {
+
+	}
+
+	research = {
+		infantry_weapons = 15.0
+		artillery = 15.0
+		armor = 0.0
+		air_equipment = 0.0
+	}
+	#MODDED
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MAN_alternate_plan_independent = {
+	name = "Manchukuo plan for Independence"
+	desc = "Behavior for Manchukuo when they have achieved independence after going assertive"
+
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {
+		has_game_rule = {	#MODDED
+			rule = MAN_ai_behavior	#MODDED
+			option = INDEPENDENCE	#MODDED
+		}
+		#has_completed_focus = MAN_independence_war
+		##MODDED
+		#is_subject = no # actually won
+	}
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		MAN_assertiveness
+		MAN_appeals_to_japanese_intellectual_youth
+		MAN_rescue_zheng_xiaoxu_focus
+		MAN_Imperial_Army_Focus
+	}
+
+	focus_factors = {
+		#MODDED
+	}
+
+	research = {
+		infantry_weapons = 15.0
+		artillery = 15.0
+	}
+
+	ideas = {
+
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "JAP"
+		value = 20
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CHI"
+		value = 50
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PRC"
+		value = 50
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+MAN_alternate_plan_obedient = { #MODDED#MODDED#MODDED
+	name = "Manchukuo plan for Independence"
+	desc = "Behavior for Manchukuo when they have decided to be obedient"
+	allowed = {
+		original_tag = MAN
+	}
+	enable = {
+		has_completed_focus = MAN_obedience
+		is_subject_of = JAP
+	}
+	abort = {
+		always = no
+	}
+
+	ai_national_focuses = {
+		
+	}
+
+	focus_factors = {
+
+		#MODDED
+		#MODDED
+		#MODDED
+	}
+
+	research = {
+		infantry_weapons = 15.0
+		artillery = 15.0
+	}
+
+	ideas = {
+
+	}
+	ai_strategy = {
+		type = befriend 	#MODDED
+		id = "JAP"
+		value = 500
+	}
+	ai_strategy = {
+		type = conquer
+		id = "CHI"
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = "PRC"
+		value = 200
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+}

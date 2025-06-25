@@ -1,0 +1,11 @@
+﻿ l_simp_chinese:
+ NRA_General_2ndRank:0 "二级上将"
+ NRA_General_2ndRank_desc:0 "§L国民革命军的二级上将。§!"
+ NRA_General_1stRank:0 "一级上将"
+ NRA_General_1stRank_desc:0 "§L§L国民革命军的一级上将。§!"
+ NRA_Generallissimo:0 "特级上将" #guo
+ NRA_Generallissimo_desc:0 "§L§L蒋中正委员长独有的特殊军衔。§!"
+ max_army_group_size_3:0 "将军将军集团军群最大规模：§G3"
+ max_army_group_size_5:0 "将军集团军群最大规模：§G5"
+ minimum_time_in_grade:0 "升阶停年"
+ minimum_time_in_grade_desc:0 "§L从二级上将升至一级上将最少需要经过3年。§!"

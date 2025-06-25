@@ -1,0 +1,7 @@
+#MODDED
+PRC_border_clashes = {
+	icon = military_operation
+	allowed = {
+		is_potentially_communist_china = yes
+	}
+}

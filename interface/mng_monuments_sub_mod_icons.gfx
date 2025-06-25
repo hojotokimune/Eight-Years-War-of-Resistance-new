@@ -1,0 +1,6 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_monument_mountain_khentii"
+        textureFile = "gfx/interface/monuments/mng/mountain_khentii.dds"
+    }
+}

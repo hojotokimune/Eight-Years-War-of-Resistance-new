@@ -1,0 +1,1126 @@
+music_station = "Japanese Military Song"
+	music = {
+	song = "1"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "2"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "3"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "4"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "5"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "6"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "7"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "8"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "9"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "10"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "11"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "12"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "13"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "14"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "15"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "16"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "17"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "18"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "19"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "20"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "21"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "22"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "23"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "24"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "25"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "26"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "27"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "28"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "29"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "30"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "31"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "32"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "33"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "34"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "35"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "36"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "37"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "38"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "39"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "40"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "41"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "42"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "43"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "44"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "45"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "46"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "47"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "48"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "49"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "50"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "51"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "52"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "53"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "54"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "55"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "56"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "57"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "58"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "59"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "60"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "61"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "62"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "63"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "64"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "65"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "66"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "67"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "68"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "69"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "70"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "71"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "72"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "73"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "74"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "75"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "76"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "77"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "78"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "79"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "80"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "81"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "82"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "83"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "84"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "85"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "86"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "87"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "88"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "89"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "90"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "91"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "92"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "93"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "94"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "95"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "96"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "97"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "98"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "99"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "100"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "101"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "102"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "103"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "104"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "105"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "106"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "107"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "108"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "109"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "110"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "111"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "112"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "113"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "114"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "115"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "116"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "117"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "118"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "119"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "120"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "121"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "122"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "123"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "124"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}
+	music = {
+	song = "125"
+	chance = { factor = 1
+		modifier = {
+		TAG = JAP
+			factor = 2
+		}		
+	}
+}

@@ -1,0 +1,23 @@
+EWORQQFS_supplyisuseful = {
+	icon = generic_political_actions
+	visible = {
+		is_ai = no
+	}
+    priority = 1000
+}
+
+EWORQQFS_supply_for_everyone = {
+	icon = generic_political_actions
+	visible = {
+		
+	}
+    priority = 1000
+}
+
+Nuke_recover_forcely = {
+	icon = generic_political_actions
+	visible = {
+		
+	}
+    priority = 1000
+}

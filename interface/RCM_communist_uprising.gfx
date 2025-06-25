@@ -1,0 +1,23 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_select_state_view"
+		texturefile = "gfx/interface/select_state_view.dds"
+	}
+	spriteType = {
+		name = "GFX_vandalism_button"
+		texturefile = "gfx/interface/vandalism_button.dds"
+	}
+	spriteType = {
+		name = "GFX_amass_support_button"
+		texturefile = "gfx/interface/amass_support_button.dds"
+	}
+	spriteType = {
+		name = "GFX_uprising_button"
+		texturefile = "gfx/interface/uprising_button.dds"
+	}
+	spriteType = {
+		name = "GFX_attack_button"
+		texturefile = "gfx/interface/attack_button.dds"
+	}
+}

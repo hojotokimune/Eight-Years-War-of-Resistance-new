@@ -1,0 +1,29 @@
+prc_fightalone = {
+    icon = GFX_decision_category_generic
+    allowed = { 
+        tag = PRC
+    }  
+    desc = prc_lingtuzhengduan_cat_d
+    visible = {
+		JAP = {
+			NOT = {
+				has_global_flag = JAP_defeated
+			}
+		}
+		is_puppet = no
+		has_defensive_war_with = JAP
+		has_government = communism
+		OR = {
+			CHI = {
+				exists = no
+			}
+			CHI = {
+		    is_puppet = yes
+			}			
+			CHI = {
+				is_in_faction_with = JAP
+			}
+		}
+	}  
+    priority = 12000
+}

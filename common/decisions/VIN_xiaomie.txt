@@ -1,0 +1,58 @@
+
+	teshujuece = {
+	
+		xiufuwenti = {
+
+			icon = generic_political_actions
+
+	allowed = {
+    tag = PHI
+	}
+
+			available = {
+            VIN = { is_ai = yes }			
+            OR = {
+        country_exists = VOO
+        country_exists = CZP	
+        country_exists = LXM	
+            }			
+               }
+
+			fire_only_once = yes
+		    ai_will_do = {
+			factor = 1000
+		    }
+			visible = {
+            VIN = { is_ai = yes }				
+            OR = {
+        country_exists = VOO
+        country_exists = CZP	
+        country_exists = LXM		
+            }						
+			}
+			complete_effect = {
+		if = {
+			limit = {	
+            { country_exists = FIC }		
+                          }			
+            FIC = {
+               annex_country = { target = VOO }
+               annex_country = { target = CZP }		
+               annex_country = { target = LXM }			   
+                          }
+            }
+		if = {
+			limit = {	
+            NOT = { country_exists = FIC }		
+                          }			
+            FRA = {
+               annex_country = { target = VOO }
+               annex_country = { target = CZP }		
+               annex_country = { target = LXM }		
+                          }
+            }			
+			}
+		}
+	}
+
+

@@ -1,0 +1,234 @@
+###########################
+# NFA Focus Tree
+###########################
+focus_tree = {
+	id = NFA_focus
+	country = {
+		factor = 0
+		modifier = {
+			add = 10
+			tag = NFA
+		}
+	}
+	default = no
+	continuous_focus_position = { x = 200 y = 1000 }
+
+	############
+	#IEAA START#
+	############
+	focus = {
+		id = NFA1
+		icon = GFX_goal_PRC_renminzhanzheng
+		x = 5
+		y = 0
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available_if_capitulated = yes
+		completion_reward = {
+		RFM = {			
+				add_timed_idea = {
+					idea = JAP_renmin
+					days = 180
+				}	
+			}
+		NFA = {			
+				add_timed_idea = {
+					idea = NFA_renmin
+					days = 180
+				}	
+			}			
+		PRC = {			
+				add_timed_idea = {
+					idea = NFA_renmin
+					days = 180
+				}	
+			}			
+			show_ideas_tooltip = blank
+			add_doctrine_cost_reduction = {
+				name = land_doc_bonus
+				cost_reduction = 0.5
+				uses = 2
+				category =  cat_mass_assault
+			}
+		effect_tooltip = {				
+		1034 = {
+			add_victory_points = { 
+				province = 7167
+				value = 1
+			}
+                     }
+		1032 = {
+			add_victory_points = { 
+				province = 3992
+				value = 1
+			}
+                     }		
+                     }					 
+			army_experience = 15
+			add_command_power = 50
+		    add_stability = 0.10
+		    add_war_support = 0.05			
+			add_tech_bonus = {
+				name = infantry_weapons_bonus
+				bonus = 0.5
+				uses = 1
+				category = infantry_weapons
+			}			
+		}
+	}
+	focus = {
+		id = NFA2
+		icon = GFX_focus_chi_proclaim_rival_government
+		x = 0
+		y = 1
+		relative_position_id = NFA1
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA1
+		}
+		completion_reward = {
+	    add_political_power = 100
+		add_stability = 0.05		
+		PRC = { country_event = { id = ccw.707 } }
+		effect_tooltip = {		
+		749 = {
+			add_victory_points = { 
+				province = 11994
+				value = 1
+			}
+                     }
+                     }						 
+	}
+	}
+	focus = {
+		id = NFA3
+		icon = GFX_focus_PRC_jiaqiangxinsijun
+		x = 0
+		y = 1
+		relative_position_id = NFA2
+		cost = 8
+		ai_will_do = {
+			factor = 100
+		}
+		available_if_capitulated = yes
+		available = {
+            has_idea = prc_wannanshibian
+		}		
+		prerequisite = {
+			focus = NFA2
+		}
+		completion_reward = {		
+	    add_political_power = 150
+		add_war_support = 0.10		
+		add_country_leader_trait = desperate_gambit		
+		   remove_ideas = prc_wannanshibian
+           add_ideas = prc_xinsijun	
+		PRC = {			
+		    remove_ideas = prc_wannanshibian
+            add_ideas = prc_xinsijun		
+			}			
+		effect_tooltip = {			
+		598 = {
+			add_victory_points = { 
+				province = 12067
+				value = 1
+			}
+                     }			
+		}
+	    hidden_effect = {		
+	    play_song = "nea_xinsijunjunge"	
+		}		
+		}		
+		bypass = {
+			date > 1944.1.1
+		}		
+	}
+	focus = {
+		id = NFA4
+		icon = GFX_goal_feimapaixiangyan
+		x = 0
+		y = 1
+		relative_position_id = NFA3
+		cost = 5
+		ai_will_do = {
+			factor = 100
+		}
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA3
+		}
+		completion_reward = {
+	    add_political_power = 50
+		add_stability = 0.05		
+		add_ideas = prc_feimapaixiangyan
+		remove_country_leader_trait = desperate_gambit				
+		PRC = {			
+		    add_ideas = prc_feimapaixiangyan		
+			}
+		PRC = { country_event = { id = ccw.707 } 
+		effect_tooltip = {			
+		606 = {
+			add_victory_points = { 
+				province = 1001
+				value = 1
+			}
+                     }
+        }						 
+		}
+	}
+	}	
+	focus = {
+		id = NFA5
+		icon = GFX_focus_PRC_Japan_war_focus
+		x = 0
+		y = 1
+		relative_position_id = NFA4
+		cost = 10
+		ai_will_do = {
+			factor = 100
+		}
+		available_if_capitulated = yes
+		prerequisite = {
+			focus = NFA4
+		}
+		completion_reward = {
+		army_experience = 35
+		add_command_power = 100		
+		add_war_support = 0.10	
+		remove_country_leader_trait = desperate_gambit
+		add_country_leader_trait = NFA_army				
+		effect_tooltip = {			
+		598 = {
+			add_victory_points = { 
+				province = 4123
+				value = 1
+			}
+                     }
+        }		
+		JAP = {			
+				add_timed_idea = {
+					idea = jap_xinsijun
+					days = 365
+				}	
+			}
+		EHB = {			
+				add_timed_idea = {
+					idea = jap_xinsijun
+					days = 365
+				}	
+			}
+		RFM = {			
+				add_timed_idea = {
+					idea = jap_xinsijun
+					days = 365
+				}	
+			}			
+		}
+	}
+}

@@ -1,0 +1,3743 @@
+music_station = "nea"
+
+music = {
+	song = "ph_gunkan_march"
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 3
+			tag = JAP
+		}		
+		modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+	}
+}
+
+music = {
+	song = "ph_death_of_antoku"
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 3
+			tag = JAP
+		}
+		modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+	}
+}
+
+music = {
+	song = "ph_miyasan_miyasan"
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 3
+			tag = JAP
+		}
+		modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+	}
+}
+
+music = {
+	song = "ph_letters_from_iwo_jima"
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 3
+			tag = JAP
+		}
+		modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+	}
+}
+
+music = {
+	song = "ph_farewell_of_slavianka"
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 4
+			tag = SOV
+			has_war = yes
+		}
+	}
+}
+
+## 恭喜恭喜 ##
+music = {
+	song = "nea_gongxigongxi"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 月圆花好 ##
+music = {
+	song = "nea_yueyuanhuahao"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 长城谣 ##
+music = {
+	song = "nea_changchengyao"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 蔷薇处处开 ##
+music = {
+	song = "nea_qiangweichuchukai"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 太阳出来喜洋洋 ##
+music = {
+	song = "nea_taiyangchulaixiyangyang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 茉莉花 ##
+music = {
+	song = "nea_molihua"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 无锡景 ##
+music = {
+	song = "nea_wuxijing"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 天涯歌女 ##
+music = {
+	song = "nea_tianyagenv"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 送别 ##
+music = {
+	song = "nea_songbie"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+is_literally_china = yes
+		}
+	}
+}
+## 勇士进行曲 ##
+music = {
+	song = "nea_yongshijinxingqu"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+is_literally_china = yes
+		}
+	}
+}
+## 何日君再来 ##
+music = {
+	song = "nea_herijunzailai"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 假正经 ##
+music = {
+	song = "nea_jiazhengjing"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 毛毛雨 ##
+music = {
+	song = "nea_maomaoyu"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 我要你 ##
+music = {
+	song = "nea_woyaoni"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 玫瑰玫瑰我爱你 ##
+music = {
+	song = "nea_roseroseiloveyou"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 夜来香 ##
+music = {
+	song = "nea_theeveningprimrose"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 祝你一切顺利 ##
+music = {
+	song = "nea_farewellshasha"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 四海都是中国人 ##
+music = {
+	song = "nea_sihaidoushizhongguoren"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+		}
+	}
+}
+
+## 西子姑娘 ##
+music = {
+	song = "nea_xiziguniang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 颂龙旗 ##
+music = {
+	song = "nea_songlongqi"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { 
+			OR = {
+tag = MAN
+tag = ECA
+                                                 }
+                                                }
+		}
+		modifier = {
+			factor = 2.5
+OR = {
+tag = MAN
+tag = ECA
+}
+		}
+	}
+}
+
+## 五旗共和歌 ##
+music = {
+	song = "nea_wuqigonghege"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+is_literally_china = yes
+NOT = { tag = PRC }
+		}
+	}
+}
+
+## 北洋政府陆军军歌（颂民国） ##
+music = {
+	song = "nea_songminguo"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+is_literally_china = yes
+NOT = { tag = PRC }
+		}
+	}
+}
+
+############################
+########## 纯音乐 ##########
+
+## 日出之地 ##
+music = {
+	song = "nea_richuzhidi"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+## 太平洋 ##
+music = {
+	song = "nea_taipingyang"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+## 挽歌 ##
+music = {
+	song = "nea_elegy"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+## 声音的启迪 ##
+music = {
+	song = "nea_vocal_inspirations"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+			has_war = yes
+		}
+	}
+}
+## 我记得 ##
+music = {
+	song = "nea_i_remember"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+			has_war = no
+		}
+	}
+}
+
+## 分列式进行曲 ##
+#music = {
+#	song = "nea_fenlieshijinxingqu"
+#	
+#	chance = { 
+#factor = 0
+#		
+#	}
+#}
+
+## 李中堂乐 ##
+music = {
+	song = "nea_lizhongtang"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+has_war = no
+		}
+		modifier = {
+			factor = 0
+            NOT = { is_literally_china = yes }
+			NOT = { is_in_faction_with = JAP }
+		}
+	}
+}
+
+## 普天乐 ##
+music = {
+	song = "nea_putianyue"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 2
+has_war = no
+		}
+		modifier = {
+			factor = 0
+            NOT = { is_literally_china = yes }
+			NOT = { is_in_faction_with = JAP }
+		}
+	}
+}
+
+
+
+#################################
+########## DBJ专属 ##########
+
+## 松花江上 ##
+music = {
+	song = "nea_songhuajiangshang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+OR = {
+			NOT = { is_literally_china = yes }
+controls_state = 328
+}
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+		}
+modifier = {
+			factor = 2
+			tag = NEA
+date > 1936.2.1
+NOT = { controls_state = 328 }
+		}
+                                
+	}
+}
+
+## 走西口 ##
+music = {
+	song = "nea_zouxikou"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1
+			is_literally_china = yes
+		}
+modifier = {
+			factor = 2
+			tag = NEA
+			date > 1936.1.2
+		}
+                                
+	}
+}
+
+
+
+#############################
+########## MAN专属 ##########
+
+## 大清国歌《巩金瓯》 ##
+music = {
+	song = "nea_manzhou_gongjinou"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+			}
+		}
+	}
+}
+## 大清帝国水师军歌 ##
+music = {
+	song = "nea_daqingdiguo_shuishijunge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				tag = JAP
+			}
+		}
+	}
+}
+## 北洋政府国歌-卿云歌 ##
+music = {
+	song = "nea_qingyunge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = MAN
+				tag = ECA
+				tag = MEJ
+				
+			}
+		}
+	}
+}
+
+
+
+
+#############################
+########## JAP专属 ##########
+
+## 露营之歌 ##
+music = {
+	song = "nea_luyingzhige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+		}
+	}
+}
+
+## 大和精神 ##
+music = {
+	song = "nea_dahejingshen"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+			
+		}
+	}
+}
+
+## 上去高山望平川 ##
+music = {
+	song = "nea_shangqugaoshanwangpingchuan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+		}
+	}
+}
+
+## 昭和维新之歌 ##
+music = {
+	song = "nea_zhaoheweixinzhige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+NOT = {
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+}
+		}
+		modifier = {
+			factor = 2.5
+			OR = {
+				tag = JAP
+				is_in_faction_with = JAP
+			}
+		}
+	}
+}
+
+
+
+
+#############################
+########## CHI专属 ##########
+
+## 夜上海 ##
+music = {
+	song = "nea_yeshanghai"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 旗正飘飘 ##
+music = {
+	song = "nea_qizhengpiaopiao"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+## 知识青年从军歌 ##
+music = {
+	song = "nea_zhishiqingniancongjunge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+has_war = yes
+		}
+	}
+}
+## 毕业歌 ##
+music = {
+	song = "nea_biyege"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+		}
+	}
+}
+## 中华民国陆军军歌 ##
+music = {
+	song = "nea_chi_lujun_junge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+## 黃埔陆军军官学校校歌 ##
+music = {
+	song = "nea_huangpujunxiaoxiaoge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+## 中华民国海军军校军歌 ##
+music = {
+	song = "nea_chi_haijun_junxiaojunge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+## 中华民国海军军歌 ##
+music = {
+	song = "nea_chi_haijun_junge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+## 中华民国空军军歌 ##
+music = {
+	song = "nea_chi_kongjun_junge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+## 中华民国装甲兵之歌 ##
+music = {
+	song = "nea_chi_zhuangjiabingzhige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+
+
+## 黄埔军魂 ##
+music = {
+	song = "nea_huangpujunhun"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+			has_war = yes
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+
+## 国父纪念歌 ##
+music = {
+	song = "nea_guofujiniange"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = no
+		}
+	}
+}
+
+## 国旗歌 ##
+music = {
+	song = "nea_guoqige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+			NOT = { tag = PRC }
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = no
+		}
+	}
+}
+
+## 三民主义歌 ##
+music = {
+	song = "nea_sanminzhuyige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = no
+		}
+	}
+}
+
+## 国民革命歌 ##
+music = {
+	song = "nea_guomingemingge"
+	
+	chance = {
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+
+## 中华民国空军军官学校歌 ##
+music = {
+	song = "nea_minguo_kongjunjunxiao"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 1.5
+			is_literally_china = yes
+		}
+		modifier = {
+			factor = 2
+			TAG = CHI
+		}
+		modifier = {
+			factor = 2
+			OR = {
+			is_warlord = yes
+			TAG = SIK
+			}
+			has_war = yes
+		}
+	}
+}
+
+## 永生的八一四 ##
+music = {
+	song = "nea_yongshengdebayisi"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+## 夜袭 ##
+music = {
+	song = "nea_yexi"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 我有一支枪 ##
+music = {
+	song = "nea_woyouyizhiqiang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+is_literally_china = yes
+has_war = yes
+		}
+	}
+}
+
+## 十万青年十万军 ##
+music = {
+	song = "nea_shiwanqingnianshiwanjun"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+has_war = yes
+		}
+	}
+}
+
+## 蓝天进行曲 ##
+music = {
+	song = "nea_lantianjinxingqu"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+## 军纪歌 ##
+music = {
+	song = "nea_junjige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+## 赴战 ##
+music = {
+	song = "nea_fuzhan"
+	
+	chance = {
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+## 出发 ##
+music = {
+	song = "nea_chufa"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+## 我爱中华 ##
+music = {
+	song = "nea_woaizhonghua"
+	
+	chance = {
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+
+
+
+
+
+#############################
+########## PRC专属 ##########
+
+## 弹起我心爱的土琵琶 ##
+music = {
+	song = "nea_tanqiwoxinaidetupipa"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 5
+has_war = yes
+			is_literally_china = yes
+		}
+	}
+}
+## 八路军进行曲 ##
+music = {
+	song = "nea_balujunjinxingqu"
+	
+	chance = {
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 5
+			tag = PRC
+has_war = yes
+		}
+	}
+}
+## 八路军拉大栓 ##
+music = {
+	song = "nea_balujunladashuan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+has_war = yes
+		}
+	}
+}
+## 延安颂 ##
+music = {
+	song = "nea_yanansong"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			tag = PRC
+		}
+	}
+}
+## 游击军 ##
+music = {
+	song = "nea_youjijun"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			tag = PRC
+has_war = yes
+		}
+	}
+}
+## 在太行山上 ##
+music = {
+	song = "nea_zaitaihangshanshang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 5
+			tag = PRC
+has_war = yes
+		}
+	}
+}
+
+## 南泥湾 ##
+music = {
+	song = "nea_nanniwan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			
+			tag = PRC
+				
+			
+		}
+	}
+}
+## 岷江夜曲 ##
+music = {
+	song = "nea_minjiangyequ"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+## 新四军军歌 ##
+music = {
+	song = "nea_xinsijunjunge"
+	
+	chance = {
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+has_war = yes
+		}
+	}
+}
+## 游击队歌 ##
+music = {
+	song = "nea_youjiduige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+has_war = yes
+		}
+	}
+}
+## 军民大生产 ##
+music = {
+	song = "nea_junmindashengchan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 2.5
+			
+			tag = PRC
+				
+			
+		}
+	}
+}
+
+
+
+
+
+#################################
+########## SCC/XKC专属 ##########
+
+## 黄杨扁担 ##
+music = {
+	song = "nea_huangyangbiandan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 兰花花 ##
+music = {
+	song = "nea_lanhuahua"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+## 康定情歌 ##
+music = {
+	song = "nea_kangdingqingge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+
+
+########## NMC/SIK/TIB专属 ##########
+
+## 五哥放羊 ##
+music = {
+	song = "nea_wugefangyang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 阿拉木汗 ##
+music = {
+	song = "nea_alamuhan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 达坂城的姑娘 ##
+music = {
+	song = "nea_dabanchengdeguniang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 半个月亮爬上来 ##
+music = {
+	song = "nea_bangeyueliangpashanglai"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 掀起你的盖头来 ##
+music = {
+	song = "nea_xianqinidegaitoulai"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+## 在那遥远的地方 ##
+music = {
+	song = "nea_zainayaoyuandedifang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			has_war = no
+		}
+	}
+}
+
+########## 战争专属 ##########
+
+## 保卫黄河 ##
+music = {
+	song = "nea_baoweihuanghe"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 团结就是力量 ##
+music = {
+	song = "nea_tuanjiejiushililiang"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 救国军歌 ##
+music = {
+	song = "nea_jiuguojunge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 抗敌歌 ##
+music = {
+	song = "nea_kangdige"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 乘胜追击 ##
+music = {
+	song = "nea_chenshengzhuiji"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 0
+			NOT = { has_war_with = event_target:WTT_current_china_leader }		 	
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_government = communism
+			has_war_with = event_target:WTT_current_china_leader
+		 	event_target:WTT_current_china_leader = { 
+			surrender_progress > 0.5
+			num_of_controlled_states > 2
+			}
+		}
+		modifier = {
+			factor = 100
+			has_global_flag = fall_of_nanking_ccw
+			is_literally_china = yes
+			has_government = communism
+			has_war_with = event_target:WTT_current_china_leader
+			event_target:WTT_current_china_leader = { 
+			surrender_progress > 0.5
+			num_of_controlled_states > 2
+			}
+		}
+	}
+}
+
+## 抗日军政大学校歌 ##
+music = {
+	song = "nea_kangrijunzhengdaxuexiaoge"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+			has_war = yes
+		}
+	}
+}
+
+## 到敌人后方去 ##
+music = {
+	song = "nea_daodirenhoufangqu"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			tag = PRC
+			has_war = yes
+		}
+	}
+}
+
+## 大刀进行曲 ##
+music = {
+	song = "nea_dadaojinxingqu"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 庆祝胜利 ##
+music = {
+	song = "nea_qingzhushengli"
+	
+	chance = {
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = no
+			has_global_flag = CHI_no_longer_united_flag
+		}
+	}
+}
+
+## 歌八百壮士 ##
+music = {
+	song = "nea_gebabaizhuangshi"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 还我河山 ##
+music = {
+	song = "nea_huanwoheshan"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = { is_literally_china = yes }
+			
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+			has_war = yes
+		}
+	}
+}
+
+## 七剑战歌 ##
+music = {
+	song = "nea_qijianzhange"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+
+## 史诗般的战争 ##
+music = {
+	song = "nea_epic_battle_and_war"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+
+## 死者之秘 ##
+music = {
+	song = "nea_dead_man_s_secret"
+	
+	chance = { 
+factor = 1
+		modifier = {
+			factor = 3
+			has_war = yes
+		}
+	}
+}
+
+########## PRC's 70th anniversary ##########
+
+## 钢铁洪流进行曲 ##
+music = {
+	song = "nea_marchi_of_steel_torrent"
+	
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 5
+			has_war = yes
+			tag = PRC
+is_major = yes
+		}
+		
+	}
+}
+
+## 东风浩荡进行曲 ##
+music = {
+	song = "nea_the_great_east_wind"
+	
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 5
+			has_war = yes
+			tag = PRC
+is_major = yes
+		}
+		
+	}
+}
+
+## 雄鹰出击进行曲 ##
+music = {
+	song = "nea_eagle_attack"
+	
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 5
+			has_war = yes
+			tag = PRC
+is_major = yes
+		}
+		
+	}
+}
+
+## 冲上云霄 ##
+music = {
+	song = "nea_rushing_into_the_sky"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 5
+			tag = PRC
+is_major = yes
+		}
+		
+	}
+}
+
+###new song
+
+music = {
+	song = "ErPao"
+	chance = {
+	    factor = 1
+	    
+		modifier = {
+            factor = 4
+            original_tag = PRC
+            is_major = yes
+			
+        }			
+	}	
+}
+
+music = {
+	song = "gechagnzuguo"
+	chance = {
+	    factor = 1
+	   	modifier = {
+            factor = 4
+            original_tag = PRC
+            is_major = yes
+			
+        }			
+	}	
+}
+
+music = {
+	song = "wodezuguo"
+	chance = {
+	    factor = 1
+		modifier = {
+            factor = 4
+            original_tag = PRC
+            is_major = yes
+			
+        }		
+	}	
+}
+
+music = {
+	song = "WoAiZuGuoDeLanTian"
+	chance = {
+	    factor = 1
+		modifier = {
+            factor = 4
+            original_tag = PRC
+            is_major = yes
+			
+        }		
+	}	
+}
+
+music = {
+	song = "JunGangZhiYe"
+	chance = {
+	    factor = 1
+		modifier = {
+            factor = 0
+            NOT = {	is_literally_china = yes }
+			
+		}
+		modifier = {
+            factor = 4
+            is_literally_china = yes
+			has_war = no
+		}
+				
+	}	
+}
+
+music = {
+	song = "eryuelilai"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 2.5
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "gechangerxiaofangniulang"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 2.5
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "jiefangjunjunge"
+	chance = {
+	    factor = 1
+	    modifier = {
+            factor = 0
+            NOT = {	tag = PRC	}
+			
+        }			
+		modifier = {
+            factor = 0
+            NOT = {	has_war_with = CHI }
+			
+		}	
+		modifier = {
+            factor = 4
+            original_tag = PRC
+            is_major = yes
+            has_war = yes
+			
+		}	
+	}	
+}
+
+music = {
+	song = "kaixuange"           
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+		    has_war = yes
+				
+			
+		}
+	}
+}
+
+music = {
+	song = "liangjianqianzou"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 4
+			is_literally_china = yes
+		}
+	}
+}
+
+music = {
+	song = "mutongduandi"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 3
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "SanDaJiLvBaXiangZhuYi"
+	chance = {
+	    factor = 1
+	    modifier = {
+            factor = 0
+            NOT = {	tag = PRC	}
+			
+        }			
+		
+		modifier = {
+            factor = 3.5
+            original_tag = PRC
+            
+			
+		}	
+	}	
+}
+
+music = {
+	song = "Anthem_of_the_Special_Forces"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+music = {
+	song = "Forward_to_the_Ocean"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+music = {
+	song = "March_of_the_Chinese_Air_Force"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = PRC
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			tag = PRC
+			is_major = yes
+		}
+	}
+}
+
+music = {
+	song = "No_Communist_Party_No_New_China"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = PRC
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			tag = PRC
+			is_major = yes
+		}
+	}
+}
+
+music = {
+	song = "Ode_to_the_Motherland"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			tag = PRC
+			is_major = yes
+		}
+	}
+}
+
+music = {
+	song = "Socialism_is_Good"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = PRC
+			}
+		}
+		
+		modifier = {
+			factor = 4
+			tag = PRC
+			is_major = yes
+		}
+	}
+}
+
+music = {
+	song = "Song_of_the_57th_Division_of_the_National_Revolutionary_Army"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = yes
+			NOT = { tag = PRC }
+		}
+	}
+}
+
+music = {
+	song = "Song_of_the_Guangxi_Student_Soldiers"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 3
+			tag = GXC
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+music = {
+	song = "Song_of_the_NRA_60th_Army"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 3
+			tag = YUN
+		}
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+music = {
+	song = "The_Soul_of_Whampoa"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+		}
+	}
+}
+
+music = {
+	song = "The_People_Army_is_Loyal_to_the_Party"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = PRC
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			tag = PRC
+			
+		}
+	}
+}
+
+music = {
+	song = "The_People_Army_is_Loyal_to_the_Party_song"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				tag = PRC
+			}
+		}
+		
+		modifier = {
+			factor = 3
+			tag = PRC
+			
+		}
+	}
+}
+
+music = {
+	song = "We_Stand_Tall_on_the_Pacific_Ocean"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 2.5
+			is_literally_china = yes
+			
+		}
+	}
+}
+
+music = {
+	song = "When_That_Day_Comes"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 0
+			has_war = no
+		}
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			is_major = yes
+			has_war = yes
+			num_of_factories > 200
+		}
+	}
+}
+
+music = {
+	song = "With_Great_Loyalty_and_Courage"
+	
+	chance = {
+		factor = 0
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 0
+			is_literally_china = yes
+			
+		}
+	}
+}
+
+
+
+
+
+
+music = {
+	song = "reburn_pacific"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 8
+			has_government = communism
+			is_major = yes
+			has_war = yes
+			has_navy_size = { size > 100 }
+		}
+	}
+}
+
+music = {
+	song = "111"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "107"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "113"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_country_flag = PRC_Establish_state_or_independent_government
+		}
+	}
+}
+
+music = {
+	song = "114"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_government = communism
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "116"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 7
+			has_government = communism
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "117"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_government = communism
+			leader_is_maoist = yes
+		}
+	}
+}
+
+music = {
+	song = "119"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "126"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			is_literally_china = yes
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "129"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			has_government = communism
+			
+		}
+	}
+}
+
+music = {
+	song = "132"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 5
+			has_government = communism
+			
+		}
+	}
+}
+
+music = {
+	song = "200"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			has_government = communism
+			has_war = yes
+		}
+	}
+}
+
+music = {
+	song = "317"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_government = communism
+			is_major = yes
+		}
+	}
+}
+
+music = {
+	song = "134"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "249"
+	
+	chance = {
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		modifier = {
+			factor = 6
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "the_most_pretty_future_road"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_government = communism }
+		}	
+        modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 6
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "lostdream"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_government = communism }
+		}	
+        modifier = {
+			factor = 0
+			has_war = no
+		}
+		modifier = {
+			factor = 6
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "mingzhishanghai"
+	chance = { 
+		factor = 2
+		modifier = {
+			factor = 0
+			has_government = fascism
+		}	
+        modifier = {
+			factor = 0
+			has_war = yes
+		}
+		modifier = {
+			factor = 2.5
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "Song_of_Horst_Wessel"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_government = fascism }	
+		}	
+		modifier = {
+			factor = 2
+			has_government = fascism
+		}
+        modifier = {
+			factor = 3
+			TAG = GER
+			has_government = fascism
+		}
+	}
+}
+
+music = {
+	song = "guojige_zhongwenban"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_government = communism }
+			NOT = { has_government = n_socialism }		
+		}	
+		modifier = {
+			factor = 1.5
+			has_government = n_socialism
+		}
+        modifier = {
+			factor = 6
+			has_government = communism
+	    }
+	}
+}
+
+music = {
+	song = "guojige_russian"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = { has_government = communism }
+			NOT = { has_government = n_socialism }		
+		}	
+		modifier = {
+			factor = 1.5
+			has_government = n_socialism
+		}
+        modifier = {
+			factor = 6
+			has_government = communism
+		}
+	}
+}
+
+music = {
+	song = "masaiqu"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			
+				OR = {
+					has_government = fascism  
+					has_government = neutrality 
+				}
+			
+		}	
+                                modifier = {
+			factor = 2.5
+			tag = FRA
+OR = {
+                                                has_government = democratic  
+												has_government = n_socialism   
+has_government = communism  
+} 
+		}
+		modifier = {
+			factor = 2.5
+			has_war = yes
+OR = {
+                                                has_government = democratic 
+												has_government = n_socialism  
+has_government = communism  
+}
+		}
+	}
+}
+
+music = {
+	song = "jingtaoluori"
+	
+	chance = { 
+factor = 1
+modifier = {
+			factor = 0
+			NOT = {
+				is_literally_china = yes
+			}
+		}
+		modifier = {
+			factor = 6
+			is_literally_china = yes
+			has_war = yes
+is_major = yes
+num_of_factories > 200
+		}
+	}
+}
+
+music = {
+	song = "dayuanshuaiwolaila"
+
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+				OR = {
+					tag = VIC
+					has_government = fascism
+					original_tag = GER
+					
+				}
+			}
+		}	
+		modifier = {
+			factor = 2.5
+                                                
+			OR = {
+				tag = VIC
+				has_government = fascism  	
+				original_tag = GER
+			}
+		}
+	}
+
+}
+
+music = {
+	song = "wuxinghongqi"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			not = { has_country_flag = PRC_Establish_state_or_independent_government }	
+		}	
+		modifier = {
+			factor = 5
+			has_country_flag = PRC_Establish_state_or_independent_government
+		}
+	}
+}
+
+music = {
+	song = "herijunzailai"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			has_war = yes
+		}	
+		modifier = {
+			factor = 3
+			is_literally_china = yes
+			has_war = no
+		}
+        
+	}
+}
+
+music = {
+	song = "linsilingyuan"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			}
+		}
+		modifier = {
+			factor = 5
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			has_war_with = CHI
+			date > 1938.1.1
+		}
+        
+	}
+}
+
+music = {
+	song = "gemingyongyuanshinianqing"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			}
+		}
+		modifier = {
+			factor = 3
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			has_war = no
+		}
+        
+	}
+}
+
+music = {
+	song = "jiujiuyanyang"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			}	
+		}
+        modifier = {
+			factor = 3
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			has_war = no
+	    }
+	}
+}
+
+music = {
+	song = "xiangnianmaozhuxi"
+	chance = { 
+		factor = 1
+		modifier = {
+			factor = 0
+			NOT = {
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			}	
+		}
+        modifier = {
+			factor = 6
+			OR = {
+            TAG = event_target:WTT_communist_china
+            TAG = PRC
+            }
+			has_war = no
+			leader_is_maoist = yes
+	    }
+	}
+}
+
+music = {
+	song = "gangtiezhihuan"
+
+	chance = {
+		factor = 0.5
+        modifier = {
+			factor = 20
+tag = SOV
+has_government = communism
+                                                has_war_with = GER
+GER = { has_government = fascism }
+GER = { surrender_progress > 0.5 }
+			  GER = { has_capitulated = no }
+		}
+	}
+
+}
+
+music = {
+	song = "JAP1"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP2"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP3"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP4"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP5"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP6"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP7"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP8"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP9"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "JAP10"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+music = {
+	song = "JAP11"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+music = {
+	song = "JAP12"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+music = {
+	song = "JAP13"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+music = {
+	song = "JAP14"
+	
+	chance = {
+		factor = 3
+		modifier = {
+				factor=0
+				NOT = {
+					OR = {
+						tag = JAP
+					}
+				}
+		}		
+	}	
+}
+
+music = {
+	song = "WhereisArmo"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+		}
+	}
+}
+music = {
+	song = "TheLastEmperorMainTitleTheme"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+			has_war = no
+		}
+	}
+}
+music = {
+	song = "TheLastEmperorThemeVariation"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+			#has_war = no
+		}
+	}
+}
+
+music = {
+	song = "OpenTheDoor"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+			#has_war = no
+		}
+	}
+}
+music = {
+	song = "FirstCoronation"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+			#has_war = no
+		}
+	}
+}
+music = {
+	song = "EmperorsWaltz"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+			#has_war = no
+		}
+	}
+}
+music = {
+	song = "PickingUpBrides"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+
+			TAG = MAN
+			has_war = no
+		}
+	}
+}
+
+music = {
+	song = "WhenJohnnyComesMarchingHome"
+
+	chance = {
+	factor = 1
+		modifier = {
+			factor = 2.5
+			TAG = USA
+		}
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

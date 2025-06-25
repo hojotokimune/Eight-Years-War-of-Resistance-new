@@ -1,0 +1,32 @@
+add_namespace = srt
+
+# country_event = {
+# 	id = 
+# 	title = 
+# 	desc = 
+# 	is_triggered_only = yes
+# 	picture = 
+# 	fire_only_once = yes
+# 	option = {
+# 		name = 
+# 	}
+# }
+
+country_event = {
+	id = srt.1
+	title = srt.1.t
+	desc = srt.1.d
+	is_triggered_only = yes
+	picture = GFX_sanrentuan
+	fire_only_once = yes
+	option = {
+		name = srt.1.a
+		add_political_power = 50
+	}
+	option = {
+		name = srt.1.b
+		retire_country_leader = yes
+		recruit_character = PRC_sanrentuan
+		promote_character = PRC_sanrentuan
+	}
+}

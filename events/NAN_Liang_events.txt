@@ -1,0 +1,82 @@
+﻿add_namespace = nan_news
+add_namespace = nan
+
+news_event = {
+	id = nan_news.1
+	title = { text = nan_news.1.t }
+	desc = { text = nan_news.1.desc }
+	picture = GFX_news_event_dongya
+	is_triggered_only = yes
+	major = yes
+	
+	option = {
+		name = nan_news.1.a
+		trigger = {
+			original_tag = PRC
+		}
+    hidden_effect = {			
+	    play_song = "guojige_zhongwenban"	
+	}		
+	}
+	option = {
+		name = nan_news.1.c
+		trigger = {
+			original_tag = CHI
+		}
+    hidden_effect = {			
+	    play_song = "骊歌"		
+	}		
+	}
+	option = {
+		name = nan_news.1.e
+		trigger = {
+			original_tag = JAP
+		}
+    hidden_effect = {			
+	    play_song = "萤之光"	
+	}		
+	}
+	option = {
+		name = nan_news.1.d
+		trigger = {
+			original_tag = MAN
+		}
+    hidden_effect = {		
+	    play_song = "nea_daqingdiguo_shuishijunge"	
+	}		
+	}
+}
+
+country_event = {
+	id = nan.1
+	title = nan.1.t
+	desc = nan.1.d
+	picture = GFX_report_event_assembly_china
+
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+
+	option = {
+		name = nan.1.a	
+			add_popularity = {
+				ideology = n_socialism
+				popularity = 0.1
+			}
+			add_popularity = {
+				ideology = democratic
+				popularity = 0.1
+			}
+			remove_ideas = dangguo_system
+			unlock_national_focus = CHI_support_kmt_opposition_focus
+			add_to_variable = {
+				chi_constitutionalization_pressure = 10
+			}
+			custom_effect_tooltip = blank_line
+			custom_effect_tooltip = chi_constitutionalization_pressure_minus_10_tt
+    hidden_effect = {				
+	    play_song = "你可听到人民在呐喊？"	
+	}			
+	}
+}

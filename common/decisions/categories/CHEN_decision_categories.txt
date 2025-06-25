@@ -1,0 +1,109 @@
+CHEN_recruit_new_command = {
+	icon = military_operation
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+		tag = event_target:WTT_current_china_leader
+		event_target:WTT_current_china_leader = {
+			NOT = { has_government = communism }
+			is_subject = no
+		}
+	}
+}
+
+CHEN_secure_domestic_stability = {
+	picture = chi_secure_domestic_stability
+	icon = china_secure_domestic_stability
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+		tag = event_target:WTT_current_china_leader
+		event_target:WTT_current_china_leader = {
+			NOT = { has_government = communism }
+			is_subject = no
+		}
+	}
+}
+
+CHI_colony_border_clashes = {
+	picture = chi_decolonisation_effort
+	icon = generic_independence
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+
+			592 = { is_owned_and_controlled_by = ROOT }
+			593 = { is_owned_and_controlled_by = ROOT }
+
+			OR = {
+				has_country_flag = CHI_reject_returning_hk
+				has_country_flag = CHI_reject_returning_mc
+				has_country_flag = CHI_reject_returning_kcw
+			}
+
+		NOT = {
+			AND = {
+				owns_state = 326
+				owns_state = 728
+			    owns_state = 729
+			}
+		}
+	}
+}
+
+CHEN_wipe_out_colonial_influence = {
+	picture = chi_wipe_out_colonial_influence
+	icon = saf_anti_colonialist_crusade
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+		tag = event_target:WTT_current_china_leader
+		event_target:WTT_current_china_leader = {
+			NOT = { has_government = communism }
+			is_subject = no
+		}
+	}
+}
+
+CHEN_wipe_out_colonial_influence_communist = {
+	icon = saf_anti_colonialist_crusade
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+		is_literally_china = yes
+		has_government = communism
+		is_subject = no
+	}
+}
+
+CHEN_wipe_out_colonial_influence_korea = {
+	icon = saf_anti_colonialist_crusade
+	allowed = {
+		tag = KOR
+	}
+	visible = {
+
+		is_subject = no
+	}
+}
+
+CHEN_new_era_for_democracy = {
+	picture = chi_national_assembly
+	icon = generic_democracy
+	allowed = {
+		is_literally_china = yes
+	}
+	visible = {
+		tag = event_target:WTT_current_china_leader
+		#has_completed_focus = CHI_constitutional_reform
+		event_target:WTT_current_china_leader = {
+			NOT = { has_government = communism }
+			is_subject = no
+		}
+	}
+}

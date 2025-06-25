@@ -1,0 +1,105 @@
+Foreign_Sup_category = {
+
+	STAG = {
+		allowed = {
+	 		original_tag = CHI
+		}
+
+		available = {
+                        USA = { exists = yes }
+                        USA = { is_puppet = no }
+                        NOT = { CHI = { has_war_with = USA } }
+               }
+                cost = 100
+		
+               visible = {	
+		        NOT = { has_global_flag = STAG_flag }
+               }
+
+		complete_effect = {
+			add_ideas = STAG_idea
+                        set_global_flag = STAG_flag
+                }
+                
+		
+                ai_will_do = {
+			factor = 100
+			}
+           }
+        White_group = {
+		allowed = {
+	 		original_tag = CHI
+		}
+
+		available = {
+			original_tag = CHI
+                        JAP = { exists = yes }
+                        NOT = { CHI = { has_war_with = JAP } }
+                }
+                cost = 80
+		
+                visible = {
+		        original_tag = CHI
+		        NOT = { has_global_flag = White_group_flag }
+                }
+
+		complete_effect = {
+			add_ideas = White_group_idea
+                        set_global_flag = White_group_flag
+                }
+                
+		
+                ai_will_do = {
+			factor = 100
+		}
+	
+           }
+
+           
+        MAAG = {
+		allowed = {
+	 		original_tag = CHI
+		}
+
+		available = {
+			USA = { exists = yes }
+                        USA = { is_puppet = no }
+                        NOT = { CHI = { has_war_with = USA } }
+                        CHI = { has_idea = STAG_idea }
+                        USA = { has_idea = SINO_USA }
+                        USA = { is_puppet = no }
+               
+                  }
+                cost = 20
+                visible = {
+                        OR = {
+				original_tag = CHI
+			}
+		        NOT = { has_global_flag = MAAG_flag }
+                }
+
+		complete_effect = {
+			add_ideas = MAAG_idea
+                        remove_ideas = STAG_idea
+                        set_global_flag = MAAG_flag
+                }
+                
+		
+                ai_will_do = {
+			factor = 100
+		}
+	}
+
+}
+          
+
+
+
+
+
+
+
+
+
+#         }
+#}

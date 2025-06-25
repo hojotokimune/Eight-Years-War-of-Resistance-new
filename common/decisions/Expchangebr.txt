@@ -1,0 +1,75 @@
+Expchangebr = {
+	land_exp_change_bp = {
+		icon = generic_research
+		allowed = {
+			has_army_experience > 150
+		}
+		available = {
+			has_army_experience > 150
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			army_experience = -150
+			add_breakthrough_points = {
+				specialization = specialization_land
+				value = 1.0
+			}
+		}
+	}
+	naval_exp_change_bp = {
+		icon = generic_research
+		allowed = {
+			has_navy_experience > 150
+		}
+		available = {
+			has_navy_experience > 150
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			navy_experience = -150
+			add_breakthrough_points = {
+				specialization = specialization_naval
+				value = 1.0
+			}
+		}
+	}
+	air_exp_change_bp = {
+		icon = generic_research
+		allowed = {
+			has_air_experience > 150
+		}
+		available = {
+			has_air_experience > 150
+		}
+		cost = 0
+		visible = {
+			is_ai = no
+		}
+		days_remove = 1
+		ai_will_do = {
+			factor = 0
+		}
+		remove_effect = {
+			air_experience = -150
+			add_breakthrough_points = {
+				specialization = specialization_air
+				value = 1.0
+			}
+		}
+	}
+	
+}

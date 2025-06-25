@@ -1,0 +1,25 @@
+on_actions = {
+	on_puppet = {
+		effect = {
+			if = {
+				limit = { 
+					AND = { 
+						TAG = BUR
+						is_subject_of = JAP
+					}
+				}
+				set_cosmetic_tag = BUR_JAP
+			}
+		}
+	}
+	on_subject_free = {
+		effect = {
+			if = {
+				limit = {
+					TAG = BUR
+				}
+				retire_country_leader = yes
+			}
+		}
+	}
+}

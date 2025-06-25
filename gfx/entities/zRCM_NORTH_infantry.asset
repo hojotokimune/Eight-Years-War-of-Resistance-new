@@ -1,0 +1,253 @@
+
+
+####################################################################
+####															#####
+####					north									#####
+####															#####
+####################################################################	
+
+
+
+entity = {
+	name = "SHD_infantry_entity"
+	clone = "SHX_infantry_entity"
+}	
+
+entity = {
+	name = "SHD_infantry_2_entity"
+	clone = "SHX_infantry_2_entity"
+}
+
+entity = {
+	name = "SHD_infantry_weapon_mg_left_entity"
+	clone = "SHX_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "SHD_infantry_weapon_mg_right_entity"
+	clone = "SHX_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "SHD_infantry_weapon_mg_long_idle_entity"
+	clone = "SHX_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "SHD_infantry_weapon_rifle_right_entity"
+	clone = "SHX_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "SHD_infantry_weapon_rifle_left_entity"
+	clone = "SHX_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "SHD_infantry_weapon_rifle_long_idle_entity"
+	clone = "SHX_infantry_weapon_rifle_long_idle_entity"
+}
+
+##########
+entity = {
+	name = "HPC_infantry_entity"
+	clone = "SHX_infantry_entity"
+}	
+
+entity = {
+	name = "HPC_infantry_2_entity"
+	clone = "SHX_infantry_2_entity"
+}
+
+entity = {
+	name = "HPC_infantry_weapon_mg_left_entity"
+	clone = "SHX_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "HPC_infantry_weapon_mg_right_entity"
+	clone = "SHX_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "HPC_infantry_weapon_mg_long_idle_entity"
+	clone = "SHX_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "HPC_infantry_weapon_rifle_right_entity"
+	clone = "SHX_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "HPC_infantry_weapon_rifle_left_entity"
+	clone = "SHX_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "HPC_infantry_weapon_rifle_long_idle_entity"
+	clone = "SHX_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "PLM_infantry_entity"
+	clone = "SHX_infantry_entity"
+}	
+
+entity = {
+	name = "PLM_infantry_2_entity"
+	clone = "SHX_infantry_2_entity"
+}
+
+entity = {
+	name = "PLM_infantry_weapon_mg_left_entity"
+	clone = "SHX_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "PLM_infantry_weapon_mg_right_entity"
+	clone = "SHX_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "PLM_infantry_weapon_mg_long_idle_entity"
+	clone = "SHX_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "PLM_infantry_weapon_rifle_right_entity"
+	clone = "SHX_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "PLM_infantry_weapon_rifle_left_entity"
+	clone = "SHX_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "PLM_infantry_weapon_rifle_long_idle_entity"
+	clone = "SHX_infantry_weapon_rifle_long_idle_entity"
+}
+
+#####
+entity = {
+	name = "NEA_infantry_entity"
+	clone = "SHX_infantry_entity"
+}	
+
+entity = {
+	name = "NEA_infantry_2_entity"
+	clone = "SHX_infantry_2_entity"
+}
+
+entity = {
+	name = "NEA_infantry_weapon_mg_left_entity"
+	clone = "SHX_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "NEA_infantry_weapon_mg_right_entity"
+	clone = "SHX_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "NEA_infantry_weapon_mg_long_idle_entity"
+	clone = "SHX_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "NEA_infantry_weapon_rifle_right_entity"
+	clone = "SHX_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "NEA_infantry_weapon_rifle_left_entity"
+	clone = "SHX_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "NEA_infantry_weapon_rifle_long_idle_entity"
+	clone = "SHX_infantry_weapon_rifle_long_idle_entity"
+}
+
+#####
+entity = {
+	name = "SHC_infantry_entity"
+	clone = "SHX_infantry_entity"
+}	
+
+entity = {
+	name = "SHC_infantry_2_entity"
+	clone = "SHX_infantry_2_entity"
+}
+
+entity = {
+	name = "SHC_infantry_weapon_mg_left_entity"
+	clone = "SHX_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "SHC_infantry_weapon_mg_right_entity"
+	clone = "SHX_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "SHC_infantry_weapon_mg_long_idle_entity"
+	clone = "SHX_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "SHC_infantry_weapon_rifle_right_entity"
+	clone = "SHX_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "SHC_infantry_weapon_rifle_left_entity"
+	clone = "SHX_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "SHC_infantry_weapon_rifle_long_idle_entity"
+	clone = "SHX_infantry_weapon_rifle_long_idle_entity"
+}
+
+####
+entity = {
+	name = "SUY_infantry_entity"
+	clone = "SHX_infantry_entity"
+}	
+
+entity = {
+	name = "SUY_infantry_2_entity"
+	clone = "SHX_infantry_2_entity"
+}
+
+entity = {
+	name = "SUY_infantry_weapon_mg_left_entity"
+	clone = "SHX_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "SUY_infantry_weapon_mg_right_entity"
+	clone = "SHX_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "SUY_infantry_weapon_mg_long_idle_entity"
+	clone = "SHX_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "SUY_infantry_weapon_rifle_right_entity"
+	clone = "SHX_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "SUY_infantry_weapon_rifle_left_entity"
+	clone = "SHX_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "SUY_infantry_weapon_rifle_long_idle_entity"
+	clone = "SHX_infantry_weapon_rifle_long_idle_entity"
+}

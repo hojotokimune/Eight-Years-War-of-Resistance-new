@@ -1,0 +1,863 @@
+warlords_unit_production = {
+	allowed = { 
+        is_literally_china = yes
+        #has_government = neutrality
+	    #NOT = { tag = event_target:WTT_current_china_leader }
+	} 
+	enable = {
+		NOT = {
+			tag = event_target:WTT_current_china_leader
+		}
+	}
+	
+	abort_when_not_enabled = yes 
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -9999 #<MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -9999 #MODDED
+	}
+
+	#LAND
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 35
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 15
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -9999 #MODDED
+	}
+	
+    ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -10
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 200
+	}
+}
+
+ma_cliques_unit_production = {
+    
+	allowed = { 
+	    OR = {
+			tag = XSM
+            tag = NXM
+            tag = TNG
+            tag = GSM
+		    tag = EGM
+            tag = MEN
+            tag = MEJ
+            tag = ECA
+	        tag = MON
+			tag = EGM
+		}
+	} 
+	enable = {
+	    always = yes
+	}
+	abort = {
+		#always = no
+	    OR = {
+			tag = event_target:WTT_current_china_leader
+			date > 1944.1.1
+		}
+	}
+
+    ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -5
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = 5
+	}
+}
+
+RCM_dont_join_ETH = {
+	enable = {
+		is_literally_china = yes
+	    is_historical_focus_on = yes
+	    ETH = { is_faction_leader = yes }
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = ETH
+		value = -5000
+	}
+}
+
+SIK_KHR_is_very_cool = {
+	enable = {
+		OR = {
+			tag = TNG
+		    #tag = HMI
+		}
+		has_global_flag = kashi_rebellion_flag
+	    country_exists = SIK
+	}
+	abort = {
+		OR = {
+		    NOT = { has_global_flag = kashi_rebellion_flag }
+	        NOT = { country_exists = SIK }
+	    }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = befriend
+		id = "KHR"			
+		value = 150
+	}
+	ai_strategy = {
+		type = alliance
+		id = "KHR"			
+		value = 200
+	}	
+}
+
+RCM_ma_dont_join_japan = {
+	enable = {
+		OR = {
+			tag = NXM
+			tag = XSM
+			tag = GSM
+			tag = EGM
+		}
+	    #is_historical_focus_on = yes
+		NOT = {
+			is_ally_with = JAP
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = alliance
+		id = JAP
+		value = -2500
+	}
+}
+
+SHX_SIK_is_not_very_cool = {
+	enable = {
+		tag = SHX
+		SIK = {
+			#is_subject = no
+			has_government = communism 
+		}
+	}
+	abort = {
+		NOT = {
+		    SIK = {
+			    #is_subject = no
+			    has_government = communism
+		    }
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "SIK"			
+		value = -200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SIK"			
+		value = -200
+	}	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SIK
+		target = non_aggression_pact
+		value = -5000
+	}
+}
+
+SHX_befriend_com = {
+	enable = {
+		tag = SHX
+		has_completed_focus = SHX_Three_eggs
+		OR = {
+			AND = {
+				has_war_with = JAP
+				event_target:WTT_communist_china = {
+					has_war_with = JAP
+				}
+			}
+		    date > 1937.1.1
+		}
+		NOT = {
+			has_war_with = event_target:WTT_communist_china
+		}
+		NOT = {
+			has_completed_focus = SHX_Contact_the_communist
+		}
+	}
+	abort = {
+		has_completed_focus = SHX_Contact_the_communist
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "PRC"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "PRC"			
+		value = 1
+	}	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = PRC
+		target = improve_relation
+		value = 25
+	}
+}
+
+tibet_wants_to_attack_xikang = {
+	enable = {
+		tag = TIB
+		has_war = no
+		XIK = {
+			is_neighbor_of = ROOT
+		}
+		NOT = {
+			has_global_flag = TIB_XIK_conflict_flag
+		}
+	}
+	abort = {
+		OR = {
+			has_global_flag = TIB_XIK_conflict_flag
+			NOT = {
+                XIK = {
+					is_neighbor_of = ROOT
+				}
+			}
+	        NOT = { country_exists = XIK }
+	        has_war = yes
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "XIK"
+		value = 1500
+	}   
+}
+
+xikang_tib_border = {
+	enable = {
+		tag = XIK
+		has_war = no
+		TIB = {
+			is_neighbor_of = ROOT
+		}	
+		NOT = {
+			has_global_flag = TIB_XIK_conflict_flag
+		}
+	}
+	abort = {
+		OR = {
+		    has_global_flag = TIB_XIK_conflict_flag
+			NOT = {
+                TIB = {
+					is_neighbor_of = ROOT
+				}
+			}
+	        NOT = { country_exists = TIB }
+			has_war = yes
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = prepare_for_war
+		id = "TIB"
+		value = 2000
+	}   
+}
+
+SHX_stay_yuncheng = {
+	enable = {
+		original_tag = SHX
+		has_defensive_war = yes
+		has_completed_focus = SHX_move_capital
+		615 = {
+			is_capital = no
+		}
+		#NOT = {
+		#	has_completed_focus = SHX_truce_with_japan
+		#}
+		998 = {
+			is_capital = no
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.75
+
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+ 			998
+ 		}
+		order_id = 3500
+		# ai areas that the orders will use these buffers in
+ 		area = asia
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = no
+ 		subtract_fronts_from_need = no
+ 	}
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CHI"
+		value = 5000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GXC"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GUD"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "PRC"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "PLM"
+		value = 50
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NEA"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SIK"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NXM"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUN"
+		value = 2000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SUY"
+		value = 2000
+	}
+}
+
+SHX_stay_in_shanxi_suiyuan = {
+	enable = {
+		OR = {
+			original_tag = SHX
+			original_tag = SUY
+		}
+		has_defensive_war = yes
+		has_war_with = JAP
+		NOT = {
+			OR = {
+				is_faction_leader = yes
+				tag = event_target:WTT_current_china_leader
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CHI"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GXC"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GUD"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "PRC"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "NEA"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SIK"
+		value = 3000
+	}
+
+	#ai_strategy = {
+	#	type = dont_defend_ally_borders
+	#	id = "NXM"
+	#	value = 3000
+	#}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "YUN"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "TNG"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "ATM"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "KRS"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "HMI"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GSM"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "EGM"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "XSM"
+		value = 3000
+	}
+
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SIC"
+		value = 3000
+	}
+}
+
+TNG_befriend_eng = {
+	enable = {
+		tag = TNG
+		has_completed_focus = TNG_foreign_relations
+		NOT = {
+			has_completed_focus = TNG_befriend_uk
+		}
+		is_historical_focus_on = yes
+		RAJ = {
+			is_subject_of = ENG
+		}
+	}
+	abort = {
+		has_completed_focus = TNG_befriend_uk	
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = befriend
+		id = "ENG"			
+		value = 200
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"			
+		value = 1
+	}	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ENG
+		target = improve_relation
+		value = 500
+	}
+}
+
+TNG_befriend_both = {
+	enable = {
+		tag = TNG
+		has_completed_focus = TNG_foreign_relations
+		NOT = {
+			OR = {
+				has_completed_focus = TNG_befriend_uk
+				has_completed_focus = TNG_befriend_soviet
+			}
+		}
+		is_historical_focus_on = no
+	}
+	abort = {
+		OR = {
+			has_completed_focus = TNG_befriend_uk
+			has_completed_focus = TNG_befriend_soviet
+		    is_historical_focus_on = yes
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = diplo_action_desire
+		id = ENG
+		target = improve_relation
+		value = 300
+	}
+	ai_strategy = {
+		type = diplo_action_desire
+		id = SOV
+		target = improve_relation
+		value = 300
+	}
+}
+
+TNG_attack_kashgar = {
+	enable = {
+		has_idea = SIK_strike_sheng
+		KHR = {
+			has_capitulated = no
+		}
+	}
+	abort = {
+		OR = {
+			NOT = {
+			    has_idea = SIK_strike_sheng
+		    }
+			KHR = {
+				has_capitulated = yes
+			}
+		}
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = consider_weak
+		id = "SIK"
+		value = 1500
+	}
+
+    ai_strategy = {
+		type = front_control
+
+		tag = SIK
+
+		ratio = 0.8
+
+		priority = 200
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+	}
+}
+
+minor_warlords_use_smaller_division = {
+	allowed = { 
+        is_literally_china = yes
+	} 
+	enable = {
+		num_of_controlled_states < 3
+	}
+	abort = {
+		num_of_controlled_states > 3
+	}
+	abort_when_not_enabled = yes
+    
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 150
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -150
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -35
+	}
+}
+
+warlords_no_spam = {
+	allowed = { 
+        is_chinese_warlord = yes
+        #has_government = neutrality
+	    #NOT = { tag = event_target:WTT_current_china_leader }
+	} 
+	enable = {
+		NOT = {
+			tag = event_target:WTT_current_china_leader
+			tag = GXC
+		}
+        check_variable = { ROOT.num_battalions > 350 }
+	}
+	abort_when_not_enabled = yes 
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -9999 
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -9999
+	}
+    
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -9999
+	}
+
+	ai_strategy = {
+        type = force_build_armies
+        value = -9999
+	}
+}
+
+SHC_dont_attack_prc = {
+	enable = {
+		original_tag = SHC
+		is_subject = no
+		has_completed_focus = CHI_cooperation_with_the_communists
+	}
+	
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = consider_weak
+		id = "PRC"
+		value = -2500
+	}
+}
+
+warlords_attack_chiang = {
+	allowed = { 
+        is_chinese_warlord = yes
+        #has_government = neutrality
+	    #NOT = { tag = event_target:WTT_current_china_leader }
+	} 
+	enable = {
+		is_chinese_warlord = yes
+		NOT = {
+			tag = event_target:WTT_current_china_leader
+		}
+        is_in_faction = yes
+		has_war_with = CHI
+	}
+	abort_when_not_enabled = yes 
+
+	ai_strategy = {
+		type = consider_weak
+		id = "CHI"
+		value = 50
+	}
+	
+	ai_strategy = {
+		type = front_control
+		tag = CHI
+		ratio = 0.75
+		priority = 150
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+	}
+}
+
+XSM_VOL_to_GSM = {
+
+	enable = {
+		has_idea = XSM_sending_reinforcement
+		has_global_flag = prc_adv_1_flag
+		GSM = {
+			has_war_with = PRC 
+			NOT = {
+				has_war_with = ROOT
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GSM"
+		value = 5000
+	}
+}
+
+XSM_VOL_to_NXM = {
+
+	enable = {
+		has_idea = XSM_sending_reinforcement
+		has_global_flag = prc_adv_1_flag
+		NXM = {
+			has_war_with = PRC 
+			NOT = {
+				has_war_with = ROOT
+			}
+		}
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NXM"
+		value = 5000
+	}
+}
+
+WRL_dont_help_chi_in_ccw = {
+	enable = {
+		is_chinese_warlord = yes
+		NOT = {
+			tag = CHI
+			is_subject_of = CHI
+			has_war_with = JAP
+		}
+		has_war_with = event_target:WTT_communist_china
+		CHI = {
+			has_war_with = event_target:WTT_communist_china
+		}
+		is_legit_china = no
+		has_global_flag = CHI_no_longer_united_flag
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CHI"
+		value = 9999
+	}
+}

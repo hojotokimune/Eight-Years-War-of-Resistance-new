@@ -1,0 +1,10 @@
+spriteTypes = {
+    spriteType = {
+        name = "pearl_harbor_us_event"
+        texturefile = "gfx/event_pictures/pearl_harbor_us_event.dds"
+    }
+    spriteType = {
+        name = "pearl_harbor_jap_event"
+        texturefile = "gfx/event_pictures/pearl_harbor_jap_event.dds"
+    }
+} 

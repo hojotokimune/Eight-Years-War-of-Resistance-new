@@ -1,0 +1,17 @@
+scripted_gui = {
+	vnr_prepare_for_war_category_decision_ui = {
+		context_type = decision_category
+		window_name = "vnr_prepare_for_war_category_decision_ui_window"
+		properties = {
+			USA_flag_button = {
+				image = "[get_usa_prepare_for_war_decision_picture]"
+			}
+		}
+
+		effects = {
+			USA_flag_button_click = {
+				calculate_usa_isolationism_modifier = yes
+			}
+		}
+	}
+}

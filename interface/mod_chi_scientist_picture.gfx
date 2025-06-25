@@ -1,0 +1,40 @@
+spriteTypes = {	
+
+	SpriteType = {	#钱学森
+		name = "GFX_Portrait_CCS_qian_xuesen"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_qian_xuesen.png"
+	}
+	SpriteType = {	#吴大观
+		name = "GFX_Portrait_CCS_wu_daguan"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_wu_daguan.png"
+	}
+	SpriteType = {	#吴运铎
+		name = "GFX_Portrait_CCS_wu_yunduo"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_wu_yunduo.png"
+	}		
+	SpriteType = {	#辛一心
+		name = "GFX_Portrait_CCS_xin_yixin"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_xin_yixin.png"
+	}
+	SpriteType = {	#徐舜寿
+		name = "GFX_Portrait_CCS_xu_shunshou"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_xu_shunshou.png"
+	}
+	SpriteType = {	#赵忠尧
+		name = "GFX_Portrait_CCS_zhao_zhongyao"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_zhao_zhongyao.png"
+	}
+	SpriteType = {	#祝榆生
+		name = "GFX_Portrait_CCS_zhu_yusheng"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_zhu_yusheng.png"
+	}
+	SpriteType = {	#郭永怀
+		name = "GFX_Portrait_CCS_guo_yonghuai"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_guo_yonghuai.png"
+	}
+	SpriteType = {	#黄旭华
+		name = "GFX_Portrait_CCS_huang_xuhua"
+		texturefile = "gfx/leaders/CCS/GFX_Portrait_CCS_huang_xuhua.png"
+	}
+
+}

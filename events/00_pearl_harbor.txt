@@ -1,0 +1,757 @@
+add_namespace = vnr_pearl_harbor
+add_namespace = vnr_pearl_harbor_news
+add_namespace = vnr_pearl_harbor_ai
+
+country_event = { # discuss of Pearl Harbor Plan
+    id = vnr_pearl_harbor.0
+    title = vnr_pearl_harbor.0.t
+    desc = vnr_pearl_harbor.0.d
+
+    trigger = {
+        tag = JAP
+        date > 1940.6.1
+		OR = {
+			is_ally_with = CHI
+			CHI = {
+				all_owned_state = { is_controlled_by_ROOT_or_ally = yes }
+			}
+			date > 1940.12.7
+		}
+        can_launch_pearl_harbor = yes 
+    }
+    picture = GFX_vnr_ph_jap_command
+    mean_time_to_happen = { days = 1 }
+    fire_only_once = yes
+    option = { # yes
+        name = vnr_pearl_harbor.0.a
+        set_global_flag = vnr_pearl_harbor_ongoing
+        set_country_flag = { flag = ph_preparation value = 0 }
+        activate_mission = ph_attack_countdown
+        add_political_power = 100
+        hidden_effect = {
+            set_variable = {
+                var = ph_score
+                value = 0
+            }
+            USA = {
+                set_variable = { var = anti_ph_score value = 0 }
+                activate_mission = ph_keep_pacific_presence
+                country_event = vnr_pearl_harbor.8
+            }
+        }
+    }
+    option = { # no
+        name = vnr_pearl_harbor.0.b
+        custom_effect_tooltip = stop_pearl_harbor_tt
+        add_war_support = -0.1
+        add_political_power = -50
+        ai_chance = {
+            base = 0
+        }
+    }
+}
+
+country_event = { # Yamamoto's plan has been approved by General Staff, Plan Z on-going
+    id = vnr_pearl_harbor.1
+    title = vnr_pearl_harbor.1.t
+    desc = vnr_pearl_harbor.1.d
+
+    picture = GFX_vnr_ph_jap_command
+    is_triggered_only = yes
+    option = {
+        name = vnr_pearl_harbor.1.a
+        custom_effect_tooltip = ph_yamamoto_plan_approved
+        add_timed_idea = {
+            idea = jap_ph_preparation_1
+            days = 200
+        }
+        hidden_effect = {
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }        
+            add_to_variable = { var = ph_score value = 0.1 }
+        }
+    }
+}
+
+country_event = { # Appoint Nagumo as commander of 1st air fleet
+    id = vnr_pearl_harbor.2
+    title = vnr_pearl_harbor.2.t
+    desc = vnr_pearl_harbor.2.d
+
+    is_triggered_only = yes
+    picture = GFX_vnr_ph_nagumo
+    option = {
+        name = vnr_pearl_harbor.2.a
+        add_doctrine_cost_reduction = {
+            cost_reduction = 0.5
+	        uses = 1
+	        category = naval_doctrine
+        }
+        add_timed_idea = {
+            idea = jap_ph_preparation_2
+            days = 200
+        }
+        custom_effect_tooltip = ph_nagumo_is_our_guy
+        hidden_effect = {
+            if = {
+                limit = { has_idea = jap_ph_preparation_1 }
+                remove_ideas = jap_ph_preparation_1
+            }
+            modify_country_flag = {
+                flag = ph_preparation
+                value = 1
+            }
+            add_to_variable = { var = ph_score value = 0.1 }
+        }
+    }
+}
+
+country_event = { # Emperor has approved the mission
+    id = vnr_pearl_harbor.3
+    title = vnr_pearl_harbor.3.t
+    desc = vnr_pearl_harbor.3.d
+
+    is_triggered_only = yes
+    picture = GFX_report_event_jap_imperial_family
+    option = {
+        name = vnr_pearl_harbor.3.a
+        custom_effect_tooltip = ph_emperor_has_spoken
+        add_war_support = 0.1
+        hidden_effect = {
+            country_event = { 
+                id = vnr_pearl_harbor.4
+                days = 8
+                random_days = 4
+            }
+        }
+    }
+}
+
+country_event = { # check USA defense in Pearl Harbor
+    id = vnr_pearl_harbor.4
+
+    is_triggered_only = yes
+    hidden = yes
+    immediate = {
+        clr_global_flag = vnr_pearl_harbor_ongoing
+        if = {
+            limit = {
+                USA = {
+                    is_ai = no
+                    ships_in_state_ports = {
+                        type = capital_ship
+                        size > 4
+                        state = 629
+                    }
+                }
+            }
+            country_event = vnr_pearl_harbor.5
+        }
+        else_if = {
+            limit = { 
+                USA = {
+                    is_ai = yes
+                    has_navy_size = {
+                        size > 4
+                        type = capital_ship
+                        archetype = ship_hull_heavy
+                    }
+                }
+            }
+            country_event = vnr_pearl_harbor.5
+        }
+        else = {
+            country_event = vnr_pearl_harbor.6
+        }
+    }
+}
+
+country_event = { # Nagumo's choice to send the third wave or not
+    id = vnr_pearl_harbor.5
+    title = vnr_pearl_harbor.5.t
+    desc = vnr_pearl_harbor.5.d
+	picture = GFX_vnr_ph_carrier
+
+    is_triggered_only = yes
+    option = {
+        name = vnr_pearl_harbor.5.a
+        custom_effect_tooltip = ph_retreat_right_now
+        set_global_flag = vnr_attack_on_pearl_harbor
+        hidden_effect = { 
+            if = {
+                limit = { has_idea = jap_ph_preparation_3 }
+                remove_ideas = jap_ph_preparation_3
+            }
+            every_country = {
+                news_event = { id = vnr_pearl_harbor_news.0 days = 1 }
+            }
+            add_timed_idea = {
+                idea = jap_ph_attack_two_waves
+                days = 100
+            }
+        }
+        ai_chance = {
+            base = 20
+        }
+    }
+    option = {
+        name = vnr_pearl_harbor.5.b
+        custom_effect_tooltip = ph_carry_on_attack
+        set_global_flag = vnr_attack_on_pearl_harbor
+        hidden_effect = {
+            if = {
+                limit = { has_idea = jap_ph_preparation_3 }
+                remove_ideas = jap_ph_preparation_3
+            }
+        }
+        
+        random_list = {
+            10 = {
+                custom_effect_tooltip = ph_third_wave_success
+                hidden_effect = { 
+                    every_country = {
+                        news_event = { id = vnr_pearl_harbor_news.1 days = 1 }
+                    }
+                    add_timed_idea = {
+                        idea = jap_ph_attack_three_waves
+                        days = 100
+                    }
+                }
+            }
+            40 = {
+                custom_effect_tooltip = ph_third_wave_fail
+                hidden_effect = { 
+                    every_country = {
+                        news_event = { id = vnr_pearl_harbor_news.0 days = 1 }
+                    }
+                    add_timed_idea = {
+                        idea = jap_ph_attack_three_waves
+                        days = 100
+                    }
+                }
+            }
+        }
+        ai_chance = {
+            base = 2
+        }
+    }
+}
+
+country_event = { # Hawaii is not properly defended
+    id = vnr_pearl_harbor.6
+    title = vnr_pearl_harbor.6.t
+    desc = vnr_pearl_harbor.6.d
+	picture = GFX_vnr_ph_carrier
+
+    is_triggered_only = yes
+    option = {
+        name = vnr_pearl_harbor.6.a
+        set_global_flag = vnr_attack_on_pearl_harbor
+        hidden_effect = { 
+            if = {
+                limit = { has_idea = jap_ph_preparation_3 }
+                remove_ideas = jap_ph_preparation_3
+            }
+            add_timed_idea = {
+                idea = jap_ph_attack_two_waves
+                days = 180
+            }
+            every_country = {
+                news_event = { id = vnr_pearl_harbor_news.2 days = 1 }
+            }
+        }
+    }
+}
+
+country_event = { # Appointment of Nimitz
+    id = vnr_pearl_harbor.7
+    title = vnr_pearl_harbor.7.t
+    desc = vnr_pearl_harbor.7.d
+
+    picture = GFX_vnr_ph_nimitz
+    is_triggered_only = yes
+    option = {
+        name = vnr_pearl_harbor.7.a
+        custom_effect_tooltip = ph_usa_appoint_Nimitz_tt
+        USA_chester_w_nimitz = {
+            add_skill_level = 1
+        }
+        add_doctrine_cost_reduction = {
+            cost_reduction = 0.5
+	        uses = 2
+	        category = naval_doctrine
+        }
+    }
+}
+
+country_event = { # USA is warned about Japan's ambition
+    id = vnr_pearl_harbor.8
+    title = vnr_pearl_harbor.8.t
+    desc = vnr_pearl_harbor.8.d
+
+    is_triggered_only = yes
+    picture = GFX_report_event_usa_heavy_cruiser
+    option = {
+        name = vnr_pearl_harbor.8.a
+        effect_tooltip = {
+            activate_mission = ph_keep_pacific_presence
+        }
+        add_gov_support_5 = yes
+        add_military_support_10 = yes
+    }
+}
+
+country_event = { # USA rejects Japan's conditions
+    id = vnr_pearl_harbor.9
+    title = vnr_pearl_harbor.9.t
+    desc = vnr_pearl_harbor.9.d
+
+    is_triggered_only = yes
+    picture = GFX_report_event_japanese_siam_politicians
+    option = {
+        name = vnr_pearl_harbor.9.a
+    }
+}
+
+country_event = { # Latin America's reaction to Pearl Harbor
+    id = vnr_pearl_harbor.10
+    title = vnr_pearl_harbor.10.t
+    desc = vnr_pearl_harbor.10.d
+
+    is_triggered_only = yes
+    option = {
+        name = vnr_pearl_harbor.10.a
+        USA = {
+            add_relation_modifier = {
+            	target = FROM
+            	modifier = offered_support
+            }
+        }
+        send_embargo = JAP
+        ai_chance = {
+            factor = 10
+            modifier = {
+                NOT = {
+                    has_government = fascism
+                    has_government = communism
+                }
+                factor = 10
+            }
+        }
+    }
+    option = {
+        name = vnr_pearl_harbor.10.b
+        USA = {
+            add_relation_modifier = {
+            	target = FROM
+            	modifier = protest_action_strong
+            }
+            send_embargo = FROM
+        }
+        ai_chance = {
+            factor = 1
+        }
+    }
+}
+
+country_event = { # Day of Infamy Speech
+    id = vnr_pearl_harbor.12
+    title = vnr_pearl_harbor.12.t
+    desc = vnr_pearl_harbor.12.d
+    picture = GFX_report_event_FDR_speech
+
+    is_triggered_only = yes
+    option = {
+        name = vnr_pearl_harbor.12.a
+        effect_tooltip = {
+            remove_dynamic_modifier = { modifier = usa_isolationism_modifier }
+        }
+    }
+}
+
+news_event = { # historical victory
+    id = vnr_pearl_harbor_news.0
+    title = vnr_pearl_harbor_news.0.t
+    desc = vnr_pearl_harbor_news.0.d
+
+    is_triggered_only = yes
+    picture = GFX_vnr_ph_attack
+    immediate = {
+        hidden_effect = {
+            if = {
+                #limit = { tag = USA is_ai = no }
+                #play_song = ph_when_johnny_comes_marching_home
+            }
+            if = {
+                limit = { tag = JAP is_ai = no }
+                play_song = ph_gunkan_march
+            }
+        }
+    }
+    option = { # USA
+        name = vnr_pearl_harbor_news.0.a
+        trigger = { tag = USA }
+        add_war_support = 0.5
+        activate_decision = ph_repair_infrastructure_1
+        USA_ph_damage_ships = yes
+        USA_ph_declare_war_JAP = yes
+        add_timed_idea = {
+            idea = usa_ph_shocking
+            days = 60
+        }
+        add_timed_idea = {
+            idea = usa_ph_national_wrath
+            days = 365
+        }
+        629 = {
+            damage_building = { type = naval_base damage = 2 }
+        }
+        hidden_effect = { country_event = vnr_pearl_harbor.12 }
+    }
+    option = {	# JAP
+        name = vnr_pearl_harbor_news.0.b
+        add_threat = 20
+            add_timed_idea = {
+                idea = for_the_emperor_idea
+                days = 365
+            }
+        clr_global_flag = vnr_pearl_harbor_ongoing
+        declare_war_on = {
+            target = USA
+            type = annex_everything
+        }
+        JAP_ph_declare_war_SEA = yes
+        trigger = { tag = JAP }
+        country_event = vnr_pearl_harbor.11
+            news_event = {
+                id = pearl.2 hours = 6
+            }
+            news_event = {
+                id = pearl.1 hours = 9
+            }			
+			hidden_effect = {
+			set_global_flag = prepare_for_attack_pearl_harbor
+			if = {
+			limit = { is_ai = yes }
+			add_fuel = 500000 #yes the ai needs all this shit
+			add_manpower = 100000
+			        add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = JAP
+					}
+                    add_equipment_to_stockpile = {
+				        type = train_equipment
+				        amount = 100
+				        producer = JAP
+			        }
+					
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = 500
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment
+						amount = 500
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 1000
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {#always biggest gap
+						type = support_equipment
+						amount = 1000 #not a typo
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 500
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {#always losing air war at this point
+						type = small_plane_airframe
+						amount = 250
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = 250
+						producer = JAP
+					}
+			}		
+    }
+    #option = {
+        #name = vnr_pearl_harbor_news.0.c
+        #trigger = {
+            #NOT = {
+                #tag = JAP
+                #tag = USA
+            #}
+        #}
+    #}
+}
+
+news_event = { # a bigger victory, oil depot destroyed
+    id = vnr_pearl_harbor_news.1
+    title = vnr_pearl_harbor_news.1.t
+    desc = vnr_pearl_harbor_news.1.d
+
+    is_triggered_only = yes
+    picture = GFX_vnr_ph_attack
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = { tag = USA is_ai = no }
+                play_song = ph_when_johnny_comes_marching_home
+            }
+            if = {
+                limit = { tag = JAP is_ai = no }
+                play_song = ph_gunkan_march
+            }
+        }
+    }
+    option = { # USA
+        name = vnr_pearl_harbor_news.1.a
+        trigger = { tag = USA }
+        add_war_support = 0.5
+        activate_decision = ph_repair_infrastructure_1
+        USA_ph_damage_ships = yes
+        USA_ph_declare_war_JAP = yes
+        add_timed_idea = {
+            idea = usa_ph_shocking
+            days = 120
+        }
+        add_timed_idea = {
+            idea = usa_ph_oil_depot_destroyed
+            days = 90
+        }
+        add_timed_idea = {
+            idea = usa_ph_national_wrath
+            days = 365
+        }
+        629 = {
+            damage_building = { type = naval_base damage = 3 }
+        }
+        hidden_effect = { country_event = vnr_pearl_harbor.12 }
+    }
+    option = { # JAP
+        name = vnr_pearl_harbor_news.1.b
+        add_threat = 20
+            add_timed_idea = {
+                idea = for_the_emperor_idea
+                days = 365
+            }
+        clr_global_flag = vnr_pearl_harbor_ongoing
+        declare_war_on = {
+            target = USA
+            type = annex_everything
+        }
+        JAP_ph_declare_war_SEA = yes
+        trigger = { tag = JAP }
+        country_event = vnr_pearl_harbor.11
+            news_event = {
+                id = pearl.2 hours = 6
+            }
+            news_event = {
+                id = pearl.1 hours = 9
+            }
+			
+			hidden_effect = {
+			set_global_flag = prepare_for_attack_pearl_harbor
+			if = {
+			limit = { is_ai = yes }
+			add_fuel = 500000 #yes the ai needs all this shit
+			add_manpower = 100000
+			        add_equipment_to_stockpile = {
+						type = infantry_equipment
+						amount = 25000
+						producer = JAP
+					}
+                    add_equipment_to_stockpile = {
+				        type = train_equipment
+				        amount = 100
+				        producer = JAP
+			        }
+					
+					add_equipment_to_stockpile = {
+						type = anti_air_equipment
+						amount = 500
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = anti_tank_equipment
+						amount = 500
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = artillery_equipment
+						amount = 1000
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {#always biggest gap
+						type = support_equipment
+						amount = 1000 #not a typo
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = motorized_equipment
+						amount = 500
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {#always losing air war at this point
+						type = small_plane_airframe
+						amount = 250
+						producer = JAP
+					}
+					add_equipment_to_stockpile = {
+						type = convoy
+						amount = 250
+						producer = JAP
+					}
+			}
+			}		
+    }
+    #option = {
+        #name = vnr_pearl_harbor_news.1.c
+        #trigger = {
+            #NOT = {
+                #tag = JAP
+                #tag = USA
+            #}
+        #}
+    #}
+}
+
+news_event = { # a glorious victory
+    id = vnr_pearl_harbor_news.2
+    title = vnr_pearl_harbor_news.2.t
+    desc = vnr_pearl_harbor_news.2.d
+
+    is_triggered_only = yes
+    picture = GFX_vnr_ph_attack
+    immediate = {
+        hidden_effect = {
+            if = {
+                limit = { tag = USA is_ai = no }
+                play_song = ph_when_johnny_comes_marching_home
+            }
+            if = {
+                limit = { tag = JAP is_ai = no }
+                play_song = ph_gunkan_march
+            }
+        }
+    }
+    option = { # USA
+        name = vnr_pearl_harbor_news.2.a
+        trigger = { tag = USA }
+        activate_decision = ph_repair_infrastructure_2
+        add_war_support = 0.5
+        add_stability = -0.15
+        USA_ph_damage_ships = yes
+        USA_ph_declare_war_JAP = yes
+        add_timed_idea = {
+            idea = usa_ph_shocking
+            days = 120
+        }
+        add_timed_idea = {
+            idea = usa_ph_oil_depot_destroyed
+            days = 120
+        }
+        add_timed_idea = {
+            idea = usa_ph_morale_crushed
+            days = 35
+        }
+        add_timed_idea = {
+            idea = usa_ph_national_wrath
+            days = 365
+        }
+        629 = {
+            damage_building = { type = naval_base damage = 4 }
+        }
+        add_manpower = -4300
+        hidden_effect = { country_event = vnr_pearl_harbor.12 }
+    }
+    option = { # JAP
+        name = vnr_pearl_harbor_news.2.b
+        add_threat = 20
+        clr_global_flag = vnr_pearl_harbor_ongoing
+        declare_war_on = {
+            target = USA
+            type = annex_everything
+        }
+        JAP_ph_declare_war_SEA = yes
+        trigger = { tag = JAP }
+        country_event = vnr_pearl_harbor.11
+    }
+    #option = {
+        #name = vnr_pearl_harbor_news.2.c
+        #trigger = {
+            #NOT = {
+                #tag = JAP
+                #tag = USA
+            #}
+        #}
+    #}
+}
+
+news_event = { # Doolittle Raid
+    id = vnr_pearl_harbor_news.3
+    title = vnr_pearl_harbor_news.3.t
+    desc = vnr_pearl_harbor_news.3.d
+    picture = GFX_vnr_ph_doolittle_raid
+
+    is_triggered_only = yes
+    option = { # Countries against JAP
+        name = vnr_pearl_harbor_news.3.a
+        trigger = {
+            has_war_with = JAP
+        }
+        add_war_support = 0.1
+        if = {
+            limit = { tag = USA }
+            add_political_power = 50
+        }
+    }
+    option = { # JAP
+        name = vnr_pearl_harbor_news.3.b
+        add_stability = -0.1
+        add_war_support = -0.1
+        add_political_power = -50
+        trigger = { tag = JAP }
+    }
+    option = {
+        name = vnr_pearl_harbor_news.3.c
+        trigger = {
+            NOT = {
+                tag = JAP
+                has_war_with = JAP
+            }
+        }
+    }
+}
+
+country_event = {
+    id = vnr_pearl_harbor_ai.0
+
+	hidden = yes
+    trigger = {
+        tag = JAP
+        is_ai = yes
+        has_global_flag = vnr_pearl_harbor_ongoing
+    }
+	fire_only_once = yes
+    mean_time_to_happen = { days = 1 }
+
+    immediate = {
+		add_political_power = 75
+        activate_decision = JAP_pressure_france
+    }
+    option = {
+
+    }
+}

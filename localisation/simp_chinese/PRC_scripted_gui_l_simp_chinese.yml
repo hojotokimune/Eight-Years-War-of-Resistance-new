@@ -1,0 +1,26 @@
+﻿l_simp_chinese:
+ eighth_prc_politburo_text:0 "      七届中央政治局"
+ sixth_prc_politburo_text:0 "       六届中央政治局"
+ zhu_de_vice_president_desc:0 "朱德"
+ mao_zedong_chairman_desc:0 "毛泽东"
+ zhou_enlai_premier_desc:0 "周恩来"
+ zhang_wentian_secretary_desc:0 "张闻天"
+ close_button_politburo_text:0 "关闭"
+ 
+ chairman_politburo:0 "政治局主席"
+ chairman_politburo_right:0 "中央军委主席"
+ 
+ premier_politburo:0 "国务院总理"
+ vice_president_politburo:0 "解放军总司令"
+ 28_bol_politburo:0 "国际派代表"
+ vacant_premier_politburo:0 "空置"
+ politburo_premier_vacant:0 "空置"
+ general_secretary_politburo:0 " 总书记"
+ wang_ming_secretary_desc:0 "王明"
+ bo_gu_secretary_desc:0 "博古"
+ lin_biao_defense_minister_desc:0 "林彪"
+ defense_minister_politburo:0 "国防部长"
+ politburo_text:0 "政治局"
+ politburo_icon_desc:0 "中共中央政治局"
+
+ flag_tooltip_tt:0 "[ROOT.GetNameDef]"

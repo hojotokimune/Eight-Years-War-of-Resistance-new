@@ -1,0 +1,488 @@
+NFA_youji_ca = {#新四军
+	606_decision = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 100
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 30
+                days_re_enable = 30
+
+		available = {
+        has_manpower > 1000			
+                   OR = {
+                     NFA = {
+				num_divisions < 1
+                           }
+		NOT = {
+			has_country_flag = NFA_youjizhanzheng
+		}
+               }
+                 NOT = {
+            has_idea = prc_wannanshibian
+                  }
+		    has_government = communism		
+			606 = {
+					is_controlled_by_jap_or_its_puppet = yes
+			}		
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+			add_manpower = -1000		
+			set_country_flag = NFA_youjizhanzheng
+	if = {
+		limit = {
+			NOT = { has_template = "新四军" }
+		}
+		division_template = {
+			name = "新四军"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+				606 = {
+					create_unit = {
+						division = "name = \"新四军\" division_template = \"新四军\" start_experience_factor = 1"
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+						owner = NFA
+					}
+				}
+
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+
+
+
+	606_decision_jiesan = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 10
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 1
+
+		available = {
+        has_manpower > 1000			
+		    has_government = communism	
+            NFA = {	
+			divisions_in_state = {
+				size > 0
+				state = 606
+			}	
+                   }	
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+			add_manpower = -1000				
+		clr_country_flag = NFA_youjizhanzheng
+delete_unit = {
+    state = 606
+    disband = yes #will refund equipment and manpower
+}
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+
+	997_decision = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 100
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 30
+                days_re_enable = 30
+
+		available = {
+        has_manpower > 1000			
+                   OR = {
+                     NFA = {
+				num_divisions < 1
+                           }
+		NOT = {
+			has_country_flag = NFA_youjizhanzheng
+		}
+               }
+                 NOT = {
+            has_idea = prc_wannanshibian
+                  }
+		    has_government = communism		
+			997 = {
+					is_controlled_by_jap_or_its_puppet = yes
+			}			
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+			add_manpower = -1000				
+			set_country_flag = NFA_youjizhanzheng
+	if = {
+		limit = {
+			NOT = { has_template = "新四军" }
+		}
+		division_template = {
+			name = "新四军"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+				997 = {
+					create_unit = {
+						division = "name = \"新四军\" division_template = \"新四军\" start_experience_factor = 1"
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+						owner = NFA
+					}
+				}
+
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+
+
+
+	997_decision_jiesan = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 10
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 1
+
+		available = {
+		    has_government = communism	
+            NFA = {	
+			divisions_in_state = {
+				size > 0
+				state = 997
+			}	
+                   }	
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+		clr_country_flag = NFA_youjizhanzheng
+delete_unit = {
+    state = 997
+    disband = yes #will refund equipment and manpower
+}
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+
+
+
+	598_decision = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 100
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 30
+                days_re_enable = 30
+
+		available = {
+                   OR = {
+                     NFA = {
+				num_divisions < 1
+                           }
+		NOT = {
+			has_country_flag = NFA_youjizhanzheng
+		}
+               }
+                 NOT = {
+            has_idea = prc_wannanshibian
+                  }
+		    has_government = communism		
+			598 = {
+					is_controlled_by_jap_or_its_puppet = yes
+			}			
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+			set_country_flag = NFA_youjizhanzheng
+	if = {
+		limit = {
+			NOT = { has_template = "新四军" }
+		}
+		division_template = {
+			name = "新四军"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+				598 = {
+					create_unit = {
+						division = "name = \"新四军\" division_template = \"新四军\" start_experience_factor = 1"
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+						owner = NFA
+					}
+				}
+
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+
+
+
+	598_decision_jiesan = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 10
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 1
+
+		available = {
+		    has_government = communism	
+            NFA = {	
+			divisions_in_state = {
+				size > 0
+				state = 598
+			}	
+                   }	
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+		clr_country_flag = NFA_youjizhanzheng
+delete_unit = {
+    state = 598
+    disband = yes #will refund equipment and manpower
+}
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+	749_decision = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 10
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 30
+                days_re_enable = 30
+
+		available = {
+                   OR = {
+                     NFA = {
+				num_divisions < 1
+                           }
+		NOT = {
+			has_country_flag = NFA_youjizhanzheng
+		}
+               }
+                 NOT = {
+            has_idea = prc_wannanshibian
+                  }
+		    has_government = communism		
+			749 = {
+					is_controlled_by_jap_or_its_puppet = yes
+			}			
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+			set_country_flag = NFA_youjizhanzheng
+	if = {
+		limit = {
+			NOT = { has_template = "新四军" }
+		}
+		division_template = {
+			name = "新四军"
+			template_counter = 0
+			regiments = {
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+			}
+		}
+	}
+				749 = {
+					create_unit = {
+						division = "name = \"新四军\" division_template = \"新四军\" start_experience_factor = 1"
+						count = 3
+						allow_spawning_on_enemy_provs = yes
+						owner = NFA
+					}
+				}
+
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+
+
+
+	749_decision_jiesan = {
+		icon = GFX_decision_SWE_set_army_budget
+		
+		cost = 10
+
+		allowed = {
+		   tag = NFA
+		}
+		visible = {		
+		   has_government = communism
+           has_war_with = JAP	
+			has_defensive_war = yes	   
+		}
+
+		days_remove = 1
+
+		available = {
+		    has_government = communism	
+            NFA = {	
+			divisions_in_state = {
+				size > 0
+				state = 749
+			}	
+                   }	
+		}	
+
+		remove_effect = {
+			hidden_effect = {
+		clr_country_flag = NFA_youjizhanzheng
+delete_unit = {
+    state = 749
+    disband = yes #will refund equipment and manpower
+}
+
+                      }
+                }
+		ai_will_do = {
+			factor = 1000
+		}	
+         }
+
+
+}

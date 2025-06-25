@@ -1,0 +1,236 @@
+ideas = {
+    country = {
+        usa_pw_defeated_in_pacific = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = generic_japanese_conflict
+			
+			removal_cost = -1
+            modifier = {
+                war_support_factor = -0.5
+                stability_factor = -0.6
+                political_power_factor = -0.8
+            }
+        }
+
+        usa_operation_downfall = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            cancel = {
+                NOT = { has_war_with = JAP }
+            }
+            picture = generic_usa_conflict
+			
+            modifier = {
+                naval_invasion_prep_speed = 0.5
+                naval_invasion_capacity = 16
+                air_superiority_bonus_in_combat = 0.15
+                ground_attack_factor = 0.2
+                naval_invasion_penalty = -0.2
+                air_strategic_bomber_bombing_factor = 0.15
+            }
+        }
+        jap_hondo_kessen_1 = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = imperial_glory_idea
+			
+			removal_cost = -1
+            cancel = {
+                OR = {
+                    surrender_progress > 0.7
+                    NOT = { has_war_with = USA }
+                }
+            }
+            modifier = {
+                dig_in_speed_factor = 0.3
+                max_dig_in_factor = 0.3
+                land_night_attack = 0.05
+                pocket_penalty = -0.1
+                conscription_factor = 0.3
+            }
+        }
+        jap_hondo_kessen_2 = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = imperial_glory_idea
+			
+			removal_cost = -1
+            cancel = {
+                OR = {
+                    surrender_progress > 0.7
+                    NOT = { has_war_with = USA }
+                }
+            }
+            modifier = {
+                dig_in_speed_factor = 0.3
+                max_dig_in_factor = 0.3
+                land_night_attack = 0.1
+                pocket_penalty = -0.2
+                conscription_factor = 0.3
+
+                weekly_casualties_war_support = -0.02
+                weekly_bombing_war_support = -0.01
+
+                supply_combat_penalties_on_core_factor = -0.2
+                army_core_attack_factor = 0.1
+                army_core_defence_factor = 0.1
+                combat_width_factor = -0.1
+            }
+        }
+
+        jap_article_nine = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = generic_constitutional_guarantees
+			
+			removal_cost = -1
+            modifier = {
+                generate_wargoal_tension = 10
+                justify_war_goal_time = 10
+                send_volunteers_tension = 10
+                guarantee_tension = 1
+                industrial_capacity_factory = -0.8
+                industrial_capacity_dockyard = -0.4
+            }
+        }
+        jap_economic_recovery = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = generic_economic_crisis
+			
+			removal_cost = -1
+            modifier = {
+                production_speed_buildings_factor = -0.8
+                industry_repair_factor = 0.5
+                production_factory_start_efficiency_factor = -0.1
+                production_factory_max_efficiency_factor = -0.1
+            }
+        }
+        jap_food_crisis_1 = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = raj_risk_of_famine
+			
+			removal_cost = -1
+            modifier = {
+                monthly_population = -0.5
+            }
+        }
+        jap_food_crisis_2 = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = raj_risk_of_famine
+			
+			removal_cost = -1
+            modifier = {
+                monthly_population = -0.65
+            }
+        }
+        jap_food_crisis_3 = {
+            allowed = {
+				always = no
+			}
+			allowed_civil_war = {
+				always = no
+			}
+            picture = raj_risk_of_famine
+			
+			removal_cost = -1
+            modifier = {
+                stability_factor = -0.2
+                monthly_population = -0.8
+            }
+        }
+
+        jap_intervene_in_china_0 = {
+            name = JAP_intervene_in_china
+
+			allowed = {
+				always = no
+			}
+
+			allowed_civil_war = {
+				always = yes
+			}
+			
+			removal_cost = -1
+
+			picture = jap_intervene_in_china
+			
+			targeted_modifier = {
+				tag = CHI
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = SHX
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = XSM
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = YUN
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = GXC
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+
+			targeted_modifier = {
+				tag = SIK
+				attack_bonus_against = 0.2
+				defense_bonus_against = 0.2
+			}
+        }
+    }
+}

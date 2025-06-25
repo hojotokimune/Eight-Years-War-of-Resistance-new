@@ -1,0 +1,332 @@
+
+
+####################################################################
+####															#####
+####					Xibei									#####
+####															#####
+####################################################################	
+
+
+
+entity = {
+	name = "NXM_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "NXM_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "NXM_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "NXM_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "NXM_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "NXM_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "NXM_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "NXM_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+
+
+
+############
+entity = {
+	name = "GSM_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "GSM_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "GSM_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "GSM_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "GSM_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "GSM_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "GSM_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "GSM_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "TNG_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "TNG_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "TNG_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "TNG_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "TNG_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "TNG_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "TNG_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "TNG_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "KHR_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "KHR_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "KHR_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "KHR_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "KHR_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "KHR_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "KHR_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "KHR_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "HMI_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "HMI_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "HMI_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "HMI_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "HMI_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "HMI_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "HMI_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "HMI_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "KRS_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "KRS_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "KRS_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "KRS_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "KRS_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "KRS_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "KRS_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "KRS_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "ATM_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "ATM_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "ATM_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "ATM_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "ATM_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "ATM_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "ATM_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "ATM_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}
+##########
+entity = {
+	name = "EGM_infantry_entity"
+	clone = "XSM_infantry_entity"
+}	
+
+entity = {
+	name = "EGM_infantry_2_entity"
+	clone = "XSM_infantry_2_entity"
+}
+
+entity = {
+	name = "EGM_infantry_weapon_mg_left_entity"
+	clone = "XSM_infantry_weapon_mg_left_entity"
+}	
+
+entity = {
+	name = "EGM_infantry_weapon_mg_right_entity"
+	clone = "XSM_infantry_weapon_mg_right_entity"
+}
+
+entity = {
+	name = "EGM_infantry_weapon_mg_long_idle_entity"
+	clone = "XSM_infantry_weapon_mg_long_idle_entity"
+}	
+
+entity = {
+	name = "EGM_infantry_weapon_rifle_right_entity"
+	clone = "XSM_infantry_weapon_rifle_right_entity"
+}	
+
+entity = {
+	name = "EGM_infantry_weapon_rifle_left_entity"
+	clone = "XSM_infantry_weapon_rifle_left_entity"
+}
+
+entity = {
+	name = "EGM_infantry_weapon_rifle_long_idle_entity"
+	clone = "XSM_infantry_weapon_rifle_long_idle_entity"
+}

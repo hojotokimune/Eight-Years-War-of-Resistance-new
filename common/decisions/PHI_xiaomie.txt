@@ -1,0 +1,174 @@
+
+	teshurenwu = {
+	
+		xiaomieweizhengquan = {
+
+			icon = generic_political_actions
+
+		allowed = {
+			tag = PHI
+		}
+
+			available = {
+            OR = {
+			JAP = {
+				has_global_flag = JAP_defeated
+			}
+			JAP = {
+				is_puppet_of = CHI
+			}
+			JAP = {
+				is_puppet_of = USA
+			} 
+ 			JAP = {
+				is_puppet_of = SOV
+			}
+  			JAP = {
+				is_puppet_of = ENG
+			}
+  			JAP = {
+				is_puppet_of = PRC
+			} 
+   			JAP = {
+				is_puppet_of = FRA
+			} 
+NOT = { country_exists = JAP } 	
+            }
+        country_exists = BBQ						
+               }
+
+			fire_only_once = yes
+		    ai_will_do = {
+			factor = 1000
+		    }
+			visible = {
+            OR = {
+			JAP = {
+				has_global_flag = JAP_defeated
+			}
+			JAP = {
+				is_puppet_of = CHI
+			}
+			JAP = {
+				is_puppet_of = USA
+			} 
+ 			JAP = {
+				is_puppet_of = SOV
+			}
+  			JAP = {
+				is_puppet_of = ENG
+			}
+  			JAP = {
+				is_puppet_of = PRC
+			} 
+   			JAP = {
+				is_puppet_of = FRA
+			}
+NOT = { country_exists = JAP } 			
+            }
+        country_exists = BBQ						
+			}
+			complete_effect = {
+                           ROOT = {
+                                     annex_country = { target = BBQ transfer_troops = no }
+                                  }
+        623 = {
+            remove_core_of = BBQ
+        }
+        327 = {
+            remove_core_of = BBQ
+        }
+        624 = {
+            remove_core_of = BBQ
+        }
+        625 = {
+            remove_core_of = BBQ
+        }
+        626 = {
+            remove_core_of = BBQ
+        }
+        627 = {
+            remove_core_of = BBQ
+        }
+        628 = {
+            remove_core_of = BBQ
+        }
+		hidden_effect = {		
+        988 = {
+            remove_core_of = VOO
+        }	
+		986 = {
+            remove_core_of = VOO
+        }
+        987 = {
+            remove_core_of = VOO
+        }
+        671 = {
+            remove_core_of = VOO
+        }		
+        978 = {
+            remove_core_of = VOO
+        }		
+        989 = {
+            remove_core_of = VOO
+        }
+	    286 = {
+            remove_core_of = VOO
+        }	
+        979 = {
+            remove_core_of = VOO
+        }
+        982 = {
+            remove_core_of = CZP
+        }
+        741 = {
+            remove_core_of = CZP
+        }
+        983 = {
+            remove_core_of = CZP
+        }
+        983 = {
+            remove_core_of = SIA
+        }
+        670 = {
+            remove_core_of = LXW
+        }
+        985 = {
+            remove_core_of = LXW
+        }
+        984 = {
+            remove_core_of = LXW
+        }	
+        980 = {
+            remove_core_of = LXW
+        }
+        981 = {
+            remove_core_of = LXW
+        }
+        670 = {
+            remove_core_of = LXW
+        }
+        985 = {
+            remove_core_of = LXW
+        }
+        984 = {
+            remove_core_of = LXW
+        }	
+        980 = {
+            remove_core_of = LXW
+        }
+        981 = {
+            remove_core_of = LXW
+        }
+        980 = {
+            remove_core_of = SIA
+        }
+        981 = {
+            remove_core_of = SIA
+        }	
+        }			
+			}
+		}
+	}
+
+

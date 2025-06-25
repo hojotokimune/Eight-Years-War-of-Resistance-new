@@ -1,0 +1,108 @@
+economy_decisions = {
+	MAN_deal_with_kuhn_loeb_decision = {
+
+		icon = eng_trade_unions_support
+
+
+		available = {
+			has_offensive_war = no
+			USA = {
+				OR = {
+					has_opinion = {
+						target = ROOT
+						value > -31
+					}
+					exists = no
+				}
+			}
+		}
+		
+		allowed = { tag = MAN }
+
+		cost = 200
+		
+		days_remove = 120
+		
+		ai_will_do = {
+			factor = 0
+		}
+		modifier = {
+			political_power_cost = 0.5
+		}
+		visible = {
+			has_country_flag = kuhn_loeb_deal_failed
+		}
+
+		complete_effect = {
+			hidden_effect = {
+				country_event = { id = RCM_Manchoukuo.20 days = 50 }
+				country_event = { id = RCM_Manchoukuo.21 days = 100 }
+				country_event = { id = RCM_Manchoukuo.22 days = 150 }
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = kuhn_loeb_deal_failed
+			effect_tooltip = {
+				country_event = { id = RCM_Manchoukuo.15 }
+			}
+			hidden_effect = { country_event = { id = RCM_Manchoukuo.19 }}
+		}
+	}
+	
+	MAN_renegotiate_with_us_steel = {
+
+		icon = generic
+
+
+		available = {
+			has_offensive_war = no
+			USA = {
+				has_opinion = {
+					target = ROOT
+					value > 0
+				}
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		
+		allowed = { tag = MAN }
+
+		cost = 150
+		
+		days_remove = 150
+		
+		ai_will_do = {
+			factor = 10
+		}
+
+		visible = {
+			has_country_flag = MAN_us_steel_failed
+		}
+		
+		cancel_trigger = {
+			has_country_flag = MAN_us_steel_terminated
+		}
+
+		complete_effect = {
+			clr_country_flag = MAN_us_steel_state_depart_interference
+			clr_country_flag = MAN_us_steel_counterproposal_response
+			clr_country_flag = MAN_counterproposal_rejected
+			hidden_effect = {
+				country_event = { id = RCM_Manchoukuo.25 days = 50 }
+				country_event = { id = RCM_Manchoukuo.25 days = 100 }
+			}
+		}
+		
+		remove_effect = {
+			clr_country_flag = MAN_us_steel_failed
+			effect_tooltip = {
+				country_event = { id = RCM_Manchoukuo.24 }
+			}
+			hidden_effect = { country_event = { id = RCM_Manchoukuo.25 }}
+		}
+	}
+}

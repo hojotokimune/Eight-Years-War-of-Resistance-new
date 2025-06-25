@@ -1,0 +1,193 @@
+on_actions = {
+
+	on_army_leader_promoted = {
+		effect = {
+			if = {
+				limit = {
+                    FROM = {
+                        OR = {
+                            tag = CHI
+                            is_warlord = yes
+                        }
+                    }
+				}
+				add_unit_leader_trait = NRA_General_2ndRank	
+			    add_timed_unit_leader_trait = {
+				    trait = minimum_time_in_grade
+				    days = 1095
+			    }
+			}
+		}
+	}
+	
+	on_startup = {
+		effect = {
+			CHI = { 
+			    CHI_zhu_shaoliang = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}			
+			    CHI_liu_zhi = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}
+			    CHI_gu_zhutong = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}
+			    CHI_shang_zhen = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}
+			    CHI_jiang_dingwen = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}
+			    CHI_cheng_qian = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 1095
+			            }
+				    }
+				}				
+			}
+			SHX = { 			
+			    SHX_yang_aiyuan = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 1073
+			            }
+				    }
+				}				
+			}
+			SUY = {
+				SHX_fu_zuoyi = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}
+			}
+			NEA = { 			
+			    NEA_yang_hucheng = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}
+			    NEA_yu_xuezhong = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}				
+			}			
+			GXC = { 			
+			    GXC_bai_chongxi = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}				
+			}
+			HPC = { 			
+			    HPC_song_zheyuan = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}				
+			}
+			SHD = { 			
+			    SHD_han_fuju = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}				
+			}
+			SIC = { 			
+			    SIC_Liu_Xiang = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}				
+			}
+			YUN = { 			
+			    YUN_long_yun = {
+				    if = {
+					    limit = { has_trait = NRA_General_2ndRank }
+			            add_timed_unit_leader_trait = {
+				            trait = minimum_time_in_grade
+				            days = 822
+			            }
+				    }
+				}				
+			}			
+		}
+	}
+	
+#	on_army_leader_daily = {
+#		effect = {
+#			if = {
+#				limit = {
+#					has_trait = NRA_General_1stRank
+#				}
+#				remove_unit_leader_trait = NRA_General_2ndRank
+#			}
+#			#remove_unit_leader_trait = NRA_General_2ndRank
+#		}
+#	}	
+
+}

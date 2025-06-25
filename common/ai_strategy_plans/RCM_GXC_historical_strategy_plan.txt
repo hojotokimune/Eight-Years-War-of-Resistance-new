@@ -1,0 +1,73 @@
+GXC_warlord_historical_plan = {
+	name = "New Guangxi Clque historical plan, supporting Nationalists, power struggle" #MODDED
+	desc = "Historical behavior for New Guangxi Clique"
+	allowed = { #MODDED
+	    original_tag = GXC
+	}
+	enable = {
+		#has_country_flag = cooperation_with_nationalist_flag #MODDED
+		is_historical_focus_on = yes
+	}
+	abort = {
+	    has_war_with = event_target:WTT_current_china_leader
+	}
+
+	ai_national_focuses = {
+		#DO THESE ASAP
+		GXC_Capture_the_central_government
+		GXC_Establish_the_fourth_theater
+		GXC_enter_anhui
+        GXC_second_guangxi
+        GXC_defend_anhui
+		GXC_anti_communist_in_anhui
+		GXC_anti_japan_peoples_self_defense_army
+
+		GXC_Southwest_two_agencies
+	    GXC_Oriental_sparta
+	    GXC_Guangxi_military_modernization
+		GXC_Imitate_the_british_army
+		GXC_Reform_the_conscription_system
+		GXC_Guangxi_model_province
+	    GXC_Focus_on_model_province_projects
+		GXC_Cooperation_with_chiang_kai_shek
+		GXC_Government_reshuffle
+		GXC_Develop_guangxi
+		GXC_Expand_guangxi_university
+		GXC_Political_struggle
+		GXC_Improve_resource_utilization_efficiency
+		GXC_Develop_armaments
+		GXC_Lessons_from_the_war
+
+	}
+
+	focus_factors = {
+		#Never attempt a take over
+		#GXC_Oppose_the_chiang = 0 
+		#GXC_Capture_the_central_government = 0 
+	    GXC_Increase_border_pressure = 0
+	    GXC_Defeat_the_chiang = 0
+		GXC_an_unlikely_alliance = 0
+		GXC_reignite_civil_war = 0
+	}
+
+	research = { #MODDED
+
+	}
+
+	ideas = {
+		
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs) #MODDED
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+
+#MODDED^^^^^^^^^^^^

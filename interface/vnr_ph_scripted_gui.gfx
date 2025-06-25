@@ -1,0 +1,204 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_pacific_war_gui_ast"
+		texturefile = "gfx/interface/pacific_war_gui/ast.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_can"
+		texturefile = "gfx/interface/pacific_war_gui/can.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_chi"
+		texturefile = "gfx/interface/pacific_war_gui/chi.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_indochina"
+		texturefile = "gfx/interface/pacific_war_gui/indochina.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_ins"
+		texturefile = "gfx/interface/pacific_war_gui/ins.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_jap"
+		texturefile = "gfx/interface/pacific_war_gui/jap.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_mal"
+		texturefile = "gfx/interface/pacific_war_gui/mal.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_man"
+		texturefile = "gfx/interface/pacific_war_gui/man.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_mon"
+		texturefile = "gfx/interface/pacific_war_gui/mon.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_north_korea"
+		texturefile = "gfx/interface/pacific_war_gui/north_korea.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_south_korea"
+		texturefile = "gfx/interface/pacific_war_gui/south_korea.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_phi"
+		texturefile = "gfx/interface/pacific_war_gui/phi.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_raj"
+		texturefile = "gfx/interface/pacific_war_gui/raj.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_sia"
+		texturefile = "gfx/interface/pacific_war_gui/sia.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_sol"
+		texturefile = "gfx/interface/pacific_war_gui/sol.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_sov"
+		texturefile = "gfx/interface/pacific_war_gui/sov.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_taiwan"
+		texturefile = "gfx/interface/pacific_war_gui/taiwan.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+	spriteType = {
+		name = "GFX_pacific_war_gui_usa"
+		texturefile = "gfx/interface/pacific_war_gui/usa.dds"
+		noOfFrames = 4
+		transparencecheck = yes
+	}
+
+	spriteType = {
+		name = "GFX_pacific_war_gui_bg"
+		texturefile = "gfx/interface/pacific_war_gui/pacific_war_bg.dds"
+	}
+
+	spriteType = {
+		name = "GFX_jap_imperial_headquarter"
+		texturefile = "gfx/interface/decisions/jap_imperial_headquarter.png"
+	}
+	spriteType = {
+		name = "GFX_usa_joint_chiefs_of_staff"
+		texturefile = "gfx/interface/decisions/usa_joint_chiefs_of_staff.png"
+	}
+	spriteType = {
+		name = "GFX_usa_prepare_for_war_1"
+		texturefile = "gfx/interface/decisions/usa_prepare_for_war1.png"
+	}
+	spriteType = {
+		name = "GFX_usa_prepare_for_war_2"
+		texturefile = "gfx/interface/decisions/usa_prepare_for_war2.png"
+	}
+	spriteType = {
+		name = "GFX_usa_prepare_for_war_3"
+		texturefile = "gfx/interface/decisions/usa_prepare_for_war3.png"
+	}
+	spriteType = {
+		name = "GFX_usa_prepare_for_war_4"
+		texturefile = "gfx/interface/decisions/usa_prepare_for_war4.png"
+	}
+
+	spriteType = {
+		name = "GFX_jap_cabinet_1"
+		texturefile = "gfx/interface/decisions/cabinet1.png"
+	}
+	spriteType = {
+		name = "GFX_jap_cabinet_2"
+		texturefile = "gfx/interface/decisions/cabinet2.png"
+	}
+	spriteType = {
+		name = "GFX_jap_cabinet_3"
+		texturefile = "gfx/interface/decisions/cabinet3.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_fumimaro"
+		texturefile = "gfx/interface/decisions/jap_fumimaro_konoe.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_hideki"
+		texturefile = "gfx/interface/decisions/jap_hideki_tojo.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_koki"
+		texturefile = "gfx/interface/decisions/jap_koki_hirota.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_okada"
+		texturefile = "gfx/interface/decisions/jap_okada_keisuke.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_senjuro"
+		texturefile = "gfx/interface/decisions/jap_senjuro_hayashi.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_hiranuma"
+		texturefile = "gfx/interface/decisions/jap_kiichiro_hiranuma.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_nobuyuki"
+		texturefile = "gfx/interface/decisions/jap_nobuyuki_abe.png"
+	}
+	spriteType = {
+		name = "GFX_jap_pm_mitsumasa"
+		texturefile = "gfx/interface/decisions/jap_mitsumasa_yonai.png"
+	}
+	spriteType = {
+		name = "GFX_jap_diet_election"
+		texturefile = "gfx/interface/decisions/jap_diet_election.dds"
+		noOfFrames = 4
+	}
+	
+	spriteType = {
+		name = "GFX_resistance_action_point"
+		texturefile = "gfx/interface/decisions/resistance_action_point.dds"
+		legacy_lazy_load = no
+	}
+	spriteType = {
+		name = "GFX_jap_man_faction_icon"
+		texturefile = "gfx/interface/decisions/jap_man_faction.png"
+	}
+	spriteType = {
+		name = "GFX_chi_prc_faction_icon"
+		texturefile = "gfx/interface/decisions/chi_prc_faction.png"
+	}
+}

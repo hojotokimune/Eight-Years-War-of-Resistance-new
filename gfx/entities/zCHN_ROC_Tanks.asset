@@ -1,0 +1,58 @@
+#######
+# CHINA
+#######
+
+	
+	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+
+
+	entity = {
+		clone = "light_armor_entity"
+		name = "CHI_light_armor_entity"
+		pdxmesh = "USA_tank_light_mesh"
+		scale = 1.2
+
+	}
+	
+	entity = {
+		clone = "medium_armor_entity"
+		name = "CHI_medium_armor_entity"
+		pdxmesh = "USA_tank_medium_mesh"
+		scale = 1.5
+
+	}
+	
+	entity = {
+		clone = "heavy_armor_entity"
+		name = "CHI_heavy_armor_entity"
+		pdxmesh = "SOV_tank_heavy_mesh"
+		scale = 1
+
+	}
+	
+#	entity = {
+#		clone = "FRA_super_heavy_armor_entity"
+#		pdxmesh = "FRA_super_heavy_armor_mesh"
+#		name = "CHI_super_heavy_armor_entity"
+#		scale = 1.4
+#
+#	} #KEN DELETED 
+	
+	
+#	entity = {
+#		clone = "USA_modern_armor_entity"
+#		pdxmesh = "USA_modern_armor_mesh"
+#		name = "CHI_modern_armor_entity"
+#		scale = 0.8
+#
+#	} #KEN DELETED 
+	
+	#Modern Armor will only show up if you have Tank Skin Pack, otherwise M4 Shermen.
+	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+#--------------------------------------------------------------------------------------------------------------------------------------------	
+
+
+	

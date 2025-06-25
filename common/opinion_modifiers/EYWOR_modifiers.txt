@@ -1,0 +1,30 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	SOV_PRC_treaty_of_friendship = {
+		value = 150
+	}
+
+	PRC_recognised_us = {
+	    value = 50
+	}
+
+	PRC_KPA_friendship_treaty = {
+	    value = 100
+	}
+	
+	PRC_RAJ_panchsheel = {
+	    value = 50
+	}
+	
+
+}

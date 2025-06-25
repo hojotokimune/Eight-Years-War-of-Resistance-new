@@ -1,0 +1,133 @@
+#######
+entity = { name = "GXC_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "GXC_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "GXC_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "GXC_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "GXC_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "YUN_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "YUN_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "YUN_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "YUN_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "YUN_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "SHX_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "SHX_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "SHX_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "SHX_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "SHX_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "SUY_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "SUY_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "SUY_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "SUY_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "SUY_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "XSM_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "XSM_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "XSM_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "XSM_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "XSM_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "XIK_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "XIK_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "XIK_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "XIK_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "XIK_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "SIC_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "SIC_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "SIC_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "SIC_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "SIC_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "GUD_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "GUD_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "GUD_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "GUD_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "GUD_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "HPC_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "HPC_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "HPC_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "HPC_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "HPC_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "NEA_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "NEA_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "NEA_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "NEA_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "NEA_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "SHC_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "SHC_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "SHC_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "SHC_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "SHC_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "SHD_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "SHD_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "SHD_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "SHD_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "SHD_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "NXM_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "NXM_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "NXM_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "NXM_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "NXM_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "GSM_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "GSM_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "GSM_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "GSM_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "GSM_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "HMI_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "HMI_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "HMI_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "HMI_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "HMI_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "TNG_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "TNG_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "TNG_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "TNG_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "TNG_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "PLM_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "PLM_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "PLM_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "PLM_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "PLM_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "KHR_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "KHR_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "KHR_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "KHR_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "KHR_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "XIA_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "XIA_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "XIA_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "XIA_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "XIA_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "KRS_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "KRS_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "KRS_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "KHR_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "KHR_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "ATM_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "ATM_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "ATM_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "KHR_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "KHR_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######
+entity = { name = "EGM_light_armor_entity"	clone = "light_armor_entity" pdxmesh = "USA_tank_light_mesh" scale = 1.2 }
+entity = { name = "EGM_medium_armor_entity"	clone = "medium_armor_entity" pdxmesh = "USA_tank_medium_mesh" scale = 1.5 }
+entity = { name = "EGM_heavy_armor_entity"	clone = "heavy_armor_entity" pdxmesh = "SOV_tank_heavy_mesh" scale = 1 }
+#KEN DELETED entity = { name = "KHR_super_heavy_armor_entity" clone = "FRA_super_heavy_armor_entity" pdxmesh = "FRA_super_heavy_armor_mesh" scale = 1.4 }
+#KEN DELETED entity = { name = "KHR_modern_armor_entity" clone = "USA_modern_armor_entity" pdxmesh = "USA_modern_armor_mesh" scale = 0.8 }
+#######

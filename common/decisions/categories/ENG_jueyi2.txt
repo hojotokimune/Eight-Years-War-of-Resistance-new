@@ -1,0 +1,11 @@
+特殊决议 = {
+	icon = generic_political_actions
+	allowed = {
+    tag = ENG
+	}
+	visible = {
+            country_exists = RAJ			
+            country_exists = PAK			
+	}
+}
+

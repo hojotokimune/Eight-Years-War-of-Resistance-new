@@ -1,0 +1,137 @@
+spriteTypes = {	
+
+	spriteType = {
+		name = "GFX_idea_BUR_u_nu"
+		texturefile = "gfx/interface/ideas/u_nu.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_BUR_than_tun"
+		texturefile = "gfx/interface/ideas/than_tun.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_BUR_u_razak"
+		texturefile = "gfx/interface/ideas/u_razak.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_thankin_mya"
+		texturefile = "gfx/interface/ideas/thankin_mya.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_idea_BUR_mahn_ba_khaing"
+		texturefile = "gfx/interface/ideas/mahn_ba_khaing.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_BUR_aung_zan_wai"
+		texturefile = "gfx/interface/ideas/aung_zan_wai.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUR_tin_tut"
+		texturefile = "gfx/interface/ideas/tin_tut.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_thein_pe_myint"
+		texturefile = "gfx/interface/ideas/thein_pe_myint.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_BUR_bo_mu_aung"
+		texturefile = "gfx/interface/ideas/bo_mu_aung.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_BUR_ohn_maung"
+		texturefile = "gfx/interface/ideas/ohn_maung.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_kenneth_mcleod"
+		texturefile = "gfx/interface/ideas/kenneth_mcleod.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_jack_baldwin"
+		texturefile = "gfx/interface/ideas/jack_baldwin.dds"
+	}    
+
+	spriteType = {
+		name = "GFX_idea_BUR_john_henry_godfrey"
+		texturefile = "gfx/interface/ideas/john_henry_godfrey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_kenneth_mcleod_h"
+		texturefile = "gfx/interface/ideas/kenneth_mcleod.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_jack_baldwin_h"
+		texturefile = "gfx/interface/ideas/jack_baldwin.dds"
+	} 
+
+	spriteType = {
+		name = "GFX_idea_BUR_john_henry_godfrey_h"
+		texturefile = "gfx/interface/ideas/john_henry_godfrey.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_bo_let_ya"
+		texturefile = "gfx/interface/ideas/bo_let_ya.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_BUR_kenneth_mcleod_a"
+		texturefile = "gfx/interface/ideas/kenneth_mcleod.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_ne_win"
+		texturefile = "gfx/interface/ideas/ne_win.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_BUR_kyaw_zaw"
+		texturefile = "gfx/interface/ideas/kyaw_zaw.dds"
+	}
+
+	spriteType = {
+		name = "GFX_idea_BUR_jack_baldwin_a"
+		texturefile = "gfx/interface/ideas/jack_baldwin.dds"
+	}    
+		
+	spriteType = {
+		name = "GFX_idea_BUR_john_henry_godfrey_n"
+		texturefile = "gfx/interface/ideas/john_henry_godfrey.dds"
+	}
+		
+	spriteType = {
+		name = "GFX_idea_irrawaddy_flottila_company"
+		texturefile = "gfx/interface/ideas/irrawaddy_flottila_company.dds"
+	}
+			
+
+	spriteType = {
+		name = "GFX_idea_burmah_oil_company"
+		texturefile = "gfx/interface/ideas/burmah_oil_company.dds"
+	}
+			
+	spriteType = {
+		name = "GFX_idea_umfcci"
+		texturefile = "gfx/interface/ideas/umfcci.dds"
+	}
+	
+	spriteType = {
+		name = "GFX_idea_rangoon_arsenal"
+		texturefile = "gfx/interface/ideas/rangoon_arsenal.dds"
+	}
+	spriteType = {
+		name = "GFX_idea_aung_san"
+		texturefile = "gfx/interface/ideas/aung_san.dds"
+	}	
+}

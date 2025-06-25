@@ -1,0 +1,155 @@
+ideas = {
+	country = { 
+
+		NTD_idea = {
+			picture = generic_democratic_drift_bonus
+			allowed = {
+				always = no 
+			}
+			removal_cost = -1
+			
+			modifier = {
+				consumer_goods_factor = -0.25
+				industrial_capacity_factory = 0.10
+			}
+		}
+		
+		SINO_USA = {
+			picture = kmt_shield
+			allowed = {
+				always = no 
+			}
+			removal_cost = -1
+			
+			modifier = {
+				send_volunteer_size = 10
+			}
+		}
+
+		STAG_idea = {
+			picture = chi_stag
+			allowed = {
+				always = no 
+			}
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.1 
+				max_planning_factor = 0.2
+				training_time_factor = -0.2
+				experience_gain_army = 0.02
+				experience_gain_air = 0.02
+				experience_gain_navy = 0.05
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.2
+				naval_invasion_capacity = 15
+				naval_invasion_penalty = -0.1
+			}
+		}
+
+		White_group_idea = {
+			picture = generic_jap_advisor
+			allowed = {
+				always = no 
+			}
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.1 
+				max_planning_factor = 0.1
+				experience_gain_army_factor = 0.1
+				army_org_factor = 0.05
+				army_core_attack_factor = 0.05
+				army_core_defence_factor = 0.05
+			}
+		}
+
+		MAAG_idea = {
+			picture = chi_maag
+			allowed = {
+				always = no 
+			}
+			removal_cost = -1
+			
+			modifier = {
+				planning_speed = 0.2 
+				max_planning_factor = 0.25
+				training_time_factor = -0.2
+				experience_gain_army = 0.05
+				experience_gain_air = 0.05
+				experience_gain_navy = 0.05
+				amphibious_invasion = 0.15
+				invasion_preparation = -0.2
+				naval_invasion_capacity = 20
+				naval_invasion_penalty = -0.2
+				army_org_factor = 0.03
+			}
+		}
+
+        chi_guanbi_policy = {
+			picture = generic_the_london_naval_treaty
+			allowed = {
+				always = no 
+			}
+
+			cancel = {
+				event_target:WTT_communist_china = {
+					exists = no
+				}
+			}
+			removal_cost = -1
+			
+			modifier = {
+				faction_trade_opinion_factor = -0.25
+				opinion_gain_monthly_factor = -0.25
+				embargo_cost_factor = -0.5
+				convoy_raiding_efficiency_factor = 0.15
+				experience_gain_navy = 0.02
+			}
+		}
+
+        chi_guanbi_policy_prc = {
+			picture = closed_economy
+			allowed = {
+				always = no 
+			}
+
+			cancel = {
+            NOT = { country_exists = CHI }	
+			}
+			removal_cost = -1
+			
+			modifier = {
+				min_export = -0.5
+			    trade_opinion_factor = -0.5
+				consumer_goods_factor = 0.25
+			}
+		}
+
+		chi_375_battle_plan = {
+			picture = chi_wargaming_division
+			allowed = {
+				always = no 
+			}
+
+			cancel = {
+				event_target:WTT_communist_china = {
+					exists = no
+				}
+			}
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = PRC
+				attack_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			    breakthrough_bonus_against = 0.1
+            }
+            
+			modifier = {
+				planning_speed = 0.05
+				max_planning_factor = 0.1
+			}
+		}
+	}
+}

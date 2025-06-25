@@ -1,0 +1,11 @@
+
+ai_historical_focus_list_SIK = {
+	ai_national_focuses = {
+		SIK_Consolidate_regime
+		SIK_Keep_the_rule
+		SIK_Accept_chinese_rule
+		SIK_Join_anti_Japanese_front
+		SIK_Sinkiang_King
+		SIK_Negotiate_with_nanjing
+	}
+}

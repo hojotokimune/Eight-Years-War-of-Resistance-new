@@ -1,0 +1,53 @@
+technologies = {
+
+
+
+	broadsword_team = {
+
+ 		allow = { always = no }
+
+		enable_subunits = {
+			broadsword_team
+		}
+	
+		
+		
+	}
+
+
+
+	teaching_team = {
+
+
+ 		allow = { always = no }
+
+		enable_subunits = {
+			teaching_team
+		}
+		
+
+	}
+
+
+	zhengwei_team = {
+
+
+ 		allow = { always = no }
+
+		enable_subunits = {
+			zhengwei_team
+		}
+		
+
+	}
+
+
+
+
+
+
+
+
+
+
+}

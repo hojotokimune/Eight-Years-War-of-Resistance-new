@@ -1,0 +1,26 @@
+spriteTypes = {
+	spriteType = {
+        name = "GFX_report_event_withdraw_to_countryside"
+        texturefile = "gfx/event_pictures/report_event_withdraw_to_countryside.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_request_aid_chiang"
+        texturefile = "gfx/event_pictures/report_event_request_aid_chiang.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chi_minh_sitting"
+        texturefile = "gfx/event_pictures/report_event_ho_chi_minh_sitting.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chi_minh_smiling"
+        texturefile = "gfx/event_pictures/report_event_ho_chi_minh_smiling.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_ho_chi_minh_stern"
+        texturefile = "gfx/event_pictures/report_event_ho_chi_minh_stern.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_third_party_congress"
+        texturefile = "gfx/event_pictures/report_event_third_party_congress.dds"
+    }
+}

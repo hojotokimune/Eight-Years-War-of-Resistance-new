@@ -1,0 +1,24 @@
+ideas = {
+	country = {
+		EFM_Chinese_warlord = {
+
+			allowed_civil_war = {
+				NOT = {
+					has_government = communism
+				}
+			}
+			
+			picture = kmt_flag
+			
+			removal_cost = -1
+	
+			modifier = {
+				political_power_cost = 0.2
+			}
+			
+			rule = {
+				can_join_opposite_factions = no
+			}
+		}
+	}
+}

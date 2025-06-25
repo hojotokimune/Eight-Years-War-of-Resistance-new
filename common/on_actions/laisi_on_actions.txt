@@ -1,0 +1,186 @@
+on_actions = {
+	on_startup = {
+		effect = {
+			set_global_flag = ENG_chongzu_empire
+						ENG = {
+							release = SRL
+							set_autonomy = { target = SRL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+							set_autonomy = { target = MAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+							set_autonomy = { target = SST autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+							set_autonomy = { target = SAR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+							set_autonomy = { target = BOR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+							set_autonomy = { target = CAN autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+							set_autonomy = { target = AST autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+							set_autonomy = { target = SAF autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+							set_autonomy = { target = NZL autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+							set_autonomy = { target = EGY autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+							set_autonomy = { target = RAJ autonomy_state = autonomy_wangguan freedom_level = 0.50  }
+							}
+					
+						EGY = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+						}
+						AST = {
+							set_politics = {
+								ruling_party = n_socialism
+								elections_allowed = yes
+							}
+							set_popularities = {
+								n_socialism = 60
+								fascism = 5
+								communism = 5
+								neutrality = 5
+								democratic = 25
+							}
+						}
+						NZL = {
+							set_politics = {
+								ruling_party = n_socialism
+								elections_allowed = yes
+							}
+							set_popularities = {
+								n_socialism = 60
+								fascism = 5
+								communism = 5
+								neutrality = 5
+								democratic = 25
+							}
+						}
+						RAJ = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+						}
+						MAL = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+						}
+						SST = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+						}
+						BOR = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+						}
+						SAR = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+						}
+						SRL = {
+							set_politics = {
+								ruling_party = neutrality
+								elections_allowed = no
+							}
+							set_popularities = {
+								fascism = 5
+								communism = 5
+								neutrality = 60
+								democratic = 30
+							}
+							set_cosmetic_tag = UK_SRL
+							set_party_name = {
+								ideology = neutrality
+								name = "殖民政府"
+								long_name = "殖民政府"
+							}
+							create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+										   name="威廉·高伯拉瓦"
+										   picture = "gfx/leaders/GNG/UK_SRL_leader.png"
+										   ideology = despotism
+										   desc = UK_SRL_leader_desc
+										   traits = {  }
+										}
+							add_ideas = agrarion_society_generic_3
+						}
+					USA = { set_autonomy = { target = PHI autonomy_state = autonomy_USA_baohuguo freedom_level = 0.50  } }
+					BEL = { set_autonomy = { target = COG autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  } }
+					SOV = {
+						set_party_name = {
+							ideology = communism
+							name = "全联盟共产党（布尔什维克）"
+							long_name = "全联盟共产党（布尔什维克）"
+						}
+					}
+
+					COG = {
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 5
+							communism = 5
+							neutrality = 60
+							democratic = 30
+						}
+					}
+		}
+	}
+	on_daily = {
+		effect = {
+			if = {
+				limit = { #海德里希遇刺
+					date > 1942.5.27
+					or = {
+						9 = { is_controlled_by = GER }
+						9 = { is_controlled_by = R01 }
+					}
+					GER = { has_war_with = ENG }
+					GER = { has_government = fascism }
+					NOT = { has_global_flag = Heydrich_yuci }
+				}
+				GER = { country_event = laisi2hao.9 }
+				set_global_flag = Heydrich_yuci
+			}
+		}
+	}
+}

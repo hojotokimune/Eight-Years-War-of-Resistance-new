@@ -1,0 +1,314 @@
+default = {
+	#navy = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	#army = {
+		#male = {
+		#}
+		#female = {
+		#}
+	#}
+	
+	male = {
+		"gfx/leaders/leader_unknown.dds"
+	}
+	female = {
+		"gfx/leaders/leader_unknown.dds"
+	}
+}
+
+continent = {
+	name = europe	
+	political = {
+		#MODDEDv
+		n_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		#MODDED^
+	}
+
+}
+
+continent = {
+	name = north_america
+	political = {
+		#MODDEDv
+		n_socialism = {
+			male = { 
+				"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		#MODDED^
+	}
+
+}
+
+continent = {
+	name = south_america
+	political = {
+		#MODDEDv
+		n_socialism = {
+			male = { 
+				"GFX_Portrait_South_America_Generic_2" 
+			}
+		}
+		#MODDED^
+	}
+
+}
+
+continent = {
+	name = australia	
+	political = {
+		#MODDEDv
+		n_socialism	= {
+			male = { 
+				"GFX_Portrait_Europe_Generic_2" 
+			}
+		}
+		#MODDED^
+	}
+
+}
+
+continent = {
+	name = africa
+	
+	political = {
+		#MODDEDv
+		n_socialism	= {
+			male = { 
+				"GFX_Portrait_Africa_Generic_2"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic"
+				"GFX_Portrait_South_Africa_Political_Leader_Generic_2"
+			}
+		}
+		#MODDED^
+	}
+}
+
+continent = {
+	name = asia
+	army = {
+		#"gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_10.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_12.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+		#"gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+	}
+	political = {
+		#MODDEDv
+		democratic = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democrac_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_6.dds"
+			}
+		}
+		n_socialism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democrac_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_6.dds"
+			}
+		}
+		communism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds" 
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism_2.dds"
+			}
+		}
+		fascism = {
+			male = {
+				"gfx/leaders/Asia/portrait_asia_generic_5.dds"
+			}
+		}
+		neutrality = {
+			male = {
+				"gfx/leaders/Asia/portrait_asia_generic_6.dds"
+			}
+		}
+		#MODDED^
+	}
+}
+
+
+continent = {
+	name = middle_east
+	
+	political = {
+		#MODDEDv
+		n_socialism = {
+			male = { 
+				"GFX_Portrait_Arabia_Generic_1"
+			}
+		}
+		#MODDED^
+	}
+}
+
+
+is_literally_china_including_chinese_puppets = {
+		political = {
+			n_socialism = {
+				male = {
+					"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds"
+				}
+			}
+		}
+#	limit = {
+#		OR = {
+#			AND = {
+#				capital_scope = { is_on_continent = asia }
+#				is_puppet = no
+#			}
+#			is_subject_of = JAP
+#			is_warlord = yes
+#			tag = HPC
+#			tag = GUD
+#			tag = XIK
+#			tag = SIC
+#			tag = EHB
+#			tag = ECA
+#			tag = RFM
+#			tag = PLM
+#			tag = NEA
+#			tag = SCG
+#			tag = NSG
+#			tag = MAL
+#			tag = SAR
+#			tag = DPR
+#		}
+#	}
+#	political = {
+#		#MODDEDv
+#		n_socialism = {
+#			male = {
+#				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+#			}
+#		}
+#		#MODDED^
+#	}
+}
+		#MODDEDv
+FIC = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+}
+SST = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+}
+BOR = {
+	army = {
+		male = {
+			"GFX_Portrait_Europe_Generic_land_1"
+			"GFX_Portrait_Europe_Generic_land_2"
+			"GFX_Portrait_Europe_Generic_land_"
+			"GFX_Portrait_Europe_Generic_land_4"
+			"GFX_Portrait_Europe_Generic_land_5"
+		}
+	}
+	
+	navy = {
+		male = {
+			"GFX_Portrait_Europe_Generic_navy_1"
+			"GFX_Portrait_Europe_Generic_navy_2"
+			"GFX_Portrait_Europe_Generic_navy_3"
+		}
+	}
+}
+DPR = {
+	army = {
+		#male = {
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_7.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_8.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_9.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_10.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_11.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_12.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_13.dds"
+		#	"gfx/leaders/Asia/portrait_asia_generic_land_14.dds"
+		#}
+	}
+	political = {
+		#MODDEDv
+		democratic = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democrac_2.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democracy.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_6.dds"
+			}
+		}
+		n_socialism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_democrac_2.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_3.dds"
+				"gfx/leaders/Asia/portrait_asia_generic_6.dds"
+			}
+		}
+		communism = {
+			male = { 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_1.dds" 
+				"gfx/leaders/Asia/portrait_asia_generic_4.dds" 
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism.dds"
+				"gfx/leaders/Asia/Portrait_Asia_Generic_communism_2.dds"
+			}
+		}
+		fascism = {
+			male = {
+				"gfx/leaders/Asia/portrait_asia_generic_5.dds"
+			}
+		}
+		neutrality = {
+			male = {
+				"gfx/leaders/Asia/portrait_asia_generic_6.dds"
+			}
+		}
+		#MODDED^
+	}
+}
+#MODDED

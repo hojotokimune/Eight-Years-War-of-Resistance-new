@@ -1,0 +1,1401 @@
+eywor_submod_decisions = {
+
+	eywor_chinese_civil_war = { #This almost never fires because the PLA either loses, or they completely destroy Jiang before the timer runs out.
+		icon = jap_conquer_china
+		allowed = {
+			OR = {
+			    TAG = CHI
+				TAG = PRC
+			}
+		}
+		activation = {
+		    PRC = { has_war_with = CHI }
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			OR = {
+				always = no
+			}
+		}
+		fire_only_once = yes
+		days_mission_timeout = 1000
+		cancel_trigger = {
+			OR = {
+				PRC = { has_war = no }
+				PRC = { has_idea = peoples_army_prc }
+			}
+		}
+		timeout_effect = {
+		    CHI = {
+			    add_stability = -0.3
+				add_war_support = -0.3
+				add_ideas = shitty_army_chi
+			}
+			PRC = {
+			    add_stability = 0.3
+				add_war_support = 0.3
+				add_ideas = peoples_army_prc
+			}
+			hidden_effect = {
+				PRC = { PRC_clr_all_war_of_liberation_ideas = yes }
+			}
+		}
+	}
+	
+	eywor_chi_army_defection_CHI = { #nra troops defect to mao
+		icon = revolt
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+		    has_war_with = PRC
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 250
+		selectable_mission = no
+		cancel_trigger = {
+			NOT = {
+				has_war_with = PRC
+			}
+		}
+		timeout_effect = {
+			transfer_units_fraction = {
+				target = PRC
+				size = 0.1
+				stockpile_ratio = 0.2
+				army_ratio = 0.01
+				navy_ratio = 0
+				air_ratio = 0
+				keep_unit_leaders_trigger = { always = yes }
+			}
+		}
+	}
+
+	eywor_chi_battle_of_yanan = {               #Delay the inevitable of NRA troops defecting
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			tag = CHI
+		}
+		activation = {
+		    has_war_with = event_target:WTT_communist_china
+			PRC = {
+				owns_state = 1030
+			}
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			AND = {
+                OR = {
+					1030 = { is_controlled_by = ROOT }
+					1030 = { 
+						controller = { has_war_with = event_target:WTT_communist_china }
+					}
+				}
+				OR = {
+					622 = { is_controlled_by = ROOT }
+					622 = { 
+						controller = { has_war_with = event_target:WTT_communist_china }
+					}
+				}
+			}  
+		}
+		days_mission_timeout = 180
+		is_good = yes
+		selectable_mission = no
+		cancel_trigger = {
+			NOT = {
+				has_war_with = PRC
+			}
+		}
+		complete_effect = {
+			add_stability = 0.05
+			add_war_support = 0.05
+			if = {
+				limit = {
+					has_idea = chi_initial_offensive_buff
+				}
+				modify_timed_idea = {
+					idea = chi_initial_offensive_buff
+					days = 120
+				}
+			}
+			add_days_mission_timeout = {
+				mission = eywor_chi_army_defection_CHI
+				days = 120
+			}
+			hidden_effect = {
+				PRC = {
+					add_days_mission_timeout = {
+						mission = eywor_chi_army_defection_PRC
+						days = 120
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			custom_effect_tooltip = some_soldiers_will_defect_tt
+			hidden_effect = {
+				transfer_units_fraction = {
+					target = PRC
+					size = 0.05
+					stockpile_ratio = 0.2
+					army_ratio = 0.02
+					navy_ratio = 0
+					air_ratio = 0
+					keep_unit_leaders_trigger = { always = yes }
+				}
+			}
+		}
+	}
+
+	eywor_chi_army_defection_PRC = { #nra troops defect to mao
+		icon = revolt
+		allowed = {
+			tag = PRC
+		}
+		activation = {
+		    has_war_with = CHI
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 250
+		selectable_mission = no
+		cancel_trigger = {
+			NOT = {
+				has_war_with = CHI
+			}
+		}
+		timeout_effect = {
+			effect_tooltip = {
+				CHI = {
+					transfer_units_fraction = {
+						target = PRC
+						size = 0.1
+						stockpile_ratio = 0.2
+						army_ratio = 0.01
+						navy_ratio = 0
+						air_ratio = 0
+						keep_unit_leaders_trigger = { always = yes }
+					}
+				}
+			}
+		}
+	}
+
+	eywor_prc_war_of_liberation_spirit_upgrade = { #upgrade "war of liberation" idea
+		icon = generic_nationalism
+		allowed = {
+			tag = PRC
+		}
+		activation = {
+			has_war_with = CHI
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			always = no
+		}
+		days_mission_timeout = 300
+		selectable_mission = no
+		is_good = yes
+		cancel_trigger = {
+			any_enemy_country = {
+				NOT = {
+					is_literally_china = yes
+				}
+			}
+		}
+		timeout_effect = {
+			PRC_war_of_liberation_spirit_upgrade = yes
+		}
+	}
+	
+	eywor_formation_of_peoples_liberation_army = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		activation = {
+		    PRC = { has_war_with = CHI }
+			has_global_flag = CHI_no_longer_united_flag
+			OR = {
+				NOT = {
+					has_completed_focus = PRC_consolidate_wang_mings_authority_focus
+					has_completed_focus = PRC_reunite_the_group_of_three_focus
+					has_completed_focus = PRC_trotskyist_coup
+				}
+			}
+		}
+		available = {
+			always = no
+		}
+		fire_only_once = yes
+		days_mission_timeout = 300
+		cancel_trigger = {
+			has_war = no
+		}
+		timeout_effect = {
+			PRC = {
+				complete_national_focus = PRC_PLA
+				add_ideas = PLA_reorganised_idea
+				#set_cosmetic_tag = PRC_PLA_Name 
+			}
+		}
+	}
+
+
+	
+	#######################
+	## PRC CCW CAMPAIGNS ##
+	#######################
+	
+	prc_yangtze_river_crossing_campaign_mission_decision = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+			has_global_flag = CHI_no_longer_united_flag
+			1015 = {
+				any_neighbor_state = {
+					controller = { tag = ROOT }
+				}
+			}
+		}
+		available = {
+			has_war_with = CHI
+		}
+		fire_only_once = yes
+		priority = 50
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				CHI = {
+					casualties_inflicted_by = {
+						opponent = PRC
+						thousands > 500
+					}
+				}
+			}
+		}
+		complete_effect = {
+			activate_mission = prc_yangtze_river_crossing_campaign_mission
+			1015 = { add_dynamic_modifier = { modifier = prc_yangtze_river_crossing_campaign scope = PRC } }
+			749 = { add_dynamic_modifier = { modifier = prc_yangtze_river_crossing_campaign scope = PRC } }
+			hidden_effect = {
+			}
+		}
+	}
+
+	prc_yangtze_river_crossing_campaign_mission = {
+		icon = generic_protection
+		allowed = {
+			TAG = PRC
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			controls_state = 1015
+		}
+		fire_only_once = yes
+		days_mission_timeout = 100
+		is_good = yes
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			1015 = { remove_dynamic_modifier = { modifier = prc_yangtze_river_crossing_campaign scope = PRC } }
+			749 = { remove_dynamic_modifier = { modifier = prc_yangtze_river_crossing_campaign scope = PRC } }
+		}
+		timeout_effect = {
+			add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -50
+			1015 = { remove_dynamic_modifier = { modifier = prc_yangtze_river_crossing_campaign scope = PRC } }
+			749 = { remove_dynamic_modifier = { modifier = prc_yangtze_river_crossing_campaign scope = PRC } }
+		}
+	}
+	
+	prc_pingjin_campaign_mission = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = PRC
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			608 = { is_fully_controlled_by = PRC }
+			609 = { is_fully_controlled_by = PRC }
+			614 = { is_fully_controlled_by = PRC }
+		}
+		fire_only_once = yes
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = prc_campaign_is_ongoing
+			608 = {
+			    remove_dynamic_modifier = { modifier = prc_pingjin_campaign_modifier }
+			}
+			614 = {
+			    remove_dynamic_modifier = { modifier = prc_pingjin_campaign_modifier }
+			}
+			609 = {
+			    remove_dynamic_modifier = { modifier = prc_pingjin_campaign_modifier }
+			}
+		}
+		timeout_effect = {
+		    add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -80
+			clr_country_flag = prc_campaign_is_ongoing
+			614 = {
+			    remove_dynamic_modifier = { modifier = prc_pingjin_campaign_modifier }
+			}
+			608 = {
+			    remove_dynamic_modifier = { modifier = prc_pingjin_campaign_modifier }
+			}
+			609 = {
+			    remove_dynamic_modifier = { modifier = prc_pingjin_campaign_modifier }
+			}
+		}
+	}
+
+	prc_liaoshen_campaign_mission = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = PRC
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			716 = { is_fully_controlled_by = PRC }
+			1010 = { is_fully_controlled_by = PRC }
+		}
+		fire_only_once = yes
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = prc_campaign_is_ongoing
+			716 = {
+			    remove_dynamic_modifier = { modifier = prc_liaoshen_campaign_modifier }
+			}
+			1010 = {
+			    remove_dynamic_modifier = { modifier = prc_liaoshen_campaign_modifier }
+			}
+		}
+		timeout_effect = {
+		    add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -80
+			clr_country_flag = prc_campaign_is_ongoing
+			716 = {
+			    remove_dynamic_modifier = { modifier = prc_liaoshen_campaign_modifier }
+			}
+			1010 = {
+			    remove_dynamic_modifier = { modifier = prc_liaoshen_campaign_modifier }
+			}
+		}
+	}
+
+	prc_huaihai_campaign_mission = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = PRC
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			606 = { is_fully_controlled_by = PRC }
+			598 = { is_fully_controlled_by = PRC }
+			997 = { is_fully_controlled_by = PRC }
+			1043 = { is_fully_controlled_by = PRC }
+		}
+		fire_only_once = yes
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = prc_campaign_is_ongoing
+			606 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+			598 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+			997 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+			1043 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+		}
+		timeout_effect = {
+		    add_stability = -0.05
+			add_war_support = -0.05
+			add_political_power = -80
+			clr_country_flag = prc_campaign_is_ongoing
+			606 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+			598 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+			997 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+			1043 = {
+			    remove_dynamic_modifier = { modifier = prc_huaihai_campaign_modifier }
+			}
+		}
+	}
+	
+	#eywor_chiang_resigns = { #Implemented by EYWOR devs
+	#	icon = generic_political_discourse
+	#	visible = {
+	#		OR = {
+	#		    TAG = CHI
+	#			TAG = GXC
+	#		}
+	#	}
+	#	activation = {
+	#	    PRC = { has_war_with = CHI }
+	#		has_global_flag = huaihai_campaign_happened
+	#		has_global_flag = CHI_no_longer_united_flag
+	#	}
+	#	available = {
+	#		always = no
+	#	}
+	#	fire_only_once = yes
+	#	days_mission_timeout = 10
+	#	cancel_trigger = {
+	#		has_war = no
+	#		NOT = { country_exists = PRC }
+	#	}
+	#	timeout_effect = {
+	#	    every_possible_country = {
+    #            limit = { has_character = GXC_li_zongren }
+    #            random_character = {
+    #                limit = { is_character = GXC_li_zongren }
+    #                set_nationality = CHI
+    #            }
+    #       }
+	#		set_portraits = {
+	#		    character = GXC_li_zongren
+	#			civilian = { large = "gfx/leaders/GXC/Li_Zongren_Old.dds" }
+	#			army = { large = "gfx/leaders/GXC/Li_Zongren_Old.dds" }
+	#		}
+	#	    CHI = {
+	#	        annex_country = {
+	#		        target = GXC
+	#			    transfer_troops = yes
+	#	        }
+	#			GXC_li_zongren = {
+	#			    add_country_leader_role = {
+	#				    promote_leader = yes
+	#					country_leader = {
+	#					    ideology = sanmin_political_tutelage
+	#						expire = "1969.1.1"
+	#						traits = { GXC_Acting_President GXC_nra_general }
+	#					}
+	#				}
+	#			}
+	#		}
+	#	}
+	#}
+	
+	#eywor_chiang_takes_control_again = {
+	#	icon = generic_political_discourse
+	#	visible = {
+	#		TAG = CHI
+	#	}
+	#	activation = {
+	#	    has_country_leader = {
+	#		    character = GXC_li_zongren
+	#		}
+	#	}
+	#	available = {
+	#		always = no
+	#	}
+	#	fire_only_once = yes
+	#	days_mission_timeout = 150
+	#	cancel_trigger = {
+	#		always = no
+	#	}
+	#	timeout_effect = {
+	#	    CHI = {
+	#		    retire_country_leader = yes
+	#		}
+	#		set_global_flag = taiwan_cks_portrait_change
+	#		set_portraits = {
+	#		    character = CHI_chiang_kai_shek
+	#			civilian = { large = "gfx/leaders/CHI/Chiang_Taipei.dds" }
+	#		}
+	#	}
+	#}
+	
+	prc_equipment_things = { #PRC AI Cheat
+		icon = generic_prepare_civil_war
+		allowed = {
+			TAG = PRC
+		}
+		visible = { is_ai = yes }
+		days_re_enable = 15
+		available = {
+			has_war_with = CHI
+			NOT = {
+				has_war_with = SOV
+			}
+			SOV = {
+				exists = yes
+				has_government = communism
+			}
+			OR = {
+			    has_equipment = {
+				    support_equipment < 100
+			    }
+				has_equipment = {
+				    infantry_equipment < 100
+			    }
+				has_equipment = {
+				    artillery_equipment < 100
+			    }
+			}
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		priority = 150
+		ai_will_do = {
+			factor = 500
+		}
+		complete_effect = {
+			if = {
+				limit = {
+					has_equipment = {
+				        support_equipment < 100
+			        }
+				}
+				add_equipment_to_stockpile = {
+			   	 	type = support_equipment
+					amount = 3000
+					producer = PRC
+				}
+			}
+			if = {
+				limit = {
+					has_equipment = {
+				        infantry_equipment < 100
+			        }
+				}
+				add_equipment_to_stockpile = {
+			   	 	type = infantry_equipment
+					amount = 30000
+					producer = PRC
+				}
+			}
+			if = {
+				limit = {
+					has_equipment = {
+				        artillery_equipment < 100
+			        }
+				}
+				add_equipment_to_stockpile = {
+			   	 	type = artillery_equipment
+					amount = 2000
+					producer = PRC
+				}
+			}
+		}
+	}
+	prc_make_new_army_ai_only = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+			is_ai = yes
+		}
+		available = {
+			has_global_flag = CHI_no_longer_united_flag
+			has_war = no
+		}
+		fire_only_once = yes
+		days_remove = 330
+		priority = 150
+		ai_will_do = {
+			factor = 500
+		}
+		cancel_trigger = {
+		    has_war_with = CHI
+		}
+		remove_effect = {
+		    prc_reorganise_army_ai_only = yes
+		}
+	}
+	prc_make_mao_marshal = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    has_country_leader = {
+		        character = prc_mao_zedong
+		    }
+		}
+		available = {
+			OR = {
+			    has_war_with = CHI
+				date > 1945.5.1
+				has_global_flag = CHI_no_longer_united_flag
+			}
+		}
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 500
+		}
+		complete_effect = {
+		    add_political_power = 50
+			add_command_power = 75
+			army_experience = 100		
+		    prc_mao_zedong = { 
+				set_portraits = {
+			        army = { large ="gfx/leaders/PRC/Mao_Zedong_Field_Marshal.dds" }
+			    }
+			}
+		}
+	}
+	
+	#prc_use_passive_defense = { #Turned into Focus
+	#	icon = generic_army_support
+	#	allowed = {
+	#		TAG = PRC
+	#	}
+	#	visible = {
+	#		has_global_flag = CHI_no_longer_united_flag
+	#	}
+	#	available = {
+	#		has_war_with = CHI
+	#	}
+	#	cost = 25
+	#	fire_only_once = yes
+	#	priority = 150
+	#	ai_will_do = {
+	#		factor = 500
+	#	}
+	#	complete_effect = {
+	#	    add_ideas = prc_passive_defence
+	#	}
+	#}
+	
+	chi_fortify_shanghai = {
+		icon = generic_mountain_fortification
+		allowed = {
+			TAG = CHI
+		}
+		visible = {
+		    has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			controls_state = 613
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 150
+		priority = 150
+		ai_will_do = {
+			factor = 500
+		}
+		cancel_trigger = {
+		    NOT = { controls_state = 613 }
+		}
+		remove_effect = {
+		    613 = {
+		        add_building_construction = {
+                    type = bunker
+                    level = 3
+                    instant_build = yes
+                    province = 7014
+                }
+			}
+		}
+	}
+	
+	chi_fortify_nanking = {
+		icon = generic_mountain_fortification
+		allowed = {
+			TAG = CHI
+		}
+		visible = {
+		    has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			controls_state = 1015
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 150
+		priority = 150
+		ai_will_do = {
+			factor = 500
+		}
+		cancel_trigger = {
+		    NOT = { controls_state = 1015 }
+		}
+		remove_effect = {
+		    1015 = {
+		        add_building_construction = {
+                    type = bunker
+                    level = 2
+                    instant_build = yes
+                    province = 11913
+                }
+			}
+		}
+	}
+	
+	chi_integrate_lu_han = {
+		icon = generic_army_support
+		allowed = {
+			TAG = CHI
+		}
+		visible = {
+			always = no                                    #Not Historical?
+		    has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			YUN = { is_puppet_of = CHI }
+		}
+		fire_only_once = yes
+		cost = 50
+		days_remove = 70
+		priority = 150
+		ai_will_do = {
+			factor = 500
+		}
+		modifier = {
+		    political_power_gain = -0.5
+		}
+		remove_effect = {
+		    CHI = {
+			    annex_country = {
+			        target = YUN
+				    transfer_troops = yes
+		        }
+			}
+		}
+	}
+	
+	chi_desperate_defense = {
+		icon = generic_army_support
+		allowed = {
+			TAG = CHI
+		}
+		visible = {
+		    has_war_with = PRC
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			has_global_flag = huaihai_campaign_happened
+			has_war_with = PRC
+		}
+		cancel_trigger = {
+		    has_war = no
+		}
+		cost = 50
+		days_remove = 50
+		priority = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		modifier = {
+		    army_morale_factor = 0.15
+		    war_support_weekly_factor = -0.002
+			army_speed_factor = -0.12
+			dig_in_speed_factor = 0.15
+		    army_core_defence_factor = 0.25
+		}
+	}
+
+	eywor_chi_take_over_dongbei_mission = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = CHI
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			all_state = {
+				has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				is_controlled_by = ROOT
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+			add_days_mission_timeout = {
+				mission = eywor_chi_army_defection_CHI
+				days = 120
+			}
+			hidden_effect = {
+				PRC = {
+					add_days_mission_timeout = {
+						mission = eywor_chi_army_defection_PRC
+						days = 120
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			add_political_power = -80
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+		}
+	}
+	
+	eywor_chi_blitz_yenan = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = CHI
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			all_state = {
+				has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				is_controlled_by = ROOT
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+			add_days_mission_timeout = {
+				mission = eywor_chi_army_defection_CHI
+				days = 120
+			}
+			hidden_effect = {
+				PRC = {
+					add_days_mission_timeout = {
+						mission = eywor_chi_army_defection_PRC
+						days = 120
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			add_political_power = -80
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+		}
+	}
+
+	eywor_chi_hopeh_offensive = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = CHI
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			all_state = {
+				has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				is_controlled_by = ROOT
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+			add_days_mission_timeout = {
+				mission = eywor_chi_army_defection_CHI
+				days = 120
+			}
+			hidden_effect = {
+				PRC = {
+					add_days_mission_timeout = {
+						mission = eywor_chi_army_defection_PRC
+						days = 120
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			add_political_power = -80
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+		}
+	}
+
+	eywor_chi_shantung_campaign = {
+		icon = hol_draw_up_staff_plans
+		allowed = {
+			TAG = CHI
+		}
+		activation = {
+		    always = no
+		}
+		available = {
+			all_state = {
+				has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				is_controlled_by = ROOT
+			}
+		}
+		fire_only_once = yes
+		is_good = no
+		days_mission_timeout = 150
+		cancel_trigger = {
+			has_war = no
+		}
+		complete_effect = {
+		    add_stability = 0.1
+			add_war_support = 0.1
+			add_political_power = 100
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+			add_days_mission_timeout = {
+				mission = eywor_chi_army_defection_CHI
+				days = 120
+			}
+			hidden_effect = {
+				PRC = {
+					add_days_mission_timeout = {
+						mission = eywor_chi_army_defection_PRC
+						days = 120
+					}
+				}
+			}
+		}
+		timeout_effect = {
+			add_political_power = -80
+			clr_country_flag = chi_campaign_is_ongoing
+			every_state = {
+				limit = {
+					has_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+				}
+			    remove_dynamic_modifier = { modifier = chi_ccw_offensive_modifier scope = ROOT }
+			}
+		}
+	}
+
+	ai_prc_defense_bonus_against_chi = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    has_war_with = CHI
+			is_ai = yes
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			has_war_with = CHI
+			CHI = {
+				num_divisions > 140
+			}
+		}
+		cancel_trigger = {
+		    OR = {
+			    has_war = no
+				CHI = {
+				    num_divisions < 140 #CHI shouldnt be much threat at this point
+			    }
+			}
+		}
+		days_remove = 365
+		priority = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		targeted_modifier = {
+		    tag = CHI
+			defense_bonus_against = 0.1
+		}
+		modifier = {
+		    army_morale_factor = 0.1
+			army_org_factor = 0.1
+		}
+	}
+
+	ai_prc_chinese_guerillas_supply = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+			is_ai = yes
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			OR = {
+				NOT = {
+					has_global_flag = roc_in_taiwan_flag
+					has_global_flag = sov_intervene_ccw
+				}
+			}
+		}
+		cancel_trigger = {
+			OR = {
+				has_global_flag = roc_in_taiwan_flag
+				has_global_flag = sov_intervene_ccw
+			}
+		}
+		days_remove = 4995
+		priority = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		modifier = {
+		    supply_combat_penalties_on_core_factor = -0.1
+			supply_consumption_factor = -0.1
+			out_of_supply_factor = -0.1
+			supply_node_range = 0.1
+			attrition = -0.1
+		}
+	}
+	
+	ai_prc_attack_bonus_against_human = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    has_war_with = CHI
+			is_ai = yes
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			has_war_with = CHI
+			OR = {
+				has_global_flag = pingjin_campaign_happened
+				has_global_flag = huaihai_campaign_happened
+				has_global_flag = liaoshen_campaign_happened
+			}
+			CHI = {  
+				is_ai = no
+			}
+		}
+		cancel_trigger = {
+		    OR = {
+			    has_war = no
+				has_idea = peoples_army_prc
+			}
+		}
+		days_remove = 120
+		priority = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		targeted_modifier = {
+		    tag = CHI
+			attack_bonus_against = 0.1
+		}
+	}
+
+	ai_prc_create_lots_of_divs_modifier = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+			is_ai = yes
+			has_global_flag = CHI_no_longer_united_flag
+		}
+		available = {
+			NOT = {
+				OR = {
+					has_global_flag = roc_in_taiwan_flag
+					has_global_flag = sov_intervene_ccw
+				}
+			}
+		}
+		cancel_trigger = {
+		   OR = {
+			    has_global_flag = roc_in_taiwan_flag
+				has_global_flag = sov_intervene_ccw
+		    }
+		}
+		days_remove = 120
+		priority = 150
+		ai_will_do = {
+			factor = 1000
+		}
+		modifier = {
+			training_time_factor = -0.3
+			mobilization_speed = 0.25
+			ai_desired_divisions_factor = 15
+		}
+	}
+}
+
+prc_recruit_new_generals_decisions = {
+	recruit_huang_yongsheng = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    always = yes
+		}
+		available = {
+			date > 1945.1.1
+		}
+		cost = 25
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 25
+				has_political_power > 50
+			}
+			modifier = {
+				factor = 100
+				has_political_power > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = huang_yongsheng_recruited
+			custom_effect_tooltip = recruit_huang_yongsheng
+		}
+	}
+	recruit_chen_zaidao = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    always = yes
+		}
+		available = {
+			date > 1945.1.1
+		}
+		cost = 25
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 25
+				has_political_power > 50
+			}
+			modifier = {
+				factor = 100
+				has_political_power > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = chen_zaido_recruited
+			custom_effect_tooltip = recruit_chen_zaidao
+		}
+	}
+	recruit_li_zuopeng = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    always = yes
+		}
+		available = {
+			date > 1945.1.1
+		}
+		cost = 25
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 25
+				has_political_power > 50
+			}
+			modifier = {
+				factor = 100
+				has_political_power > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = li_zuopeng_recruited
+			custom_effect_tooltip = recruit_li_zuopeng
+		}
+	}
+	recruit_xu_shiyou = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    always = yes
+		}
+		available = {
+			date > 1945.1.1
+		}
+		cost = 25
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 25
+				has_political_power > 50
+			}
+			modifier = {
+				factor = 100
+				has_political_power > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = xu_shiyou_recruited
+			custom_effect_tooltip = recruit_xu_shiyou
+		}
+	}
+	recruit_ye_fei = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    always = yes
+		}
+		available = {
+			date > 1945.1.1
+		}
+		cost = 25
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 25
+				has_political_power > 50
+			}
+			modifier = {
+				factor = 100
+				has_political_power > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = yei_fei_recruited
+			custom_effect_tooltip = recruit_ye_fei
+		}
+	}
+	recruit_luo_ruiqing = {
+		icon = generic_army_support
+		allowed = {
+			TAG = PRC
+		}
+		visible = {
+		    always = yes
+		}
+		available = {
+			date > 1945.1.1
+		}
+		cost = 25
+		fire_only_once = yes
+		priority = 150
+		ai_will_do = {
+			factor = 20
+			modifier = {
+				factor = 25
+				has_political_power > 50
+			}
+			modifier = {
+				factor = 100
+				has_political_power > 100
+			}
+		}
+		complete_effect = {
+			set_country_flag = luo_ruiqing_recruited
+			custom_effect_tooltip = recruit_luo_ruiqing
+		}
+	}
+}

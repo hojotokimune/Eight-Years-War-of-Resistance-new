@@ -1,0 +1,851 @@
+add_namespace = prc_50s_events
+add_namespace = prc_50s_gao_gang_affair_events
+
+country_event = { #lenient treatment for landlords
+	id = prc_50s_events.1
+	title = prc_50s_events.1.t
+	desc = prc_50s_events.1.desc
+	picture = GFX_report_event_lenient_landlord
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.1.a	
+		add_political_power = 25		
+	}
+}
+
+country_event = { #confiscate hanjian lands
+	id = prc_50s_events.2
+	title = prc_50s_events.2.t
+	desc = prc_50s_events.2.desc
+	picture = GFX_report_event_peoples_liberation_army
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.2.a
+		add_manpower = -1
+		add_political_power = 25		
+	}
+}
+
+country_event = { #end the industrialists
+	id = prc_50s_events.3
+	title = prc_50s_events.3.t
+	desc = prc_50s_events.3.desc
+	picture = GFX_report_event_mao_zedong_conference
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.3.a
+		add_political_power = 25			
+	}
+}
+
+country_event = { #begin industrial program
+	id = prc_50s_events.4
+	title = prc_50s_events.4.t
+	desc = prc_50s_events.4.desc
+	picture = GFX_report_event_peoples_commune
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.4.a
+	}
+}
+
+country_event = { #support widows
+	id = prc_50s_events.5
+	title = prc_50s_events.5.t
+	desc = prc_50s_events.5.desc
+	picture = GFX_report_event_chinese_widows
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.5.a
+	}
+}
+
+country_event = { #break the old society
+	id = prc_50s_events.6
+	title = prc_50s_events.6.t
+	desc = prc_50s_events.6.desc
+	picture = GFX_report_event_old_society
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.6.a
+	}
+}
+
+country_event = { #embrace socialist realism
+	id = prc_50s_events.7
+	title = prc_50s_events.7.t
+	desc = prc_50s_events.7.desc
+	picture = GFX_report_event_mao_zedong_sitting
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.7.a
+		add_political_power = 50		
+	}
+}
+
+country_event = { #KMT generals pardoned
+	id = prc_50s_events.8
+	title = prc_50s_events.8.t
+	desc = prc_50s_events.8.desc
+	picture = GFX_report_event_kmt_pow
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.8.a
+	}
+}
+
+#country_event = { #Reducation Of Puyi
+	#id = prc_50s_events.9
+	#title = prc_50s_events.9.t
+	#desc = prc_50s_events.9.desc
+	#picture = GFX_report_event_puyi_reeducated
+
+	#is_triggered_only = yes
+
+	#immediate = {
+	#}
+	
+    #fire_only_once = yes
+	#option = {
+		#name = prc_50s_events.9.a
+	#}
+#}
+
+country_event = { #Preserve Chiangs House 'Fenghua'
+	id = prc_50s_events.10
+	title = prc_50s_events.10.t
+	desc = prc_50s_events.10.desc
+	picture = GFX_report_event_chiang_kai_shek_house
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.10.a
+	}
+}
+
+country_event = { #PRC Preserved our house
+	id = prc_50s_events.11
+	title = prc_50s_events.11.t
+	desc = prc_50s_events.11.desc
+	picture = GFX_report_event_chiang_kai_shek_old
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.11.a
+	}
+}
+
+country_event = { #Li Jishen Returns From HK
+	id = prc_50s_events.12
+	title = prc_50s_events.12.t
+	desc = prc_50s_events.12.desc
+	picture = GFX_report_event_li_jishen
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.12.a
+	}
+}
+
+country_event = { #1954 Constitution
+	id = prc_50s_events.13
+	title = prc_50s_events.13.t
+	desc = prc_50s_events.13.desc
+	picture = GFX_report_event_1954_constitution
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.13.a
+		add_ideas = PRC_xianfa
+		hidden_effect = {
+			country_event = {
+				id = ccw.770
+				days = 5
+			}
+		}		
+	}
+}
+
+country_event = { #Begin City Reconstruction
+	id = prc_50s_events.14
+	title = prc_50s_events.14.t
+	desc = prc_50s_events.14.desc
+	picture = GFX_report_event_mao_tiananmen_square
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.14.a
+	}
+}
+
+country_event = { #Economic Recovery
+	id = prc_50s_events.15
+	title = prc_50s_events.15.t
+	desc = prc_50s_events.15.desc
+	picture = GFX_report_event_zhou_enlai
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.15.a
+	}
+}
+
+country_event = { #Win confidence over capitalists
+	id = prc_50s_events.16
+	title = prc_50s_events.16.t
+	desc = prc_50s_events.16.desc
+	picture = GFX_report_event_deng_with_zhou
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.16.a
+	}
+}
+
+#country_event = { #Puyi Given To Us
+	#id = prc_50s_events.17
+	#title = prc_50s_events.17.t
+	#desc = prc_50s_events.17.desc
+	#picture = GFX_report_event_puyi_in_camp
+
+	#trigger = {
+		#tag = PRC
+		#has_completed_focus = PRC_50s_a_new_beginning
+		#MAN = { exists = no }
+	#}
+
+	#immediate = {
+	#}
+	
+    #fire_only_once = yes
+	#option = {
+		#name = prc_50s_events.17.a
+	#}
+#}
+
+country_event = { #Li Jishen Forms RCCK
+	id = prc_50s_events.18
+	title = prc_50s_events.18.t
+	desc = prc_50s_events.18.desc
+	picture = GFX_report_event_li_jishen
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.18.a
+		create_country_leader = {
+			name = "Li Jishen"
+			desc = ""
+			picture = "gfx/leaders/PRC/Portrait_PRC_Li_Jishen.dds"
+			expire = "1965.1.1"
+			ideology = socialism
+			traits = {}
+		}
+		create_country_leader = {
+			name = "Li Jishen"
+			desc = ""
+			picture = "gfx/leaders/PRC/Portrait_PRC_Li_Jishen.dds"
+			expire = "1965.1.1"
+			ideology = n_socialism_ideology
+			traits = {}
+		}
+	}
+}
+
+country_event = { #Song Qingling Endorses PRC
+	id = prc_50s_events.19
+	title = prc_50s_events.19.t
+	desc = prc_50s_events.19.desc
+	picture = GFX_report_event_soong_qingling
+
+	trigger = {
+	    tag = PRC
+		has_war_with = CHI
+		CHI = {
+			has_country_leader = {
+				character = CHI_chiang_kai_shek
+				ruling_only = yes
+			}
+		}
+		has_global_flag = CHI_no_longer_united_flag
+	}
+
+	immediate = {
+	}
+	
+
+	mean_time_to_happen = {
+		months = 4
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.19.a
+		set_global_flag = song_qingling_supported_ccp
+	}
+}
+
+country_event = { #Song Qingling Endorses PRC/ KMT Reaction
+	id = prc_50s_events.20
+	title = prc_50s_events.20.t
+	desc = prc_50s_events.20.desc
+	picture = GFX_report_event_soong_qingling
+
+	trigger = {
+	    tag = CHI
+		has_global_flag = song_qingling_supported_ccp
+	}
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_events.20.a
+	}
+}
+
+country_event = { #Demobilize The Army
+	id = prc_50s_events.21
+	title = prc_50s_events.21.t #This needs Localisation#
+	desc = prc_50s_events.21.desc
+	picture = GFX_report_event_peoples_liberation_army
+
+	immediate = {
+	}
+
+	trigger = {
+		TAG = PRC
+		is_ai = yes
+		has_global_flag = CHI_no_longer_united_flag
+		has_global_flag = roc_in_taiwan_flag
+		NOT = {
+			has_war_with = CHI
+		}
+	}
+	
+	fire_only_once = yes
+
+	option = {
+		name = prc_50s_events.21.a
+		every_country_division = {
+			limit = {
+				OR = {
+					is_unit_template_reserves = yes
+					#unit_strength < 0.8 #Watch out for Korea
+				}
+			}
+			destroy_unit = yes
+		}
+		hidden_effect = {
+			delete_unit = {
+   				state = 608
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 609
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 1010
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 716
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 1006
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 1034
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 1015
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 592
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 598
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 597
+    			disband = yes
+		    }
+			delete_unit = {
+   				state = 1077
+    			disband = yes
+		    }
+		}
+	}
+}
+#####################
+## GAO GANG AFFAIR ##
+#####################
+country_event = { #Gao gang transfered to beijing
+	id = prc_50s_gao_gang_affair_events.1
+	title = prc_50s_gao_gang_affair_events.1.t
+	desc = prc_50s_gao_gang_affair_events.1.desc
+	picture = GFX_sanfanyundong
+
+	trigger = {
+	}
+
+	immediate = {
+	set_global_flag = san_fanyundong
+	}
+	
+    fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = prc_50s_gao_gang_affair_events.1.a
+		add_ideas = prc_50s_ideas_feudalism	
+        add_ideas = prc_50s_ideas_economic_recovery
+        add_ideas = prc_50s_ideas_old_order
+		hidden_effect = {
+			country_event = {
+				id = ccw.766
+				days = 5
+			}
+		}		
+	}
+}
+country_event = { #Gao gang discuss with mao
+	id = prc_50s_gao_gang_affair_events.2
+	title = prc_50s_gao_gang_affair_events.2.t
+	desc = prc_50s_gao_gang_affair_events.2.desc
+	picture = GFX_report_event_gao_gang_mao_zedong
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.2.a
+		add_ideas = PRC_gaorao
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.3
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang meets with Rao Shushi
+	id = prc_50s_gao_gang_affair_events.3
+	title = prc_50s_gao_gang_affair_events.3.t
+	desc = prc_50s_gao_gang_affair_events.3.desc
+	picture = GFX_report_event_gao_gang_rao_shushi
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.3.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao
+			add_idea = PRC_gaorao2
+		}				
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.4
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Rao Shushi lends support
+	id = prc_50s_gao_gang_affair_events.4
+	title = prc_50s_gao_gang_affair_events.4.t
+	desc = prc_50s_gao_gang_affair_events.4.desc
+	picture = GFX_report_event_gao_gang_rao_shushi
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.4.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao2
+			add_idea = PRC_gaorao3
+		}				
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.5
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang tours china
+	id = prc_50s_gao_gang_affair_events.5
+	title = prc_50s_gao_gang_affair_events.5.t
+	desc = prc_50s_gao_gang_affair_events.5.desc
+	picture = GFX_report_event_gao_gang_with_soldiers
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.5.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao3
+			add_idea = PRC_gaorao4
+		}				
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.6
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang meet with lin biao
+	id = prc_50s_gao_gang_affair_events.6
+	title = prc_50s_gao_gang_affair_events.6.t
+	desc = prc_50s_gao_gang_affair_events.6.desc
+	picture = GFX_report_event_lin_biao
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.6.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao4
+			add_idea = PRC_gaorao5
+		}			
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.7
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang meet with peng dehuai
+	id = prc_50s_gao_gang_affair_events.7
+	title = prc_50s_gao_gang_affair_events.7.t
+	desc = prc_50s_gao_gang_affair_events.7.desc
+	picture = GFX_report_event_pend_dehuai
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.7.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao5
+			add_idea = PRC_gaorao6
+		}			
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.8
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang meet with Luo Ronghuan
+	id = prc_50s_gao_gang_affair_events.8
+	title = prc_50s_gao_gang_affair_events.8.t
+	desc = prc_50s_gao_gang_affair_events.8.desc
+	picture = GFX_report_event_luo_ronghuan
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.8.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao6
+			add_idea = PRC_gaorao7
+		}			
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.9
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang speak with xiannian, deng and yun
+	id = prc_50s_gao_gang_affair_events.9
+	title = prc_50s_gao_gang_affair_events.9.t
+	desc = prc_50s_gao_gang_affair_events.9.desc
+	picture = GFX_report_event_gao_gang_speaking
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.9.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao7
+			add_idea = PRC_gaorao8
+		}			
+	}
+}
+country_event = { #Xiannian inform zhou
+	id = prc_50s_gao_gang_affair_events.10
+	title = prc_50s_gao_gang_affair_events.10.t
+	desc = prc_50s_gao_gang_affair_events.10.desc
+	picture = GFX_report_event_li_xiannian
+	trigger = {	
+	}	
+    fire_only_once = yes
+	is_triggered_only = yes	
+	option = {
+		name = prc_50s_gao_gang_affair_events.10.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao8
+			add_idea = PRC_gaorao6
+		}		
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.11
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Mao confronts Gao gang
+	id = prc_50s_gao_gang_affair_events.11
+	title = prc_50s_gao_gang_affair_events.11.t
+	desc = prc_50s_gao_gang_affair_events.11.desc
+	picture = GFX_report_event_gao_gang_mao_zedong
+
+	is_triggered_only = yes
+
+	immediate = {
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.11.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao6
+			add_idea = PRC_gaorao4
+		}		
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.12
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang criticized
+	id = prc_50s_gao_gang_affair_events.12
+	title = prc_50s_gao_gang_affair_events.12.t
+	desc = prc_50s_gao_gang_affair_events.12.desc
+	picture = GFX_report_event_zhou_enlai
+
+	is_triggered_only = yes
+
+	immediate = {		
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.12.a
+		swap_ideas = {
+			remove_idea = PRC_gaorao4
+			add_idea = PRC_gaorao2
+		}		
+		hidden_effect = {
+			country_event = {
+				id = prc_50s_gao_gang_affair_events.13
+				days = 25
+			}
+		}
+	}
+}
+country_event = { #Gao gang dead
+	id = prc_50s_gao_gang_affair_events.13
+	title = prc_50s_gao_gang_affair_events.13.t
+	desc = prc_50s_gao_gang_affair_events.13.desc
+	picture = GFX_report_event_gao_gang
+
+	is_triggered_only = yes
+
+	immediate = {
+		hidden_effect = {
+	    set_global_flag = gao_end								
+		if = {
+			limit = {
+			PRC = { is_ai = no }  
+			}
+		play_song = "浪淘沙，北戴河"	
+		}
+		}		
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.13.a
+		remove_ideas = PRC_gaorao2	
+		add_political_power = -200
+		add_stability = 0.15
+        custom_effect_tooltip = GFX_report_kaichugaorao			
+		retire_character = PRC_gaogang
+	}
+}
+country_event = { #Gao gang win
+	id = prc_50s_gao_gang_affair_events.14
+	title = prc_50s_gao_gang_affair_events.14.t
+	desc = prc_50s_gao_gang_affair_events.14.desc
+	picture = GFX_report_event_gao_gang
+
+	is_triggered_only = yes
+
+	immediate = {
+		if = {
+			limit = {
+			PRC = { is_ai = no }  
+			}
+	hidden_effect = {	
+		play_song = "浪淘沙，北戴河"	
+	}
+		}		
+	}
+	
+    fire_only_once = yes
+	option = {
+		name = prc_50s_gao_gang_affair_events.14.a
+		add_trait = {
+			character = PRC_gaogang
+			slot = political_advisor
+		    trait = war_industrialist2
+				}
+		hidden_effect = {				
+		remove_trait = {
+			character = PRC_gaogang
+			slot = political_advisor
+		    trait = war_industrialist
+		}		
+		}		
+		swap_ideas = {
+			remove_idea = PRC_gaorao8
+			add_idea = PRC_gaowin
+		}		
+		add_political_power = 200
+		add_stability = -0.15		
+	}
+}

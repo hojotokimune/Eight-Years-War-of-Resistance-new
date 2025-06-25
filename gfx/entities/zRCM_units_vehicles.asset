@@ -1,0 +1,291 @@
+
+#######
+#guangdong
+#######
+	entity = {
+		name = "GUD_vehicle_infantry_rifle_entity"
+		clone = "GXC_vehicle_infantry_rifle_entity"
+	}
+
+	#entity = {
+	#	name = "GUD_motorized_entity"
+	#	clone = "GXC_motorized_entity"
+	#}
+
+	entity = {
+		name = "GUD_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+
+#######
+# Northern Cliques
+#######
+
+
+
+	entity = {
+		name = "HPC_vehicle_infantry_rifle_entity"
+		clone = "SHX_vehicle_infantry_rifle_entity"
+	}
+
+	entity = {
+		name = "HPC_motorized_entity"
+		clone = "SHX_motorized_entity"
+	}
+
+	entity = {
+		name = "HPC_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+	#
+	entity = {
+		name = "SHD_vehicle_infantry_rifle_entity"
+		clone = "SHX_vehicle_infantry_rifle_entity"
+	}
+
+	entity = {
+		name = "SHD_motorized_entity"
+		clone = "SHX_motorized_entity"
+	}
+
+	entity = {
+		name = "SHD_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+	#
+	entity = {
+		name = "NEA_vehicle_infantry_rifle_entity"
+		clone = "SHX_vehicle_infantry_rifle_entity"
+	}
+
+	entity = {
+		name = "NEA_motorized_entity"
+		clone = "SHX_motorized_entity"
+	}
+
+	entity = {
+		name = "NEA_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+	#
+	entity = {
+		name = "SHC_vehicle_infantry_rifle_entity"
+		clone = "SHX_vehicle_infantry_rifle_entity"
+	}
+
+	entity = {
+		name = "SHC_motorized_entity"
+		clone = "SHX_motorized_entity"
+	}
+
+	entity = {
+		name = "SHC_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+        #
+        entity = {
+		name = "SUY_vehicle_infantry_rifle_entity"
+		clone = "SHX_vehicle_infantry_rifle_entity"
+	}
+
+	entity = {
+		name = "SUY_motorized_entity"
+		clone = "SHX_motorized_entity"
+	}
+
+	entity = {
+		name = "SUY_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+
+#######
+# Xibei MA CLIQUES
+#######
+
+
+	###
+	entity = {
+		name = "NXM_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "NXM_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "NXM_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+	###
+	entity = {
+		name = "GSM_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "GSM_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "GSM_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+	###
+	entity = {
+		name = "TNG_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "TNG_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "TNG_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+
+	###
+	entity = {
+		name = "HMI_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "HMI_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "HMI_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+        ###
+	entity = {
+		name = "KHR_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "KHR_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "KHR_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+        ###
+	entity = {
+		name = "KRS_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "KRS_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "KRS_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+         ###
+	entity = {
+		name = "ATM_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "ATM_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "ATM_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+         ###
+	entity = {
+		name = "EGM_vehicle_infantry_rifle_entity"
+		clone = "XSM_vehicle_infantry_rifle_entity"
+
+	}
+
+	entity = {
+
+		name = "EGM_motorized_entity"
+		clone = "XSM_motorized_entity"
+
+	}
+
+	entity = {
+		name = "EGM_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+####
+#Szechwan
+####
+###
+	entity = {
+		name = "SIC_vehicle_infantry_rifle_entity"
+		clone = "YUN_vehicle_infantry_rifle_entity"
+
+	}
+
+	#entity = {
+	#	name = "SIC_motorized_entity"
+	#	clone = "YUN_motorized_entity"
+	#}
+
+	entity = {
+		name = "SIC_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+	###
+	entity = {
+		name = "XIK_vehicle_infantry_rifle_entity"
+		clone = "YUN_vehicle_infantry_rifle_entity"
+
+	}
+
+	#entity = {
+	#	name = "XIK_motorized_entity"
+	#	clone = "YUN_motorized_entity"		
+	#}
+
+	entity = {
+		name = "XIK_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+#Hunan
+        entity = {
+		name = "XIA_motorized_vehicle_entity"
+		clone = "CHI_motorized_vehicle_entity"
+	}
+

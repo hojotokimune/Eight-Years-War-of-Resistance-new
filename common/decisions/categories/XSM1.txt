@@ -1,0 +1,10 @@
+统一西北三马 = {       
+    icon = generic_prepare_civil_war 
+    allowed ={
+        tag = XSM
+    }
+    available = {		
+	}
+    visible = {
+	}
+}

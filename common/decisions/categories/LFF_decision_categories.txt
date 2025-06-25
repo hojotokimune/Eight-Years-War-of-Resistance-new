@@ -1,0 +1,9 @@
+
+laissez_faire_cat = {
+    allowed ={
+        tag = CHI
+    }
+    visible = {
+		always = yes
+	}
+}

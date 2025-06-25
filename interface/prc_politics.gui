@@ -1,0 +1,594 @@
+guiTypes = {
+	containerWindowType = {
+		name = "prc_scripted_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		orientation = center
+		origo = center
+		moveable = yes
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		background = {
+			name = "Background"		
+			quadTextureSprite ="GFX_scripted_gui_window_background"
+		}
+		
+		buttonType ={
+			name = "close_politburo"
+			quadTextureSprite = "GFX_close_button"
+			position = { x = 630  y = 495 }
+			buttonText = "close_button_politburo_text"
+			buttonFont = "hoi_36header"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+		
+		iconType ={
+			name ="large_flag"
+			spriteType = "GFX_shield_medium"
+			position = { x= -33 y = 138 }
+			orientation = "CENTER"
+			pdx_tooltip = "flag_tooltip_tt"
+		}
+
+		iconType ={
+			name ="flag_frame"
+			spriteType = "GFX_flag_frame_prc"
+			position = { x= -37 y = 138 }
+			orientation = "CENTER"
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="politburo_icon"
+			spriteType = "GFX_cpc_politburo_frame"
+			position = { x= -90 y = -285 }
+			orientation = "CENTER"
+			pdx_tooltip = "politburo_icon_desc"
+		}
+		
+		iconType ={
+			name ="politburo_premier_vacant"
+			spriteType = "GFX_politburo_premier_vacant"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "politburo_premier_vacant"
+		}
+		
+		iconType ={ #Right Side
+			name ="mao_zedong_chairman_right"
+			spriteType = "GFX_mao_zedong_chairman_politburo_young"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "mao_zedong_chairman_desc"
+		}
+
+		iconType ={
+			name ="zhou_enlai_premier_1944"
+			spriteType = "GFX_zhou_enlai_politburo_1944"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "zhou_enlai_premier_desc"
+		}
+		
+		iconType ={
+			name ="zhou_enlai_premier"
+			spriteType = "GFX_zhou_enlai_politburo"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "zhou_enlai_premier_desc"
+		}
+		
+		iconType ={
+			name ="foreign_minister_prc"
+			spriteType = "GFX_leader_frame_prc"
+			position = { x= 550 y = 150 }
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="wang_ming_secretary"
+			spriteType = "GFX_wang_ming_politburo"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "wang_ming_secretary_desc"
+		}
+		
+		iconType ={
+			name ="bo_gu_secretary"
+			spriteType = "GFX_bo_gu_politburo"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "bo_gu_secretary_desc"
+		}
+		
+		iconType ={
+			name ="zhang_wentian_secretary"
+			spriteType = "GFX_zhang_wentian_politburo"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "zhang_wentian_secretary_desc"
+		}
+		
+		iconType ={
+			name ="mao_zedong_chairman"
+			spriteType = "GFX_mao_zedong_politburo"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "mao_zedong_chairman_desc"
+		}
+		
+		iconType ={
+			name ="mao_zedong_chairman_1946"
+			spriteType = "GFX_mao_zedong_politburo_1946"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "mao_zedong_chairman_desc"
+		}
+		
+		iconType ={
+			name ="chairman_president_prc"
+			spriteType = "GFX_leader_frame_prc"
+			position = { x= 323 y = 150 }
+			alwaystransparent = yes
+		}
+		
+		iconType ={
+			name ="zhu_de_vice_president"
+			spriteType = "GFX_zhu_de_politburo"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "zhu_de_vice_president_desc"
+		}
+
+		iconType ={
+			name ="lin_biao_defense_minister"
+			spriteType = "GFX_lin_biao_politburo"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "lin_biao_defense_minister_desc"
+		}
+		
+		iconType ={
+			name ="bo_gu_28bol"
+			spriteType = "GFX_bo_gu_politburo"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "bo_gu_secretary_desc"
+		}
+		
+		iconType ={
+			name ="zhang_guo_tao"
+			spriteType = "GFX_Portrait_China_Zhang_Guotao"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "zhang_guo_tao_desc"
+		}
+
+		instantTextboxType = {
+			name = "zhang_guo_tao_secretary"
+			position = { x = 345 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "zhang_guo_tao_secretary"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="chenchanghao"
+			spriteType = "GFX_Portrait_PRC_chenchanghao"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "chenchanghao_desc"
+		}
+
+		iconType ={
+			name ="Xu_Xiangqian"
+			spriteType = "GFX_Portrait_Xu_Xiangqian"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "Xu_Xiangqian_desc"
+		}
+
+		instantTextboxType = {
+			name = "Xu_Xiangqian_junwei"
+			position = { x = 558 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "Xu_Xiangqian_junwei"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="zhang_guo_tao_weiyuan"
+			spriteType = "GFX_zhang_guo_tao"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "zhang_guo_tao_desc"
+		}
+
+		instantTextboxType = {
+			name = "zhang_guo_tao_weiyuan_desc"
+			position = { x = 558 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "zhang_guo_tao_weiyuan_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="zhou_en_lai"
+			spriteType = "GFX_zhou_enlai_politburo"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "zhou_en_lai"
+		}
+
+		instantTextboxType = {
+			name = "zhou_en_lai_junwei"
+			position = { x = 558 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "zhou_en_lai_junwei"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="li_de"
+			spriteType = "GFX_Portrait_li_de"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "li_de"
+		}
+
+		iconType ={
+			name ="wang_ming_28bol"
+			spriteType = "GFX_wang_ming_politburo_young"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "wang_ming_secretary_desc"
+		}
+		
+		iconType ={
+			name ="vice_president_prc"
+			spriteType = "GFX_leader_frame_prc"
+			position = { x= 80 y = 150 }
+			alwaystransparent = yes
+		}
+		
+		instantTextboxType = {
+			name = "chairman_politburo"
+			position = { x = 350 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "chairman_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "general_secretary_politburo"
+			position = { x = 345 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "general_secretary_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "premier_politburo"
+			position = { x = 585 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "premier_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "vacant_premier_politburo"
+			position = { x = 593 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "vacant_premier_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = { #Right side
+			name = "chairman_politburo_right"
+			position = { x = 580 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "chairman_politburo_right"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "vice_president_politburo"
+			position = { x = 100 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "vice_president_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		instantTextboxType = {
+			name = "defense_minister_politburo"
+			position = { x = 115 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "defense_minister_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "28_bol_politburo"
+			position = { x = 125 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "28_bol_politburo"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "eighth_prc_politburo_text"
+			position = { x = 210 y = 420 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0} 
+			text = "eighth_prc_politburo_text"
+			maxWidth = 450
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		instantTextboxType = {
+			name = "sixth_prc_politburo_text"
+			position = { x = 210 y = 420 }
+			font = "hoi_36header"
+			borderSize = {x = 0 y = 0} 
+			text = "sixth_prc_politburo_text"
+			maxWidth = 450
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		instantTextboxType = {
+			name = "li_de_guoji"
+			position = { x = 88 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "li_de_guoji"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="wang_shi_wei"
+			spriteType = "GFX_wang_shi_wei"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "wang_shi_wei"
+		}
+
+		instantTextboxType = {
+			name = "wang_shi_wei_yanjiu"
+			position = { x = 558 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "wang_shi_wei_yanjiu"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="zhou_en_lai_zhuxi"
+			spriteType = "GFX_zhou_en_lai_zhuxi"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "zhou_en_lai_zhuxi_desc"
+		}
+
+		instantTextboxType = {
+			name = "zhou_en_lai_zhuxi_zhiwei"
+			position = { x = 345 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "zhou_en_lai_zhuxi_zhiwei_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes			
+		}
+
+		iconType ={
+			name ="deng_xiao_ping"
+			spriteType = "GFX_deng_xiao_ping"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "deng_xiao_ping_desc"
+		}
+
+		instantTextboxType = {
+			name = "deng_xiao_ping_zhiwei"
+			position = { x = 558 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "deng_xiao_ping_zhiwei_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes			
+		}
+
+		iconType ={
+			name ="chen_yi"
+			spriteType = "GFX_chen_yi"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "chen_yi_desc"
+		}
+
+		instantTextboxType = {
+			name = "chen_yi_zhiwei"
+			position = { x = 88 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "chen_yi_zhiwei_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes			
+		}
+
+		iconType ={
+			name ="chen_du_xiu"
+			spriteType = "GFX_chen_du_xiu"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "chen_du_xiu"
+		}
+
+		instantTextboxType = {
+			name = "chen_du_xiu_secretary"
+			position = { x = 345 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "chen_du_xiu_secretary"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="peng_shu_zhi"
+			spriteType = "GFX_peng_shu_zhi"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "peng_shu_zhi"
+		}
+
+		iconType ={
+			name ="peng_shu_zhi_secretary"
+			spriteType = "GFX_peng_shu_zhi_secretary"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "peng_shu_zhi_secretary"
+		}
+
+		instantTextboxType = {
+			name = "peng_shu_zhi_secretary_desc"
+			position = { x = 345 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "peng_shu_zhi_secretary_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="wang_fan_xi_secretary"
+			spriteType = "GFX_wang_fan_xi"
+			position = { x= 330 y = 160 }
+			pdx_tooltip = "wang_fan_xi_secretary"
+		}
+
+		instantTextboxType = {
+			name = "wang_fan_xi_secretary_desc"
+			position = { x = 345 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "wang_fan_xi_secretary_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+		
+		iconType ={
+			name ="ren_bishi_left"
+			spriteType = "GFX_ren_bishi_left"
+			position = { x= 88 y = 160 }
+			pdx_tooltip = "ren_bishi_left_desc"
+		}
+
+		instantTextboxType = {
+			name = "ren_bishi_left_zhiwei"
+			position = { x = 88 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "ren_bishi_left_zhiwei_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		iconType ={
+			name ="Liu_Shaoqi_right"
+			spriteType = "GFX_Liu_Shaoqi_right"
+			position = { x= 558 y = 160 }
+			pdx_tooltip = "Liu_Shaoqi_right_desc"
+		}
+
+		instantTextboxType = {
+			name = "Liu_Shaoqi_right_zhiwei"
+			position = { x = 558 y = 370 }
+			font = "hoi_30header"
+			borderSize = {x = 0 y = 0} 
+			text = "Liu_Shaoqi_right_zhiwei_desc"
+			maxWidth = 400
+			maxHeight = 20
+			fixedsize = yes
+		}
+
+		#iconType ={
+		#	name ="production_header_bg"
+		#	spriteType = "GFX_header_bg"
+		#	position = { x= 5 y = 7 }
+		#	Orientation = "UPPER_LEFT"
+		#}	
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+	containerWindowType = {
+		name = "prc_open_scripted_gui_window"
+		position = { x = 0 y = 0}	
+		size = { width = 800 height= 650 }
+		fade_time = 100
+		moveable = no
+		fade_type = linear
+		click_to_front = no
+		clipping = no
+		
+		buttonType ={
+			name ="open_politburo_gui"
+			spriteType = "GFX_open_emblem"
+			position = { x = 200  y = 10 }
+			#buttonText ="politburo_text"
+			#font = "hoi_24header"
+		}
+
+		#iconType ={
+		#	name ="production_header_bg"
+		#	spriteType = "GFX_header_bg"
+		#	position = { x= 5 y = 7 }
+		#	Orientation = "UPPER_LEFT"
+		#}	
+
+		#instantTextboxType = {
+		#	name = "political_title"
+		#	position = { x = 45 y = 8 }
+		#	font = "hoi_36header"
+		#	borderSize = {x = 0 y = 0}
+		#	text = "POLITICAL_POLITICAL"
+		#	maxWidth = 400
+		#	maxHeight = 20
+		#	fixedsize = yes
+		#}
+	}
+}

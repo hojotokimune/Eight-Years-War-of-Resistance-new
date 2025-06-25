@@ -1,0 +1,5 @@
+﻿l_simp_chinese:
+ RECALL_VOLUNTEERS_TITLE:0 "召回志愿军"
+ RECALL_VOLUNTEERS_ACTION_DESC:0 "我们可以召回我们在其他国家的志愿军."
+ RECALL_VOLUNTEERS_TOOLTIP:0 "§Y[This.GetNameWithFlag]§! §必须有我们的志愿军§!"
+ RECALL_VOLUNTEERS_TOOLTIP_G:0 "§Y[This.GetNameWithFlag]§! 必须有我们的志愿军"

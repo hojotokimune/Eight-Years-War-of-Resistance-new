@@ -1,0 +1,329 @@
+guiTypes = {
+	containerWindowType = {
+		name = "vnr_pacific_war_usa_category_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 220 }
+
+		buttonType = {
+			name = "usa_open_pacific_map_button"
+			spriteType = "GFX_usa_joint_chiefs_of_staff"
+			position = { x = 15 y = 30 }
+			clicksound = click_default
+			oversound = ui_menu_over
+			pdx_tooltip = open_pacific_map_button_tt
+		}
+		instantTextBoxType = {
+			name ="usa_hq_name"
+			position = { x = 270 y = 30 }
+			font = "hoi_24header"
+			text = "usa_hq_name_text"
+			format = center
+			maxHeight = 36
+		}
+		instantTextBoxType = {
+			name ="usa_hq_org"
+			position = { x = 270 y = 90 }
+			font = "hoi_18mbs"
+			text = "usa_hq_org_text"
+			format = center
+			maxHeight = 36
+		}
+	}
+
+	containerWindowType = {
+		name = "vnr_pacific_war_jap_category_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 220 }
+
+		buttonType = {
+			name = "jap_open_pacific_map_button"
+			spriteType = "GFX_jap_imperial_headquarter"
+			position = { x = 15 y = 30 }
+			clicksound = click_default
+			oversound = ui_menu_over
+			pdx_tooltip = open_pacific_map_button_tt
+		}
+		instantTextBoxType = {
+			name ="jap_hq_name"
+			position = { x = 270 y = 30 }
+			font = "hoi_24header"
+			text = "jap_hq_name_text"
+			format = center
+			maxHeight = 36
+		}
+		instantTextBoxType = {
+			name ="jap_hq_org"
+			position = { x = 270 y = 90 }
+			font = "hoi_18mbs"
+			text = "jap_hq_org_text"
+			format = center
+			maxHeight = 36
+		}
+	}
+	
+	containerWindowType = {
+		name = "vnr_china_theater_category_decision_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 100% height= 290 }
+
+		instantTextBoxType = {
+			name ="casualties_title"
+			position = { x = 10 y = 10 }
+			font = "hoi_24header"
+			text = "casualties_title_text"
+			format = left
+			maxWidth = 400
+		}
+		iconType = {
+			name = "jap_man_faction_icon"
+			quadTextureSprite = "GFX_jap_man_faction_icon"
+			position = { x = 15 y = 40 }
+			Orientation = "UPPER_LEFT"
+		}
+		iconType = {
+			name = "chi_prc_faction_icon"
+			quadTextureSprite = "GFX_chi_prc_faction_icon"
+			position = { x = 395 y = 40 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="jap_casualties"
+			position = { x = 15 y = 190 }
+			font = "hoi_16mbs"
+			text = "jap_casualties_text"
+			format = left
+			maxWidth = 200
+		}
+		instantTextBoxType = {
+			name ="prc_casualties"
+			position = { x = 300 y = 190 }
+			font = "hoi_16mbs"
+			text = "prc_casualties_text"
+			format = left
+			maxWidth = 200
+		}
+	}
+
+	containerWindowType = {
+		name = "vnr_pacific_war_ui_window"
+		position = { x = 0 y = 0 }
+		size = { width = 1000 height= 800 }
+		moveable = yes
+		orientation = CENTER
+		origo = center
+		clipping = no
+		background = { quadTextureSprite = "GFX_tiled_window_pol_goal" }
+
+		instantTextBoxType = {
+			name ="pacific_war_ui_header"
+			position = { x = 0 y = 30 }
+			font = "hoi_36header"
+			text = "pacific_war_ui_title"
+			format = center
+			maxHeight = 36
+			maxWidth = 1000
+		}
+		buttonType = {
+			name = "close_button"
+			position = { x = -50 y = 30 }
+			quadTextureSprite ="GFX_closebutton"
+			buttonFont = "Main_14_black"
+			shortcut = "ESCAPE"
+			Orientation = "UPPER_RIGHT"
+			clicksound = click_close
+			pdx_tooltip = "CLOSE"
+		}
+
+		iconType = {
+			name = "pacific_war_controller_flag"
+			quadTextureSprite ="GFX_shield_medium"
+			position = { x = 200 y = 670 }
+			Orientation = "UPPER_LEFT"
+		}
+		instantTextBoxType = {
+			name ="area_name"
+			position = { x = 0 y = 600 }
+			font = "hoi_36header"
+			text = "pacific_war_gui_area"
+			format = center
+			maxHeight = 36
+			maxWidth = 1000
+		}
+		instantTextBoxType = {
+			name ="controller_name"
+			position = { x = 140 y = 640 }
+			font = "hoi_18mbs"
+			text = "pacific_war_gui_controller"
+			format = center
+			maxHeight = 36
+		}
+		instantTextBoxType = {
+			name ="faction_name"
+			position = { x = 140 y = 740 }
+			font = "hoi_18mbs"
+			text = "pacific_war_gui_faction"
+			format = center
+			maxHeight = 36
+		}
+		instantTextBoxType = {
+			name ="area_intro"
+			position = { x = 360 y = 640 }
+			font = "hoi_18mbs"
+			text = "area_intro_text"
+			format = left
+			maxWidth = 520
+			maxHeight = 64
+		}
+
+		containerWindowType = {
+			name = "pacific_map_bg"
+			position = { x = -10 y = 88 }
+			size = { width = 830 height = 508 }
+			orientation = CENTER_UP
+			origo = center_up
+			clipping = no
+			background = { quadTextureSprite = "GFX_tiled_bg" }
+		}
+		containerWindowType = {
+			name = "pacific_map"
+			position = { x = 0 y = 100 }
+			size = { width = 820 height = 440 }
+			orientation = CENTER_UP
+			origo = center_up
+			clipping = no
+			
+			iconType = {
+				name = "map_bg"
+				position = { x = 0 y = 0 }
+				spriteType = GFX_pacific_war_gui_bg
+			}
+			buttonType = {
+				name = "pacific_war_gui_ast"
+				spriteType = "GFX_pacific_war_gui_ast"
+				position = { x = 115 y = 296 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_can"
+				spriteType = "GFX_pacific_war_gui_can"
+				position = { x = 516 y = 0 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_chi"
+				spriteType = "GFX_pacific_war_gui_chi"
+				position = { x = 0 y = 84 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_indochina"
+				spriteType = "GFX_pacific_war_gui_indochina"
+				position = { x = 65 y = 197 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_ins"
+				spriteType = "GFX_pacific_war_gui_ins"
+				position = { x = 46 y = 265 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_jap"
+				spriteType = "GFX_pacific_war_gui_jap"
+				position = { x = 155 y = 78 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_mal"
+				spriteType = "GFX_pacific_war_gui_mal"
+				position = { x = 63 y = 260 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_man"
+				spriteType = "GFX_pacific_war_gui_man"
+				position = { x = 108 y = 62 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_mon"
+				spriteType = "GFX_pacific_war_gui_mon"
+				position = { x = 18 y = 70 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_north_korea"
+				spriteType = "GFX_pacific_war_gui_north_korea"
+				position = { x = 156 y = 113 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_phi"
+				spriteType = "GFX_pacific_war_gui_phi"
+				position = { x = 129 y = 211 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_raj"
+				spriteType = "GFX_pacific_war_gui_raj"
+				position = { x = 0 y = 171 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_sia"
+				spriteType = "GFX_pacific_war_gui_sia"
+				position = { x = 55 y = 209 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_sol"
+				spriteType = "GFX_pacific_war_gui_sol"
+				position = { x = 242 y = 292 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_south_korea"
+				spriteType = "GFX_pacific_war_gui_south_korea"
+				position = { x = 161 y = 132 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_sov"
+				spriteType = "GFX_pacific_war_gui_sov"
+				position = { x = 0 y = 0 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_taiwan"
+				spriteType = "GFX_pacific_war_gui_taiwan"
+				position = { x = 139 y = 189 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+			buttonType = {
+				name = "pacific_war_gui_usa"
+				spriteType = "GFX_pacific_war_gui_usa"
+				position = { x = 360 y = 0 }
+				clicksound = click_default
+				oversound = ui_menu_over
+			}
+		}
+	}
+}
+

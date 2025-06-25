@@ -1,0 +1,28 @@
+add_namespace = xinde
+
+country_event = {
+	id = xinde.1
+	title = xinde.1.t
+	desc = xinde.1.d
+    is_triggered_only = yes
+	picture = GFX_report_event_xibaipo
+	fire_only_once = yes
+	option = { 
+		name = xinde.1.a
+                                      MAN = {
+					transfer_navy = {
+						target = PRC
+					}
+                   			every_unit_leader = {
+				set_nationality = PRC
+			}
+               }
+					PRC = {
+
+                   annex_country = { target = MAN transfer_troops = yes  }
+					}				
+        ai_chance = { 
+			base = 100
+        }
+    }
+}

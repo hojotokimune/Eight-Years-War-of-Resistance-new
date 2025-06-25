@@ -1,0 +1,59 @@
+recall_imperial_japanese_army_taisyou = {
+	icon = military_operation
+	allowed = {
+
+	}
+	visible = {
+
+	}
+}
+
+recruit_imperial_japanese_army_generals = {
+	icon = military_operation
+	allowed = {
+
+	}
+	visible = {
+
+	}
+}
+
+recruit_imperial_japanese_navy_admirals = {
+	icon = military_operation
+	allowed = {
+
+	}
+	visible = {
+
+	}
+}
+
+recruit_ija_air_service_generals = {
+	icon = military_operation
+	allowed = {
+
+	}
+	visible = {
+
+	}
+}
+
+recall_former_northwest_army_leader = {
+	icon = military_operation
+	allowed = {
+
+	}
+	visible = {
+
+	}
+}
+
+recruit_national_revolutionary_army_generals = {
+	icon = military_operation
+	allowed = {
+
+	}
+	visible = {
+
+	}
+}

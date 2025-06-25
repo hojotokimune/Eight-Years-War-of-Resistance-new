@@ -1,0 +1,120 @@
+peace_with_japan_land_partition_tg = {
+	effect_tooltip = {
+		white_peace = JAP
+	}
+	hidden_effect = {
+		every_state = {
+			limit = {
+				is_in_array = { global.small_china = This.id } #MODDED
+				OWNER = {
+					OR = {
+						tag = JAP
+						is_subject_of = JAP
+					}
+				}
+				CONTROLLER = {
+					is_literally_china = yes
+					has_war_with = JAP
+				}
+			}
+			CONTROLLER = {
+				transfer_state = PREV
+			}
+		}
+		JAP = {			
+			every_enemy_country = {
+				limit = {
+					OR = {
+						tag = ROOT
+						has_war_together_with = ROOT
+						tag = event_target:scp_war_opposition_leader
+						has_war_together_with = event_target:scp_war_opposition_leader
+					}
+				}
+				#if = {
+				#	limit = {
+				#		NOT = {
+				#			is_literally_china = yes
+				#		}
+				#		is_faction_leader = yes
+				#	}
+				#	country_event = { days = 3 id = rcmsoviet.26 }
+				#}
+				if = {
+					limit = {
+						OR = {
+							is_literally_china = yes
+							any_allied_country = {
+								is_literally_china = yes
+							}
+						}
+					}
+					white_peace = JAP
+				}				
+			}
+		}
+		#every_enemy_country = {
+		#	limit = {
+		#		OR = {
+		#			tag = JAP
+		#			AND = {
+		#				has_war_together_with = JAP
+		#				OR = {
+		#					is_subject_of = JAP
+		#					is_in_faction_with = JAP
+		#				}
+		#			}
+		#		}
+		#	}
+		#	white_peace = ROOT
+		#	white_peace = event_target:scp_war_opposition_leader
+		#}
+		JAP = {
+			every_owned_state = {
+				limit = {
+					#country_exists = FIC
+					is_core_of = FIC
+				}
+				FIC = {
+					transfer_state = PREV
+				}
+			}
+		}
+		FIC = {
+			white_peace = JAP
+		}
+		news_event = RCM_news.2
+	}
+	#if = {
+	#	
+	#}
+	#JAP = {
+	#	drop_lands_in_china = yes
+	#}
+	JAP = {
+		release = KOR
+	}
+	event_target:Communist_China_Leader = {
+		transfer_state = 524
+		if = {
+			limit = {
+				RFM = {
+					is_puppet_of = JAP
+				}
+			}
+			annex_country = {
+				target = RFM transfer_troops = no
+			}
+		}
+		if = {
+			limit = {
+				EHB = {
+					is_puppet_of = JAP
+				}
+			}
+			annex_country = {
+				target = EHB transfer_troops = no
+			}
+		}
+	}
+}

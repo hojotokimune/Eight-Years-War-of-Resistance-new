@@ -1,0 +1,122 @@
+
+	特殊行动 = {
+	
+		逮捕汪精卫 = {
+
+			icon = generic_political_actions
+
+			available = {
+                            	country_exists = EHB
+                               1015 = {
+				is_controlled_by_ROOT_or_puppet = yes
+                                   }
+                               has_war_with = JAP
+                               EHB = {
+                                  has_country_leader = {
+                    name = "汪精卫"
+                    ruling_only = yes
+                         }
+			}
+               }
+
+			fire_only_once = yes
+		    ai_will_do = {
+			factor = 1000
+		    }
+			visible = {
+                      has_war_with = JAP
+			}
+			complete_effect = {
+		    1067 = {
+                remove_core_of = EHB
+            }
+		    598 = {
+                remove_core_of = WEI
+            }			
+                           ROOT = {
+                                     annex_country = { target = EHB transfer_troops = no }
+                              EHB = {
+                                            kill_country_leader = yes
+                                               }
+                                  }
+		JAP = {
+               annex_country = { target = HUA }
+					}
+		CHI = {
+               annex_country = { target = WEI }
+					}					
+			country_event = ccw.444	
+		if = {
+	    limit = {
+        country_exists = ECA
+        }
+            JAP = {
+                   set_autonomy = { target = ECA autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            }
+			ECA = {
+				remove_ideas = EHB_zizhi
+            }				
+		}			
+			}
+		}
+
+		逮捕陈公博 = {
+
+			icon = generic_political_actions
+
+			available = {
+                            	country_exists = EHB
+                               1015 = {
+				is_controlled_by_ROOT_or_puppet = yes
+                                   }
+                               has_war_with = JAP
+                               EHB = {
+                                  has_country_leader = {
+                    name = "陈公博"
+                    ruling_only = yes
+                         }
+			}
+               }
+
+			fire_only_once = yes
+		    ai_will_do = {
+			factor = 1000
+		    }
+			visible = {
+                      has_war_with = JAP
+			}
+			complete_effect = {
+		    1067 = {
+                remove_core_of = EHB
+            }
+		    598 = {
+                remove_core_of = WEI
+            }			
+                           ROOT = {
+                                     annex_country = { target = EHB transfer_troops = no }
+                              EHB = {
+                                            kill_country_leader = yes
+                                               }
+                                  }
+		JAP = {
+               annex_country = { target = HUA }
+					}
+		CHI = {
+               annex_country = { target = WEI }
+					}
+	    if = {
+	    limit = {
+        country_exists = ECA
+        }
+            JAP = {
+                   set_autonomy = { target = ECA autonomy_state = autonomy_jiaozong freedom_level = 0.50  }
+            }
+			ECA = {
+				remove_ideas = EHB_zizhi
+            }				
+		}										
+			}
+		}
+	}
+
+

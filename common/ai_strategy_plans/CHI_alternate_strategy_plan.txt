@@ -1,0 +1,245 @@
+CHI_alternate_plan_1 = {
+	name = "Nationalist China Alternate Scenario 1: Japan democratic"
+	desc = "With the threat of Japanese Imperialism gone, Nationalist China focuses on eradicating warlords instead"
+
+	#allowed = { #MODDED
+	#	is_literally_china = yes
+	#	has_dlc = "Waking the Tiger"
+	#}
+	enable = {
+		OR = {
+			original_tag = CHI
+			AND = {
+				is_chinese_warlord = yes
+				has_focus_tree = warlord_generic_nationalist #MODDED
+			}
+		}
+		OR = {
+			AND = {
+				JAP = {
+					has_completed_focus = JAP_strengthen_civilian_government
+				}
+				has_game_rule = {
+					rule = CHI_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = CHI_AI_RANDOM_ALTERNATE
+			has_game_rule = {
+				rule = CHI_ai_behavior
+				option = ALTERNATE
+			}
+		}
+	}
+	abort = {
+		has_war_with = JAP
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = DEFAULT
+	}
+	}
+	#MODDEDv
+	ai_national_focuses = { #go fascist
+		CHI_national_political_council_focus
+		CHI_national_resources_commission
+		CHI_reorganize_nra
+		CHI_foreign_help_focus
+		CHI_monetary_reform
+		CHI_inst_reform_focus
+		
+		one_party_tutelage
+
+		CHI_axis_help_diplo_focus
+		CHI_axis_help_party_focus
+		CHI_Encirclement_Campaign_focus
+		CHI_subjugate_warlords_focus
+		CHI_National_Defense_Council_focus
+	}
+	#MODDED^
+	focus_factors = {
+		#MODDEDv
+		#CHI_rural_reconstruction_movement = 5
+		#CHI_mission_to_germany = 15
+		#CHI_closer_ties_with_germany = 15
+		#CHI_purchase_tanks = 5
+		#CHI_give_falkenhausen_citizenship = 5
+		#CHI_mining_commission = 5
+		#CHI_bureau_of_investigation_and_statistics = 5
+		#CHI_experimental_mechanised_unit = 5
+		#CHI_chinese_general_staff = 5
+		#CHI_chinese_panzers = 5
+		#CHI_develop_the_hanyan_arsenal = 5
+		#CHI_taiyuan_arsenal = 5
+		#CHI_price_controls = 5
+		#CHI_welfare = 5
+		#CHI_land_tax_reform = 5
+		#CHI_reform_the_national_bank = 5
+		#CHI_forced_loans = 5
+		#CHI_democracy = 5
+		#CHI_constitutional_reform = 5
+		#CHI_60_divisions_plan = 5
+		#CHI_whampoa_military_academy = 5
+		#CHI_refugee_relief_agency = 5
+		#CHI_new_life_movement = 5
+		#CHI_executive_yuan = 5
+		#CHI_republicanism = 5
+		#CHI_inter_party_coordination_council = 5
+		#CHI_judicial_yuan = 5
+		#CHI_combined_arms_warfare = 5
+		#CHI_renegotiate_the_unequal_treaties = 5
+		#CHI_pick_a_fight_with_japan = 0
+		#MODDED^
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+		}
+	}
+}
+
+CHI_alternate_plan_2 = {
+	name = "Nationalist China Alternate Scenario 1: Germany aims to befriend China"
+	desc = "China selects Germany over Soviet Union"
+
+	#allowed = {	##MODDED
+	#	is_literally_china = yes
+	#}
+	enable = {
+		OR = {
+			original_tag = CHI
+			AND = {
+				is_chinese_warlord = yes
+				has_focus_tree = warlord_generic_nationalist #MODDED
+			}
+		}
+		GER = {
+			has_completed_focus = GER_befriend_china
+		}
+	}
+	abort = {
+		always = no
+	}
+	#MODDEDv
+	ai_national_focuses = { #go fascist
+		CHI_national_political_council_focus
+
+		CHI_national_resources_commission
+		CHI_reorganize_nra
+		CHI_foreign_help_focus
+		CHI_monetary_reform
+		CHI_inst_reform_focus
+		one_party_tutelage
+		CHI_axis_help_diplo_focus
+		CHI_axis_help_party_focus
+		CHI_Encirclement_Campaign_focus
+		CHI_subjugate_warlords_focus
+		CHI_National_Defense_Council_focus
+	}
+	#MODDED^
+
+	focus_factors = {
+		#MODDEDV
+		#CHI_mission_to_germany = 5
+		#CHI_closer_ties_with_germany = 10
+		#CHI_purchase_tanks = 5
+		#CHI_give_falkenhausen_citizenship = 5
+		#CHI_anti_communism = 5
+		#CHI_experimental_mechanised_unit = 5
+		#CHI_chinese_general_staff = 5
+		#CHI_chinese_panzers = 5
+		#CHI_combined_arms_warfare = 5
+		#MODDED^
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+		}
+	}
+}
+
+##################newly added MODDED#####################
+CHI_alternate_plan_3 = {
+	name = "Nationalist China Alternate Scenario 3: Japan sonno tokkan"
+	desc = "With the threat of Japanese Imperialism gone, Nationalist China focuses on eradicating warlords instead"
+
+	enable = {
+		original_tag = CHI
+		OR = {
+			AND = {
+				JAP = {
+					has_completed_focus = JAP_Sonno_Tokkan_focus
+				}
+				has_game_rule = {
+					rule = CHI_ai_behavior
+					option = DEFAULT
+				}
+			}
+			has_country_flag = CHI_AI_RANDOM_ALTERNATE
+			has_game_rule = {
+				rule = CHI_ai_behavior
+				option = PRO_JAP_CHINA
+			}
+		}
+	}
+	abort = {
+		has_war_with = JAP
+		has_game_rule = {
+			rule = CHI_ai_behavior
+			option = DEFAULT
+		}
+	}
+	ai_national_focuses = { #go appeasment
+		CHI_Encirclement_Campaign_focus
+		ack_hiro_sen_focus
+		CHI_conquer_focus
+		CHI_dissolve_cc
+		CHI_dissolve_bs
+		CHI_government_reorganization_focus
+		CHI_remilitarize_shanghai
+	}
+	focus_factors = {
+		CHI_the_rise_of_wang = 5
+		CHI_strengthen_chiangs_rule = 5
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+
+	}
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1
+		modifier = {
+			factor = 2.0
+		}
+	}
+}

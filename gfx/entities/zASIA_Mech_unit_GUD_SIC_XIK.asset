@@ -1,0 +1,89 @@
+#######
+# GuangDong
+#######
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+	entity = {
+		clone = "mechanized_entity"
+		name = "GUD_mechanized_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "GUD_infantry_entity" }
+	}
+
+	entity = {
+		clone = "CHI_motorized_vehicle_entity"
+		name = "GUD_motorized_entity"
+
+		attach = { name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { name = "infantry" infantry = "GUD_infantry_entity" }
+	}
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+#######
+# Szechwan
+#######
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+	entity = {
+		clone = "mechanized_entity"
+		name = "SIC_mechanized_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "SIC_infantry_entity" }
+	}
+
+	entity = {
+		clone = "CHI_motorized_vehicle_entity"
+		name = "SIC_motorized_entity"
+
+		attach = { name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { name = "infantry" infantry = "SIC_infantry_entity" }
+	}
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+#######
+# Hsikang
+#######
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------
+
+
+
+
+	entity = {
+		clone = "mechanized_entity"
+		name = "XIK_mechanized_entity"
+
+		attach = { name = "vehicle" vehicle = "USA_mechanized_entity" }
+		attach = { name = "infantry" infantry = "XIK_infantry_entity" }
+	}
+
+	entity = {
+		clone = "CHI_motorized_vehicle_entity"
+		name = "XIK_motorized_entity"
+
+		attach = { name = "vehicle" vehicle = "CHI_motorized_vehicle_entity" }
+		attach = { name = "infantry" infantry = "XIK_infantry_entity" }
+	}
+
+
+#--------------------------------------------------------------------------------------------------------------------------------------------
+#--------------------------------------------------------------------------------------------------------------------------------------------

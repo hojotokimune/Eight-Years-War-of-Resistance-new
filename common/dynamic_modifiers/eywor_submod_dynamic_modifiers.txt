@@ -1,0 +1,543 @@
+#	Example:
+# 
+#	example_dynamic_modifier = {
+#		icon = "GFX_idea_unknown" # optional, will show up in guis if icon is specified
+#		enable = { always = yes } #optional, the modifier won't apply if not enabled
+#		remove_trigger = { always = no } #optional, will remove the modifier if true
+#       attacker_modifier = no  # if yes this modifier will also be read in combat for 
+#                               # people engaging in the combat even if not in the state
+#
+#		# list of modifiers
+#		fuel_cost = 321
+#		max_fuel = var_max_fuel # will be taken from a variable
+#	}
+#
+#
+#	In a script file:
+#
+#	effect = {
+#		add_dynamic_modifier = {
+#			modifier = example_dynamic_modifier
+#			scope = GER # optional, if you specify this your dynamic modifier scoped to this scope (root is the effect scope)
+#			days = 14 # optional, will be removed after this many days passes
+#		}
+#	}
+#
+#	can be added to countries, states or unit leaders
+#	will only updated daily, unless forced by force_update_dynamic_modifier effect
+
+vietnam_war_unplanned_offensive = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+
+	air_cas_present_factor = -0.9
+	army_attack_factor = -0.9
+	army_defence_factor = 0.8
+	ground_attack_factor = -0.9
+	air_superiority_bonus_in_combat = -0.9
+	local_org_regain = -0.5
+}
+
+vietnam_war_unplanned_offensive_viet_minh = {
+	icon = GFX_modifiers_viet_minh
+	remove_trigger = {
+		has_global_flag = first_indochina_war_over
+	}
+    
+	army_morale_factor = 0.75
+	army_org = 50
+	army_defence_factor = 0.8
+	local_supplies = 0.8
+	land_reinforce_rate = 0.3
+	org_loss_at_low_org_factor = -0.8
+	pocket_penalty = -0.85
+	coordination_bonus = 0.3
+	local_org_regain = 0.75
+}
+
+chi_wor_jap_supply_issue = { #JAP supply issues
+	enable = { always = yes }
+	remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+	}
+	icon = GFX_modifiers_generic_resistance
+	supply_consumption_factor = 0.075
+	local_supplies = -0.1
+	out_of_supply_factor = 0.1
+}
+
+
+CHI_war_of_resistance_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+
+	icon = GFX_idea_generic_nra_morale
+
+	war_stability_factor = CHI_war_of_resistance_modifier_war_stability_factor
+	army_attack_factor = CHI_war_of_resistance_modifier_army_attack_factor
+	army_defence_factor = CHI_war_of_resistance_modifier_army_defence_factor
+	army_morale_factor = CHI_war_of_resistance_modifier_army_morale_factor
+	recon_factor_while_entrenched = CHI_war_of_resistance_modifier_recon_factor_while_entrenched
+	max_dig_in_factor = CHI_war_of_resistance_modifier_max_dig_in_factor
+	dig_in_speed_factor = CHI_war_of_resistance_modifier_dig_in_speed_factor
+	org_loss_at_low_org_factor = CHI_war_of_resistance_modifier_org_loss_at_low_org_factor
+	org_loss_when_moving = CHI_war_of_resistance_modifier_org_loss_when_moving
+	max_planning_factor = CHI_war_of_resistance_modifier_max_planning_factor
+	land_night_attack = CHI_war_of_resistance_modifier_land_night_attack
+	terrain_penalty_reduction = CHI_war_of_resistance_modifier_terrain_penalty_reduction
+	supply_consumption_factor = CHI_war_of_resistance_modifier_supply_consumption_factor
+	attrition = CHI_war_of_resistance_modifier_attrition
+	experience_loss_factor = CHI_war_of_resistance_modifier_experience_loss_factor
+	army_speed_factor = CHI_war_of_resistance_modifier_army_speed_factor
+	army_intel_to_others = CHI_war_of_resistance_modifier_army_intel_to_others
+	intel_from_combat_factor = CHI_war_of_resistance_modifier_intel_from_combat_factor
+	army_advisor_cost_factor =  CHI_war_of_resistance_modifier_army_advisor_cost_factor
+}
+
+
+cw_iran_crisis_combat_modifier = {
+	icon = GFX_unplanned_offensive
+    remove_trigger = {
+		NOT = {
+			AZR = {
+				has_war_with = PER
+			}
+		}
+	}
+	army_attack_factor = -0.5
+	army_defence_factor = 0.2
+	local_supplies = 0.5
+	supply_consumption_factor = -0.25
+}
+
+cw_indonesian_war_modifier = {
+	icon = GFX_unplanned_offensive
+	attacker_modifier = yes
+	remove_trigger = {
+		NOT = {
+			ROI = {
+				has_war_with = INS
+			}
+		}
+	}
+
+	army_attack_factor = -0.9
+	army_defence_factor = 0.5
+	ground_attack_factor = -0.9
+	air_superiority_bonus_in_combat = -0.9
+	local_org_regain = -0.5
+}
+
+modifier_li_zongrens_command = {
+	icon = GFX_modifiers_li_zongren
+	enable = { always = yes }
+	remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+	}
+    
+	army_morale_factor = 0.05
+	army_org = 5
+	army_defence_factor = 0.1
+	local_supplies = 0.1
+	army_strength_factor = 0.05
+	org_loss_at_low_org_factor = -0.05
+	coordination_bonus = 0.1
+	local_org_regain = 0.05
+	terrain_penalty_reduction  = 0.1
+}
+
+viet_minh_resistance_modifier = {
+	icon = GFX_modifiers_viet_minh
+	remove_trigger = {
+		OR = {
+			is_owned_and_controlled_by = NVA
+			is_owned_and_controlled_by = NLF
+		}
+	}
+
+	resistance_activity = 0.2
+	resistance_growth = 0.2
+	local_factories = -0.3
+	local_factory_sabotage = 0.25
+	resistance_target = 0.2
+	required_garrison_factor = 0.2
+	local_non_core_manpower = -0.25
+}
+
+ger_operation_bob_ross_state_mod = {
+	icon = GFX_modifiers_ger_offensive
+    
+	army_attack_factor = 0.2
+	army_speed_factor = 0.05
+	army_org = 10
+	army_defence_factor = 0.1
+	breakthrough_factor = 0.2
+	local_supplies = 0.15
+	local_org_regain = 0.2
+}
+
+prc_pingjin_campaign_modifier = {
+	icon = GFX_modifiers_communist
+    
+	army_attack_factor = 0.25
+	army_org = 25
+	army_defence_factor = 0.25
+	local_org_regain = 0.25
+}
+prc_liaoshen_campaign_modifier = {
+	icon = GFX_modifiers_communist
+    
+	army_attack_factor = 0.25
+	army_org = 25
+	army_defence_factor = 0.25
+	local_org_regain = 0.25
+}
+prc_huaihai_campaign_modifier = {
+	icon = GFX_modifiers_communist
+    
+	army_attack_factor = 0.25
+	army_org = 25
+	army_defence_factor = 0.25
+	local_org_regain = 0.25
+}
+prc_yangtze_river_crossing_campaign = {
+	icon = GFX_modifiers_communist
+    
+	army_attack_factor = 0.25
+	army_org = 25
+	army_defence_factor = 0.25
+	local_org_regain = 0.25
+	army_morale_factor = 0.25
+	breakthrough_factor = 0.25
+	attrition = -0.25
+	local_supplies = 0.25
+}
+
+chi_ccw_offensive_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			CHI = {
+				has_war_with = PRC
+			}
+		}
+	}
+	icon = GFX_modifiers_chi_army
+	army_attack_factor = 0.1
+	breakthrough_factor = 0.1
+	army_defence_factor = 0.1
+	attrition = -0.1
+	army_morale_factor = 0.1
+}
+
+chi_ccw_sun_liren_manchuria_modifier = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			CHI = {
+				has_war_with = PRC
+			}
+		}
+	}
+	icon = GFX_modifiers_sun_liren
+	local_org_regain = 0.1
+	army_defence_factor = 0.05
+	attrition = -0.1
+	local_supplies = 0.15
+}
+
+korean_war_logistics_state_modifier = {
+	icon = GFX_modifiers_generic_supply
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			KPA = {
+				has_war_with = ROK
+			}
+		}
+	}
+    
+	local_supplies = 0.5
+	supply_consumption_factor = -0.25
+}
+
+korean_war_chinese_offensives = {
+	icon = GFX_modifiers_communist
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			KPA = {
+				has_war_with = ROK
+			}
+		}
+	}
+    
+	supply_consumption_factor = -0.5
+	army_attack_factor = 0.3
+	army_defence_factor = 0.3
+	army_org_factor = 0.3
+	army_org_regain = 0.3
+	acclimatization_cold_climate_gain_factor = 0.25
+	land_reinforce_rate = 0.15
+	enemy_attrition = 0.25
+	enemy_army_speed_factor = -0.15
+	enemy_local_supplies = -0.25
+	coordination_bonus = 0.25
+	army_speed_factor = 0.15
+	attrition = -0.25
+	local_supply_impact_factor = -0.5
+}
+
+korean_war_prc_dont_go_south_too_much = {
+	enable = { always = yes }
+	remove_trigger = {
+		NOT = {
+			KPA = {
+				has_war_with = ROK
+			}
+		}
+	}
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	army_attack_factor = -0.75
+	supply_consumption_factor = 0.25
+	local_supplies = -0.5
+	coordination_bonus = -0.25
+	breakthrough_factor = -0.3
+}
+
+NVA_party_authority = {
+	icon = GFX_idea_nva_communist_authority
+	enable = { always = yes }
+	
+    stability_weekly_factor = var_nva_stability
+	war_support_weekly_factor = var_nva_war_support
+	political_power_gain = var_nva_pp_gain
+}
+
+chinese_weaker_stronghold = { #Zhejiang and Fujian
+	enable = { always = yes }
+	remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+	}
+	icon = GFX_modifiers_stronghold
+	coordination_bonus = -0.05
+	pocket_penalty = 0.15
+	army_org_factor = -0.1
+	air_superiority_bonus_in_combat = -0.25
+	army_attack_speed_factor = -0.15
+	army_speed_factor = -0.2
+	army_attack_factor = -0.15
+	breakthrough_factor = -0.3
+}
+
+shanghai_battle_modifier = { #Ye Shanghai
+	enable = { always = yes }
+	remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+	}
+	icon = GFX_modifiers_SOV_invaders_must_die
+	army_defence_factor = 0.1
+	army_morale_factor = 0.1
+}
+
+chi_wuhan_strategy = {
+	enable = { always = yes }
+	remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+	}
+	icon = GFX_modifiers_chi_army
+	army_defence_factor = 0.1
+	army_morale_factor = 0.1
+}
+
+yunnan_military_administrative_region = {
+	enable = { always = yes }
+    remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+				has_war_with = JAP
+			}
+		}
+	}
+	icon = GFX_modifiers_generic_military_plans
+	enemy_attrition = 0.15
+	equipment_capture_factor_for_controller =  0.15
+	local_org_regain = 0.15
+	army_strength_factor = 0.15
+	army_attack_factor = 0.15
+	army_defence_factor = 0.15
+	army_org_factor = 0.15
+	coordination_bonus = 0.15
+	terrain_penalty_reduction  = 0.15
+}
+
+prc_dynamic_modifier_shandong_guerillas = {
+	enable = { always = yes }
+	remove_trigger = {
+		event_target:WTT_current_china_leader = {
+			NOT = {
+			    has_war_with = JAP
+			}
+		}
+	}
+	icon = GFX_modifiers_communist
+	coordination_bonus = 0.15
+	land_reinforce_rate = 0.1
+	army_org_factor = 0.25
+	army_attack_factor = -0.25
+	army_defence_factor = 0.4
+	army_morale_factor = 0.15
+	army_strength_factor = 0.25
+	supply_consumption_factor = -0.25
+}
+
+sov_ural_safe_zone = { #Prevent GER from pushing past stalingrad
+	enable = { always = yes }
+	remove_trigger = {
+		SOV = {
+			NOT = {
+			    has_war_with = GER
+			}
+		}
+	}
+	icon = GFX_modifiers_SOV_defend_moscow
+	coordination_bonus = 0.15
+	army_org_factor = 0.3
+	air_superiority_bonus_in_combat = 0.2
+	army_attack_speed_factor = 0.2
+	army_speed_factor = 0.2
+	army_defence_factor = 0.6
+	supply_factor = 0.3
+	equipment_capture_factor_for_controller = 0.3
+	attrition = -0.5
+	supply_consumption_factor = -0.5
+	enemy_attrition = 0.3
+	enemy_truck_attrition_factor = 0.3
+	enemy_local_supplies = -0.3
+	enemy_army_speed_factor = -0.3
+}
+
+PRC_focus_south_not_west = {
+	enable = { always = yes }
+	remove_trigger = {
+		PRC = { 
+			controls_state = 1015 
+			controls_state = 283
+		}
+	}
+	icon = GFX_modifiers_conscription_exemptions_granted
+
+	army_attack_factor = -0.5
+	army_org_regain = -0.25
+	breakthrough_factor = -0.25
+	army_speed_factor = -0.25
+}
+
+SOV_soviet_military_offensive_alt = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	breakthrough_factor = 0.2
+	army_defence_factor = 0.1
+	land_reinforce_rate = 0.05
+	army_morale_factor = 0.1
+	army_attack_factor = 0.2
+}
+
+allies_dday_dynamic_modifier = {
+	enable = { always = yes }
+
+	icon = GFX_modifiers_generic_military_plans
+
+	breakthrough_factor = 0.2
+	army_defence_factor = 0.3
+	land_reinforce_rate = 0.05
+	army_morale_factor = 0.25
+	army_org_factor = 0.2
+	army_attack_factor = 0.3
+	attrition = -0.3
+	local_supplies = 0.75
+	supply_factor = 0.3
+    out_of_supply_factor = -0.3
+    supply_consumption_factor = -0.3
+}
+
+YUN_the_yunnan_nra = {
+	enable = { always = yes }
+
+	icon = GFX_idea_yun_national_army
+
+	breakthrough_factor = YUN_the_yunnan_nra_breakthrough_factor
+	army_defence_factor = YUN_the_yunnan_nra_defence_factor
+	army_morale_factor = YUN_the_yunnan_nra_morale_factor
+	army_attack_factor = YUN_the_yunnan_nra_attack_factor
+	army_speed_factor = YUN_the_yunnan_nra_speed_factor
+	army_org_factor = YUN_the_yunnan_army_org_factor
+	dig_in_speed_factor = YUN_the_yunnan_nra_dig_in_speed_factor
+	max_dig_in_factor = YUN_the_yunnan_nra_max_dig_in_factor
+	initiative_factor = YUN_the_yunnan_nra_initiative_factor
+	land_night_attack = YUN_the_yunnan_nra_land_night_attack_factor
+	experience_loss_factor = YUN_the_yunnan_nra_experience_loss_factor
+	max_planning_factor = YUN_the_yunnan_nra_max_planning_factor
+	planning_speed = YUN_the_yunnan_nra_planning_speed_factor
+	conscription_factor = YUN_the_yunnan_nra_conscription_factor
+	supply_consumption_factor = YUN_the_yunnan_nra_supply_consumption_factor
+	training_time_factor = YUN_the_yunnan_nra_training_time_factor
+	attrition = YUN_the_yunnan_nra_attrition_factor
+}
+
+CHI_chiangs_cult_of_personality = {
+	enable = { always = yes }
+
+	icon = GFX_idea_chiang_cult_of_personality
+
+	stability_factor = CHI_chiangs_cult_of_personality_stability_factor
+	political_power_gain = CHI_chiangs_cult_of_personality_political_power_gain
+	war_support_factor = CHI_chiangs_cult_of_personality_war_support_factor
+	drift_defence_factor = CHI_chiangs_cult_of_personality_drift_defence_factor
+	neutrality_drift = CHI_chiangs_cult_of_personality_neutrality_drift
+	communism_drift = CHI_chiangs_cult_of_personality_communism_drift
+	surrender_limit = CHI_chiangs_cult_of_personality_surrender_limit
+	democratic_acceptance = CHI_chiangs_cult_of_personality_democratic_acceptance
+}
+
+CHI_kuomintang_corruption = {
+	enable = { always = yes }
+
+	icon = GFX_idea_kuomintang_corruption
+
+	political_power_gain = CHI_kuomintang_corruption_factor
+	consumer_goods_factor = CHI_kuomintang_corruption_cost_factor
+	stability_factor = CHI_kuomintang_corruption_factor
+	trade_laws_cost_factor = CHI_kuomintang_corruption_cost_factor
+	mobilization_laws_cost_factor = CHI_kuomintang_corruption_cost_factor
+	economy_cost_factor = CHI_kuomintang_corruption_cost_factor
+	political_advisor_cost_factor = CHI_kuomintang_corruption_cost_factor
+	research_speed_factor = CHI_kuomintang_corruption_factor
+}

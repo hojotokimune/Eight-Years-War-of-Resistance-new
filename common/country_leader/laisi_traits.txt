@@ -1,0 +1,145 @@
+@tier1 = 30
+@tier2 = 20
+@tier3 = 10
+
+@experience_gain_low = 0.03
+@experience_gain_medium = 0.06
+@experience_gain_high = 0.08
+
+@chief_experience_gain_low = 0.20
+@chief_experience_gain_medium = 0.30 
+@chief_experience_gain_high = 0.40
+
+###Todo remove commented advisor experience gains
+
+leader_traits = {
+	XIK_liuwenhui_tno = {
+	    random = no
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		fascism_acceptance = -15
+		neutrality_acceptance = 15
+		communism_acceptance = -15
+		democratic_acceptance = -15
+		custom_modifier_tooltip = POLITICS_LIU_WENHUI_DESC
+	}
+	SUY_fuzuoyi_tno = {
+	    random = no
+		political_power_factor = 0.05
+		stability_factor = -0.05
+		war_support_factor = 0.05
+		fascism_acceptance = -15
+		neutrality_acceptance = 15
+		communism_acceptance = -15
+		democratic_acceptance = -15
+		custom_modifier_tooltip = POLITICS_FU_ZUOYI_DESC
+	}
+	PLM_demuchuke_tno = {
+	    random = no
+		political_power_factor = -0.05
+		stability_factor = -0.15
+		war_support_factor = -0.15
+		fascism_acceptance = 15
+		neutrality_acceptance = -15
+		communism_acceptance = -15
+		democratic_acceptance = -15
+		custom_modifier_tooltip = POLITICS_DEMCHUGDONGRUB_DESC
+	}
+	KHR_zhangzhizhong_tno = {
+	    random = no
+		political_power_factor = 0.05
+		stability_factor = 0.15
+		war_support_factor = 0.15
+		fascism_acceptance = -15
+		neutrality_acceptance = 15
+		communism_acceptance = 15
+		democratic_acceptance = 15
+		custom_modifier_tooltip = POLITICS_ZHANG_ZHIZHONG_DESC
+	}
+	KOR_li_cheng_wan_math = {
+	    random = no
+		research_speed_factor = -0.5
+		political_power_factor = -0.05
+		stability_factor = -0.05
+		war_support_factor = -0.05
+	}
+	SOV_zhukov_traits = {
+		sprite = 7
+	    random = no
+		experience_gain_army = 0.4
+		army_org_factor = 0.15
+		army_morale_factor = 0.2
+		training_time_factor = -0.1
+		supply_consumption_factor = -0.05
+		combat_width_factor = -0.05
+		acclimatization_cold_climate_gain_factor = 0.2
+		winter_attrition_factor = -0.1
+		dig_in_speed_factor = 0.1
+		max_dig_in = 5
+		army_core_defence_factor = 0.1
+	}
+	SOV_rokossovsky_traits = {
+		sprite = 7
+	    random = no
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.15
+		army_intel_to_others = -10
+		airforce_intel_to_others = -10
+		encryption = 20
+	}
+	ivan_konev_traits = {
+		sprite = 7
+	    random = no
+		breakthrough_factor = 0.15
+		army_artillery_attack_factor = 0.15
+		army_artillery_defence_factor = 0.15
+		occupation_cost = -0.1
+		army_speed_factor = 0.15
+		org_loss_when_moving = -0.15
+	}
+	SOV_aleksandr_vasilevsky_traits = {
+		sprite = 7
+	    random = no
+		max_planning = 0.15
+		planning_speed = -0.1
+		out_of_supply_factor = -0.1
+		supply_consumption_factor = -0.1
+		no_supply_grace = 48
+	}
+	GER_erich_von_manstein_traits = {
+		sprite = 14
+	    random = no
+		cat_mobile_warfare_cost_factor = -0.15
+		max_planning = 0.15
+		planning_speed = 0.1
+		out_of_supply_factor = -0.1
+		supply_consumption_factor = -0.1
+		no_supply_grace = 48
+	}
+	GER_heinz_guderian_traits = {
+		sprite = 7
+	    random = no
+		org_loss_when_moving = -0.15
+		breakthrough_factor = 0.15
+		equipment_bonus = {
+			armor = {
+				instant = yes
+				maximum_speed = 0.10
+			}
+		}
+	}
+	GER_erwin_rommel_traits = {
+		sprite = 7
+	    random = no
+		army_armor_attack_factor = 0.15
+		army_armor_defence_factor = 0.15
+		mechanized_attack_factor = 0.15
+		mechanized_defence_factor = 0.15
+		motorized_attack_factor = 0.15
+		motorized_defence_factor = 0.15
+		terrain_penalty_reduction = 0.1
+		attrition = -0.1
+	}
+   
+}	

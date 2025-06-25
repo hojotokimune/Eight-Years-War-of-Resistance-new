@@ -1,0 +1,394 @@
+
+
+USA_communist_Stalinist = {
+	name = "US Stalinist Plan"
+	desc = "Plan for the US to go Stalinist"
+
+	allowed = {
+		original_tag = USA
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		#always = no #MODDED 
+		OR = {
+			has_country_flag = USA_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = USA_ai_behavior
+				option = COMMUNIST_STALINIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+	focus_factors = {
+		USA_limited_intervention = 0
+	}
+	ai_national_focuses = {
+		#DO THESE ASAP
+		USA_suspend_the_presecution
+		USA_allow_troskyist_membership_focus
+		USA_National_Executive_Committee_focus
+		USA_all_inclusive_party
+		USA_reach_out_to_stalinists_focus
+		USA_democratic_socialism
+		USA_reach_out_to_the_ware_group
+		USA_collude_with_USSR_focus
+		USA_stalinist_coup_focus
+		USA_purge_the_cholera_germs
+		USA_suspend_the_congress_focus
+		USA_purge_the_social_fascists
+		USA_establish_AICP_politburo
+		USA_separate_the_black_belt_focus
+		USA_AICP_party_state
+		USA_the_big_brother_is_watching
+
+		USA_war_department
+		USA_war_plans_division
+		USA_intervention_in_the_americas
+		USA_air_war_plans_division
+		USA_war_plan_crimson
+		USA_continue_the_new_deal
+		USA_neutrality_act
+		USA_wpa
+		USA_support_the_america_first_commitee
+		
+		USA_office_of_scientific_research_and_development
+		USA_agricultural_adjustment_act
+		USA_fair_labour_standards_act
+		
+		USA_union_representation_act
+		USA_rubber_reserve_company
+		USA_accumulated_wealth_tax_act
+		USA_old_age_pension_act
+		
+		USA_guarantee_the_american_dream
+		USA_selective_training_act
+		USA_worker_management_act
+		USA_communal_property_act
+		USA_reinforce_monroe_doctrine
+		USA_intervention_in_europe
+		USA_war_plan_red
+		USA_end_monarchism
+		USA_shatter_the_empires
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		norman_thomas = 15
+		earl_browder = 10
+	}
+	traits = {
+		socialist_idealist = 15
+		communist_revolutionary = 15
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+USA_communist_trotskyist = {
+	name = "US trotskyist Plan"
+	desc = "Plan for the US to go trotskyist"
+
+	allowed = {
+		original_tag = USA
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		#always = no #MODDED 
+		OR = {
+			has_country_flag = USA_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = USA_ai_behavior
+				option = COMMUNIST_TROTSKYIST
+			}
+		}
+	}
+	abort = {
+		
+	}
+
+	ai_national_focuses = {
+		#DO THESE ASAP
+		USA_suspend_the_presecution
+		USA_allow_troskyist_membership_focus
+		USA_National_Executive_Committee_focus
+		USA_all_inclusive_party
+		USA_consolidate_troskyist_dominance
+		USA_democratic_socialism
+		USA_an_invitation_to_trotsky
+		USA_focus_smash_the_stalinists
+		USA_the_socialist_appeal_focus
+		USA_liberty_for_the_philippines
+		USA_worker_management_act
+		USA_desegregate_the_armed_forces
+		USA_full_desegregation
+		USA_focus_one_world_government
+		USA_focus_liberate_the_antilles
+
+		USA_war_department
+		USA_war_plans_division
+		USA_intervention_in_the_americas
+		USA_air_war_plans_division
+		USA_war_plan_crimson
+		USA_continue_the_new_deal
+		USA_neutrality_act
+		USA_wpa
+		USA_support_the_america_first_commitee
+		
+		USA_office_of_scientific_research_and_development
+		USA_agricultural_adjustment_act
+		USA_fair_labour_standards_act
+		
+		USA_union_representation_act
+		USA_rubber_reserve_company
+		USA_accumulated_wealth_tax_act
+		USA_old_age_pension_act
+		
+		USA_guarantee_the_american_dream
+		USA_selective_training_act
+		USA_communal_property_act
+		USA_reinforce_monroe_doctrine
+		USA_intervention_in_europe
+		USA_war_plan_red
+		USA_end_monarchism
+		USA_shatter_the_empires
+	}
+	focus_factors = {
+		USA_limited_intervention = 0
+	}
+	research = {
+
+	}
+
+	ideas = {
+		norman_thomas = 15
+		jim_cannon = 15
+		#james_burnham = 2
+		#max_shachtman = 2
+	}
+	traits = {
+		socialist_idealist = 15
+		communist_revolutionary = 15
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+USA_socialist_militant = {
+	name = "US militant Plan"
+	desc = "Plan for the US to go militant"
+
+	allowed = {
+		original_tag = USA
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		#always = no #MODDED 
+		OR = {
+			has_country_flag = USA_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = USA_ai_behavior
+				option = SOCIALIST_MILITANT
+			}
+		}
+	}
+	abort = {
+		
+	}
+	focus_factors = {
+		USA_limited_intervention = 0
+	}
+	ai_national_focuses = {
+		#DO THESE ASAP
+		USA_suspend_the_presecution
+		USA_allow_troskyist_membership_focus
+		USA_National_Executive_Committee_focus
+		USA_expel_the_appeal_faction_focus
+		USA_the_call_focus
+		USA_democratic_socialism
+		USA_liberty_for_the_philippines
+		USA_worker_management_act
+		USA_desegregate_the_armed_forces
+		USA_full_desegregation
+
+		USA_war_department
+		USA_war_plans_division
+		USA_intervention_in_the_americas
+		USA_air_war_plans_division
+		USA_war_plan_crimson
+		USA_continue_the_new_deal
+		USA_neutrality_act
+		USA_wpa
+		USA_support_the_america_first_commitee
+		
+		USA_office_of_scientific_research_and_development
+		USA_agricultural_adjustment_act
+		USA_fair_labour_standards_act
+		
+		USA_union_representation_act
+		USA_rubber_reserve_company
+		USA_accumulated_wealth_tax_act
+		USA_old_age_pension_act
+		
+		USA_guarantee_the_american_dream
+		USA_selective_training_act
+		USA_communal_property_act
+		USA_reinforce_monroe_doctrine
+		USA_intervention_in_europe
+		USA_war_plan_red
+		USA_end_monarchism
+		USA_shatter_the_empires
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		norman_thomas = 15
+		jim_cannon = 0
+		#james_burnham = 2
+		#max_shachtman = 2
+	}
+	traits = {
+		socialist_idealist = 15
+		#communist_revolutionary = 15
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}
+
+USA_socialist_old_gaurd = {
+	name = "US OLD GAURD Plan"
+	desc = "Plan for the US to go old guard"
+
+	allowed = {
+		original_tag = USA
+		has_dlc = "Man the Guns"
+	}
+	enable = {
+		#always = no #MODDED 
+		OR = {
+			has_country_flag = USA_AI_RANDOM_COMMUNIST
+			has_game_rule = {
+				rule = USA_ai_behavior
+				option = SOCIALIST_OLD_GAURD
+			}
+		}
+	}
+	abort = {
+		
+	}
+	focus_factors = {
+		USA_limited_intervention = 0
+	}
+	ai_national_focuses = {
+		#DO THESE ASAP
+		USA_suspend_the_presecution
+		USA_allow_troskyist_membership_focus
+		USA_National_Executive_Committee_focus
+		USA_all_inclusive_party
+		USA_the_old_gaurd_shall_lead_the_way_focus
+		USA_democratic_socialism
+		USA_democratize_the_AIP_focus
+		USA_the_new_leader_focus
+		USA_liberty_for_the_philippines
+		USA_worker_management_act
+		USA_desegregate_the_armed_forces
+		USA_full_desegregation
+
+		USA_war_department
+		USA_war_plans_division
+		USA_intervention_in_the_americas
+		USA_air_war_plans_division
+		USA_war_plan_crimson
+		USA_continue_the_new_deal
+		USA_neutrality_act
+		USA_wpa
+		USA_support_the_america_first_commitee
+		
+		USA_office_of_scientific_research_and_development
+		USA_agricultural_adjustment_act
+		USA_fair_labour_standards_act
+		
+		USA_union_representation_act
+		USA_rubber_reserve_company
+		USA_accumulated_wealth_tax_act
+		USA_old_age_pension_act
+		
+		USA_guarantee_the_american_dream
+		USA_selective_training_act
+		USA_communal_property_act
+		USA_reinforce_monroe_doctrine
+		USA_intervention_in_europe
+		USA_war_plan_red
+		USA_end_monarchism
+		USA_shatter_the_empires
+	}
+
+	research = {
+
+	}
+
+	ideas = {
+		norman_thomas = 15
+		louis_waldman = 20
+		jim_oneal = 15
+
+		#james_burnham = 2
+		#max_shachtman = 2
+	}
+	traits = {
+		socialist_idealist = 15
+		#communist_revolutionary = 15
+		
+	}
+
+	
+
+	# Keep small, as it is used as a factor for some things (such as research needs)
+	# Recommended around 1.0. Useful for relation between plans
+	weight = {
+		factor = 1.0
+		modifier = {
+			factor = 1.0
+		}
+	}
+
+}

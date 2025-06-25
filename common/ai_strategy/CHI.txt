@@ -1,0 +1,2214 @@
+# befriend #HEAVY MODDED　ＦＩＬＥ？
+# conquer
+# antagonize
+# build_ship
+# build_army
+# unit_ratio
+# build_building
+# research_tech
+# garrison
+# protect 
+# influence
+#MODDEDv
+CHI_lets_defend_coast = { #doesn't work
+	enable = {
+		is_literally_china = yes
+		has_war_with = JAP
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = area_priority
+		id = china_coast
+		value = 9900
+	}
+}
+#MODDED^
+CHI_unit_production = {
+	allowed = { original_tag = CHI }
+	enable = {
+		always = yes
+	}
+	abort = {
+		always = no
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = 0
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = 500 #<MODDED
+	}
+
+	#Air unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = fighter
+		value = -9999 #<MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = cas
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = tactical_bomber
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = strategic_bomber
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = naval_bomber
+		value = -9999 #MODDED
+	}
+
+
+	# Naval unit factors
+	ai_strategy = {
+		type = unit_ratio
+		id = capital_ship
+		value = 25 # from 15 to 25
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = submarine
+		value = 40 #from 50 to 40
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = screen_ship
+		value = 20
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = convoy
+		value = 20
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = fighter
+		value = 0 #MODDED
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = infantry
+		value = 35
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = 25
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = armor
+		value = -9999 #MODDED
+	}
+
+	ai_strategy = {
+		type = ignore_army_incompetence
+		value = -50 #MODDED^
+	}
+}
+
+CHI_dont_waste_on_offensive_air_early = {
+	allowed = { original_tag = CHI }
+	enable = {
+		date < 1940.1.1
+	}
+	abort = {
+		date > 1940.1.1
+	}
+	ai_strategy = {  #MODDED
+		type = equipment_production_factor #MODDEDv
+		id = fighter
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor #MODDEDv
+		id = infantry #MODDEDv
+		value = 200 #MODDEDv
+	}
+
+	ai_strategy = { #MODDEDv
+		type = equipment_production_factor #MODDEDv
+		id = artillery #MODDEDv
+		value = 45
+	}  #MODDED  #MODDEDv
+	ai_strategy = { #MODDEDv
+		type = equipment_variant_production_factor
+		id = medium_plane_airframe
+		value = -100
+	}
+
+	ai_strategy = {
+		type = equipment_variant_production_factor
+		id = large_plane_airframe
+		value = -100
+	}
+}
+
+CHI_armored_production = {
+	allowed = { original_tag = CHI }
+	enable = {
+		ai_wants_divisions > 0 #Decreasing the amount of tanks the AI wants
+	}
+	abort = {
+		ai_wants_divisions < 1 #Decreasing the amount of tanks the AI wants
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -999 #MODDED
+	}
+}
+
+CHI_highered_armored_production = {
+	allowed = { original_tag = CHI }
+	enable = {
+		num_of_military_factories > 109
+	}
+	abort = {
+		num_of_military_factories < 110
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = 0
+	}
+}
+
+CHI_prio_military_even_at_peace = {
+	allowed = { original_tag = CHI }
+	enable = {
+		always = yes
+	}
+    abort = {
+		always = no
+	}
+	ai_strategy = {
+		type = added_military_to_civilian_factory_ratio
+		value = 50
+	}
+
+}
+
+CHI_dont_mess_with_the_soviets = {
+
+	allowed = { original_tag = CHI }
+	enable = {
+		NOT = { has_war_with = SOV }
+	}
+
+	abort = {
+		has_war_with = SOV
+	}
+
+	ai_strategy = {
+		type = contain
+		id = "SOV"
+		value = -200
+	}
+}
+
+CHI_some_safer_places_to_build = {
+	allowed = { original_tag = CHI }
+	enable = {
+		always = yes
+	}
+
+	abort = {
+		date > 1941.1.1
+	}
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target = 602
+        value = 300
+    }
+
+	ai_strategy = {
+        type = factory_build_score_factor
+        target = 605
+        value = 300
+    }
+}
+
+CHI_you_should_be_prepared_for_war = {
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		NOT = {
+			tag = PRC
+		}
+		always = yes
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+        type = force_build_armies
+        value = 100
+    }
+}
+
+
+##########everything below is modded
+CHI_shanxi_strikes_back = {
+	allowed = { tag = SHX }
+	enable = {
+		tag = SHX
+		has_war_with = ECA
+		NOT = {
+			has_war_with = JAP
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = consider_weak
+		id = "ECA"
+		value = 200
+	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "GUD"
+		value = 30
+	}
+	ai_strategy = {
+		type = protect
+		id = "CHI"
+		value = 80
+	}
+}
+
+chi_japan_is_strong = {
+
+	enable = {
+		is_literally_china = yes
+		has_war_with = JAP
+		surrender_progress > 0.1
+	}
+
+	abort = {
+		OR = {
+			JAP = {
+				any_enemy_country = {
+					is_major = yes
+					NOT = {
+						tag = ROOT
+					}
+				}
+			}
+			surrender_progress < 0.1
+		}
+	}
+
+	#ai_strategy = {
+	#	type = consider_weak
+	#	id = "JAP"
+	#	value = -180 #<MODDED
+	#}
+}
+
+CHI_home_land_is_NOT_safe_strategy = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		is_warlord = yes
+		has_war_together_with = CHI
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "CHI"
+		value = 9999 #MODDED
+	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = "GUD"
+		value = 200
+	}
+	ai_strategy = {
+		type = protect
+		id = "CHI"
+		value = 80
+	}
+	ai_strategy = {
+		type = support
+		id = "CHI"
+		value = 280
+	}
+}
+CHI_not_on_frontline = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		is_literally_china = yes
+		has_war_with = JAP
+		has_war_together_with = event_target:WTT_current_china_leader
+		NOT = {
+			any_enemy_country = {
+				is_neighbor_of = ROOT
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 50
+	}
+}
+PRC_need_to_save_stuff = {
+	enable = {
+		tag = event_target:WTT_communist_china #MODDED
+		328 = {
+			NOT = {
+				OR = {
+					is_controlled_by = event_target:WTT_communist_china
+					has_state_flag = commie_ridden_states
+				}
+			}
+		}
+		has_equipment = {
+			infantry_equipment < 872
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = equipment_stockpile_surplus_ratio
+		value = 1200
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "SHX"
+		value = 600
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "CHI"
+		value = 600
+	}
+	ai_strategy = {
+		type = dont_defend_ally_borders
+		id = "GUD"
+		value = 600
+	}
+	ai_strategy = {
+		type = invade
+		id = "JAP"
+		value = -600
+	}
+	ai_strategy = {
+		type = invade
+		id = "EHB"
+		value = -600
+	}
+}
+#CHI_home_land_is_NOT_safe_2 = {
+#	enable = {
+#		tag = event_target:WTT_current_china_leader
+#		has_war_with = JAP
+#	}
+#	abort_when_not_enabled = yes
+#
+#
+#	ai_strategy = {
+#		type = garrison
+#		value = 40
+#	}
+#}
+CHI_needs_to_save_pp = {
+
+	enable = {
+		is_literally_china = yes
+		political_power_daily < 1.1
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = pp_spend_priority
+		id = relation
+		value = -99
+	}
+}
+CHI_dont_build_on_coast = {
+	allowed = { is_literally_china = yes }
+
+	enable = {
+		tag = event_target:WTT_current_china_leader
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 753
+		value = 200
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 605
+		value = 200
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 1041
+		value = 200
+	}
+	ai_strategy = {
+		type = factory_build_score_factor
+		target = 748
+		value = 200
+	}
+}
+fuck_comintern_mao_do_it_alone = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		tag = event_target:WTT_communist_china
+		NOT = {
+			has_war_with = JAP
+		}
+		date > 1938.1.1
+	}
+	abort = {
+		NOT = {
+			country_exists = event_target:WTT_current_china_leader
+		}
+	}
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -9999
+	}
+}
+
+ger_actually_love_china = {
+	allowed = { tag = GER }
+	enable = {
+		tag = GER
+		JAP = { #MODDED
+			any_enemy_country = { #MODDED
+				OR = {
+					is_legit_china = yes #MODDED
+					is_warlord = yes
+				}
+			}
+		}
+	}
+	abort = {
+		OR = {
+			NOT = { has_idea = CHI_alexander_von_falkenhausen }
+			JAP = { has_war_with = ENG }
+			NOT = {
+				any_country = {
+					OR = {
+						is_legit_china = yes
+						is_warlord = yes
+					}
+				}
+			}
+			GER = { #MODDED
+				any_enemy_country = { #MODDED
+					OR = {
+						is_legit_china = yes
+						is_warlord = yes
+					}
+				}
+			}
+		}
+	}
+
+	ai_strategy = {
+		type = befriend
+		id = "CHI"
+		value = 30
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "CHI"
+		value = -80
+	}
+
+	ai_strategy = {
+		type = conquer
+		id = "CHI"
+		value = -100
+	}
+}
+
+dont_die_in_mountains_sweden = {
+	allowed = { tag = GER }
+	enable = {
+		tag = GER
+		date < 1942.5.1
+		country_exists = SWE
+		country_exists = FRA
+	}
+	abort = {
+		NOT = { country_exists = FRA }
+		date > 1942.5.1
+	}
+
+	ai_strategy = {
+		type = ignore
+		id = "SWE"
+		value = 9999
+	}
+}
+
+zhang_hate_chiang = {
+	allowed = { tag = NEA }
+	enable = {
+		always = yes
+	}
+	abort = {
+		NOT = { country_exists = PRC }
+	}
+
+	ai_strategy = {
+		type = antagonize
+		id = "CHI"
+		value = 2000
+	}
+}
+CCP_tacit_truce = {
+	allowed = { tag = PRC }
+	enable = {
+		tag = PRC
+		has_war_with = NEA
+		has_global_flag = tacit_truce_flag
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = NEA }
+			NOT = { country_exists = CHI }
+			has_opinion_modifier = CHI_prc_reconciliation
+			JAP = {
+				has_completed_focus = JAP_intervene_in_china
+				NOT = {
+					has_war_with = CHI
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CHI"
+		value = 2000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "NEA"
+		value = 2000
+	}
+}
+NEA_tacit_truce = {
+	allowed = { tag = NEA }
+	enable = {
+		tag = NEA
+		has_war_with = PRC
+		has_global_flag = tacit_truce_flag
+	}
+	abort = {
+		OR = {
+			NOT = { country_exists = PRC }
+			NOT = { country_exists = CHI }
+			PRC = {
+				has_opinion_modifier = CHI_prc_reconciliation
+			}
+			JAP = {
+				has_completed_focus = JAP_intervene_in_china
+				NOT = {
+					has_war_with = CHI
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = ignore
+		id = "PRC"
+		value = 2000
+	}
+}
+#sheng_hate_tng_and_hmi = {
+#	enable = {
+#		tag = SIK
+#		#has_war_with = CHI
+#	}
+#	abort = {
+#		NOT = { country_exists = TNG }
+#		NOT = { country_exists = HMI }
+#	}
+#	ai_strategy = {
+#		type = antagonize
+#		id = "HMI"
+#		value = 2000
+#	}
+#	ai_strategy = {
+#		type = antagonize
+#		id = "TNG"
+#		value = 2000
+#	}
+#}
+warlord_production = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		is_warlord = yes
+	}
+	abort = {
+		is_warlord = no
+	}
+	ai_strategy = {
+		type = unit_ratio
+		id = infantry
+		value = 1000
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = armor
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = motorized
+		value = -9999
+	}
+
+
+	ai_strategy = {
+		type = unit_ratio
+		id = artillery
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = marines
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = mountaineers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = paratroopers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = unit_ratio
+		id = mechanized
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_tank
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = anti_air
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = equipment_production_factor
+		id = artillery
+		value = -150
+	}
+
+}
+#natchi_war_production = { #counter productive?
+#    enable = {
+#        tag = CHI
+#		is_warlord = yes
+#    }
+#    abort = {
+#        date > 1941.1.1
+#		has_war = no
+#    }
+#
+#    ai_strategy = {
+#		type = unit_ratio
+#		id = infantry
+#		value = 9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = armor
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = motorized
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = cavalry
+#		value = 0
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = artillery
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = marines
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = mountaineers
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = paratroopers
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = mechanized
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = equipment_production_factor
+#		id = anti_tank
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = equipment_production_factor
+#		id = anti_air
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = equipment_production_factor
+#		id = artillery
+#		value = -9999
+#	}
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = fighter
+#		value = -9999 # From 70 to 75
+#	}
+#	# These values are used only by when evaluating for producing factories
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = capital_ship
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = submarine
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = screen_ship
+#		value = -9999
+#	}
+#
+#	ai_strategy = {
+#		type = unit_ratio
+#		id = convoy
+#		value = 500
+#	}
+#
+#	ai_strategy = {
+#		type = equipment_production_factor
+#		id = infantry
+#		value = 9999
+#	}
+#}
+#sino_sov_friend = { #eats up pp
+#	enable = {
+#		tag = CHI
+#		has_war_with = JAP
+#		NOT = {
+#			has_war_with = SOV
+#		}
+#	}
+#	abort = {
+#		OR = {
+#			has_war_with = SOV
+#			NOT = {
+#				has_war_with = JAP
+#			}
+#		}
+#	}
+#	ai_strategy = {
+#		type = befriend
+#		id = "SOV"
+#		value = 80
+#	}
+#}
+#diplo_effort_CHI = { #eats up pp
+#	enable = {
+#		tag = CHI
+#		has_idea = CHI_diplomatic_effort_idea
+#	}
+#	abort = {
+#		NOT = {
+#			has_idea = CHI_diplomatic_effort_idea
+#		}
+#	}
+#	ai_strategy = {
+#		type = befriend
+#		id = "ENG"
+#		value = 60
+#	}
+#	ai_strategy = {
+#		type = befriend
+#		id = "SOV"
+#		value = 60
+#	}
+#	ai_strategy = {
+#		type = befriend
+#		id = "GER"
+#		value = 60
+#	}
+#	ai_strategy = {
+#		type = befriend
+#		id = "USA"
+#		value = 60
+#	}
+#}
+#CHI_lets_upgrade_later = {
+#	enable = {
+#		is_legit_china = yes
+#		date < 1938.1.1
+#	}
+#	abort_when_not_enabled = yes
+#	#ai_strategy = {
+#	#	type = production_upgrade_desire_offset
+#	#	id = infantry_equipment_1
+#	#	value = -100
+#	#}
+#}
+only_attack_when_safe_TAN = {
+	allowed = { tag = CHI }
+	enable = {
+		tag = CHI
+		SOV = {
+			surrender_progress < 0.6
+			num_of_factories > 60
+		}
+		TAN = {
+			is_in_faction_with = SOV
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "TAN"
+		value = 1
+	}
+}
+only_attack_when_safe_MON = {
+	allowed = { tag = CHI }
+	enable = {
+		tag = CHI
+		SOV = {
+			surrender_progress < 0.6
+			num_of_factories > 60
+		}
+		MON = {
+			is_in_faction_with = SOV
+		}
+		country_exists = PRC
+	    country_exists = GXC
+	    #country_exists = SHX
+		country_exists = XIK
+	}   
+	abort = {
+	    NOT = { country_exists = PRC }
+	    is_historical_focus_on = no
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "MON"
+		value = 1
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "MON"
+		value = -60
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "MON"
+		value = -1000
+	}   
+	ai_strategy = {
+		type = ignore
+		id = "MON"
+		value = 5000
+	} 
+}
+only_attack_when_safe_SIK = {
+	allowed = { tag = CHI }
+	enable = {
+		tag = CHI
+		SOV = {
+			surrender_progress < 0.6
+			num_of_factories > 60
+		}
+		SIK = {
+			is_in_faction_with = SOV
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "SIK"
+		value = 1
+	}
+}
+only_attack_tib_whenPRC_is_gone = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		is_literally_china = yes
+		has_global_flag = china_split
+		AND = {
+			country_exists = event_target:WTT_current_china_leader
+			country_exists = event_target:WTT_communist_china
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "TIB"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore
+		id = "TIB"
+		value = 5000
+	} 
+}
+only_attack_when_safe_TIB = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		tag = CHI
+		OR = {
+			any_other_country = {
+				NOT = {
+					has_war_with = ROOT
+				}
+				OR = {
+					surrender_progress < 0.6
+					num_of_factories > 60
+				}
+				has_guaranteed = TIB
+			}
+			has_war = yes
+			country_exists = PRC
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "TIB"
+		value = 1
+	}
+	ai_strategy = {
+		type = ignore
+		id = "TIB"
+		value = 5000
+	} 
+}
+only_attack_ETR_when_PRC_is_gone = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		is_literally_china = yes
+		has_global_flag = china_split
+		AND = {
+			country_exists = event_target:WTT_current_china_leader
+			country_exists = event_target:WTT_communist_china
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = ignore_claim
+		id = "ETI"
+		value = 1
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "ETI"
+		value = -50
+	}   
+	ai_strategy = {
+		type = ignore
+		id = "ETI"
+		value = 5000
+	}
+}
+SOV_never_joins_PRC_but_help_a_lot = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		NOT = {
+			country_exists = MAN
+		}
+		has_global_flag = CHI_no_longer_united_flag
+		PRC = {
+			OR = {
+				event_target:WTT_current_china_leader = {
+					NOT = {
+						OR = {
+							has_war_with = JAP
+							has_war_together_with = ROOT
+						}
+					}
+				}
+				has_war_with = event_target:WTT_current_china_leader
+			}
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "PRC"
+		value = 200
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		target_country = CHI
+		id = "PRC"
+		value = 5000
+	}
+	ai_strategy = {
+		type = befriend
+		id = "PRC"
+		value = -5000
+	}
+	ai_strategy = {
+		type = ignore
+		id = "PRC"
+		value = 5000
+	}
+	ai_strategy = {
+		type = alliance
+		id = "PRC"
+		value = -5000
+	}
+}
+existing_alliance_never_joins_CHI_but_help_a_bit = {
+	enable = {
+		is_major = yes
+		is_faction_leader = yes
+		has_global_flag = CHI_no_longer_united_flag
+		NOT = {
+			country_exists = MAN
+		}
+		PRC = {
+			OR = {
+				event_target:WTT_current_china_leader = {
+					NOT = {
+						OR = {
+							has_war_with = JAP
+							has_war_together_with = ROOT
+						}
+					}
+				}
+				has_war_with = event_target:WTT_current_china_leader
+			}			
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = dont_join_wars_with
+		target_country = PRC
+		id = "CHI"
+		value = 5000
+	}
+	ai_strategy = {
+		type = befriend
+		id = "CHI"
+		value = -50
+	}
+	ai_strategy = {
+		type = ignore
+		id = "CHI"
+		value = 50
+	}
+	ai_strategy = {
+		type = alliance
+		id = "CHI"
+		value = -500
+	}
+}
+SOV_actually_no_ground_troops = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		CHI = {
+			OR = {
+				has_government = neutrality
+				has_government = fascism
+			}
+		} 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHX"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SIC"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XSM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NXM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GSM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EGM"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHC"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XIK"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -5000
+	}
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GUD"
+		value = -5000
+	}
+	ai_strategy = { #MODDED
+		type = send_volunteers_desire
+		id = "SHD"
+		value = -5000
+	}
+	ai_strategy = { #MODDED
+		type = send_volunteers_desire
+		id = "HPC"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_sign_pact = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		any_other_country = {
+			is_literally_china = yes
+			has_defensive_war_with = JAP
+			NOT = {
+				has_idea = CHI_sov_pact
+			}
+		} 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_YUN = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		YUN = {
+			any_enemy_country = {
+				is_neighbor_of = YUN
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "YUN"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_XSM = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		XSM = {
+			any_enemy_country = {
+				is_neighbor_of = XSM
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XSM"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_NXM = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		NXM = {
+			any_enemy_country = {
+				is_neighbor_of = NXM
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "NXM"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_GSM = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		GSM = {
+			any_enemy_country = {
+				is_neighbor_of = GSM
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GSM"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_EGM = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		EGM = {
+			any_enemy_country = {
+				is_neighbor_of = EGM
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "EGM"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_SHC = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		SHC = {
+			any_enemy_country = {
+				is_neighbor_of = SHC
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "SHC"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_GXC = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		GXC = {
+			any_enemy_country = {
+				is_neighbor_of = GXC
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "GXC"
+		value = -5000
+	}
+}
+SOV_only_help_out_when_on_frontline_XIK = {
+	allowed = { tag = SOV }
+	enable = {
+		tag = SOV
+		XIK = {
+			any_enemy_country = {
+				is_neighbor_of = XIK
+			} 
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "XIK"
+		value = -5000
+	}
+}
+GER_help_out_when_sign_pact = {
+	allowed = { tag = GER }
+	enable = {
+		tag = GER
+		any_other_country = {
+			tag = event_target:WTT_current_china_leader
+			is_literally_china = yes
+			has_defensive_war_with = JAP
+			has_idea = CHI_german_coop
+		} 
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = send_volunteers_desire
+		id = "CHI"
+		value = 200
+	}
+}
+
+China_is_about_to_have_civil_war_dont_join_allies = {
+	allowed = { is_literally_china = yes }
+	enable = {
+		is_literally_china = yes
+		has_global_flag = china_split
+		AND = {
+			country_exists = event_target:WTT_current_china_leader
+			country_exists = event_target:WTT_communist_china
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = alliance
+		id = "SOV"
+		value = -9999
+	}
+	ai_strategy = {
+		type = alliance
+		id = "ENG"
+		value = -9999
+	}
+	ai_strategy = {
+		type = alliance
+		id = "USA"
+		value = -9999
+	}
+}
+FIC_never_joins_war = {
+	allowed = { tag = FIC }
+	enable = {
+		tag = FIC
+		has_idea = FIC_darlankato_agreement
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "JAP"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "MAN"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "EHB"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "RFM"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "ECA"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "HPC"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "CCP"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "NSG"
+		target_country = CHI
+		value = 5000
+	}
+	ai_strategy = {
+		type = dont_join_wars_with
+		id = "SCG"
+		target_country = CHI
+		value = 5000
+	}
+}
+
+#CHI_the_battle_of_shanghai = {
+	#allowed = { tag = CHI }
+	#enable = {
+	#	tag = CHI
+	#    has_war_with = JAP	
+	#}
+	#abort_when_not_enabled = yes
+   
+	#ai_strategy = {
+	#	type = front_control
+	#	ratio = 0.1 # the strategy is enabled only if ratio of the front covered by this strat's targets greater than this ratio
+	#   area = 164
+	#	priority = 100 # default 0, higher prio strats will override lower
+	#	ordertype = front # front or invasion. if set this strategy will only apply to that specific order type
+	#	execution_type = careful # one of careful balanced rush rush_weak. if set will override the execution type of front (only for front orders)
+	#	execute_order = yes # yes or no. if set will override execute or not decision of front
+	#	manual_attack = yes # default yes. if no ai will not do manual pokes at enemy (only for front orders)
+	#	value = 3000
+	#}
+#}
+
+CHI_dont_spam_that_much_army = { 
+	enable = {
+		is_literally_china = yes
+	    has_army_manpower = { size > 3999999 }
+	    always = no ####
+	}
+    abort = {
+	    has_army_manpower = { size < 3999999 }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -5999
+	}
+    ai_strategy = {
+        type = force_build_armies
+        value = -5999
+	}
+}
+
+ETR_dont_spam_that_much_army = { 
+	enable = {
+		original_tag = SIK
+		NOT = { tag = SIK }
+		OR = {
+		    has_war_with = SIK
+			has_war_with = event_target:WTT_current_china_leader
+	        has_civil_war = yes 
+		}
+		has_army_manpower = { size > 199999 }
+	}
+    abort = {
+	    has_army_manpower = { size < 199999 }
+	}
+	
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -5999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -5999
+	}
+    ai_strategy = {
+        type = force_build_armies
+        value = -5999
+	}
+}
+
+China_go_catch_long_yun = {
+	enable = {
+		is_literally_china = yes
+		is_major = yes
+	    has_global_flag = CHI_no_longer_united_flag
+	    NOT = {
+	       has_war_with = JAP
+		}
+		YUN = { is_subject = no }
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = invade
+		id = "YUN"
+		value = 900
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = "YUN"
+		value = 1
+	}
+	ai_strategy = {
+		type = conquer
+		id = "YUN"
+		value = 900
+	}
+	ai_strategy = {
+		type = prepare_for_war
+		id = "YUN"
+		value = 700
+	}
+}
+
+protect_nanking_b4_civil_war = {
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		owns_state = 1015
+		is_literally_china = yes
+		NOT = { has_war_with = JAP }
+		date > 1940.1.1
+	    country_exists = PRC
+		NOT = {
+			has_active_mission = CHI_occupy_northeast_timer
+		}
+	}
+	abort = {
+		NOT = { country_exists = PRC }
+	}
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.25
+
+	
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+ 			598
+			1015
+			606
+			1034
+ 		}
+		order_id = 1000
+		# ai areas that the orders will use these buffers in
+ 		area = asia
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = yes
+ 		subtract_fronts_from_need = no
+ 	}
+}
+
+protect_beping_b4_civil_war = {
+	allowed = {
+		is_literally_china = yes
+	}
+	enable = {
+		owns_state = 1015
+		is_literally_china = yes
+		NOT = { has_war_with = JAP }
+		date > 1940.1.1
+	    country_exists = PRC
+		NOT = {
+			has_active_mission = CHI_occupy_northeast_timer
+		}
+	}
+	abort = {
+		NOT = { country_exists = PRC }
+	}
+	ai_strategy = {
+ 		type = put_unit_buffers
+	
+		# ratio of total armeis in country to be buffered
+ 		ratio = 0.2
+
+	
+ 		# states to put garrison orders (if no state is friendly, strat is invalid)
+ 		states = { 
+ 			608
+			609
+			1010
+            716			
+ 		}
+		order_id = 1000
+		# ai areas that the orders will use these buffers in
+ 		area = asia
+	
+ 		# by default if you have orders in target areas, the buffer will request less units. 
+		# you can override this to disable the feature
+ 		subtract_invasions_from_need = yes
+ 		subtract_fronts_from_need = no
+ 	}
+}
+
+civil_war_should_be_piece_of_cake_right = {
+	allowed = {
+		#is_literally_china = yes
+	    NOT = { has_government = communism }
+	    tag = event_target:WTT_current_china_leader
+	}
+	enable = {
+		owns_state = 1015
+		owns_state = 716
+		#owns_state = 608
+		is_literally_china = yes
+		NOT = { has_war_with = JAP }
+		date > 1940.1.1
+	    has_war_with = PRC
+	    always = no
+	}
+	abort = {
+		#check_variable = {
+		#	This.infantry_equipment_deficit > 20000
+		#}
+		OR = {
+		    NOT = { country_exists = PRC }
+	        NOT = { has_war_with = PRC }
+	        casualties_inflicted_by = {
+			    opponent = PRC
+			    thousands > 1500
+		    }
+	        NOT = {
+		        #owns_state = 1015
+		        owns_state = 716
+		        #owns_state = 608
+		    }
+	    }
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = "PRC"
+		value = 1 
+	}
+    ai_strategy = {
+		type = front_control
+
+		tag = PRC
+
+		ratio = 0.5
+
+		priority = 150
+		ordertype = front
+		execution_type = rush_weak
+		execute_order = yes
+	}
+}
+
+civil_war_should_be_ok_right = {
+	allowed = {
+		#is_literally_china = yes
+	    NOT = { has_government = communism }
+	    tag = event_target:WTT_current_china_leader
+	}
+	enable = {
+		owns_state = 1015
+		is_literally_china = yes
+		NOT = { has_war_with = JAP }
+		date > 1940.1.1
+	    has_war_with = PRC
+	    casualties_inflicted_by = {
+			opponent = PRC
+			thousands > 1500
+		}
+	    owns_state = 1015
+		owns_state = 716
+	    always = no
+	} 
+	abort = {
+		OR = {
+			NOT = { country_exists = PRC }
+			NOT = { has_war_with = PRC }
+			casualties_inflicted_by = {
+				opponent = PRC
+				thousands > 2000
+			}
+			NOT = {
+				owns_state = 1015
+				owns_state = 716
+			}
+	    }
+	}
+	ai_strategy = {
+		type = consider_weak
+		id = "PRC"
+		value = 1
+	}
+    ai_strategy = {
+		type = front_control
+
+		tag = PRC
+
+		ratio = 0.5
+
+		priority = 150
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+}
+
+CHI_the_nbis_is_all_the_intel_we_need = {
+	allowed = {
+		is_literally_china = yes
+		has_dlc = "La Resistance"
+	}
+	enable = {
+		num_of_civilian_factories < 70 
+	}
+	abort = {
+		OR = {
+			num_of_civilian_factories > 70
+		}
+	}
+	ai_strategy = {
+		type = intelligence_agency_usable_factories
+		value = -1000
+	}
+}
+
+CHI_northeast_hist = {
+	enable = {
+		tag = event_target:WTT_current_china_leader
+		has_active_mission = CHI_occupy_northeast_timer
+	}
+	abort = {
+		NOT = {
+			has_active_mission = CHI_occupy_northeast_timer
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+   
+	   # ratio of total armeis in country to be buffered
+		ratio = 0.45
+
+   
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = { 
+		   #608
+		   #609
+		   1010
+		   716
+		   328			
+		}
+	   order_id = 2500
+	   # ai areas that the orders will use these buffers in
+		area = asia
+   
+		# by default if you have orders in target areas, the buffer will request less units. 
+	   # you can override this to disable the feature
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}
+
+CHI_northeast_all = {
+	enable = {
+		tag = event_target:WTT_current_china_leader
+		has_active_mission = CHI_occupy_northeast_timer
+	}
+	abort = {
+		NOT = {
+			has_active_mission = CHI_occupy_northeast_timer
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+   
+	   # ratio of total armeis in country to be buffered
+		ratio = 0.15
+
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = { 
+			761
+			715
+			1008
+			610
+			1037
+			1009
+			1007
+			1006
+			1036
+			714
+			717
+			1005		
+		}
+	   order_id = 2300
+	   # ai areas that the orders will use these buffers in
+		area = asia
+   
+		# by default if you have orders in target areas, the buffer will request less units. 
+	   # you can override this to disable the feature
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}
+
+PRC_northeast_hist = {
+	enable = {
+		tag = event_target:WTT_communist_china
+		has_active_mission = PRC_occupy_northeast_timer
+	}
+	abort = {
+		NOT = {
+			has_active_mission = PRC_occupy_northeast_timer
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+   
+	   # ratio of total armeis in country to be buffered
+		ratio = 0.7
+
+   
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = { 
+		   #608
+		   #609
+		   761
+		   715
+		   1008
+		   610
+		   1037
+		   1009
+		   1007
+		   1006
+		   1036
+		   714
+		   717
+		   1005		
+		  #
+		   1010
+		   716
+		   328			
+		}
+	   order_id = 4500
+	   # ai areas that the orders will use these buffers in
+		area = asia
+   
+		# by default if you have orders in target areas, the buffer will request less units. 
+	   # you can override this to disable the feature
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = -6000
+	}
+	
+	ai_strategy = {
+		type = ignore
+		id = "SHX"
+		value = 6000
+	} 
+	
+	ai_strategy = {
+		type = ignore
+		id = "PLM"
+		value = 6000
+	} 
+	
+	ai_strategy = {
+		type = ignore
+		id = "CHI"
+		value = 6000
+	} 
+
+	ai_strategy = {
+		type = ignore
+		id = "NXM"
+		value = 6000
+	} 
+}
+
+PRC_northeast_all = {
+	enable = {
+		tag = event_target:WTT_communist_china
+		has_active_mission = PRC_occupy_northeast_timer
+	}
+	abort = {
+		NOT = {
+			has_active_mission = PRC_occupy_northeast_timer
+		}
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = put_unit_buffers
+   
+	   # ratio of total armeis in country to be buffered
+		ratio = 0.1
+
+   
+		# states to put garrison orders (if no state is friendly, strat is invalid)
+		states = { 
+		   1010
+		   716
+		   328			
+		}
+	   order_id = 4200
+	   # ai areas that the orders will use these buffers in
+		area = asia
+   
+		# by default if you have orders in target areas, the buffer will request less units. 
+	   # you can override this to disable the feature
+		subtract_invasions_from_need = no
+		subtract_fronts_from_need = yes
+	}
+}
+
+chi_army_reduction = {
+	allowed = {
+		#is_literally_china = yes 
+	    tag = event_target:WTT_current_china_leader
+	}
+	enable = {
+		owns_state = 1015
+		has_global_flag = CHI_no_longer_united_flag
+		country_exists = event_target:WTT_communist_china
+		check_variable = { ROOT.num_battalions > 2995 }
+	} 
+	abort = {
+		OR = {
+			NOT = { country_exists = event_target:WTT_communist_china }
+			NOT = { owns_state = 1015 }
+			check_variable = { ROOT.num_battalions < 2995 }
+	    }
+	}
+	abort_when_not_enabled = yes
+	ai_strategy = {
+		type = role_ratio
+		id = garrison
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = paratroopers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = mountaineers
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = marines
+		value = -9999
+	}
+
+	ai_strategy = {
+		type = role_ratio
+		id = armor
+		value = -9999 
+	}
+	ai_strategy = {
+		type = role_ratio
+		id = infantry
+		value = -9999
+	}
+    
+	ai_strategy = {
+		type = role_ratio
+		id = cavalry
+		value = -9999
+	}
+
+	ai_strategy = {
+        type = force_build_armies
+        value = -9999
+	}
+}

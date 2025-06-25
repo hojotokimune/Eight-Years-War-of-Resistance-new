@@ -1,0 +1,86 @@
+VIC_indochinese_politics = {
+	allowed = {
+		OR = {
+		original_tag = FRA
+		tag = FRA
+		}
+	}
+
+	visible = {
+		has_global_flag = fall_of_france
+		has_government = fascism
+		FIC = {
+			is_puppet = no
+		}
+	}
+}
+
+fic_industrial_decisions = {
+	allowed = {
+		original_tag = FIC
+	}
+	icon = ger_mefo_bills
+	visible = {
+		always = yes
+	}
+}
+
+FIC_guangzhouwan_development = {
+	allowed = {
+		original_tag = FIC
+		is_ai = no
+	}
+	icon = generic_industry
+	visible = {
+		AND = {
+			has_completed_focus = FIC_guangzhouwan_navalbase
+			controls_state = 728
+		}
+	}
+}
+
+fic_franco_siam_war = {
+	allowed = {
+		OR = {
+			tag = SIA
+			tag = FIC
+			tag = JAP
+		}
+	}
+	priority = 150
+	icon = military_operation
+	visible = {
+		#FIC = { OR = { is_puppet = no has_government = democratic } }
+		has_global_flag = fall_of_france
+	}
+}
+
+fic_organize_defence = {
+	allowed = {
+		tag = FIC
+	}
+	icon = military_operation
+	visible = {
+		has_completed_focus = FIC_saigon_conferences
+	}
+}
+
+fic_federalization = {
+	allowed = {
+		tag = FIC
+	}
+	icon = generic_political_actions
+	visible = {
+		has_completed_focus = FIC_federalisation_effort
+	}
+}
+
+fic_baodai_reformms = {
+	allowed = {
+		tag = FIC
+	}
+	icon = generic_political_actions
+	visible = {
+		has_completed_focus = FIC_baodais_reform
+	}
+}

@@ -1,0 +1,583 @@
+spriteTypes = {
+### Manchukuo
+	
+	SpriteType = {
+		name = "GFX_MAN_improved_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/JAP_infantry_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_infantry_weapons_medium"
+		texturefile = "gfx/interface/technologies/JAP_infantry_equipment_3.dds"
+	}
+	
+	SpriteType = {
+		name = "GFX_MAN_motorised_infantry_medium"
+		texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_mechanised_infantry_medium"
+		texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_mechanised_infantry2_medium"
+		texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_mechanised_infantry3_medium"
+		texturefile = "gfx/interface/technologies/JAP_mechanized_equipment_3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_motorized_equipment_medium"
+		texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds"
+	}
+	
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_adv_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_adv_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_advanced_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_adv_light_tank.dds"	
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_basic_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_imp_heavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_basic_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_basic_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_basic_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_medium_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_imp_main_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_improved_light_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_imp_light_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_main_battle_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_main_battle_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_super_heavy_tank_medium"
+		texturefile = "gfx/interface/technologies/JAP_superheavy_tank.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_early_fighter_medium"
+		texturefile = "gfx/interface/technologies/JAP_early_fighter.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_early_bomber_medium"
+		texturefile = "gfx/interface/technologies/JAP_early_bomber.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_fighter1_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_fighter2_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_fighter3_medium"
+		texturefile = "gfx/interface/technologies/JAP_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_heavy_fighter1_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_fighter1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_heavy_fighter2_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_fighter2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_heavy_fighter3_medium"
+		texturefile = "gfx/interface/technologies/JAP_heavy_fighter3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_CAS1_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_CAS2_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_CAS3_medium"
+		texturefile = "gfx/interface/technologies/JAP_CAS3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_tactical_bomber1_medium"
+		texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_tactical_bomber2_medium"
+		texturefile = "gfx/interface/technologies/JAP_tactical_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_tactical_bomber3_medium"
+		texturefile = "gfx/interface/technologies/JAP_tactical_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_strategic_bomber1_medium"
+		texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_strategic_bomber2_medium"
+		texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_strategic_bomber3_medium"
+		texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_naval_bomber1_medium"
+		texturefile = "gfx/interface/technologies/JAP_naval_bomber1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_naval_bomber2_medium"
+		texturefile = "gfx/interface/technologies/JAP_naval_bomber2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_naval_bomber3_medium"
+		texturefile = "gfx/interface/technologies/JAP_naval_bomber3.dds"
+	}
+	SpriteType = {
+		name = "GFX_MAN_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_MAN_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_3.dds"
+	}
+	
+	#########
+	###ECA###
+	#########
+	SpriteType = {	name = "GFX_ECA_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_3.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_light_art_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_light_td_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_amphibious_mechanized_infantry_2_medium" texturefile = "gfx/interface/technologies/man_amphibious_mech_2.dds" }
+	SpriteType = {	name = "GFX_ECA_amphibious_mechanized_infantry_medium" texturefile = "gfx/interface/technologies/man_amphibious_mech_1.dds" }
+	SpriteType = {	name = "GFX_ECA_amphibious_tank_2_medium" texturefile = "gfx/interface/technologies/man_amphibious_tank_2.dds" }
+	SpriteType = {	name = "GFX_ECA_amphibious_tank_medium" texturefile = "gfx/interface/technologies/man_amphibious_tank_1.dds" }
+	SpriteType = {	name = "GFX_ECA_antiair2_medium" texturefile = "gfx/interface/technologies/MAN_AA_2.dds" }
+	SpriteType = {	name = "GFX_ECA_antiair5_medium" texturefile = "gfx/interface/technologies/MAN_AA_3.dds" }
+	SpriteType = {	name = "GFX_ECA_antitank2_medium" texturefile = "gfx/interface/technologies/MAN_AT_2.dds" }
+	SpriteType = {	name = "GFX_ECA_antitank5_medium" texturefile = "gfx/interface/technologies/MAN_AT_3.dds" }
+	SpriteType = {	name = "GFX_ECA_artillery1_medium" texturefile = "gfx/interface/technologies/MAN_Art_2.dds" }
+	SpriteType = {	name = "GFX_ECA_artillery4_medium" texturefile = "gfx/interface/technologies/MAN_Art_3.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_heavy_art_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_heavy_td_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_basic_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_medium_spaa_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_aa.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_CAS1_medium" texturefile = "gfx/interface/technologies/JAP_CAS1.dds" }
+	SpriteType = {	name = "GFX_ECA_CAS2_medium" texturefile = "gfx/interface/technologies/MAN_CAS2.dds" }
+	SpriteType = {	name = "GFX_ECA_CAS3_medium" texturefile = "gfx/interface/technologies/MAN_CAS3.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_CAS1_medium" texturefile = "gfx/interface/technologies/MAN_CAS1_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_CAS2_medium" texturefile = "gfx/interface/technologies/JAP_CAS2_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_CAS3_medium" texturefile = "gfx/interface/technologies/MAN_CAS3_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_early_fighter_medium" texturefile = "gfx/interface/technologies/MAN_early_fighter_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_fighter1_medium" texturefile = "gfx/interface/technologies/MAN_fighter1_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_fighter2_medium" texturefile = "gfx/interface/technologies/MAN_fighter2_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_fighter3_medium" texturefile = "gfx/interface/technologies/MAN_fighter3_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_naval_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber1_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_naval_bomber2_medium" texturefile = "gfx/interface/technologies/MAN_naval_bomber2_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_cv_naval_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber3_cv.dds" }
+	SpriteType = {	name = "GFX_ECA_early_bomber_medium" texturefile = "gfx/interface/technologies/JAP_early_bomber.dds" }
+	SpriteType = {	name = "GFX_ECA_early_fighter_medium" texturefile = "gfx/interface/technologies/JAP_early_fighter.dds" }
+	SpriteType = {	name = "GFX_ECA_fighter1_medium" texturefile = "gfx/interface/technologies/JAP_fighter1.dds" }
+	SpriteType = {	name = "GFX_ECA_fighter2_medium" texturefile = "gfx/interface/technologies/JAP_fighter2.dds" }
+	SpriteType = {	name = "GFX_ECA_fighter3_medium" texturefile = "gfx/interface/technologies/MAN_fighter3.dds" }
+	SpriteType = {	name = "GFX_ECA_gw_artillery_medium" texturefile = "gfx/interface/technologies/MAN_Art_1.dds" }
+	SpriteType = {	name = "GFX_ECA_gwtank_medium" texturefile = "gfx/interface/technologies/MAN_gwtank.dds" }
+	SpriteType = {	name = "GFX_ECA_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_ECA_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_ECA_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_heavy_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_heavy_td_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_2.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_light_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_0.dds" }
+	SpriteType = {	name = "GFX_ECA_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_1.dds" }
+	SpriteType = {	name = "GFX_ECA_interwar_antiair_medium" texturefile = "gfx/interface/technologies/MAN_AA_1.dds" }
+	SpriteType = {	name = "GFX_ECA_interwar_antitank_medium" texturefile = "gfx/interface/technologies/MAN_AT_1.dds" }
+	SpriteType = {	name = "GFX_ECA_jet_fighter1_medium" texturefile = "gfx/interface/technologies/man_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_ECA_jet_fighter2_medium" texturefile = "gfx/interface/technologies/man_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_ECA_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_ECA_main_battle_tank_medium" texturefile = "gfx/interface/technologies/MAN_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_ECA_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_2.dds" }
+	SpriteType = {	name = "GFX_ECA_modern_td_medium" texturefile = "gfx/interface/technologies/MAN_main_battle_tank_td.dds" }
+	SpriteType = {	name = "GFX_ECA_motorised_infantry_medium" texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_ECA_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_ECA_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/MAN_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_ECA_naval_bomber1_medium" texturefile = "gfx/interface/technologies/MAN_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_ECA_naval_bomber2_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_ECA_naval_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_ECA_rocket_artillery_medium" texturefile = "gfx/interface/technologies/MAN_Rocket_Art_1.dds" }
+	SpriteType = {	name = "GFX_ECA_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/MAN_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_ECA_rocket_interceptor_equipment_1_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_1.dds" }
+	SpriteType = {	name = "GFX_ECA_rocket_interceptor_equipment_2_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_2.dds" }
+	SpriteType = {	name = "GFX_ECA_rocket_interceptor_equipment_3_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_3.dds" }
+	SpriteType = {	name = "GFX_ECA_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_ECA_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_ECA_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_ECA_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_ECA_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_ECA_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_ECA_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_ECA_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/man_transport_plane_equipment.dds" }
+        #BBA
+        SpriteType = {	name = "GFX_ECA_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_early_fighter.dds" }
+	SpriteType = {	name = "GFX_ECA_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_fighter1.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_fighter2.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/MAN_fighter3.dds" }
+	SpriteType = {	name = "GFX_ECA_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/man_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_ECA_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/JAP_early_bomber.dds" }
+        SpriteType = {	name = "GFX_ECA_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_ECA_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds" }
+	SpriteType = {  name = "GFX_ECA_iw_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds" }
+        SpriteType = {	name = "GFX_ECA_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_heavy_plane_1.dds" }
+	SpriteType = {	name = "GFX_ECA_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_heavy_plane_2.dds" }
+	SpriteType = {	name = "GFX_ECA_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds" }
+        SpriteType = {	name = "GFX_ECA_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds" }
+        #
+        SpriteType = {
+		name = "GFX_ECA_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ECA_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_ECA_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_3.dds"
+	}
+	#########
+	###RFM###
+	#########
+	SpriteType = {	name = "GFX_RFM_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_3.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_light_art_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_light_td_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_amphibious_mechanized_infantry_2_medium" texturefile = "gfx/interface/technologies/man_amphibious_mech_2.dds" }
+	SpriteType = {	name = "GFX_RFM_amphibious_mechanized_infantry_medium" texturefile = "gfx/interface/technologies/man_amphibious_mech_1.dds" }
+	SpriteType = {	name = "GFX_RFM_amphibious_tank_2_medium" texturefile = "gfx/interface/technologies/man_amphibious_tank_2.dds" }
+	SpriteType = {	name = "GFX_RFM_amphibious_tank_medium" texturefile = "gfx/interface/technologies/man_amphibious_tank_1.dds" }
+	SpriteType = {	name = "GFX_RFM_antiair2_medium" texturefile = "gfx/interface/technologies/MAN_AA_2.dds" }
+	SpriteType = {	name = "GFX_RFM_antiair5_medium" texturefile = "gfx/interface/technologies/MAN_AA_3.dds" }
+	SpriteType = {	name = "GFX_RFM_antitank2_medium" texturefile = "gfx/interface/technologies/MAN_AT_2.dds" }
+	SpriteType = {	name = "GFX_RFM_antitank5_medium" texturefile = "gfx/interface/technologies/MAN_AT_3.dds" }
+	SpriteType = {	name = "GFX_RFM_artillery1_medium" texturefile = "gfx/interface/technologies/MAN_Art_2.dds" }
+	SpriteType = {	name = "GFX_RFM_artillery4_medium" texturefile = "gfx/interface/technologies/MAN_Art_3.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_heavy_art_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_heavy_td_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_basic_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_medium_spaa_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_aa.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_CAS1_medium" texturefile = "gfx/interface/technologies/JAP_CAS1.dds" }
+	SpriteType = {	name = "GFX_RFM_CAS2_medium" texturefile = "gfx/interface/technologies/MAN_CAS2.dds" }
+	SpriteType = {	name = "GFX_RFM_CAS3_medium" texturefile = "gfx/interface/technologies/MAN_CAS3.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_CAS1_medium" texturefile = "gfx/interface/technologies/MAN_CAS1_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_CAS2_medium" texturefile = "gfx/interface/technologies/JAP_CAS2_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_CAS3_medium" texturefile = "gfx/interface/technologies/MAN_CAS3_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_early_fighter_medium" texturefile = "gfx/interface/technologies/MAN_early_fighter_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_fighter1_medium" texturefile = "gfx/interface/technologies/MAN_fighter1_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_fighter2_medium" texturefile = "gfx/interface/technologies/MAN_fighter2_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_fighter3_medium" texturefile = "gfx/interface/technologies/MAN_fighter3_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_naval_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber1_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_naval_bomber2_medium" texturefile = "gfx/interface/technologies/MAN_naval_bomber2_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_cv_naval_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber3_cv.dds" }
+	SpriteType = {	name = "GFX_RFM_early_bomber_medium" texturefile = "gfx/interface/technologies/JAP_early_bomber.dds" }
+	SpriteType = {	name = "GFX_RFM_early_fighter_medium" texturefile = "gfx/interface/technologies/JAP_early_fighter.dds" }
+	SpriteType = {	name = "GFX_RFM_fighter1_medium" texturefile = "gfx/interface/technologies/JAP_fighter1.dds" }
+	SpriteType = {	name = "GFX_RFM_fighter2_medium" texturefile = "gfx/interface/technologies/JAP_fighter2.dds" }
+	SpriteType = {	name = "GFX_RFM_fighter3_medium" texturefile = "gfx/interface/technologies/MAN_fighter3.dds" }
+	SpriteType = {	name = "GFX_RFM_gw_artillery_medium" texturefile = "gfx/interface/technologies/MAN_Art_1.dds" }
+	SpriteType = {	name = "GFX_RFM_gwtank_medium" texturefile = "gfx/interface/technologies/MAN_gwtank.dds" }
+	SpriteType = {	name = "GFX_RFM_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_RFM_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_RFM_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_heavy_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_heavy_td_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_2.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_light_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_0.dds" }
+	SpriteType = {	name = "GFX_RFM_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_1.dds" }
+	SpriteType = {	name = "GFX_RFM_interwar_antiair_medium" texturefile = "gfx/interface/technologies/MAN_AA_1.dds" }
+	SpriteType = {	name = "GFX_RFM_interwar_antitank_medium" texturefile = "gfx/interface/technologies/MAN_AT_1.dds" }
+	SpriteType = {	name = "GFX_RFM_jet_fighter1_medium" texturefile = "gfx/interface/technologies/man_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_RFM_jet_fighter2_medium" texturefile = "gfx/interface/technologies/man_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_RFM_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_RFM_main_battle_tank_medium" texturefile = "gfx/interface/technologies/MAN_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_RFM_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_2.dds" }
+	SpriteType = {	name = "GFX_RFM_modern_td_medium" texturefile = "gfx/interface/technologies/MAN_main_battle_tank_td.dds" }
+	SpriteType = {	name = "GFX_RFM_motorised_infantry_medium" texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_RFM_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_RFM_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/MAN_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_RFM_naval_bomber1_medium" texturefile = "gfx/interface/technologies/MAN_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_RFM_naval_bomber2_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_RFM_naval_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_RFM_rocket_artillery_medium" texturefile = "gfx/interface/technologies/MAN_Rocket_Art_1.dds" }
+	SpriteType = {	name = "GFX_RFM_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/MAN_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_RFM_rocket_interceptor_equipment_1_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_1.dds" }
+	SpriteType = {	name = "GFX_RFM_rocket_interceptor_equipment_2_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_2.dds" }
+	SpriteType = {	name = "GFX_RFM_rocket_interceptor_equipment_3_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_3.dds" }
+	SpriteType = {	name = "GFX_RFM_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_RFM_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_RFM_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_RFM_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_RFM_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_RFM_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_RFM_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_RFM_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/man_transport_plane_equipment.dds" }
+        #BBA
+        SpriteType = {	name = "GFX_RFM_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_early_fighter.dds" }
+	SpriteType = {	name = "GFX_RFM_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_fighter1.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_fighter2.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/MAN_fighter3.dds" }
+	SpriteType = {	name = "GFX_RFM_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/man_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_RFM_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/JAP_early_bomber.dds" }
+        SpriteType = {	name = "GFX_RFM_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_RFM_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds" }
+	SpriteType = {  name = "GFX_RFM_iw_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds" }
+        SpriteType = {	name = "GFX_RFM_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_heavy_plane_1.dds" }
+	SpriteType = {	name = "GFX_RFM_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_heavy_plane_2.dds" }
+	SpriteType = {	name = "GFX_RFM_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds" }
+        SpriteType = {	name = "GFX_RFM_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds" }
+        SpriteType = {
+		name = "GFX_RFM_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RFM_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_RFM_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_3.dds"
+	}
+	#########
+	###EHB###
+	#########
+	SpriteType = {	name = "GFX_EHB_advanced_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_3.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_light_art_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_light_td_medium" texturefile = "gfx/interface/technologies/MAN_adv_light_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_adv_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_amphibious_mechanized_infantry_2_medium" texturefile = "gfx/interface/technologies/man_amphibious_mech_2.dds" }
+	SpriteType = {	name = "GFX_EHB_amphibious_mechanized_infantry_medium" texturefile = "gfx/interface/technologies/man_amphibious_mech_1.dds" }
+	SpriteType = {	name = "GFX_EHB_amphibious_tank_2_medium" texturefile = "gfx/interface/technologies/man_amphibious_tank_2.dds" }
+	SpriteType = {	name = "GFX_EHB_amphibious_tank_medium" texturefile = "gfx/interface/technologies/man_amphibious_tank_1.dds" }
+	SpriteType = {	name = "GFX_EHB_antiair2_medium" texturefile = "gfx/interface/technologies/MAN_AA_2.dds" }
+	SpriteType = {	name = "GFX_EHB_antiair5_medium" texturefile = "gfx/interface/technologies/MAN_AA_3.dds" }
+	SpriteType = {	name = "GFX_EHB_antitank2_medium" texturefile = "gfx/interface/technologies/MAN_AT_2.dds" }
+	SpriteType = {	name = "GFX_EHB_antitank5_medium" texturefile = "gfx/interface/technologies/MAN_AT_3.dds" }
+	SpriteType = {	name = "GFX_EHB_artillery1_medium" texturefile = "gfx/interface/technologies/MAN_Art_2.dds" }
+	SpriteType = {	name = "GFX_EHB_artillery4_medium" texturefile = "gfx/interface/technologies/MAN_Art_3.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_heavy_art_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_heavy_td_medium" texturefile = "gfx/interface/technologies/MAN_basic_heavy_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_basic_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_light_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_medium_spaa_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_aa.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_basic_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_CAS1_medium" texturefile = "gfx/interface/technologies/JAP_CAS1.dds" }
+	SpriteType = {	name = "GFX_EHB_CAS2_medium" texturefile = "gfx/interface/technologies/MAN_CAS2.dds" }
+	SpriteType = {	name = "GFX_EHB_CAS3_medium" texturefile = "gfx/interface/technologies/MAN_CAS3.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_CAS1_medium" texturefile = "gfx/interface/technologies/MAN_CAS1_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_CAS2_medium" texturefile = "gfx/interface/technologies/JAP_CAS2_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_CAS3_medium" texturefile = "gfx/interface/technologies/MAN_CAS3_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_early_fighter_medium" texturefile = "gfx/interface/technologies/MAN_early_fighter_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_fighter1_medium" texturefile = "gfx/interface/technologies/MAN_fighter1_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_fighter2_medium" texturefile = "gfx/interface/technologies/MAN_fighter2_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_fighter3_medium" texturefile = "gfx/interface/technologies/MAN_fighter3_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_naval_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber1_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_naval_bomber2_medium" texturefile = "gfx/interface/technologies/MAN_naval_bomber2_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_cv_naval_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber3_cv.dds" }
+	SpriteType = {	name = "GFX_EHB_early_bomber_medium" texturefile = "gfx/interface/technologies/JAP_early_bomber.dds" }
+	SpriteType = {	name = "GFX_EHB_early_fighter_medium" texturefile = "gfx/interface/technologies/JAP_early_fighter.dds" }
+	SpriteType = {	name = "GFX_EHB_fighter1_medium" texturefile = "gfx/interface/technologies/JAP_fighter1.dds" }
+	SpriteType = {	name = "GFX_EHB_fighter2_medium" texturefile = "gfx/interface/technologies/JAP_fighter2.dds" }
+	SpriteType = {	name = "GFX_EHB_fighter3_medium" texturefile = "gfx/interface/technologies/MAN_fighter3.dds" }
+	SpriteType = {	name = "GFX_EHB_gw_artillery_medium" texturefile = "gfx/interface/technologies/MAN_Art_1.dds" }
+	SpriteType = {	name = "GFX_EHB_gwtank_medium" texturefile = "gfx/interface/technologies/MAN_gwtank.dds" }
+	SpriteType = {	name = "GFX_EHB_heavy_fighter1_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter1.dds" }
+	SpriteType = {	name = "GFX_EHB_heavy_fighter2_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter2.dds" }
+	SpriteType = {	name = "GFX_EHB_heavy_fighter3_medium" texturefile = "gfx/interface/technologies/JAP_heavy_fighter3.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_heavy_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_heavy_td_medium" texturefile = "gfx/interface/technologies/MAN_imp_heavy_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_2.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_light_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_light_spaa_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank_aa.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_light_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_light_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_medium_art_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank_spa.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_medium_tank_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_medium_td_medium" texturefile = "gfx/interface/technologies/MAN_imp_main_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_infantry_weapons_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_0.dds" }
+	SpriteType = {	name = "GFX_EHB_infantry_weapons1_medium" texturefile = "gfx/interface/technologies/MAN_infantry_equipment_1.dds" }
+	SpriteType = {	name = "GFX_EHB_interwar_antiair_medium" texturefile = "gfx/interface/technologies/MAN_AA_1.dds" }
+	SpriteType = {	name = "GFX_EHB_interwar_antitank_medium" texturefile = "gfx/interface/technologies/MAN_AT_1.dds" }
+	SpriteType = {	name = "GFX_EHB_jet_fighter1_medium" texturefile = "gfx/interface/technologies/man_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_EHB_jet_fighter2_medium" texturefile = "gfx/interface/technologies/man_jet_fighter2.dds" }
+	SpriteType = {	name = "GFX_EHB_jet_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_EHB_main_battle_tank_medium" texturefile = "gfx/interface/technologies/MAN_main_battle_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_mechanised_infantry_medium" texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_EHB_mechanised_infantry2_medium" texturefile = "gfx/interface/technologies/MAN_mechanized_equipment_2.dds" }
+	SpriteType = {	name = "GFX_EHB_modern_td_medium" texturefile = "gfx/interface/technologies/MAN_main_battle_tank_td.dds" }
+	SpriteType = {	name = "GFX_EHB_motorised_infantry_medium" texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_EHB_motorized_equipment_1_medium" texturefile = "gfx/interface/technologies/JAP_motorized_equipment_1.dds" }
+	SpriteType = {	name = "GFX_EHB_motorized_rocket_unit_medium" texturefile = "gfx/interface/technologies/MAN_motorized_rocket_unit.dds" }
+	SpriteType = {	name = "GFX_EHB_naval_bomber1_medium" texturefile = "gfx/interface/technologies/MAN_naval_bomber1.dds" }
+	SpriteType = {	name = "GFX_EHB_naval_bomber2_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber2.dds" }
+	SpriteType = {	name = "GFX_EHB_naval_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_naval_bomber3.dds" }
+	SpriteType = {	name = "GFX_EHB_rocket_artillery_medium" texturefile = "gfx/interface/technologies/MAN_Rocket_Art_1.dds" }
+	SpriteType = {	name = "GFX_EHB_rocket_artillery4_medium" texturefile = "gfx/interface/technologies/MAN_Rocket_Art_2.dds" }
+	SpriteType = {	name = "GFX_EHB_rocket_interceptor_equipment_1_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_1.dds" }
+	SpriteType = {	name = "GFX_EHB_rocket_interceptor_equipment_2_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_2.dds" }
+	SpriteType = {	name = "GFX_EHB_rocket_interceptor_equipment_3_medium" texturefile = "gfx/interface/technologies/man_rocket_interceptor_3.dds" }
+	SpriteType = {	name = "GFX_EHB_strategic_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds" }
+	SpriteType = {	name = "GFX_EHB_strategic_bomber2_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds" }
+	SpriteType = {	name = "GFX_EHB_strategic_bomber3_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds" }
+	SpriteType = {	name = "GFX_EHB_super_heavy_tank_medium" texturefile = "gfx/interface/technologies/MAN_superheavy_tank.dds" }
+	SpriteType = {	name = "GFX_EHB_tactical_bomber1_medium" texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_EHB_tactical_bomber2_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_EHB_tactical_bomber3_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds" }
+	SpriteType = {	name = "GFX_EHB_transport_plane_equipment_medium" texturefile = "gfx/interface/technologies/man_transport_plane_equipment.dds" }
+        #BBA
+        SpriteType = {	name = "GFX_EHB_iw_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_early_fighter.dds" }
+	SpriteType = {	name = "GFX_EHB_basic_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_fighter1.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_small_airframe_medium" texturefile = "gfx/interface/technologies/JAP_fighter2.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_small_airframe_medium" texturefile = "gfx/interface/technologies/MAN_fighter3.dds" }
+	SpriteType = {	name = "GFX_EHB_modern_small_airframe_medium" texturefile = "gfx/interface/technologies/man_jet_fighter1.dds" }
+	SpriteType = {	name = "GFX_EHB_iw_medium_airframe_medium" texturefile = "gfx/interface/technologies/JAP_early_bomber.dds" }
+        SpriteType = {	name = "GFX_EHB_basic_medium_airframe_medium" texturefile = "gfx/interface/technologies/JAP_tactical_bomber1.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber2.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_tactical_bomber3.dds" }
+        SpriteType = {	name = "GFX_EHB_jet_modern_medium_airframe_medium" texturefile = "gfx/interface/technologies/MAN_jet_tactical_bomber1.dds" }
+	SpriteType = {  name = "GFX_EHB_iw_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber1.dds" }
+        SpriteType = {	name = "GFX_EHB_basic_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_heavy_plane_1.dds" }
+	SpriteType = {	name = "GFX_EHB_improved_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_heavy_plane_2.dds" }
+	SpriteType = {	name = "GFX_EHB_advanced_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber2.dds" }
+        SpriteType = {	name = "GFX_EHB_modern_large_airframe_medium" texturefile = "gfx/interface/technologies/JAP_strategic_bomber3.dds" }
+        SpriteType = {
+		name = "GFX_EHB_armored_car1_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_1.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_EHB_armored_car2_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_2.dds"
+	}
+
+	SpriteType = {
+		name = "GFX_EHB_armored_car3_medium"
+		texturefile = "gfx/interface/technologies/jap_armored_car_equipment_3.dds"
+	}
+}
+

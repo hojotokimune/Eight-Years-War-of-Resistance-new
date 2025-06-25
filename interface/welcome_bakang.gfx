@@ -1,0 +1,7 @@
+spriteTypes = {
+	spriteType = {
+		name = "GFX_logo"
+		textureFile = "gfx/interface/logo.png"
+	}
+}
+

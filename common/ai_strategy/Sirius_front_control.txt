@@ -1,0 +1,182 @@
+SOV_sirius_stalin_focus_europe = { #共产-斯大林中间派关注欧洲
+    allowed = { original_tag = SOV }
+	enable = {
+		GER = { has_government = fascism }
+        date > 1941.1.1
+	}
+    abort = {
+        SOV = { has_completed_focus = SOV_prepare_a_war_with_japan }
+     }
+    ai_strategy = { type = area_priority id = europe value = 999 }
+	ai_strategy = { type = area_priority id = scandinavia value = -999 }
+	ai_strategy = { type = area_priority id = north_america value = -999 }
+	ai_strategy = { type = area_priority id = south_america value = -999 }
+	ai_strategy = { type = area_priority id = asia value = -999 }
+	ai_strategy = { type = area_priority id = middle_east value = -999 }
+	ai_strategy = { type = area_priority id = africa value = -999 }
+	ai_strategy = { type = area_priority id = suez value = -999 }
+	ai_strategy = { type = area_priority id = pacific value = -999 }
+	ai_strategy = { type = area_priority id = oceania value = -999 }
+	ai_strategy = { type = naval_invasion_focus value = -999 }
+    ai_strategy = { type = garrison value = -999 }
+}
+
+GER_focus_look_europe = { #德国关注欧洲
+    allowed = { original_tag = GER }
+	enable = {
+		GER = { has_government = fascism }
+	}
+    abort = {
+        GER = { is_subject = yes }
+     }
+    ai_strategy = { type = area_priority id = europe value = 999 }
+	ai_strategy = { type = area_priority id = north_america value = -999 }
+	ai_strategy = { type = area_priority id = south_america value = -999 }
+	ai_strategy = { type = area_priority id = asia value = -999 }
+	ai_strategy = { type = area_priority id = middle_east value = -999 }
+	ai_strategy = { type = area_priority id = africa value = -999 }
+	ai_strategy = { type = area_priority id = suez value = -999 }
+	ai_strategy = { type = area_priority id = pacific value = -999 }
+	ai_strategy = { type = area_priority id = oceania value = -999 }
+}
+
+SOV_sirius_stalin_conquer_ger = { #共产-斯大林中间派针对德国
+    allowed = { original_tag = SOV }
+	enable = {
+		GER = { has_government = fascism }
+        NOT = { SOV = { has_war_with = USA }
+        SOV = { has_war_with = ENG }
+        SOV = { has_war_with = FRA }
+        SOV = { has_war_with = JAP }
+        SOV = { has_war_with = CHI }
+        SOV = { has_war_with = PRC }
+    }
+        date > 1941.1.1
+	}
+    abort = {
+		NOT = {
+        GER = {
+                has_government = fascism
+        }
+    }
+	}
+    ai_strategy = { type = conquer id = GER value = 999 }
+    ai_strategy = { type = prepare_for_war id = GER value = 999 }
+}
+
+SOV_sirius_stalin_conquer_jap = { #共产-斯大林中间派针对日本
+    allowed = { original_tag = SOV }
+	enable = {
+		JAP = { has_government = fascism }
+        JAP = { has_war_with = CHI }
+        has_global_flag = ger_zhanbai
+	}
+    abort = {
+		NOT = {
+            JAP = {
+                has_government = fascism
+            }
+        }
+	}
+    ai_strategy = { type = conquer id = JAP value = 450 }
+    ai_strategy = { type = prepare_for_war id = JAP value = 450 }
+    ai_strategy = { type = conquer id = MAN value = 999 }
+    ai_strategy = { type = prepare_for_war id = MAN value = 999 }
+    ai_strategy = { type = conquer id = ECA value = 450 }
+    ai_strategy = { type = prepare_for_war id = ECA value = 450 }
+}
+
+SOV_sirius_stalin_defence_ger = { #共产-斯大林中间派防御德国
+    allowed = { original_tag = SOV }
+	enable = {
+		
+        date < 1944.1.1
+        GER = {
+            has_war_with = SOV
+        }
+	}
+    abort = {
+		
+		date > 1944.1.1
+	}
+    ai_strategy = { type = front_unit_request tag = GER value = 999 }
+    ai_strategy = { type = front_unit_request tag = HUN value = 999 }
+    ai_strategy = { type = front_unit_request tag = ROM value = 999 }
+    ai_strategy = { type = front_unit_request tag = BUL value = 999 }
+    ai_strategy = { type = front_unit_request tag = SLO value = 999 }
+    ai_strategy = { type = front_unit_request tag = ITA value = 999 }
+    ai_strategy = { type = front_unit_request tag = ALB value = 999 }
+    ai_strategy = { type = front_unit_request tag = FIN value = 450 }
+    ai_strategy = {
+		type = front_control
+		area = europe
+		priority = 1
+		ratio = 0.8
+		ordertype = front
+		execution_type = rush
+		execute_order = no
+	}
+}
+
+GER__hitler_conquer_sov = { #法西斯-希特勒针对苏联
+    allowed = { original_tag = GER }
+	enable = {
+		GER = { has_government = fascism }
+        SOV = { has_government = communism }
+        date > 1941.5.1
+	}
+    abort = {
+        or = {
+            has_global_flag = liberation_of_paris
+            has_global_flag = land_sicily
+        }
+	}
+    ai_strategy = { type = conquer id = SOV value = 999 }
+    ai_strategy = { type = prepare_for_war id = SOV value = 999 }
+}
+
+GER_sirius_hitler_defence_sov = { #希特勒防御苏联
+    allowed = { original_tag = GER }
+	enable = {
+		
+        date > 1943.1.1
+        GER = {
+            has_war_with = SOV
+        }
+	}
+    abort = {
+		
+		date > 1944.1.1
+	}
+    ai_strategy = { type = front_unit_request tag = SOV value = 999 }
+    ai_strategy = {
+		type = front_control
+		area = europe
+		priority = 1
+		ratio = 0.8
+		ordertype = front
+		execution_type = rush
+		execute_order = no
+	}
+}
+
+
+USA_conquer_GER = { #美国针对德国意大利
+    allowed = { original_tag = USA }
+	enable = {
+		GER = { has_government = fascism }
+        ITA = { has_government = fascism }
+        USA = { has_government = democratic }
+        date > 1943.6.1
+	}
+    abort = {
+        NOT = {
+            has_war_with = GER
+        }
+	}
+    ai_strategy = { type = conquer id = GER value = 999 }
+    ai_strategy = { type = prepare_for_war id = GER value = 999 }
+    ai_strategy = { type = conquer id = ITA value = 999 }
+    ai_strategy = { type = prepare_for_war id = ITA value = 999 }
+}
+

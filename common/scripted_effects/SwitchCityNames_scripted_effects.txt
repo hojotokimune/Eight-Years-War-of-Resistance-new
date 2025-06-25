@@ -1,0 +1,645 @@
+switch_city_names = {
+	set_global_flag = city_names_switched
+
+	#Tsitsihar
+	set_province_name = {
+		id = 4506
+		name = "Qiqihar"
+	}
+	#Hsinking
+	set_province_name = {
+		id = 4572
+		name = "Xinjing"
+	}
+	#Mukden
+	set_province_name = {
+		id = 11771
+		name = "Shenyang"
+	}
+	#Dolon
+	set_province_name = {
+		id = 4495
+		name = "Duolun"
+	}
+	#Changpeh
+	set_province_name = {
+		id = 7545
+		name = "Zhangbei"
+	}
+	#Kalgan
+	set_province_name = {
+		id = 10397
+		name = "Zhangjiakou"
+	}
+	#East Hopeh
+	set_province_name = {
+		id = 11822
+		name = "Tongzhou"
+	}
+	#Peiping
+	set_province_name = {
+		id = 9843
+		name = "Beiping"
+	}
+	#Tientsin
+	set_province_name = {
+		id = 10068
+		name = "Tianjin"
+	}
+	#Tatung
+	set_province_name = {
+		id = 12432
+		name = "Datong"
+	}
+	#shihkiachwang
+	set_province_name = {
+		id = 4190
+		name = "Shijiazhuang"
+	}
+	#Hsingtai
+	set_province_name = {
+		id = 1169
+		name = "Xingtai"
+	}
+	#Tsinan
+	set_province_name = {
+		id = 1069
+		name = "Jinan"
+	}
+	#Tsingtao
+	set_province_name = {
+		id = 10000
+		name = "Qingdao"
+	}
+	#Loyang
+	set_province_name = {
+		id = 11931
+		name = "Luoyang"
+	}
+	#Süchow
+	set_province_name = {
+		id = 11973
+		name = "Xuzhou"
+	}
+	#Tunghai
+	set_province_name = {
+		id = 1029
+		name = "Donghai"
+	}
+	#Pengpu
+	set_province_name = {
+		id = 11916
+		name = "Bengbu"
+	}
+	#Sinyang
+	set_province_name = {
+		id = 7568
+		name = "Xinyang"
+	}
+	#Hwaining
+	set_province_name = {
+		id = 1083
+		name = "Anqing"
+	}
+	#Nanking
+	set_province_name = {
+		id = 11913
+		name = "Nanjing"
+	}
+	#Soochow
+	set_province_name = {
+		id = 10076
+		name = "Suzhou"
+	}
+	#Hangchow
+	set_province_name = {
+		id = 7191
+		name = "Hangzhou"
+	}
+	#Ningpo
+	set_province_name = {
+		id = 9974
+		name = "Ningbo"
+	}
+	#Kanchow
+	set_province_name = {
+		id = 7199
+		name = "Ganzhou"
+	}
+	#Foochow
+	set_province_name = {
+		id = 4196
+		name = "Fuzhou"
+	}
+	#Amoy
+	set_province_name = {
+		id = 7071
+		name = "Xiamen"
+	}
+	#Ichang
+	set_province_name = {
+		id = 1612
+		name = "Yichang"
+	}
+	#Changteh
+	set_province_name = {
+		id = 7101
+		name = "Changde"
+	}
+	#Tsunyi
+	set_province_name = {
+		id = 4325
+		name = "Zunyi"
+	}
+	#Swatow
+	set_province_name = {
+		id = 9938
+		name = "Shantou"
+	}
+	#Kükiang
+	set_province_name = {
+		id = 9970
+		name = "Qujiang"
+	}
+	#Canton
+	set_province_name = {
+		id = 1047
+		name = "Guangzhou"
+	}
+	#Tsangwu
+	set_province_name = {
+		id = 1597
+		name = "Liuzhou"
+	}
+	#Kweilin
+	set_province_name = {
+		id = 10404
+		name = "Guilin"
+	}
+	#Yamchow
+	set_province_name = {
+		id = 1018
+		name = "Qinzhou"
+	}
+	#Mencheong
+	set_province_name = {
+		id = 1070
+		name = "Wenchang"
+	}
+	#Kwangchowwan
+	set_province_name = {
+		id = 11981
+		name = "Guangzhouwan"
+	}
+	#Poseh
+	set_province_name = {
+		id = 10459
+		name = "Bose"
+	}
+	#Anting
+	set_province_name = {
+		id = 12356
+		name = "Anding"
+	}
+	#Yenchwan
+	set_province_name = {
+		id = 7208
+		name = "Yichuan"
+	}
+	#Yenan
+	set_province_name = {
+		id = 8049
+		name = "Yan'an"
+	}
+	#Lochwan
+	set_province_name = {
+		id = 12156
+		name = "Luochuan"
+	}
+	#Tingpien
+	set_province_name = {
+		id = 10880
+		name = "Dingbian"
+	}
+	#Hwansien
+	set_province_name = {
+		id = 4939
+		name = "Huanxian"
+	}
+	#Yenchih
+	set_province_name = {
+		id = 3745
+		name = "Yanchi"
+	}
+	#Chungning
+	set_province_name = {
+		id = 3742
+		name = "Zhongning"
+	}
+	#Tsingyuan
+	set_province_name = {
+		id = 12797
+		name = "Jingyuan"
+	}
+	#Sian
+	set_province_name = {
+		id = 7301
+		name = "Xi'an"
+	}
+	#Lanchow
+	set_province_name = {
+		id = 2022
+		name = "Lanzhou"
+	}
+	#Chengtu
+	set_province_name = {
+		id = 4925
+		name = "Chengdu"
+	}
+	#Chungking
+	set_province_name = {
+		id = 6999
+		name = "Chongqing"
+	}
+	#Fulin
+	set_province_name = {
+		id = 2067
+		name = "Luding"
+	}
+	#Kangting
+	set_province_name = {
+		id = 4999
+		name = "Kangding"
+	}
+	#Tali
+	set_province_name = {
+		id = 7965
+		name = "Dali"
+	}
+	#Sining
+	set_province_name = {
+		id = 12732
+		name = "Xining"
+	}
+	#Ningsia
+	set_province_name = {
+		id = 10724
+		name = "Ningxia"
+	}
+	#Kiuchuan
+	set_province_name = {
+		id = 2028
+		name = "Jiuquan"
+	}
+	#Tunhwang
+	set_province_name = {
+		id = 12820
+		name = "Dunhuang"
+	}
+	#Kweisui
+	set_province_name = {
+		id = 10424
+		name = "Guisui"
+	}
+	#Linho
+	set_province_name = {
+		id = 12880
+		name = "Linhe"
+	}
+	#Paotow
+	set_province_name = {
+		id = 13266
+		name = "Baotou"
+	}
+	#Pailingmiao
+	set_province_name = {
+		id = 4525
+		name = "Bailingmiao"
+	}
+	#Tengkow
+	set_province_name = {
+		id = 8055
+		name = "Dengkou"
+	}
+	#Paoting
+	set_province_name = {
+		id = 12026
+		name = "Baoding"
+	}
+	#Yentai
+	set_province_name = {
+		id = 1200
+		name = "Yantai"
+	}
+	#Yencheng
+	set_province_name = {
+		id = 7142
+		name = "Yancheng"
+	}
+	#Chüchow
+	set_province_name = {
+		id = 7174
+		name = "Quzhou"
+	}
+	#Hofei
+	set_province_name = {
+		id = 7222
+		name = "Hefei"
+	}
+	#Mowming
+	set_province_name = {
+		id = 12077
+		name = "Maoming"
+	}
+	#Kiungshan
+	set_province_name = {
+		id = 1038
+		name = "Qiongshan"
+	}
+	#Kweiyang
+	set_province_name = {
+		id = 10616
+		name = "Guiyang"
+	}
+	#Chikiang
+	set_province_name = {
+		id = 10335
+		name = "Zhijiang"
+	}
+	#Chengchow
+	set_province_name = {
+		id = 9958
+		name = "Zhengzhou"
+	}
+	#Mengtsz
+	set_province_name = {
+		id = 4501
+		name = "Mengzi"
+	}
+	#Puerh
+	set_province_name = {
+		id = 12262
+		name = "Puer"
+	}
+	#Wanhsien
+	set_province_name = {
+		id = 11865
+		name = "Wanxian"
+	}
+	#Nancheng
+	set_province_name = {
+		id = 4295
+		name = "Hanzhong"
+	}
+	#Tienshui
+	set_province_name = {
+		id = 7911
+		name = "Tianshui"
+	}
+	#Ipin
+	set_province_name = {
+		id = 11972
+		name = "Yibin"
+	}
+	#Sichang
+	set_province_name = {
+		id = 7294
+		name = "Xichang"
+	}
+	#Chamdo
+	set_province_name = {
+		id = 10856
+		name = "Changdu"
+	}
+	#Yenchih
+	set_province_name = {
+		id = 3745
+		name = "Yanchi"
+	}
+	#Tungsin
+	set_province_name = {
+		id = 6638
+		name = "Tongxin"
+	}
+	#Chengteh
+	set_province_name = {
+		id = 11801
+		name = "Chengde"
+	}
+	#Yingkow
+	set_province_name = {
+		id = 11764
+		name = "Yingkou"
+	}
+	#Kiamusze
+	set_province_name = {
+		id = 9623
+		name = "Jiamusi"
+	}
+	#Mutankiang
+	set_province_name = {
+		id = 11906
+		name = "Mudanjiang"
+	}
+	#Tairen
+	set_province_name = {
+		id = 1150
+		name = "Dalian"
+	}
+	#Paan
+	set_province_name = {
+		id = 12724
+		name = "Ba'an"
+	}
+    #Ngari
+	set_province_name = {
+		id = 10802
+		name = "A'li"
+	}
+	#Shigatse
+	set_province_name = {
+		id = 2014
+		name = "Rikaze"
+	}
+	#Lhasa
+	set_province_name = {
+		id = 5033
+		name = "Lasa"
+	}
+	#Hotan
+	set_province_name = {
+		id = 4973
+		name = "Hetian"
+	}
+	#Kashgar
+	set_province_name = {
+		id = 1766
+		name = "Kashi"
+	}
+	#Tihwa
+	set_province_name = {
+		id = 10674
+		name = "Dihua"
+	}
+	#Charkhlik
+	set_province_name = {
+		id = 2074
+		name = "Ruoqiang"
+	}
+	#Golmud
+	set_province_name = {
+		id = 10834
+		name = "Ge'ermu"
+	}
+	#Altay
+	set_province_name = {
+		id = 4823
+		name = "A'letai"
+	}
+	#Taipei
+	set_province_name = {
+		id = 7186
+		name = "Taibei"
+	}
+	#Kaohsiung
+	set_province_name = {
+		id = 12068
+		name = "Gaoxiong"
+	}
+	#Ili
+	set_province_name = {
+		id = 12601
+		name = "Yining"
+	}
+	#Tulan
+	set_province_name = {
+		id = 10750
+		name = "Dulan"
+	}
+	#Hankow
+	set_province_name = {
+		id = 7167
+		name = "Hankou"
+	}
+	#Wenchow
+	set_province_name = {
+		id = 1055
+		name = "Wenzhou"
+	}
+	#Kihsien
+	set_province_name = {
+		id = 13281
+		name = "Jixian"
+	}		
+}
+
+reset_city_names = {
+	clr_global_flag = city_names_switched
+
+	reset_province_name = 4506
+	reset_province_name = 4572
+	reset_province_name = 11771
+	reset_province_name = 4495
+	reset_province_name = 7545
+	reset_province_name = 10397
+	reset_province_name = 11822
+	reset_province_name = 9843
+	reset_province_name = 10068
+	reset_province_name = 12432
+	reset_province_name = 4190
+	reset_province_name = 1169
+	reset_province_name = 1069
+	reset_province_name = 10000
+	reset_province_name = 11931
+	reset_province_name = 11973
+	reset_province_name = 1029
+	reset_province_name = 11916
+	reset_province_name = 7568
+	reset_province_name = 1083
+	reset_province_name = 11913
+	reset_province_name = 10076
+	reset_province_name = 7191
+	reset_province_name = 9971
+	reset_province_name = 7199
+	reset_province_name = 4196
+	reset_province_name = 7071
+	reset_province_name = 1612
+	reset_province_name = 7101
+	reset_province_name = 4325
+	reset_province_name = 9938
+	reset_province_name = 9970
+	reset_province_name = 1047
+	reset_province_name = 1597
+	reset_province_name = 10404
+	reset_province_name = 1018
+	reset_province_name = 1070
+	reset_province_name = 11981
+	reset_province_name = 10459
+	reset_province_name = 12356
+	reset_province_name = 7208
+	reset_province_name = 8049
+	reset_province_name = 12156
+	reset_province_name = 10880
+	reset_province_name = 4939
+	reset_province_name = 3745
+	reset_province_name = 3742
+	reset_province_name = 12797
+	reset_province_name = 7301
+	reset_province_name = 2022
+	reset_province_name = 4925
+	reset_province_name = 6999
+	reset_province_name = 2067
+	reset_province_name = 4999
+	reset_province_name = 7965
+	reset_province_name = 12732
+	reset_province_name = 10724
+	reset_province_name = 2028
+	reset_province_name = 12820
+	reset_province_name = 10424
+	reset_province_name = 12880
+	reset_province_name = 13266
+	reset_province_name = 4525
+	reset_province_name = 8055
+	reset_province_name = 12026
+	reset_province_name = 1200
+	reset_province_name = 7142
+	reset_province_name = 7174
+	reset_province_name = 7222
+	reset_province_name = 12077
+	reset_province_name = 1038
+	reset_province_name = 10616
+	reset_province_name = 10335
+	reset_province_name = 9958
+	reset_province_name = 4501
+	reset_province_name = 12262
+	reset_province_name = 11865
+	reset_province_name = 4295
+	reset_province_name = 7911
+	reset_province_name = 11972
+	reset_province_name = 7294
+	reset_province_name = 10856
+	reset_province_name = 3745
+	reset_province_name = 6638
+	reset_province_name = 11801
+	reset_province_name = 11764
+	reset_province_name = 9623
+	reset_province_name = 11906
+	reset_province_name = 1150
+    reset_province_name = 12724
+	reset_province_name = 10802
+	reset_province_name = 2014
+	reset_province_name = 5033
+	reset_province_name = 4973
+	reset_province_name = 1766
+	reset_province_name = 10674
+	reset_province_name = 2074
+	reset_province_name = 10834
+	reset_province_name = 4823
+	reset_province_name = 7186
+	reset_province_name = 12068
+	reset_province_name = 12601
+	reset_province_name = 10750
+	reset_province_name = 7167
+	reset_province_name = 1055
+	reset_province_name = 13281	
+}

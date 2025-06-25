@@ -1,0 +1,118 @@
+spriteTypes = {
+	spriteType = {
+        name = "GFX_news_event_proclamation_of_prc_event"
+        texturefile = "gfx/event_pictures/proclamation_of_prc_event.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_old"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_old.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_first_plenary_session"
+        texturefile = "gfx/event_pictures/report_event_first_plenary_session.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_chiang_kai_shek_house"
+        texturefile = "gfx/event_pictures/report_event_chiang_kai_shek_house.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_lenient_landlord"
+        texturefile = "gfx/event_pictures/report_event_lenient_landlord.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_peoples_liberation_army"
+        texturefile = "gfx/event_pictures/report_event_peoples_liberation_army.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_mao_zedong_conference"
+        texturefile = "gfx/event_pictures/report_event_mao_zedong_conference.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_peoples_commune"
+        texturefile = "gfx/event_pictures/report_event_peoples_commune.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_chinese_widows"
+        texturefile = "gfx/event_pictures/report_event_chinese_widows.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_old_society"
+        texturefile = "gfx/event_pictures/report_event_old_society.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_mao_zedong_sitting"
+        texturefile = "gfx/event_pictures/report_event_mao_zedong_sitting.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_kmt_pow"
+        texturefile = "gfx/event_pictures/report_event_kmt_pow.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_puyi_reeducated"
+        texturefile = "gfx/event_pictures/report_event_puyi_reeducated.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_li_jishen"
+        texturefile = "gfx/event_pictures/report_event_li_jishen.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_1954_constitution"
+        texturefile = "gfx/event_pictures/report_event_1954_constitution.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_mao_tiananmen_square"
+        texturefile = "gfx/event_pictures/report_event_mao_tiananmen_square.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_zhou_enlai"
+        texturefile = "gfx/event_pictures/report_event_zhou_enlai.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_deng_with_zhou"
+        texturefile = "gfx/event_pictures/report_event_deng_with_zhou.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_puyi_in_camp"
+        texturefile = "gfx/event_pictures/report_event_puyi_in_camp.dds"
+    }
+	spriteType = {
+        name = "GFX_report_event_soong_qingling"
+        texturefile = "gfx/event_pictures/report_event_song_qingling.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_gao_gang"
+        texturefile = "gfx/event_pictures/report_event_gao_gang.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_gao_gang_rao_shushi"
+        texturefile = "gfx/event_pictures/report_event_gao_gang_rao_shushi.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_gao_gang_mao_zedong"
+        texturefile = "gfx/event_pictures/report_event_gao_gang_mao_zedong.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_gao_gang_with_soldiers"
+        texturefile = "gfx/event_pictures/report_event_gao_gang_with_soldiers.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_lin_biao"
+        texturefile = "gfx/event_pictures/report_event_lin_biao.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_pend_dehuai"
+        texturefile = "gfx/event_pictures/report_event_pend_dehuai.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_luo_ronghuan"
+        texturefile = "gfx/event_pictures/report_event_luo_ronghuan.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_gao_gang_speaking"
+        texturefile = "gfx/event_pictures/report_event_gao_gang_speaking.dds"
+    }
+    spriteType = {
+        name = "GFX_report_event_li_xiannian"
+        texturefile = "gfx/event_pictures/report_event_li_xiannian.dds"
+    }
+}

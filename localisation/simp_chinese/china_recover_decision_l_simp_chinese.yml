@@ -1,0 +1,92 @@
+﻿ l_simp_chinese:
+ CHINA_recover_waidongbei:0 "宣告外东北回归祖国"
+ CHINA_recover_waixibei:0 "宣告外西北回归祖国"
+ CHINA_recover_waimenggu:0 "宣告外蒙古回归祖国"
+ CHINA_recover_OKINAWA:0 "宣告琉球回归祖国"
+ CHINA_recover_tangnuwulianghai:0 "宣告唐努乌梁海回归祖国"
+ CHINA_recover_kuyedao:0 "宣告库页岛回归祖国"
+ CHINA_recover_zangnan:0 "宣告藏南回归祖国"
+ CHINA_recover_keshimier:0 "宣告勃律-拉达克回归祖国"
+ CHINA_recover_wahanzoulang:0 "宣告瓦罕走廊回归祖国"
+ CHINA_recover_motherland:0 "中华民族的历史领土"
+ CHINA_recover_motherland_desc:0 "自晚清以来，中华民族便饱受帝国主义列强的侵略与掠夺，期间无数的疆域领土更是被其侵占而去。如今随着中华民族再一次雄立于世界东方，我们必将收复所有失去的疆土。"
+ 
+ VICTORY_POINTS_4725:0 "布拉戈维申斯克"
+ VICTORY_POINTS_4677:0 "涅尔琴斯克"
+ VICTORY_POINTS_6989:0 "乌苏里斯克"
+ VICTORY_POINTS_12559:0 "尼古拉耶夫斯克"
+ nansaha:0 "南萨哈林斯克"
+ congling:0 "葱岭"
+ guerbanalimatu:0 "古尔班阿里玛图"
+ anxi:0 "安西"
+ zhungaer:0 "准噶尔"
+ suiyecheng:0 "碎叶城"
+
+ kulun:0 "库伦"
+ tangnu:0 "唐努乌梁海"
+ zangnan:0 "藏南"
+ liuqiu:0 "琉球"
+ shoulicheng:0 "首里城"
+ 
+ haishenwai:0 "海参崴"
+ boli:0 "伯力"
+ waixingan:0 "外兴安岭"
+ miaojie:0 "庙街"
+ hailanpao:0 "海兰泡"
+ nibuchu:0 "尼布楚"
+ beikuye:0 "北库页岛"
+ nankuye:0 "南库页岛"
+ shuangchengzi:0 "双城子"
+ 
+ bolv:0 "勃律"
+ ladake:0 "拉达克"
+ bolv_ladake:0 "勃律-拉达克"
+ wahanzoulang:0 "瓦罕走廊"
+ 
+ liuqiu_country:0 "琉球"
+ 
+ liuqiu_country_neutrality:0 "琉球王国"
+ liuqiu_country_neutrality_DEF:0 "琉球王国"
+ liuqiu_country_neutrality_ADJ:0 "琉球王国"
+ 
+ liuqiu_country_democratic:0 "琉球共和国"
+ liuqiu_country_democratic_DEF:0 "琉球共和国"
+ liuqiu_country_democratic_ADJ:0 "琉球共和国"
+ 
+ liuqiu_country_fascism:0 "琉球国"
+ liuqiu_country_fascism_DEF:0 "琉球国"
+ liuqiu_country_fascism_ADJ:0 "琉球国"
+ 
+ liuqiu_country_communism:0 "琉球人民共和国"
+ liuqiu_country_communism_DEF:0 "琉球人民共和国"
+ liuqiu_country_communism_ADJ:0 "琉球人民共和国"
+ 
+ liuqiu_to_be_established_tt:0 "§Y琉球人民将重建自己的国家并成为我们的附属国§!"
+ liuqiuwenti_idea:0 "整合琉球"
+ 
+ liuqiuwenti.1.t:0 "琉球问题再议"
+ liuqiuwenti.1.desc:0 "在经过了数十年的漂泊流浪后，如今琉球这片土地终于回到了她曾经的宗主的怀抱。而对于琉球的未来，许多人都有着不同的看法。"
+ liuqiuwenti.1.a:0 "琉球将正式成为中国的一份子"
+ liuqiuwenti.1.b:0 "宣告琉球复国"
+ 
+ liuqiuwenti.2.t:0 "琉球复国"
+ liuqiuwenti.2.desc:0 "随着第二次中日战争的结束，中日两国签订《中日冲绳协议》，日本放弃对琉球群岛的主权，将其交还予中国管理。1879年日本宣布琉球废藩置县，完成所谓的“琉球处分”，将琉球强行并入日本，设“冲绳”县，琉球王国覆亡。自琉球王国覆灭以来，大量琉球人流亡中国，开展“复国运动”，为推翻日本在琉球的残酷统治而奔走呼号。今天琉球终于回到了中国的怀抱，并在中国的帮助下重新复国，两国再一次回到了曾经那个“互为宗藩”的时代。"
+ liuqiuwenti.2.a:0 "请叫儿的乳名，叫我一声“琉球”......"
+ liuqiuwenti.2.b:0 "琉......什么球？"
+ 
+ POLITICS_shangyu_DESC:0 "尚裕(1918年9月18日-1996年8月30日) 是尚昌的长子，也是琉球国末代王世子尚典的孙子、末代国王尚泰王的曾孙。东京帝国大学文学部东洋史学科毕业。后任日本海军大尉。1923年其父尚昌病死后成为侯爵。"
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+ 

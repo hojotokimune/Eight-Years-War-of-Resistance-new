@@ -1,0 +1,12 @@
+areas = {
+	malaya = {
+		strategic_regions = {
+			188
+		}
+	}
+	just_japan = {
+		strategic_regions = {
+			154
+		}
+	}
+}

@@ -1,0 +1,11 @@
+is_potentially_communist_china = {
+	OR = {
+		original_tag = PRC
+		is_warlord = yes  #MODDED
+	}
+}
+
+is_current_communist_china = {
+	tag = event_target:WTT_communist_china
+}
+##############below removed, MODDEDDDD!!!!!!!!!(no infilt)

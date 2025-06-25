@@ -1,0 +1,512 @@
+ideas = {
+
+	country = {
+	CHI_zhengxue = {
+
+			name = CHI_zhengxue
+
+		    picture = CHI_xiongshihui
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                            political_power_factor = 0.15
+			}
+	}
+
+
+
+
+
+	CHI_zhengxue1 = {
+
+			name = CHI_zhengxue1
+
+		    picture = CHI_xiongshihui
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                            political_power_factor = 0.20
+			}
+	}
+
+
+
+
+
+
+	CHI_zhengxue2 = {
+
+			name = CHI_zhengxue2
+
+		    picture = CHI_xiongshihui
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                            political_power_factor = 0.25
+			}
+	}
+
+
+
+
+
+	CHI_huangpu = {
+
+			name = CHI_huangpu
+
+		    picture = CHI_heyingqin
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                   planning_speed = 0.10
+                    max_planning = 0.15
+			}
+	}
+
+
+
+
+
+
+
+	CHI_huangpu1 = {
+
+			name = CHI_huangpu1
+
+		    picture = CHI_heyingqin
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                   planning_speed = 0.15
+                    max_planning = 0.20
+			}
+	}
+
+
+
+
+
+
+
+	CHI_huangpu2 = {
+
+			name = CHI_huangpu2
+
+		    picture = CHI_heyingqin
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+	                     planning_speed = 0.20
+                         max_planning = 0.25
+			}
+	}
+
+
+
+
+
+
+
+
+
+
+
+	CHI_zhongyang = {
+
+			name = CHI_zhongyang
+
+		    picture = CHI_huzongnan
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                        supply_consumption_factor = -0.15
+			}
+	}
+
+
+
+
+
+
+
+
+
+	CHI_zhongyang1 = {
+
+			name = CHI_zhongyang1
+
+		    picture = CHI_huzongnan
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				                      supply_consumption_factor = -0.20
+			}
+	}
+
+
+
+
+
+
+
+
+	CHI_zhongyang2 = {
+
+			name = CHI_zhongyang2
+
+		    picture = CHI_huzongnan
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				                      supply_consumption_factor = -0.25
+			}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+	CHI_tumu = {
+
+			name = CHI_tumu
+
+		    picture = CHI_chencheng
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+                           dig_in_speed_factor = 0.20
+                           max_dig_in = 2
+			}
+	}
+
+
+
+
+
+
+
+
+
+	CHI_tumu1 = {
+
+			name = CHI_tumu1
+
+		    picture = CHI_chencheng
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+	                       dig_in_speed_factor = 0.25
+                          max_dig_in = 3
+			}
+	}
+
+
+
+
+
+
+
+
+	CHI_tumu2 = {
+
+			name = CHI_tumu2
+
+		    picture = CHI_chencheng
+			
+			
+			allowed = {
+			}
+
+			available = {
+				has_government = neutrality			
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				                       dig_in_speed_factor = 0.30
+				                       max_dig_in = 5
+			}
+	}
+
+
+
+
+
+
+
+
+
+	CHI_neiluan = {
+
+			name = CHI_neiluan
+
+		    picture = CHI_neiluan
+			
+			
+			allowed = {
+			}
+
+			available = {
+			}
+
+			cancel = {
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+				                          industrial_capacity_factory = -0.15
+				                           production_factory_max_efficiency_factor = -0.15
+			}
+	}
+
+        CHI_legacy_of_defense_of_the_great_wall = {
+			picture = PRC_youdaifulu
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {
+					is_ally_with = JAP
+					JAP = {
+						exists = no
+					}
+					JAP = {
+						is_subject = yes
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.25
+			    breakthrough_bonus_against = -0.2
+            }
+		}
+
+        CHI_digu = {
+			picture = PRC_youdaifulu
+			
+			allowed = {
+				always = no
+			}
+			
+			allowed_civil_war = {
+				always = yes
+			}
+
+			cancel = {
+				OR = {
+					is_ally_with = JAP
+					JAP = {
+						exists = no
+					}
+					JAP = {
+						is_subject = yes
+					}
+				}
+			}
+			
+			removal_cost = -1
+			
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.1
+				defense_bonus_against = -0.25
+			    breakthrough_bonus_against = -0.2
+            }
+		}
+
+	CHI_neiluan1 = {
+
+			name = CHI_neiluan1
+
+		    picture = CHI_neiluanmax
+			
+			
+			allowed = {
+			}
+
+            available = {
+ 			has_government = neutrality 
+            }
+
+            cancel = {
+			has_completed_focus = CHI_the_fall_of_mainland			
+            }
+
+			traits = {
+				minus_point_1_per_week
+			}
+
+			removal_cost = -1
+			
+			modifier = {
+            political_power_factor = -0.15			
+ 			stability_weekly = -0.008
+			industry_repair_factor = -0.5
+			production_speed_buildings_factor = -0.15
+			command_power_gain = -0.50
+			max_command_power = -100
+			local_resources_factor = -0.15
+			}
+	}
+
+
+
+
+		}	
+    }

@@ -1,0 +1,87 @@
+#########################################################################
+# OPINION MODIFIERS
+##########################################################################
+# value
+# min_trust
+# max_trust
+# decay
+# months/years/days = timer
+# trade = yes/no
+
+opinion_modifiers = {
+
+	CHI_PRC_fate_plus = {
+		value = 20
+	}
+	
+	CHI_PRC_fate_minus = {
+		value = -20
+	}
+
+	CHI_diplomacy_focus = {
+		value = 50
+	}
+
+	CHI_diplomatic_offensive_democratic = {
+		value = -40
+		months = 24
+	}
+	
+	CHI_diplomatic_offensive_communism = {
+		value = -20
+		months = 24
+	}
+	
+	CHI_diplomatic_offensive_fascism = {
+		value = -10
+		months = 24
+	}
+	
+	CHI_diplomatic_overtures = {
+		value = 20
+		months = 12
+	}
+	
+	CHI_AVG_chi = {
+		value = 40
+	}
+	
+	CHI_AVG_jap = {
+		value = -20
+	}
+	
+	CHI_subs_plus = {
+		value = 10
+		months = 12
+	}
+	
+	CHI_mediator = {
+		value = 20
+		months = 24
+	}
+	
+	CHI_no_peace = {
+		value = -20
+		months = 24
+	}
+	
+	CHI_revanchism_opinion = {
+		value = -20
+	}
+	
+	CHI_exodus = {
+		value = -100
+	}
+	
+	CHI_treaty_friendship = {
+		value = 20
+	}
+	
+	CHI_HARPO = {
+		value = 10
+	}
+	
+	CHI_criticism = {
+		value = -20
+	}
+}

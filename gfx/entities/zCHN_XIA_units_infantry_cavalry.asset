@@ -1,0 +1,81 @@
+
+		entity = {
+			name = "XIA_infantry_entity"
+			clone = "CHI_infantry_entity"
+		}	
+		
+		entity = {
+			name = "XIA_infantry_2_entity"
+			clone = "CHI_infantry_2_entity"
+		}
+		
+		entity = {
+			name = "XIA_infantry_weapon_mg_left_entity"
+			clone = "CHI_infantry_weapon_mg_left_entity"
+		}	
+		
+		entity = {
+			name = "XIA_infantry_weapon_mg_right_entity"
+			clone = "CHI_infantry_weapon_mg_right_entity"
+		}
+		
+		entity = {
+			name = "XIA_infantry_weapon_mg_long_idle_entity"
+			clone = "CHI_infantry_weapon_mg_long_idle_entity"
+		}	
+		
+		entity = {
+			name = "XIA_infantry_weapon_rifle_right_entity"
+			clone = "CHI_infantry_weapon_rifle_right_entity"
+		}	
+		
+		entity = {
+			name = "XIA_infantry_weapon_rifle_left_entity"
+			clone = "CHI_infantry_weapon_rifle_left_entity"
+		}
+		
+		entity = {
+			name = "XIA_infantry_weapon_rifle_long_idle_entity"
+			clone = "CHI_infantry_weapon_rifle_long_idle_entity"
+		}
+        
+                entity = {
+			name = "XIA_sabre_entity"
+			clone = "CHI_sabre_entity"
+		}
+		
+		entity = {
+			name = "XIA_sabre_holder_entity"
+			clone = "CHI_sabre_holder_entity"
+		}
+	
+		entity = {
+			name = "XIA_infantry_rider_entity"
+			clone = "CHI_infantry_rider_entity"
+		}
+		
+		entity = {
+			name = "XIA_cavalry_entity"
+			clone = "CHI_cavalry_entity"
+		}
+		
+		entity = {
+			name = "XIA_cavalry_rifle_combined_entity"
+			clone = "CHI_cavalry_rifle_combined_entity"
+			
+		}	
+		
+		entity = {
+			name = "XIA_infantry_2_rider_entity"
+			clone = "CHI_infantry_2_rider_entity"	
+		}
+		
+		entity = {
+			name = "XIA_cavalry_2_entity"
+			clone = "CHI_cavalry_2_entity"
+		}
+		
+		entity = {
+			name = "XIA_cavalry_2_combined_entity"
+			clone = "CHI_cavalry_2_combined_entity"		
+		}  

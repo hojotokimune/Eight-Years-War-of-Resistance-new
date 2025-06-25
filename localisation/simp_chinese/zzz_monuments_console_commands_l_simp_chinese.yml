@@ -1,0 +1,13 @@
+﻿l_simp_chinese:
+ d_monuments_console_commands_DESC: "列出的所有控制台命令§YEU4风格名胜§!mod。\n如果游戏没有在调试模式下运行，控制台将不显示日志。\n检查§Ygame.log§! 在这种情况下，将文件保存在logs文件夹中。\n用法：§Y名胜控制台命令§!"
+ d_monuments_debug_DESC: "启用或禁用的调试模式§YEU4风格名胜§! mod. \n当鼠标悬停在名胜上时，将显示其ID。\n用法：§Y名胜调试§!"
+ d_set_monument_level_DESC: "将处于选定状态的指定名胜设置为指定级别.\n用法：§Y设置_名胜_level <名胜 ID><level>§!\n必须在地图上选择一个州."
+ d_set_all_monument_levels_DESC: "将地图上的所有名胜设置为指定的标高。\n仅当游戏已在调试模式下运行时才有效。\n用法 §Y在所有等级设置<level>§!"
+ d_add_monument_DESC: "将指定的名胜添加到指定级别的选定状态。\n仅当游戏已在调试模式下运行时才有效。\n名胜只能存在于一个州。\n用法：§Y添加_名胜<名胜 ID><level>§!\n必须在地图上选择一个州。"
+ d_remove_monument_DESC: "从选定状态中删除指定的名胜。\n仅当游戏已在调试模式下运行时才有效。\n用法：§Y去除_名胜<名胜 ID>§!\n必须在地图上选择一个州。"
+ d_move_monuments_list_button_DESC: "移动按钮打开§Y全球古迹名录§!窗口. \n起始坐标为§Y0§!，§Y0§!.\n用法：§Y移动_名胜_列表_按钮<X><Y>§!"
+ d_update_global_monuments_list_DESC: "更新§Y全球古迹名录§!窗口,如果是开启的。\n用法：§Y更新_全球_名胜_列表§!"
+ d_set_up_monuments_DESC: "就像游戏开始时一样，树立名胜。已有古迹\n不会改变。\n如果添加了尚未在保存游戏中添加的新名胜，则可能会很有用。\n用法：§Y建_设_名胜§!"
+ d_get_monument_name_DESC: "返回指定ID的名胜的名称。\n用法：§Y得到_名胜_名称<ID>§!"
+ D_GET_MONUMENT_NAME_TT: "这个名胜的 id§Y[?args^0?1]§!称为:§C[This.GetMonumentNameOtherContext]§!"
+ d_get_all_monument_names_DESC: "打印所有现有纪念碑的名称和状态。\n仅当游戏已在调试模式下运行时才有效。\n用途：§Y把名胜的名字都记下来§!"

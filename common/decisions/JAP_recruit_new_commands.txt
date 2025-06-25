@@ -1,0 +1,1046 @@
+recall_imperial_japanese_army_taisyou = { 
+
+	recall_iwane_matsui = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            has_war = yes
+			NOT = { has_global_flag = kodoha_won }
+		}
+		custom_cost_trigger = {
+			command_power > 9
+		}
+		custom_cost_text = decision_cost_CP_10
+		complete_effect = {
+			add_command_power = -10
+			custom_effect_tooltip = recall_iwane_matsui
+			set_country_flag = recall_iwane_matsui
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 20
+			}
+			modifier = {
+				factor = 50
+				command_power > 49 
+			}			
+		}		
+	}
+}
+
+recruit_imperial_japanese_army_generals = { 
+
+#	recruit_masakazu_kawabe = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#           date > 1936.1.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#			custom_effect_tooltip = recruit_masakazu_kawabe
+#			set_country_flag = recruit_masakazu_kawabe
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+	
+#	recruit_seiichi_kita = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#           date > 1936.1.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#			custom_effect_tooltip = recruit_seiichi_kita
+#			set_country_flag = recruit_seiichi_kita
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+	
+#	recruit_sadamu_shimomura = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#           date > 1936.1.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#			custom_effect_tooltip = recruit_sadamu_shimomura
+#			set_country_flag = recruit_sadamu_shimomura
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+	
+#	recruit_teiichi_yoshimoto = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#           date > 1936.1.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#			custom_effect_tooltip = recruit_teiichi_yoshimoto
+#			set_country_flag = recruit_teiichi_yoshimoto
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+	
+#	recruit_heitaro_kimura = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#           date > 1936.7.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#			custom_effect_tooltip = recruit_heitaro_kimura
+#			set_country_flag = recruit_heitaro_kimura
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+
+#	recruit_shin_yoshida = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#           date > 1936.7.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#			custom_effect_tooltip = recruit_shin_yoshida
+#			set_country_flag = recruit_shin_yoshida
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+
+	recruit_takashi_sakai = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_takashi_sakai
+			set_country_flag = recruit_takashi_sakai
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_isamu_yokoyama = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_isamu_yokoyama
+			set_country_flag = recruit_isamu_yokoyama
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_jo_iimura = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_jo_iimura
+			set_country_flag = recruit_jo_iimura
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_harukichi_hyakutake = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_harukichi_hyakutake
+			set_country_flag = recruit_harukichi_hyakutake
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+	
+	recruit_kanji_ishiwara = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		    has_global_flag = kodoha_won
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_kanji_ishiwara
+			set_country_flag = recruit_kanji_ishiwara
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_mitsuru_ushijima = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_mitsuru_ushijima
+			set_country_flag = recruit_mitsuru_ushijima
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_kiichiro_higuchi = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_kiichiro_higuchi
+			set_country_flag = recruit_kiichiro_higuchi
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+			
+	recruit_hatazo_adachi = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_hatazo_adachi
+			set_country_flag = recruit_hatazo_adachi
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_masatane_kanda = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_masatane_kanda
+			set_country_flag = recruit_masatane_kanda
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_sosaku_suzuki = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_sosaku_suzuki
+			set_country_flag = recruit_sosaku_suzuki
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+	
+	recruit_akira_muto = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+				NOT = { has_country_flag = purged_by_kodoha }
+				NOT = {	has_country_flag = pro_axis_generals_purged }
+		}
+		available = {
+            date > 1939.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_akira_muto
+			set_country_flag = recruit_akira_muto
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+	
+	recruit_tadamichi_kuribayashi = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1940.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_tadamichi_kuribayashi
+			set_country_flag = recruit_tadamichi_kuribayashi
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+}
+
+recruit_imperial_japanese_navy_admirals = { 
+
+	recruit_jisaburo_ozawa = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1936.12.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_jisaburo_ozawa
+			set_country_flag = recruit_jisaburo_ozawa
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+	
+	recruit_gunichi_mikawa = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1936.12.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_gunichi_mikawa
+			set_country_flag = recruit_gunichi_mikawa
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_seiichi_ito = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.12.11
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_seiichi_ito
+			set_country_flag = recruit_seiichi_ito
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+	
+	recruit_takeo_takagi = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.11.15
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_takeo_takagi
+			set_country_flag = recruit_takeo_takagi
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_takeo_kurita = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.11.15
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_takeo_kurita
+			set_country_flag = recruit_takeo_kurita
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+
+	recruit_tamon_yamaguchi = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.11.15
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+			custom_effect_tooltip = recruit_tamon_yamaguchi
+			set_country_flag = recruit_tamon_yamaguchi
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+}
+
+recruit_ija_air_service_generals = {
+
+#	recruit_hayashi_kinoshita = {
+#		icon = generic_army_support
+#		fire_only_once = yes
+#		visible = {
+#		    original_tag = JAP
+#		}
+#		available = {
+#          date > 1936.1.1
+#		}
+#		custom_cost_trigger = {
+#			command_power > 4
+#		}
+#		custom_cost_text = decision_cost_CP_5
+#		complete_effect = {
+#			add_command_power = -5
+#           custom_effect_tooltip = available_theorist
+#           show_ideas_tooltip = hayashi_kinoshita
+#			set_country_flag = recruit_hayashi_kinoshita
+#		}
+#		ai_will_do = {
+#			factor = 1
+#
+#			modifier = {
+#				factor = 0  
+#				command_power < 10
+#			}
+#			modifier = {
+#				factor = 100
+#				command_power > 49 
+#			}
+#		}		
+#	}
+	
+	recruit_takeo_yasuda = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+		    custom_effect_tooltip = available_chief_of_airforce
+		    show_ideas_tooltip = takeo_yasuda
+			set_country_flag = recruit_takeo_yasuda
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+
+	recruit_michio_sugawara = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+		    custom_effect_tooltip = available_chief_of_airforce
+		    show_ideas_tooltip = michio_sugawara
+			set_country_flag = recruit_michio_sugawara
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+
+	recruit_yorimichi_suzuki = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+		    custom_effect_tooltip = available_chief_of_airforce
+		    show_ideas_tooltip = yorimichi_suzuki
+			set_country_flag = recruit_yorimichi_suzuki
+		}
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+	
+	recruit_kumaichi_teramoto = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1937.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+		    custom_effect_tooltip = available_military_high_command
+		    show_ideas_tooltip = kumaichi_teramoto
+			set_country_flag = recruit_kumaichi_teramoto
+	    }
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+	
+	recruit_hideyoshi_obata = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.1.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+		    custom_effect_tooltip = available_military_high_command
+		    show_ideas_tooltip = hideyoshi_obata
+			set_country_flag = recruit_hideyoshi_obata
+	    }
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}
+	
+	recruit_torashiro_kawabe = {
+		icon = generic_army_support
+		fire_only_once = yes
+		visible = {
+		    original_tag = JAP
+		}
+		available = {
+            date > 1938.7.1
+		}
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		custom_cost_text = decision_cost_CP_5
+		complete_effect = {
+			add_command_power = -5
+		    custom_effect_tooltip = available_military_high_command
+		    show_ideas_tooltip = torashiro_kawabe
+			set_country_flag = recruit_torashiro_kawabe
+	    }		
+		ai_will_do = {
+			factor = 1
+
+			modifier = {
+				factor = 0  
+				command_power < 10
+			}
+			modifier = {
+				factor = 100
+				command_power > 49 
+			}
+		}		
+	}	
+}

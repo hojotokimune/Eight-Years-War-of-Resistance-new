@@ -1,0 +1,84 @@
+add_namespace = ww2_news_event
+
+news_event = { #Friendship SOV
+	id = ww2_news_event.10
+	title = ww2_news_event.10.t
+	desc = ww2_news_event.10.desc
+	picture = GFX_news_event_sino_soviet_treaty
+	
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+	}
+	
+	option = {
+		name = ww2_news_event.10.a
+		trigger = {
+		    OR = {
+			    TAG = PRC
+				TAG = SOV
+			}
+		}
+	}
+	option = {
+		name = ww2_news_event.10.c
+		trigger = {
+		    NOT = {
+			    TAG = PRC
+				TAG = SOV
+			}
+		}
+	}
+}
+
+news_event = { #Sihang Warehouse
+	id = ww2_news_event.13
+	title = ww2_news_event.13.t
+	desc = ww2_news_event.13.desc
+	picture = GFX_news_event_sihang_warehouse
+	
+	major = yes
+	
+	trigger = {
+		CHI = {
+			has_war_with = JAP
+			NOT = {
+				controls_state = 613
+				has_global_flag = sihang_warehouse
+			}
+		}
+	}
+
+	immediate = {
+		set_global_flag = sihang_warehouse
+	}
+
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		name = ww2_news_event.13.a
+		trigger = {
+		    is_literally_china = yes
+			has_war_with = JAP
+		}
+	}
+	option = {
+		name = ww2_news_event.13.b
+		trigger = {
+		    TAG = JAP
+		}
+	}
+	option = {
+		name = ww2_news_event.13.c
+		trigger = {
+		    is_literally_china = no
+		    NOT = {
+			    TAG = JAP
+			}
+		}
+	}
+}

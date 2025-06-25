@@ -1,0 +1,2484 @@
+#NOT ALL OF THEM ARE EFM DECISIONS
+GXC_New_guangxi_clique = {
+
+	GXC_purchase_weapon_from_japan = {
+
+		icon = GFX_decision_generic_prepare_civil_war
+		
+		available = {
+			JAP = {
+				is_subject = no
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+
+		days_re_enable = 125
+		
+		fire_only_once = no
+
+		cost = 30
+		
+		ai_will_do = {
+			factor = 50
+		}
+	
+		visible = {
+		    has_country_flag = gxc_ally_jap_flag
+			NOT = {
+				has_war_with = JAP
+			}
+		}
+		
+		complete_effect = {
+		    add_equipment_to_stockpile = {
+				type = infantry_equipment
+				amount = 3000
+				producer = JAP 
+			}
+		    add_timed_idea = {
+				idea = GXC_payment
+				days = 125
+			}
+			JAP = {
+				add_timed_idea = {
+					idea = GXC_JAP_payment
+					days = 125
+				}
+			}
+		}	
+	}
+	
+	GXC_Emergency_mobilization = {
+
+		icon = eng_propaganda_campaigns
+		
+		available = {
+			OR = {
+				any_enemy_country = {
+					is_major = yes
+				}
+				event_target:WTT_current_china_leader = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		
+		fire_only_once = no
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 50
+		}
+		days_remove = 70
+		visible = {
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+		}
+		modifier = {
+			training_time_factor = -0.25
+			mobilization_speed = 0.25
+		}
+		cancel_trigger = {
+			has_war = no
+		}
+	}
+	GXC_Mobilize_the_militia = {
+
+		icon = generic_military
+		
+		custom_cost_trigger = {
+			command_power > 24
+		}
+		
+		custom_cost_text = cp_at_least_25
+		
+		days_re_enable = 90
+		
+		available = {
+			OR = {
+			    has_war = yes
+				has_global_flag = liangguang_on_going
+			}
+			any_owned_state = {
+				is_controlled_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = is_in_strat_248
+					region = 248
+				}
+			}
+			has_stability > 0.09
+			hidden_trigger = {
+				command_power > 24
+			}
+		    has_manpower > 35999
+		    #custom_trigger_tooltip = {
+			#	tooltip = less_than_108_batt_militia_tt #27 divsions at most, then can only recruit one by one to 36 divisions
+			#	check_variable = {
+			#		Root.num_battalions_with_type@militia < 108
+			#	}
+			#}
+		}
+		
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 1000
+		    modifier = {
+			    factor = 0
+				has_stability < 0.3
+			}
+		}
+		
+		days_remove = 14
+		visible = {
+			check_variable = {
+				Root.num_battalions_with_type@militia < 90
+			}
+			hidden_trigger = {
+				NOT = {
+					has_country_flag = mintuan_3
+				}
+			}
+		}
+		remove_effect = {
+			#set_global_flag = GXC_mintuan_1_flag
+			#set_global_flag = {
+            #    flag = have_mintuan_flag
+            #    days = 180
+            #    value = 1
+            #}
+			if = {
+				limit = {
+					has_country_flag = mintuan_2
+					NOT = {
+						has_country_flag = mintuan_3
+					}
+				}
+				set_country_flag = mintuan_3
+			}
+			if = {
+				limit = {
+					has_country_flag = mintuan_1
+					NOT = {
+						has_country_flag = mintuan_2
+					}
+				}
+				set_country_flag = mintuan_2
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = mintuan_1
+					}
+				}
+				set_country_flag = mintuan_1
+			}
+			custom_effect_tooltip = GXC_Mobilize_the_militia_tt
+			custom_effect_tooltip = GXC_Mobilize_the_militia_3_times_tt
+			add_stability = -0.1
+			hidden_effect = { add_command_power = -25 }
+			hidden_effect = {
+					random_owned_controlled_state = {
+						limit = {
+							region = 248
+						}
+						    create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+							create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+							create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+					}
+					random_owned_controlled_state = {
+						    limit = {
+							    region = 248
+						    }
+						    create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+							create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+					}
+					random_owned_controlled_state = {
+						limit = {
+							region = 248
+						}
+						    create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+							create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+							create_unit = {
+								division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+								owner = GXC
+						    }
+					}
+					random_owned_controlled_state = {
+						limit = {
+							region = 248
+						}	
+						    create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+							create_unit = {
+									division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+									owner = GXC
+							}
+					}
+				}
+		}
+		complete_effect = {
+			#add_manpower = -48000
+			#custom_effect_tooltip = GXC_Mobilize_the_militia_tt
+		}
+		modifier = {
+			conscription_factor = -0.45
+		}
+		cancel_trigger = {
+			OR = {
+				AND = {
+                    has_war = no
+                    NOT = {
+				        has_global_flag = liangguang_on_going
+			        }
+				}
+			    all_owned_state = {
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_248
+						region = 248
+					}
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				} 
+			}		
+		}
+	}
+	
+	GXC_Mobilize_the_militia_2 = {
+
+		icon = generic_military
+		
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		
+		custom_cost_text = decision_cost_CP_5
+		
+		days_re_enable = 21
+		
+		available = {
+			OR = {
+			    has_war = yes
+				has_global_flag = liangguang_on_going
+			}
+		    has_stability > 0
+			any_owned_state = {
+				is_controlled_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = is_in_strat_248
+					region = 248
+				}
+			}
+			hidden_trigger = {
+				command_power > 4
+			}
+		    #has_manpower > 3999
+		    custom_trigger_tooltip = {
+				tooltip = over_107_batt_militia_tt 
+				check_variable = {
+					Root.num_battalions_with_type@militia > 107
+				}
+			}
+		    custom_trigger_tooltip = {
+				tooltip = less_than_144_batt_militia_tt 
+				check_variable = {
+					Root.num_battalions_with_type@militia < 144
+				}
+			}
+		}
+		
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 1000
+		    modifier = {
+			    factor = 0
+				has_stability < 0.3
+			}
+		}
+		
+		days_remove = 5
+		visible = {
+			always = no #for balance
+			custom_trigger_tooltip = {
+				tooltip = over_107_batt_militia_tt 
+				check_variable = {
+					Root.num_battalions_with_type@militia > 107
+				}
+			}
+		}
+		remove_effect = {
+			#set_global_flag = GXC_mintuan_1_flag
+			#set_global_flag = {
+            #    flag = have_mintuan_flag
+            #    days = 180
+            #    value = 1
+            #}
+			custom_effect_tooltip = GXC_Mobilize_the_militia_2_tt
+			add_stability = -0.01
+			hidden_effect = { add_command_power = -5 }
+			hidden_effect = {
+				random_owned_controlled_state = {
+					limit = {
+						region = 248
+					}
+					create_unit = {
+						division = "division_template = \"Mint'uan\" start_experience_factor = 0.0"
+						owner = GXC
+					}
+				}
+			}
+		}
+		complete_effect = {
+			#add_manpower = -48000
+			#custom_effect_tooltip = GXC_Mobilize_the_militia_2_tt
+		}
+		modifier = {
+			conscription_factor = -0.05
+		}
+		cancel_trigger = {
+			OR = {
+				AND = {
+                    has_war = no
+                    NOT = {
+				        has_global_flag = liangguang_on_going
+			        }
+				}
+			    all_owned_state = {
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_248
+						region = 248
+					}
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				} 
+			}	
+		}
+	}
+	
+	GXC_Mobilize_the_irregular = {
+        #anhui only
+		icon = GFX_decision_generic_reorganize_irregulars
+		
+		custom_cost_trigger = {
+			command_power > 4
+		}
+		
+		custom_cost_text = decision_cost_CP_5
+		
+		days_re_enable = 30
+		
+		available = {
+			has_war_with = JAP
+			any_owned_state = {
+				is_controlled_by = ROOT
+				custom_trigger_tooltip = {
+					tooltip = is_in_strat_247
+					region = 247
+				}
+			}
+			hidden_trigger = {
+				command_power > 4
+			}
+		    check_variable = { ROOT.anhui_irregular < 16 }
+		}
+		
+		fire_only_once = no
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		
+		days_remove = 5
+		visible = {
+			check_variable = { ROOT.anhui_irregular < 16 }
+			has_completed_focus = GXC_anti_japan_peoples_self_defense_army
+			has_template = "Fei Chêngkuei Chün"
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					region = 247
+				}
+				create_unit = {
+					division = "division_template = \"Fei Chêngkuei Chün\" start_experience_factor = 0.1"
+					owner = GXC
+				}
+			}
+			add_to_variable = { var = anhui_irregular value = 1 }
+			hidden_effect = { add_command_power = -5 }
+		}
+		complete_effect = {
+		}
+		modifier = {
+			industrial_capacity_factory = -0.15
+			conscription_factor = -0.05
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = {
+					has_war_with = JAP
+				}
+			    all_owned_state = {
+					custom_trigger_tooltip = {
+						tooltip = is_in_strat_247
+						region = 247
+					}
+					NOT = {
+						is_controlled_by = ROOT
+					}
+				}
+			} 
+		}
+	}
+	
+	GXC_Disband_the_militia = {
+
+		icon = GFX_decision_generic_disband_irregulars
+		
+		available = {
+		    custom_trigger_tooltip = {
+				tooltip = over_1_batt_militia_tt
+				check_variable = {
+					Root.num_battalions_with_type@militia > 0
+				}
+			}
+			has_war = no
+		}
+		
+		visible = {
+			has_template = "Mint'uan"
+		}
+
+		cancel_if_not_visible = yes
+		
+		ai_will_do = {
+			factor = 0
+			modifier = {
+			    add = 3000
+			    has_war = no
+				NOT = { has_global_flag = liangguang_on_going }
+			}
+		}
+		
+		days_remove = 30
+		
+		remove_effect = {
+			delete_units = {
+                division_template = "Mint'uan"
+                disband = yes #will refund equipment and manpower
+			}
+			clr_country_flag = mintuan_1
+			clr_country_flag = mintuan_2
+			clr_country_flag = mintuan_3
+		}
+	}
+	GXC_Strengthen_the_baojia_system = {
+
+		icon = generic_arrest
+		
+		available = {
+			OR = {
+				communism > 0.2
+				has_stability < 0.5
+			}
+			NOT = {
+				has_government = communism
+			}
+		}
+		
+		fire_only_once = no
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 2000
+		}
+		
+		days_remove = 30
+		
+		visible = {
+			NOT = {
+				has_completed_focus = GXC_Li_jishen_return
+				has_government = communism
+			}
+		}
+		remove_effect = {
+			if = {
+					limit = {
+							communism > 0.2
+							has_stability < 0.5
+						}
+					add_stability = 0.08
+					add_popularity = {
+							ideology = communism
+							popularity = -0.05
+						}
+				}
+			else_if = {
+					limit = {
+							communism < 0.2
+							has_stability < 0.5
+						}
+					add_stability = 0.08
+				}
+			else_if = {
+					limit = {
+							communism > 0.2
+							has_stability > 0.5
+						}
+					add_popularity = {
+							ideology = communism
+							popularity = -0.05
+						}
+				}
+			else = {
+				add_stability = 0.08
+			}
+		}
+		complete_effect = {
+		}
+		modifier = {
+		}
+		cancel_trigger = {
+		}
+	}
+    GXC_expand_territory = {
+
+		icon = generic_nationalism
+		
+		available = {
+			is_in_faction_with = event_target:WTT_current_china_leader
+			has_war_together_with = event_target:WTT_current_china_leader
+		    any_enemy_country = {
+				tag = JAP
+			}
+		}
+		
+		fire_only_once = yes
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1000
+		}
+		days_remove = 70
+		visible = {
+		    always = no 
+			is_in_faction_with = event_target:WTT_current_china_leader
+			has_war_together_with = event_target:WTT_current_china_leader
+			NOT = { has_global_flag = CHI_no_longer_united_flag }
+		    has_completed_focus = GXC_Establish_the_fourth_theater
+		    event_target:WTT_current_china_leader = { 
+			    OR = {
+				    owns_state = 606 
+			        owns_state = 749
+			    }
+			}
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+		    event_target:WTT_current_china_leader = {
+				country_event = gxc.16
+			}
+			custom_effect_tooltip = if_they_accept_green
+			custom_effect_tooltip = will_get_anhui_tt
+		}
+		modifier = {
+			
+		}
+		cancel_trigger = {
+			NOT = { 
+			    is_in_faction_with = event_target:WTT_current_china_leader
+			    has_war_together_with = event_target:WTT_current_china_leader
+			}
+		
+		}
+	}
+}
+
+GXC_Order_foreign_fighters = {
+
+	GXC_Order_foreign_fighters = {
+
+		icon = generic_air
+		
+		available = {
+			FROM = {
+				exists = yes
+				is_subject = no
+				has_civil_war = no
+				has_capitulated = no
+				NOT = {
+					has_war_with = ROOT
+				}
+				has_opinion = {
+					target = ROOT
+					value > 24
+				}
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				is_major = yes
+			}
+		}
+		
+		fire_only_once = no
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 0.1
+			modifier = {
+				factor = 0.5
+				OR = {
+					FROM = { tag = ENG }
+					FROM = { tag = JAP }
+				}
+			}
+		}
+		days_remove = 120
+		days_re_enable = 120
+		visible = {
+			tag = ROOT
+			FROM = {
+				OR = {
+					tag = JAP
+					tag = ENG
+					tag = USA
+					tag = FRA
+					tag = GER
+					tag = ITA
+					#tag = SOV
+				}
+				is_major = yes
+				has_capitulated = no
+				NOT = {
+					has_government = communism
+				}
+			}
+			NOT = {
+				has_war_with = FROM
+			}
+		}
+		remove_effect = {
+			if = {
+				limit = {
+					FROM = { tag = JAP }
+				}
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = 5 producer = JAP }
+			}
+			else_if = {
+				limit = {
+					FROM = { tag = ENG }
+				}
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = 5 producer = ENG }
+			}
+			else_if = {
+				limit = {
+					FROM = { tag = USA }
+				}
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = 5 producer = USA }
+			}
+			else_if = {
+				limit = {
+					FROM = { tag = FRA }
+				}
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = 5 producer = FRA }
+			}
+			else_if = {
+				limit = {
+					FROM = { tag = GER }
+				}
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = 5 producer = GER }
+			}
+			else_if = {
+				limit = {
+					FROM = { tag = ITA }
+				}
+				add_equipment_to_stockpile = { type = small_plane_airframe amount = 5 producer = ITA }
+			}
+		}
+		complete_effect = {
+		}
+		modifier = {
+			consumer_goods_factor = 0.4
+		}
+		cancel_trigger = {
+			FROM = {
+				OR = {
+					exists = no
+					is_subject = yes
+					has_civil_war = yes
+					has_capitulated = yes
+					has_war_with = ROOT
+				}
+			}
+		}
+	}
+}
+
+EFM_North_china_buffer_state_strategy = {
+
+	SHX_Exclude_influences_of_kwantung_army = {
+
+		icon = generic_political_discourse
+		
+		available = {
+			NOT = { is_subject_of = JAP }
+		}
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+
+		cost = 100
+
+		visible = {
+			tag = ROOT
+			has_idea = SHX_Kwantung_army_special_agent_mechanism
+		}
+		is_good = yes
+		
+		days_remove = 365
+
+		complete_effect = {
+		}
+		
+		remove_effect = {
+			country_event = { id = EFM_Shanxi.16 }
+			custom_effect_tooltip = SHX_Exclude_influences_of_kwantung_army_tt
+		}
+		cancel_trigger = {
+			is_subject_of = JAP
+		}
+	}
+	SHX_Kwantung_army_incident = {
+
+		icon = generic_prepare_civil_war
+		
+		selectable_mission = no
+		is_good = no
+		fire_only_once = yes
+		
+		available = {
+			NOT = { has_idea = SHX_Kwantung_army_special_agent_mechanism }
+		}
+		days_mission_timeout = 60
+		
+		activation = {
+			tag = ROOT
+			has_idea = SHX_Kwantung_army_special_agent_mechanism
+			fascism > 0.3
+			JAP = {
+					NOT = { has_government = communism }
+				}
+		}
+
+		visible = {
+		}
+		timeout_effect = {
+			country_event = { id = EFM_Shanxi.21 }
+			effect_tooltip = {
+				JAP = { puppet = ROOT }
+			}
+		}
+		complete_effect = {
+		}
+		remove_trigger = {
+		}
+		cancel_trigger = {
+			OR = {
+				NOT = { has_idea = SHX_Kwantung_army_special_agent_mechanism }
+				JAP = {
+					has_government = communism
+				}
+			}
+		}
+	}
+	SHX_Promote_in_a_north_china_force = {
+
+		icon = generic_political_discourse
+		
+		available = {
+			FROM = {
+				has_stability > 0.5
+				NOT = {
+					has_war_with = ROOT
+					is_subject_of = ROOT
+					is_subject_of = JAP
+					is_subject_of = MAN
+				}
+			}
+			NOT = { has_country_flag = SHX_Propaganda_autonomous_movement }
+		}
+		
+		ai_will_do = {
+			factor = 2
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = HPC
+					tag = SHD
+				}
+			}
+		}
+
+		cost = 25
+
+		visible = {
+			tag = ROOT
+			has_completed_focus = SHX_Lead_independent_movement
+			FROM = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+					is_subject_of = ROOT
+					is_subject_of = JAP
+					is_subject_of = MAN
+				}
+			}
+		}
+		is_good = yes
+		
+		days_remove = 70
+
+		complete_effect = {
+			set_country_flag = SHX_Propaganda_autonomous_movement
+			FROM = { add_ideas = SHX_Propaganda_autonomous_movement }
+		}
+		
+		modifier = {
+			political_power_gain = -0.1
+		}
+		
+		remove_effect = {
+			clr_country_flag = SHX_Propaganda_autonomous_movement
+			FROM = { remove_ideas = SHX_Propaganda_autonomous_movement }
+			random_list = {
+					70 = {
+						}
+					30 = {
+							FROM = {
+									country_event = { id = EFM_Shanxi.34 }
+								}
+						}
+				}
+		}
+		remove_trigger = {
+			OR = {
+				is_subject = yes
+				FROM = {
+					is_subject_of = ROOT
+				}
+			}
+		}
+		cancel_trigger = {
+		}
+	}
+	SHX_Pressure_on_a_north_china_force_to_join = {
+
+		icon = generic_civil_support
+		
+		fire_only_once = yes
+		
+		available = {
+			FROM = {
+				has_stability < 0.5
+				NOT = {
+					has_war_with = ROOT
+					is_subject_of = ROOT
+					is_subject_of = JAP
+					is_subject_of = MAN
+				}
+			}
+		}
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = HPC
+					tag = SHD
+				}
+			}
+		}
+
+		cost = 0
+
+		visible = {
+			tag = ROOT
+			has_completed_focus = SHX_Lead_independent_movement
+			FROM = {
+				exists = yes
+				NOT = {
+					has_war_with = ROOT
+					is_subject_of = ROOT
+					is_subject_of = JAP
+					is_subject_of = MAN
+				}
+			}
+		}
+		is_good = yes
+		
+		days_remove = 0
+
+		complete_effect = {
+			FROM = { country_event = { id = EFM_Shanxi.35 } }
+		}
+		
+		remove_effect = {
+		}
+		cancel_trigger = {
+		}
+	}
+
+}
+
+SHX_Model_warlord = {
+
+	SHX_Improve_infrastructure = {
+
+		icon = generic_construction	
+		
+		available = {
+		    any_owned_state = {
+				is_controlled_by = ROOT
+		        free_building_slots = {
+					building = infrastructure
+					size > 1
+				}
+				is_in_home_area = yes
+			}
+		}
+		
+		fire_only_once = no
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		days_remove = 90
+		days_re_enable = 150
+		visible = {
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					free_building_slots = {
+						building = infrastructure
+						size > 1
+					}
+					OR = {
+						is_in_home_area = yes
+						NOT = {
+							owner = {
+								any_owned_state = {
+									free_building_slots = {
+										building = infrastructure
+										size > 1
+									}
+									is_in_home_area = yes
+								}
+							}
+						}
+					}
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		complete_effect = {
+		}
+		modifier = {
+			political_power_gain = -0.1
+		}
+		cancel_trigger = {
+		}
+	}
+	SHX_Promote_business_development = {
+
+		icon = generic_construction	
+		
+		available = {
+		}
+		
+		fire_only_once = no
+
+		cost = 50
+		
+		ai_will_do = {
+			factor = 0.1
+		}
+		days_remove = 75
+		days_re_enable = 180
+		visible = {
+		    always = no ###disabled
+		}
+		remove_effect = {
+			random_owned_controlled_state = {
+				limit = {
+					is_core_of = ROOT 	
+					is_fully_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 1
+						include_locked = yes
+					}
+				}
+				add_extra_state_shared_building_slots = 1
+				add_building_construction = {
+					type = industrial_complex
+					level = 1
+					instant_build = yes
+				}
+			}
+		}
+		complete_effect = {
+		}
+		modifier = {
+			political_power_gain = -0.25
+		}
+		cancel_trigger = {
+		}
+	}
+}
+
+SHX_NW_industrial = {
+
+	SHX_steel_mill = { #1937 Q3
+
+		icon = steel
+		
+		fire_only_once = no
+
+		cost = 80
+		
+		available = {
+			has_idea = northwest_industrial_company
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		highlight_states = {
+			highlight_state_targets = {
+				state = 615
+			}
+		}
+		
+		visible = {
+			has_idea = northwest_industrial_company
+			615 = {
+				NOT = {
+					has_state_flag = shx_steel_mill_flag
+				}
+			}
+		}
+		
+		#days_remove = 455
+		days_remove = 120
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = { 
+			custom_effect_tooltip = available_industrial_concern
+			show_ideas_tooltip = northwest_steelworks
+			615 = { set_state_flag = shx_steel_mill_flag } 
+			615 = {
+				add_resource = {
+					type = steel
+					amount = 12
+				}
+			}
+		}
+		
+		complete_effect = {
+		}
+		cancel_trigger = {
+		    NOT = {
+				has_idea = northwest_industrial_company
+			}
+		}
+	    
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	SHX_manufactory = { #西北製造廠 1936/9
+
+		icon = generic_construction	
+		
+		fire_only_once = no
+
+		cost = 80
+		
+		available = {
+			has_idea = northwest_industrial_company
+			num_of_civilian_factories_available_for_projects > 0
+		    615 = {
+				NOT = {
+					has_state_flag = shx_manufactory_flag
+				}
+			}
+		}
+		
+		
+		visible = {
+			always = no ##
+			has_idea = northwest_industrial_company
+		}
+		
+		days_remove = 200
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = { 
+			#add a buff here
+			615 = { set_state_flag = shx_manufactory_flag }
+		}
+		
+		complete_effect = {
+		}
+		cancel_trigger = {
+			NOT = {
+				has_idea = northwest_industrial_company
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	} 
+    SHX_textile_mill = { #西北紡織廠 日期未知
+
+		icon = generic_construction	
+		
+		fire_only_once = yes
+
+		cost = 80
+		
+		available = {
+			#has_capitulated = no 
+			has_idea = northwest_industrial_company
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		
+		
+		visible = {
+			has_capitulated = no 
+		}
+		
+		#days_remove = 180
+		days_remove = 120
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = { 
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		
+		complete_effect = {
+		}
+		cancel_trigger = {
+		    NOT = {
+				has_idea = northwest_industrial_company
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	SHX_second_coal_plant = { #西北煤礦第二廠 #1936/9
+
+		icon = generic_construction	
+		
+		fire_only_once = yes
+
+		cost = 80
+		
+		available = {
+			#has_capitulated = no
+			has_idea = northwest_industrial_company
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		
+		
+		visible = {
+			has_capitulated = no
+		}
+		
+		#days_remove = 200
+
+		days_remove = 120
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = { 
+			add_offsite_building = {
+				type = industrial_complex
+				level = 1
+			}
+		}
+		
+		complete_effect = {
+		}
+		cancel_trigger = {
+		    NOT = {
+				has_idea = northwest_industrial_company
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	SHX_machine_repair_plant = { #西北機器修理廠 #1937/2
+
+		icon = generic_construction	
+		
+		fire_only_once = yes
+
+		cost = 80
+		
+		available = {
+			#owns_state = 615
+			#controls_state = 615
+			has_idea = northwest_industrial_company
+			num_of_civilian_factories_available_for_projects > 0
+		}
+		
+		
+		visible = {
+			has_idea = northwest_industrial_company
+		    615 = {
+				NOT = {
+					has_state_flag = shx_machine_repair_plant_flag
+				}
+			}
+		}
+		
+		#days_remove = 365
+		days_remove = 120
+		
+		modifier = {
+			civilian_factory_use = 1
+		}
+		
+		remove_effect = { 
+			#add a buff here
+			615 = {
+				set_state_flag = shx_machine_repair_plant_flag
+			}
+			add_offsite_building = {
+				type = arms_factory
+				level = 1
+			}
+		}
+		
+		complete_effect = {
+		}
+		cancel_trigger = {
+		    NOT = {
+				has_idea = northwest_industrial_company
+			}
+		}
+		
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
+
+
+SHX_secure_regime = {
+
+	SHX_never_surrender = { 
+		
+		fire_only_once = yes
+
+		cost = 20
+		
+		available = {
+			has_war_with = JAP
+		    has_capitulated = no
+		}
+		
+		visible = {
+			always = no ###
+		}	
+		
+        days_remove = 2900
+
+		modifier = {
+			surrender_limit = 0.95
+		}
+		
+        cancel_trigger = {
+		    NOT = { 
+				has_war_with = JAP
+			}
+		}
+
+		complete_effect = { 
+			
+		}
+	    
+		ai_will_do = {
+			factor = 100
+		}
+	}
+	
+	SHX_move_captial = { 
+		
+		fire_only_once = no
+
+		cost = 50
+		
+		available = {
+			has_war_with = JAP
+			NOT = {
+				has_full_control_of_state = 615
+			}
+			owns_state = 1027
+			controls_state = 1027
+		}
+		
+		visible = {
+			1027 = {
+				is_capital = no 
+			}
+			owns_state = 1027
+			controls_state = 1027
+			always = no
+		}	
+		
+		complete_effect = { 
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SHX_move_captial_flag
+					}
+				}
+			    add_victory_points = {
+					province = 1575
+					value = 3
+				}
+				615 = {
+					set_state_flag = we_will_help_the_legit_government
+	                add_dynamic_modifier = { modifier = anti_partisan_area }
+				}
+			}
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = SHX_move_captial_flag
+					}
+				}
+				set_country_flag = SHX_move_captial_flag
+			}
+			set_capital = { state = 1027 }
+		}
+	    
+		ai_will_do = {
+			factor = 2000
+		}
+	}
+
+	SHX_fortify_south = { 
+		
+		fire_only_once = yes
+
+		cost = 0
+
+		custom_cost_trigger = {
+			num_of_civilian_factories > 2
+		}
+		
+		custom_cost_text = 3_civies
+		
+		available = {
+			hidden_trigger = {
+				num_of_civilian_factories > 1
+			}
+			has_completed_focus = SHX_move_capital
+			has_war_with = JAP
+		}
+		
+        modifier = {
+			civilian_factory_use = 3
+		}
+
+        days_remove = 15
+
+		visible = {
+			owns_state = 998
+			controls_state = 998
+		}	
+		
+        remove_trigger = {
+			NOT = {
+				controls_state = 998
+			}
+		}
+
+		complete_effect = { 
+			998 = {
+				#add_dynamic_modifier = { modifier = suiyuan_stronghold_JAP scope = JAP }
+				add_building_construction = {
+					type = bunker
+					level = 2
+					province = 1531
+					instant_build = yes
+				}
+			}
+		}
+	    
+		ai_will_do = {
+			factor = 6000
+		}
+	}
+
+	SHX_move_captial_back = { 
+		
+		fire_only_once = no 
+
+		cost = 0
+		
+		available = {
+			has_full_control_of_state = 615
+			owns_state = 615
+		}
+		
+		visible = {
+			615 = {
+				is_capital = no 
+			}
+		}	
+		
+		complete_effect = { 
+			set_capital = { state = 615 }
+		}
+	    
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	SHX_space_for_time_decision = { #probably done not sure
+		icon = infiltrate_state
+		#fixed_random_seed = no
+		#fire_only_once = yes
+		days_remove = 120 #MODDED #longer than central's
+		#days_re_enable = 5 # Will show up in the interface and can be selected again after 5 days
+		#cost = 20
+		custom_cost_trigger = {
+			num_of_civilian_factories > 2
+		}
+		custom_cost_text = 3_civies
+		visible = { #can see
+			NOT = {
+				has_global_flag = shx_space_for_time_done_flag
+			}
+		}
+		available = { #can do
+			#has_completed_focus = SHX_Three_eggs
+			has_war_with = JAP
+			any_owned_state = {
+				is_controlled_by = ROOT
+				region = 143
+				OR = {
+					arms_factory > 0
+					industrial_complex > 0
+				}
+				NOT = {
+					state = 998
+					state = 1017
+				}
+			}
+			any_owned_state = {
+				is_controlled_by = ROOT
+				OR = {
+					state = 998
+					state = 1017
+				}
+				free_building_slots = {
+					building = industrial_complex
+					size > 0
+					include_locked = yes
+				}
+				free_building_slots = {
+					building = arms_factory
+					size > 0
+					include_locked = yes
+				}
+			}
+			hidden_trigger = {
+				num_of_civilian_factories > 2 #MODDED
+			}
+		}
+		complete_effect = { #run effect on selection
+			random_owned_controlled_state = {
+				limit = {
+					is_controlled_by = ROOT
+					region = 143
+					OR = {
+						arms_factory > 0
+						industrial_complex > 0
+					}
+					NOT = {
+						state = 998
+						state = 1017
+					}
+				}
+				set_variable = {
+					Root.SFT_industrial_complex_level = This.industrial_complex_level
+				}
+				set_variable = {
+					Root.SFT_arms_factory_level = This.arms_factory_level
+				}
+				if = { # max of 1 at a time
+					limit = {
+						check_variable = { Root.SFT_industrial_complex_level > 1 }
+					}
+					set_variable = {
+						SFT_industrial_complex_level = 1
+					}
+				}
+				if = {
+					limit = {
+						check_variable = { Root.SFT_arms_factory_level > 1 }
+					}
+					set_variable = {
+						SFT_arms_factory_level = 1
+					}
+				}
+				remove_building = {
+					type = arms_factory
+					level = This.arms_factory_level
+				}
+				remove_building = {
+					type = industrial_complex
+					level = This.industrial_complex_level
+				}
+			}
+		}
+		remove_trigger = { #will run remove effect and abort
+
+		}
+		remove_effect = { #run effect when removed/finished
+			#set_global_flag = space_for_time_done_flag
+			random_owned_state = {
+				limit = {		
+					region = 143
+					is_controlled_by = ROOT
+					free_building_slots = {
+						building = industrial_complex
+						size > 0
+						include_locked = yes
+					}
+					free_building_slots = {
+						building = arms_factory
+						size > 0
+						include_locked = yes
+					}
+					OR = {
+						state = 998
+						state = 1017
+					}
+				}
+				prioritize = { 998 }
+				custom_effect_tooltip = receive_industries_from_aforementioned_state_tt
+				hidden_effect = {
+					set_variable = {
+						Root.SFT_combined_level = Root.SFT_industrial_complex_level
+					}
+					add_to_variable = {
+						Root.SFT_combined_level = Root.SFT_arms_factory_level
+					}
+					add_extra_state_shared_building_slots = Root.SFT_combined_level
+					add_building_construction = {
+						type = industrial_complex
+						level = Root.SFT_industrial_complex_level
+						instant_build = yes
+					}
+					add_building_construction = {
+						type = arms_factory
+						level = Root.SFT_arms_factory_level
+						instant_build = yes
+					}
+					move_building_damage = yes
+				}
+			}
+			clear_variable = Root.SFT_combined_level
+			clear_variable = Root.SFT_industrial_complex_level
+			clear_variable = Root.SFT_arms_factory_level
+		}
+		cancel_trigger = { #will abort
+
+		}
+		modifier = { #active during the course of the decision
+			civilian_factory_use = 3
+			production_speed_buildings_factor = -0.15
+		}
+		ai_will_do = {
+			factor = 8000
+		}
+	}
+}
+
+SHX_army_reform = {
+
+	SHX_army_reform = {
+
+		icon = generic_prepare_civil_war
+
+		available = {
+			#MODDEDv
+			has_army_experience > 100
+			OR = {
+				has_idea = SHX_weak_army
+				has_idea = SHX_weak_army_2
+				has_idea = SHX_weak_army_3
+			}
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 5000
+		}
+		days_remove = 90
+
+		visible = {
+			OR = {
+				has_idea = SHX_weak_army
+				has_idea = SHX_weak_army_2
+				has_idea = SHX_weak_army_3
+			}
+		}
+		remove_effect = {
+			if = { 		#MODDEDv
+				limit = { has_idea = SHX_weak_army }
+				swap_ideas = {
+					remove_idea = SHX_weak_army
+					add_idea = SHX_weak_army_2
+				}
+			}
+			else_if = { 		#MODDEDv
+				limit = { has_idea = SHX_weak_army_2 }
+				swap_ideas = {
+					remove_idea = SHX_weak_army_2
+					add_idea = SHX_weak_army_3
+				}
+			}
+			else_if = {
+				limit = { has_idea = SHX_weak_army_3 }
+				remove_ideas = SHX_weak_army_3
+			} 		
+		}
+		complete_effect = {
+			army_experience = -100 	#MODDED
+			custom_effect_tooltip = 90_days_tt 	#MODDED
+		}
+	}
+
+	SHX_lfx_on = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		available = {
+			NOT = {
+				has_idea = SHX_Practical_experience
+			}
+			num_of_military_factories > 0
+		}
+
+		cost = 0
+		ai_will_do = {
+			factor = 5000
+			modifier = { 
+				factor = 0
+				has_war = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = SHX_Practical_experience
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					NOT = {
+						has_idea = SHX_Practical_experience
+					}
+				}
+		        add_ideas = SHX_Practical_experience
+			}
+		}
+	}
+
+	SHX_lfx_off = {
+
+		icon = GFX_decision_ger_military_buildup
+
+		available = {
+			has_idea = SHX_Practical_experience
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 5000
+				has_idea = SHX_Practical_experience
+				has_war = yes
+			}
+		}
+
+		visible = {
+			has_completed_focus = SHX_Practical_experience
+		}
+		
+		complete_effect = {
+			if = {
+				limit = {
+					has_idea = SHX_Practical_experience
+				}
+		        remove_ideas = SHX_Practical_experience
+			}
+		}
+	}
+}
+
+operations = {
+	
+	SHX_Strike_the_puppet_regime = {
+
+		icon = generic_prepare_civil_war
+		fire_only_once = yes
+		
+		available = {
+			always = no #TO DO 
+			is_subject = no
+			#has_completed_focus = SHX_Prepare_for_civilwar_2
+			FROM = {
+				is_neighbor_of = ROOT
+				OR = {
+					is_subject = no
+					is_subject_of = MAN
+					is_subject_of = MEN
+					is_subject_of = ECS
+					is_subject_of = JAP
+				}
+				NOT = {
+					has_war_with = ROOT
+				}
+			}
+		}
+		
+		target_trigger = {
+			FROM = {
+				OR = {
+					tag = MEN
+					tag = ECS
+					tag = MAN
+				}
+			}
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 10
+		}
+		
+		visible = {
+			tag = SHX
+			always = no #TO DO
+			#has_completed_focus = SHX_Prepare_for_civilwar_2
+			FROM = {
+				exists = yes
+				NOT = {
+					is_subject_of = ROOT
+					has_war_with = ROOT
+				}
+			}
+		}
+		remove_effect = {
+		}
+		complete_effect = {
+			create_wargoal = { type = annex_everything target = FROM }
+		}
+	}
+
+}
+
+SHX_deal_with_the_communists = {
+
+	SHX_support_yan = { #TO DO
+
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			has_government = neutrality
+			#neutrality < 1
+		}
+
+		#days_re_enable = 125
+		
+		fire_only_once = no
+
+		cost = 20
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
+		}
+	
+		days_remove = 60
+
+		visible = {
+			NOT = {
+				has_government = communism
+				#has_completed_focus = SHX_Stop_cooperation_with_comchina
+			}
+		}
+		
+		modifier = {
+			neutrality_drift = 0.01
+			communism_drift = -0.01
+			power_balance_weekly = -0.0035
+		}
+		
+		complete_effect = {
+		   
+		}
+	}
+
+	SHX_support_yan_2 = { #TO DO
+
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			has_government = neutrality
+			#neutrality < 1
+		}
+
+		#days_re_enable = 125
+		
+		fire_only_once = yes
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 1000
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			NOT = {
+				has_government = communism
+				#has_completed_focus = SHX_Stop_cooperation_with_comchina
+			}
+		}
+		
+		
+		complete_effect = {
+		    add_power_balance_value = {
+                id = SHX_yan_ccp_balance
+                value = -0.1
+                #tooltip_side = my_bop_side
+            }
+		}
+	}
+
+    SHX_support_yan_long_term = { #TO DO
+
+		icon = GFX_decision_generic_army_support
+		
+		available = {
+			has_government = neutrality
+			#neutrality < 1
+		}
+
+		#days_re_enable = 125
+		
+		fire_only_once = no
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 20
+				is_historical_focus_on = yes
+			}
+		}
+	
+		days_remove = 365
+
+		visible = {
+			NOT = {
+				has_government = communism
+				#has_completed_focus = SHX_Stop_cooperation_with_comchina
+			}
+		}
+		
+		modifier = {
+			neutrality_drift = 0.01
+			communism_drift = -0.01
+			power_balance_weekly = -0.0035
+			political_power_gain = -0.2
+		}
+		
+		complete_effect = {
+		   
+		}
+	}
+
+	SHX_support_ccp = { 
+
+		icon = GFX_decision_generic_civil_support
+		
+		available = {
+			has_idea = SHX_Limited_cooperation
+		}
+
+		#days_re_enable = 0
+		
+		fire_only_once = no
+
+		cost = 15
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	
+        days_remove = 30
+
+		visible = {
+			NOT = {
+				has_government = communism
+				has_completed_focus = SHX_Stop_cooperation_with_comchina
+			}
+		}
+		
+		modifier = {
+			communism_drift = 0.0015
+			power_balance_weekly = 0.002 
+		}
+		
+		complete_effect = {
+		   
+		}
+	}
+
+	SHX_support_ccp_2 = { #TO DO
+
+		icon = GFX_decision_generic_civil_support
+		
+		available = {
+			has_idea = SHX_Limited_cooperation
+		}
+
+		#days_re_enable = 125
+		
+		fire_only_once = yes
+
+		cost = 25
+		
+		ai_will_do = {
+			factor = 50
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+
+		visible = {
+			#NOT = {
+			#	has_government = communism
+			#	#has_completed_focus = SHX_Stop_cooperation_with_comchina
+			#}
+		}
+		
+		
+		complete_effect = {
+		    add_power_balance_value = {
+                id = SHX_yan_ccp_balance
+                value = 0.1
+                #tooltip_side = my_bop_side
+            }
+		}
+	}
+
+	SHX_support_ccp_long_term = { #TO DO
+
+		icon = GFX_decision_generic_civil_support
+		
+		available = {
+			#has_government = neutrality
+			#neutrality < 1
+		}
+
+		#days_re_enable = 125
+		
+		fire_only_once = no
+
+		cost = 0
+		
+		ai_will_do = {
+			factor = 10
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+		}
+	
+		days_remove = 365
+
+		visible = {
+			#NOT = {
+				#has_government = communism
+				#has_completed_focus = SHX_Stop_cooperation_with_comchina
+			#}
+		}
+		
+		modifier = {
+			communism_drift = 0.0015
+			power_balance_weekly = 0.002 
+			political_power_gain = -0.2
+		}
+		
+		complete_effect = {
+		   
+		}
+	}
+}
+
+SHX_deal_with_japan = {
+
+	SHX_demand_support_from_japan = { #TO DO
+
+		icon = GFX_decision_ger_military_buildup
+		
+		available = {
+			always = no
+		}
+
+		#days_re_enable = 125
+		
+		fire_only_once = no
+
+		cost = 20
+		
+		ai_will_do = {
+			factor = 50
+		}
+	
+		days_remove = 30
+
+		visible = {
+			always = no
+			NOT = {
+				has_government = communism
+				#has_completed_focus = SHX_Stop_cooperation_with_comchina
+			}
+		}
+		
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		   
+		}
+	}
+
+	SHX_join_nanking_government = { #TO DO
+
+		icon = GFX_decision_generic_form_nation
+
+		#days_re_enable = 0
+		
+		fire_only_once = yes
+
+		cost = 100
+		
+		ai_will_do = {
+			factor = 1
+			modifier = {
+				factor = 0
+				is_historical_focus_on = yes
+			}
+			modifier = {
+				add = 75
+				is_historical_focus_on = no
+				num_of_controlled_states < 2
+			}
+		}
+
+		ai_will_do = {
+			base = 0
+			modifier = {
+				add = 100
+				is_historical_focus_on = no
+				has_capitulated = yes
+			}
+		}
+	
+        days_remove = 30
+
+        available = {
+			NOT = {
+				is_faction_leader = yes
+			    has_government = communism
+			}
+			any_enemy_country = {
+				is_subject_of = JAP
+				#is_literally_china_including_chinese_puppets = yes
+				controls_state = 1015
+				is_rrc = yes
+			}
+		}
+
+
+		visible = {
+			NOT = {
+				is_faction_leader = yes
+			}
+			any_enemy_country = {
+				is_subject_of = JAP
+				#is_literally_china_including_chinese_puppets = yes
+				controls_state = 1015
+				is_rrc = yes
+			}
+		}
+		
+		modifier = {
+			
+		}
+		
+		complete_effect = {
+		    random_enemy_country = {
+				limit = {
+					is_subject_of = JAP
+				    #is_literally_china_including_chinese_puppets = yes
+					controls_state = 1015
+					is_rrc = yes
+				}
+			    country_event = shx_jap.3
+			} 
+			event_target:WTT_current_china_leader = {
+			    country_event = shx_jap.4
+			} 
+			if = {
+				limit = {
+					country_exists = event_target:WTT_communist_china
+				}
+				event_target:WTT_communist_china = {
+					#country_event = 
+				}
+			}
+			effect_tooltip = {
+				if = {
+					limit = {
+						event_target:WTT_current_china_leader = {
+							exists = yes
+							has_war_with = JAP
+						}
+					}
+				    SHX = {
+						every_unit_leader = {
+							limit = {
+								NOT = {
+									OR = {
+										is_character = SHX_yan_xishan
+										is_character = SHX_wang_jingguo
+										is_character = SHX_zhao_chengshou
+									}
+								}
+							}
+							set_nationality = event_target:WTT_current_china_leader
+						}
+					}
+				}
+				if = {
+					limit = {
+						any_enemy_country = {
+							is_subject_of = JAP
+							#is_literally_china_including_chinese_puppets = yes
+							controls_state = 1015
+							is_rrc = yes
+							is_ai = yes
+						}
+					}
+                    random_enemy_country = {
+						limit = {
+							is_subject_of = JAP
+							#is_literally_china_including_chinese_puppets = yes
+							controls_state = 1015
+							is_rrc = yes
+							is_ai = yes
+						}
+						annex_country = { target = ROOT transfer_troops = yes }
+						change_tag_from = ROOT
+					} 
+					else_if = {
+						limit = {
+                            any_enemy_country = {
+								is_subject_of = JAP
+								#is_literally_china_including_chinese_puppets = yes
+								controls_state = 1015
+								is_rrc = yes
+								is_ai = no
+							}
+						}
+						random_enemy_country = {
+							limit = {
+								is_subject_of = JAP
+								#is_literally_china_including_chinese_puppets = yes
+								controls_state = 1015
+								is_rrc = yes
+								is_ai = no
+							}
+							annex_country = { target = ROOT transfer_troops = yes }
+							#change_tag_from = ROOT				
+						} 
+						custom_effect_tooltip = GAME_OVER_TT
+					}
+				}	
+			}
+		}
+	}
+
+	SHX_receive_taiyuan = { 
+		icon = GFX_decision_infiltrate_state
+		allowed = {
+			tag = SHX
+		}
+		
+		available = {
+			NOT = {
+				is_faction_leader = yes
+			    has_government = communism
+			}
+			any_enemy_country = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+					is_subject_of = JAP
+				}
+				controls_state = 615
+			}
+			event_target:WTT_communist_china = {
+				exists = yes
+				has_war_with = JAP
+				NOT = {
+					has_war_with = ROOT
+				}
+				owns_state = 615
+			}
+		}
+
+
+		visible = {
+			NOT = {
+				is_faction_leader = yes
+			}
+			NOT = { has_government = communism }
+			any_enemy_country = {
+				OR = {
+					tag = JAP
+					is_in_faction_with = JAP
+					is_subject_of = JAP
+				}
+			}
+			has_completed_focus = SHX_truce_with_japan
+		    has_country_flag = unlock_deal_with_jap_flag
+		}
+		
+		modifier = {
+			
+		}
+		
+		cancel_trigger = {
+			OR = {
+			    has_government = communism
+				event_target:WTT_communist_china = {
+					NOT = {
+						owns_state = 615
+					}
+				}			    
+                #if = {
+				#	limit = {
+				#		has_completed_focus = SHX_United_front
+				#	}
+				#	NOT = {
+				#		has_completed_focus = SHX_Stop_cooperation_with_comchina
+				#	}
+				#}
+			    #has_war_with = event_target:WTT_communist_china
+			}					    			    				    			    		    
+		}
+
+		cost = 15
+		
+		ai_will_do = {
+			factor = 1000
+		}
+
+
+		#days_re_enable = 0
+	
+		days_remove = 15
+
+		#complete_effect = {
+		#    #add_political_power = 50
+		#}
+		remove_effect = {
+			country_event = shx.15
+			event_target:WTT_communist_china = {
+				country_event = shx.16
+			}
+		}
+	}
+}
+
+SHX_civil_war_cat = {
+
+	SHX_mopping_up_mission = {
+
+		icon = GFX_decision_generic_ignite_civil_war
+		
+		allowed = {
+			tag = SHX
+		}
+		
+		days_mission_timeout = 60
+
+		available = {
+			OR = {
+				surrender_progress > 0.5
+				event_target:WTT_communist_china = {
+					surrender_progress > 0.5
+				}
+			}
+		}
+
+		is_good = no
+		
+		activation = {
+			always = no 
+		}
+		timeout_effect = {
+			#effect_tooltip = {
+                white_peace = event_target:WTT_communist_china
+			    every_enemy_country = {
+				    limit = {
+					    is_ally_with = event_target:WTT_communist_china
+				    }
+				    white_peace = ROOT
+			    }
+				every_other_country = {
+					limit = {
+                        is_ally_with = ROOT
+					    has_war_with = event_target:WTT_communist_china
+					}
+					white_peace = event_target:WTT_communist_china
+				}
+			#}
+			#country_event =
+			#event_target:WTT_communist_china = {
+				#country_event = 
+			#}
+		}
+
+		complete_effect = {
+			if = {
+				limit = {
+					SHX = {
+						surrender_progress > 0.5
+					}
+				}
+				set_global_flag = SHX_lost_shangdang_flag
+				else_if = {
+					limit = {
+						event_target:WTT_communist_china = {
+							surrender_progress > 0.5
+						}
+					}
+					set_global_flag = PRC_lost_shangdang_flag
+				}
+			}
+		}
+		
+		#cancel_trigger = {
+		#	
+		#}
+	}
+}

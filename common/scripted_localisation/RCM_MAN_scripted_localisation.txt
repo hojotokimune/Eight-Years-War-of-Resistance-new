@@ -1,0 +1,222 @@
+# Allows you to create your own dynamic keys
+# to be called in localization.
+# defined_text -> this is it, we're defining the text
+# text -> a discrete entry that can be picked to display in loc.
+# trigger -> determines if a text entry will be picked or not.
+# (The triggers need to be valid for the scope the key is called in
+# (eg Root or From.From).)
+# localization_key -> points to the localization key
+# that'll be used if trigger passes
+
+defined_text = {
+	name = GetReginaldJohnstonCitizenship
+	text = {
+		trigger = {
+			has_global_flag = reginald_johnston_is_dead
+		}
+		localization_key = GetReginaldJohnstonCitizenshipPosthumous
+	}
+	text = {
+		localization_key = GetReginaldJohnstonCitizenshipAlive
+	}
+}
+
+defined_text = {
+	name = GetReginaldJohnstonCitizenshipDesc
+	text = {
+		trigger = {
+			has_global_flag = reginald_johnston_is_dead
+		}
+		localization_key = GetReginaldJohnstonCitizenshipPosthumousDesc
+	}
+	text = {
+		localization_key = GetReginaldJohnstonCitizenshipAliveDesc
+	}
+}
+
+defined_text = {
+	name = GetYakuzasSupport
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetYakuzasSupportJAP
+	}
+	text = {
+		localization_key = GetYakuzasSupportnJAP
+	}
+}
+
+defined_text = {
+	name = GetYakuzaSupportFocus
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetYakuzaSupportFocusJAP
+	}
+	text = {
+		localization_key = GetYakuzaSupportFocusnJAP
+	}
+}
+
+defined_text = {
+	name = GetYakuzaSupportFocusDesc
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetYakuzaSupportFocusDescJAP
+	}
+	text = {
+		localization_key = GetYakuzaSupportFocusDescnJAP
+	}
+}
+
+defined_text = {
+	name = GetIncreasedImmigration
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetIncreasedImmigrationJAP
+	}
+	text = {
+		localization_key = GetIncreasedImmigrationnJAP
+	}
+}
+
+defined_text = {
+	name = GetJapImmigrant
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetJapImmigrantJAP
+	}
+	text = {
+		localization_key = GetJapImmigrantnJAP
+	}
+}
+
+defined_text = {
+	name = GetJapImmigrantDesc
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetJapImmigrantDescJAP
+	}
+	text = {
+		localization_key = GetJapImmigrantDescnJAP
+	}
+}
+
+defined_text = {
+	name = GetMangyo
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetMangyoJAP
+	}
+	text = {
+		localization_key = GetMangyonJAP
+	}
+}
+
+defined_text = {
+	name = GetMangyoDesc
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetMangyoDescJAP
+	}
+	text = {
+		localization_key = GetMangyoDescnJAP
+	}
+}
+
+defined_text = {
+	name = GetMangyoIdeaDesc
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetMangyoIdeaDescJAP
+	}
+	text = {
+		localization_key = GetMangyoIdeaDescnJAP
+	}
+}
+
+defined_text = {
+	name = GetInviteJapSettlers
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetInviteJapSettlersJAP
+	}
+	text = {
+		localization_key = GetInviteJapSettlersnJAP
+	}
+}
+
+defined_text = {
+	name = GetInviteJapSettlersDesc
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetInviteJapSettlersDescJAP
+	}
+	text = {
+		localization_key = GetInviteJapSettlersDescnJAP
+	}
+}
+
+defined_text = {
+	name = GetKwantungArmyFocus
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetKwantungArmyFocusJAP
+	}
+	text = {
+		localization_key = GetKwantungArmyFocusnJAP
+	}
+}
+
+defined_text = {
+	name = GetKwantungArmyFocusDesc
+	text = {
+		trigger = {
+			is_subject_of = JAP
+		}
+		localization_key = GetKwantungArmyFocusDescJAP
+	}
+	text = {
+		localization_key = GetKwantungArmyFocusDescnJAP
+	}
+}
+
+defined_text = {
+	name = GetKuhnLoebRejectReason
+	text = {
+		trigger = {
+			count_triggers = {
+				amount = 2
+				NOT = { has_country_flag = MAN_ic_in_deal }
+				NOT = { has_country_flag = MAN_af_in_deal }
+				NOT = { has_country_flag = MAN_jews_in_deal }
+			}
+		}
+		localization_key = GetTooFewDeals
+	}
+	text = {
+		localization_key = GetBadReputation
+	}
+}

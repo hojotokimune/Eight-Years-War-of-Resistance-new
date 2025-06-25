@@ -1,0 +1,279 @@
+jap_hold_the_shanghai_line = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_war_with = event_target:WTT_current_china_leader
+		613 = { is_controlled_by_jap_or_its_puppet = yes }
+	}
+	abort = {
+	    1015 = {
+		all_neighbor_state = { is_controlled_by_jap_or_its_puppet = yes }
+		}
+	}
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = front_unit_request
+		state = 613
+		state = 1015
+		state = 596
+		state = 749
+		
+		value = 20
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 613
+		value = 5
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 1015
+		value = 5
+	}
+	ai_strategy = {
+    type = put_unit_buffers
+	states = {
+	    613
+        1015
+	}
+	ratio = 0.12
+    area = asia
+	subtract_invasions_from_need = no
+	subtract_fronts_from_need = no
+	}
+}
+jap_focus_china_south = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+		has_War_with = event_target:WTT_current_china_leader
+		1014 = { is_controlled_by_jap_or_its_puppet = yes }
+		615 = { is_controlled_by_jap_or_its_puppet = yes }
+		615 = { is_controlled_by_jap_or_its_puppet = yes }
+		951 = { is_controlled_by_jap_or_its_puppet = yes }
+		1013 = { is_controlled_by_jap_or_its_puppet = yes }
+		597 = { is_controlled_by_jap_or_its_puppet = yes }
+	}
+	abort = {
+		1015 = { is_controlled_by_jap_or_its_puppet = yes }
+		942 = { is_controlled_by_jap_or_its_puppet = yes }
+		940 = { is_controlled_by_jap_or_its_puppet = yes }
+		596 = { is_controlled_by_jap_or_its_puppet = yes }
+		600 = { is_controlled_by_jap_or_its_puppet = yes }
+		592 = { is_controlled_by_jap_or_its_puppet = yes }
+		606 = { is_controlled_by_jap_or_its_puppet = yes }
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = front_unit_request
+
+		strategic_region = 246
+		strategic_region = 247
+		strategic_region = 164
+		
+		state = 936
+		
+		value = 50 # lets put more units, should be safe
+	}
+	ai_strategy = {
+		type = put_unit_buffers
+		ratio = 0.12
+        area = asia
+		subtract_invasions_from_need = yes
+		subtract_fronts_from_need = no
+		states = {
+            1015
+			940
+			942
+			596
+			
+ 		}
+	}
+}
+
+JAP_focus_on_wuhan_war = {
+	allowed = {
+		original_tag = JAP
+	}
+	enable = {
+	    OR = {
+		has_war_with = CHI
+		has_war_with = NEA
+		}
+		OR = {
+		has_idea = JAP_one_hit_theory
+		has_idea = JAP_one_hit_theory_for_player
+		}
+	}
+	abort = {
+		OR = {
+			#has_global_flag = jap_unplanned_offensive_happen
+			surrender_progress > 0.07
+			check_variable = {
+			    This.infantry_equipment_deficit > 65000 #guo
+		    }
+		}
+	}
+	abort_when_not_enabled = yes
+	
+	ai_strategy = {
+		type = garrison
+		value = -50
+	}
+
+	ai_strategy = {
+		type = consider_weak
+		id = CHI
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = CHI
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "CHI"
+		value = 1000
+	}
+	
+	
+	
+	ai_strategy = {
+		type = consider_weak
+		id = HPC
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = HPC
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "HPC"
+		value = 1000
+	}
+	
+	
+	
+	ai_strategy = {
+		type = consider_weak
+		id = SHD
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = SHD
+		value = 100
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "SHD"
+		value = 1000
+	}
+	
+	
+	
+	ai_strategy = {
+		type = consider_weak
+		id = NEA
+		value = 200
+	}
+	ai_strategy = {
+		type = conquer
+		id = NEA
+		value = 500
+	}
+	ai_strategy = {
+		type = antagonize
+		id = "NEA"
+		value = 1000
+	}
+	
+	
+	
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 613
+		value = 2 #guo
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 1015
+		value = 2 #guo
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 596
+		value = 2 #guo
+	}
+	ai_strategy = {
+		type = theatre_distribution_demand_increase
+		id = 743
+		value = 2 #guo
+	}
+	
+	ai_strategy = {
+		type = front_control ratio = 0.6
+		
+		tag = CHI
+		tag = NEA
+		tag = HPC
+		tag = SHD
+		tag = SHX
+		tag = GUD
+		tag = GXC
+		
+		priority = 7500
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+		manual_attack = yes
+	}
+	
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 150
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NEA
+		value = 150
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = PRC
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GXC
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GUD
+		value = 25
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = HPC
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SHD
+		value = 50
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SHX
+		value = 50
+	}
+}

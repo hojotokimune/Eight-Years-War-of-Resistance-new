@@ -1,0 +1,18 @@
+spriteTypes = {
+    spriteType = {
+        name = "GFX_monument_heian_kyo"
+        textureFile = "gfx/interface/monuments/jpn/heian_kyo.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_horyu_ji"
+        textureFile = "gfx/interface/monuments/jpn/horyu_ji.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_rokuon_ji"
+        textureFile = "gfx/interface/monuments/jpn/rokuon_ji.dds"
+    }
+    spriteType = {
+        name = "GFX_monument_itsukushima_shrine"
+        textureFile = "gfx/interface/monuments/jpn/itsukushima_shrine.dds"
+    }
+}

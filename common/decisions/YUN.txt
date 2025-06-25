@@ -1,0 +1,87 @@
+整活内容{
+    燃气来了 = {
+		icon = generic_prepare_civil_war 
+		available = {	
+			}			
+        cost = 50
+		days_remove = 1
+        fire_only_once = yes 
+		ai_will_do = { 
+		    	factor = 0
+		}
+		visible = { 
+		}
+        remove_effect = {
+        YUN ={
+        add_ideas = YUN_ranqi
+        add_ideas = CHI_jiaolong		
+        remove_ideas = yun_democratic_fortress_2
+            set_politics = {   #设置意识形态
+                ruling_party = fascism
+                #last_election = "1932.5.1"   #上次大选
+                #election_frequency = 48    #选举频率
+                elections_allowed = no  
+            }		
+            set_popularities = { #This MUST add up to 100 otherwise the ideologies break
+                fascism = 100			
+            }		
+			set_party_name = {
+					ideology = fascism
+					name = "中华民国护国军政府"
+					long_name = "中华民国护国军政府"
+				}			
+            create_country_leader = {
+                name = "龙云"
+                desc = "POLITICS_DETIANQIUYI_DESC"
+                picture = "gfx/leaders/YUN/portrait_yun_long_yun.dds"
+                expire = "1965.1.1"
+                ideology = sanmin_military_rule
+                traits = { chou_ri baizhanlaobing 
+                }
+            }
+		    set_cosmetic_tag = YUN_huguo			
+		    division_template = {
+					name = "中华民国护国军"
+					regiments = {
+		                        infantry = { x = 0 y = 0 }
+					infantry = { x = 0 y = 1 }
+					infantry = { x = 0 y = 2 }
+					infantry = { x = 0 y = 3 }
+                   }
+				}			
+		    325= {
+				create_unit = {
+				division = "name = \"中华民国护国军\" division_template = \"中华民国护国军\" start_experience_factor = 0.2 "
+				owner = YUN
+				count = 100
+			    }
+			}
+            set_state_controller = 748
+			set_state_owner = 748
+            set_state_controller = 603
+			set_state_owner = 603			
+            }
+            748 = {
+            add_core_of = YUN
+            }
+            603 = {
+            add_core_of = YUN
+            }		
+			declare_war_on = {
+					target = CHI
+					type = annex_everything
+				}
+            JAP = {				
+			declare_war_on = {
+					target = YUN
+					type = annex_everything
+				}
+			declare_war_on = {
+					target = USA
+					type = annex_everything
+				}				
+				}				
+	        play_song = "nea_bangeyueliangpashanglai"			
+        }           
+    }			
+}
