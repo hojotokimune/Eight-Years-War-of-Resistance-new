@@ -1239,7 +1239,7 @@ political_actions = {
 						}
 						modifier = {
 							add = 9999
-							has_war = yes
+							has_war_with_major = yes
 						}
 																	   
 					}

@@ -3,6 +3,26 @@ MAL_UK = {
 	color_ui = rgb { 213  169  121 }	 #MODDED
 }
 
+ally_occupation_of_ger = {
+	color = rgb { 67  123  237 }	 #MODDED
+	color_ui = rgb { 67  123  237 }	 #MODDED
+}
+
+sov_occupation_of_ger = {
+	color = rgb { 125  13  24 }	 #MODDED
+	color_ui = rgb { 125  13  24 }	 #MODDED
+}
+
+ENG_occupation_of_ger = {
+	color = rgb { 201  56  93 }	 #MODDED
+	color_ui = rgb { 201  56  93 }	 #MODDED
+}
+
+FRA_occupation_of_ger = {
+	color = rgb { 57  113  228 }	 #MODDED
+	color_ui = rgb { 57  113  228 }	 #MODDED
+}
+
 RAJ_UK = {
 	color = rgb { 170  10  10 }
 	color_ui = rgb { 200  10  10 }

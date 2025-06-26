@@ -217,22 +217,22 @@ news_event = {
 	
 	immediate = {
 		    218 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			234 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             238 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             245 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			228 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             235 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 	
 	}
@@ -456,52 +456,52 @@ country_event = {
 					GER = { is_ai = yes }
 				}
 				264 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					247 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					258 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					260 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					265 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					237 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					236 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					235 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					232 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					233 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					827 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					231 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					254 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					257 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					239 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 					255 = {
-					add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
 					}
 			}
 		}
@@ -560,46 +560,46 @@ country_event = {
 		name = history_hide.007.a
 		ai_chance = { factor = 999 }
 		1027 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             998 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			615 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             1017 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             614 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			1077 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             607 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             744 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			597 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             608 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             1020 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			1014 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 			1013 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
             611 = {
-            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }
             }
 	}
 	option = {
@@ -739,4 +739,42 @@ news_event = {
 		trigger = { TAG = ENG }
 		add_war_support = 1
 	}
+}
+
+##埃及不能陷落
+news_event = {
+	id = history_hide.012
+
+	hidden = yes
+
+    fire_only_once = yes
+
+	trigger = {
+		has_global_flag = ouvrir_les_nouvelles
+		ITA = { has_war_with = ENG }
+		ENG = { has_war_with = GER }
+		GER = { is_in_faction_with = GER }
+		GER = { has_government = fascism }
+		EGY = { is_subject_of = ENG }
+		GER = { is_ai = yes }
+		ITA = { is_ai = yes }
+		ENG = { is_ai = yes }
+		NOT = { 452 = { is_controlled_by = EGY } }
+	}
+	
+	immediate = {
+		447 = {
+            add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+            }
+			907 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive days = 1000 }
+				}
+	}
+	
+	mean_time_to_happen = {
+		days = 2
+	}
+	
+	option = {
+		}
 }
