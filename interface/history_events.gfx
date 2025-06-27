@@ -151,11 +151,6 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
-		name = "GFX_ideology_USA_Republican"
-		texturefile = "gfx/interface/ideologies/USA_Republican.png"
-		legacy_lazy_load = no
-	}
-	SpriteType = {
 		name = "GFX_ger_attack_pol"
 		texturefile = "gfx/decision_pictures/ger_attack_pol.png"
 		legacy_lazy_load = no

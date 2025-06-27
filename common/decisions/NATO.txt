@@ -122,7 +122,7 @@ set_global_flag = nato_suggested
 set_country_flag = nato_leader
 save_global_event_target_as = nato_leader
 if = {
-limit = { has_country_leader = { ruling_only = yes name = "哈里·S·杜鲁门" } }
+limit = { has_country_leader = { ruling_only = yes name = "Harry S. Truman" } }
 add_country_leader_trait = dulumenzhuyi
 }
 set_rule = {
