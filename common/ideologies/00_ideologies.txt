@@ -19,6 +19,9 @@ ideologies = {
 			USB_Soclib_Centrism = {
 			}
 
+			USA_Republican = {
+			}
+
 			sanmin_constitutional_government = {  # MODDED
 				can_be_randomly_selected = no   # MODDED
 			}  # MODDED
