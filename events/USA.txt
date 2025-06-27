@@ -298,7 +298,7 @@ country_event = {
 			desc = "POLITICS_ALF_LANDON_DESC"
 			picture = "portrait_USA_alf_landon.dds"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = USA_Republican
 			traits = {
 				staunch_constitutionalist
 			}
@@ -402,7 +402,7 @@ country_event = {
 			desc = "POLITICS_WENDELL_WILKIE_DESC"
 			picture = "Portrait_USA_Wendell_Willkie.dds"
 			expire = "1965.1.1"
-			ideology = liberalism
+			ideology = USA_Republican
 			traits = {
 				
 			}
@@ -638,7 +638,7 @@ country_event = {
 			desc = "POLITICS_THOMAS_DEWEY_DESC"
 			picture = "portrait_USA_thomas_dewey.dds"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = USA_Republican
 			traits = {
 				
 			}
@@ -934,7 +934,7 @@ country_event = {
 			desc = "POLITICS_DOUGLAS_MACARTHUR_DESC"
 			picture = "Portrait_USA_Douglas_MacArthur.dds"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = USA_Republican
 			traits = {
 				retired_officer #guo
 				hawk
@@ -1062,11 +1062,11 @@ country_event = { #guo
 		remove_ideas = new_deal
 		kill_country_leader = yes
 		create_country_leader = {
-			name = "Harry S. Truman"
+			name = "哈里·S·杜鲁门"
 			desc = "POLITICS_HARRY_TRUMAN_DESC"
 			picture = "Portrait_USA_Harry_Truman.dds"
 			expire = "1965.1.1"
-			ideology = liberalism
+			ideology = USB_Soclib_Centrism
 			traits = {
 			    hawk
 				anti_communist

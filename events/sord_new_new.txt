@@ -19991,7 +19991,7 @@ has_government = democratic
 		date > 1948.11.20
 		date < 1949.1.1
 		has_country_leader = {
-			name = "Harry S. Truman"
+			name = "哈里·S·杜鲁门"
 			ruling_only = yes
 		}
 	}
@@ -20023,7 +20023,7 @@ has_government = democratic
 			name = "Thomas E. Dewey"
 			picture = "gfx/leaders/USA/Portait_USA_Thomas_Dewey.jpg"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = USA_Republican
 			traits = {
 				anti_communist
 			}
