@@ -332,7 +332,7 @@ IF = {
 	}
 	set_autonomy = {
 		target = COG
-		autonomous_state = autonomy_colony
+		autonomous_state = autonomy_ENG_baohuguo
 		freedom_level = 0.2
 	}
 }
