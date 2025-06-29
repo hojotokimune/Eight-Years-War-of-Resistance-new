@@ -25285,8 +25285,6 @@ war_measures = {
 		}
 	}
 }
-
-operations = {
 	
 RCM_ultimatum_to_JAP_decision_cat = { #guo
 	RCM_ultimatum_to_JAP_decision = {
