@@ -8197,7 +8197,6 @@ focus_tree = {
 		search_filters = { FOCUS_FILTER_POLITICAL FOCUS_FILTER_HISTORICAL FOCUS_FILTER_ARMY_XP }	
 
 		completion_reward = {
-			country_event = AAT_germany.4
 			42 = { set_demilitarized_zone = no }
 			51 = { set_demilitarized_zone = no }
 			1064 = { set_demilitarized_zone = no }
