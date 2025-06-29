@@ -577,6 +577,7 @@ news_event = {
 		set_global_flag = ger_zhanbai_laisi
 		set_global_flag = ger_zhanbai
 		hidden_effect = {
+			FRA = { transfer_state = 28 }
 			add_victory_points = {
 				province = 13510
 				value = 35
