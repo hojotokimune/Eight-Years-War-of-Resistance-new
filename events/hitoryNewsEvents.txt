@@ -577,6 +577,10 @@ news_event = {
 		set_global_flag = ger_zhanbai_laisi
 		set_global_flag = ger_zhanbai
 		hidden_effect = {
+			add_victory_points = {
+				province = 13510
+				value = 25
+			}
 			264 = {
 				remove_dynamic_modifier = { modifier = unplanned_offensive }
 				}
