@@ -27050,51 +27050,27 @@ NXM = {
 IRQ = {
     give_military_access = ENG
 }
+USA = { set_autonomy = {
+	 target = PHI
+	 autonomous_state = autonomy_USA_baohuguo
+} 
+}
 ENG = {
 	if = {
 		limit = {
 			has_dlc = "Together for Victory"
 		}
-		set_autonomy = {
-			target = NZL
-			autonomous_state = autonomy_dominion
-		}
-		set_autonomy = {
-			target = AST
-			autonomous_state = autonomy_dominion
-		}
-		set_autonomy = {
-			target = CAN
-			autonomous_state = autonomy_dominion
-		}
-		set_autonomy = {
-			target = SAF
-			autonomous_state = autonomy_dominion
-		}
-		set_autonomy = {
-			target = EGY
-			autonomous_state = autonomy_dominion
-		}
-		set_autonomy = {
-			target = OMA
-			autonomous_state = autonomy_dominion
-		}
-		set_autonomy = {
-			target = SST
-			autonomous_state = autonomy_integrated_puppet
-		}
-		set_autonomy = {
-			target = BUR
-			autonomous_state = autonomy_colony
-		}
-		set_autonomy = {
-			target = BOR
-			autonomous_state = autonomy_colony
-		}
-		set_autonomy = {
-			target = SAR
-			autonomous_state = autonomy_colony
-		}
+		set_autonomy = { target = SRL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	    set_autonomy = { target = MAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	    set_autonomy = { target = SST autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+						set_autonomy = { target = SAR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+						set_autonomy = { target = BOR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+						set_autonomy = { target = CAN autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+						set_autonomy = { target = AST autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+						set_autonomy = { target = SAF autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+						set_autonomy = { target = NZL autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+						set_autonomy = { target = EGY autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+						set_autonomy = { target = RAJ autonomy_state = autonomy_wangguan freedom_level = 0.50  }
 		else = {
 			#puppet = NZL
 			#puppet = CAN

@@ -65,3 +65,13 @@ music = {
 	file = "Geoff Knorr - Russia (The Atomic Era).ogg"
 	volume = 0.99
 }
+music = {
+	name = "america_the_atomic_era"
+	file = "Geoff Knorr - America (The Atomic Era).ogg"
+	volume = 0.99
+}
+music = {
+	name = "china_the_atomic_era"
+	file = "Geoff Knorr - China (The Atomic Era).ogg"
+	volume = 0.99
+}

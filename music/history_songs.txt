@@ -127,3 +127,25 @@ music = {
 		}		
 	}
 }
+music = {
+	song = "america_the_atomic_era"
+	chance = {
+		modifier = {
+			factor = 7
+			TAG = USA
+		}		
+	}
+}
+music = {
+	song = "china_the_atomic_era"
+	chance = {
+		modifier = {
+			factor = 7
+			or = {
+				TAG = CHI
+				TAG = PRC
+			}
+			has_war_with_major = no
+		}		
+	}
+}

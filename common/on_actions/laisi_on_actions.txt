@@ -26,9 +26,119 @@ on_actions = {
 					12485 13430 7894
 				}
 			}
-						ENG = {
-							release = SRL
-							}
+			ENG = {
+				release = SRL
+				set_autonomy = { target = SRL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = MAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = SST autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = SAR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = BOR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+				set_autonomy = { target = CAN autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+				set_autonomy = { target = AST autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+				set_autonomy = { target = SAF autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+				set_autonomy = { target = NZL autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+				set_autonomy = { target = EGY autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+				set_autonomy = { target = RAJ autonomy_state = autonomy_wangguan freedom_level = 0.50  }
+				}
+		
+			EGY = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			AST = {
+				set_politics = {
+					ruling_party = n_socialism
+					elections_allowed = yes
+				}
+				set_popularities = {
+					n_socialism = 60
+					fascism = 5
+					communism = 5
+					neutrality = 5
+					democratic = 25
+				}
+			}
+			NZL = {
+				set_politics = {
+					ruling_party = n_socialism
+					elections_allowed = yes
+				}
+				set_popularities = {
+					n_socialism = 60
+					fascism = 5
+					communism = 5
+					neutrality = 5
+					democratic = 25
+				}
+			}
+			RAJ = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			MAL = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			SST = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			BOR = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
+			SAR = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 60
+					democratic = 30
+				}
+			}
 						SRL = {
 							set_politics = {
 								ruling_party = neutrality
@@ -55,6 +165,7 @@ on_actions = {
 										}
 							add_ideas = agrarion_society_generic_3
 						}
+						USA = { set_autonomy = { target = PHI autonomy_state = autonomy_USA_baohuguo freedom_level = 0.50  } }
 					SOV = {
 						set_party_name = {
 							ideology = communism
