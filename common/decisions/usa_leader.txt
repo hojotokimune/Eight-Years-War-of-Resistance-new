@@ -1754,12 +1754,14 @@ OR = {
 			allowed = {
 				tag = ENG
 			}
+			fire_only_once = yes 
 	
 			available = {                           
 				has_completed_focus = ENG_indian_autonomy
 			}
 			activation = {    
 				has_global_flag = ger_zhanbai
+				JAP = { has_war = no }
 				or = {
 				JAP = { has_government = democratic }     
 				JAP = { is_subject = yes }     
@@ -1779,7 +1781,40 @@ OR = {
 			cancel_effect = {
 			}
 		}
-			   
+
+
+			   USA_found_UN_decision = {
+		icon = eng_trade_unions_support
+	
+			allowed = {
+				tag = USA
+			}
+	
+			available = {                           
+				has_war = no
+			}
+			visible = {    
+				has_global_flag = ger_zhanbai
+				JAP = { has_war = no }
+				or = {
+				JAP = { has_government = democratic }     
+				JAP = { is_subject = yes }     
+				} 
+			}               
+			fire_only_once = yes      
+			ai_will_do = {
+				factor = 999
+			}
+      
+			complete_effect = {                    
+				USA = { country_event = laisi2hao.19 }
+				CHI = { country_event = laisi2hao.19 }
+				SOV = { country_event = laisi2hao.19 }
+				ENG = { country_event = laisi2hao.19 }
+				FRA = { country_event = laisi2hao.19 }
+				news_event = { id = laisi2hao.18 days = 1 }
+			}
+		}
 			   
 			   
 

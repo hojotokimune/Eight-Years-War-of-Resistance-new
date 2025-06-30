@@ -1911,3 +1911,75 @@ news_event = {
 		}
 }
 }
+
+##联合国成立
+news_event = {
+	id = laisi2hao.18
+	title = laisi2hao.18.t
+	desc = laisi2hao.18.d
+	picture = GFX_event_UN_found
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+
+	}
+	
+	
+	option = {
+		name = laisi2hao.18.a
+		trigger = { or = { 
+			is_in_faction_with = ENG 
+			tag = CHI
+			tag = PRC
+			is_in_faction_with = SOV
+			is_in_faction_with = USA
+		} }
+		add_political_power = 10
+	}
+	option = {
+		name = laisi2hao.18.b
+		trigger = { 
+			NOT = {
+				or = {
+					is_in_faction_with = ENG 
+			tag = CHI
+			tag = PRC
+			is_in_faction_with = SOV
+			is_in_faction_with = USA
+		}
+	 }
+	}
+	}
+}
+
+country_event = { #联合国成立
+	id = laisi2hao.19
+	title = ccw.723.t
+	desc = ccw.723.desc
+	picture = GFX_lianheguo
+	
+	is_triggered_only = yes
+
+	
+	option = {
+		name = ccw.723.a		
+				CHI = {
+        add_ideas = lianheguo
+				}		
+				USA = {
+        add_ideas = lianheguo
+				}
+				SOV = {
+        add_ideas = lianheguo
+				}
+				ENG = {
+        add_ideas = lianheguo
+				}				
+				FRA = {
+        add_ideas = lianheguo
+				}				
+	}
+}

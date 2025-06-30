@@ -12152,49 +12152,34 @@ country_event = { #畑中健二自杀2
 		name = ccw.722.a				
 	}	
 }
-country_event = { #联合国成立
-	id = ccw.723
-	title = ccw.723.t
-	desc = ccw.723.desc
-	picture = GFX_lianheguo
+#country_event = { #联合国成立
+	#id = ccw.723
+	#title = ccw.723.t
+	#desc = ccw.723.desc
+	#picture = GFX_lianheguo
 	
-	trigger = {
-	AND = {
-                        tag = USA
-                        date > 1945.1.1
-                        date < 1945.1.30
-			NOT = {
-						has_war_with = SOV
-						has_war_with = ENG	
-						has_war_with = FRA	
-						has_war_with = CHI						
-					}
-					}					
-			  }
- 
-	fire_only_once = yes
+	#is_triggered_only = yes
+
 	
-	option = {
-		name = ccw.723.a		
-				CHI = {
-        add_ideas = lianheguo
-				}		
-    hidden_effect = {	
-				USA = {
-        add_ideas = lianheguo
-				}
-				SOV = {
-        add_ideas = lianheguo
-				}
-				ENG = {
-        add_ideas = lianheguo
-				}				
-				FRA = {
-        add_ideas = lianheguo
-				}				
-                    }		
-	}
-}
+	#option = {
+		#name = ccw.723.a		
+				#CHI = {
+        #add_ideas = lianheguo
+				#}		
+				#USA = {
+        #add_ideas = lianheguo
+				#}
+				#SOV = {
+       #add_ideas = lianheguo
+				#}
+				#ENG = {
+        #add_ideas = lianheguo
+				#}				
+				#FRA = {
+        #add_ideas = lianheguo
+				#}				
+	#}
+#}
 country_event = { #齐燮元赴任
 	id = ccw.724
 	title = ccw.724.t

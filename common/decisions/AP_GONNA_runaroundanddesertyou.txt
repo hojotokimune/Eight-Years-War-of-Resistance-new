@@ -8,11 +8,10 @@ fuck_you_donot_bother_me_AI_NMSL = {
 		}
 		fire_only_once = no
 		available = {
-			
+			is_ai = no
 		}
 		complete_effect = {
 			CHI = { country_event = qingdao.5 }
-			CHI = { country_event = ccw.723 }
 			JAP = { country_event = { id = rcmsoviet.27 } }
 			SIA = {
 				country_event = { id = rcmjapan_defeated_conference.1 }
