@@ -2227,7 +2227,7 @@ priority = 4999
 									
 									annex_country = { 
 										target = FER #国家tag
-										transfer_troops = yes #是否把部队一起吞了
+										transfer_troops = no #是否把部队一起吞了
 									}
 
 								}
@@ -2324,7 +2324,7 @@ priority = 4999
 												
 												cost = 25
 												fire_only_once = yes
-												days_remove = 3
+												days_remove = 1
 												
 												ai_will_do = {
 													base = 0

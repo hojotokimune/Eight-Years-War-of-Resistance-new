@@ -1419,7 +1419,7 @@ create_country_leader = {
 }
 create_country_leader = {
 			name="贾瓦哈拉尔·尼赫鲁"
-			#desc = "POLITICS_MOHAMMED_JAWAHARLAL_NEHRU_DESC"
+			desc = "POLITICS_DESC_NEHRU"
 			picture = "gfx/leaders/RAJ/Nehru.dds"
 			expire = "1965.1.1"
 			ideology = socialism
@@ -1427,7 +1427,7 @@ create_country_leader = {
 }
 create_country_leader = {
 			name="贾瓦哈拉尔·尼赫鲁"
-			#desc = "POLITICS_MOHAMMED_JAWAHARLAL_NEHRU_DESC"
+			desc = "POLITICS_DESC_NEHRU"
 			picture = "gfx/leaders/RAJ/Nehru.dds"
 			expire = "1965.1.1"
 			ideology = n_socialism_ideology

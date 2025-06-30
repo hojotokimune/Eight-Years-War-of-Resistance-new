@@ -6685,6 +6685,7 @@ focus_tree = {
 				add_opinion_modifier = { target = ROOT modifier = liberator }
 				add_ideas = TO_chose_neutrality_modded
 				give_military_access = ROOT
+				drop_cosmetic_tag = yes
 				diplomatic_relation = {
 	            country = ROOT
 	            relation = non_aggression_pact

@@ -193,10 +193,19 @@ news_event = {
 										create_unit = {
 										division = "name = \"10坦8机步\" division_template = \"10坦8机步\" start_experience_factor = 0.75 "
 										owner = USA
-										count = 24
+										count = 72
 										}
 									}
 									FRA = { transfer_state = 15 }
+									transfer_state = 21 
+									21 = {
+										create_unit = {
+										division = "name = \"10坦8机步\" division_template = \"10坦8机步\" start_experience_factor = 0.75 "
+										owner = USA
+										count = 72
+										}
+									}
+									FRA = { transfer_state = 21 }
 						}
 					}
 	                }

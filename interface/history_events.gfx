@@ -146,6 +146,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_event_india_free"
+		texturefile = "gfx/event_pictures/event_india_free.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_ideology_USB_Soclib_Centrism"
 		texturefile = "gfx/interface/ideologies/USB_Soclib_Centrism.png"
 		legacy_lazy_load = no

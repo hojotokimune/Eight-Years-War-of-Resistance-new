@@ -1746,8 +1746,39 @@ OR = {
 			news_event = zizhinews.20
 		}
 	}
-			   
-			   
+
+	ENG_RAJ_free_mission = {
+		icon = eng_trade_unions_support
+			days_mission_timeout = 120
+	
+			allowed = {
+				tag = ENG
+			}
+	
+			available = {                           
+				has_completed_focus = ENG_indian_autonomy
+			}
+			activation = {    
+				has_global_flag = ger_zhanbai
+				or = {
+				JAP = { has_government = democratic }     
+				JAP = { is_subject = yes }     
+				}       
+				RAJ = { is_subject_of = ENG }
+			}                     
+
+			timeout_effect = {                      
+				news_event = laisi2hao.17     
+			}       
+			complete_effect = {                    
+				add_stability = 0.1         
+			}
+			cancel_trigger = {
+				RAJ = { is_subject = no }
+			}
+			cancel_effect = {
+			}
+		}
 			   
 			   
 			   

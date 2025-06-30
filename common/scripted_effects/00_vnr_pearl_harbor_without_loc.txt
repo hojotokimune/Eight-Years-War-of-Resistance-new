@@ -404,7 +404,7 @@ pw_allies_scripted_peace = {
 
     # disband co-prosperity sphere
     every_other_country = {
-        limit = { is_in_faction_with = JAP }
+        limit = { TAG = JAP }
         delete_unit = {}
         if = {
             limit = { is_subject = yes }
@@ -470,17 +470,15 @@ pw_allies_scripted_peace = {
     USA = {
         # return Indochina
 	    every_owned_state = {
-	    	limit = { is_core_of = VIN }
-	    	transfer_state_to = FRA
-	    }
-	    every_owned_state = {
 	    	limit = { is_core_of = CAM }
-	    	transfer_state_to = FRA
+	    	transfer_state_to = CAM
 	    }
+        FRA = { puppet = CAM }
 	    every_owned_state = {
 	    	limit = { is_core_of = LAO }
-	    	transfer_state_to = FRA
+	    	transfer_state_to = LAO
 	    }
+        FRA = { puppet = LAO }
     }
 }
 

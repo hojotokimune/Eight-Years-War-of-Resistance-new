@@ -1436,7 +1436,7 @@ news_event = {
 		NOT = {
 			has_global_flag = north_south_korea
 		}
-		has_global_flag = august_storm_event
+		JAP = { has_government = democratic }
 	}
 	
 	immediate = {
@@ -1870,5 +1870,44 @@ news_event = {
 		 effect_tooltip = {
 			GER = { retire_character = GER_erwin_rommel }
 			}
+}
+}
+
+##印度独立
+news_event = {
+	id = laisi2hao.17
+	title = laisi2hao.17.t
+	desc = laisi2hao.17.d
+	picture = GFX_event_india_free
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			ENG = { complete_national_focus = uk_free_india_focus }
+		}
+
+	}
+	
+	
+	option = {
+		name = laisi2hao.17.a
+		trigger = { tag = ENG }
+		add_war_support = -0.05
+	}
+	option = {
+		name = laisi2hao.17.b
+		trigger = { tag = RAJ }
+		add_war_support = 0.2
+	}
+	option = {
+		name = laisi2hao.17.c
+		trigger = { NOT = {
+			tag = ENG
+			tag = RAJ
+		 }
+		}
 }
 }

@@ -8530,7 +8530,7 @@ news_event = { #for jap peace #日本与盟军白和后续
 					}
 					set_autonomy = {
 						target = JAP
-						autonomy_state = autonomy_supervised_state
+						autonomy_state = autonomy_USA_baohuguo
 					}
 				}
 				else = {
