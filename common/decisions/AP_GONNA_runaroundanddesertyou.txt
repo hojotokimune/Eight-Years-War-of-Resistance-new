@@ -10,7 +10,7 @@ fuck_you_donot_bother_me_AI_NMSL = {
 		available = {
 			is_ai = no
 		}
-		complete_effect = {
+		complete_effect = {##我真的服了为什么有些事件没法直接用代码触发
 			CHI = { country_event = qingdao.5 }
 			JAP = { country_event = { id = rcmsoviet.27 } }
 			SIA = {
