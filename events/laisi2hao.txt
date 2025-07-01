@@ -1897,6 +1897,10 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			ENG = { complete_national_focus = uk_free_india_focus }
+			if = {
+				limit = { BUR = is_subject_of = ENG }
+			news_event = { id = laisi2hao.20 days = 90 }
+			}
 		}
 
 	}
@@ -1992,4 +1996,109 @@ country_event = { #联合国成立
         add_ideas = lianheguo
 				}				
 	}
+}
+
+##缅甸独立
+news_event = {
+	id = laisi2hao.20
+	title = laisi2hao.20.t
+	desc = laisi2hao.20.d
+	picture = GFX_event_BUR_free
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			if = {
+				limit = { SRL = is_subject_of = ENG }
+			ENG = { end_puppet = SRL }
+			SRL = {
+				leave_faction = yes
+				drop_cosmetic_tag = yes
+				set_politics = {
+					ruling_party = democratic
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 5
+					communism = 5
+					neutrality = 30
+					democratic = 60
+				}
+				set_party_name = {
+					ideology = democratic
+					name = "斯里兰卡议会"
+					long_name = "斯里兰卡议会"
+				}
+				create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+							   name="威廉·高伯拉瓦"
+							   picture = "gfx/leaders/GNG/UK_SRL_leader.png"
+							   ideology = conservatism
+							   desc = UK_SRL_leader_desc
+							   traits = {  }
+							}
+							give_military_access = ENG
+				diplomatic_relation = {
+	            country = ENG
+	            relation = non_aggression_pact
+	            active = yes
+                }
+			}
+			}
+			ENG = { end_puppet = BUR } 
+			BUR = { 
+				drop_cosmetic_tag = yes
+				leave_faction = yes
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 10
+		            communism = 10
+		            neutrality = 60
+				    democratic = 20
+				}
+				create_country_leader = {
+					name = "BURRRRR_u_nu"
+					desc = "BUR_u_nu_desc"
+					expire = "1971.5.6"
+					ideology = despotism
+					picture = "gfx/leaders/BUR/BUR_u_nu_leader.dds"
+					traits = {
+			
+					}
+				}
+				give_military_access = ENG
+				diplomatic_relation = {
+	            country = ENG
+	            relation = non_aggression_pact
+	            active = yes
+                }
+			 }
+		}
+
+	}
+	
+	
+	option = {
+		name = laisi2hao.20.a
+		trigger = { tag = ENG }
+		add_war_support = -0.05
+	}
+	option = {
+		name = laisi2hao.20.b
+		trigger = { tag = BUR }
+		add_war_support = 0.2
+	}
+	option = {
+		name = laisi2hao.20.c
+		trigger = { NOT = {
+			tag = ENG
+			tag = BUR
+		 }
+		}
+}
 }

@@ -6,6 +6,7 @@ characters={
 		name=BUR_u_nu
 		portraits={
 			civilian={
+				large="GFX_BUR_u_nu_big"
 				small="GFX_idea_BUR_u_nu"
 			}
 		}

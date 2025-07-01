@@ -21,6 +21,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_BUR_u_nu_big"
+		texturefile = "gfx/leaders/BUR/BUR_u_nu_leader.dds"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_SOV_lazar_kaganovich"
 		texturefile = "gfx/leaders/GNG/SOV_lazar_kaganovich.png"
 		legacy_lazy_load = no
@@ -153,6 +158,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_event_UN_found"
 		texturefile = "gfx/event_pictures/event_UN_found.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_event_BUR_free"
+		texturefile = "gfx/event_pictures/event_BUR_free.png"
 		legacy_lazy_load = no
 	}
 	SpriteType = {
