@@ -2,28 +2,34 @@ on_actions = {
 	on_startup = {
 		effect = {
 			set_global_flag = ENG_chongzu_empire
-			build_railway = {
+			build_railway = {#柏林
 				level = 3
 				path = { 
 					3499 13510 6521
 				}
 			}
-			build_railway = {
+			build_railway = {#柏林
 				level = 3
 				path = { 
 					375 13510 6521
 				}
 			}
-			build_railway = {
+			build_railway = {#呼伦贝尔
 				level = 2
 				path = { 
 					1502 4876 7894
 				}
 			}
-			build_railway = {
+			build_railway = {#呼伦贝尔
 				level = 2
 				path = { 
 					12485 13430 7894
+				}
+			}
+			build_railway = {#西伯利亚大铁路修复
+				level = 1
+				path = { 
+					10639 4724 12691
 				}
 			}
 			ENG = {
