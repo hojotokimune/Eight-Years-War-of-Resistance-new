@@ -1436,7 +1436,17 @@ news_event = {
 		NOT = {
 			has_global_flag = north_south_korea
 		}
-		JAP = { has_government = democratic }
+		OR = {
+			has_global_flag = had_august_storm_flag
+			has_global_flag = august_storm
+			has_global_flag = august_storm_player
+			has_global_flag = august_storm_event
+			has_global_flag = CHI_no_longer_united_flag
+		}
+				or = {
+				JAP = { has_government = democratic }     
+				JAP = { is_subject = yes }     
+				} 
 	}
 	
 	immediate = {

@@ -16,6 +16,11 @@ fuck_you_donot_bother_me_AI_NMSL = {
 			SIA = {
 				country_event = { id = rcmjapan_defeated_conference.1 }
 			}
+			set_global_flag = had_august_storm_flag
+		set_global_flag = august_storm
+		set_global_flag = august_storm_player
+		set_global_flag = august_storm_event
+		set_global_flag = CHI_no_longer_united_flag
 			set_global_flag = SIA_submits_flag
 			every_country = {
 				limit = { has_war_with = GER }

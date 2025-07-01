@@ -2340,7 +2340,13 @@ priority = 4999
 				328 = { is_controlled_by = SOV }
                 NOT = { 525 = { is_controlled_by = JAP }  }
                 NOT = { JAP = { is_in_faction_with = MAN } }
-                SOV = { has_completed_focus = SOV_end_the_khalkhin_gol_conflict }
+                OR = {
+					has_global_flag = had_august_storm_flag
+					has_global_flag = august_storm
+					has_global_flag = august_storm_player
+					has_global_flag = august_storm_event
+					has_global_flag = CHI_no_longer_united_flag
+				}
                 NOT = { JAP = { has_war_with = CHI } }
                 NOT = { JAP = { has_war_with = PRC } }
                 NOT = { JAP = { has_war_with = SOV } }
