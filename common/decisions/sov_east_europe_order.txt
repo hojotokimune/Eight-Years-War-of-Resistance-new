@@ -868,6 +868,7 @@ political_actions = {
 						}
 						
 					}
+					days_remove = 10
 					
 					cost = 0
 					fire_only_once = yes
@@ -876,16 +877,22 @@ political_actions = {
 						base = 9999 #MODDED
 																	   
 					}
-					complete_effect = {
+					remove_effect = {
 					RAJ = {
-						release = PAK
-						annex_country = { 
-							target = event_target:keshimier #国家tag
-							transfer_troops = yes #是否把部队一起吞了
+						every_country = {
+							limit = {
+								is_subject_of = RAJ
+							}
+							RAJ = { end_puppet = PREV }
 						}
-						annex_country = { 
-							target = event_target:lajiasitan #国家tag
-							transfer_troops = yes #是否把部队一起吞了
+						release = PAK
+						declare_war_on = {
+							type = annex_everything
+							target = event_target:lajiasitan
+						}
+						declare_war_on = {
+							type = annex_everything
+							target = event_target:HYD
 						}
 						annex_country = { 
 							target = event_target:madulai #国家tag
@@ -895,23 +902,112 @@ political_actions = {
 							target = event_target:NAISUOER #国家tag
 							transfer_troops = yes #是否把部队一起吞了
 						}
-						annex_country = { 
-							target = event_target:HYD #国家tag
-							transfer_troops = yes #是否把部队一起吞了
-						}
-						transfer_state = 441
-						transfer_state = 1076
+
 						}
 					PAK = {
-						annex_country = { 
-							target = event_target:piluzhi #国家tag
-							transfer_troops = yes #是否把部队一起吞了
+						inherit_technology = RAJ
+						add_command_power = 200
+						declare_war_on = {
+							type = annex_everything
+							target = event_target:piluzhi
 						}
-						annex_country = { 
-							target = event_target:keshimier #国家tag
-							transfer_troops = yes #是否把部队一起吞了
+						division_template = {
+							name = "巴基斯坦陆军"
+							regiments = {
+										infantry = { x = 0 y = 0 }
+										infantry = { x = 0 y = 1 }
+										infantry = { x = 0 y = 2 }
+										infantry = { x = 0 y = 3 }
+										
+										infantry = { x = 1 y = 0 }
+										infantry = { x = 1 y = 1 }
+										infantry = { x = 1 y = 2 }
+										infantry = { x = 1 y = 3 }		
+					
+										infantry = { x = 2 y = 0 }
+										infantry = { x = 2 y = 1 }	
+							
+							artillery_brigade = { x = 3 y = 0 }
+							artillery_brigade = { x = 3 y = 1 }
+							artillery_brigade = { x = 3 y = 2 }
+							}
+							support = {
+								logistics_company = { x = 0 y = 0 } 
+								engineer = { x = 0 y = 1 }
+								artillery = { x = 0 y = 2 } 
+								anti_tank = { x = 0 y = 3 } 
+								anti_air = { x = 0 y = 4 }
+								}
+							}
+						443 = {
+							create_unit = {
+							division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+							owner = PAK
+							count = 14
+							}
+						}
+						create_corps_commander = {
+							name = "穆罕默德·阿尤布·汗" #将领名字
+							gfx = GFX_Portrait_Pakistan_Akbar_Khan #将领头像(文件名)
+							skill = 6 #将领等级(1-9)
+							attack_skill = 3 #攻击能力(1-9)
+							defense_skill = 3 #防御能力(1-9)
+							planning_skill = 3 #规划能力(1-9)
+							logistics_skill = 3 #后勤能力(1-9)
+							traits = { 
+								 media_personality war_hero winter_specialist #将领特质
+							}
+						}
+						create_corps_commander = {
+							name = "穆罕默德·阿尤布·汗2" #将领名字
+							gfx = GFX_Portrait_Pakistan_Akbar_Khan #将领头像(文件名)
+							skill = 6 #将领等级(1-9)
+							attack_skill = 3 #攻击能力(1-9)
+							defense_skill = 3 #防御能力(1-9)
+							planning_skill = 3 #规划能力(1-9)
+							logistics_skill = 3 #后勤能力(1-9)
+							traits = { 
+								 media_personality war_hero winter_specialist #将领特质
+							}
+						}
+						create_corps_commander = {
+							name = "穆罕默德·阿尤布·汗3" #将领名字
+							gfx = GFX_Portrait_Pakistan_Akbar_Khan #将领头像(文件名)
+							skill = 6 #将领等级(1-9)
+							attack_skill = 3 #攻击能力(1-9)
+							defense_skill = 3 #防御能力(1-9)
+							planning_skill = 3 #规划能力(1-9)
+							logistics_skill = 3 #后勤能力(1-9)
+							traits = { 
+								 media_personality war_hero winter_specialist #将领特质
+							}
+						}
+						create_corps_commander = {
+							name = "穆罕默德·阿尤布·汗4" #将领名字
+							gfx = GFX_Portrait_Pakistan_Akbar_Khan #将领头像(文件名)
+							skill = 6 #将领等级(1-9)
+							attack_skill = 3 #攻击能力(1-9)
+							defense_skill = 3 #防御能力(1-9)
+							planning_skill = 3 #规划能力(1-9)
+							logistics_skill = 3 #后勤能力(1-9)
+							traits = { 
+								 media_personality war_hero winter_specialist #将领特质
+							}
+						}
+						create_corps_commander = {
+							name = "穆罕默德·阿尤布·汗5" #将领名字
+							gfx = GFX_Portrait_Pakistan_Akbar_Khan #将领头像(文件名)
+							skill = 6 #将领等级(1-9)
+							attack_skill = 3 #攻击能力(1-9)
+							defense_skill = 3 #防御能力(1-9)
+							planning_skill = 3 #规划能力(1-9)
+							logistics_skill = 3 #后勤能力(1-9)
+							traits = { 
+								 media_personality war_hero winter_specialist #将领特质
+							}
 						}
 					}
+					news_event = { id = laisi2hao.21 days = 30 }
 						
 						
 					}

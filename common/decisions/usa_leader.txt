@@ -1761,7 +1761,9 @@ OR = {
 			}
 			activation = {    
 				has_global_flag = ger_zhanbai
-				JAP = { has_war = no }
+				JAP = { 
+					has_war = no
+				 }
 				or = {
 				JAP = { has_government = democratic }     
 				JAP = { is_subject = yes }     

@@ -1897,6 +1897,16 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			ENG = { complete_national_focus = uk_free_india_focus }
+			RAJ = { 
+			 transfer_state = 320 
+			 transfer_state = 321 
+			}
+			 build_railway = {#阿萨姆邦没铁路挺难崩
+				level = 1
+				path = { 
+					7537 7475 1656 12338 10349 1497
+				}
+			}
 			if = {
 				limit = { BUR = is_subject_of = ENG }
 			news_event = { id = laisi2hao.20 days = 90 }
@@ -2101,4 +2111,270 @@ news_event = {
 		 }
 		}
 }
+}
+
+##克什米尔战争
+news_event = {
+	id = laisi2hao.21
+	title = laisi2hao.21.t
+	desc = laisi2hao.21.d
+	picture = GFX_news_keshimier_war
+
+	major = yes
+	
+	is_triggered_only = yes
+	
+	immediate = {
+		hidden_effect = {
+			PAK = {
+				declare_war_on = {
+					type = annex_everything
+					target = event_target:keshimier
+				}
+			}
+			RAJ = { country_event = { id = laisi2hao.22 days = 2 } }
+		}
+
+	}
+	
+	
+	option = {
+		name = laisi2hao.21.a
+		trigger = { or = { 
+			tag = RAJ
+			tag = PAK
+		} }
+		add_political_power = 10
+	}
+	option = {
+		name = laisi2hao.21.b
+		trigger = { 
+			NOT = {
+				or = {
+					tag = RAJ
+			tag = PAK
+		}
+	 }
+	}
+	}
+}
+
+##克什米尔向印度求援
+country_event = {
+	id = laisi2hao.22
+	title = laisi2hao.22.t
+	desc = laisi2hao.22.d
+
+	is_triggered_only = yes
+	
+	immediate = {
+		set_global_flag = keshimier_war_start
+		hidden_effect = {
+		add_building_construction = {
+			type = supply_node
+			level = 1
+			province = 11929
+			instant_build = yes
+		}
+	}
+
+	}
+	
+	
+	option = {
+		name = laisi2hao.22.a
+		add_stability = 1
+		add_war_support = 1
+		add_to_variable = {
+			ROOT.supply_condition_base = 100
+		}
+		set_autonomy = { target = event_target:keshimier autonomy_state = autonomy_tubang freedom_level = 0.50  }
+		declare_war_on = {
+			type = annex_everything
+			target = PAK
+		}
+		event_target:keshimier = {
+			set_politics = {
+				ruling_party = neutrality
+				elections_allowed = no
+			}
+			set_popularities = {
+				fascism = 10
+				communism = 10
+				neutrality = 60
+				democratic = 20
+			}
+			declare_war_on = {
+				type = annex_everything
+				target = PAK
+			}
+		}
+			PAK = { 
+				add_equipment_to_stockpile = {
+					type = infantry_equipment
+					amount = 15000
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = train_equipment
+					amount = 50
+					producer = ENG
+				}	
+				add_equipment_to_stockpile = {
+					type = anti_air_equipment
+					amount = 250
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = anti_tank_equipment
+					amount = 200
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = artillery_equipment
+					amount = 400
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {#always biggest gap
+					type = support_equipment
+					amount = 400 #not a typo
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = motorized_equipment
+					amount = 2000
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {
+					type = convoy
+					amount = 50
+					producer = ENG
+				}
+				add_equipment_to_stockpile = {#always losing air war at this point
+			type = small_plane_airframe
+			amount = 200
+			producer = ENG
+		}
+				transfer_state = 787 
+				transfer_state = 1068
+				add_stability = 1
+		add_war_support = 1
+		add_to_variable = {
+			ROOT.supply_condition_base = 100
+		}
+			}
+			1068 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive scope = RAJ }
+				create_unit = {
+				division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+				owner = PAK
+				count = 6
+				}
+			}
+			787 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive scope = RAJ }
+				create_unit = {
+				division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+				owner = PAK
+				count = 6
+				}
+			}
+			430 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive scope = RAJ }
+				create_unit = {
+				division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+				owner = PAK
+				count = 30
+				}
+					add_building_construction = {
+										type = supply_node
+										level = 1
+										province = 11929
+										instant_build = yes
+									}
+			}
+			440 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive scope = RAJ }
+				create_unit = {
+				division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+				owner = PAK
+				count = 10
+				}
+			}
+			442 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive scope = RAJ }
+				create_unit = {
+				division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+				owner = PAK
+				count = 10
+				}
+			}
+			443 = {
+				add_dynamic_modifier = { modifier = unplanned_offensive scope = RAJ }
+				create_unit = {
+					division = "name = \"巴基斯坦陆军\" division_template = \"巴基斯坦陆军\" start_experience_factor = 0.25 "
+					owner = PAK
+					count = 10
+					}
+			}
+
+	}
+}
+
+##克什米尔战争停火
+country_event = {
+	id = laisi2hao.23
+	title = laisi2hao.23.t
+	desc = laisi2hao.23.d
+
+	trigger = {
+		tag = RAJ
+		has_war_with = PAK
+		event_target:keshimier = { is_subject_of = RAJ }
+		or = {
+		has_global_flag = { flag = keshimier_war_start days > 365 }
+		787 = { is_controlled_by = RAJ }
+		1068 = { is_controlled_by = RAJ }
+		441 = { is_controlled_by = PAK }
+		}
+	}
+	fire_only_once = yes
+	immediate = {
+		hidden_effect = {
+		430 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive }
+		}
+		440 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive }
+		}
+		442 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive }
+		}
+		443 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive }
+		}
+		787 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive }
+		}
+		1068 = {
+			remove_dynamic_modifier = { modifier = unplanned_offensive }
+		}
+	}
+
+	}
+	
+	
+	option = {
+		name = laisi2hao.23.a
+		white_peace = PAK
+		annex_country = {
+			target = event_target:keshimier
+			transfer_troops = yes
+		}
+		PAK = { 
+			transfer_state = 1068
+			transfer_state = 787
+		 }
+
+	}
 }
