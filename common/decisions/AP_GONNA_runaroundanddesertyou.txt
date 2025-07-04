@@ -38,7 +38,6 @@ fuck_you_donot_bother_me_AI_NMSL = {
 			763 = { set_state_name = 加里宁格勒 }
 			every_state = {
 				limit = {
-					NOT = { is_core_of = SHX }
 				OR = {
 					custom_trigger_tooltip = {
 						tooltip = is_in_strat_242
@@ -52,17 +51,17 @@ fuck_you_donot_bother_me_AI_NMSL = {
 						tooltip = is_in_strat_155
 						region = 155
 					}
-					custom_trigger_tooltip = {
-						tooltip = is_in_strat_244
-						region = 244
-					}
 				}
 			}
 			SOV = { transfer_state = PREV
 			transfer_state = 745
 			transfer_state = 537
 			transfer_state = 555
+			transfer_state = 612
+			transfer_state = 1012
+			transfer_state = 611
 		 }
+		}
 		 SOV = { 
 			set_faction_name = shehuizhuyi
 			country_event = {
@@ -70,7 +69,6 @@ fuck_you_donot_bother_me_AI_NMSL = {
 			days = 1
 		}
 	}
-			}
 			every_state = { 
 				limit = { is_core_of = PHI }
 				PHI = { transfer_state = PREV }

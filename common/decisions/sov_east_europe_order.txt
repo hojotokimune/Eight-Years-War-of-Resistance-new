@@ -604,7 +604,7 @@ political_actions = {
 				}
 				complete_effect = {
 					create_dynamic_country = {
-						original_tag = BHU
+						original_tag = NEN
 						save_global_event_target_as = HYD
 						set_country_flag = RAJ_tubang
 						event_target:HYD = {
@@ -643,7 +643,7 @@ political_actions = {
 						
 						}
 						create_dynamic_country = {
-							original_tag = BHU
+							original_tag = NEN
 							save_global_event_target_as = NAISUOER
 							set_country_flag = RAJ_tubang
 							event_target:NAISUOER = {
@@ -683,7 +683,7 @@ political_actions = {
 							}
 
 							create_dynamic_country = {
-								original_tag = BHU
+								original_tag = NEN
 								save_global_event_target_as = madulai
 								set_country_flag = RAJ_tubang
 								event_target:madulai = {
@@ -723,7 +723,7 @@ political_actions = {
 								}
 
 								create_dynamic_country = {
-									original_tag = BHU
+									original_tag = NEN
 									save_global_event_target_as = lajiasitan
 									set_country_flag = RAJ_tubang
 									event_target:lajiasitan = {
@@ -765,7 +765,7 @@ political_actions = {
 
 
 									create_dynamic_country = {
-										original_tag = BHU
+										original_tag = NEN
 										save_global_event_target_as = piluzhi
 										set_country_flag = RAJ_tubang
 										event_target:piluzhi = {
@@ -803,7 +803,7 @@ political_actions = {
 										
 										}
 										create_dynamic_country = {
-											original_tag = BHU
+											original_tag = NEN
 											save_global_event_target_as = keshimier
 											set_country_flag = RAJ_tubang
 											event_target:keshimier = {
@@ -1007,7 +1007,7 @@ political_actions = {
 							}
 						}
 					}
-					news_event = { id = laisi2hao.21 days = 30 }
+					news_event = { id = laisi2hao.21 days = 60 }
 						
 						
 					}
