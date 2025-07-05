@@ -633,3 +633,62 @@ buffer_japan_subject = {
  		subtract_fronts_from_need = yes
  	}
 }
+
+lul_lets_save_our_navy = {
+	enable = {
+		OR = {
+			tag = ENG
+			tag = USA
+		}
+		date < 1943.9.1
+		has_war_with = JAP
+	}
+
+	abort_when_not_enabled = yes
+
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 75 #singapore
+		value = 6000 # avoid doing missions as well
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 72 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 78 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 80 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 92 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 76 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 94 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 90 #around singapore
+		value = 5000
+	}
+	ai_strategy = {
+		type = naval_avoid_region
+		id = 77 #around singapore
+		value = 5000
+	}
+}

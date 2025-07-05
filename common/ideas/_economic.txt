@@ -1381,6 +1381,13 @@ global_building_slots_factor = 0.25
 					date > 1941.6.1
 				}
 
+				modifier = {
+					factor = 400
+					original_tag = JAP
+					NOT = {
+						has_war_with = USA
+					}
+				}
 				# Oil for hitlers oil throne!
 				#guomodifier = {
 				#guo	factor = 600

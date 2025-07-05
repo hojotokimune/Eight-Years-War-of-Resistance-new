@@ -78,6 +78,8 @@ allied_powers = {#同盟国胜利，otl的历史。
 	}
 	happened = {
 		has_global_flag = ger_zhanbai
+		has_global_flag = end_of_second_sino_japanese_war
+
 	}
 }
 
@@ -189,21 +191,52 @@ Three_month_destroy_jap = {#三月落日
 }
 
 # The_best_tool_to_make_ai_be_drowned = {
-# 	possible = {		
+# 	possible = {		#新版本核弹代码我不会写
 # 	}
 # 	happened = {
 # 		has_tech  = sp_nuclear_bomb
 # 	}
 # }
 
-# Yibiandao = {
-# 	possible = {
-# 		OR = {
-# 			tag = prc
-# 			tag = sov
-# 		}
-# 	}
-# 	happened = {
+Yibiandao = {
+	possible = {
 		
-# 	}
-# }
+			tag = prc
+			
+		
+	}
+	happened = {
+		is_in_faction_with = sov
+	}
+}
+
+A_different_way_to_what = {#不同的道路
+	possible = {
+		tag = chi
+	}
+	happened = {
+		
+		has_completed_focus = CHI_axis_help_party_focus
+		custom_trigger_tooltip = {
+		tooltip = A_different_way_to_what2
+	}
+	}
+}
+
+mobilization_in_china = {#中国动员
+	possible = {
+		tag = prc
+	}
+	happened = {
+		has_manpower = 50000000
+	}
+}
+
+ironman_mode_is_not_compatiable = {#CRASH!
+	possible = {
+		is_ironman = yes
+	}
+	happened = {
+		is_ironman = yes
+	}
+}
