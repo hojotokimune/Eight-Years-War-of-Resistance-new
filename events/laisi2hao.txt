@@ -24,14 +24,6 @@ news_event = {
 	immediate = {
 		set_global_flag = xiaweiyihebao
 		hidden_effect = {
-			if = {
-				limit = {
-				NOT = {
-				has_country_flag = nuke_a_flag
-				}							
-				}
-				set_country_flag = nuke_a_flag
-			}
 			JAP = {
 				launch_nuke = { 
 				   province = 4180 #will nuke this province if specified

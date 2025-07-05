@@ -3465,7 +3465,7 @@ set_province_name = { id = 4572 name = "changchun"}
 					
 				}
 745 = { 
-					set_state_name = Dalian
+					set_state_name = dalian
 					
 				}
 SOV = {
