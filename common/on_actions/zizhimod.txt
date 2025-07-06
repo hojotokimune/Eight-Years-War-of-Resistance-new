@@ -3161,35 +3161,35 @@ type = protect
                 }
 				208 = {
 			        add_dynamic_modifier = { modifier = SOV_seraya_loshad_battery scope = SOV days = 1080 }
-                    add_building_construction = {
-						type = bunker
-						level = 10
-						province = 11186
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 10
-						province = 9097
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 10
-						province = 11186
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = coastal_bunker
-						level = 10
-						province = 9097
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = anti_air_building
-						level = 5
-						instant_build = yes
-					}					                                        
+                    #add_building_construction = {
+						#type = bunker
+						#level = 10
+						#province = 11186
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = bunker
+						#level = 10
+						#province = 9097
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = coastal_bunker
+						#level = 10
+						#province = 11186
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = coastal_bunker
+						#level = 10
+						#province = 9097
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = anti_air_building
+						#level = 5
+						#instant_build = yes
+					#}					                                        
                 }
 				264 = {
                     add_building_construction = {

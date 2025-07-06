@@ -2950,24 +2950,24 @@ priority = 4999
 							state = 195
 						}
 					}
-                    add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6174
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 79
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11068
-						instant_build = yes
-					}
+                    #add_building_construction = {
+						#type = bunker
+						#level = 3
+						#province = 6174
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = bunker
+						#level = 3
+						#province = 79
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = bunker
+						#level = 3
+						#province = 11068
+						#instant_build = yes
+					#}
 					add_building_construction = {
 						type = bunker
 						level = 10
