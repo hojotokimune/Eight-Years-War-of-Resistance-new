@@ -788,3 +788,32 @@ news_event = {
 	option = {
 		}
 }
+
+##托洛茨基回国
+country_event = {
+	id = history_hide.13
+	title = history_hide.13.t
+	desc = history_hide.13.d
+	picture = GFX_report_event_soviet_tank_parade
+	
+	is_triggered_only = yes
+	
+	option = {
+		name = history_hide.13.a
+		ai_chance = { factor = 999 }
+		add_ideas = SOV_lev_trotsky
+		add_field_marshal_role = { #GUO
+				character = SOV_lev_trotsky
+				traits = { adaptable  brilliant_strategist  war_hero  harsh_leader trait_reckless  logistics_wizard   media_personality organisational_leader }
+				skill = 5
+				attack_skill = 5
+				defense_skill = 4
+				planning_skill = 4
+				logistics_skill = 4
+			}
+			complete_national_focus = SOV_depoliticize_the_military
+
+
+	}
+
+}
