@@ -256,8 +256,7 @@ CHI_MOT_01 =
 
 	# Names with numbers (only one number per entry). 
 	# It's okay to have gaps in numbering.
-	ordered =
-	{
+	ordered ={
 		500 = { "第200 摩托化步兵师" }		# only historical motorized division for NRA
 		430 = { "新编第30 美械摩托化步兵师" }		# American-trained (full) divisions of historical 'X Force'
 		438 = { "新编第38 美械摩托化步兵师" }		
@@ -346,31 +345,30 @@ CHI_MEC_01 =
 		480 = { "第80 德械机械化步兵师" }		
 		483 = { "第83 德械机械化步兵师" }		
 		489 = { "第89 德械机械化步兵师" }		
-		5 = { "第%d 机械化步兵师" }				# fictional names for mechanized corps
 		1 = { "第%d 机械化步兵师" }						
 		2 = { "第%d 机械化步兵师" }
 		3 = { "第%d 机械化步兵师" }
 		4 = { "第%d 机械化步兵师" }
-		9 = { "第%d 机械化步兵师" }
-		12 = { "第%d 机械化步兵师" }
-		13 = { "第%d 机械化步兵师" }
-		14 = { "第%d 机械化步兵师" }
-		17 = { "第%d 机械化步兵师" }
-		18 = { "第%d 机械化步兵师" }
+		5 = { "第%d 机械化步兵师" }	     # fictional names for mechanized corps
 		6 = { "第%d 机械化步兵师" }
 		7 = { "第%d 机械化步兵师" }
 		8 = { "第%d 机械化步兵师" }
+		9 = { "第%d 机械化步兵师" }
 		10 = { "第%d 机械化步兵师" }
+		11 = { "第%d 机械化步兵师" }
+		12 = { "第%d 机械化步兵师" }
+		13 = { "第%d 机械化步兵师" }
+		14 = { "第%d 机械化步兵师" }
 		15 = { "第%d 机械化步兵师" }
 		16 = { "第%d 机械化步兵师" }
+		17 = { "第%d 机械化步兵师" }
+		18 = { "第%d 机械化步兵师" }
 		19 = { "第%d 机械化步兵师" }
 		20 = { "第%d 机械化步兵师" }
-		11 = { "第%d 机械化步兵师" }
 	}
 }
 
-CHI_ARM_01 = 
-{
+CHI_ARM_01 = {
 	name = "装甲部队"
 
 	for_countries = { CHI PRC SHX GXC YUN XSM SIK }
@@ -406,8 +404,7 @@ CHI_ARM_01 =
 	}
 }
 
-CHI_PAR_01 = 
-{
+CHI_PAR_01 = {
 	name = "空军伞降部队"
 
 	for_countries = { CHI PRC SHX GXC YUN XSM SIK }
@@ -438,8 +435,7 @@ CHI_PAR_01 =
 	}
 }
 
-CHI_MAR_01 = 
-{
+CHI_MAR_01 = {
 	name = "海军陆战部队"
 
 	for_countries = { CHI PRC SHX GXC YUN XSM SIK }
@@ -470,8 +466,7 @@ CHI_MAR_01 =
 	}
 }
 
-CHI_MNT_01 = 
-{
+CHI_MNT_01 = {
 	name = "山地部队"
 
 	for_countries = { CHI }

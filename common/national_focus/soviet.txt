@@ -1,4 +1,4 @@
-### search_filters = {FOCUS_FILTER_POLITICAL}
+﻿### search_filters = {FOCUS_FILTER_POLITICAL}
 ### search_filters = {FOCUS_FILTER_RESEARCH}
 ### search_filters = {FOCUS_FILTER_INDUSTRY}
 ### search_filters = {FOCUS_FILTER_STABILITY}
@@ -25,6 +25,8 @@ focus_tree = {
 	}
 	
 	default = no
+
+	shared_focus = sov_war_protect_country
 
 	continuous_focus_position = { x = 55 y = 1500 }
 
@@ -7324,7 +7326,6 @@ focus_tree = {
 		cost = 5
 
 		available = {
-			NOT = { has_global_flag = SOV_no_more_Great_Purge }
 
 		}
 		

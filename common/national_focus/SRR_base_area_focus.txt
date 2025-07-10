@@ -165,7 +165,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
 						count = 4
-						prioritize_location = 7055
+						prioritize_location = 9956
 						allow_spawning_on_enemy_provs = yes
 						country_score = {
 							base = 5
@@ -242,6 +242,9 @@ focus_tree = {
 				uses = 1
 				category = land_doctrine
 			}
+		597 = {
+        damage_building = { type = rail_way damage = 2 } 	
+		}			
 			hidden_effect = {
 		if = {
 			limit = {
@@ -419,7 +422,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
 						count = 4
-						prioritize_location = 7055
+						prioritize_location = 7025
 						allow_spawning_on_enemy_provs = yes
 						country_score = {
 							base = 5
@@ -427,8 +430,10 @@ focus_tree = {
 						owner = SRR
 					}
 				}
+				PRC = {				
 					country_event = {
 					id = ccw.6655 
+				}
 				}				
 			}
 		}
@@ -610,7 +615,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
 						count = 4
-						prioritize_location = 7055
+						prioritize_location = 10043
 						allow_spawning_on_enemy_provs = yes
 						country_score = {
 							base = 5
@@ -960,7 +965,7 @@ focus_tree = {
 					create_unit = {
 						division = "name = \"八路军抗日游击支队\" division_template = \"八路军抗日游击支队\" start_experience_factor = 0.7"
 						count = 4
-						prioritize_location = 7055
+						prioritize_location = 12015
 						allow_spawning_on_enemy_provs = yes
 						country_score = {
 							base = 5
@@ -1155,6 +1160,7 @@ focus_tree = {
 		completion_reward = {
 			EHB = {
 				add_manpower = -5000
+			    add_war_support = -0.05				
 			}
 			JAP = {
                 add_manpower = -5000
@@ -1414,7 +1420,7 @@ focus_tree = {
 				type = infantry_equipment
 				amount = 30000
 				producer = JAP
-			}
+			}			
 		}
 	}
 	focus = {
@@ -1450,12 +1456,20 @@ focus_tree = {
 				add_core_of = PRC
 				remove_core_of = SRR
 				remove_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = SRR }
+				remove_dynamic_modifier = { modifier = prc_dynamic_modifier_shandong_guerillas scope = SRR }				
 				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = PRC }
 			}
-           SRR = {
-                   	every_unit_leader = {
-				set_nationality = PRC
-			}
+        PRC = {
+		create_corps_commander = {
+			name = "张经武"
+			portrait_path = "gfx/leaders/PRC/Portrait_SHD_zhang_jingwu.dds"
+			traits = { organizer logistics_wizard defensive_doctrine }
+			skill=4
+			attack_skill=5
+			defense_skill=7
+			planning_skill=5
+			logistics_skill=6
+		}
                }
 			PRC = {
 				annex_country = {
@@ -1463,6 +1477,18 @@ focus_tree = {
 					transfer_troops = yes
 				}
 			}
+		hidden_effect = {
+		597 = { remove_core_of = SRR }			
+		607 = { remove_core_of = SRR }
+	    1028 = { remove_core_of = SRR }
+		1077 = { remove_core_of = SRR }
+        1017 = { remove_core_of = SRR }
+		PRC = {		
+					country_event = {
+					id = ccw.6657
+				}
+		}				
+		}			
 		}
 	}
 }

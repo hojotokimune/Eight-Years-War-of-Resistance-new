@@ -101,8 +101,7 @@ SHD_CAV_01 =
 	}
 }
 
-SHD_CAV_02 = 
-{
+SHD_CAV_02 = {
 	name = "Cavalry Brigades"
 
 	for_countries = { SHD }

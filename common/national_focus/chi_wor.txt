@@ -376,7 +376,7 @@ shared_focus = {
 	}
 
 	available = {
-           always = no
+        always = no
 	}
 
 	bypass = {
@@ -396,8 +396,43 @@ shared_focus = {
 			var = CHI_war_of_resistance_modifier_army_defence_factor
 			value = 0.025
 		}
-		hidden_effect = {
+		
+		division_template = {
+			name = "荣誉师" 
+			is_locked = no 
+			regiments = { 
+				infantry = { x = 0 y = 0 }
+				infantry = { x = 0 y = 1 }
+				infantry = { x = 0 y = 2 }
+				infantry = { x = 0 y = 3 }
+
+				infantry = { x = 1 y = 0 }
+				infantry = { x = 1 y = 1 }
+				infantry = { x = 1 y = 2 }
+				infantry = { x = 1 y = 3 }
+
+				infantry = { x = 2 y = 0 }
+				infantry = { x = 2 y = 1 }
+				infantry = { x = 2 y = 2 }
+				infantry = { x = 2 y = 3 }
+
+				artillery_brigade = { x = 3 y = 0 }
+			}
+			support = { 
+				engineer = { x = 0 y = 0 } 
+				artillery = { x = 0 y = 1 } 
+			} 
 		}
+
+		capital_scope = {
+			create_unit = {
+				division = "name = \"荣誉师\" division_template = \"荣誉师\" 
+				start_experience_factor = 1 
+				start_equipment_factor = 1
+				owner = ROOT
+				count = 1 "
+			}
+		}	
 	}
 }
 shared_focus = {

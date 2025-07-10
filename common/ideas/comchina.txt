@@ -1,5 +1,46 @@
 ideas = { #almost the entire thing are modded too, can't bother
 	hidden_ideas = {
+
+		PRC_SHD_guerilla_leader = {
+		    picture = prc_ccw_righteous_cause
+			
+			allowed = {
+			    always = no
+			}
+			
+			cancel = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+			    army_org_factor = 0.25
+			    army_core_defence_factor = 0.2
+				army_speed_factor = -0.5
+				army_core_attack_factor = 0.1
+				army_morale_factor = 0.25
+				stability_weekly_factor = 0.003
+				war_support_weekly_factor = 0.003
+			    conscription = 0.1
+				dig_in_speed_factor = 0.3
+				max_dig_in_factor = 0.3
+				pocket_penalty = -0.25
+				recon_factor = 0.1
+				org_loss_at_low_org_factor = -0.25
+				ammunition_capacity_factor = 0.3
+				ammunition_factor = 0.5
+				weekly_manpower = 1250
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = -0.75
+				defense_bonus_against = 0.25
+			}
+			targeted_modifier = {
+				tag = EHB
+				attack_bonus_against = -0.75
+			}
+		}
 		spare_the_players_some_braincells = {
 			available = {
 				if = {
@@ -219,6 +260,90 @@ ideas = { #almost the entire thing are modded too, can't bother
 				defense_bonus_against = 0.15
 			}
 		}
+		PRC_hundred_regiment_offensive2 = { #guo
+			picture = generic_japanese_conflict
+
+			allowed = { always = no }
+
+			removal_cost = -1
+			available = {
+				has_war_with = JAP
+			}
+			
+			traits = {
+				minus_point_5_per_week #MODDED
+			}
+			
+			on_remove = {
+			news_event = { id = news.1010 days = 1 }
+			set_global_flag = baituandazhan_OVERZZ
+	        set_global_flag = baituandazhan
+	        set_global_flag = GFX_event_kangri_hundred_regiments_campaign
+			}
+
+			#on_add = {
+			#	custom_effect_tooltip = PRC_communal_economy_tt
+			#}
+			modifier = {
+				planning_speed = 0.25
+				max_planning = 0.075
+				no_supply_grace = 42
+				army_speed_factor = 0.05
+				ammunition_consumption_factor = 0.20
+				equipment_capture = 0.075
+				org_loss_when_moving = -0.075
+				army_org_factor = 0.075
+				army_morale_factor = 0.075
+				out_of_supply_factor = -0.075
+                supply_consumption_factor = -0.075
+				command_power_gain = 0.25
+	            max_command_power = 12.5
+				cas_damage_reduction = 0.075
+				enemy_army_bonus_air_superiority_factor = -0.075
+			}
+			targeted_modifier = {
+				tag = JAP
+				attack_bonus_against = 0.05
+				breakthrough_bonus_against = 0.05
+				defense_bonus_against = 0.05
+			}
+			targeted_modifier = {
+				tag = MAN
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = ECA
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = EHB
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = RRC
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = RFM
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+			targeted_modifier = {
+				tag = JNC
+				attack_bonus_against = 0.15
+				breakthrough_bonus_against = 0.15
+				defense_bonus_against = 0.15
+			}
+		}		
 		PRC_communal_economy = {
 			picture = generic_agrarian_society
 
@@ -638,7 +763,7 @@ ideas = { #almost the entire thing are modded too, can't bother
 			modifier = {
 				planning_speed = 0.05
 				army_core_attack_factor = 0.05
-                army_speed_factor = 0.05				
+                army_speed_factor = 0.05 					
 			}
 		}
 		
@@ -1506,7 +1631,7 @@ ideas = { #almost the entire thing are modded too, can't bother
 		}
 
 		
-		
+		hidden_ideas = {		
 		PRC_War_of_Liberation = {
 
 			picture = FRA_scw_intervention_republicans_focus
@@ -1515,11 +1640,25 @@ ideas = { #almost the entire thing are modded too, can't bother
 				always = no
 			}
 
+			available = {
+			PRC = {
+            is_ai = yes
+			}
+			CHI = {
+            is_ai = yes
+			}			
+			}
+
 			allowed_civil_war = {
 				always = yes
 			}
 
 			removal_cost = -1
+
+ 			#targeted_modifier = {
+				#tag = CHI
+				#defense_bonus_against = 0.25			
+            #}
 
 			modifier = {
 				army_org = 10
@@ -1531,7 +1670,10 @@ ideas = { #almost the entire thing are modded too, can't bother
 				stability_weekly = 0.003
 			    ai_focus_defense_factor = 10#guo
 			}
+			cancel = {
+			}			
 		}
+		}		
 		PRC_War_of_Liberation_defense = {
 
 			picture = PRC_morale
@@ -1554,6 +1696,7 @@ ideas = { #almost the entire thing are modded too, can't bother
 				controls_state = 744 #GUO
 				controls_state = 615 #GUO
 				controls_state = 597 #GUO
+				controls_state = 1077 #GUO
 			}	
 			removal_cost = -1
 
@@ -1589,9 +1732,9 @@ ideas = { #almost the entire thing are modded too, can't bother
 				foreign_subversive_activites = -0.5
 				propaganda_mission_factor = 0.25 #政治宣传任务成果
 		boost_ideology_mission_factor = 0.25 #加强意识形态任务成果
-		operation_collaboration_government_outcome = 0.25 #筹备合作政府效率 
-		operation_collaboration_government_cost = -0.25 #筹备合作政府花费 
-		operation_coup_government_outcome = 0.25 #进行颠覆效率 
+		operation_collaboration_government_outcome = 0.25 #筹备合作政府效率
+		operation_collaboration_government_cost = -0.25 #筹备合作政府花费
+		operation_coup_government_outcome = 0.25 #进行颠覆效率
 		operation_coup_government_cost = -0.25 #进行颠覆花费
 			}
 		}
@@ -1627,10 +1770,15 @@ ideas = { #almost the entire thing are modded too, can't bother
 
 			removal_cost = -1
 
-			picture = generic_goods_red_bonus
+			picture = embrace_agr
 
 			modifier = {
-				industrial_capacity_factory = 0.1
+				monthly_population = 0.25
+                conscription_factor = 0.05				
+				consumer_goods_factor = 0.05
+                stability_factor = 0.05
+				war_support_factor = 0.05				
+				industrial_capacity_factory = 0.05
 			}
 		}
 
@@ -1984,6 +2132,152 @@ ideas = { #almost the entire thing are modded too, can't bother
 				consumer_goods_factor = -0.25
 				political_power_gain = 0.3
 			}
-		}				
+		}
+		
+		    prc_jindu = {
+    
+            picture = generic_agrarian_society
+			
+		    available = {
+ 			has_government = communism			
+		    } 
+ 
+            cancel = {
+            }
+
+            removal_cost = -1
+            
+            modifier = {			
+			political_power_factor = 0.1
+			stability_factor = 0.15
+			war_support_factor = 0.1
+			weekly_manpower = 500			
+            consumer_goods_factor = 0.05
+			min_export = -0.1
+            communism_drift = 0.1
+            }
+        }
+	
+		prc_shijierenmindatuanjiewansui = {
+										
+		removal_cost = -1
+
+		picture = generic_communism_drift_bonus
+
+		available = {
+ 			has_government = communism			
+		}
+			
+		modifier = {
+		sprite = 12	
+		drift_defence_factor = 1
+		communism_drift = 0.50
+		offensive_war_stability_factor = 0.15
+		weekly_casualties_war_support = 0.005 #MODDED
+		weekly_manpower = 1500
+		mobilization_speed = 0.50
+		send_volunteer_size = 36
+		send_volunteer_divisions_required = -1
+		join_faction_tension = -1
+		send_volunteers_tension = -1
+		guarantee_tension = -1
+		justify_war_goal_time = -0.8 #guo
+		generate_wargoal_tension = -1 #guo
+		#army_attack_against_major_factor = 0.1 #guo
+		compliance_gain = 0.25
+		resistance_target = -0.25
+		resistance_growth = -0.25
+		resistance_damage_to_garrison = -0.25
+		required_garrison_factor = -0.25
+		non_core_manpower = 0.25		
+		communism_acceptance = 1000
+		ai_focus_aggressive_factor = 0.5
+		ai_get_ally_desire_factor = 1000
+			}
+		}
+		
+		prc_zhonghuarenmingongheguowansui = {
+										
+		removal_cost = -1
+
+		picture = communist_china
+
+        available = {
+ 			has_government = communism		
+        }
+			
+		modifier = {
+	    stability_factor = 0.15
+		communism_drift = 0.25
+		war_support_factor = 0.15
+		political_power_factor = 0.15
+		political_advisor_cost_factor = -0.15 #MODDED
+		army_chief_cost_factor = -0.15 #MODDED
+		navy_chief_cost_factor = -0.15 #MODDED
+		air_chief_cost_factor = -0.15 #MODDED
+		theorist_cost_factor = -0.15 #MODDED
+		high_command_cost_factor = -0.15 #MODDED
+			}
+		}
+
+
+		chi_chinese_war_of_resistance = {
+		    picture = chi_chinese_war_of_resistance
+			
+			allowed = {
+			    always = no
+			}
+			
+			cancel = {
+				event_target:WTT_current_china_leader = {
+					NOT = {
+						has_war_with = JAP
+					}
+				}
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				war_stability_factor = 0.2
+				supply_consumption_factor = -0.1
+				org_loss_at_low_org_factor = -0.1
+				terrain_penalty_reduction = 0.05
+				pocket_penalty = -0.15
+				custom_modifier_tooltip = goes_away_when_at_peace_with_JAP_tt
+			}
+		}
+
+
+
+		PRC_NFA_guerilla_warfare = {
+		    picture = nea_idea_national_model
+			
+			allowed = {
+			    always = no
+			}
+			
+			cancel = {
+			}
+
+			removal_cost = -1
+
+			modifier = {
+				pocket_penalty = -1
+				weekly_manpower = 300
+				ammunition_capacity_factor = 0.3
+				ammunition_factor = 0.5
+				max_surrender_limit_offset = 1
+				forced_surrender_limit = 1
+				supply_combat_penalties_on_core_factor = -1
+				supply_consumption_factor = -1
+				out_of_supply_factor = -1
+				attrition = -1
+				industrial_factory_donations = 5
+				production_lack_of_resource_penalty_factor = -0.5
+				equipment_capture = 0.25
+			}
+		}
+		
 	}
 }

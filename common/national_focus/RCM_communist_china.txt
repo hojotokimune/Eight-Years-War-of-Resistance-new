@@ -1518,8 +1518,30 @@ focus_tree = {
 			    }				
 		        promote_character = PRC_lin_bojiu		
 			    }				
+			if = {
+				limit = {
+					NOT = {
+			        has_global_flag = PRC_hongjungaibianle_flag2
+					}
+				}			
 				load_oob = PRC_eighth_route_army
-				load_oob = PRC_new_fourth_army				
+				load_oob = PRC_new_fourth_army
+			}
+            PRC_lin_biao = {
+            set_portraits = {
+            army={
+            large="gfx/leaders/PRC/Portrait_PRC_Lin_Biao.dds"
+            }
+            }
+            }
+            PRC_zhu_de = {
+            set_portraits = {
+            army={
+            large="gfx/leaders/PRC/Portrait_PRC_Zhu_De.dds"
+            }
+            }
+            }			
+			set_global_flag = PRC_hongjungaibianle_flag			
 			}
 			#if = {
 			#	limit = {
@@ -1957,8 +1979,30 @@ focus_tree = {
 			show_unit_leaders_tooltip = PRC_su_yu
 			show_unit_leaders_tooltip = PRC_gao_jingting
 			hidden_effect = {
+			if = {
+				limit = {
+					NOT = {
+			        has_global_flag = PRC_hongjungaibianle_flag
+					}
+				}			
 				load_oob = PRC_eighth_route_army
 				load_oob = PRC_new_fourth_army
+			}
+            PRC_lin_biao = {
+            set_portraits = {
+            army={
+            large="gfx/leaders/PRC/Portrait_PRC_Lin_Biao.dds"
+            }
+            }
+            }
+            PRC_zhu_de = {
+            set_portraits = {
+            army={
+            large="gfx/leaders/PRC/Portrait_PRC_Zhu_De.dds"
+            }
+            }
+            }			
+			set_global_flag = PRC_hongjungaibianle_flag2			
 			}
 			#if = {
 			#	limit = {
@@ -5260,7 +5304,40 @@ focus_tree = {
 		610 = {
             remove_core_of = XIA
         }
-	    country_event = ccw.678							
+	    country_event = ccw.678
+        if = {
+        limit = { NOT = { has_completed_focus = PRC_New_Red_Army } }		
+		PRC_chen_yi = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_he_long = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_lin_biao = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_liu_bocheng = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_luo_ronghuan = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_nie_rongzhen = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_peng_dehuai = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_xu_xiangqian = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_ye_jianying = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_zhu_de = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		}		
 				play_song = "nea_yiyongjunjinxingqu" #guo
 			}
 			
@@ -5385,9 +5462,8 @@ focus_tree = {
 					has_government = communism
 				}
 			}
-			}
-		    
-            
+            NOT = { country_exists = CHI }			
+			}            
 		}
 		#bypass = {
 		#	has_completed_focus = PRC_War_of_Liberation
@@ -5848,11 +5924,10 @@ focus_tree = {
 				random_select_amount = 2
 				add_trait = { trait = PRC_didao }
 		}
-		available = {
-					has_war_with = JAP	
-		}
-
 	}
+		available = {
+			has_war_with = JAP			
+		}	
 	}	
 	focus = {
 		id = PRC_dileizhan
@@ -7323,9 +7398,9 @@ focus_tree = {
 		icon = GFX_focus_PRC_lighthouse_of_democracy_focus
 		cost = 7.19
 		allow_branch = { has_completed_focus = PRC_zhangwozhudongquan }
-		prerequisite = {
-			focus = PRC_zhangwozhudongquan
-		}
+		#prerequisite = {
+			#focus = PRC_zhangwozhudongquan
+		#}
 		relative_position_id = PRC_zhangwozhudongquan
 		x = 0
 		y = 1
@@ -14495,7 +14570,40 @@ focus_tree = {
         }
 		610 = {
             remove_core_of = XIA
-        }								
+        }
+        if = {
+        limit = { NOT = { has_completed_focus = PRC_New_Red_Army } }		
+		PRC_chen_yi = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_he_long = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_lin_biao = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_liu_bocheng = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_luo_ronghuan = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_nie_rongzhen = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_peng_dehuai = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_xu_xiangqian = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_ye_jianying = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		PRC_zhu_de = {
+			add_trait = { trait = prc_yuanshuai_rank }
+		}
+		}				
 				play_song = "nea_yiyongjunjinxingqu" #guo
 			}
 			
@@ -14642,8 +14750,7 @@ focus_tree = {
 			factor = 1
 		}
 		available_if_capitulated = yes
-		completion_reward = {
-			
+		completion_reward = {			
 			every_other_country = {
 				limit = {
 					NOT = {
@@ -14666,6 +14773,30 @@ focus_tree = {
 				}
 				custom_effect_tooltip = RCM_regional_revolution_tt
 			}
+			custom_effect_tooltip = declare_war_on_all_warlords_tt
+			hidden_effect = {
+				every_country = {
+					limit = {
+						NOT = { has_country_flag = im_kmt_in_burma }
+						OR = {
+							AND = {
+								original_tag = SIK
+								NOT = { is_in_faction_with = SOV }
+								NOT = { is_guaranteed_by = SOV }
+								#has_idea = SIK_Neutral
+							}
+							is_warlord = yes
+						}						
+						is_subject = no
+					}
+					ROOT = {
+						create_wargoal = {
+							type = liberate_wargoal
+							target = PREV
+						}
+					}
+				}
+			}			
 		}
 		available = {
 			has_government = communism
@@ -15671,6 +15802,9 @@ focus_tree = {
 					id = EFM_independent.24
 				}
 			}
+		hidden_effect = {		
+		TIB = { add_ideas = { idea = zhongguoshiwu } }#guo
+		}			
 		}
 		available = {
             1015 = { is_controlled_by = PRC }		
@@ -15832,16 +15966,23 @@ focus_tree = {
 		}
 		available_if_capitulated = yes
 		completion_reward = {
-			add_ideas = PRC_Revanchism			
-		    remove_ideas = zhongguoshiwu
-		    if = {
-	   limit = {
-        CHI = { has_idea = lianheguo } 
-        }
-		add_ideas = lianheguo
-		play_song = "中国在联合国恢复合法席位"		
-        CHI = {
-		    remove_ideas = lianheguo
+	     add_ideas = PRC_Revanchism			
+		 remove_ideas = zhongguoshiwu			
+		 if = {
+	     limit = {
+         CHI = { has_idea = lianheguo } 
+         }
+		 add_ideas = lianheguo		
+         CHI = {
+		     remove_ideas = lianheguo
+		 }
+		}
+		hidden_effect = {		
+		 if = {
+	     limit = {
+         CHI = { has_idea = lianheguo } 
+         }
+		 play_song = "中国在联合国恢复合法席位"		
 		}
 		}		
 		}
@@ -15853,7 +15994,7 @@ focus_tree = {
 	
 	focus = {
 		id = PRC_cult_of_personality_focus
-		icon = GFX_focus_prc_cult_of_personality
+		icon = GFX_PRC6_guohui
 		cost = 5
 		prerequisite = {
 			focus = PRC_Revanchism_of_Chinese
@@ -16191,6 +16332,7 @@ focus_tree = {
 	                     326 = {
                           add_core_of = PRC
                             }
+			             1076 = { add_claim_by = PRC }														
                      }
 			every_other_country = {
 				limit = {

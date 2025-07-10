@@ -1,0 +1,12 @@
+CHI_zongduxiaqu = {
+	icon = eng_organize_the_blackshirts
+	allowed = {
+		tag = CHI
+	}
+	visible = {
+		has_completed_focus = CHI_cult_of_chiang_kai_shek
+		
+	}
+	visible_when_empty = yes
+	priority = 150
+}

@@ -127,7 +127,7 @@ category =
 {
  name = "Voices"
  soundeffects = {
-	PRC_infantry_idle
+	    PRC_infantry_idle
 	PRC_infantry_neutral_combat
 	PRC_infantry_positive_combat
 	PRC_infantry_retreat

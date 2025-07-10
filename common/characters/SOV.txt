@@ -2607,9 +2607,6 @@ characters = {
 			}
 			available = {
 				OR = {
-					has_global_flag = SOV_no_more_Great_Purge
-					AND = {
-						OR = {
 					has_global_flag = SOV_soviet_civil_war
 					has_global_flag = SOV_soviet_civil_war_over
 				}
@@ -2645,12 +2642,9 @@ characters = {
 						NOT = { has_country_leader = { character = PRC_tuosiji } } 
 					}
 				}
-					}
-				}
-				
 			}
 			traits = {
-				pc_military_naval_affairs red_army_organizer_2
+				pc_military_naval_affairs
 			}
 		}
 	}
@@ -2994,7 +2988,6 @@ characters = {
 			}
 			available = {
 				OR = {
-					has_global_flag = SOV_no_more_Great_Purge
 					SOV_is_right_opposition = yes 
 					AND = {
 						SOV_is_left_opposition = yes 

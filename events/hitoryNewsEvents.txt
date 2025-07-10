@@ -297,18 +297,9 @@ news_event = {
 	
 	trigger = {
 		has_global_flag = ouvrir_les_nouvelles
-		or = {
-			NOT = { 
-				115 = { is_controlled_by = ITA } 
-				}
-			AND = {
-				date > 1943.7.9
-				GER = { is_ai = yes }
-				ITA = { is_ai = yes }
-				ENG = { is_ai = yes }
-				USA = { is_ai = yes }
+		NOT = { 
+			115 = { is_controlled_by = ITA } 
 			}
-		}
 		ITA = { has_war_with = USA }
 		ITA = { has_war_with = ENG }
 		NOT = { has_global_flag = land_sicily }
