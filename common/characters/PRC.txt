@@ -22,9 +22,6 @@ characters={
 			idea_token = prc_zhang_wentian
 			traits = { popular_figurehead maoists_trait_zhang_wentian }
 			available = {
-			NOT = {
-					has_global_flag = prc_mianzhi
-			    }
 			}
 			visible = {
 				OR = {
@@ -2362,9 +2359,6 @@ characters={
 				}				
 			}
 			available = {
-			NOT = {
-					has_global_flag = prc_mianzhi
-			    }
 			}			
 			allowed = {
 				#OR = { is_literally_china = yes TAG = SOV }
@@ -2399,12 +2393,7 @@ characters={
 			planning_skill=4
 			logistics_skill=3
 			legacy_id=9004  
-			desc=pengdehuai_desc
-			visible = {		
-			NOT = {
-					has_global_flag = prc_mianzhi
-			    }
-		    }				
+			desc=pengdehuai_desc				
 		}
 	}
 	

@@ -36,6 +36,10 @@ spriteTypes={
         texturefile = "gfx/interface/goals/COOP_align_japan.dds"
     }
     spriteType={
+        name = "GFX_PRC6_guohui"
+        texturefile = "gfx/interface/goals/PRC6_guohui.png"
+    }	
+    spriteType={
         name = "GFX_COOP_army_guy"
         texturefile = "gfx/interface/goals/COOP_army_guy.dds"
     }

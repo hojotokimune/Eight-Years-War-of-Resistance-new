@@ -223,6 +223,7 @@ country_event = {
 				has_government = communism
 			}
 		}
+		add_political_power = -50		
 		SOV = {
 			country_event = prc_lingtu.7
 		}
