@@ -113,7 +113,8 @@ NEA_INF_02 =
 	}
 }
 
-NEA_CAV_02 = {
+NEA_CAV_02 = 
+{
 	name = "独立骑兵旅"
 
 	for_countries = { NEA }

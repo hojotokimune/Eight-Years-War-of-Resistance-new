@@ -4705,10 +4705,7 @@ form_greater_german_reich_category = {
 			set_cosmetic_tag = GER_greater_german_reich
 			if = {
 			limit = { is_ai = no }
-            1080 = { set_state_name = 东日耳曼尼亚 }			
 			set_province_name = { id = 6521 name = "日耳曼尼亚" }
-            1079 = { set_state_name = 西日耳曼尼亚 }			
-			set_province_name = { id = 13510 name = "西日耳曼尼亚" }				
 			}
 			hidden_effect = {
 				set_global_flag = form_greater_german_reich_flag

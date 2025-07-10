@@ -2394,7 +2394,7 @@ country_event = {
 	
 	trigger = {
 		has_global_flag = PRC_jiangqing_Married
-		prc_leader_can_go_to_soviet = yes
+		prc_leader_can_go_to_soviet = yEs
 		is_major = no
 	}
 	

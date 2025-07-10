@@ -571,6 +571,52 @@ add_country_leader_trait = staunch_stalinist
 	
 }
 
+SOV_no_more_Great_Purge = {
+	priority = 4999
+	
+			allowed = {
+				original_tag = SOV
+			}
+			available = {
+				has_completed_focus = SOV_the_centre
+				has_government = communism
+			}
+			visible = {
+				has_government = communism
+				NOT = {
+					has_completed_focus = SOV_the_left_opposition
+					has_completed_focus = SOV_the_right_opposition
+				}
+				
+			}
+			
+			cost = 300
+			fire_only_once = yes
+			
+			ai_will_do = {
+				base = 0 #MODDED
+															   
+			}
+			complete_effect = { 
+				set_global_flag = SOV_no_more_Great_Purge
+				custom_effect_tooltip = SOV_no_more_Great_Purge_donnot_click_this_too_early
+				country_event = history_hide.13 
+				retire_character = SOV_genrikh_yagoda
+				add_ideas = SOV_nikolay_bukharin
+			SOV_remove_paranoia_effect = yes
+			complete_national_focus = SOV_return_democracy_to_the_party
+			complete_national_focus = SOV_socialism_in_one_country
+			complete_national_focus = SOV_secure_the_administration
+			complete_national_focus = SOV_the_collectivization_process
+			complete_national_focus = SOV_the_workers_dictatorship
+			complete_national_focus = SOV_organization_centralization_discipline
+			complete_national_focus = SOV_freedom_of_debate_unity_of_action
+			complete_national_focus = SOV_the_faithful_servant_of_lenin
+
+		}
+			
+			}
+
 }
 
 
@@ -2361,7 +2407,7 @@ priority = 4999
 											}
 												
 												}
-
+									
 
 						USA_manhattan_project_decision = {
 							priority = 4999
@@ -2950,24 +2996,24 @@ priority = 4999
 							state = 195
 						}
 					}
-                    add_building_construction = {
-						type = bunker
-						level = 3
-						province = 6174
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 79
-						instant_build = yes
-					}
-					add_building_construction = {
-						type = bunker
-						level = 3
-						province = 11068
-						instant_build = yes
-					}
+                    #add_building_construction = {
+						#type = bunker
+						#level = 3
+						#province = 6174
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = bunker
+						#level = 3
+						#province = 79
+						#instant_build = yes
+					#}
+					#add_building_construction = {
+						#type = bunker
+						#level = 3
+						#province = 11068
+						#instant_build = yes
+					#}
 					add_building_construction = {
 						type = bunker
 						level = 10

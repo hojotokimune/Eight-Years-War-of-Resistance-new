@@ -12404,10 +12404,6 @@ country_event = { #任命胡宗南
 	
 	option = {
 		name = ccw.733.a
-		ai_chance = { 
-		    factor = 100 
-		}
-		custom_effect_tooltip = THIS_IS_HISTORICAL_TT		
             1053 = {
             add_core_of = XII
             }
@@ -12502,14 +12498,6 @@ country_event = { #任命胡宗南
                 puppet = XII
             }  	
 }
-	option = {
-		name = ccw.733.b
-		ai_chance = { 
-		    factor = 0 
-		}		
-		add_political_power = 25
-		army_experience = 10		
-	}
 }
 country_event = { #苏北灌溉总渠修建完毕
 	id = ccw.734
@@ -16161,32 +16149,7 @@ country_event = {
 	
 	option = {
 	name = ccw.6655.a
-		if = {
-			limit = {
-				NFA = {
-					exists = yes
-				}
-			}	
             NFA = {
-            add_manpower = 8869			
-			add_equipment_to_stockpile = {
-				type = infantry_equipment
-				amount = 1500
-				producer = PRC
-			}
-			add_equipment_to_stockpile = {
-				type = support_equipment
-				amount = 500
-				producer = PRC
-			}
-			}
-			}
-		if = {
-			limit = {
-				NFA = {
-					exists = no
-				}
-			}	
             add_manpower = 8869			
 			add_equipment_to_stockpile = {
 				type = infantry_equipment
@@ -16256,14 +16219,12 @@ country_event = {
 	hidden_effect = {	
 	remove_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = SRR }
 	remove_dynamic_modifier = { modifier = prc_dynamic_modifier_shandong_guerillas scope = SRR }	
-    1077 = { remove_core_of = SRR }			
 	}	
 	}
 	
 	option = {
 	name = ccw.6657.a	
 		effect_tooltip = {	
-           SRR = {
 			every_state = {
 				limit = {
 					is_owned_by = ROOT
@@ -16272,7 +16233,8 @@ country_event = {
 				remove_core_of = SRR
 				remove_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = SRR }
 				add_dynamic_modifier = { modifier = snl_PRC_dyn_land_reform_1 scope = PRC }
-			}		   
+			}
+           SRR = {
                    	every_unit_leader = {
 				set_nationality = PRC
 			}

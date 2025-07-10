@@ -5508,7 +5508,6 @@ focus_tree = {
 		completion_reward = {
 			custom_effect_tooltip = available_designer
 			show_ideas_tooltip = SOV_morozov_design_bureau
-
 		    if = {
 	            limit = {
 		            has_dlc = "No Step Back"
@@ -5537,38 +5536,6 @@ focus_tree = {
 					}
 					icon = "GFX_SOV_basic_light_tank_medium"
 				}
-				division_template = {
-					name = "国军革命军装甲部队" 
-					is_locked = no 
-					regiments = { 
-						motorized = { x = 0 y = 0 }
-						motorized = { x = 0 y = 1 }
-						motorized = { x = 0 y = 2 }
-
-						motorized = { x = 1 y = 0 }
-						motorized = { x = 1 y = 1 }
-						motorized = { x = 1 y = 2 }
-
-						light_armor = { x = 2 y = 0 }
-						light_armor = { x = 2 y = 1 }
-						light_armor = { x = 2 y = 2 }
-
-						mot_artillery_brigade = { x = 3 y = 0 }
-					}
-					support = { 
-						engineer = { x = 0 y = 0 } 
-						maintenance_company = { x = 0 y = 1 } 
-						light_tank_recon = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3}
-					} 
-				}
-					capital_scope = {
-						create_unit = {
-							division = "name = \"国军革命军装甲部队\" division_template = \"国军革命军装甲部队\" start_experience_factor = 1 start_equipment_factor = 1"
-							owner = CHI
-							count = 1 
-						}	
-					}
 				add_equipment_to_stockpile = {
                     type = light_tank_chassis_1
                     amount = 250
@@ -5591,38 +5558,6 @@ focus_tree = {
 				    amount = 250
 				    producer = SOV
 			    }	
-				division_template = {
-					name = "国军革命军装甲部队" 
-					is_locked = no 
-					regiments = { 
-						motorized = { x = 0 y = 0 }
-						motorized = { x = 0 y = 1 }
-						motorized = { x = 0 y = 2 }
-
-						motorized = { x = 1 y = 0 }
-						motorized = { x = 1 y = 1 }
-						motorized = { x = 1 y = 2 }
-
-						light_armor = { x = 2 y = 0 }
-						light_armor = { x = 2 y = 1 }
-						light_armor = { x = 2 y = 2 }
-
-						mot_artillery_brigade = { x = 3 y = 0 }
-					}
-					support = { 
-						engineer = { x = 0 y = 0 } 
-						maintenance_company = { x = 0 y = 1 } 
-						light_tank_recon = { x = 0 y = 2 }
-						logistics_company = { x = 0 y = 3}
-					} 
-				}
-				capital_scope = {
-					create_unit = {
-						division = "name = \"国军革命军装甲部队\" division_template = \"国军革命军装甲部队\" start_experience_factor = 1 start_equipment_factor = 1"
-						owner = CHI
-						count = 1 
-					}	
-				}
 			}    
 		}
 	}
@@ -5649,13 +5584,16 @@ focus_tree = {
 					id = rcmsoviet.1023
 				}
 			}
-			custom_effect_tooltip = if_approved_tt		
-			add_equipment_to_stockpile = {
-				type = infantry_equipment_1
-				amount = 20000
-				producer = SOV
-		    } 
-			if = {
+			custom_effect_tooltip = if_approved_tt			
+			effect_tooltip = {
+		    add_equipment_to_stockpile = {
+			type = infantry_equipment_1
+			amount = 5000
+			producer = SOV
+		    }  			
+				add_ideas = CHI_sov_pact
+				#remove_ideas = CHI_nine_power_treaty
+				if = {
 					limit = {
 						has_dlc = "Arms Against Tyranny"
 					}
@@ -5667,30 +5605,8 @@ focus_tree = {
 						#equipment_type = light_tank_chassis
 						seller_tags = { SOV }
 					}
-				}	
-			add_ideas = CHI_sov_pact
-			#effect_tooltip = {
-		    	#add_equipment_to_stockpile = {
-					#type = infantry_equipment_1
-					#amount = 20000
-					#producer = SOV
-		    	#}  			
-				#add_ideas = CHI_sov_pact
-				#remove_ideas = CHI_nine_power_treaty
-				#if = {
-					#limit = {
-						#has_dlc = "Arms Against Tyranny"
-					#}
-				    #add_equipment_subsidy = {
-						#cic = 2000
-						#equipment_type = infantry_equipment
-						#equipment_type = support_equipment
-						#equipment_type = artillery_equipment
-						#equipment_type = light_tank_chassis
-						#seller_tags = { SOV }
-					#}
-				#}
-			#}
+				}
+			}
 		}
 		available = {
 			RCM_SOV_will_support = yes

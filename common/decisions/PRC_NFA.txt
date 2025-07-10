@@ -73,10 +73,7 @@ rcm_recruit_partisan_units_cat = {
             749 = {
 			set_state_owner_to = NFA
                           }
-		    NFA = {
-            add_to_variable = {	
-	        ROOT.supply_condition_base = 80
-            }			
+		    NFA = {		
 			    inherit_technology = ROOT
 			    set_cosmetic_tag = NFA_communism
 			    give_military_access = PRC			
@@ -109,37 +106,7 @@ rcm_recruit_partisan_units_cat = {
                     expire = "1965.1.1"
                     ideology = marxism
                     traits = { beifashuangjie_ye }
-                }
-		create_field_marshal = {
-			name = "陈毅"
-			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Chen_Yi.dds"
-			traits={ irregulars_leader scavenger hill_fighter youji_hero  }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=5
-		}			
-		create_corps_commander = {
-			name = "粟裕"
-			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Su_Yu.dds"
-			traits={ irregulars_leader suyu_operational_experts infantry_officer rising_young_officer youji_hero brilliant_strategist swamp_fox ranger  hill_fighter  adaptable  trait_mountaineer  trickster  }
-			skill=5
-			attack_skill=6
-			defense_skill=4
-			planning_skill=5
-			logistics_skill=4
-		}
-		create_corps_commander = {
-			name = "张云逸"
-			portrait_path = "gfx/leaders/PRC/zhangyunyi.jpg"
-			traits={ youji_hero career_officer  infantry_officer  }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=3
-			logistics_skill=3
-		}		
+                }					
 		    }
             PRC = {
                 set_autonomy = { target = NFA autonomy_state = PRC_dihouwuzhuang freedom_level = 0.50 }		
@@ -207,9 +174,6 @@ rcm_recruit_partisan_units_cat = {
 			}
                           }
 		    SRR = {		
-            add_to_variable = {	
-	        ROOT.supply_condition_base = 80
-            }			
 			    inherit_technology = ROOT
 		        load_focus_tree = SRR_base_area_focus
 			    give_military_access = PRC			
@@ -251,16 +215,6 @@ rcm_recruit_partisan_units_cat = {
 			defense_skill=7
 			planning_skill=4
 			logistics_skill=6
-		}
-		create_field_marshal = {
-			name = "罗荣桓"
-			portrait_path = "gfx/leaders/PRC/Portrait_PRC_Luo_Ronghuan.dds"
-			traits={ Tzxx_imperturbable_strategist youji_hero trait_cautious scavenger military_political_commissar }
-			skill=3
-			attack_skill=3
-			defense_skill=3
-			planning_skill=4
-			logistics_skill=5			
 		}		
 			if = {
 		limit = {
@@ -301,6 +255,9 @@ rcm_recruit_partisan_units_cat = {
 				end_wars = no
 				end_civil_wars = no
 				}	
+				PRC_luo_ronghuan = {
+             set_nationality = SRR
+				}
 			 
             }
 		    add_to_war = {

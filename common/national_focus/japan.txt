@@ -2710,11 +2710,11 @@ focus_tree = {
 		#}
 		completion_reward = {
 		if = {
-            limit = { PRC = { is_ai = yes } }		
+            limit = { is_ai = yes }		
 			add_ideas = JAP_sanguangzhengce2	
         }
         if = {
-            limit = { PRC = { is_ai = no } }		
+            limit = { is_ai = no }		
 			add_ideas = JAP_sanguangzhengce	 
         }				
 			add_timed_idea = {

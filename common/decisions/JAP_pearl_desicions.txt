@@ -37,6 +37,22 @@ pearl = {
         #days_remove = 7
 
         complete_effect = {
+			288 = { 
+				add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = JAP days = 365 }
+				add_dynamic_modifier = { modifier = jap_shanghai_modifier scope = SIA days = 365 }
+			 }
+			if = {
+				limit = {
+					SIA = { is_in_faction_with = JAP }
+					BUR = { is_subject_of = ENG }
+				}
+				SIA = { 
+					declare_war_on = {
+						type = annex_everything
+						target = BUR
+					}
+				 }
+			}
 		     add_ideas = jap_greater_east_asia_war_1
 		     add_timed_idea = {
 				idea = jap_zhenzhugang

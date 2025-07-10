@@ -20,10 +20,6 @@ spriteTypes = {
 		texturefile = "gfx/interface/ideas/prc_long.dds"
 	}
 	spriteType = {
-		name = "GFX_idea_chi_huangpu"
-		texturefile = "gfx/interface/ideas/chi_huangpu.dds"
-	}	
-	spriteType = {
 		name = "GFX_idea_CHI_land_focus_idea"
 		texturefile = "gfx/interface/ideas/CHI_land_focus_idea.dds"
 	}

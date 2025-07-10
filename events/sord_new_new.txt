@@ -538,16 +538,16 @@ country_event = {#cpc xuanjuren?
 		name = PRC_linyuying.29.b
 		ai_chance = {
 			base = 0
-		}		
-		add_political_power = -150
-		add_stability = -0.1
-		add_war_support = -0.1
-		add_popularity = { ideology = communism popularity = -0.15 }
+		}
 		hidden_effect = {		
 		country_event = {
 			id = ccw.202 hours = 24
 		}
 		}		
+		add_political_power = -150
+		add_stability = -0.1
+		add_war_support = -0.1
+		add_popularity = { ideology = communism popularity = -0.15 }
 	}
 	
 }
@@ -1530,20 +1530,6 @@ country_event = { #
 	
 	immediate = {
 	hidden_effect = {
-    PRC_lin_biao = {
-     set_portraits = {
-       army={
-            large="gfx/leaders/PRC/PRC_linbiao_hongjun.png"
-       }
-     }
-     }
-    PRC_zhu_de = {
-     set_portraits = {
-       army={
-            large="gfx/leaders/PRC/PRC_zhude_hongjun.png"
-       }
-     }
-     }	
             set_province_name = {
                                  id = 12356
                                  name = "定边"
@@ -1557,29 +1543,17 @@ country_event = { #
 				province = 12356
 				value = 1
 			}
-		}
-		1079 = {
-			set_victory_points = {
-				province = 13510
-				value = 5
-			}
-		}		
-		1080 = {
-			set_victory_points = {
-				province = 6521
-				value = 50
-			}
-		}		
-    }	
+		}							   
+    }							   
 	}
 	
 	option = {
 		name = PRC_linyuying.11.a
 		ai_chance = {
 			base = 0
-		}		
+		}
 		set_global_flag = japan_ai_just_bupao
-		custom_effect_tooltip = japan_ai_just_bupao		
+		custom_effect_tooltip = japan_ai_just_bupao
 	}
 	option = {
 		name = PRC_linyuying.11.b
@@ -1680,7 +1654,7 @@ country_event = { #
 		}
 			
                 }
-            }			
+            }
 		}
 	}
 	option = {
@@ -1784,7 +1758,7 @@ JAP = { add_ideas = balance_idea_japan_buff }
 		}
 			
                 }
-            }			
+            }
 		}
 	}
 	option = {
@@ -1900,7 +1874,7 @@ JAP = { add_ideas = balance_idea_japan_buff2 add_ideas = jap_juexingji }
 		}
 			
                 }
-            }			
+            }
 		}
 	}	
 }
@@ -2565,13 +2539,6 @@ country_event = { #强制总结大集合
 		}
 		set_global_flag = PRC_War_of_Liberation_has_been_selected
 		hidden_effect = {
-		PRC_lin_biao = {
-			set_portraits = {
-				army={
-					large="gfx/leaders/PRC/PRC_linbiao_jiefang.png"
-				}
-			}
-		}		
 			SHX = {
 			
 			if = {
@@ -8563,7 +8530,7 @@ news_event = { #for jap peace #日本与盟军白和后续
 					}
 					set_autonomy = {
 						target = JAP
-						autonomy_state = autonomy_supervised_state
+						autonomy_state = autonomy_USA_baohuguo
 					}
 				}
 				else = {
@@ -20024,7 +19991,7 @@ has_government = democratic
 		date > 1948.11.20
 		date < 1949.1.1
 		has_country_leader = {
-			name = "Harry S. Truman"
+			name = "哈里·S·杜鲁门"
 			ruling_only = yes
 		}
 	}
@@ -20056,7 +20023,7 @@ has_government = democratic
 			name = "Thomas E. Dewey"
 			picture = "gfx/leaders/USA/Portait_USA_Thomas_Dewey.jpg"
 			expire = "1965.1.1"
-			ideology = conservatism
+			ideology = USA_Republican
 			traits = {
 				anti_communist
 			}

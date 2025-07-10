@@ -138,47 +138,47 @@ JAP_dont_push_northwest = {
 	ai_strategy = {
 		type = consider_weak
 		id = "SHX"
-		value = 1000
+		value = -1000
 	}
     ai_strategy = {
 		type = consider_weak
 		id = "PRC"
-		value = 1000
+		value = -1000
 	}
     ai_strategy = {
 		type = consider_weak
 		id = "NXM"
-		value = 1000
+		value = -1000
 	}
     ai_strategy = {
 		type = conquer
 		id = SHX
-		value = 2000
+		value = -2000
 	}
 	ai_strategy = {
 		type = antagonize
 		id = SHX
-		value = 2000
+		value = -2000
 	}
       ai_strategy = {
 		type = conquer
 		id = NXM
-		value = 2000
+		value = -2000
 	}
 	ai_strategy = {
 		type = antagonize
 		id = NXM
-		value = 2000
+		value = -2000
 	}
       ai_strategy = {
 		type = conquer
 		id = PRC
-		value = 2000
+		value = -2000
 	}
 	ai_strategy = {
 		type = antagonize
 		id = PRC
-		value = 2000
+		value = -2000
 	}
 }
 
@@ -204,12 +204,12 @@ JAP_dont_push_there = {
 	ai_strategy = {
 		type = consider_weak
 		id = "SHX"
-		value = 100
+		value = -100
 	}
     ai_strategy = {
 		type = consider_weak
 		id = "PRC"
-		value = 5000
+		value = -5000
 	}
     ai_strategy = {
 		type = consider_weak
@@ -1973,54 +1973,6 @@ JAP_we_lost_lets_not_attack_neighbors = {
 		value = 8000
 	}
 }
-##################生产调控###################
-default_mec_production = {
-	enable= {
-		has_global_flag = japan_ai_just_jindun_and_tank_and_buff
-		JAP = {
-			has_idea = jap_juexingji
-			has_tech = mechanised_infantry
-		}
-		num_of_military_factories > 50
-	}
-	abort = {
-		#
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = mechanized_equipment
-		value = 10
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = mec_armor
-		value = 10
-	}
-}
-
-default_mid_tank_production = {
-	enable= {
-		has_global_flag = japan_ai_just_jindun_and_tank_and_buff
-		JAP = {
-			has_idea = jap_juexingji
-			has_tech = mechanised_infantry
-		}
-		num_of_military_factories > 50
-	}
-	abort = {
-		#
-	}
-	ai_strategy = {
-		type = equipment_variant_production_factor
-		id = medium_tank_chassis
-		value = 10
-	}
-	ai_strategy = {
-		type = role_ratio
-		id = medium_tank_chassis
-		value = 10
-	}
-}
 ##################战争策略###################
 ######陆军
 japan_ignore_raj = { #only invade after China die
@@ -2115,17 +2067,17 @@ JAP_invade_shandong = {
 	ai_strategy = {
 		type = invade
 		id = "SHD"
-		value = 10
+		value = 500
 	}
 	ai_strategy = {
 		type = antagonize
 		id = "SHD"
-		value = 10
+		value = 2000
 	}
     ai_strategy = {
 		type = consider_weak
 		id = "SHD"
-		value = 10
+		value = 2000
 	}
 }
 
@@ -2216,12 +2168,12 @@ JAP_lets_invade_china_if_they_are_player = {
 	ai_strategy = {
 		type = invade
 		id = "CHI"
-		value = 0
+		value = 3700
 	}
 	ai_strategy = {
 		type = invade
 		id = "SHD"
-		value = 0
+		value = 1400
 	}
     #ai_strategy = {
 	#	type = invasion_unit_request
@@ -2299,7 +2251,7 @@ JAP_lets_invade_shanghai = {
     ai_strategy = {
 		type = invasion_unit_request
 		tag = CHI
-		value = 0
+		value = 5
 	}
 }
 
@@ -2401,7 +2353,7 @@ JAP_invade_shanghai = {
     ai_strategy = {
         type = invade
         id = "CHI"
-        value = 10
+        value = 500
     }
     ai_strategy = {
         type = invasion_unit_request
@@ -2410,7 +2362,7 @@ JAP_invade_shanghai = {
             tag = PRC
         }
         state = 613
-        value = 0
+        value = 48
     }
 }
 
@@ -2784,7 +2736,7 @@ JAP_attack_from_the_north = {
 		state = 1015
 		state = 1034
 		priority = 500
-		radio = 0.6
+		radio = 0.4
 		ordertype = front
 		execution_type = rush
 		execute_order = yes
@@ -2793,8 +2745,8 @@ JAP_attack_from_the_north = {
 		type = front_control
 		state = 615
 		state = 283
-		priority = 300
-		radio = 0.1
+		priority = 200
+		radio = 0.2
 		ordertype = front
 		execution_type = balanced
 		execute_order = yes
@@ -2977,7 +2929,7 @@ JAP_catch_the_raid_region = {
             has_war_with = USA
         }
 		CHI = {
-			num_of_naval_factories < 1
+			num_of_naval_factories < 5
 		}
     }
 
