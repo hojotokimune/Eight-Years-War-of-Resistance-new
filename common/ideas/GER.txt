@@ -23,6 +23,8 @@ ideas = {
 				political_power_gain = 0.3 #MODDED
 				war_support_weekly = 0.003
 				war_stability_factor = 0.25
+				consumer_goods_expected_value = -0.05
+				production_speed_arms_factory_factor = 0.15
 			}
 			rule = {
 				can_create_factions = yes

@@ -580,6 +580,7 @@ SOV_no_more_Great_Purge = {
 			available = {
 				has_completed_focus = SOV_the_centre
 				has_government = communism
+				has_country_flag = SOV_paranoia_system_active_flag
 			}
 			visible = {
 				has_government = communism
@@ -599,7 +600,6 @@ SOV_no_more_Great_Purge = {
 			}
 			complete_effect = { 
 				set_global_flag = SOV_no_more_Great_Purge
-				custom_effect_tooltip = SOV_no_more_Great_Purge_donnot_click_this_too_early
 				country_event = history_hide.13 
 				retire_character = SOV_genrikh_yagoda
 				add_ideas = SOV_nikolay_bukharin
