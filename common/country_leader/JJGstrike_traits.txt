@@ -1,0 +1,39 @@
+leader_traits = {
+	sun_successor = {#先总理遗志继承者
+		consumer_goods_factor = -0.2
+		democratic_drift = 5
+	}
+	farmers_friend = {#农民的朋友
+		conscription = 0.05
+		production_speed_infrastructure_factor = 0.4
+		global_building_slots_factor = 0.5
+		political_power_factor = 1
+	}
+	Arms_that_was_renewed = {#焕然一新的军队统帅
+		land_reinforce_rate = 0.1
+		army_org_factor = 0.15
+		army_morale_factor = 0.15
+	}
+	diploma_flexibly = {#灵活的外交
+		justify_war_goal_time = -5
+		generate_wargoal_tension = -1
+		
+	}
+	industry_without_parasite = { #去除寄生虫的工业化
+		industrial_capacity_factory = 0.2
+		production_factory_max_efficiency_factor = 0.3
+		production_factory_efficiency_gain_factor = 0.3
+		min_export = -0.15
+		local_resources_factor = 0.5
+	}
+	son_of_chang = {#常公之子
+		stability_factor = -0.15
+		war_support_factor = -0.15
+	}
+	unable_to_guide_sons = {#教子无方
+	custom_modifier_tooltip = no_sons_to_inherit_his_position
+	}
+	unable_to_classify_people = {#识人不明
+	custom_modifier_tooltip = civil_war_might_happen
+	}
+}

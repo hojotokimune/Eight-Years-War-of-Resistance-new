@@ -1,0 +1,89 @@
+add_namespace = JJGstrike
+country_event = {
+	id = JJGstrike.1
+	title = JJGstrike.1.t
+	desc = JJGstrike.1.d
+	is_triggered_only = yes
+	option = {
+		name = JJGstrike.1.a #大吼一声
+		country_event = JJGstrike.2
+		ai_chance = {
+			factor = 0
+		}
+	}
+	option = {
+		name = JJGstrike.1.b #无所作为
+		
+	}
+}
+country_event = {
+	id = JJGstrike.2
+	title = JJGstrike.2.t
+	desc = JJGstrike.2.d
+	is_triggered_only = yes
+	option = {
+		name = JJGstrike.2.a
+		set_politics = {
+			ruling_party = democratic
+			elections_allowed = no
+		}
+		set_rule = {
+			can_send_volunteers = yes
+		}
+		unlock_national_focus = CHI_prepare_for_constitionalization_focus
+	kill_country_leader = yes
+		# create_country_leader = {
+		# 		name = jiang_jingguo
+		# 		desc = ""
+		# 		picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
+		# 		expire = "1965.1.1"
+		# 		ideology = sanmin_constitutional_government
+		# 		traits = {
+		# 			il_duce
+		# 		}
+		# 	}
+		# 	create_country_leader = {
+		# 		name = jiang_jingguo
+		# 		desc = ""
+		# 		picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
+		# 		expire = "1965.1.1"
+		# 		ideology = sanmin_military_rule
+		# 		traits = {
+		# 			il_duce
+		# 		}
+		# 	}
+		# 	create_country_leader = {
+		# 		name = jiang_jingguo
+		# 		desc = ""
+		# 		picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
+		# 		expire = "1965.1.1"
+		# 		ideology = sanmin_political_tutelage
+		# 		traits = {
+		# 			il_duce
+		# 		}
+		# 	}
+	jiang_jingguo = {
+		add_country_leader_role = {
+				promote_leader = yes
+				country_leader = {
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = {
+						il_duce
+						sun_successor
+						farmers_friend
+						Arms_that_was_renewed
+						diploma_flexibly
+						industry_without_parasite
+						son_of_chang
+						unable_to_guide_sons
+						unable_to_classify_people
+					}
+				} 
+			} 
+	}
+		set_country_leader_portrait = {
+		    portrait = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
+		}	
+	}
+}
