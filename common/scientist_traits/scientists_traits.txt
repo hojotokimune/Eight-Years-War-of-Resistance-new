@@ -1,7 +1,4 @@
 scientist_trait_scientist = {
-    allowed = {
-		always = no 
-	}
 	available = { 
 		always = no
 	}
@@ -14,9 +11,6 @@ scientist_trait_scientist = {
 
 scientist_trait_air = {
 	specialization = { specialization_air }
-	allowed = {
-		always = no 
-	}
 	available = { 
 		always = no 
 	}
@@ -30,9 +24,6 @@ scientist_trait_air = {
 
 scientist_trait_land = {
 	specialization = { specialization_land }
-	allowed = {
-		always = no 
-	}
 	available = { 
 		always = no 
 	}
@@ -44,9 +35,6 @@ scientist_trait_land = {
 
 scientist_trait_naval = {
 	specialization = { specialization_naval }
-	allowed = {
-		always = no 
-	}
 	available = { 
 		always = no 
 	}
@@ -57,9 +45,6 @@ scientist_trait_naval = {
 
 scientist_trait_nuclear = {
 	specialization = { specialization_nuclear }
-	allowed = {
-		always = no 
-	}
 	available = { 
 		always = no 
 	}
@@ -70,9 +55,6 @@ scientist_trait_nuclear = {
 
 scientist_trait_project = {
 	specialization = { specialization_nuclear }
-	allowed = {
-		always = no 
-	}
 	available = { 
 		always = no 
 	}

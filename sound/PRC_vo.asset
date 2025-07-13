@@ -39,7 +39,7 @@ soundeffect =
     }
 	max_audible = 4
 	max_audible_behaviour = fail
-	volume = 1
+	volume = 2
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
@@ -55,7 +55,7 @@ soundeffect =
     }
 	max_audible = 8
 	max_audible_behaviour = fail
-	volume = 1
+	volume = 2
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
@@ -71,7 +71,7 @@ soundeffect =
     }
 	max_audible = 6
 	max_audible_behaviour = fail
-	volume = 1
+	volume = 2
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
@@ -90,7 +90,7 @@ soundeffect =
     }
 	max_audible = 5
 	max_audible_behaviour = fail
-	volume = 1
+	volume = 2
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }
@@ -108,7 +108,7 @@ soundeffect =
     }
 	max_audible = 8
 	max_audible_behaviour = fail
-	volume = 1
+	volume = 2
 	volume_random_offset = { 0.0 -0.15 }
 	playbackrate_random_offset = { 0.0 -0.15}
 }

@@ -31967,7 +31967,7 @@ rcm_tibet_and_mon_affairs_cat = {
 			}
 		}
 	
-        days_remove = 180
+        days_remove = 70
 
 		available = {
 			TIB = {
@@ -31976,26 +31976,18 @@ rcm_tibet_and_mon_affairs_cat = {
 			322 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 			601 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 			757 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				#compliance > 29
-				#resistance < 29
 			}
 			758 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 		}
         
@@ -32010,17 +32002,39 @@ rcm_tibet_and_mon_affairs_cat = {
         cancel_if_not_visible = yes
 
 		remove_effect = {
-			TIB = {
-				every_core_state = {
-					limit = {
-						NOT = {
-							is_core_of = ROOT
-						}
-					}
-					add_core_of = ROOT
-					add_dynamic_modifier = { modifier = rcm_home_rule_modifier scope = ROOT } 
+			322 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}				
+			}
+			601 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
+			758 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			757 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
 		}
 
 		ai_will_do = {
@@ -32053,7 +32067,7 @@ rcm_tibet_and_mon_affairs_cat = {
 			}
 		}
 	
-        days_remove = 180
+        days_remove = 70
 
 		available = {
 			MON = {
@@ -32062,32 +32076,22 @@ rcm_tibet_and_mon_affairs_cat = {
 			330 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 			817 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 			818 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 			819 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 			820 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
-				compliance > 29
-				resistance < 29
 			}
 		}
         
@@ -32103,29 +32107,76 @@ rcm_tibet_and_mon_affairs_cat = {
 
 		remove_effect = {
 			set_global_flag = mongolia_area_established
-			MON = {
-				every_core_state = {
-					limit = {
-						NOT = {
-							is_core_of = ROOT
-						}
-					}
-					add_core_of = ROOT
-					add_dynamic_modifier = { modifier = rcm_home_rule_modifier scope = ROOT } 
+			330 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
-			TAN = {
-				every_core_state = {
-					limit = {
-						NOT = {
-							is_core_of = ROOT
-							is_core_of = MON
-						}
-					}
-					add_core_of = ROOT
-					add_dynamic_modifier = { modifier = rcm_home_rule_modifier scope = ROOT } 
+			817 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
 				}
 			}
+			1018 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			819 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			818 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
+			820 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1025 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1026 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			329 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}
+			1024 = {
+				add_building_construction = {
+					type = infrastructure
+					level = 1
+					instant_build = yes
+				}
+			}			
 		}
 
 		ai_will_do = {

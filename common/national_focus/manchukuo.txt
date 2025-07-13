@@ -6007,7 +6007,7 @@ focus_tree = {
 			factor = 1
 		}
 		available = {
-                        has_completed_focus = MAN_plm
+            has_completed_focus = MAN_plm
 		}
 		bypass = {
 		}
@@ -6031,9 +6031,9 @@ focus_tree = {
 				remove_ideas = MAN_puyi_yes_dlc
 				remove_ideas = MAN_low_legitimacy_5
 				leave_faction = yes
-			        set_capital = { state = 1005 }
+			    set_capital = { state = 1005 }
 				drop_cosmetic_tag = yes
-			        set_cosmetic_tag = MAN_qiyi
+			    set_cosmetic_tag = MAN_qiyi
 				declare_war_on = {
 					target = JAP
 					type = puppet_wargoal_focus
@@ -6043,7 +6043,7 @@ focus_tree = {
 				amount = 25000
 			}
 				CHI = { add_to_faction = MAN}
-		add_ideas = man_rangribenguizigunchuqu
+		    add_ideas = man_rangribenguizigunchuqu
 				every_country = {					#中华统一战线的所有国家和EHB签订90天的停战协议
 					limit = {
 						is_in_faction_with = CHI
@@ -6078,7 +6078,7 @@ focus_tree = {
 					long_name = "东北抗日联军"
 					name = "东北抗联"
 				}
-						set_cosmetic_tag = MAN_qiyi
+				set_cosmetic_tag = MAN_qiyi
 				create_country_leader = {
 					name="杨靖宇"
 					desc=PRC_yangjingyu_desc
@@ -6148,10 +6148,13 @@ focus_tree = {
                     traits = { cornered_fox }
                 }
             annex_country = { target = ECA }				
-		    }	
+		    }
+            PLM = {
+            set_cosmetic_tag = PLM_qiyi		
+            }			
             MAN = {
                 set_autonomy = { target = PLM autonomy_state = PRC_dihouwuzhuang freedom_level = 0.50}		
-            }
+            }			
             JAP = {
             set_state_controller = 1062
             set_state_controller = 716

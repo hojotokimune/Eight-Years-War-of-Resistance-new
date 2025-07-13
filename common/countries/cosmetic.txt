@@ -1856,7 +1856,14 @@ EAU_yanse = {
 	color = rgb { 103 122 242 }
 	color_ui = rgb { 103 122 242 }
 }
-
+MAN_qiyi = {
+	color = rgb { 232 2 0 }
+	color_ui = rgb { 232 2 0 }
+}
+PLM_qiyi = {
+	color = rgb { 232 2 0 }
+	color_ui = rgb { 232 2 0 }
+}
 NFA_PRC = {
 	color = rgb { 232 2 0 }
 	color_ui = rgb { 232 2 0 }

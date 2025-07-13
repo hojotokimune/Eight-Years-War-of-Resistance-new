@@ -21,41 +21,21 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/report_event_generic_read_write.dds"
 	}
 	SpriteType = {
+		name = "GFX_xinjiangjiefang"
+		texturefile = "gfx/event_pictures/xinjiangjiefang.jpg"
+	}
+	SpriteType = {
+		name = "GFX_zhenghexinjiang"
+		texturefile = "gfx/event_pictures/zhenghexinjiang.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_maochen"
+		texturefile = "gfx/event_pictures/maochen.png"
+	}	
+	SpriteType = {
 		name = "GFX_news_event_generic_read_write"
 		texturefile = "gfx/event_pictures/news_event_generic_read_write.dds"
 	}
-	SpriteType = {
-		name = "GFX_maotanhua1"
-		texturefile = "gfx/event_pictures/maotanhua1.png"
-	}	
-	SpriteType = {
-		name = "GFX_renbishishishi"
-		texturefile = "gfx/event_pictures/renbishishishi.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_sanxiadaba"
-		texturefile = "gfx/event_pictures/sanxiadaba.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_suluyuzhidui"
-		texturefile = "gfx/event_pictures/suluyuzhidui.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_maotanhua2"
-		texturefile = "gfx/event_pictures/maotanhua2.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_maotanhua3"
-		texturefile = "gfx/event_pictures/maotanhua3.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_linbaogao"
-		texturefile = "gfx/event_pictures/linbaogao.png"
-	}		
-	SpriteType = {
-		name = "GFX_news_event_tokyo_kill"
-		texturefile = "gfx/event_pictures/event_tokyo_kill.png"
-	}	
 	SpriteType = {
 		name = "GFX_news_event_generic_sign_treaty2"
 		texturefile = "gfx/event_pictures/news_event_generic_sign_treaty2.dds"
@@ -65,10 +45,6 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_generic_sign_treaty1.dds"
 	}
 	SpriteType = {
-		name = "GFX_renminjiuxing"
-		texturefile = "gfx/event_pictures/renminjiuxing.jpg"
-	}	
-	SpriteType = {
 		name = "GFX_report_event_generic_sign_treaty2"
 		texturefile = "gfx/event_pictures/report_event_generic_sign_treaty2.dds"
 	}
@@ -76,10 +52,6 @@ spriteTypes = {
 		name = "GFX_report_event_generic_sign_treaty1"
 		texturefile = "gfx/event_pictures/report_event_generic_sign_treaty1.dds"
 	}
-	SpriteType = {
-		name = "GFX_zijidongshou"
-		texturefile = "gfx/event_pictures/zijidongshou.jpg"
-	}	
 	SpriteType = {
 		name = "GFX_report_event_tanks_mexico_city"
 		texturefile = "gfx/event_pictures/report_event_tanks_mexico_city.dds"
@@ -89,28 +61,8 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/news_event_001.dds"
 	}
 	SpriteType = {
-		name = "GFX_liuguitang"
-		texturefile = "gfx/event_pictures/liuguitang.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_liulaozhuang"
-		texturefile = "gfx/event_pictures/liulaozhuang.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_news_pingxingguan"
-		texturefile = "gfx/event_pictures/pingxingguan.jpg"
-	}	
-	SpriteType = {
-		name = "GFX_MAO_zhongyang"
-		texturefile = "gfx/event_pictures/MAO_zhongyang.jpg"
-	}	
-	SpriteType = {
 		name = "GFX_news_event_002"
 		texturefile = "gfx/event_pictures/news_event_002.dds"
-	}
-	SpriteType = {
-		name = "GFX_news_huoshaozuijing"
-		texturefile = "gfx/event_pictures/huoshaozuijing.jpg"
 	}
 	SpriteType = {
 		name = "GFX_news_event_003"
