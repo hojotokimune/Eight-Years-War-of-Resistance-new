@@ -82,6 +82,38 @@ command_power_gain = -0.35
 					removal_cost = -1
 			}
 
+
+			USA_zibenjia_zuojv_idea = {
+	
+				picture = chi_incompetent_officers
+				
+						allowed_civil_war = {
+							always = yes
+						}
+						 available = { 
+							NOT = { is_in_faction_with = USA }
+						 }
+						cancel = { 
+						}
+						modifier = {
+							army_speed_factor = -0.2
+		army_attack_factor = -0.5
+		army_defence_factor = -0.5
+		breakthrough_factor = -0.5
+		army_strength_factor = -0.15
+		army_org_factor = -0.50
+		army_morale_factor = -0.50
+		no_supply_grace = -48
+		attrition = 0.25
+		supply_factor = -0.25
+		out_of_supply_factor = 0.15
+		supply_consumption_factor = 0.15
+		terrain_penalty_reduction = -0.25 #guo
+		pocket_penalty = 0.5 #guo
+						}
+						removal_cost = -1
+				}
+
 	
     ger_defense_sov1942 = {
 	

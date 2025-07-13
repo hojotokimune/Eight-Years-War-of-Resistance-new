@@ -29,6 +29,8 @@ country_event = {
 		}
 		set_rule = {
 			can_send_volunteers = yes
+			can_only_justify_war_on_threat_country = no
+			
 		}
 		unlock_national_focus = CHI_prepare_for_constitionalization_focus
 	kill_country_leader = yes
@@ -78,6 +80,8 @@ country_event = {
 						son_of_chang
 						unable_to_guide_sons
 						unable_to_classify_people
+						mil_council_leader_noww
+						GuoGuangJiHua
 					}
 				} 
 			} 

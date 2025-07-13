@@ -454,6 +454,7 @@ country_event = {
 			if = {
 				limit = {
 					GER = { is_ai = yes }
+					SOV = { is_ai = yes }
 				}
 				264 = {
 					add_dynamic_modifier = { modifier = unplanned_offensive days = 1500 }

@@ -1,5 +1,56 @@
 
 operations = {
+
+	USA_zibenjia_zuojv = { #单个决议作用于多个目标
+	target_trigger = { #针对的国家
+			FROM = {
+				or = {
+					tag = GER
+					tag = JAP
+					tag = ITA
+				}
+			}
+	}
+		cost = 50
+		days_remove = 7
+		fire_only_once = yes
+		target_non_existing = yes
+
+		allowed = {
+			TAG = USA
+		}
+		available = {
+			has_government = democratic
+			has_completed_focus = USA_lend_lease_act
+			FROM = { 
+				has_government = fascism
+				has_war_with_major = yes
+			 }
+		}
+		visible = {
+			has_government = democratic
+			has_completed_focus = USA_lend_lease_act
+			#NOT = {
+				#AND = {
+				# GER = { has_ideas = USA_zibenjia_zuojv_idea } 
+				# JAP = { has_ideas = USA_zibenjia_zuojv_idea } 
+				# ITA = { has_ideas = USA_zibenjia_zuojv_idea } 
+				#}
+			#}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+	   	}
+
+		remove_effect = {
+			FROM = { add_ideas = USA_zibenjia_zuojv_idea }
+		}
+
+	}
 	
     ww3_break_nato = {
 		priority = 9999

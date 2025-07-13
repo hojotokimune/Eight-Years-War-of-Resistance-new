@@ -3739,6 +3739,7 @@ focus_tree = {
 		available_if_capitulated = no
 		search_filters = {FOCUS_FILTER_USA_CONGRESS}
 		completion_reward = {
+			unlock_decision_tooltip = USA_zibenjia_zuojv
 			news_event = usa_lend_lease_support.1 #guo
 			every_other_country = {
 				limit = {					
