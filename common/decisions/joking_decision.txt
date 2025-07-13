@@ -1,0 +1,115 @@
+joking_decision = {
+	chi_xiaojiang_attack_laojiang = {
+		priority = 8000
+		icon = GFX_decision_generic_operation
+        allowed = {
+            tag = CHI
+        }
+		available = {
+
+            has_government = fascism
+			has_completed_focus = CHI_axis_help_party_focus
+			NOT = { has_completed_focus = CHI_assume_intra_party_leadership }   
+
+												
+	    }
+		cost = 10                             
+        fire_only_once = yes
+		ai_will_do = {
+			base = 0
+                                                
+		}
+
+		visible = {						
+			has_government = fascism
+			has_completed_focus = CHI_axis_help_party_focus    		
+			NOT = { has_completed_focus = CHI_assume_intra_party_leadership }   
+	    }	
+                                			
+		complete_effect = {
+			country_event = JJGstrike.1
+
+                                                         
+                                                         
+		}
+	}
+
+	"世界毁灭者（解锁中华民国彩蛋国策）" = {
+
+		icon = generic_army_support
+		fire_only_once = yes
+
+		allowed = {
+			always = yes
+		}
+
+		available = {		
+		}
+
+		visible = {
+		    is_ai = no
+			tag = CHI
+		}
+
+		cost = 0
+		
+		ai_will_do = {
+			base = 0
+		}
+
+		complete_effect = {
+			set_global_flag = CHI_mieshi
+		}
+	}
+
+	USA_zibenjia_zuojv = { #单个决议作用于多个目标
+		target_trigger = { #针对的国家
+			FROM = {
+				or = {
+					tag = GER
+					tag = JAP
+					tag = ITA
+				}
+			}
+		}
+		cost = 50
+		days_remove = 7
+		fire_only_once = yes
+		target_non_existing = yes
+
+		allowed = {
+			TAG = USA
+		}
+		available = {
+			has_government = democratic
+			has_completed_focus = USA_lend_lease_act
+			FROM = { 
+				has_government = fascism
+				has_war_with_major = yes
+			 }
+		}
+		visible = {
+			has_government = democratic
+			has_completed_focus = USA_lend_lease_act
+			#NOT = {
+				#AND = {
+				# GER = { has_ideas = USA_zibenjia_zuojv_idea } 
+				# JAP = { has_ideas = USA_zibenjia_zuojv_idea } 
+				# ITA = { has_ideas = USA_zibenjia_zuojv_idea } 
+				#}
+			#}
+		}
+		ai_will_do = {
+			factor = 0
+		}
+
+		modifier = {
+			political_power_gain = -0.5
+	   	}
+
+		remove_effect = {
+			FROM = { add_ideas = USA_zibenjia_zuojv_idea }
+		}
+
+	}
+}

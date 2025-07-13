@@ -436,93 +436,100 @@ diff_very_hard_ai = {
 }
 
 
-diff_strong_ai_generic = {#guo
-	# fightyness
+diff_strong_ai_generic = {
+    # 战斗相关属性
+	
+	# 挖掘工事速度
 	dig_in_speed_factor = 0.25
-	planning_speed = 0.25
-	supply_consumption_factor = -0.25
-	out_of_supply_factor = -0.25
-	army_morale_factor = 0.20
-	army_org_factor = 0.20
-	land_reinforce_rate = 0.10
-	max_dig_in_factor = 0.15
-	INITIATIVE_FACTOR = 0.10#主动性
-	coordination_bonus = 0.10#协同性
-	terrain_penalty_reduction = 0.10
-
-	# defensivness #guo
-	army_core_attack_factor = 0.10
-	army_core_defence_factor = 0.10
-	
-	army_attack_factor = 0.10
-	army_defence_factor = 0.10
-	breakthrough_factor = 0.20
-
-	attrition = -0.25#guo
-
-	# production/research
-	production_factory_max_efficiency_factor = 0.25
-	production_factory_efficiency_gain_factor = 0.25
-	
-	industrial_capacity_dockyard = 0.25
-	industrial_capacity_factory = 0.25
-	
-	political_power_factor = 0.25
-	research_speed_factor = 0.15
-	production_lack_of_resource_penalty_factor = -0.35
-
-	# fuel
-	army_fuel_consumption_factor = -0.40
-	air_fuel_consumption_factor = -0.40
- 	navy_fuel_consumption_factor = -0.40
-
-	# xp gain
-	experience_gain_air_factor = 0.25
-	experience_gain_army_factor = 0.25
-	experience_gain_navy_factor = 0.25
-	air_mission_xp_gain_factor = 0.25
-	experience_gain_army_unit_factor = 0.20
-	experience_gain_navy_unit_factor = 0.20
+    # 作战计划速度
+    planning_speed = 0.25
+    #补给消耗？？？我不想用
+	supply_consumption_factor = -0.02
+	#组织度恢复速度
+	army_morale_factor = 0.15
+	#增援率
+	land_reinforce_rate = 0.02
+	#适宜人口
+	conscription = 0.05
+	#动员速度
+	mobilization_speed = 0.5
+	#研究速度	
+    research_speed_factor = 0.25
+	#消费品系数
+	consumer_goods_factor = -0.2
+    # 损耗降低？？？我不想要
+    attrition = -0.01
+    # 生产和研究相关属性
+    # 工厂最大生产效率
+    production_factory_max_efficiency_factor = 0.25
+    # 工厂生产效率增长速度
+    production_factory_efficiency_gain_factor = 0.25
+    # 造船厂产能、工厂产出
+    industrial_capacity_dockyard = 2
+	industrial_capacity_factory = 2
+    # 政治点数获取
+    political_power_factor = 0.25
+    # 研究速度
+    research_speed_factor = 0.25
+    # 资源短缺时生产惩罚
+    production_lack_of_resource_penalty_factor = -0.3
+	#燃油消耗
+	army_fuel_consumption_factor = -0.4
+	air_fuel_consumption_factor = -0.4
+ 	navy_fuel_consumption_factor = -0.4
+	#经验增长
+    # 空军经验增长速度提高
+    experience_gain_air_factor = 0.25
+    # 陆军经验增长速度提高
+    experience_gain_army_factor = 0.25
+    # 海军经验增长速度提高
+    experience_gain_navy_factor = 0.25
+    # 空军任务经验增长速度提高
+    air_mission_xp_gain_factor = 0.25
+    # 陆军单位经验增长速度提高
+    experience_gain_army_unit_factor = 0.25
+    # 海军单位经验增长速度提高
+    experience_gain_navy_unit_factor = 0.25
 }
-diff_thin_ai_generic = {
-	# fightyness
-	dig_in_speed_factor = -0.25
-	planning_speed = -0.25
-	supply_consumption_factor = 0.25
-	army_morale_factor = -0.15
-	land_reinforce_rate = -0.02
+# diff_thin_ai_generic = {
+# 	# fightyness
+# 	dig_in_speed_factor = -0.25
+# 	planning_speed = -0.25
+# 	supply_consumption_factor = 0.25
+# 	army_morale_factor = -0.15
+# 	land_reinforce_rate = -0.02
 
-	# defensivness #guo
-	army_core_attack_factor = -0.075
-	army_core_defence_factor = -0.075
+# 	# defensivness #guo
+# 	army_core_attack_factor = -0.075
+# 	army_core_defence_factor = -0.075
 	
-	army_attack_factor = -0.075
-	army_defence_factor = -0.075
-	breakthrough_factor = -0.15
+# 	army_attack_factor = -0.075
+# 	army_defence_factor = -0.075
+# 	breakthrough_factor = -0.15
 
-	attrition = 0.25#guo
+# 	attrition = 0.25#guo
 
-	# production/research
-	production_factory_max_efficiency_factor = -0.15
-	production_factory_efficiency_gain_factor = -0.25
-	industrial_capacity_dockyard = -0.2
-	political_power_factor = -0.25
-	research_speed_factor = -0.1
-	production_lack_of_resource_penalty_factor = 0.3
+# 	# production/research
+# 	production_factory_max_efficiency_factor = -0.15
+# 	production_factory_efficiency_gain_factor = -0.25
+# 	industrial_capacity_dockyard = -0.2
+# 	political_power_factor = -0.25
+# 	research_speed_factor = -0.1
+# 	production_lack_of_resource_penalty_factor = 0.3
 
-	# fuel
-	army_fuel_consumption_factor = 0.40
-	air_fuel_consumption_factor = 0.40
- 	navy_fuel_consumption_factor = 0.40
+# 	# fuel
+# 	army_fuel_consumption_factor = 0.40
+# 	air_fuel_consumption_factor = 0.40
+#  	navy_fuel_consumption_factor = 0.40
 
-	# xp gain
-	experience_gain_air_factor = -0.25
-	experience_gain_army_factor = -0.25
-	experience_gain_navy_factor = -0.25
-	air_mission_xp_gain_factor = -0.25
-	experience_gain_army_unit_factor = -0.10
-	experience_gain_navy_unit_factor = -0.10
-}
+# 	# xp gain
+# 	experience_gain_air_factor = -0.25
+# 	experience_gain_army_factor = -0.25
+# 	experience_gain_navy_factor = -0.25
+# 	air_mission_xp_gain_factor = -0.25
+# 	experience_gain_army_unit_factor = -0.10
+# 	experience_gain_navy_unit_factor = -0.10
+# }
 naval_mines_effect = {
 	naval_accidents_chance = 0.05
 	naval_speed_factor = 0

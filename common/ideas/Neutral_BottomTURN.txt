@@ -1,0 +1,18 @@
+ideas = {
+	country = {
+		Neutral_BottomTURN = {
+			allowed = {
+				
+			}
+			modifier = {#改进后的中立buff			
+				civilian_intel_to_others = -10
+				join_faction_tension = 1.0
+				send_volunteers_tension = 0.20
+				guarantee_tension = 1.0
+				ai_badass_factor = 0.01
+				ai_get_ally_desire_factor = -99999
+			}
+	}
+	}
+	
+}

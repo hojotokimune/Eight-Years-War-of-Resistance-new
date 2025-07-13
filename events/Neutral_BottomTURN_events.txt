@@ -1,0 +1,32 @@
+add_namespace = Neutral_BottomTURN
+country_event = {
+	id = Neutral_BottomTURN.1 #开启所有人都有中立buff
+	title = Neutral_BottomTURN.t
+	desc = 55555555
+	is_triggered_only = no
+	trigger = {
+		has_global_flag = Neutral_BottomTURN_open
+		NOT = {
+			has_idea = Neutral_BottomTURN
+		}
+
+	}
+	immediate = {
+		add_ideas = Neutral_BottomTURN
+	}
+}
+
+country_event = {
+	id = Neutral_BottomTURN.2 #关闭所有人都有中立buff
+	title = Neutral_BottomTURN.t
+	desc = 55555555
+	is_triggered_only = no
+	trigger = {
+		has_global_flag = Neutral_BottomTURN_close
+		has_idea = Neutral_BottomTURN
+	}
+	immediate = {
+		remove_ideas = Neutral_BottomTURN
+	}
+}
+

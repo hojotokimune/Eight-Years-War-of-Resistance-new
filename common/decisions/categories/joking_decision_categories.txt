@@ -1,0 +1,13 @@
+joking_decision = {
+	icon = generic_prepare_civil_war 
+	allowed = {
+		always = yes
+	}
+  	available = {	
+		always = yes
+  	}
+	visible = {
+		always = yes
+	}
+	priority = 100000
+}

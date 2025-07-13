@@ -1,0 +1,46 @@
+fuck_you_donot_bother_me_AI_NMSL = {
+	Neutral_BottomTURN_open = {
+		icon = generic_political_actions
+		allowed = {
+            always = yes
+        }
+        available = {
+			always = yes
+			NOT = {
+							has_idea = Neutral_BottomTURN
+			}
+		}
+		visible = {
+            always = yes
+			NOT = {
+							has_idea = Neutral_BottomTURN
+			}
+        }
+		cost = 0
+		complete_effect = {
+			set_global_flag = Neutral_BottomTURN_open
+			clr_global_flag = Neutral_BottomTURN_close
+		}
+	}
+
+	Neutral_BottomTURN_close = {
+		icon = generic_political_actions
+		allowed = {
+            always = yes
+        }
+        available = {
+			has_idea = Neutral_BottomTURN
+			always = yes
+		}
+		visible = {			
+			has_idea = Neutral_BottomTURN
+            always = yes
+        }
+		cost = 0
+		complete_effect = {
+			set_global_flag = Neutral_BottomTURN_close
+			clr_global_flag = Neutral_BottomTURN_open
+		}
+	}
+
+}
