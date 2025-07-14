@@ -1142,10 +1142,10 @@ political_actions = {
 
 						GEO = { create_country_leader = {
 							name = "约瑟夫·朱伽什维利"
-							picture = "gfx/leaders/SOV/STALIN/stalin_young.png"
+							picture = "gfx/leaders/SOV/STALIN/Joseph_Stalin_Old_v3.dds"
 							expire = "1965.1.1"
 							ideology = stalinism
-							traits = { red_army_organizer cornered_fox the_director hero_of_the_peasantry_MAO baizhanlaobing
+							traits = { red_army_organizer the_director hero_of_the_peasantry_MAO baizhanlaobing
 							}
 						}
 					}

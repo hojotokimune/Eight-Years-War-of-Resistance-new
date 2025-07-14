@@ -950,8 +950,7 @@ country_event = super.5
 			}
 			if = {
 				limit = { is_ai = no }
-				ENG = { has_deployed_air_force_size = { size < 5001 } }
-			has_deployed_air_force_size = { size > 14999 }
+			has_deployed_air_force_size = { size > 19999 }
 			}
 	    }
 		cost = 0
