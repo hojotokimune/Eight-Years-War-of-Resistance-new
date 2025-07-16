@@ -24,7 +24,7 @@ country_event = {
 	option = {
 		name = JJGstrike.2.a
 		set_politics = {
-			ruling_party = democratic
+			ruling_party = neutrality
 			elections_allowed = no
 		}
 		set_rule = {
@@ -33,45 +33,22 @@ country_event = {
 			
 		}
 		unlock_national_focus = CHI_prepare_for_constitionalization_focus
-	kill_country_leader = yes
-		# create_country_leader = {
-		# 		name = jiang_jingguo
-		# 		desc = ""
-		# 		picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
-		# 		expire = "1965.1.1"
-		# 		ideology = sanmin_constitutional_government
-		# 		traits = {
-		# 			il_duce
-		# 		}
-		# 	}
-		# 	create_country_leader = {
-		# 		name = jiang_jingguo
-		# 		desc = ""
-		# 		picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
-		# 		expire = "1965.1.1"
-		# 		ideology = sanmin_military_rule
-		# 		traits = {
-		# 			il_duce
-		# 		}
-		# 	}
-		# 	create_country_leader = {
-		# 		name = jiang_jingguo
-		# 		desc = ""
-		# 		picture = "gfx/leaders/CHI/Portrait_KMT_Chiang_Ching_kuo.dds"
-		# 		expire = "1965.1.1"
-		# 		ideology = sanmin_political_tutelage
-		# 		traits = {
-		# 			il_duce
-		# 		}
-		# 	}
+		unlock_national_focus = CHI_yi_dang_zhi_guo_focus
+		unlock_national_focus = united_and_ready
+		unlock_national_focus = CHI_focus_two_fronts_war
+		remove_ideas = incompetent_heavy_industry_2
+        remove_ideas = incompetent_heavy_industry
+		kill_country_leader = yes
+		
 	jiang_jingguo = {
 		add_country_leader_role = {
 				promote_leader = yes
 				country_leader = {
 					expire = "1965.1.1"
-					ideology = sanmin_constitutional_government
+					ideology = sanmin_political_tutelage
 					traits = {
 						il_duce
+						kmt_zongcai
 						sun_successor
 						farmers_friend
 						Arms_that_was_renewed
