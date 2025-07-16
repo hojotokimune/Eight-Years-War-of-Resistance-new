@@ -2014,7 +2014,7 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			if = {
-				limit = { SRL = is_subject_of = ENG }
+				limit = { SRL = { is_subject_of = ENG } }
 			ENG = { end_puppet = SRL }
 			SRL = {
 				leave_faction = yes
