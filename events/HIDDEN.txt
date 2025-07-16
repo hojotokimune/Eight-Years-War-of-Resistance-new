@@ -529,7 +529,7 @@ news_event = {
 		PRC = { has_war_with = JAP }
 		CHI = { has_war_with = JAP }
 		PRC = { has_government = communism }
-		date > 1941.1.1
+		date > 1940.1.1
 		CHI = { is_ai = yes }
 		JAP = { is_ai = yes }
 		PRC = { is_ai = yes }
