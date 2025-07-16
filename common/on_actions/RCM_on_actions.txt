@@ -381,39 +381,39 @@ on_actions = {
 				}			
 			}
 
-			if = {
-				limit = {
-					has_idea = maoists_trait_zhudeg #0.5 every 1 month
-				}
-				add_to_variable = { maoists_trait_zhude_counter = 1 }
-				if = {
-					limit = {
-						NOT = { check_variable = { maoists_trait_zhude_counter < 30 } }
-					}
-					set_temp_variable = { temp_member = 2 }
-					set_temp_variable = { temp_seats = 0.005 tooltip = MAOIST_faction_support_tt }
+			#if = {
+				#limit = {
+					#has_idea = maoists_trait_zhudeg #0.5 every 1 month
+				#}
+				#add_to_variable = { maoists_trait_zhude_counter = 1 }
+				#if = {
+					#limit = {
+						#NOT = { check_variable = { maoists_trait_zhude_counter < 30 } }
+					#}
+					#set_temp_variable = { temp_member = 2 }
+					#set_temp_variable = { temp_seats = 0.005 tooltip = MAOIST_faction_support_tt }
 											#percentage
-					modify_parliament_seat = yes
-					set_variable = { maoists_trait_zhude_counter = 0 }		
-				}			
-			}
+					#modify_parliament_seat = yes
+					#set_variable = { maoists_trait_zhude_counter = 0 }		
+				#}			
+			#}
 
-			if = {
-				limit = {
-					has_idea = maoists_trait_linyuying #0.5 every 1 month
-				}
-				add_to_variable = { maoists_trait_linyuying_counter = 1 }
-				if = {
-					limit = {
-						NOT = { check_variable = { maoists_trait_linyuying_counter < 30 } }
-					}
-					set_temp_variable = { temp_member = 2 }
-					set_temp_variable = { temp_seats = 0.005 tooltip = MAOIST_faction_support_tt }
+			#if = {
+				#limit = {
+					#has_idea = maoists_trait_linyuying #0.5 every 1 month
+				#}
+				#add_to_variable = { maoists_trait_linyuying_counter = 1 }
+				#if = {
+					#limit = {
+						#NOT = { check_variable = { maoists_trait_linyuying_counter < 30 } }
+					#}
+					#set_temp_variable = { temp_member = 2 }
+					#set_temp_variable = { temp_seats = 0.005 tooltip = MAOIST_faction_support_tt }
 											#percentage
-					modify_parliament_seat = yes
-					set_variable = { maoists_trait_linyuying_counter = 0 }		
-				}			
-			}
+					#modify_parliament_seat = yes
+					#set_variable = { maoists_trait_linyuying_counter = 0 }		
+				#}			
+			#}
 			
 			if = {
 				limit = {
