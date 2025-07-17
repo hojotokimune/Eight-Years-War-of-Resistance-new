@@ -1889,6 +1889,20 @@ news_event = {
 	immediate = {
 		hidden_effect = {
 			ENG = { complete_national_focus = uk_free_india_focus }
+			PAK = { 
+				add_stability = 1
+		add_war_support = 1
+		add_to_variable = {
+			ROOT.supply_condition_base = 100
+		}
+				create_country_leader = {
+					name="穆罕默德·阿里·真纳"
+					picture = "gfx/leaders/PAK/Muhammad_Ali_Jinnah.png"
+					ideology = liberalism
+					traits = { guojizhengzhihuodongjia democratic_reformer }
+					desc = PAK_jinnah_desc
+				 }
+			 }
 			RAJ = { 
 			 transfer_state = 320 
 			 transfer_state = 321 
