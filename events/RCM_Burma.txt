@@ -93,8 +93,7 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_dlc = "Together for Victory"
-		            has_global_flag = ouvrir_les_nouvelles					
+					has_dlc = "Together for Victory"			
 				}
 				ENG = {
 					set_autonomy = {
