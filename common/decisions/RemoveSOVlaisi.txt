@@ -1,0 +1,71 @@
+fuck_you_donot_bother_me_AI_NMSL = {
+	RemoveSOVlaisi = {
+		icon = generic_political_discourse
+		
+		allowed = {
+			always = yes
+		}
+		available = {
+			always = yes
+		}
+		cost = 0
+		ai_will_do = {
+			base = 0
+                                                
+		}
+		visible = {
+                        always = yes
+		}
+                fire_only_once = yes
+		complete_effect = {
+			264 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                247 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                258 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                260 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                265 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                237 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                236 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                235 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                232 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                233 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                827 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                231 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                254 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                257 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                239 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }
+                255 = {
+                remove_dynamic_modifier = { modifier = unplanned_offensive }
+                }                                
+		}
+	}
+}
