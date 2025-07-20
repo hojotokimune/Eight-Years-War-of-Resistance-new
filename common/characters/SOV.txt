@@ -586,6 +586,7 @@ characters = {
 			traits = {
 				mass_assault_expert
 			}
+			desc = SOV_mikhail_tukhachevsky_desc
 		}
 		
 		advisor={
@@ -614,6 +615,7 @@ characters = {
 				is_historical_focus_on = yes
 				}
 			}
+			desc = SOV_mikhail_tukhachevsky_desc
 		}
 
 		field_marshal = {
@@ -625,6 +627,7 @@ characters = {
 			logistics_skill = 3
 			legacy_id = 401
 			visible = { NOT = { has_character_flag = SOV_exiled_flag } }
+			desc = SOV_mikhail_tukhachevsky_desc
 		}
 	}
 
@@ -2149,6 +2152,7 @@ characters = {
 			traits = {
 				popular_figurehead 
 			}
+			desc = SOV_mikhail_kalinin_desc
 		}
 	}
 	

@@ -173,6 +173,8 @@ on_actions = {
 						}
 						USA = { set_autonomy = { target = PHI autonomy_state = autonomy_USA_baohuguo freedom_level = 0.50  } }
 					SOV = {
+						add_ideas = mikhail_tukhachevsky
+						add_ideas = mikhail_tukhachevsky_b
 						set_party_name = {
 							ideology = communism
 							name = "全联盟共产党（布尔什维克）"
