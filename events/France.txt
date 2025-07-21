@@ -1193,6 +1193,27 @@ country_event = {
 				original_tag = FRA
 				save_event_target_as = vichy_france
 				set_country_flag = vichy_france
+				every_country = {
+					limit = {
+						is_subject_of = FRA
+						or = {
+							tag = SEN
+							tag = CHA
+							tag = MAD
+						}
+					}
+					event_target:vichy_france = { set_autonomy = { target = PREV autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  } }
+					PREV = { set_politics = {
+						ruling_party = neutrality
+						elections_allowed = no
+					}
+					set_popularities = {
+						fascism = 0
+						communism = 0
+						neutrality = 100
+						democratic = 0
+					} }
+				}
 				every_state = { #transfer French colonial empire
 					limit = {
 						is_controlled_by = FRA

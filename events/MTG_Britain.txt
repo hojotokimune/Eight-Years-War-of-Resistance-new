@@ -935,6 +935,30 @@ country_event = {
 			remove_ideas = ENG_king_edward
 			add_ideas = ENG_george_vi
 			set_country_flag = ENG_edward_viii_abdicated
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					or = {
+						tag = BOT
+						tag = ZIM
+						tag = ZAM
+						tag = MLW
+						tag = TZN
+						tag = KEN
+						tag = UGA
+						tag = NGA
+						tag = GHA
+						tag = SIE
+						tag = GAM
+					}
+				}
+					create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治六世"
+						   picture = "gfx/leaders/ENG/Portrait_Britain_George_VI.dds"
+						   ideology = despotism
+						   traits = {  }
+						}
+			}
 		}
 	}
 

@@ -368,6 +368,21 @@ FRA_VICHY = {
 	color_ui = rgb {115 185 196 }
 }
 
+FRA_west_africa = {
+	color = rgb { 80 168 181 }
+	color_ui = rgb {115 185 196 }
+}
+
+FRA_center_africa = {
+	color = rgb { 80 168 181 }
+	color_ui = rgb {115 185 196 }
+}
+
+MAD_FRA = {
+	color = rgb { 80 168 181 }
+	color_ui = rgb {115 185 196 }
+}
+
 united_polynesia = {
 	color = rgb { 220  105  70 }
 	color_ui = rgb { 220  105  70 }

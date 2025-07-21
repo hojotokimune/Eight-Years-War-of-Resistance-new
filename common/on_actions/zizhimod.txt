@@ -2637,21 +2637,6 @@ NOT = { has_war_with = event_target:WTT_communist_china }
 					set_global_flag = august_storm_player
 			}
 			
-		    if = {
-				limit = {			
-						ROOT = {  
-						TAG = GER
-						}
-						FROM = { 
-						OR = {
-                        TAG = POL
-                        }	
-						}						
-						NOT = { has_global_flag = the_battle_of_poland }
-					}
-					set_global_flag = the_battle_of_poland
-				    SOV = { country_event = { id = the_battle_of_poland.1 days = 7 } }
-			}
 			
 			if = {
 				limit = {			

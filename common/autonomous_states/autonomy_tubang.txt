@@ -252,6 +252,9 @@ autonomy_state = {
 		or = {
 		is_subject_of = ENG
 		is_subject_of = BEL
+		is_subject_of = FRA
+		is_subject_of = POR
+		is_subject_of = event_target:vichy_france
 		}
 		
 	}

@@ -671,6 +671,30 @@ country_event = {
 			set_country_flag = ENG_king_died
 			remove_ideas = george_v
 			add_ideas = ENG_king_edward
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					or = {
+						tag = BOT
+						tag = ZIM
+						tag = ZAM
+						tag = MLW
+						tag = TZN
+						tag = KEN
+						tag = UGA
+						tag = NGA
+						tag = GHA
+						tag = SIE
+						tag = GAM
+					}
+				}
+					create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="爱德华八世"
+						   picture = "gfx/leaders/ENG/Portrait_Britain_King_Edward.dds"
+						   ideology = despotism
+						   traits = {  }
+						}
+			}
 		}		
 	}
 	
@@ -705,6 +729,30 @@ country_event = {
 		hidden_effect = {
 			remove_ideas = ENG_king_edward
 			add_ideas = ENG_george_vi		
+			every_country = {
+				limit = {
+					is_subject_of = ENG
+					or = {
+						tag = BOT
+						tag = ZIM
+						tag = ZAM
+						tag = MLW
+						tag = TZN
+						tag = KEN
+						tag = UGA
+						tag = NGA
+						tag = GHA
+						tag = SIE
+						tag = GAM
+					}
+				}
+					create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治六世"
+						   picture = "gfx/leaders/ENG/Portrait_Britain_George_VI.dds"
+						   ideology = despotism
+						   traits = {  }
+						}
+			}
 		}
 	}
 

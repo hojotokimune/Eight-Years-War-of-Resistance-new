@@ -622,6 +622,588 @@ SOV_no_more_Great_Purge = {
 
 political_actions = {
 
+	FRA_africa_more = {
+		priority = 4999
+				icon = infiltrate_state
+		
+				allowed = {
+					original_tag = FRA
+				}
+				available = {
+					always = yes
+				}
+				visible = {
+					always = yes
+				}
+				
+				cost = 0
+				fire_only_once = yes
+				
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 9999
+						has_global_flag = yaofenlie
+					} #MODDED
+																   
+				}
+				complete_effect = {
+					release = SEN
+					set_autonomy = { target = SEN autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					SEN = {
+						transfer_state = 557
+						transfer_state = 786
+						transfer_state = 780
+						transfer_state = 779
+						transfer_state = 778
+						every_state = {
+							limit = {
+								is_core_of = MLI
+							}
+							SEN = { transfer_state = PREV }
+						}
+						transfer_state = 781
+						transfer_state = 515
+						transfer_state = 777
+						transfer_state = 776
+						every_state = {
+							limit = { is_owned_by = SEN }
+							add_core_of = SEN
+						}
+						set_cosmetic_tag = FRA_west_africa
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/FRA/africa_zongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = CHA
+					set_autonomy = { target = CHA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					CHA = {
+						transfer_state = 772
+						transfer_state = 773
+						transfer_state = 539
+						transfer_state = 660
+						every_state = {
+							limit = { is_owned_by = CHA }
+							add_core_of = CHA
+						}
+						set_capital = { state = 772 remember_old_capital = no }
+						set_cosmetic_tag = FRA_center_africa
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/FRA/africa_zongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = MAD
+					set_autonomy = { target = MAD autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					MAD = {
+						set_cosmetic_tag = MAD_FRA
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/FRA/africa_zongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+				}
+			}
+
+	ENG_africa_more = {
+		priority = 4999
+				icon = infiltrate_state
+		
+				allowed = {
+					original_tag = ENG
+				}
+				available = {
+					always = yes
+				}
+				visible = {
+					always = yes
+				}
+				
+				cost = 0
+				fire_only_once = yes
+				
+				ai_will_do = {
+					base = 0
+					modifier = {
+						add = 9999
+						has_global_flag = yaofenlie
+					} #MODDED
+																   
+				}
+				complete_effect = {
+					release = UGA
+					set_autonomy = { target = UGA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					UGA = {
+						set_cosmetic_tag = UGA_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = TZN
+					set_autonomy = { target = TZN autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					TZN = {
+						set_cosmetic_tag = TZN_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = KEN
+					set_autonomy = { target = KEN autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					KEN = {
+						set_cosmetic_tag = KEN_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = BOT
+					set_autonomy = { target = BOT autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					BOT = {
+						set_cosmetic_tag = BOT_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = ZIM
+					set_autonomy = { target = ZIM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					ZIM = {
+						set_cosmetic_tag = ZIM_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = ZAM
+					set_autonomy = { target = ZAM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					ZAM = {
+						set_cosmetic_tag = ZAM_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = MLW
+					set_autonomy = { target = MLW autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					MLW = {
+						set_cosmetic_tag = MLW_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = SIE
+					set_autonomy = { target = SIE autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					SIE = {
+						set_cosmetic_tag = SIE_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = NGA
+					set_autonomy = { target = NGA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					NGA = {
+						set_cosmetic_tag = NGA_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = GHA
+					set_autonomy = { target = GHA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					GHA = {
+						set_cosmetic_tag = GHA_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = GAM
+					set_autonomy = { target = GAM autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					GAM = {
+						set_cosmetic_tag = GAM_UK
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					POR = {
+						release = GNB
+					set_autonomy = { target = GNB autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					GNB = {
+						set_cosmetic_tag = GNB_POR
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = ANG
+					set_autonomy = { target = ANG autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					ANG = {
+						set_cosmetic_tag = ANG_POR
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					release = MZB
+					set_autonomy = { target = MZB autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					MZB = {
+						set_cosmetic_tag = MZB_POR
+						add_ideas = agrarion_society_generic_3
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+					}
+					create_dynamic_country = {
+						original_tag = NEN
+						save_global_event_target_as = POR_dongdifen
+					}
+						event_target:POR_dongdifen = {
+						add_state_core = 721
+						transfer_state = 721
+						POR ={
+							set_autonomy = { target = event_target:POR_dongdifen autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					 } 
+						add_ideas = agrarion_society_generic_3
+						set_cosmetic_tag = POR_dongdifen
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="殖民地总督"
+						   picture = "gfx/leaders/POR/zhimingdizongdu.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+						}												                 
+						
+					}
+				}
+			}
+
 	RAJ_zizhi_tubang = {
 		priority = 4999
 				icon = infiltrate_state
@@ -2407,6 +2989,44 @@ priority = 4999
 											}
 												
 												}
+
+												进军波兰 = {
+													priority = 4999
+															icon = generic_ignite_civil_war
+													
+															allowed = {
+																original_tag = SOV
+															}
+															available = {
+																has_idea = SOV_molotov_ribbentrop_pact
+	not = { has_government = POL }
+	not = { has_war_with = POL }
+	not = { has_war_with = GER }
+	not = { is_in_faction_with = GER }
+	not = { is_in_faction_with = POL }
+	GER = { has_war_with = POL }
+	POL = { has_capitulated = no }
+	POL = { has_idea = balance_idea_pol_dont_call_eng }
+															}
+															visible = {
+																has_idea = SOV_molotov_ribbentrop_pact
+																
+															}
+															
+															cost = 0
+															fire_only_once = yes
+															days_remove = 7
+															
+															ai_will_do = {
+																base = 9999 #MODDED
+																											   
+															}
+															remove_effect = { 
+																country_event = the_battle_of_poland.1
+														}
+															
+															}
+						
 									
 
 						USA_manhattan_project_decision = {

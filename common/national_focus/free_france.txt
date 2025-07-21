@@ -133,8 +133,24 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_north_africa }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_north_africa }
+			transfer_state = 461
+			transfer_state = 462
+			transfer_state = 459
+			transfer_state = 460
+			transfer_state = 513
+			transfer_state = 458
+			transfer_state = 665
+			every_state = {
+				limit = { 
+					is_controlled_by = ROOT
+					or = {
+						is_core_of = MOR
+						is_core_of = ALG
+						is_core_of = TUN
+					}
+				}
+				add_compliance = 100
+			}
 		}
 	}
 	focus = {
@@ -169,9 +185,24 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_west_africa }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_west_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_west_africa }
+			set_autonomy = { target = SEN autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+			SEN = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+					communism = 0
+					neutrality = 100
+					democratic = 0
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = "殖民政府"
+					long_name = "殖民政府"
+				}
+			}
 		}
 	}
 	focus = {
@@ -213,50 +244,15 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_syria }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_syria }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_syria }
-		}
-	}
-	focus = {
-		id = FRA_intervention_in_indochina
-		icon = GFX_goal_generic_position_armies
-		x = 1
-		y = 1
-		offset = {
-			x = 0
-			y = 0
-		}
-		prerequisite = { 
-			focus = FRA_appeal_to_overseas_territories
-		}
-		relative_position_id = FRA_appeal_to_overseas_territories
-		
-		cost = 10
-		ai_will_do = {
-			factor = 888 #guo
-			modifier = {
-			factor = 0
-			is_historical_focus_on = yes
+			every_state = {
+				limit = {
+					or = {
+						is_core_of = SYR
+						is_core_of = LEB
+					}
+				}
+				ROOT = { transfer_state = PREV }
 			}
-		}
-		available = {
-			NOT = {
-				FRA_controls_indochina = yes
-			}
-		}
-		
-		bypass = {
-		FRA_controls_indochina = yes #guo
-		}
-		cancel_if_invalid = yes
-		continue_if_invalid = no
-		available_if_capitulated = yes
-		search_filters = { FOCUS_FILTER_ANNEXATION }
-		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_indochina }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_indochina }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_indochina }
 		}
 	}
 	focus = {
@@ -291,9 +287,24 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_central_africa }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_central_africa }
-			unlock_decision_tooltip = { decision = FRA_invasion_in_central_africa }
+			set_autonomy = { target = CHA autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+			CHA = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+					communism = 0
+					neutrality = 100
+					democratic = 0
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = "殖民政府"
+					long_name = "殖民政府"
+				}
+			}
 		}
 	}
 	focus = {
@@ -342,8 +353,24 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			unlock_decision_tooltip = { decision = FRA_prepare_coup_in_madagascar }
-			unlock_decision_tooltip = { decision = FRA_promise_independence_to_madagascar }
+			set_autonomy = { target = MAD autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+			MAD = {
+				set_politics = {
+					ruling_party = neutrality
+					elections_allowed = no
+				}
+				set_popularities = {
+					fascism = 0
+					communism = 0
+					neutrality = 100
+					democratic = 0
+				}
+				set_party_name = {
+					ideology = neutrality
+					name = "殖民政府"
+					long_name = "殖民政府"
+				}
+			}
 		}
 	}
 	focus = {
