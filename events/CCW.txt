@@ -11481,8 +11481,13 @@ country_event = { #france annex vichy
 	}
 
 	option = {
-		name = ccw.587.a
-		add_stability = 0.01		
+	name = ccw.587.a
+	add_stability = 0.01
+	hidden_effect = {	
+	1067 = {
+    	add_core_of = PRC
+    }
+	}		
 		ai_chance = { 
 		    factor = 100
 		}	

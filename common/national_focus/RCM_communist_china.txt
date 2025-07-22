@@ -3582,6 +3582,22 @@ focus_tree = {
 					WTT_random_support_chance_increase_for_ROOT_in_state = yes
 				}
 			}
+		hidden_effect = {
+                if = {
+                limit = { has_country_leader = { ruling_only = yes character = PRC_zhang_guotao } }
+			    set_country_leader_portrait = {
+				ideology = communism
+				portrait = "gfx/leaders/PRC/PRC_zhangguotao_weiyuanzhang.jpg"
+			    }				
+				}		
+		PRC_zhang_guotao = {
+			set_portraits = {
+				army={
+					large="gfx/leaders/PRC/PRC_zhangguotao_weiyuanzhang.jpg"
+				}
+			}
+		}
+		}		
             set_cosmetic_tag = CHI_warlord_leader_communism			
 		}
 		available = {
