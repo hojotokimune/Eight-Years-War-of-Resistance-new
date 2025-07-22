@@ -950,6 +950,7 @@ country_event = {
 						tag = GHA
 						tag = SIE
 						tag = GAM
+						original_tag = CKK
 					}
 				}
 					create_country_leader = { #Safe because Sokolovsky doesn't exist ingame

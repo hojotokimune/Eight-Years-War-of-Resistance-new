@@ -2517,6 +2517,126 @@ OMA = {
 	}
 }
 
+ENG = { 
+	set_autonomy = { target = PAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = JOR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = EGY autonomy_state = autonomy_BRITISH_wangguan freedom_level = 0.50  }
+	set_autonomy = { target = RAJ autonomy_state = autonomy_wangguan freedom_level = 0.50  }
+	set_autonomy = { target = MAL autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = SST autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = SAR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = BOR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+ }
+
+ EGY = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+RAJ = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+PAL = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+JOR = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+MAL = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+SST = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+SAR = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+BOT = {
+	set_politics = {
+		ruling_party = neutrality
+		elections_allowed = no
+	}
+	set_popularities = {
+		fascism = 5
+		communism = 5
+		neutrality = 60
+		democratic = 30
+	}
+}
+
+ FRA = {
+	set_autonomy = { target = SYR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = LEB autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+ }
+
 ########1939.1.1
 1939.1.1 = {
 	set_global_flag = CHI_unite_PRC

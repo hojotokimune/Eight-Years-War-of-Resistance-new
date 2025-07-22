@@ -1201,6 +1201,41 @@ political_actions = {
 						}										                 
 						
 					}
+					create_dynamic_country = {
+						original_tag = CKK
+						save_global_event_target_as = UK_Newfoundland
+					}
+						event_target:UK_Newfoundland = {
+						add_state_core = 331
+						transfer_state = 331
+						add_state_core = 332
+						transfer_state = 332
+						ENG ={
+							set_autonomy = { target = event_target:UK_Newfoundland autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+					 } 
+						set_cosmetic_tag = UK_Newfoundland
+						set_politics = {
+							ruling_party = neutrality
+							elections_allowed = no
+						}
+						set_popularities = {
+							fascism = 0
+							communism = 0
+							neutrality = 100
+							democratic = 0
+						}
+						set_party_name = {
+							ideology = neutrality
+							name = "殖民政府"
+							long_name = "殖民政府"
+						}
+						create_country_leader = { #Safe because Sokolovsky doesn't exist ingame
+						   name="乔治五世"
+						   picture = "gfx/leaders/ENG/george_V.png"
+						   ideology = despotism
+						   traits = {  }
+						}
+						}	
 				}
 			}
 

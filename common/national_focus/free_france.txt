@@ -244,15 +244,8 @@
 		available_if_capitulated = yes
 		search_filters = { FOCUS_FILTER_ANNEXATION }
 		completion_reward = {
-			every_state = {
-				limit = {
-					or = {
-						is_core_of = SYR
-						is_core_of = LEB
-					}
-				}
-				ROOT = { transfer_state = PREV }
-			}
+			set_autonomy = { target = SYR autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
+	set_autonomy = { target = LEB autonomy_state = autonomy_ENG_baohuguo freedom_level = 0.50  }
 		}
 	}
 	focus = {
