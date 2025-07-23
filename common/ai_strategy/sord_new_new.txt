@@ -24454,7 +24454,7 @@ ITA_radar_2 = {
 	}
 
 	abort = {
-		has_tech = decimetric_radar has_tech = computing_machine 
+		has_tech = decimetric_radar has_tech = compmechanical_computing 
 	}
 
 	ai_strategy = {
@@ -24464,7 +24464,7 @@ ITA_radar_2 = {
 	}
 	ai_strategy = {
 		type = research_tech
-		id = computing_machine
+		id = compmechanical_computing
 		value = 9999
 	}
 }
@@ -24485,12 +24485,12 @@ ITA_radar_3 = {
 	}
 
 	abort = {
-		has_tech = improved_decimetric_radar 
+		has_tech = improved_radio 
 	}
 
 	ai_strategy = {
 		type = research_tech
-		id = improved_decimetric_radar
+		id = improved_radio
 		value = 500
 	}
 	
@@ -24595,7 +24595,7 @@ air_research_1940 = {
 
 	ai_strategy = {
 		type = research_tech
-		id = improved_computing_machine
+		id = improved_compmechanical_computing
 		value = 9999
 	}
 	
@@ -24667,17 +24667,17 @@ ITA_radar_6 = {
 	}
 
 	abort = {
-		has_tech = advanced_centimetric_radar has_tech = advanced_computing_machine
+		has_tech = advanced_radio has_tech = advanced_compmechanical_computing
 	}
 
 	ai_strategy = {
 		type = research_tech
-		id = advanced_centimetric_radar
+		id = advanced_radio
 		value = 500
 	}
 	ai_strategy = {
 		type = research_tech
-		id = advanced_computing_machine
+		id = advanced_compmechanical_computing
 		value = 9999
 	}
 }

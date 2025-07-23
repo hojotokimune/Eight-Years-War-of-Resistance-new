@@ -1,17 +1,17 @@
 on_actions = {
 	on_daily_PRC = {
-				effect = {
-				if = {
-								limit = {
-									has_global_flag = enable_commie_ridden_states_line
-								}
-								every_state = {
-									limit = {
-										has_state_flag = commie_ridden_states
-									}
-								}
-								set_border_war = no
-							}
+		effect = {
+			if = {
+				limit = {
+					has_global_flag = enable_commie_ridden_states_line
+				}
+				every_state = {
+					limit = {
+						has_state_flag = commie_ridden_states
+					}
+				}
+				# set_border_war = no
+				}
 			IF = {
 				limit = {
 					has_global_flag = roc_in_taiwan_flag
@@ -23,61 +23,54 @@ on_actions = {
 		}
 	}
 	on_daily_SOV = {
-				effect = {
-				if = {
-					limit = {
-						tag = SOV
-				        has_war_with = GER
-                        is_ai = yes
-					    is_historical_focus_on = yes
-					date > 1944.6.22
-					}
-				SOV = {
-                    add_ideas = SOV_bagelajiang
-					}
+		effect = {
+		if = {
+			limit = {
+				tag = SOV
+				has_war_with = GER
+                is_ai = yes
+				is_historical_focus_on = yes
+				date > 1944.6.22
+			}
+			SOV = {
+                add_ideas = SOV_bagelajiang
+			}
 
-				}
+		}
 		}
 	}
 	on_startup = {
 		effect = {
+            IRQ = {
+                load_focus_tree = generic_focus
+            }
+            AFG = {
+                load_focus_tree = generic_focus
+            }
+            PER = {
+                load_focus_tree = generic_focus
+            }
 
-
-
-                      IRQ = {
-                       load_focus_tree = generic_focus
-                   }
-                      AFG = {
-                       load_focus_tree = generic_focus
-                   }
-                      PER = {
-                       load_focus_tree = generic_focus
-                   }
-
-				if = {
-					limit = {
-		GER = {
+			if = {
+				limit = {
+		            GER = {
                         is_ai = yes
-                     }
-					}
-				GER = {
-add_ideas = joseph_goebbels
-add_ideas = rudolf_hess
-add_ideas = martin_bormann
-add_ideas = heinrich_himmler
-add_ideas = GER_hermann_goring
-add_ideas = speer
-add_ideas = todt
-					}
-
+                    }
 				}
-
-
-
-
-		every_country = {
-		country_event = rcmgeneric.979
+			GER = {
+                add_ideas = joseph_goebbels
+                add_ideas = rudolf_hess
+                add_ideas = martin_bormann
+                add_ideas = heinrich_himmler
+                add_ideas = GER_hermann_goring
+                add_ideas = speer
+                add_ideas = todt
+			}
+            }
+		    every_country = {
+		    country_event = rcmgeneric.979
 		}
+	    }
 
 
 
@@ -86,21 +79,21 @@ add_ideas = todt
 		add_ideas = rcm_jap_imperial_japanese_army
 	}
                          
-                 	1067 = {
-    	add_core_of = PRC
-              }
-		    1078 = {
-				set_victory_points = {
-					province = 13505
-					value = 15
-				}
-                        }
-		    1078 = {
-				set_victory_points = {
-					province = 7014
-					value = 2
-				}
-                        }
+        1067 = {
+    	    add_core_of = PRC
+        }
+		1078 = {
+			set_victory_points = {
+			province = 13505
+			value = 15
+			}
+        }
+		1078 = {
+			set_victory_points = {
+			province = 7014
+			value = 2
+			}
+        }
 		    613 = {
 				set_victory_points = {
 					province = 13506
