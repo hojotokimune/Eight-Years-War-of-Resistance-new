@@ -19,113 +19,113 @@ shou_bian_wei_jun = {
 			}
 		}
 		random_owned_controlled_state = {
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
-				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1"owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
+				create_unit = {division = "name = \"“暂编”自新军\" division_template = \"“暂编”自新军\" start_experience_base = 0.1" owner = CHI}
 			}
                 }
 }
@@ -192,16 +192,16 @@ qing_tan_shi = {
 		}
  }
 		random_owned_controlled_state = {
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5"owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国轻型坦克师\" division_template = \"美国轻型坦克师\" start_experience_base = 0.5" owner = CHI}
 			}
                 }
 }
@@ -263,13 +263,13 @@ zhong_tan_ke_shi = {
 		}
 }
 		random_owned_controlled_state = {
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5"owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国中型坦克师\" division_template = \"美国中型坦克师\" start_experience_base = 0.5" owner = CHI}
 			}
                 }
 }
@@ -324,11 +324,11 @@ zhong_tan_shi = {
 		}
 }
 		random_owned_controlled_state = {
-				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5"owner = CHI}
-				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5"owner = CHI}
+				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5" owner = CHI}
+				create_unit = {division = "name = \"美国重型坦克师\" division_template = \"美国重型坦克师\" start_experience_base = 0.5" owner = CHI}
 			}
                 }
 
