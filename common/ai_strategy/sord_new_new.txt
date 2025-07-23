@@ -24437,37 +24437,37 @@ ITA_air_doctrine = {
 	}
 }
 
-ITA_radar_2 = {
-	allowed = {
-		OR = {
-		original_tag = SOV
-		original_tag = GER
-		original_tag = USA
-		original_tag = ENG
-		original_tag = FRA
-		original_tag = ITA
-		original_tag = JAP
-		}
-	}
-	enable = {
-		date > 1938.1.1
-	}
+#ITA_radar_2 = {
+	#allowed = {
+		#OR = {
+		#original_tag = SOV
+		#original_tag = GER
+		#original_tag = USA
+		#original_tag = ENG
+		#original_tag = FRA
+		#original_tag = ITA
+		#original_tag = JAP
+		#}
+	#}
+	#enable = {
+		#date > 1938.1.1
+	#}
 
-	abort = {
-		has_tech = decimetric_radar has_tech = compmechanical_computing 
-	}
+	#abort = {
+		#has_tech = decimetric_radar has_tech = compmechanical_computing 
+	#}
 
-	ai_strategy = {
-		type = research_tech
-		id = decimetric_radar
-		value = 500
-	}
-	ai_strategy = {
-		type = research_tech
-		id = compmechanical_computing
-		value = 9999
-	}
-}
+	#ai_strategy = {
+		#type = research_tech
+		#id = decimetric_radar
+		#value = 500
+	#}
+	#ai_strategy = {
+		#type = research_tech
+		#id = compmechanical_computing
+		#value = 9999
+	#}
+#}
 ITA_radar_3 = {
 	allowed = {
 		OR = {
@@ -24623,64 +24623,64 @@ air_research_1940 = {
 #飞机科技研究集合
 
 
-ITA_radar_5 = {
-	allowed = {
-		OR = {
-		original_tag = SOV
-		original_tag = GER
-		original_tag = USA
-		original_tag = ENG
-		original_tag = FRA
-		original_tag = ITA
-		original_tag = JAP
-		}
-	}
-	enable = {
-		date > 1941.1.1
-		not = { has_tech = improved_centimetric_radar }
-	}
+#ITA_radar_5 = {
+	#allowed = {
+		#OR = {
+		#original_tag = SOV
+		#original_tag = GER
+		#original_tag = USA
+		#original_tag = ENG
+		#original_tag = FRA
+		#original_tag = ITA
+		#original_tag = JAP
+		#}
+	#}
+	#enable = {
+		#date > 1941.1.1
+		#not = { has_tech = improved_centimetric_radar }
+	#}
 
-	abort = {
-		has_tech = improved_centimetric_radar 
-	}
+	#abort = {
+		#has_tech = improved_centimetric_radar 
+	#}
 
-	ai_strategy = {
-		type = research_tech
-		id = improved_centimetric_radar
-		value = 500
-	}
-}
-ITA_radar_6 = {
-	allowed = {
-		OR = {
-		original_tag = SOV
-		original_tag = GER
-		original_tag = USA
-		original_tag = ENG
-		original_tag = FRA
-		original_tag = ITA
-		original_tag = JAP
-		}
-	}
-	enable = {
-		date > 1942.1.1
-	}
+	#ai_strategy = {
+		#type = research_tech
+		#id = improved_centimetric_radar
+		#value = 500
+	#}
+#}
+#ITA_radar_6 = {
+	#allowed = {
+		#OR = {
+		#original_tag = SOV
+		#original_tag = GER
+		#original_tag = USA
+		#original_tag = ENG
+		#original_tag = FRA
+		#original_tag = ITA
+		#original_tag = JAP
+		#}
+	#}
+	#enable = {
+		#date > 1942.1.1
+	#}
 
-	abort = {
-		has_tech = advanced_radio has_tech = advanced_compmechanical_computing
-	}
+	#abort = {
+		#has_tech = advanced_radio has_tech = advanced_compmechanical_computing
+	#}
 
-	ai_strategy = {
-		type = research_tech
-		id = advanced_radio
-		value = 500
-	}
-	ai_strategy = {
-		type = research_tech
-		id = advanced_compmechanical_computing
-		value = 9999
-	}
-}
+	#ai_strategy = {
+		#type = research_tech
+		#id = advanced_radio
+		#value = 500
+	#}
+	#ai_strategy = {
+		#type = research_tech
+		#id = advanced_compmechanical_computing
+		#value = 9999
+	#}
+#}
 
 ITA_the_improved_small_airframe = {
 	allowed = {

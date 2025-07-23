@@ -1691,16 +1691,16 @@ can_use_monument_bonuses_ignore_disabled_monument_condition = {
 		var:bonus_target = {
 			monument_ideology_trigger_neutrality = yes
 		}
-		if = {
-			limit = {
-				NOT = { has_global_flag = monuments_game_rule_no_country_restriction }
-				has_dlc = "Waking the Tiger"
-			}
-			OR = {
-				has_country_leader = { character = GER_wilhelm_ii ruling_only = yes }
-				has_country_leader = { character = GER_wilhelm_iii ruling_only = yes }
-			}
-		}
+		#if = {
+			#limit = {
+				#NOT = { has_global_flag = monuments_game_rule_no_country_restriction }
+				#has_dlc = "Waking the Tiger"
+			#}
+			#OR = {
+			#	#has_country_leader = { character = GER_wilhelm_ii ruling_only = yes }
+				#has_country_leader = { character = GER_wilhelm_iii ruling_only = yes }
+			#}
+		#}
 	}
 	else_if = {
 		limit = {

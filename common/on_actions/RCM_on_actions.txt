@@ -3052,37 +3052,37 @@ on_actions = {
 				set_global_flag = CHI_Encirclement_Campaign_has_begun
 			}
 			#Warlords(ROOT) war CHI(FROM), generals return
-			if = {
-				limit = {
-					any_unit_leader = {
-						OWNER = { TAG = FROM }
-						has_unit_leader_flag = allegiance_to_@ROOT
-					}
-				}
-				every_unit_leader = {
-					limit = {
-						OWNER = { TAG = FROM }
-						has_unit_leader_flag = allegiance_to_@ROOT #return when wars break out
-					}
-					set_nationality = ROOT
-				}
-			}
+			#if = {
+				#limit = {
+					#any_unit_leader = {
+						#OWNER = { TAG = FROM }
+						#has_unit_leader_flag = allegiance_to_@ROOT
+					#}
+				#}
+				#every_unit_leader = {
+					#limit = {
+						#OWNER = { TAG = FROM }
+						#has_unit_leader_flag = allegiance_to_@ROOT #return when wars break out
+					#}
+					#set_nationality = ROOT
+				#}
+			#}
 			#CHI(ROOT) war Warlord(FROM), generals return
-			if = {
-				limit = {
-					any_unit_leader = {
-						OWNER = { TAG = ROOT }
-						has_unit_leader_flag = allegiance_to_@FROM
-					}
-				}
-				every_unit_leader = {
-					limit = {
-						OWNER = { TAG = ROOT }
-						has_unit_leader_flag = allegiance_to_@FROM #return when wars break out
-					}
-					set_nationality = FROM
-				}
-			}
+			#if = {
+				#limit = {
+					#any_unit_leader = {
+						#OWNER = { TAG = ROOT }
+						#has_unit_leader_flag = allegiance_to_@FROM
+					#}
+				#}
+				#every_unit_leader = {
+					#limit = {
+						#OWNER = { TAG = ROOT }
+						#has_unit_leader_flag = allegiance_to_@FROM #return when wars break out
+					#}
+					#set_nationality = FROM
+				#}
+			#}
 
 			if = { #second sino_japanese_war
 				limit = {

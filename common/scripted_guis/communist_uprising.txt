@@ -378,19 +378,19 @@ scripted_gui = {#guo
 			communists_vandalism_click = {
 				ai_will_do = {
 					factor = 50
-					modifier = {
-						factor = 0
-						command_power < 40
-					}
+					#modifier = {
+					    #factor = 0
+						#command_power < 40
+					#}
 				}
 			}
 		    communists_attack_click = {
 				ai_will_do = {
 					factor = 100
-					modifier = {
-						factor = 0
-						command_power < 40
-					}
+					#modifier = {
+						#factor = 0
+						#command_power < 40
+					#}
 				}
 			}
 		}

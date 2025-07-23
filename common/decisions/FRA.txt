@@ -335,7 +335,7 @@ controls_state = 735
 	}
 	FRA_demand_unification_with_vichy = {
 		available = {
-			VIC = {
+			FIC = {
 				exists = yes
 				NOT = {
 					has_war_with = ROOT
@@ -346,9 +346,9 @@ controls_state = 735
 
 		visible = {
 			NOT = {
-				tag = VIC
+				tag = FIC
 			}
-			country_exists = VIC
+			country_exists = FIC
 		}
 		ai_will_do = {
 			factor = 100
@@ -358,7 +358,7 @@ controls_state = 735
 		complete_effect = {
 			random_other_country = {
 				limit = {
-					tag = VIC
+					tag = FIC
 				}
 				country_event = lar_france_vichy_reunification.1
 			}
