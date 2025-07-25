@@ -98,7 +98,7 @@ country_event = {
 				ENG = {
 					set_autonomy = {
 					target = BUR
-					autonomous_state = autonomy_BRITISH_wangguan
+					autonomous_state = autonomy_ENG_baohuguo
 					freedom_level = 0.35
 				}
 			}
@@ -213,12 +213,11 @@ country_event = {
 			}
 			if = {
 				limit = {
-					has_dlc = "Together for Victory"
-		            has_global_flag = ouvrir_les_nouvelles					
+					has_dlc = "Together for Victory"			
 				}
 				set_autonomy = {
 					target = BUR
-					autonomous_state = autonomy_colony
+					autonomous_state = autonomy_ENG_baohuguo
 					freedom_level = 0.35
 				}
 				else = {
