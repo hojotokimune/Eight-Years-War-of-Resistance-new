@@ -6815,6 +6815,10 @@ focus_tree = {
 				}
 				add_ideas = balance_idea_prc_civil_war
 			    }
+			add_timed_idea = {
+				idea = PRC_War_of_Liberation
+				days = 765
+			}				
 			}
 			
 			diplomatic_relation = {
@@ -6873,10 +6877,6 @@ focus_tree = {
 				declare_war_on = {
 					target = event_target:WTT_current_china_leader
 				}
-			}
-			add_timed_idea = {
-				idea = PRC_War_of_Liberation
-				days = 765
 			}
             for_each_scope_loop = {
 				array = global.big_china
