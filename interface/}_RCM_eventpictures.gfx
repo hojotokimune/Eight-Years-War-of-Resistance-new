@@ -25,6 +25,218 @@ spriteTypes = {
 		texturefile = "gfx/event_pictures/xinjiangjiefang.jpg"
 	}
 	SpriteType = {
+		name = "GFX_liulaozhuang"
+		texturefile = "gfx/event_pictures/liulaozhuang .jpg"
+	}	
+	SpriteType = {
+		name = "GFX_sanxiadaba"
+		texturefile = "gfx/event_pictures/sanxiadaba.jpg"
+	}
+	SpriteType = {
+		name = "GFX_maoshenyue"
+		texturefile = "gfx/event_pictures/maoshenyue.jpg"
+	}
+	SpriteType = {
+		name = "GFX_zhongyuandazhan"
+		texturefile = "gfx/event_pictures/zhongyuandazhan.jpg"
+	}
+	SpriteType = {
+		name = "GFX_report_event_zhuhuameijun"
+		texturefile = "gfx/event_pictures/zhuhuameijun.jpg"
+	}
+	SpriteType = {
+		name = "GFX_report_event_zhongmeihezuo"
+		texturefile = "gfx/event_pictures/zhongmeihezuo.jpg"
+	}
+	SpriteType = {
+		name = "GFX_shuangbaiyundong"
+		texturefile = "gfx/event_pictures/shuangbaiyundong.jpg"
+	}
+	SpriteType = {
+		name = "GFX_xiongguan"
+		texturefile = "gfx/event_pictures/xiongguan.jpg"
+	}
+	SpriteType = {
+		name = "GFX_shidaguanxi"
+		texturefile = "gfx/event_pictures/shidaguanxi.jpg"
+	}
+	SpriteType = {
+		name = "GFX_yaodongdui"
+		texturefile = "gfx/event_pictures/yaodongdui.jpg"
+	}
+	SpriteType = {
+		name = "GFX_shanghaichenyi"
+		texturefile = "gfx/event_pictures/shanghaichenyi.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_liuhouzong"
+		texturefile = "gfx/event_pictures/liuhouzong.jpg"
+	}
+	SpriteType = {
+		name = "GFX_wufanyundong"
+		texturefile = "gfx/event_pictures/wufanyundong.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_tanwuan"
+		texturefile = "gfx/event_pictures/tanwuan.jpg"
+	}
+	SpriteType = {
+		name = "GFX_guoqingyuebing"
+		texturefile = "gfx/event_pictures/guoqingyuebing.jpg"
+	}
+	SpriteType = {
+		name = "GFX_wumajinjing"
+		texturefile = "gfx/event_pictures/wumajinjing.jpg"
+	}
+	SpriteType = {
+		name = "GFX_liushaoqi"
+		texturefile = "gfx/event_pictures/liushaoqi.jpg"
+	}
+	SpriteType = {
+		name = "GFX_fangzhenwu"
+		texturefile = "gfx/event_pictures/fangzhenwu.jpg"
+	}
+	SpriteType = {
+		name = "GFX_hezizhen"
+		texturefile = "gfx/event_pictures/hezizhen.jpg"
+	}
+	SpriteType = {
+		name = "GFX_dahu"
+		texturefile = "gfx/event_pictures/dahu.jpg"
+	}
+	SpriteType = {
+		name = "GFX_tiananmen"
+		texturefile = "gfx/event_pictures/tiananmen.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_jindu"
+		texturefile = "gfx/event_pictures/jindu.jpg"
+	}
+	SpriteType = {
+		name = "GFX_yananpai"
+		texturefile = "gfx/event_pictures/yananpai.jpg"
+	}
+	SpriteType = {
+		name = "GFX_chaoxian"
+		texturefile = "gfx/event_pictures/chaoxian.jpg"
+	}
+	SpriteType = {
+		name = "GFX_jiefangtaiwan"
+		texturefile = "gfx/event_pictures/jiefangtaiwan.jpg"
+	}
+	SpriteType = {
+		name = "GFX_dangqishuangjiang"
+		texturefile = "gfx/event_pictures/dangqishuangjiang.jpg"
+	}
+	SpriteType = {
+		name = "GFX_jiefangtaiwan"
+		texturefile = "gfx/event_pictures/jiefangtaiwan.jpg"
+	}
+	SpriteType = {
+		name = "GFX_shajiang"
+		texturefile = "gfx/event_pictures/shajiang.jpg"
+	}
+	SpriteType = {
+		name = "GFX_qisanyi"
+		texturefile = "gfx/event_pictures/qisanyi.jpg"
+	}
+	SpriteType = {
+		name = "GFX_huaihe"
+		texturefile = "gfx/event_pictures/huaihe.jpg"
+	}
+	SpriteType = {
+		name = "GFX_huzongnan"
+		texturefile = "gfx/event_pictures/huzongnan.jpg"
+	}
+	SpriteType = {
+		name = "GFX_handeqin"
+		texturefile = "gfx/event_pictures/handeqin.jpg"
+	}
+	SpriteType = {
+		name = "GFX_chenyisuyu2"
+		texturefile = "gfx/event_pictures/chenyisuyu2.jpg"
+	}
+	SpriteType = {
+		name = "GFX_chenyisuyu"
+		texturefile = "gfx/event_pictures/chenyisuyu.jpg"
+	}
+	SpriteType = {
+		name = "GFX_handeqin"
+		texturefile = "gfx/event_pictures/handeqin.jpg"
+	}
+	SpriteType = {
+		name = "GFX_chiangyizhao"
+		texturefile = "gfx/event_pictures/chiangyizhao.jpg"
+	}
+	SpriteType = {
+		name = "GFX_jibihaopengju"
+		texturefile = "gfx/event_pictures/jibihaopengju.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_wang"
+		texturefile = "gfx/event_pictures/wang.jpg"
+	}
+	SpriteType = {
+		name = "GFX_huaqiao"
+		texturefile = "gfx/event_pictures/huaqiao.jpg"
+	}
+	SpriteType = {
+		name = "GFX_wangyaqiao"
+		texturefile = "gfx/event_pictures/wangyaqiao.jpg"
+	}
+	SpriteType = {
+		name = "GFX_chenbulei"
+		texturefile = "gfx/event_pictures/chenbulei.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_maotanhua"
+		texturefile = "gfx/event_pictures/maotanhua.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_zhou_huiyi"
+		texturefile = "gfx/event_pictures/zhou_huiyi.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_maotanhua1"
+		texturefile = "gfx/event_pictures/maotanhua1.jpg"
+	}	
+	SpriteType = {
+		name = "GFX_linbaogao"
+		texturefile = "gfx/event_pictures/GFX_linbaogao.jpg"
+	}
+	SpriteType = {
+		name = "GFX_maotanhua2"
+		texturefile = "gfx/event_pictures/maotanhua2.jpg"
+	}
+	SpriteType = {
+		name = "GFX_maotanhua3"
+		texturefile = "gfx/event_pictures/maotanhua3.jpg"
+	}
+	SpriteType = {
+		name = "GFX_suluyuzhidui"
+		texturefile = "gfx/event_pictures/suluyuzhidui.jpg"
+	}
+	SpriteType = {
+		name = "GFX_renbishishishi"
+		texturefile = "gfx/event_pictures/renbishishishi.jpg"
+	}
+	SpriteType = {
+		name = "GFX_zijidongshou"
+		texturefile = "gfx/event_pictures/zijidongshou.jpg"
+	}
+	SpriteType = {
+		name = "GFX_liuguitang"
+		texturefile = "gfx/event_pictures/liuguitang.jpg"
+	}
+	SpriteType = {
+		name = "GFX_tongzhoushijian"
+		texturefile = "gfx/event_pictures/tongzhoushijian.jpg"
+	}
+	SpriteType = {
+		name = "GFX_renminjiuxing"
+		texturefile = "gfx/event_pictures/renminjiuxing.jpg"
+	}	
+	SpriteType = {
 		name = "GFX_zhenghexinjiang"
 		texturefile = "gfx/event_pictures/zhenghexinjiang.jpg"
 	}	

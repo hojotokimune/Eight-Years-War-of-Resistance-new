@@ -11459,18 +11459,12 @@ country_event = { #chungking_negotiations to prc
 		add_stability = 0.05
 	}
 }
-country_event = { #france annex vichy
+country_event = { 
 	id = ccw.587
 	title = ccw.587.t
 	desc = ccw.587.d
 	picture = GFX_report_event_baoantugai	
-	fire_only_once = yes
-	is_triggered_only = yes	
-	trigger = {
-    tag = PRC
-    1067 = { is_controlled_by = PRC }
-	is_ai = no
-	}
+	is_triggered_only = yes
 	immediate = {
 	hidden_effect = {	
 	1067 = {
@@ -12170,7 +12164,7 @@ country_event = { #畑中健二自杀2
 		#name = ccw.723.a		
 				#CHI = {
         #add_ideas = lianheguo
-				#}		
+				}		
 				#USA = {
         #add_ideas = lianheguo
 				#}
@@ -12606,8 +12600,7 @@ country_event = {
 country_event = { 
 	id = ccw.737
 	title = ccw.737.t
-	desc = ccw.737.desc
-	
+	desc = ccw.737.desc	
 	trigger = {    
 	}
 	fire_only_once = yes	

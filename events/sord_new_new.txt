@@ -2143,7 +2143,11 @@ country_event = { #和谐西藏?
 	is_triggered_only = yes
 	
 	immediate = {
-	    
+    hidden_effect = {
+    PRC = {
+	country_event = ccw.587
+	}
+	}	    
 	}
 	
 	option = {
@@ -2151,7 +2155,7 @@ country_event = { #和谐西藏?
 		ai_chance = {
 			base = 1
 		}
-        hidden_effect = {
+        hidden_effect = {		
                     1022 = {
         add_core_of = CHI
               }
