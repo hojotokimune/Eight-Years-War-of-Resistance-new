@@ -1,0 +1,102 @@
+# ZongduKMTrework_13 = {#两山特种技术研究所
+# 	icon = GER_reichskommissariats
+# 	#填入地区
+# 	cost = 0
+# 	fire_only_once = yes
+# 		ai_will_do = {
+# 			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+# 		}
+# 		visible = {
+# 			is_ai = no
+# 		}
+# 		available = {
+					
+# 		324 = {
+# 			is_controlled_by_ROOT_or_puppet = yes
+# 		}
+# 		323 = {
+# 			is_controlled_by_ROOT_or_puppet = yes
+# 		}
+		
+		
+
+
+	
+# 		}
+# 		complete_effect = {
+# 			hidden_effect = {
+# 				every_state = {
+# 					limit = {
+# 						OR = {
+# 							state = 324
+# 							state = 323
+							
+							
+							
+# 						}
+# 						is_owned_by = CHI
+# 					}
+# 				}
+
+# 					324 = {
+# 							add_core_of = R72
+# 						}
+# 						323 = {
+# 							add_core_of = R72
+# 						}
+						
+					
+
+# 			R72 = {
+# 					set_state_controller = 324
+# 					set_state_owner = 324
+# 					set_state_controller = 323
+# 					set_state_owner = 323
+					
+
+# 				CHI = {
+# 					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+# 						set_autonomy = {
+# 							target = PREV
+# 							autonomy_state = autonomy_reichskommissariat
+# 							end_wars = no
+# 						}
+					
+# 				}
+# 				create_country_leader = {
+# 					name = "徐远举"
+# 					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+# 					picture = "gfx/leaders/CHI/xuyuanju.jpg"
+# 					expire = "1965.1.1"
+# 					ideology = sanmin_constitutional_government
+# 					traits = { KMT_zhuanyuan_gszy#行政公署专员
+# 					}
+# 				}
+# 				create_country_leader = {
+# 					name = "徐远举"
+# 					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+# 					picture = "gfx/leaders/CHI/xuyuanju.jpg"
+# 					expire = "1965.1.1"
+# 					ideology = sanmin_military_rule
+# 					traits = { KMT_zhuanyuan_gszy#行政公署专员
+# 					}
+# 				}
+# 				create_country_leader = {
+# 					name = "徐远举"
+# 					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+# 					picture = "gfx/leaders/CHI/xuyuanju.jpg"
+# 					expire = "1965.1.1"
+# 					ideology = sanmin_political_tutelage
+# 					traits = { KMT_zhuanyuan_gszy#行政公署专员
+# 					}
+# 				}
+# 				set_capital = {
+# 					state = 324
+# 					remember_old_capital = no
+# 				}
+# 			}
+# 		}
+# 	}
+# }

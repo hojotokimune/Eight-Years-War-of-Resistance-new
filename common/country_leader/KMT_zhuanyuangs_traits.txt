@@ -1,0 +1,10 @@
+leader_traits = {
+	KMT_zhuanyuan_gszy = {
+		stability_factor = -0.15
+		war_support_factor = -0.15
+		min_export = -0.15
+		production_factory_max_efficiency_factor = 0.01
+		production_factory_efficiency_gain_factor = 0.01
+		ai_focus_aggressive_factor = 1
+	}
+}

@@ -1,0 +1,2423 @@
+ZongduKMTrework = {
+	#菲律宾、印支、缅甸、暹罗、马来亚、印度尼西亚、澳新、7
+	#印度、阿富汗、中亚（记得修复外西北）、大西伯利亚4
+	#4孙立人、王耀武、胡宗南、毛人凤
+   #7谷正文、沈醉、毛森、康泽、沈之岳、廖耀湘、程潜
+
+   #海外领地
+   #夏威夷领地、阿非利加领地、中东领地
+   #陈绍宽、、、卫立煌、、、、孙科、、
+	ZongduKMTrework_1 = {#菲律宾绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+			626 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			627 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+
+			628 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			625 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			624 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			623 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			327 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 626
+							state = 627
+							state = 628
+							state = 625
+							state = 624
+							state = 623
+							state = 327
+						}
+						is_owned_by = CHI
+					}
+				}
+
+			626 = {
+				add_core_of = R60
+			}
+			627 = {
+				add_core_of = R60
+			}
+			628 = {
+				add_core_of = R60
+			}
+			625 = {
+				add_core_of = R60
+			}
+			624 = {
+				add_core_of = R60
+			}
+			623 = {
+				add_core_of = R60
+			}
+			327 = {
+				add_core_of = R60
+						}
+
+			R60 = {
+					set_state_controller = 626
+					set_state_owner = 626
+					set_state_controller = 627
+					set_state_owner = 627
+					set_state_controller = 628
+					set_state_owner = 628
+					set_state_controller = 625
+					set_state_owner = 625
+					set_state_controller = 624
+					set_state_owner = 624
+					set_state_controller = 623
+					set_state_owner = 623
+					set_state_controller = 327
+					set_state_owner = 327
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "谷正文"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Gu_Jhengwun.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "谷正文"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Gu_Jhengwun.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "谷正文"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Gu_Jhengwun.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 327
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+
+
+ZongduKMTrework_2 = {#中南绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+				982 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	985 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	670 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	989 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	979 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	988 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	983 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	978 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	986 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	981 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	987 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	741 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	
+	286 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	984 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	980 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	671 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 982  
+							state = 985  
+							state = 670  
+							state = 989  
+							state = 979  
+							state = 988  
+							state = 983  
+							state = 978  
+							state = 986  
+							state = 981  
+							state = 987  
+							state = 741  
+						 
+							state = 286  
+							state = 984  
+							state = 980  
+							state = 671
+						}
+						is_owned_by = CHI
+					}
+				}
+
+			982 = {
+				add_core_of = R61
+			}
+			985 = {
+				add_core_of = R61
+			}
+			670 = {
+				add_core_of = R61
+			}
+			989 = {
+				add_core_of = R61
+			}
+			979 = {
+				add_core_of = R61
+			}
+			988 = {
+				add_core_of = R61
+			}
+			983 = {
+				add_core_of = R61
+			}
+			978 = {
+				add_core_of = R61
+			}
+			986 = {
+				add_core_of = R61
+			}
+			981 = {
+				add_core_of = R61
+			}
+			987 = {
+				add_core_of = R61
+			}
+			741 = {
+				add_core_of = R61
+			}
+			
+			286 = {
+				add_core_of = R61
+			}
+			984 = {
+				add_core_of = R61
+			}
+			980 = {
+				add_core_of = R61
+			}
+			671 = {
+				add_core_of = R61
+			}
+
+			R61 = {
+					set_state_controller = 982  
+					set_state_owner = 982  
+					set_state_controller = 985  
+					set_state_owner = 985  
+					set_state_controller = 670  
+					set_state_owner = 670  
+					set_state_controller = 989  
+					set_state_owner = 989  
+					set_state_controller = 979  
+					set_state_owner = 979  
+					set_state_controller = 988  
+					set_state_owner = 988  
+					set_state_controller = 983  
+					set_state_owner = 983  
+					set_state_controller = 978  
+					set_state_owner = 978  
+					set_state_controller = 986  
+					set_state_owner = 986  
+					set_state_controller = 981  
+					set_state_owner = 981  
+					set_state_controller = 987  
+					set_state_owner = 987  
+					set_state_controller = 741  
+					set_state_owner = 741  
+				  
+					set_state_controller = 286  
+					set_state_owner = 286  
+					set_state_controller = 984  
+					set_state_owner = 984  
+					set_state_controller = 980  
+					set_state_owner = 980  
+					set_state_controller = 671  
+					set_state_owner = 671
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "沈醉"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/shenzui.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "沈醉"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/shenzui.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "沈醉"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/shenzui.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 286
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+
+ZongduKMTrework_3 = {#缅甸绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+				993 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	992 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	
+
+	288 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+
+	
+	1021 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	
+	640 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 993  
+							state = 992  
+						
+							 
+							state = 288  
+				  
+						
+							state = 1021  
+						 
+							state = 640
+						}
+						is_owned_by = CHI
+					}
+				}
+
+			993 = {
+				add_core_of = R62
+			}
+			992 = {
+				add_core_of = R62
+			}
+			
+			
+			288 = {
+				add_core_of = R62
+			}
+			
+			
+			1021 = {
+				add_core_of = R62
+			}
+			
+			640 = {
+				add_core_of = R62
+			}
+
+			R62 = {
+					set_state_controller = 993  
+					set_state_owner = 993  
+					set_state_controller = 992  
+					set_state_owner = 992  
+					
+					
+					set_state_controller = 288  
+					set_state_owner = 288  
+					  
+				
+					set_state_controller = 1021  
+					set_state_owner = 1021  
+				
+					set_state_controller = 640  
+					set_state_owner = 640
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "毛森"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/maosen.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "毛森"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/maosen.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "毛森"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/maosen.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 288
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+
+ZongduKMTrework_4 = {#暹罗绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+				868 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	289 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	869 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	724 = {
+	is_controlled_by_ROOT_or_puppet = yes
+	}
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 868  
+							state = 289  
+							state = 724 
+							state = 869  
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+							868 = {
+				add_core_of = R63
+				}
+				289 = {
+				add_core_of = R63
+				}
+				724 = {
+				add_core_of = R63
+				}
+				869 = {
+				add_core_of = R63
+				}
+
+			R63 = {
+					set_state_controller = 868  
+					set_state_owner = 868  
+					set_state_controller = 289  
+					set_state_owner = 289  
+					set_state_controller = 724  
+					set_state_owner = 724  
+					set_state_controller = 869  
+					set_state_owner = 869
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "康泽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/kangze.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "康泽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/kangze.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "康泽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/kangze.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 289
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+
+ZongduKMTrework_5 = {#马六甲绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		1057 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1056 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1055 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1058 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1059 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1060 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1061 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		336 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		972 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		970 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		971 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		333 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 1057
+							state = 1056
+							state = 1055
+							state = 1058
+							state = 1059
+							state = 1060
+							state = 1061
+							state = 336
+							state = 972
+							state = 970
+							state = 971
+							state = 333
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					1057 = {
+						add_core_of = R64
+					}
+					1056 = {
+						add_core_of = R64
+					}
+					1055 = {
+						add_core_of = R64
+					}
+					1058 = {
+						add_core_of = R64
+					}
+					1059 = {
+						add_core_of = R64
+					}
+					1060 = {
+						add_core_of = R64
+					}
+					1061 = {
+						add_core_of = R64
+					}
+					336 = {
+						add_core_of = R64
+					}
+					972 = {
+						add_core_of = R64
+					}
+					970 = {
+						add_core_of = R64
+					}
+					971 = {
+						add_core_of = R64
+					}
+					333 = {
+						add_core_of = R64
+					}
+
+			R64 = {
+					set_state_controller = 1057
+					set_state_owner = 1057
+					set_state_controller = 1056
+					set_state_owner = 1056
+					set_state_controller = 1055
+					set_state_owner = 1055
+					set_state_controller = 1058
+					set_state_owner = 1058
+					set_state_controller = 1059
+					set_state_owner = 1059
+					set_state_controller = 1060
+					set_state_owner = 1060
+					set_state_controller = 1061
+					set_state_owner = 1061
+					set_state_controller = 336
+					set_state_owner = 336
+					set_state_controller = 972
+					set_state_owner = 972
+					set_state_controller = 970
+					set_state_owner = 970
+					set_state_controller = 971
+					set_state_owner = 971
+					set_state_controller = 333
+					set_state_owner = 333
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "沈之岳"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Shen_Jhihyue.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "沈之岳"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Shen_Jhihyue.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "沈之岳"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Shen_Jhihyue.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 336
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+
+ZongduKMTrework_6 = {#印度尼西亚绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		669 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			668 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			738 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			721 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			667 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			673 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			335 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			672 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			334 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			973 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			974 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			975 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			976 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			977 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 669
+							state = 668
+							state = 738
+							state = 721
+							state = 667
+							state = 673
+							state = 335
+							state = 672
+							state = 334
+							state = 973
+							state = 974
+							state = 975
+							state = 976
+							state = 977
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					669 = {
+						add_core_of = R65
+					}
+					668 = {
+						add_core_of = R65
+					}
+					738 = {
+						add_core_of = R65
+					}
+					721 = {
+						add_core_of = R65
+					}
+					667 = {
+						add_core_of = R65
+					}
+					673 = {
+						add_core_of = R65
+					}
+					335 = {
+						add_core_of = R65
+					}
+					672 = {
+						add_core_of = R65
+					}
+					334 = {
+						add_core_of = R65
+					}
+					973 = {
+						add_core_of = R65
+					}
+					974 = {
+						add_core_of = R65
+					}
+					975 = {
+						add_core_of = R65
+					}
+					976 = {
+						add_core_of = R65
+					}
+					977 = {
+						add_core_of = R65
+					}
+
+			R65 = {
+					set_state_controller = 669
+					set_state_owner = 669
+					set_state_controller = 668
+					set_state_owner = 668
+					set_state_controller = 738
+					set_state_owner = 738
+					set_state_controller = 721
+					set_state_owner = 721
+					set_state_controller = 667
+					set_state_owner = 667
+					set_state_controller = 673
+					set_state_owner = 673
+					set_state_controller = 335
+					set_state_owner = 335
+					set_state_controller = 672
+					set_state_owner = 672
+					set_state_controller = 334
+					set_state_owner = 334
+					set_state_controller = 973
+					set_state_owner = 973
+					set_state_controller = 974
+					set_state_owner = 974
+					set_state_controller = 975
+					set_state_owner = 975
+					set_state_controller = 976
+					set_state_owner = 976
+					set_state_controller = 977
+					set_state_owner = 977
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "廖耀湘"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Liao_Yaoxiang.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "廖耀湘"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Liao_Yaoxiang.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "廖耀湘"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Liao_Yaoxiang.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 335
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_7 = {#南方诸岛屿绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		634 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			737 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			523 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			872 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			521 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			285 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			873 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			517 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			518 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			674 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			519 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			520 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			870 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			871 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			522 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			734 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			635 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			636 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			284 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			723 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 634
+							state = 737
+							state = 523
+							state = 872
+							state = 521
+							state = 285
+							state = 873
+							state = 517
+							state = 518
+							state = 674
+							state = 519
+							state = 520
+							state = 870
+							state = 871
+							state = 522
+							state = 734
+							state = 635
+							state = 636
+							state = 284
+							state = 723
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					634 = {
+						add_core_of = R66
+					}
+					737 = {
+						add_core_of = R66
+					}
+					523 = {
+						add_core_of = R66
+					}
+					872 = {
+						add_core_of = R66
+					}
+					521 = {
+						add_core_of = R66
+					}
+					285 = {
+						add_core_of = R66
+					}
+					873 = {
+						add_core_of = R66
+					}
+					517 = {
+						add_core_of = R66
+					}
+					518 = {
+						add_core_of = R66
+					}
+					674 = {
+						add_core_of = R66
+					}
+					519 = {
+						add_core_of = R66
+					}
+					520 = {
+						add_core_of = R66
+					}
+					870 = {
+						add_core_of = R66
+					}
+					871 = {
+						add_core_of = R66
+					}
+					522 = {
+						add_core_of = R66
+					}
+					734 = {
+						add_core_of = R66
+					}
+					635 = {
+						add_core_of = R66
+					}
+					636 = {
+						add_core_of = R66
+					}
+					284 = {
+						add_core_of = R66
+					}
+					723 = {
+						add_core_of = R66
+					}
+
+			R66 = {
+					set_state_controller = 634
+					set_state_owner = 634
+					set_state_controller = 737
+					set_state_owner = 737
+					set_state_controller = 523
+					set_state_owner = 523
+					set_state_controller = 872
+					set_state_owner = 872
+					set_state_controller = 521
+					set_state_owner = 521
+					set_state_controller = 285
+					set_state_owner = 285
+					set_state_controller = 873
+					set_state_owner = 873
+					set_state_controller = 517
+					set_state_owner = 517
+					set_state_controller = 518
+					set_state_owner = 518
+					set_state_controller = 674
+					set_state_owner = 674
+					set_state_controller = 519
+					set_state_owner = 519
+					set_state_controller = 520
+					set_state_owner = 520
+					set_state_controller = 870
+					set_state_owner = 870
+					set_state_controller = 871
+					set_state_owner = 871
+					set_state_controller = 522
+					set_state_owner = 522
+					set_state_controller = 734
+					set_state_owner = 734
+					set_state_controller = 635
+					set_state_owner = 635
+					set_state_controller = 636
+					set_state_owner = 636
+					set_state_controller = 284
+					set_state_owner = 284
+					set_state_controller = 723
+					set_state_owner = 723
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "程潜"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Cheng_Qian.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "程潜"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Cheng_Qian.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "程潜"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Cheng_Qian.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 285
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_8 = {#印度绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		429 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		428 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		
+		435 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		438 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		437 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		441 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		440 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		430 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		444 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		443 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		321 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1068 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		439 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		442 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		425 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		432 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		1076 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		434 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		431 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		436 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		423 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		427 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		445 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		426 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		424 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		787 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		433 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		320 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 429
+							state = 428
+							
+							state = 435
+							state = 438
+							state = 437
+							state = 441
+							state = 440
+							state = 430
+							state = 444
+							state = 443
+							state = 321
+							state = 1068
+							state = 439
+							state = 442
+							state = 425
+							state = 432
+							state = 1076
+							state = 434
+							state = 431
+							state = 436
+							state = 423
+							state = 427
+							state = 445
+							state = 426
+							state = 424
+							state = 787
+							state = 433
+							state = 320
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					429 = {
+						add_core_of = R67
+					}
+					428 = {
+						add_core_of = R67
+					}
+					
+					435 = {
+						add_core_of = R67
+					}
+					438 = {
+						add_core_of = R67
+					}
+					437 = {
+						add_core_of = R67
+					}
+					441 = {
+						add_core_of = R67
+					}
+					440 = {
+						add_core_of = R67
+					}
+					430 = {
+						add_core_of = R67
+					}
+					444 = {
+						add_core_of = R67
+					}
+					443 = {
+						add_core_of = R67
+					}
+					321 = {
+						add_core_of = R67
+					}
+					439 = {
+						add_core_of = R67
+					}
+					442 = {
+						add_core_of = R67
+					}
+					425 = {
+						add_core_of = R67
+					}
+					432 = {
+						add_core_of = R67
+					}
+					431 = {
+						add_core_of = R67
+					}
+					436 = {
+						add_core_of = R67
+					}
+					423 = {
+						add_core_of = R67
+					}
+					427 = {
+						add_core_of = R67
+					}
+					445 = {
+						add_core_of = R67
+					}
+					426 = {
+						add_core_of = R67
+					}
+					424 = {
+						add_core_of = R67
+					}
+					787 = {
+						add_core_of = R67
+					}
+					433 = {
+						add_core_of = R67
+					}
+					320 = {
+						add_core_of = R67
+					}
+
+			R67 = {
+					set_state_controller = 429
+					set_state_owner = 429
+					set_state_controller = 428
+					set_state_owner = 428
+					
+					set_state_controller = 435
+					set_state_owner = 435
+					set_state_controller = 438
+					set_state_owner = 438
+					set_state_controller = 437
+					set_state_owner = 437
+					set_state_controller = 441
+					set_state_owner = 441
+					set_state_controller = 440
+					set_state_owner = 440
+					set_state_controller = 430
+					set_state_owner = 430
+					set_state_controller = 444
+					set_state_owner = 444
+					set_state_controller = 443
+					set_state_owner = 443
+					set_state_controller = 321
+					set_state_owner = 321
+					set_state_controller = 439
+					set_state_owner = 439
+					set_state_controller = 442
+					set_state_owner = 442
+					set_state_controller = 425
+					set_state_owner = 425
+					set_state_controller = 432
+					set_state_owner = 432
+					set_state_controller = 431
+					set_state_owner = 431
+					set_state_controller = 436
+					set_state_owner = 436
+					set_state_controller = 423
+					set_state_owner = 423
+					set_state_controller = 427
+					set_state_owner = 427
+					set_state_controller = 445
+					set_state_owner = 445
+					set_state_controller = 426
+					set_state_owner = 426
+					set_state_controller = 424
+					set_state_owner = 424
+					set_state_controller = 787
+					set_state_owner = 787
+					set_state_controller = 433
+					set_state_owner = 433
+					set_state_controller = 320
+					set_state_owner = 320
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "孙立人"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/sun_liren_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "孙立人"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/sun_liren_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "孙立人"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/sun_liren_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 427
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_9 = {#阿富汗自治州
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		267 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		415 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		
+
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 267
+							state = 415
+							
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					267 = {
+						add_core_of = R68
+					}
+					415 = {
+						add_core_of = R68
+					}
+					
+
+			R68 = {
+					set_state_controller = 267
+					set_state_owner = 267
+					set_state_controller = 415
+					set_state_owner = 415
+					
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "王耀武"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/wang_yaowu_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "王耀武"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/wang_yaowu_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "王耀武"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/wang_yaowu_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 267
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_10 = {#中亚总督辖区
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		402 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			881 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			404 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			587 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			584 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			823 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			831 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			832 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			585 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			830 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			405 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			742 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+		
+
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 402
+							state = 881
+							state = 404
+							state = 587
+							state = 584
+							state = 823
+							state = 831
+							state = 832
+							state = 585
+							state = 830
+							state = 405
+							state = 742
+							
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					402 = {
+							add_core_of = R69
+						}
+						881 = {
+							add_core_of = R69
+						}
+						404 = {
+							add_core_of = R69
+						}
+						587 = {
+							add_core_of = R69
+						}
+						584 = {
+							add_core_of = R69
+						}
+						823 = {
+							add_core_of = R69
+						}
+						831 = {
+							add_core_of = R69
+						}
+						832 = {
+							add_core_of = R69
+						}
+						585 = {
+							add_core_of = R69
+						}
+						830 = {
+							add_core_of = R69
+						}
+						405 = {
+							add_core_of = R69
+						}
+						742 = {
+							add_core_of = R69
+						}
+					
+
+			R69 = {
+					set_state_controller = 402
+					set_state_owner = 402
+					set_state_controller = 881
+					set_state_owner = 881
+					set_state_controller = 404
+					set_state_owner = 404
+					set_state_controller = 587
+					set_state_owner = 587
+					set_state_controller = 584
+					set_state_owner = 584
+					set_state_controller = 823
+					set_state_owner = 823
+					set_state_controller = 831
+					set_state_owner = 831
+					set_state_controller = 832
+					set_state_owner = 832
+					set_state_controller = 585
+					set_state_owner = 585
+					set_state_controller = 830
+					set_state_owner = 830
+					set_state_controller = 405
+					set_state_owner = 405
+					set_state_controller = 742
+					set_state_owner = 742
+					
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "胡宗南"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/hu_zongnan_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "胡宗南"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/hu_zongnan_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "胡宗南"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/ROCA/hu_zongnan_ROCA.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 404
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_11 = {#大西伯利亚绥靖公署
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		637 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		822 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		874 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		644 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		562 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		574 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		563 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		564 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		876 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		877 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		878 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		576 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		575 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		565 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		566 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		567 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		568 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		569 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		654 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		40 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		578 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		516 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		824 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		570 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		571 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		577 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		580 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		579 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		653 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		572 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		403 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		
+
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 637
+							state = 822
+							state = 874
+							state = 644
+							state = 562
+							state = 574
+							state = 563
+							state = 564
+							state = 876
+							state = 877
+							state = 878
+							state = 576
+							state = 575
+							state = 565
+							state = 566
+							state = 567
+							state = 568
+							state = 569
+							state = 654
+							state = 40
+							state = 578
+							state = 516
+							state = 824
+							state = 570
+							state = 571
+							state = 577
+							state = 580
+							state = 579
+							state = 653
+							state = 572
+							state = 403
+							
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					637 = {
+							add_core_of = R70
+						}
+						822 = {
+							add_core_of = R70
+						}
+						874 = {
+							add_core_of = R70
+						}
+						644 = {
+							add_core_of = R70
+						}
+						562 = {
+							add_core_of = R70
+						}
+						574 = {
+							add_core_of = R70
+						}
+						563 = {
+							add_core_of = R70
+						}
+						564 = {
+							add_core_of = R70
+						}
+						876 = {
+							add_core_of = R70
+						}
+						877 = {
+							add_core_of = R70
+						}
+						878 = {
+							add_core_of = R70
+						}
+						576 = {
+							add_core_of = R70
+						}
+						575 = {
+							add_core_of = R70
+						}
+						565 = {
+							add_core_of = R70
+						}
+						566 = {
+							add_core_of = R70
+						}
+						567 = {
+							add_core_of = R70
+						}
+						568 = {
+							add_core_of = R70
+						}
+						569 = {
+							add_core_of = R70
+						}
+						654 = {
+							add_core_of = R70
+						}
+						40 = {
+							add_core_of = R70
+						}
+						578 = {
+							add_core_of = R70
+						}
+						516 = {
+							add_core_of = R70
+						}
+						824 = {
+							add_core_of = R70
+						}
+						570 = {
+							add_core_of = R70
+						}
+						571 = {
+							add_core_of = R70
+						}
+						577 = {
+							add_core_of = R70
+						}
+						580 = {
+							add_core_of = R70
+						}
+						579 = {
+							add_core_of = R70
+						}
+						653 = {
+							add_core_of = R70
+						}
+						572 = {
+							add_core_of = R70
+						}
+						403 = {
+							add_core_of = R70
+						}
+					
+
+			R70 = {
+					set_state_controller = 637
+					set_state_owner = 637
+					set_state_controller = 822
+					set_state_owner = 822
+					set_state_controller = 874
+					set_state_owner = 874
+					set_state_controller = 644
+					set_state_owner = 644
+					set_state_controller = 562
+					set_state_owner = 562
+					set_state_controller = 574
+					set_state_owner = 574
+					set_state_controller = 563
+					set_state_owner = 563
+					set_state_controller = 564
+					set_state_owner = 564
+					set_state_controller = 876
+					set_state_owner = 876
+					set_state_controller = 877
+					set_state_owner = 877
+					set_state_controller = 878
+					set_state_owner = 878
+					set_state_controller = 576
+					set_state_owner = 576
+					set_state_controller = 575
+					set_state_owner = 575
+					set_state_controller = 565
+					set_state_owner = 565
+					set_state_controller = 566
+					set_state_owner = 566
+					set_state_controller = 567
+					set_state_owner = 567
+					set_state_controller = 568
+					set_state_owner = 568
+					set_state_controller = 569
+					set_state_owner = 569
+					set_state_controller = 654
+					set_state_owner = 654
+					set_state_controller = 40
+					set_state_owner = 40
+					set_state_controller = 578
+					set_state_owner = 578
+					set_state_controller = 516
+					set_state_owner = 516
+					set_state_controller = 824
+					set_state_owner = 824
+					set_state_controller = 570
+					set_state_owner = 570
+					set_state_controller = 571
+					set_state_owner = 571
+					set_state_controller = 577
+					set_state_owner = 577
+					set_state_controller = 580
+					set_state_owner = 580
+					set_state_controller = 579
+					set_state_owner = 579
+					set_state_controller = 653
+					set_state_owner = 653
+					set_state_controller = 572
+					set_state_owner = 572
+					set_state_controller = 403
+					set_state_owner = 403
+					
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "毛人凤"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/maorenfeng.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "毛人凤"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/maorenfeng.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "毛人凤"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/maorenfeng.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 637
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_12 = {#夏威夷海军基地
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		629 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		
+		
+
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 629
+							
+							
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					629 = {
+							add_core_of = R71
+						}
+						
+					
+
+			R71 = {
+					set_state_controller = 629
+					set_state_owner = 629
+					
+					
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "陈绍宽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Shaokuan.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "陈绍宽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Shaokuan.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "陈绍宽"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/Portrait_CHI_Chen_Shaokuan.dds"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 629
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+ZongduKMTrework_13 = {#两山睡衣登山研究所
+	icon = GER_reichskommissariats
+	#填入地区
+	cost = 0
+	fire_only_once = yes
+		ai_will_do = {
+			factor = 0 modifier = { factor = 0 has_war_with_major = yes }
+		}
+		visible = {
+			is_ai = no
+		}
+		available = {
+					
+		324 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		323 = {
+			is_controlled_by_ROOT_or_puppet = yes
+		}
+		
+		
+
+
+	
+		}
+		complete_effect = {
+			hidden_effect = {
+				every_state = {
+					limit = {
+						OR = {
+							state = 324
+							state = 323
+							
+							
+							
+						}
+						is_owned_by = CHI
+					}
+				}
+
+					324 = {
+							add_core_of = R72
+						}
+						323 = {
+							add_core_of = R72
+						}
+						
+					
+
+			R72 = {
+					set_state_controller = 324
+					set_state_owner = 324
+					set_state_controller = 323
+					set_state_owner = 323
+					
+
+				CHI = {
+					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
+				
+					
+						set_autonomy = {
+							target = PREV
+							autonomy_state = autonomy_reichskommissariat
+							end_wars = no
+						}
+					
+				}
+				create_country_leader = {
+					name = "徐远举"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/xuyuanju.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_constitutional_government
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "徐远举"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/xuyuanju.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_military_rule
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				create_country_leader = {
+					name = "徐远举"
+					desc = "POLITICS_ARTHUR_SEYSS_INQUART_DESC"
+					picture = "gfx/leaders/CHI/xuyuanju.jpg"
+					expire = "1965.1.1"
+					ideology = sanmin_political_tutelage
+					traits = { KMT_zhuanyuan_gszy#行政公署专员
+					}
+				}
+				set_capital = {
+					state = 324
+					remember_old_capital = no
+				}
+			}
+		}
+	}
+}
+}

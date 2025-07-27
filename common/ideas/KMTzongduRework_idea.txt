@@ -1,0 +1,36 @@
+ideas = {
+	country = {
+		ZongduKMTrework_Modifier = {
+			picture = CHI_minzuism
+			allowed_civil_war = {
+
+			}
+			on_add = {
+				
+			}
+			on_remove = {
+				
+			}
+			do_effect = { #满足什么条件时这个idea才会真正有效
+			
+			}
+			cancel = {
+			
+			}
+			modifier = {
+				consumer_goods_factor = -0.3
+				autonomy_gain = -5
+				conscription = 0.05
+				mobilization_speed = 0.5
+				drift_defence_factor = 0.5
+				foreign_subversive_activites = -0.5
+				offensive_war_stability_factor = 0.25
+				political_power_factor = 0.15
+				autonomy_manpower_share = 0.5
+			}
+			ai_will_do = {
+				factor = 1
+			}
+		}
+	}
+}
