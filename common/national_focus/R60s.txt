@@ -1,168 +1,168 @@
-focus_tree = {
-	id = KMTzongdufocustreeex
-	country = { 
-		factor = 1
-	}
-	default = yes
-	reset_on_civilwar = no
-	continuous_focus_position = { x = -150 y = 2000 }
+# focus_tree = {
+# 	id = KMTzongdufocustreeex
+# 	country = { 
+# 		factor = 1
+# 	}
+# 	default = yes
+# 	reset_on_civilwar = no
+# 	continuous_focus_position = { x = -150 y = 2000 }
 
 
-	focus = {
-		id = KMTzhuanyuan1 #专员送行宴会的结束
-		icon = GFX_focus_chi_jongtong_sectors
-		x = 17
-		y = 0
-		cost = 1
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 	focus = {
+# 		id = KMTzhuanyuan1 #专员送行宴会的结束
+# 		icon = GFX_focus_chi_jongtong_sectors
+# 		x = 17
+# 		y = 0
+# 		cost = 1
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan2 #开始工作
-		icon = GFX_focus_chi_party_net
-		x = 17
-		y = 2
-		cost = 1
-		prerequisite = {
-			focus = KMTzhuanyuan1
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan2 #开始工作
+# 		icon = GFX_focus_chi_party_net
+# 		x = 17
+# 		y = 2
+# 		cost = 1
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan1
+# 		}
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan3 #榨取当地资源
-		icon = GFX_focus_generic_claim_resources
-		x = 22
-		y = 3
-		cost = 1
-		prerequisite = {
-			focus = KMTzhuanyuan2
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan3 #榨取当地资源
+# 		icon = GFX_focus_generic_claim_resources
+# 		x = 22
+# 		y = 3
+# 		cost = 1
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan2
+# 		}
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan4 #掠夺本地人
-		icon = GFX_focus_generic_take_power
-		x = 12
-		y = 3
-		cost = 1
-		prerequisite = {
-			focus = KMTzhuanyuan2
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan4 #掠夺本地人
+# 		icon = GFX_focus_generic_take_power
+# 		x = 12
+# 		y = 3
+# 		cost = 1
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan2
+# 		}
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan5 #申请支援
-		icon = GFX_focus_generic_pride_of_the_fleet
-		x = 17
-		y = 4
-		cost = 1
-		prerequisite = {
-			focus = KMTzhuanyuan3
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan5 #申请支援
+# 		icon = GFX_focus_generic_pride_of_the_fleet
+# 		x = 17
+# 		y = 4
+# 		cost = 1
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan3
 			
-		}
-		prerequisite = {
-			focus = KMTzhuanyuan4
+# 		}
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan4
 			
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan6 #大火燃烧……
-		icon = GFX_focus_generic_fascist_outrage
-		x = 17
-		y = 6
-		cost = 1
-		prerequisite = {
-			focus = KMTzhuanyuan5
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan6 #大火燃烧……
+# 		icon = GFX_focus_generic_fascist_outrage
+# 		x = 17
+# 		y = 6
+# 		cost = 1
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan5
 			
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan7 #时钟滴答……
-		icon = GFX_focus_jongtong
-		x = 17
-		y = 8
-		cost = 1
-		prerequisite = {
-			focus = KMTzhuanyuan6
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan7 #时钟滴答……
+# 		icon = GFX_focus_jongtong
+# 		x = 17
+# 		y = 8
+# 		cost = 1
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan6
 			
-		}
-		ai_will_do = {
-			factor = 5
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 		ai_will_do = {
+# 			factor = 5
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-	focus = {
-		id = KMTzhuanyuan8 #再不受制于人
-		icon = GFX_focus_last_ditch
-		x = 17
-		y = 10
-		cost = 1000
-		prerequisite = {
-			focus = KMTzhuanyuan7
+# 		}
+# 	}
+# 	focus = {
+# 		id = KMTzhuanyuan8 #再不受制于人
+# 		icon = GFX_focus_last_ditch
+# 		x = 17
+# 		y = 10
+# 		cost = 1000
+# 		prerequisite = {
+# 			focus = KMTzhuanyuan7
 			
-		}
-		ai_will_do = {
-			factor = 0
-		}
-		completion_reward = {
-			army_experience = 25
-			air_experience = 25
-			navy_experience = 25
+# 		}
+# 		ai_will_do = {
+# 			factor = 0
+# 		}
+# 		completion_reward = {
+# 			army_experience = 25
+# 			air_experience = 25
+# 			navy_experience = 25
 			
-		}
-	}
-}
+# 		}
+# 	}
+# }

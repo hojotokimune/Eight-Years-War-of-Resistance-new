@@ -1,14 +1,14 @@
-KMTzongdufocustreeex = {
-	priority = 100
-	visible = {
-		AND = {
-        is_ai = no
-		#is_subject_of = CHI
-		has_idea = ZongduKMTrework_Modifier
-		}
+# KMTzongdufocustreeex = {
+# 	priority = 100
+# 	visible = {
+# 		AND = {
+#         is_ai = no
+# 		#is_subject_of = CHI
+# 		has_idea = ZongduKMTrework_Modifier
+# 		}
 		
-	}
-	available ={
-        is_ai = no
-    }
-}
+# 	}
+# 	available ={
+#         is_ai = no
+#     }
+# }
