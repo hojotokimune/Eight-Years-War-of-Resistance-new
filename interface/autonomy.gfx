@@ -38,6 +38,11 @@ spriteTypes = {
 		textureFile = "gfx/interface/autonomy/autonomy_ENG_baohuguo.png"
 		legacy_lazy_load = no
 	}
+	spriteType = {
+		name = GFX_autonomy_CHI_zongduxiaqu_icon
+		textureFile = "gfx/interface/autonomy/autonomy_CHI_zongduxiaqu.png"
+		legacy_lazy_load = no
+	}
 }
 spriteTypes = {
 	spriteType = {
