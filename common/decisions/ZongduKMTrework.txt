@@ -1688,7 +1688,7 @@ ZongduKMTrework_10 = {#中亚总督辖区
 		}
 		available = {
 					
-		402 = {
+		    402 = {
 				is_controlled_by_ROOT_or_puppet = yes
 			}
 			881 = {
@@ -1724,6 +1724,15 @@ ZongduKMTrework_10 = {#中亚总督辖区
 			742 = {
 				is_controlled_by_ROOT_or_puppet = yes
 			}
+			583 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			590 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}
+			882 = {
+				is_controlled_by_ROOT_or_puppet = yes
+			}			
 		
 
 
@@ -1746,6 +1755,9 @@ ZongduKMTrework_10 = {#中亚总督辖区
 							state = 830
 							state = 405
 							state = 742
+							state = 583
+							state = 590
+							state = 882						
 							
 							
 						}
@@ -1753,7 +1765,7 @@ ZongduKMTrework_10 = {#中亚总督辖区
 					}
 				}
 
-					402 = {
+					    402 = {
 							add_core_of = R69
 						}
 						881 = {
@@ -1789,6 +1801,15 @@ ZongduKMTrework_10 = {#中亚总督辖区
 						742 = {
 							add_core_of = R69
 						}
+						583 = {
+							add_core_of = R69
+						}
+						590 = {
+							add_core_of = R69
+						}
+						882 = {
+							add_core_of = R69
+						}						
 					
 
 			R69 = {
@@ -1816,7 +1837,12 @@ ZongduKMTrework_10 = {#中亚总督辖区
 					set_state_owner = 405
 					set_state_controller = 742
 					set_state_owner = 742
-					
+					set_state_controller = 583
+					set_state_owner = 583
+					set_state_controller = 590
+					set_state_owner = 590
+					set_state_controller = 882
+					set_state_owner = 882					
 
 				CHI = {
 					puppet = PREV hidden_effect = { every_subject_country = { inherit_technology = CHI } }
@@ -2318,7 +2344,7 @@ ZongduKMTrework_12 = {#夏威夷海军基地
 		}
 	}
 }
-ZongduKMTrework_13 = {#两山睡衣登山研究所
+ZongduKMTrework_13 = {#两山特种技术研究所
 	icon = GER_reichskommissariats
 	#填入地区
 	cost = 0
@@ -2413,7 +2439,7 @@ ZongduKMTrework_13 = {#两山睡衣登山研究所
 					}
 				}
 				set_capital = {
-					state = 324
+					state = 323
 					remember_old_capital = no
 				}
 			}

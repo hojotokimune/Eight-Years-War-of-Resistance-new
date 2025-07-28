@@ -3,6 +3,10 @@ ZongduKMTrework = {
 	visible = {
 		is_ai = no
 		tag = CHI
+		OR = {
+				has_completed_focus = CHI_yi_dang_zhi_guo_focus
+				has_completed_focus = CHI_axis_help_party_focus
+		}
 	}
 	priority = 1
 }
