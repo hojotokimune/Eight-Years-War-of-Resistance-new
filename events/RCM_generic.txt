@@ -1832,8 +1832,75 @@ country_event = {
 	desc = rcmgeneric.979.d
 	is_triggered_only = yes
 	immediate = {
-
+	hidden_effect = {	
+    if = {
+	limit = {
+	OMA = {			
+    is_puppet = no
 	}
+	}			
+            ENG ={
+                puppet = PAL			
+                puppet = JOR			
+                puppet = OMA
+            }
+            PAL ={
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no 
+                }
+		    add_popularity = {
+			ideology = neutrality 
+			popularity = 1
+		    }				
+            }			
+            JOR ={
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no 
+                }
+		    add_popularity = {
+			ideology = neutrality 
+			popularity = 1
+		    }				
+            }
+            OMA ={
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no 
+                }
+		    add_popularity = {
+			ideology = neutrality 
+			popularity = 1
+		    }				
+            }			
+            FRA ={
+                puppet = SYR			
+                puppet = LEB			
+            }
+            SYR ={
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no 
+                }
+		    add_popularity = {
+			ideology = neutrality 
+			popularity = 1
+		    }				
+            }
+            LEB ={
+                set_politics = {
+                    ruling_party = neutrality
+                    elections_allowed = no 
+                }
+		    add_popularity = {
+			ideology = neutrality 
+			popularity = 1
+		    }				
+            }			
+	}
+	}	
+	}	
 	option = {
 		name = rcmgeneric.979.a
 		ai_chance = {
