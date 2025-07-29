@@ -231,6 +231,11 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_idea_JAP_one_hit_theory"
+		texturefile = "gfx/interface/ideas/jap/japanese_influence_1.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_idea_operation_taifeng"
 		texturefile = "gfx/interface/ideas/idea_operation_taifeng.png"
 		legacy_lazy_load = no
@@ -338,6 +343,11 @@ spriteTypes = {
 	SpriteType = {
 		name = "GFX_GER_operation_white_focus"
 		texturefile = "gfx/interface/goals/ger/GER_operation_white_focus.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_JAP_focus_attack_china"
+		texturefile = "gfx/interface/goals/jap/JAP_focus_attack_china.png"
 		legacy_lazy_load = no
 	}
 	SpriteType = {

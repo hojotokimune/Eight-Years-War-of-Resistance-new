@@ -65,7 +65,7 @@ ideas = { #almost the entire thing are modded too, can't bother
 			}
 			removal_cost = -1
 
-			picture = generic_intel_bonus
+			picture = JAP_one_hit_theory
 			
 			targeted_modifier = {
 				tag = SHX
@@ -2090,6 +2090,12 @@ ideas = { #almost the entire thing are modded too, can't bother
 				has_government = fascism
 			}
 			removal_cost = -1
+			available = {
+				or = {
+					has_government = neutrality
+					has_government = fascism
+				}
+			}
 			modifier = {
 				political_power_gain = 1
 				war_support_factor = 0.075

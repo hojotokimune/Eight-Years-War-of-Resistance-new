@@ -155,6 +155,7 @@ add_ideas = {
 	state_shintoism
 	export_focus
 	limited_conscription
+	imperial_glory_idea
 	JAP_bribe_the_tokko_1	## MODDED
 	JAP_peace_preservation_law
 	JAP_zaibatsus
