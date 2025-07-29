@@ -1394,7 +1394,7 @@ political_actions = {
 									transfer_state = 433
 									add_state_core = 428
 									transfer_state = 428
-									set_capital = { state = 433 }
+									set_capital = { state = 428 }
 									add_ideas = agrarion_society_generic_3
 									add_ideas = raj_tubang_idea
 									set_cosmetic_tag = RAJ_lajiasitan
@@ -1478,7 +1478,7 @@ political_actions = {
 											transfer_state = 1068
 											add_state_core = 1076
 											transfer_state = 1076
-											set_capital = { state = 444 }
+											set_capital = { state = 441 }
 											add_ideas = agrarion_society_generic_3
 											add_ideas = raj_tubang_idea
 											set_cosmetic_tag = RAJ_keshimier
