@@ -711,3 +711,6 @@
  establish_mongolia_area_decision_desc:0 "蒙古地方在1928年即已正式设立，但我国政府始终无法控制外蒙古。 因此，其行政机构实际上从未建立，既然我们现在已经收复了外蒙古，那么我们就按照1928年的计划，给外蒙古建立一个高度自治的行政机构。"
  PRC_move_capital_cat:0 "迁都"
  PRC_move_capital_decision:0 "迁都至[FROM.GetName]"
+ CHI_Ceasefire_negotiation:0 "停战议和政策"
+ CHI_receive_Northeast_army:0 "整编西北剿总军队" 
+ china_tingzhanyihe:0 "我们已经决定和共产党停战了，那么西北剿匪司令部也就可以取消了。"

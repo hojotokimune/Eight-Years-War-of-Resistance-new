@@ -8,9 +8,9 @@ CHI_anti_imperialism = {
 	}
 }
 
-CHI_receive_Northeast_army = {
+CHI_Ceasefire_negotiation = {
 	icon = generic_independence
-	desc = "我们已经决定和共产党停战了，那么西北剿匪司令部也就可以取消了。"
+	desc = china_tingzhanyihe
 	allowed = {
 		is_literally_china = yes
 	}

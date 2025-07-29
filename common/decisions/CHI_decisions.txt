@@ -61,9 +61,10 @@
 
 #Category allowed for all potential nationalist china
 #Category visible when CHI_army_reform focus is completed
-	CHI_receive_Northeast_army ={
+	CHI_Ceasefire_negotiation ={
 		CHI_receive_Northeast_army = {
 			icon = generic_prepare_civil_war
+			fire_only_once = yes			
 			visible = {
 				has_completed_focus = CHI_Truce_of_the_Civil_War
 				NOT = {
@@ -71,15 +72,16 @@
 				}
 			}
 			cost = 30
-			complete_effect = {
-				set_nationality = {
-    				target_country = NEA
-    				character = NEA_zhang_xueliang
-				}
-				annex_country = {
-    				target = NEA
-    				transfer_troops = yes
-				}
+            days_remove = 7			
+			remove_effect = {
+            NEA = {
+            every_unit_leader = {
+				set_nationality = CHI
+			}
+               }
+				   CHI = {
+                   annex_country = { target = NEA transfer_troops = yes  }
+				   }
 			}
 		}
 	}

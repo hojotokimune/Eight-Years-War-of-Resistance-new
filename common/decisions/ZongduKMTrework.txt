@@ -103,7 +103,7 @@ ZongduKMTrework = {
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -325,7 +325,7 @@ ZongduKMTrework_2 = {#中南绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -463,7 +463,7 @@ ZongduKMTrework_3 = {#缅甸绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -574,7 +574,7 @@ ZongduKMTrework_4 = {#暹罗绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -759,7 +759,7 @@ ZongduKMTrework_5 = {#马六甲绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -962,7 +962,7 @@ ZongduKMTrework_6 = {#印度尼西亚绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -1218,7 +1218,7 @@ ZongduKMTrework_7 = {#南方诸岛屿绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -1536,7 +1536,7 @@ ZongduKMTrework_8 = {#印度绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -1635,7 +1635,7 @@ ZongduKMTrework_9 = {#阿富汗自治州
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -1850,7 +1850,7 @@ ZongduKMTrework_10 = {#中亚总督辖区
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -2210,7 +2210,7 @@ ZongduKMTrework_11 = {#大西伯利亚绥靖公署
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -2304,7 +2304,7 @@ ZongduKMTrework_12 = {#夏威夷海军基地
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					
@@ -2406,7 +2406,7 @@ ZongduKMTrework_13 = {#两山特种技术研究所
 					
 						set_autonomy = {
 							target = PREV
-							autonomy_state = autonomy_reichskommissariat
+							autonomy_state = autonomy_CHI_zongduxiaqu
 							end_wars = no
 						}
 					

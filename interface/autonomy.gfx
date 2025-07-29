@@ -47,6 +47,18 @@ spriteTypes = {
 }
 spriteTypes = {
 	spriteType = {
+		name = GFX_autonomy_CHI_zongduxiaqu_icon
+		textureFile = "gfx/interface/autonomy/autonomy_CHI_zongduxiaqu.png"
+	}
+}
+spriteTypes = {
+	spriteType = {
+		name = GFX_autonomy_reichskommissariat_icon
+		textureFile = "gfx/interface/autonomy/autonomy_reichskommissariat.png"
+	}
+}
+spriteTypes = {
+	spriteType = {
 		name = GFX_NFA_communism_icon
 		textureFile = "gfx/flags/medium/NFA_communism.tga"
 	}
