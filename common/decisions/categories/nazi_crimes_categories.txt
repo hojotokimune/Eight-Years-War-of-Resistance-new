@@ -1,0 +1,11 @@
+ nazi_crimes_category = {
+        icon = GFX_goal_generic_political_pressure
+        allowed = {
+            tag = GER
+        }
+        visible = {
+            tag = GER
+            has_government = fascism
+        }
+        priority = 114514
+    }

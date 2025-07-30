@@ -1,0 +1,49 @@
+  nazi_crimes_category = {
+        implementation_of_nuremberg_laws = {
+            icon = GFX_goal_generic_political_pressure
+            cost = 50
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                date > 1935.9.15
+            }
+            complete_effect = {
+                add_stability = 0.05
+                add_political_power = -10
+                add_ideas = nazi_racial_law_idea
+                news_event = nazi_crimes.1
+            }
+            ai_will_do = {
+                factor = 1
+            }
+        }
+
+        expand_concentration_camps = {
+            icon = GFX_goal_generic_construct_mil_factory
+            cost = 75
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_ideas = nazi_racial_law_idea
+                date > 1937.1.1
+            }
+            complete_effect = {
+                add_ideas = nazi_camp_expansion_idea
+                news_event = nazi_crimes.2
+            }
+            ai_will_do = {
+                base = 9999
+            }
+        }
+    }
+
