@@ -1,0 +1,395 @@
+PRC_more_army = {
+	allowed = {
+		tag = PRC
+		OR = {
+			date > 1945.1.1
+			PRC = {
+				NOT = {
+					has_war_with = JAP
+				}
+			}
+		}
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 200
+	}
+
+	ai_strategy = {
+		type = prepare_for_war
+		id = "CHI"
+		value = 100
+	}
+
+	ai_strategy = {
+		type = garrison
+		value = 20
+	}
+
+	ai_strategy = {
+		type = front_control
+		state = 615
+		state = 1013
+		state = 1027
+		tag = SHX
+		priority = 100
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+}
+
+PRC_civil_war = {
+	allowed = {
+		original_tag = PRC
+		has_war_with = CHI
+	}
+	ai_strategy = {
+		type = force_build_armies
+		value = 100
+	}
+	ai_strategy = {
+		type = front_control
+		state = 615
+		state = 1013
+		state = 1027
+		tag = SHX
+		priority = 100
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state = 1034
+		tag = CHI
+		priority = 50
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state = 611
+		state = 1062
+		tag = SUY
+		priority = 10
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state = 612
+		state = 621
+		state = 1014
+		tag = CHI
+		priority = 80
+		ordertype = front
+		execution_type = balanced
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 100
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SHX
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SUY
+		value = 45
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = EGM
+		value = 10
+	}
+}
+
+PRC_get_northeast = {
+	allowed = {
+		original_tag = PRC
+		has_war_with = CHI
+	}
+	enable = {
+		has_army_size > 200
+		1013 = {
+			is_controled_by = PRC
+		}
+		615 = {
+			is_controled_by = PRC
+		}
+		1017 = {
+			is_controled_by = PRC
+		}
+		998 = {
+			is_controled_by = PRC
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		state = 761
+		state = 714
+		state = 717
+		state = 1007
+		state = 1006
+		state = 745
+		tag = CHI
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 200
+	}
+}
+PRC_get_north_CHI = {
+	allowed = {
+		original_tag = PRC
+		has_war_with = CHI
+	}
+	enable = {
+		has_army_size > 200
+		714 = {
+			is_controled_by = PRC
+		}
+		761 = {
+			is_controled_by = PRC
+		}
+		1007 = {
+			is_controled_by = PRC
+		}
+		1006 = {
+			is_controled_by = PRC
+		}
+		745 = {
+			is_controled_by = PRC
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		state = 598
+		state = 606
+		state = 1043
+		state = 607
+		state = 1028
+		state = 743
+		tag = CHI
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 200
+	}
+}
+PRC_get_central_CHI = {
+	allowed = {
+		original_tag = PRC
+		has_war_with = CHI
+	}
+	enable = {
+		has_army_size > 200
+		598 = {
+			is_controled_by = PRC
+		}
+		606 = {
+			is_controled_by = PRC
+		}
+		1043 = {
+			is_controled_by = PRC
+		}
+		607 = {
+			is_controled_by = PRC
+		}
+		1028 = {
+			is_controled_by = PRC
+		}
+		743 = {
+			is_controled_by = PRC
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		state = 595
+		state = 600
+		state = 602
+		state = 750
+		state = 603
+		tag = CHI
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_control
+		state = 1040
+		state = 747
+		state = 752
+		state = 754
+		state = 604
+		tag = CHI
+		tag = EGM
+		tag = XSM
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GXM
+		value = 10
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NXM
+		value = 10
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = XSM
+		value = 30
+	}
+}
+PRC_get_south_CHI = {
+	allowed = {
+		original_tag = PRC
+		has_war_with = CHI
+	}
+	enable = {
+		has_army_size > 200
+		595 = {
+			is_controled_by = PRC
+		}
+		600 = {
+			is_controled_by = PRC
+		}
+		602 = {
+			is_controled_by = PRC
+		}
+		750 = {
+			is_controled_by = PRC
+		}
+		603 = {
+			is_controled_by = PRC
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		state = 593
+		state = 592
+		state = 1037
+		state = 591
+		state = 594
+		state = 599
+		state = 752
+		tag = CHI
+		tag = GUD
+		tag = GXC
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 200
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GXC
+		value = 24
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GUD
+		value = 30
+	}
+}
+PRC_get_west_CHI = {
+	allowed = {
+		original_tag = PRC
+		has_war_with = CHI
+	}
+	enable = {
+		has_army_size > 200
+		593 = {
+			is_controled_by = PRC
+		}
+		592 = {
+			is_controled_by = PRC
+		}
+		1037 = {
+			is_controled_by = PRC
+		}
+		591 = {
+			is_controled_by = PRC
+		}
+		594 = {
+			is_controled_by = PRC
+		}
+	}
+	ai_strategy = {
+		type = front_control
+		state = 618
+		state = 1054
+		state = 1051
+		state = 1050
+		state = 619
+		state = 145
+		tag = NXM
+		tag = GXM
+		tag = XSM
+		tag = SIK
+		tag = CHI
+		tag = XIK
+		priority = 100
+		ordertype = front
+		execution_type = rush
+		execute_order = yes
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = CHI
+		value = 120
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = EGM
+		value = 24
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = NXM
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = GXM
+		value = 30
+	}
+	ai_strategy = {
+		type = front_unit_request
+		tag = SIK
+		value = 72
+	}
+}

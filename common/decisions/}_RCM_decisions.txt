@@ -5175,6 +5175,7 @@ RCM_war_of_resistance_decision_cat = {
                  PRC = {
 
 			set_technology = { broadsword_team = 1 }
+			set_technology = { zhengwei_team = 1 }
 
                   }
 
@@ -9566,6 +9567,9 @@ RCM_drain_the_water_lines_cat = {
 		icon = hol_inundate_water_lines
 		ai_will_do = {
 			factor = 9999
+			modifier = {
+				factor = 9999
+			}
 		}
 		allowed = {
 			is_literally_china = yes
@@ -9643,7 +9647,7 @@ RCM_drain_the_water_lines_cat = {
 		remove_effect = {
 			set_global_flag = yellow_river_flooded
 		    JAP = {
-					add_manpower = -7452	
+				add_manpower = -7452	
 		    }			
 			if = {
 			limit = { not = { has_global_flag = kmt_shusan_yellow_river_done } }
@@ -9908,11 +9912,54 @@ RCM_drain_the_water_lines_cat = {
 			}
 		}
 		cancel_trigger = {
-		has_war = yes
+			NOT = {
+				606 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				607 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				1043 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+				597 = {
+					controller = {
+						OR = {
+							tag = ROOT
+							is_subject_of = ROOT
+						}
+					}
+				}
+			}
 		}		
 		cost = 25
 		ai_will_do = {
 			factor = 500
+			modifier = {
+				factor = 0
+				AND = {
+					country_exists = PRC
+					NOT = {
+						tag = PRC
+					}
+				}
+				
+			}
 		}
 		fire_only_once = no
 
@@ -25285,6 +25332,252 @@ war_measures = {
 		}
 	}
 }
+
+operations = {
+#USA sends hull note
+RCM_nuke_japan_decision = { #guo
+		icon = eng_trade_unions_support
+		fire_only_once = yes
+		days_remove = 7 #GUO # Stays for 5 days before being removed #MODDED
+		
+		cost = 0
+		highlight_states = { #These states will be highlighted
+			state = 529
+			state = 528
+		}
+		allowed = {
+			original_tag = USA
+		}
+		visible = { #can see
+			has_war_with = JAP
+			has_tech = nukes
+		}
+		available = { #can do
+			has_tech = nukes
+			JAP = {
+				surrender_progress < 0.1
+			}
+			if = {
+			limit = {
+			has_war_with = GER
+			has_idea = lianheguojiaxuanyan
+			ENG = { has_idea = lianheguojiaxuanyan }
+			SOV = { has_idea = lianheguojiaxuanyan }
+			has_global_flag = kairo_meeting_happen
+			has_global_flag = tehran_meeting_happen
+			}
+			has_global_flag = Potsdam_Declaration_happen
+			}
+			else = { always = yes }
+			
+			if = {
+			limit = { is_ai = no }
+			num_of_nukes > 1
+			}
+			else = { always = yes }
+			
+			OR = {
+				and = {
+					OR = {
+						controls_state = 526
+						controls_state = 645
+						controls_state = 646
+						controls_state = 648
+						526 = { 
+							controller = {
+								has_war_with = JAP
+							}
+						}
+						645 = { 
+							controller = {
+								has_war_with = JAP
+							}
+						}
+						646 = { 
+							controller = {
+								has_war_with = JAP
+							}
+						}
+						648 = { 
+							controller = {
+								has_war_with = JAP
+							}
+						}
+					}
+				}
+				and = {
+					is_ai = yes
+					JAP = {
+						is_ai = yes
+					}
+					OR = {
+						AND = {
+                            SOV = {
+								has_war_with = MAN 
+								has_war_with = JAP
+							}
+							MAN = {
+								surrender_progress > 0.4
+							}
+						}	
+						event_target:WTT_current_china_leader = {
+							NOT = {
+								has_war_with = JAP
+							}
+						}
+					}
+				}
+			}
+		}
+		cancel_trigger = {
+		    if = {
+			limit = { is_ai = no }
+			num_of_nukes < 2
+			}
+			else = { always = no }
+		}
+		cancel_if_not_visible = yes
+		complete_effect = { #run effect on selection
+			#launch_nuke = { 
+			#   provinve = 1092 #will nuke this province if specified
+			#   state = 529 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+			#   controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+			#   use_nuke = yes #will consume nuke if specified
+			#}
+			#launch_nuke = { 
+			#   provinve = 9950 #will nuke this province if specified
+			#   state = 528 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+			#   controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+			#   use_nuke = yes #will consume nuke if specified
+			#}
+			add_manpower = -2
+			set_global_flag = RCM_nuke_japan_decision_happen_zz
+			#add_equipment_to_stockpile = {
+			#	type = strat_bomber_equipment_2
+			#	amount = -2
+			#}
+		}
+		remove_trigger = { #will run remove effect and abort
+
+		}
+		remove_effect = { #run effect when removed/finished
+			if = {
+				limit = {
+					NOT = {
+						has_country_flag = nuke_a_flag
+					}
+					is_ai = no
+				}
+				set_country_flag = nuke_a_flag
+				custom_effect_tooltip = nuke_japan_decision_tt
+				launch_nuke = { 
+				   province = 1092 #will nuke this province if specified
+				   state = 529 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+				   controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+				   use_nuke = yes #will consume nuke if specified
+				}
+				launch_nuke = { 
+				   province = 9950 #will nuke this province if specified
+				   state = 528 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+				   controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+				   use_nuke = yes #will consume nuke if specified
+				}
+				else_if = {
+                    limit = {
+						NOT = {
+							has_country_flag = nuke_a_flag
+						}
+						is_ai = yes
+					}
+					set_country_flag = nuke_a_flag
+				    custom_effect_tooltip = nuke_japan_decision_tt
+					launch_nuke = { 
+						province = 1092 #will nuke this province if specified
+						state = 529 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+						controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+						use_nuke = no #will consume nuke if specified
+					}
+					launch_nuke = { 
+						province = 9950 #will nuke this province if specified
+						state = 528 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+						controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+						use_nuke = no #will consume nuke if specified
+					}
+					if = {
+						limit = {
+							NOT = {
+                                has_global_flag = JAP_nuke_1
+							}
+						}
+						set_global_flag = JAP_nuke_1
+						set_global_flag = JAP_nuke_2
+						set_country_flag = I_drop_first_nuke
+						set_country_flag = I_drop_second_nuke
+					}
+
+				}
+				else_if = {
+                    limit = {
+						has_country_flag = nuke_a_flag
+					}
+					launch_nuke = { 
+						#province = 1092 #will nuke this province if specified
+						#state = 529 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+						controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+						use_nuke = yes #will consume nuke if specified
+					}
+				    launch_nuke = { 
+						#province = 9950 #will nuke this province if specified
+						#state = 528 #use either province or state. if state is used it will prefer enemies first while picking a province to nuke. otherwise it will pick one of the neutrals
+						controller = JAP #if state and controller is specified, the effect will pick a province that is controlled by this tag
+						use_nuke = yes #will consume nuke if specified
+					}
+				}
+			}
+			
+			set_global_flag = first_nuke_dropped
+			hidden_effect = { country_event = super.18 }
+			
+			#add_manpower = 12
+			#add_equipment_to_stockpile = {
+			#	type = strat_bomber_equipment_2
+			#	amount = 12
+			#}
+			#custom_effect_tooltip = goes_away_when_at_war_with_US_tt #uncomment this to reenable ES#
+			#uncomment this to reenable ES#custom_effect_tooltip = this_will_cause_inflation_as_if_we_are_at_war_with_the_USA_TT
+		}
+		#war_with_target_on_remove = yes
+		modifier = { #active during the course of the decision
+		}
+		ai_will_do = { #guo
+			base = 0
+			modifier = {
+				add = 9999
+				date > 1945.8.1
+			}
+			modifier = {
+				add = 9999
+				JAP = {
+				any_core_state = {
+				region = 154
+				controller = { has_War_with = JAP }
+				}
+				}
+			}
+			modifier = {
+				add = 9999
+				SOV = { has_war_with = JAP }
+			}
+			modifier = {
+				add = 9999
+				or = {
+				event_target:WTT_current_china_leader = { surrender_progress < 0.05 }
+				has_global_flag = JAP_defeated
+				}
+			}
+		}
+	}
+}
 	
 RCM_ultimatum_to_JAP_decision_cat = { #guo
 	RCM_ultimatum_to_JAP_decision = {
@@ -31967,7 +32260,7 @@ rcm_tibet_and_mon_affairs_cat = {
 			}
 		}
 	
-        days_remove = 70
+        days_remove = 180
 
 		available = {
 			TIB = {
@@ -31976,18 +32269,26 @@ rcm_tibet_and_mon_affairs_cat = {
 			322 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 			601 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 			757 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				#compliance > 29
+				#resistance < 29
 			}
 			758 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 		}
         
@@ -32002,39 +32303,17 @@ rcm_tibet_and_mon_affairs_cat = {
         cancel_if_not_visible = yes
 
 		remove_effect = {
-			322 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}				
-			}
-			601 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			TIB = {
+				every_core_state = {
+					limit = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+					add_core_of = ROOT
+					add_dynamic_modifier = { modifier = rcm_home_rule_modifier scope = ROOT } 
 				}
 			}
-			758 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			757 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}			
 		}
 
 		ai_will_do = {
@@ -32067,7 +32346,7 @@ rcm_tibet_and_mon_affairs_cat = {
 			}
 		}
 	
-        days_remove = 70
+        days_remove = 180
 
 		available = {
 			MON = {
@@ -32076,22 +32355,32 @@ rcm_tibet_and_mon_affairs_cat = {
 			330 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 			817 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 			818 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 			819 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 			820 = {
 				is_owned_and_controlled_by = ROOT
 				is_in_home_area = yes
+				compliance > 29
+				resistance < 29
 			}
 		}
         
@@ -32107,76 +32396,29 @@ rcm_tibet_and_mon_affairs_cat = {
 
 		remove_effect = {
 			set_global_flag = mongolia_area_established
-			330 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			MON = {
+				every_core_state = {
+					limit = {
+						NOT = {
+							is_core_of = ROOT
+						}
+					}
+					add_core_of = ROOT
+					add_dynamic_modifier = { modifier = rcm_home_rule_modifier scope = ROOT } 
 				}
 			}
-			817 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
+			TAN = {
+				every_core_state = {
+					limit = {
+						NOT = {
+							is_core_of = ROOT
+							is_core_of = MON
+						}
+					}
+					add_core_of = ROOT
+					add_dynamic_modifier = { modifier = rcm_home_rule_modifier scope = ROOT } 
 				}
 			}
-			1018 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			819 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			818 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}			
-			820 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			1025 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			1026 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			329 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}
-			1024 = {
-				add_building_construction = {
-					type = infrastructure
-					level = 1
-					instant_build = yes
-				}
-			}			
 		}
 
 		ai_will_do = {
