@@ -13,6 +13,9 @@ country_event = {
 
     option = {
         name = nazi_crimes.1.a
+        add_political_power = 50
+        add_war_support = 0.1
+        add_manpower = -10000
     }
 }
 
@@ -28,9 +31,10 @@ country_event = {
 
     option = {
         name = nazi_crimes.2.a
-        add_stability = 0.03
-        add_resistance_target_on_our_occupied_states = 0.1
-        add_research_speed_bonus = -0.02
+        add_stability = 0.1
+        add_war_support = 0.1
+        add_political_power = 100
+        add_manpower = -10000
     }
 }
 
@@ -38,13 +42,28 @@ news_event = {
     id = nazi_crimes.100
     title = nazi_crimes.100.t
     desc = nazi_crimes.100.d
-    picture = GFX_report_event_allies_liberation
-    fire_only_once = yes
+    picture = GFX_liberation_of_poland_sov
+
+    major = yes
 
     trigger = {
-        tag = SOV
-        controls_state = 9
-        date > 1944.6.1
+        or = {
+        88 = { is_controlled_by = SOV }
+        and = {
+            POL = { is_in_faction_with = SOV }
+            88 = { is_controlled_by = POL }
+        }
+        }
+        SOV = { has_war_with = GER }
+        GER = { 
+            has_government = fascism
+            has_idea = nazi_camp_expansion_idea
+         }
+         NOT = { has_global_flag = liberation_of_poland_sov }
+    }
+
+    immediate = {
+        set_global_flag = liberation_of_poland_sov
     }
 
     mean_time_to_happen = {
@@ -53,6 +72,51 @@ news_event = {
 
     option = {
         name = nazi_crimes.100.a
+        trigger = {
+            has_war_with = GER
+        }
+        if = {
+            limit = { has_idea = ally_finish_GER_crime }
+            swap_ideas = {
+                remove_idea = ally_finish_GER_crime
+                add_idea = ally_finish_GER_crime_2
+            }
+        }
+        if = {
+            limit = {
+                NOT = { 
+                    has_idea = ally_finish_GER_crime
+                    has_idea = ally_finish_GER_crime_2
+                 }
+            }
+            add_ideas = ally_finish_GER_crime
+        }
+        add_war_support = 0.1
+    }
+    option = {
+        name = nazi_crimes.100.b
+        trigger = {
+            NOT = { 
+                has_government = fascism 
+                has_war_with = GER
+            }
+        }
+    }
+    option = {
+        name = nazi_crimes.100.c
+        trigger = {
+               has_government = fascism 
+               NOT = { 
+                has_war_with = GER
+                tag = GER
+             }
+        }
+    }
+    option = {
+        name = nazi_crimes.100.e
+        trigger = {
+               tag = GER
+        }
     }
 }
 
@@ -60,14 +124,26 @@ news_event = {
     id = nazi_crimes.101
     title = nazi_crimes.101.t
     desc = nazi_crimes.101.d
-    picture = GFX_report_event_us_forces
-    fire_only_once = yes
+    picture = GFX_liberation_of_france_usa
 
     trigger = {
-        tag = USA
-        controls_state = 16
-        has_war_with = GER
+        has_global_flag = liberation_of_paris
+        NOT = { has_global_flag = liberation_of_france_usa }
+        or = {
+            27 = { is_controlled_by = USA }
+            and = {
+                FRA = { is_in_faction_with = USA }
+                27 = { is_controlled_by = FRA }
+            }
+            }
+            USA = { has_war_with = GER }
+            GER = { 
+                has_government = fascism
+                has_idea = nazi_camp_expansion_idea
+             }
     }
+
+    immediate = { set_global_flag = liberation_of_france_usa_111 }
 
     mean_time_to_happen = {
         days = 2
@@ -75,5 +151,50 @@ news_event = {
 
     option = {
         name = nazi_crimes.101.a
+        trigger = {
+            has_war_with = GER
+        }
+        if = {
+            limit = { has_idea = ally_finish_GER_crime }
+            swap_ideas = {
+                remove_idea = ally_finish_GER_crime
+                add_idea = ally_finish_GER_crime_2
+            }
+        }
+        if = {
+            limit = {
+                NOT = { 
+                    has_idea = ally_finish_GER_crime
+                    has_idea = ally_finish_GER_crime_2
+                 }
+            }
+            add_ideas = ally_finish_GER_crime
+        }
+        add_war_support = 0.1
+    }
+    option = {
+        name = nazi_crimes.101.b
+        trigger = {
+            NOT = { 
+                has_government = fascism 
+                has_war_with = GER
+            }
+        }
+    }
+    option = {
+        name = nazi_crimes.101.c
+        trigger = {
+               has_government = fascism 
+               NOT = { 
+                has_war_with = GER
+                tag = GER
+             }
+        }
+    }
+    option = {
+        name = nazi_crimes.101.e
+        trigger = {
+               tag = GER
+        }
     }
 }

@@ -168,7 +168,7 @@ command_power_gain = -0.35
         available = {
             has_government = fascism
         }
-        picture = GFX_idea_political_correctness
+        picture = HUN_treaty_of_triannon
         modifier = {
             political_power_factor = -0.1
             stability_factor = 0.05
@@ -180,7 +180,7 @@ command_power_gain = -0.35
         available = {
             has_government = fascism
         }
-        picture = GFX_idea_fascist_propaganda
+        picture = fascist_military
         modifier = {
             stability_factor = 0.03
             resistance_target_on_our_occupied_states = 0.1
@@ -188,6 +188,52 @@ command_power_gain = -0.35
         }
         removal_cost = -1
     }
+
+	ally_finish_GER_crime = {
+	
+		picture = spr_anti_fascist_crusade
+		
+		allowed = {
+					always = no
+				}
+				allowed_civil_war = {
+					always = yes
+				}
+				 available = { 
+					has_war_with = GER
+					GER = { has_government = fascism }
+				 }
+
+				targeted_modifier = {
+				TAG = GER
+				breakthrough_bonus_against = 0.1
+				attack_bonus_against = 0.1														
+				}
+				removal_cost = -1
+		}
+
+		ally_finish_GER_crime_2 = {
+	
+			picture = spr_anti_fascist_crusade
+			
+			allowed = {
+						always = no
+					}
+					allowed_civil_war = {
+						always = yes
+					}
+					 available = { 
+						has_war_with = GER
+						GER = { has_government = fascism }
+					 }
+	
+					targeted_modifier = {
+					TAG = GER
+					breakthrough_bonus_against = 0.3
+					attack_bonus_against = 0.3												
+					}
+					removal_cost = -1
+			}
 
 	SOV_far_east_army_idea = {
 	

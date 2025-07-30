@@ -1,7 +1,7 @@
   nazi_crimes_category = {
         implementation_of_nuremberg_laws = {
-            icon = GFX_goal_generic_political_pressure
             cost = 50
+            fire_only_once = yes
             allowed = {
                 tag = GER
             }
@@ -14,9 +14,8 @@
             }
             complete_effect = {
                 add_stability = 0.05
-                add_political_power = -10
                 add_ideas = nazi_racial_law_idea
-                news_event = nazi_crimes.1
+                country_event = nazi_crimes.1
             }
             ai_will_do = {
                 factor = 1
@@ -24,8 +23,8 @@
         }
 
         expand_concentration_camps = {
-            icon = GFX_goal_generic_construct_mil_factory
             cost = 75
+            fire_only_once = yes
             allowed = {
                 tag = GER
             }
@@ -39,11 +38,136 @@
             }
             complete_effect = {
                 add_ideas = nazi_camp_expansion_idea
-                news_event = nazi_crimes.2
+                country_event = nazi_crimes.2
             }
             ai_will_do = {
                 base = 9999
             }
+        }
+
+        establish_auschwitz = {
+            icon = eng_trade_unions_demand
+            cost = 10
+            fire_only_once = yes
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_idea = nazi_camp_expansion_idea
+                controls_state = 88
+            }
+            complete_effect = {
+                88 = { add_dynamic_modifier = { modifier = auschwitz_extermination_camp scope = GER } }
+            }
+            ai_will_do = { factor = 9999 }
+        }
+
+        establish_drancy = {
+            icon = eng_trade_unions_demand
+            cost = 10
+            fire_only_once = yes
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_idea = nazi_camp_expansion_idea
+                controls_state = 16
+            }
+            complete_effect = {
+                16 = { add_dynamic_modifier = { modifier = drancy_detention_camp scope = GER } }
+            }
+            ai_will_do = { factor = 9999 }
+        }
+
+        establish_treblinka = {
+            icon = eng_trade_unions_demand
+            cost = 10
+            fire_only_once = yes
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_idea = nazi_camp_expansion_idea
+                controls_state = 10
+            }
+            complete_effect = {
+                10 = { add_dynamic_modifier = { modifier = treblinka_extermination_camp scope = GER } }
+            }
+            ai_will_do = { factor = 9999 }
+        }
+
+        establish_majdanek = {
+            icon = eng_trade_unions_demand
+            cost = 10
+            fire_only_once = yes
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_idea = nazi_camp_expansion_idea
+                controls_state = 92
+            }
+            complete_effect = {
+                92 = { add_dynamic_modifier = { modifier = majdanek_extermination_camp scope = GER } }
+            }
+            ai_will_do = { factor = 9999 }
+        }
+
+        establish_westerbork = {
+            icon = eng_trade_unions_demand
+            cost = 10
+            fire_only_once = yes
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_idea = nazi_camp_expansion_idea
+                controls_state = 36
+            }
+            complete_effect = {
+                36 = { add_dynamic_modifier = { modifier = westerbork_transit_camp scope = GER } }
+            }
+            ai_will_do = { factor = 9999 }
+        }
+        establish_maly_trostinec = {
+            icon = eng_trade_unions_demand
+            cost = 10
+            fire_only_once = yes
+            allowed = {
+                tag = GER
+            }
+            visible = {
+            tag = GER
+            has_government = fascism
+        }
+            available = {
+                has_idea = nazi_camp_expansion_idea
+                controls_state = 206 # 明斯克所在的 state ID，确保与你的地图一致
+            }
+            complete_effect = {
+                206 = { add_dynamic_modifier = { modifier = maly_trostinec_extermination_camp scope = GER } }
+            }
+            ai_will_do = { factor = 9999 }
         }
     }
 

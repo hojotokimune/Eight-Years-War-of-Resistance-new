@@ -96,6 +96,16 @@ spriteTypes = {
 		legacy_lazy_load = no
 	}
 	SpriteType = {
+		name = "GFX_liberation_of_poland_sov"
+		texturefile = "gfx/event_pictures/liberation_of_poland_sov.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
+		name = "GFX_liberation_of_france_usa"
+		texturefile = "gfx/event_pictures/liberation_of_france_usa.png"
+		legacy_lazy_load = no
+	}
+	SpriteType = {
 		name = "GFX_treaty_of_singapore"
 		texturefile = "gfx/event_pictures/treaty_of_singapore.dds"
 		legacy_lazy_load = no
