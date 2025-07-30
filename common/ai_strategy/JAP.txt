@@ -2809,6 +2809,27 @@ JAP_attack_from_the_north = {
 		execution_type = rush_weak
 		execute_order = yes
 	}
+	ai_strategy = {
+		type = force_defend_ally_borders
+		id = CHI
+		id = PRC
+		id = SHX
+		id = SUY
+		id = GXC
+		id = SHD
+		id = HPC
+		value = 200
+		ratio = 0.4
+	}
+	ai_strategy = {
+    	type = garrison
+   		value = 50
+	}
+	ai_strategy = {
+		type = spare_unit_factor
+		value = 200
+		ratio = 0.4
+	}
 }
 JAP_spare_more_units_for_pacific = {
     allowed = {
@@ -2831,7 +2852,7 @@ JAP_spare_more_units_for_pacific = {
         country_trigger = { is_literally_china = yes }
         priority = 100
         ordertype = front
-        ratio = 0.6
+        ratio = 0.4
         execution_type = careful
         manual_attack = yes
         execute_order = yes
@@ -2952,16 +2973,8 @@ JAP_naval_against_with_CHI = {
     ai_strategy = {
         type = strike_force_home_base
         id = 75
-        value = 500
-    }
-    ai_strategy = {
-        type = strike_force_home_base
-        id = 76
-        value = 500
-    }
-    ai_strategy = {
-        type = strike_force_home_base
-        id = 77
+		id = 76
+		id = 77
         value = 500
     }
     
@@ -2984,16 +2997,8 @@ JAP_catch_the_raid_region = {
 	ai_strategy = {
         type = naval_convoy_raid_region
         id = 75
-        value = 500
-    }
-    ai_strategy = {
-        type = naval_convoy_raid_region
-        id = 76
-        value = 500
-    }
-    ai_strategy = {
-        type = naval_convoy_raid_region
-        id = 77
+		id = 76
+		id = 77
         value = 500
     }
 }
