@@ -18,7 +18,7 @@
                 country_event = nazi_crimes.1
             }
             ai_will_do = {
-                factor = 9999
+                base = 9999
             }
         }
 
@@ -63,7 +63,7 @@
             complete_effect = {
                 88 = { add_dynamic_modifier = { modifier = auschwitz_extermination_camp scope = GER } }
             }
-            ai_will_do = { factor = 9999 }
+            ai_will_do = { base = 9999 }
         }
 
         establish_drancy = {
@@ -84,7 +84,7 @@
             complete_effect = {
                 16 = { add_dynamic_modifier = { modifier = drancy_detention_camp scope = GER } }
             }
-            ai_will_do = { factor = 9999 }
+            ai_will_do = { base = 9999 }
         }
 
         establish_treblinka = {
@@ -105,7 +105,7 @@
             complete_effect = {
                 10 = { add_dynamic_modifier = { modifier = treblinka_extermination_camp scope = GER } }
             }
-            ai_will_do = { factor = 9999 }
+            ai_will_do = { base = 9999 }
         }
 
         establish_majdanek = {
@@ -126,7 +126,7 @@
             complete_effect = {
                 92 = { add_dynamic_modifier = { modifier = majdanek_extermination_camp scope = GER } }
             }
-            ai_will_do = { factor = 9999 }
+            ai_will_do = { base = 9999 }
         }
 
         establish_westerbork = {
@@ -147,7 +147,7 @@
             complete_effect = {
                 36 = { add_dynamic_modifier = { modifier = westerbork_transit_camp scope = GER } }
             }
-            ai_will_do = { factor = 9999 }
+            ai_will_do = { base = 9999 }
         }
         establish_maly_trostinec = {
             icon = eng_trade_unions_demand
@@ -167,7 +167,7 @@
             complete_effect = {
                 206 = { add_dynamic_modifier = { modifier = maly_trostinec_extermination_camp scope = GER } }
             }
-            ai_will_do = { factor = 9999 }
+            ai_will_do = { base = 9999 }
         }
     }
 
