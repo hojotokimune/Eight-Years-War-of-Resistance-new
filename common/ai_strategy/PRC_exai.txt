@@ -3,11 +3,15 @@ PRC_more_army = {
 		tag = PRC
 		OR = {
 			date > 1945.1.1
-			PRC = {
-				NOT = {
-					has_war_with = JAP
+			AND = {
+				PRC = {
+					NOT = {
+						has_war_with = JAP
+					}
 				}
+				date > 1938.1.1
 			}
+			
 		}
 	}
 	ai_strategy = {
