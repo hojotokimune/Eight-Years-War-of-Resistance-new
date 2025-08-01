@@ -128,7 +128,7 @@ news_event = {
 
     trigger = {
         has_global_flag = liberation_of_paris
-        NOT = { has_global_flag = liberation_of_france_usa }
+        NOT = { has_global_flag = liberation_of_france_usa_111 }
         or = {
             27 = { is_controlled_by = USA }
             and = {
