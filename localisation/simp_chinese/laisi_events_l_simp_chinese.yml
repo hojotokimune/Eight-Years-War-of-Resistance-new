@@ -699,6 +699,12 @@ nazi_racial_law_idea_desc:0"国家通过法律确立种族等级制度，将犹�
 
 nazi_camp_expansion_idea:0"集中营系统扩建"
 nazi_camp_expansion_idea_desc:0"国家在全国范围扩建集中营，强化对异见分子、劣等族群的集中控制和利用劳力。"
+convene_wannsee_conference:0 "召开万湖会议"
+convene_wannsee_conference_desc:0 "万湖会议将在柏林郊区召开，海德里希与盖世太保官员将协调各部门执行对欧洲犹太人的“最终解决方案”。这将为大规模建设灭绝营铺平道路。"
+
+idea_final_solution_coordination:0 "“最终解决方案”协调机制"
+idea_final_solution_coordination_desc:0 "在万湖会议后，纳粹政权建立了涵盖政治、交通、军事与警察系统的协调机制，使大规模灭绝犹太人的计划进入系统执行阶段。"
+
 
 SOV_sidalin_trait:0"中央委员会总书记"
 ENG_qiujier_trait:0"我们决不投降！"

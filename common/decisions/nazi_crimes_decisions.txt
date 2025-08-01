@@ -45,6 +45,32 @@
             }
         }
 
+        convene_wannsee_conference = {
+            cost = 50
+            allowed = {
+                tag = GER
+            }
+            visible = {
+                tag = GER
+                has_government = fascism
+            }
+            available = {
+                has_idea = nazi_racial_law_idea
+                date > 1942.1.15
+                has_global_flag = fall_of_france
+                controls_state = 16
+                controls_state = 10
+            }
+            complete_effect = {
+                add_ideas = idea_final_solution_coordination
+                add_manpower = -15000
+                add_political_power = 100
+                add_stability = 0.1
+                add_war_support = 0.1
+            }
+            ai_will_do = { base = 9999 }
+        }
+
         establish_auschwitz = {
             icon = eng_trade_unions_demand
             cost = 10
@@ -57,7 +83,7 @@
             has_government = fascism
         }
             available = {
-                has_idea = nazi_camp_expansion_idea
+                has_idea = idea_final_solution_coordination
                 controls_state = 88
             }
             complete_effect = {
@@ -78,7 +104,7 @@
             has_government = fascism
         }
             available = {
-                has_idea = nazi_camp_expansion_idea
+                has_idea = idea_final_solution_coordination
                 controls_state = 16
             }
             complete_effect = {
@@ -99,7 +125,7 @@
             has_government = fascism
         }
             available = {
-                has_idea = nazi_camp_expansion_idea
+                has_idea = idea_final_solution_coordination
                 controls_state = 10
             }
             complete_effect = {
@@ -120,7 +146,7 @@
             has_government = fascism
         }
             available = {
-                has_idea = nazi_camp_expansion_idea
+                has_idea = idea_final_solution_coordination
                 controls_state = 92
             }
             complete_effect = {
@@ -141,7 +167,7 @@
             has_government = fascism
         }
             available = {
-                has_idea = nazi_camp_expansion_idea
+                has_idea = idea_final_solution_coordination
                 controls_state = 36
             }
             complete_effect = {
@@ -161,7 +187,7 @@
             has_government = fascism
         }
             available = {
-                has_idea = nazi_camp_expansion_idea
+                has_idea = idea_final_solution_coordination
                 controls_state = 206 # 明斯克所在的 state ID，确保与你的地图一致
             }
             complete_effect = {

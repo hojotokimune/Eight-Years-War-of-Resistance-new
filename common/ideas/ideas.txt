@@ -183,10 +183,24 @@ command_power_gain = -0.35
         picture = fascist_military
         modifier = {
             stability_factor = 0.03
-            resistance_target_on_our_occupied_states = 0.1
+			resistance_growth = -0.1
             research_speed_factor = -0.02
         }
         removal_cost = -1
+    }
+
+	idea_final_solution_coordination = {
+        picture = HUN_treaty_of_triannon
+        available = { has_government = fascism }
+        allowed_civil_war = no
+        modifier = {
+            required_garrison_factor = 0.15
+			resistance_growth = -0.1
+			non_core_manpower = -9999
+			compliance_gain = -0.25
+            compliance_gain_add = -0.01
+            ideology_drift = 0.1
+        }
     }
 
 	ally_finish_GER_crime = {
