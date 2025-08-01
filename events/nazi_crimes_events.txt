@@ -7,9 +7,7 @@ country_event = {
     desc = nazi_crimes.1.d
     picture = GFX_report_event_german_politics
 
-    trigger = {
-        tag = GER
-    }
+    is_triggered_only = yes
 
     option = {
         name = nazi_crimes.1.a
@@ -25,9 +23,7 @@ country_event = {
     desc = nazi_crimes.2.d
     picture = GFX_report_event_generic_propaganda
 
-    trigger = {
-        tag = GER
-    }
+    is_triggered_only = yes
 
     option = {
         name = nazi_crimes.2.a
