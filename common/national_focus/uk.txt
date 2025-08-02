@@ -6755,6 +6755,29 @@ focus_tree = {
 		        value = 500
 	            }
 				}
+				PAK = { 
+					add_stability = 1
+			add_war_support = 1
+			add_to_variable = {
+				ROOT.supply_condition_base = 100
+			}
+					create_country_leader = {
+						name="穆罕默德·阿里·真纳"
+						picture = "gfx/leaders/PAK/Muhammad_Ali_Jinnah.png"
+						ideology = liberalism
+						traits = { guojizhengzhihuodongjia democratic_reformer }
+						desc = PAK_jinnah_desc
+					 }
+				 }
+				RAJ = { 
+				 transfer_state = 320 
+				 transfer_state = 321 
+				 transfer_state = 441
+				}
+				if = {
+					limit = { 1076 = { is_controlled_by = PAK } }
+					RAJ = { transfer_state = 1076 }
+				}
 				}
 					}
 					}
