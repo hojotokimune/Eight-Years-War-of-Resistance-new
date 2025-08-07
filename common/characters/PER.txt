@@ -8,6 +8,7 @@ characters={
 		}
 		country_leader={
 			ideology=despotism
+			desc = PER_reza_shah_pahlavi_desc
 			expire="1965.1.1.1"
 			id=-1
 		}
