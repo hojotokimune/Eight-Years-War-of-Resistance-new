@@ -124,12 +124,12 @@ news_event = {
 
     trigger = {
         has_global_flag = liberation_of_paris
-        NOT = { has_global_flag = liberation_of_france_usa_111 }
+        NOT = { has_global_flag = liberation_of_france_usa_laisi }
         or = {
-            27 = { is_controlled_by = USA }
+            17 = { is_controlled_by = USA }
             and = {
                 FRA = { is_in_faction_with = USA }
-                27 = { is_controlled_by = FRA }
+                17 = { is_controlled_by = FRA }
             }
             }
             USA = { has_war_with = GER }
@@ -139,7 +139,7 @@ news_event = {
              }
     }
 
-    immediate = { set_global_flag = liberation_of_france_usa_111 }
+    immediate = { set_global_flag = liberation_of_france_usa_laisi }
 
     mean_time_to_happen = {
         days = 2
