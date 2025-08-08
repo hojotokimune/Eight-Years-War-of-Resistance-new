@@ -47,6 +47,7 @@
 
         convene_wannsee_conference = {
             cost = 50
+            fire_only_once = yes
             allowed = {
                 tag = GER
             }
