@@ -2003,7 +2003,7 @@ political_actions = {
 																	   
 					}
 					complete_effect = { #TODO notification event for England
-					set_cosmetic_tag = SOV_super_ussr
+					drop_cosmetic_tag = yes
 					SOV = {
 						annex_country = { 
 							target = KAZ #国家tag
