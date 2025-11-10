@@ -12164,7 +12164,7 @@ country_event = { #畑中健二自杀2
 		#name = ccw.723.a		
 				#CHI = {
         #add_ideas = lianheguo
-				}		
+				# }		
 				#USA = {
         #add_ideas = lianheguo
 				#}
