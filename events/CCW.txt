@@ -10894,7 +10894,7 @@ country_event = { #击毙张灵甫
                     }		
 	}	
 }
-country_event = { 文白无能，丧权辱国！
+country_event = { #文白无能，丧权辱国！
 	id = ccw.694
 	title = ccw.694.t
 	desc = ccw.694.desc
