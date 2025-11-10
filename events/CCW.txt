@@ -10233,7 +10233,7 @@ country_event = { #france annex vichy
             }			
         }			
     }   
-}
+
 
 country_event = { 
 	id = ccw.800
