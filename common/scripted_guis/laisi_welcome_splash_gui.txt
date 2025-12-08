@@ -79,5 +79,25 @@ scripted_gui = {
 			}
 		}
 	}
+	JAP_welcome_splash = {
+		context_type = player_context
+		window_name = "JAP_welcome_splash_container"
+		dirty = JAP_welcome_splash_variable
+
+		ai_enabled = {
+			always = no
+		}
+
+		visible = {
+			has_country_flag = show_welcome_splash_JAP
+		}
+
+		effects = {
+			options_button_JAP_click = {
+				clr_country_flag = show_welcome_splash_JAP
+				#country_event = kr.political.1       #触发一个事件
+			}
+		}
+	}
 }
 

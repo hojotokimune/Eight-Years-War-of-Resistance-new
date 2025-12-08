@@ -561,5 +561,144 @@ guiTypes = {
 		}
 	}
 
+	containerWindowType = {
+		name = "JAP_welcome_splash_container"
+		position = { x = 200 y = 45 }
+		size = { width = 800 height = 720 }
+		moveable = yes
+		orientation = CENTER_UP
+		origo = center_up
+		clipping = no
+
+		background = {
+			name = "logo_JAP"
+			spriteType = "GFX_splash_JAP"
+		}
+
+		## checkerboard backfill
+
+		containerWindowType = {
+			name = "splash_backfill"
+			position = { x = -250 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "splash_border"
+			position = { x = -250 y = 280 }
+			size = { width = 1000 height = 800 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_border"
+				quadTextureSprite = "GFX_tiled_generic_bg_1"
+			}
+
+			iconType = {#图片窗口，无效果
+			name = "JAP_biaozhi"
+			spriteType = "GFX_JAP_biaozhi"		
+			position = { x = 300  y = 200 }#你的图片位置（相对于窗口）
+		}
+
+
+			instantTextboxType = {
+				name = "welcome_title_JAP"
+				position = { x = -200 y = 8 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text_JAP"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_JAP"
+				position = { x = -460 y = 48 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text_JAP"
+				format = left
+				maxWidth = 900
+			}
+
+			buttonType = {
+				name = "options_button_JAP"
+				position = { x = -170 y = -52 }
+				orientation = center_down
+
+				quadTextureSprite = "GFX_main_lobby_button"
+				buttonText = "options_button_text_JAP"
+				buttonFont = "hoi_24header"
+				pdx_tooltip = "welcome_GER"
+				clicksound = click_default
+				oversound = ui_menu_over
+
+				shortcut = "ESCAPE"
+				shortcut = "RETURN"
+				shortcut = "SPACE"
+			}
+		}
+
+		## border texture & textboxes
+
+		containerWindowType = {
+			name = "splash_backfill_right"
+			position = { x = 440 y = 230 }
+			size = { width = 400 height = 500 } ## INCREASE HERE IF MORE LINES ARE NEEDED
+			orientation = CENTER
+			origo = center
+
+			background = {
+				name = "splash_backfill_right"
+				quadTextureSprite = "GFX_tiled_window_thin_border"
+			}
+
+
+			instantTextboxType = {
+				name = "welcome_title_JAP"
+				position = { x = -200 y = 40 }
+				orientation = CENTER_UP
+				font = "hoi_36header"
+				borderSize = {x = 0 y = 0}
+				text = "welcome_title_text"
+				format = centre
+				maxWidth = 400
+				maxHeight = 20
+				fixedsize = yes
+			}
+
+			instantTextboxType = {
+				name = "welcome_text_JAP"
+				position = { x = -180 y = 88 }
+				orientation = center_up
+				font = "hoi_20bs"
+				text = "welcome_text"
+				format = left
+				maxWidth = 350
+			}
+
+		}
+
+		iconType = {#图片窗口，无效果
+			name = "bakang_welcome_JAP"
+			spriteType = "GFX_bakang_welcome_small"		
+			position = { x = 640 y = 190 }#你的图片位置（相对于窗口）
+		}
+	}
+
+
 }
 

@@ -39,5 +39,13 @@ spriteTypes = {
 		name = "GFX_kmt_biaozhi"
 		textureFile = "gfx/splash/kmt_biaozhi.png"
 	}
+	spriteType = {
+		name = "GFX_splash_JAP"
+		textureFile = "gfx/splash/splash_JAP.png"
+	}
+	spriteType = {
+		name = "GFX_JAP_biaozhi"
+		textureFile = "gfx/splash/JAP_biaozhi.png"
+	}
 }
 
